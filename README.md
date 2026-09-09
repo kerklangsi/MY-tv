@@ -10,19 +10,19 @@ Use these direct raw GitHub URLs in your IPTV client app (e.g., TiviMate, OTT Na
 
 ### 📺 Live TV & Radio Playlist (MYTV + Tonton)
 ```text
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/playlist.m3u8
+https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/refs/heads/main/playlist.m3u8
 ```
 
 ### 🎬 VOD Shows & Movies Playlist
 ```text
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/vod.m3u8
+https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/vod.m3u8
 ```
 
 ### 📅 Electronic Program Guide (EPG)
 ```text
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/epg.xml.gz
+https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/epg.xml.gz
 ```
-*(Uncompressed XML format: `https://raw.githubusercontent.com/kerklangsi/MY-tv/main/epg.xml`)*
+*(Uncompressed XML format: `https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/epg.xml`)*
 
 ---
 
