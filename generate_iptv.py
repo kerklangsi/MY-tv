@@ -1,19 +1,26 @@
 import urllib.request
 import json
 import uuid
+import base64
 import os
 import gzip
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from datetime import datetime, timedelta, timezone
+from urllib.parse import urlparse
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
+GITHUB_RAW_BASE = "https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main"
+
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Origin': 'https://mana2.my',
     'Referer': 'https://mana2.my/',
     'Content-Type': 'application/json'
 }
+
+ME_KEY = "u6nCKz4ogW09a27lOzGcYkdJP9QJ6ABgw9GZuIBmWtMWswdz".encode('utf-8')[:32]
 
 def http_get(url):
     req = urllib.request.Request(url, headers=HEADERS)
@@ -24,6 +31,20 @@ def http_post(url, payload):
     req = urllib.request.Request(url, headers=HEADERS, data=json.dumps(payload).encode('utf-8'))
     with urllib.request.urlopen(req) as resp:
         return json.loads(resp.read().decode('utf-8'))
+
+def fetch_raw_text(url):
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Referer': 'https://mana2.my/'})
+    with urllib.request.urlopen(req) as resp:
+        return resp.read().decode('utf-8')
+
+def decrypt_cdn_payload(payload_b64):
+    raw = base64.b64decode(payload_b64)
+    iv = raw[:12]
+    tag = raw[12:28]
+    ciphertext = raw[28:]
+    aesgcm = AESGCM(ME_KEY)
+    decrypted_bytes = aesgcm.decrypt(iv, ciphertext + tag, None)
+    return json.loads(decrypted_bytes.decode('utf-8'))
 
 def iso_to_xmltv(iso_str):
     if not iso_str:
@@ -38,6 +59,8 @@ def main():
     channels = channels_res.get('data', [])
     print(f"Total channels found: {len(channels)}")
 
+    os.makedirs("streams", exist_ok=True)
+
     m3u_lines = [
         '#EXTM3U x-tvg-url="epg.xml.gz"'
     ]
@@ -45,6 +68,8 @@ def main():
     epg_channels = []
     epg_programmes = []
     processed_slugs = set()
+
+    device_id = str(uuid.uuid4())
 
     for ch in channels:
         c_id = ch.get('id')
@@ -55,8 +80,7 @@ def main():
         c_type = ch.get('channelType', 'video')
         group_title = 'MYTV Radio' if c_type == 'radio' else 'MYTV Live'
 
-        # Fetch stream playback URL
-        device_id = str(uuid.uuid4())
+        # Fetch master playback URL
         play_payload = {
             "channelId": c_id,
             "deviceId": device_id,
@@ -72,13 +96,49 @@ def main():
         
         play_res = http_post(f"{BASE_API}/public/streaming/channel-play", play_payload)
         play_data = play_res.get('data', {})
-        stream_url = play_data.get('playbackUrl') or play_data.get('playbackUrls', {}).get('hls', '')
+        master_url = play_data.get('playbackUrl') or play_data.get('playbackUrls', {}).get('hls', '')
 
-        if stream_url:
+        signed_stream_url = ""
+
+        if master_url:
+            if c_type == 'radio':
+                signed_stream_url = master_url
+            else:
+                m_content = fetch_raw_text(master_url)
+                rel_lines = [l.strip() for l in m_content.splitlines() if l.strip() and not l.startswith('#')]
+                
+                if rel_lines:
+                    sub_rel = rel_lines[0].split('?')[0] # e.g. abr/tv1_1080p/chunks.m3u8
+                    
+                    parsed = urlparse(master_url)
+                    cdn_host = f"{parsed.scheme}://{parsed.netloc}"
+                    path_dir = parsed.path.rsplit('/', 1)[0]
+                    full_sub_path = f"{path_dir}/{sub_rel}"
+                    
+                    sign_payload = {
+                        "channelId": c_id,
+                        "path": full_sub_path
+                    }
+                    sign_res = http_post(f"{BASE_API}/public/streaming/sign", sign_payload)
+                    dec = decrypt_cdn_payload(sign_res['data']['payload'])
+                    md5 = dec['md5']
+                    expires = dec['expires']
+                    
+                    signed_stream_url = f"{cdn_host}{full_sub_path}?md5={md5}&expires={expires}"
+
+        if signed_stream_url:
+            # Create individual channel stream m3u8 file under streams/{slug}.m3u8
+            ch_file_path = f"streams/{c_slug}.m3u8"
+            ch_playlist_content = f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{signed_stream_url}\n"
+            with open(ch_file_path, "w", encoding="utf-8") as f:
+                f.write(ch_playlist_content)
+                
+            # Clean static GitHub raw URL for playlist.m3u8 (without query tokens)
+            clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/{c_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
             m3u_lines.append(extinf)
-            m3u_lines.append(stream_url)
-            print(f"Added channel {c_num}: {c_name}")
+            m3u_lines.append(clean_m3u_url)
+            print(f"Added channel {c_num}: {c_name} -> {clean_m3u_url}")
 
         if c_slug not in processed_slugs:
             processed_slugs.add(c_slug)
@@ -94,7 +154,7 @@ def main():
         f.write(playlist_content)
     with open("playlist.m3u8", "w", encoding="utf-8") as f:
         f.write(playlist_content)
-    print("Saved playlist.m3u and playlist.m3u8")
+    print("Saved clean main playlist.m3u and playlist.m3u8 (pointing to streams/*.m3u8)")
 
     # Fetch EPG for past day, today, and next 5 days
     print("\nFetching EPG schedule...")

@@ -10,14 +10,14 @@ Once published to your GitHub repository, use these direct raw GitHub URLs in yo
 
 ### 📺 M3U / M3U8 Playlist URL
 ```text
-https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/playlist.m3u8
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/refs/heads/main/playlist.m3u8
 ```
 
 ### 📅 Electronic Program Guide (EPG) URL
 ```text
-https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/epg.xml.gz
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/refs/heads/main/epg.xml.gz
 ```
-*(Alternative uncompressed format: `https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/epg.xml`)*
+*(Alternative uncompressed format: `https://raw.githubusercontent.com/kerklangsi/MYtvmana2/refs/heads/main/epg.xml`)*
 
 ---
 
