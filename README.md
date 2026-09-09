@@ -1,4 +1,4 @@
-# MY-tv - Malaysian Unified IPTV & EPG Provider
+# Malaysian Unified IPTV & EPG Provider
 
 Automated IPTV provider generator for **MYTV Mana-Mana** ([mana2.my](https://mana2.my/)) and **Tonton** ([watch.tonton.com.my](https://watch.tonton.com.my/)). This project automatically fetches live channel streams (`.m3u8`), multi-resolution HLS master manifests (1080p, 720p, 540p, 360p), VOD Shows & Movies, and Electronic Program Guide (EPG) schedules in XMLTV format (`.xml` & `.xml.gz`).
 
