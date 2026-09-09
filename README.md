@@ -1,35 +1,45 @@
-# MYtvmana2 - MYTV Mana-Mana IPTV & EPG Provider
+# MY-tv - Malaysian Unified IPTV & EPG Provider
 
-Automated IPTV provider generator for MYTV Mana-Mana ([mana2.my](https://mana2.my/)). This project automatically fetches live channel stream links (`.m3u8`), VOD Shows & Movies, and Electronic Program Guide (EPG) schedules in XMLTV format (`.xml` & `.xml.gz`).
+Automated IPTV provider generator for **MYTV Mana-Mana** ([mana2.my](https://mana2.my/)) and **Tonton** ([watch.tonton.com.my](https://watch.tonton.com.my/)). This project automatically fetches live channel streams (`.m3u8`), multi-resolution HLS master manifests (1080p, 720p, 540p, 360p), VOD Shows & Movies, and Electronic Program Guide (EPG) schedules in XMLTV format (`.xml` & `.xml.gz`).
 
 ---
 
-## Public Playlist & EPG Links
+## 🚀 Public Playlist & EPG Links
 
-Once published to your GitHub repository, use these direct raw GitHub URLs in your IPTV client app (e.g., TiviMate, OTT Navigator, IPTV Smarters, VLC, Televizo):
+Use these direct raw GitHub URLs in your IPTV client app (e.g., TiviMate, OTT Navigator, IPTV Smarters, VLC, Televizo):
 
-### 📺 Live Channels Playlist (TV & Radio)
+### 📺 Live TV & Radio Playlist (MYTV + Tonton)
 ```text
-https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/playlist.m3u8
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/playlist.m3u8
 ```
 
 ### 🎬 VOD Shows & Movies Playlist
 ```text
-https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/vod.m3u8
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/vod.m3u8
 ```
 
 ### 📅 Electronic Program Guide (EPG)
 ```text
-https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/epg.xml.gz
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/epg.xml.gz
 ```
-*(Alternative uncompressed format: `https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/epg.xml`)*
+*(Uncompressed XML format: `https://raw.githubusercontent.com/kerklangsi/MY-tv/main/epg.xml`)*
 
 ---
 
-## Directory Structure
+## ✨ Features
+
+- **Unified Master Playlist**: Merges 46 MYTV Live/Radio channels and 9 Tonton Live channels into a single `playlist.m3u8`.
+- **Multi-Resolution Streams**: HLS stream files support full resolution selection (**1080p, 720p, 540p, 360p**) with absolute CDN URLs.
+- **Clean & Ad-Free**: Filters out SCTE-35 ad markers, interstitial tags, Google DAI tags, and DoubleClick VAST/VMAP references.
+- **Unified EPG Schedule**: Generates 7-day EPG program guide in standard XMLTV format covering all 55 channels.
+- **Automated Updates**: Powered by GitHub Actions to auto-update playlists and EPG every 6 hours.
+
+---
+
+## 📁 Directory Structure
 
 ```text
-MYtvmana2/
+MY-tv/
 ├── streams/
 │   ├── live/
 │   │   ├── tv1.m3u8
@@ -38,6 +48,12 @@ MYtvmana2/
 │   ├── radio/
 │   │   ├── fly-fm.m3u8
 │   │   ├── hot-fm.m3u8
+│   │   └── ...
+│   ├── tonton/
+│   │   ├── tv3.m3u8
+│   │   ├── ntv7.m3u8
+│   │   ├── 8tv.m3u8
+│   │   ├── tv9.m3u8
 │   │   └── ...
 │   └── vod/
 │       ├── trip-teaser.m3u8
@@ -49,25 +65,23 @@ MYtvmana2/
 ├── epg.xml
 ├── epg.xml.gz
 ├── generate_iptv.py
+├── generate_mytv.py
+├── generate_tonton.py
 ├── README.md
 └── .github/workflows/update_iptv.yml
 ```
 
 ---
 
-## How to Deploy to GitHub
+## 🛠️ How to Deploy & Enable Auto-Updates
 
 1. Push this repository to your GitHub account:
    ```bash
-   git init
-   git add .
-   git commit -m "Organize Live and VOD playlists into dedicated live/ and vod/ directories"
-   git branch -M main
-   git remote add origin https://github.com/kerklangsi/MYtvmana2.git
+   git remote set-url origin https://github.com/kerklangsi/MY-tv.git
    git push -u origin main
    ```
 2. Enable GitHub Actions permissions:
-   - Go to **Settings** > **Actions** > **General**.
+   - Go to your repository **Settings** > **Actions** > **General**.
    - Under **Workflow permissions**, choose **Read and write permissions**.
    - Click **Save**.
-3. The workflow will automatically update the live streams, VOD streams, and EPG every 6 hours!
+3. The GitHub Actions workflow will automatically update all stream URLs, VOD playlists, and EPG schedules every 6 hours!
