@@ -1,13 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:5
-#EXT-X-MEDIA-SEQUENCE:772998
-#EXT-X-DISCONTINUITY-SEQUENCE:81
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/sarawakfm/l_40_42092044_772998.aac?expires=1788954846&md5=_--bg9e3ZY-AMcPXH18k6Q
-#EXTINF:4.096,
-https://cuwf8jayq1.tenbytecdn.com/radio/sarawakfm/l_40_42096012_772999.aac?expires=1788954846&md5=_--bg9e3ZY-AMcPXH18k6Q
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/sarawakfm/l_40_42100108_773000.aac?expires=1788954846&md5=_--bg9e3ZY-AMcPXH18k6Q
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/sarawakfm/l_40_42104076_773001.aac?expires=1788954846&md5=_--bg9e3ZY-AMcPXH18k6Q
+#EXT-X-STREAM-INF:BANDWIDTH=95565,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/sarawakfm/chunks.m3u8?md5=z-yCG6wCIy8dcr5rwVPxzg&expires=1788954664

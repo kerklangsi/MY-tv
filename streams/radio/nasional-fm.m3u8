@@ -1,13 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:5
-#EXT-X-MEDIA-SEQUENCE:773013
-#EXT-X-DISCONTINUITY-SEQUENCE:77
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/nasionalfm/l_52_42092087_773013.aac?expires=1788954274&md5=pLaI4HT-XapcpTbvsxTS6g
-#EXTINF:4.01,
-https://cuwf8jayq1.tenbytecdn.com/radio/nasionalfm/l_52_42096055_773014.aac?expires=1788954274&md5=pLaI4HT-XapcpTbvsxTS6g
-#EXTINF:4.01,
-https://cuwf8jayq1.tenbytecdn.com/radio/nasionalfm/l_52_42100065_773015.aac?expires=1788954274&md5=pLaI4HT-XapcpTbvsxTS6g
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/nasionalfm/l_52_42104076_773016.aac?expires=1788954274&md5=pLaI4HT-XapcpTbvsxTS6g
+#EXT-X-STREAM-INF:BANDWIDTH=96107,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/nasionalfm/chunks.m3u8?md5=SGTXdcIr_N1qeQSjcIjAYg&expires=1788954662

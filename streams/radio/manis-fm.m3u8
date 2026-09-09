@@ -1,12 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:5
-#EXT-X-MEDIA-SEQUENCE:22896
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/manisfm/l_74017_91584042_22896.aac?expires=1788954847&md5=3qIfM2XDyPWP6GB1DpnQzg
-#EXTINF:4.096,
-https://cuwf8jayq1.tenbytecdn.com/radio/manisfm/l_74017_91588010_22897.aac?expires=1788954847&md5=3qIfM2XDyPWP6GB1DpnQzg
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/manisfm/l_74017_91592106_22898.aac?expires=1788954847&md5=3qIfM2XDyPWP6GB1DpnQzg
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/manisfm/l_74017_91596074_22899.aac?expires=1788954847&md5=3qIfM2XDyPWP6GB1DpnQzg
+#EXT-X-STREAM-INF:BANDWIDTH=96407,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/manisfm/chunks.m3u8?md5=rgpW7CwFe3ehL54O8yhYmw&expires=1788954639

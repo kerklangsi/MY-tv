@@ -1,13 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:5
-#EXT-X-MEDIA-SEQUENCE:772973
-#EXT-X-DISCONTINUITY-SEQUENCE:33
-#EXTINF:4.096,
-https://cuwf8jayq1.tenbytecdn.com/radio/bernamaradio/l_31_23028017_772973.aac?expires=1788954008&md5=Cc3XvJjEriGSrn61E49z5w
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/bernamaradio/l_31_23032113_772974.aac?expires=1788954008&md5=Cc3XvJjEriGSrn61E49z5w
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/bernamaradio/l_31_23036081_772975.aac?expires=1788954008&md5=Cc3XvJjEriGSrn61E49z5w
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/bernamaradio/l_31_23040049_772976.aac?expires=1788954008&md5=Cc3XvJjEriGSrn61E49z5w
+#EXT-X-STREAM-INF:BANDWIDTH=32152,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/bernamaradio/chunks.m3u8?md5=9xbjD-h5crVgRHUynPc3oQ&expires=1788954664

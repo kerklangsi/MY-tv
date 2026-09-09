@@ -1,12 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:5
-#EXT-X-MEDIA-SEQUENCE:213123
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/molekfm/l_59476_852492074_213123.aac?expires=1788954274&md5=eEY9LRr-SwkJ1GCzpn6u7g
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/molekfm/l_59476_852496042_213124.aac?expires=1788954274&md5=eEY9LRr-SwkJ1GCzpn6u7g
-#EXTINF:4.096,
-https://cuwf8jayq1.tenbytecdn.com/radio/molekfm/l_59476_852500010_213125.aac?expires=1788954274&md5=eEY9LRr-SwkJ1GCzpn6u7g
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/molekfm/l_59476_852504106_213126.aac?expires=1788954274&md5=eEY9LRr-SwkJ1GCzpn6u7g
+#EXT-X-STREAM-INF:BANDWIDTH=65667,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/molekfm/chunks.m3u8?md5=8uvKv_fPkCuz0roJoqrqlg&expires=1788954641

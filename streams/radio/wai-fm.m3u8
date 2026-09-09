@@ -1,13 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:5
-#EXT-X-MEDIA-SEQUENCE:772993
-#EXT-X-DISCONTINUITY-SEQUENCE:74
-#EXTINF:4.096,
-https://cuwf8jayq1.tenbytecdn.com/radio/waifm/l_25_42096012_772993.aac?expires=1788954113&md5=Pm5NNokAgYf-ADfceIdBag
-#EXTINF:4.01,
-https://cuwf8jayq1.tenbytecdn.com/radio/waifm/l_25_42100108_772994.aac?expires=1788954113&md5=Pm5NNokAgYf-ADfceIdBag
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/waifm/l_25_42104119_772995.aac?expires=1788954113&md5=Pm5NNokAgYf-ADfceIdBag
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/waifm/l_25_42108087_772996.aac?expires=1788954113&md5=Pm5NNokAgYf-ADfceIdBag
+#EXT-X-STREAM-INF:BANDWIDTH=96179,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/waifm/chunks.m3u8?md5=MlVNNfr4tb2xVQxXkI-9Fw&expires=1788954664

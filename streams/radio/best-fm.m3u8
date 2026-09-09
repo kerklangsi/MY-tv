@@ -1,12 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:5
-#EXT-X-MEDIA-SEQUENCE:820
-#EXTINF:4.04,
-https://cuwf8jayq1.tenbytecdn.com/radio/bestfm/l_75328_3280027_820.aac?expires=1788954278&md5=I9bI4xdTGkxNQ6nGoKu6_w
-#EXTINF:3.97,
-https://cuwf8jayq1.tenbytecdn.com/radio/bestfm/l_75328_3284067_821.aac?expires=1788954278&md5=I9bI4xdTGkxNQ6nGoKu6_w
-#EXTINF:3.97,
-https://cuwf8jayq1.tenbytecdn.com/radio/bestfm/l_75328_3288038_822.aac?expires=1788954278&md5=I9bI4xdTGkxNQ6nGoKu6_w
-#EXTINF:4.04,
-https://cuwf8jayq1.tenbytecdn.com/radio/bestfm/l_75328_3292009_823.aac?expires=1788954278&md5=I9bI4xdTGkxNQ6nGoKu6_w
+#EXT-X-STREAM-INF:BANDWIDTH=96455,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/bestfm/chunks.m3u8?md5=fXRGool3f1v5eFm10Vw3Sg&expires=1788954665

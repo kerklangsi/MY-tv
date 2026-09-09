@@ -155,29 +155,46 @@ def process_live_channels(device_id):
         signed_stream_url = ""
 
         if master_url:
-            m_content = fetch_raw_text(master_url)
-            rel_lines = [l.strip() for l in m_content.splitlines() if l.strip() and not l.startswith('#')]
-            if rel_lines:
-                sub_rel = rel_lines[0].split('?')[0]
+            if c_type == 'radio':
+                signed_stream_url = master_url
+                ch_playlist_content = f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{signed_stream_url}\n"
+            else:
+                m_content = fetch_raw_text(master_url)
                 parsed = urlparse(master_url)
                 cdn_host = f"{parsed.scheme}://{parsed.netloc}"
                 path_dir = parsed.path.rsplit('/', 1)[0]
-                full_sub_path = f"{path_dir}/{sub_rel}"
                 
-                sign_payload = {"channelId": c_id, "path": full_sub_path}
-                sign_res = http_post(f"{BASE_API}/public/streaming/sign", sign_payload)
-                if sign_res and 'data' in sign_res and 'payload' in sign_res['data']:
-                    dec = decrypt_cdn_payload(sign_res['data']['payload'])
-                    signed_stream_url = f"{cdn_host}{full_sub_path}?md5={dec['md5']}&expires={dec['expires']}"
-            else:
-                signed_stream_url = master_url
+                new_lines = []
+                has_variants = False
+                for line in m_content.splitlines():
+                    line_str = line.strip()
+                    if line_str and not line_str.startswith("#"):
+                        has_variants = True
+                        sub_rel = line_str.split('?')[0]
+                        full_sub_path = sub_rel if sub_rel.startswith("/") else f"{path_dir}/{sub_rel}"
+                        
+                        sign_payload = {"channelId": c_id, "path": full_sub_path}
+                        sign_res = http_post(f"{BASE_API}/public/streaming/sign", sign_payload)
+                        if sign_res and 'data' in sign_res and 'payload' in sign_res['data']:
+                            dec = decrypt_cdn_payload(sign_res['data']['payload'])
+                            signed_var_url = f"{cdn_host}{full_sub_path}?md5={dec['md5']}&expires={dec['expires']}"
+                            new_lines.append(signed_var_url)
+                        else:
+                            new_lines.append(f"{cdn_host}{full_sub_path}")
+                    else:
+                        new_lines.append(line)
+                
+                if has_variants:
+                    ch_playlist_content = "\n".join(new_lines) + "\n"
+                    signed_stream_url = master_url
+                else:
+                    signed_stream_url = master_url
+                    ch_playlist_content = make_m3u8_absolute(m_content, master_url)
 
         if signed_stream_url:
-            master_manifest = fetch_raw_text(signed_stream_url)
-            abs_playlist_content = make_m3u8_absolute(master_manifest, signed_stream_url)
             ch_file_path = f"streams/{folder_name}/{c_slug}.m3u8"
             with open(ch_file_path, "w", encoding="utf-8") as f:
-                f.write(abs_playlist_content)
+                f.write(ch_playlist_content)
                 
             clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/{folder_name}/{c_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'

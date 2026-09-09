@@ -1,13 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:5
-#EXT-X-MEDIA-SEQUENCE:773009
-#EXT-X-DISCONTINUITY-SEQUENCE:90
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/radioklasik/l_19_42092044_773009.aac?expires=1788954496&md5=WtF2cORFDNsmP-vgytoiNg
-#EXTINF:4.096,
-https://cuwf8jayq1.tenbytecdn.com/radio/radioklasik/l_19_42096012_773010.aac?expires=1788954496&md5=WtF2cORFDNsmP-vgytoiNg
-#EXTINF:4.01,
-https://cuwf8jayq1.tenbytecdn.com/radio/radioklasik/l_19_42100108_773011.aac?expires=1788954496&md5=WtF2cORFDNsmP-vgytoiNg
-#EXTINF:3.968,
-https://cuwf8jayq1.tenbytecdn.com/radio/radioklasik/l_19_42104119_773012.aac?expires=1788954496&md5=WtF2cORFDNsmP-vgytoiNg
+#EXT-X-STREAM-INF:BANDWIDTH=96036,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/radioklasik/chunks.m3u8?md5=z_w2Zn1rGfsBaBdaWpJxXA&expires=1788954663
