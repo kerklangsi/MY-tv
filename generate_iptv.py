@@ -4,6 +4,7 @@ import uuid
 import base64
 import os
 import gzip
+import re
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from datetime import datetime, timedelta, timezone
@@ -22,20 +23,33 @@ HEADERS = {
 
 ME_KEY = "u6nCKz4ogW09a27lOzGcYkdJP9QJ6ABgw9GZuIBmWtMWswdz".encode('utf-8')[:32]
 
+class NoRaiseHTTPErrorProcessor(urllib.request.HTTPErrorProcessor):
+    def http_response(self, request, response):
+        return response
+    https_response = http_response
+
+opener = urllib.request.build_opener(NoRaiseHTTPErrorProcessor)
+
 def http_get(url):
     req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req) as resp:
+    resp = opener.open(req)
+    if 200 <= resp.status < 300:
         return json.loads(resp.read().decode('utf-8'))
+    return {}
 
 def http_post(url, payload):
     req = urllib.request.Request(url, headers=HEADERS, data=json.dumps(payload).encode('utf-8'))
-    with urllib.request.urlopen(req) as resp:
+    resp = opener.open(req)
+    if 200 <= resp.status < 300:
         return json.loads(resp.read().decode('utf-8'))
+    return {}
 
 def fetch_raw_text(url):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Referer': 'https://mana2.my/'})
-    with urllib.request.urlopen(req) as resp:
+    resp = opener.open(req)
+    if 200 <= resp.status < 300:
         return resp.read().decode('utf-8')
+    return ""
 
 def decrypt_cdn_payload(payload_b64):
     raw = base64.b64decode(payload_b64)
@@ -46,6 +60,14 @@ def decrypt_cdn_payload(payload_b64):
     decrypted_bytes = aesgcm.decrypt(iv, ciphertext + tag, None)
     return json.loads(decrypted_bytes.decode('utf-8'))
 
+def slugify(text):
+    if not text:
+        return ""
+    text = text.lower().strip()
+    text = re.sub(r'[^\w\s-]', '', text)
+    text = re.sub(r'[\s_-]+', '-', text)
+    return re.sub(r'^-+|-+$', '', text)
+
 def iso_to_xmltv(iso_str):
     if not iso_str:
         return ""
@@ -53,23 +75,26 @@ def iso_to_xmltv(iso_str):
     dt_obj = datetime.strptime(clean_str, "%Y-%m-%dT%H:%M:%S")
     return dt_obj.strftime("%Y%m%d%H%M%S +0000")
 
-def main():
-    print("Fetching channel list from MYTV Mana-Mana...")
+def process_live_channels(device_id):
+    print("--- Processing Live Channels ---")
     channels_res = http_get(f"{BASE_API}/public/channels")
     channels = channels_res.get('data', [])
-    print(f"Total channels found: {len(channels)}")
+    print(f"Total Live channels found: {len(channels)}")
 
-    os.makedirs("streams", exist_ok=True)
+    os.makedirs("streams/live", exist_ok=True)
+    os.makedirs("streams/radio", exist_ok=True)
 
-    m3u_lines = [
-        '#EXTM3U x-tvg-url="epg.xml.gz"'
-    ]
+    # Clean up any loose .m3u8 files in streams/, streams/live/, and streams/radio/
+    for subfolder in ["streams", "streams/live", "streams/radio"]:
+        if os.path.exists(subfolder):
+            for fname in os.listdir(subfolder):
+                fpath = os.path.join(subfolder, fname)
+                if os.path.isfile(fpath) and fname.endswith(".m3u8"):
+                    os.remove(fpath)
 
+    m3u_lines = ['#EXTM3U x-tvg-url="epg.xml.gz"']
     epg_channels = []
-    epg_programmes = []
     processed_slugs = set()
-
-    device_id = str(uuid.uuid4())
 
     for ch in channels:
         c_id = ch.get('id')
@@ -78,9 +103,24 @@ def main():
         c_slug = ch.get('slug') or c_id
         c_logo = ch.get('logoUrl') or ch.get('thumbnailUrl') or ''
         c_type = ch.get('channelType', 'video')
-        group_title = 'MYTV Radio' if c_type == 'radio' else 'MYTV Live'
+        
+        c_slug_lower = c_slug.lower()
+        c_name_lower = c_name.lower()
+        is_radio = (
+            c_type == 'radio' or 
+            'fm' in c_slug_lower.split('-') or 
+            'radio' in c_slug_lower or 
+            'fm' in c_name_lower.split() or 
+            'radio' in c_name_lower
+        )
+        
+        if is_radio:
+            group_title = 'MYTV Radio'
+            folder_name = 'radio'
+        else:
+            group_title = 'MYTV Live'
+            folder_name = 'live'
 
-        # Fetch master playback URL
         play_payload = {
             "channelId": c_id,
             "deviceId": device_id,
@@ -101,64 +141,136 @@ def main():
         signed_stream_url = ""
 
         if master_url:
-            if c_type == 'radio':
-                signed_stream_url = master_url
-            else:
-                m_content = fetch_raw_text(master_url)
-                rel_lines = [l.strip() for l in m_content.splitlines() if l.strip() and not l.startswith('#')]
+            m_content = fetch_raw_text(master_url)
+            rel_lines = [l.strip() for l in m_content.splitlines() if l.strip() and not l.startswith('#')]
+            if rel_lines:
+                sub_rel = rel_lines[0].split('?')[0]
+                parsed = urlparse(master_url)
+                cdn_host = f"{parsed.scheme}://{parsed.netloc}"
+                path_dir = parsed.path.rsplit('/', 1)[0]
+                full_sub_path = f"{path_dir}/{sub_rel}"
                 
-                if rel_lines:
-                    sub_rel = rel_lines[0].split('?')[0] # e.g. abr/tv1_1080p/chunks.m3u8
-                    
-                    parsed = urlparse(master_url)
-                    cdn_host = f"{parsed.scheme}://{parsed.netloc}"
-                    path_dir = parsed.path.rsplit('/', 1)[0]
-                    full_sub_path = f"{path_dir}/{sub_rel}"
-                    
-                    sign_payload = {
-                        "channelId": c_id,
-                        "path": full_sub_path
-                    }
-                    sign_res = http_post(f"{BASE_API}/public/streaming/sign", sign_payload)
+                sign_payload = {"channelId": c_id, "path": full_sub_path}
+                sign_res = http_post(f"{BASE_API}/public/streaming/sign", sign_payload)
+                if sign_res and 'data' in sign_res and 'payload' in sign_res['data']:
                     dec = decrypt_cdn_payload(sign_res['data']['payload'])
-                    md5 = dec['md5']
-                    expires = dec['expires']
-                    
-                    signed_stream_url = f"{cdn_host}{full_sub_path}?md5={md5}&expires={expires}"
+                    signed_stream_url = f"{cdn_host}{full_sub_path}?md5={dec['md5']}&expires={dec['expires']}"
+            else:
+                signed_stream_url = master_url
 
         if signed_stream_url:
-            # Create individual channel stream m3u8 file under streams/{slug}.m3u8
-            ch_file_path = f"streams/{c_slug}.m3u8"
+            ch_file_path = f"streams/{folder_name}/{c_slug}.m3u8"
             ch_playlist_content = f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{signed_stream_url}\n"
             with open(ch_file_path, "w", encoding="utf-8") as f:
                 f.write(ch_playlist_content)
                 
-            # Clean static GitHub raw URL for playlist.m3u8 (without query tokens)
-            clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/{c_slug}.m3u8"
+            clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/{folder_name}/{c_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
             m3u_lines.append(extinf)
             m3u_lines.append(clean_m3u_url)
-            print(f"Added channel {c_num}: {c_name} -> {clean_m3u_url}")
+            print(f"Added {group_title} {c_num}: {c_name} -> {clean_m3u_url}")
 
         if c_slug not in processed_slugs:
             processed_slugs.add(c_slug)
-            epg_channels.append({
-                'id': c_slug,
-                'name': c_name,
-                'logo': c_logo
-            })
+            epg_channels.append({'id': c_slug, 'name': c_name, 'logo': c_logo})
 
-    # Save M3U & M3U8 playlist files
     playlist_content = "\n".join(m3u_lines) + "\n"
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write(playlist_content)
     with open("playlist.m3u8", "w", encoding="utf-8") as f:
         f.write(playlist_content)
-    print("Saved clean main playlist.m3u and playlist.m3u8 (pointing to streams/*.m3u8)")
+        
+    print("Saved playlist.m3u and playlist.m3u8 (pointing to streams/live/*.m3u8 and streams/radio/*.m3u8)")
+    return epg_channels
+    return epg_channels
 
-    # Fetch EPG for past day, today, and next 5 days
-    print("\nFetching EPG schedule...")
+def process_vod_shows(device_id):
+    print("\n--- Processing VOD Shows & Movies ---")
+    shows = []
+    page = 1
+    limit = 50
+
+    while True:
+        url = f"{BASE_API}/public/content?page={page}&limit={limit}"
+        res = http_get(url)
+        data = res.get('data', {})
+        items = data.get('data', [])
+        pagination = data.get('pagination', {})
+        
+        shows.extend(items)
+        total_pages = pagination.get('totalPages', 1)
+        if page >= total_pages or len(items) == 0:
+            break
+        page += 1
+
+    print(f"Total VOD shows found: {len(shows)}")
+
+    os.makedirs("streams/vod", exist_ok=True)
+    # Clean up old m3u8 files in streams/vod/
+    if os.path.exists("streams/vod"):
+        for fname in os.listdir("streams/vod"):
+            fpath = os.path.join("streams/vod", fname)
+            if os.path.isfile(fpath) and fname.endswith(".m3u8"):
+                os.remove(fpath)
+
+    vod_lines = ['#EXTM3U']
+    used_vod_slugs = set()
+
+    for item in shows:
+        item_id = item['id']
+        item_title = item.get('title', 'Unknown Show')
+        title_slug = slugify(item_title)
+        base_slug = title_slug if title_slug else (item.get('slug') or item_id)
+            
+        item_slug = base_slug
+        if item_slug in used_vod_slugs:
+            item_slug = f"{base_slug}-{item_id}"
+        used_vod_slugs.add(item_slug)
+
+        item_type = item.get('contentType', 'movie')
+        item_poster = item.get('posterLandscapeUrl') or item.get('posterPortraitUrl') or item.get('bannerUrl') or ''
+        group_title = 'MYTV Shows' if item_type == 'episode' else 'MYTV Movies'
+
+        play_payload = {
+            "contentId": item_id,
+            "deviceId": device_id,
+            "protocol": "hls",
+            "context": {
+                "deviceType": "web",
+                "app": "mytv-web",
+                "appVersion": "0.1.0",
+                "os": "Windows",
+                "network": "wifi"
+            }
+        }
+        
+        play_res = http_post(f"{BASE_API}/public/streaming/play", play_payload)
+        signed_stream_url = play_res.get('data', {}).get('playbackUrl', '')
+
+        if signed_stream_url:
+            vod_file_path = f"streams/vod/{item_slug}.m3u8"
+            with open(vod_file_path, "w", encoding="utf-8") as f:
+                f.write(f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{signed_stream_url}\n")
+                
+            clean_url = f"{GITHUB_RAW_BASE}/streams/vod/{item_slug}.m3u8"
+            extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
+            vod_lines.append(extinf)
+            vod_lines.append(clean_url)
+            print(f"Added VOD: {item_title} -> {clean_url}")
+
+    vod_content = "\n".join(vod_lines) + "\n"
+    with open("vod.m3u", "w", encoding="utf-8") as f:
+        f.write(vod_content)
+    with open("vod.m3u8", "w", encoding="utf-8") as f:
+        f.write(vod_content)
+        
+    print("Saved vod.m3u and vod.m3u8 (pointing to streams/vod/*.m3u8)")
+
+def process_epg(epg_channels):
+    print("\n--- Fetching EPG Schedule ---")
     today = datetime.now(timezone.utc)
+    epg_programmes = []
+
     for day_offset in range(-1, 6):
         target_date = (today + timedelta(days=day_offset)).strftime("%Y-%m-%d")
         epg_url = f"{BASE_API}/public/epg/guide?date={target_date}"
@@ -188,7 +300,6 @@ def main():
 
     print(f"Total EPG programmes collected: {len(epg_programmes)}")
 
-    # Construct XMLTV document
     tv_elem = ET.Element('tv', {'generator-info-name': 'MYtvmana2 IPTV Generator'})
 
     for ch_info in epg_channels:
@@ -226,6 +337,12 @@ def main():
     with gzip.open("epg.xml.gz", "wb") as f:
         f.write(pretty_xml)
     print("Saved epg.xml.gz")
+
+def main():
+    device_id = str(uuid.uuid4())
+    epg_channels = process_live_channels(device_id)
+    process_vod_shows(device_id)
+    process_epg(epg_channels)
 
 if __name__ == '__main__':
     main()
