@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/mysport/abr/mysport_1080p/chunks.m3u8?md5=jK3LUqk8F8uEJmiDtGSxBw&expires=1788953865
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:263836
+#EXT-X-DISCONTINUITY-SEQUENCE:64
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/mysport/abr/mysport_1080p/l_39736_15912000_263836.ts?expires=1788954266&md5=omBLWA1OY2IuWtfVcpwr0g
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/mysport/abr/mysport_1080p/l_39736_15916000_263837.ts?expires=1788954266&md5=omBLWA1OY2IuWtfVcpwr0g
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/mysport/abr/mysport_1080p/l_39736_15920000_263838.ts?expires=1788954266&md5=omBLWA1OY2IuWtfVcpwr0g
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/mysport/abr/mysport_1080p/l_39736_15924000_263839.ts?expires=1788954266&md5=omBLWA1OY2IuWtfVcpwr0g

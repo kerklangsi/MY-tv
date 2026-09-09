@@ -68,6 +68,20 @@ def slugify(text):
     text = re.sub(r'[\s_-]+', '-', text)
     return re.sub(r'^-+|-+$', '', text)
 
+def make_m3u8_absolute(m3u8_text, base_url):
+    if not m3u8_text:
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{base_url}\n"
+    parsed = urlparse(base_url)
+    base_dir = f"{parsed.scheme}://{parsed.netloc}{parsed.path.rsplit('/', 1)[0]}/"
+    lines = []
+    for line in m3u8_text.splitlines():
+        line_str = line.strip()
+        if line_str and not line_str.startswith("#"):
+            if not line_str.startswith("http://") and not line_str.startswith("https://"):
+                line_str = base_dir + line_str
+        lines.append(line_str)
+    return "\n".join(lines) + "\n"
+
 def iso_to_xmltv(iso_str):
     if not iso_str:
         return ""
@@ -159,10 +173,11 @@ def process_live_channels(device_id):
                 signed_stream_url = master_url
 
         if signed_stream_url:
+            master_manifest = fetch_raw_text(signed_stream_url)
+            abs_playlist_content = make_m3u8_absolute(master_manifest, signed_stream_url)
             ch_file_path = f"streams/{folder_name}/{c_slug}.m3u8"
-            ch_playlist_content = f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{signed_stream_url}\n"
             with open(ch_file_path, "w", encoding="utf-8") as f:
-                f.write(ch_playlist_content)
+                f.write(abs_playlist_content)
                 
             clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/{folder_name}/{c_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
@@ -248,9 +263,11 @@ def process_vod_shows(device_id):
         signed_stream_url = play_res.get('data', {}).get('playbackUrl', '')
 
         if signed_stream_url:
+            master_manifest = fetch_raw_text(signed_stream_url)
+            abs_playlist_content = make_m3u8_absolute(master_manifest, signed_stream_url)
             vod_file_path = f"streams/vod/{item_slug}.m3u8"
             with open(vod_file_path, "w", encoding="utf-8") as f:
-                f.write(f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{signed_stream_url}\n")
+                f.write(abs_playlist_content)
                 
             clean_url = f"{GITHUB_RAW_BASE}/streams/vod/{item_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'

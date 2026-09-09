@@ -1,4 +1,12 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_1080p/chunks.m3u8?md5=1EzAjxDyCZwEz-VWaR-jEA&expires=1788953869
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:772895
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_1080p/l_97_3091580000_772895.ts?expires=1788954271&md5=xWtGK9I-ZLgIDDdmg7flNw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_1080p/l_97_3091584000_772896.ts?expires=1788954271&md5=xWtGK9I-ZLgIDDdmg7flNw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_1080p/l_97_3091588000_772897.ts?expires=1788954271&md5=xWtGK9I-ZLgIDDdmg7flNw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_1080p/l_97_3091592000_772898.ts?expires=1788954271&md5=xWtGK9I-ZLgIDDdmg7flNw

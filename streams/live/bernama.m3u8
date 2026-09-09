@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_1080p/chunks.m3u8?md5=NBQnbEivyYYH0HZ51DksMQ&expires=1788953864
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:773028
+#EXT-X-DISCONTINUITY-SEQUENCE:93
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_1080p/l_82_26732000_773028.ts?expires=1788954242&md5=gdxf4I7tQfplitspAgRR5g
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_1080p/l_82_26736000_773029.ts?expires=1788954242&md5=gdxf4I7tQfplitspAgRR5g
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_1080p/l_82_26740000_773030.ts?expires=1788954242&md5=gdxf4I7tQfplitspAgRR5g
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_1080p/l_82_26744000_773031.ts?expires=1788954242&md5=gdxf4I7tQfplitspAgRR5g

@@ -1,4 +1,12 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_1080p/chunks.m3u8?md5=skkGK1h0_hBDQBbIOJtBog&expires=1788953867
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:58
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_1080p/l_75367_52148000_58.ts?expires=1788954268&md5=UwGRqTR3SZ16FnCsIVtrfQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_1080p/l_75367_52152000_59.ts?expires=1788954268&md5=UwGRqTR3SZ16FnCsIVtrfQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_1080p/l_75367_52156000_60.ts?expires=1788954268&md5=UwGRqTR3SZ16FnCsIVtrfQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_1080p/l_75367_52160000_61.ts?expires=1788954268&md5=UwGRqTR3SZ16FnCsIVtrfQ

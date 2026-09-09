@@ -1,4 +1,12 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/radio/rakitafm/chunks.m3u8?md5=I2oA5HGysgAR27jYlPFHqw&expires=1788953891
+#EXT-X-TARGETDURATION:5
+#EXT-X-MEDIA-SEQUENCE:125134
+#EXTINF:3.9,
+https://cuwf8jayq1.tenbytecdn.com/radio/rakitafm/l_64864_500536122_125134.aac?expires=1788954273&md5=tYomSCF5BsKkv3nzDODZRg
+#EXTINF:4.04,
+https://cuwf8jayq1.tenbytecdn.com/radio/rakitafm/l_64864_500540023_125135.aac?expires=1788954273&md5=tYomSCF5BsKkv3nzDODZRg
+#EXTINF:4.04,
+https://cuwf8jayq1.tenbytecdn.com/radio/rakitafm/l_64864_500544063_125136.aac?expires=1788954273&md5=tYomSCF5BsKkv3nzDODZRg
+#EXTINF:3.9,
+https://cuwf8jayq1.tenbytecdn.com/radio/rakitafm/l_64864_500548104_125137.aac?expires=1788954273&md5=tYomSCF5BsKkv3nzDODZRg

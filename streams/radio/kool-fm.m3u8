@@ -1,4 +1,12 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/radio/koolfm/chunks.m3u8?md5=a14V-1YIHUeaBh3aXb1PbQ&expires=1788953892
+#EXT-X-TARGETDURATION:5
+#EXT-X-MEDIA-SEQUENCE:250634
+#EXTINF:3.968,
+https://cuwf8jayq1.tenbytecdn.com/radio/koolfm/l_48814_1002536106_250634.aac?expires=1788954322&md5=3Hpw4yZxQIVOWKkWTAtGzQ
+#EXTINF:3.968,
+https://cuwf8jayq1.tenbytecdn.com/radio/koolfm/l_48814_1002540074_250635.aac?expires=1788954322&md5=3Hpw4yZxQIVOWKkWTAtGzQ
+#EXTINF:3.968,
+https://cuwf8jayq1.tenbytecdn.com/radio/koolfm/l_48814_1002544042_250636.aac?expires=1788954322&md5=3Hpw4yZxQIVOWKkWTAtGzQ
+#EXTINF:4.096,
+https://cuwf8jayq1.tenbytecdn.com/radio/koolfm/l_48814_1002548010_250637.aac?expires=1788954322&md5=3Hpw4yZxQIVOWKkWTAtGzQ

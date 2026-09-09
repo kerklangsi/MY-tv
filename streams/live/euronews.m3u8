@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_1080p/chunks.m3u8?md5=_yyq1hD98-xzNQytz5s5UA&expires=1788953866
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:33296
+#EXT-X-DISCONTINUITY-SEQUENCE:2
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_1080p/l_5029_60580000_33296.ts?expires=1788954268&md5=0DXJ67U2hrZhHluX3dekMQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_1080p/l_5029_60584000_33297.ts?expires=1788954268&md5=0DXJ67U2hrZhHluX3dekMQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_1080p/l_5029_60588000_33298.ts?expires=1788954268&md5=0DXJ67U2hrZhHluX3dekMQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_1080p/l_5029_60592000_33299.ts?expires=1788954268&md5=0DXJ67U2hrZhHluX3dekMQ

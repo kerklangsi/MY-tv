@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraenglishhd/abr/aljazeeraenglishhd_1080p/chunks.m3u8?md5=XiVj50FjIJ8yc0n1Efx9eA&expires=1788953866
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:1059
+#EXT-X-DISCONTINUITY-SEQUENCE:2
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraenglishhd/abr/aljazeeraenglishhd_1080p/l_27085_82812000_1059.ts?expires=1788954268&md5=np0lEuxbxNJOenkmgbx-zw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraenglishhd/abr/aljazeeraenglishhd_1080p/l_27085_82816000_1060.ts?expires=1788954268&md5=np0lEuxbxNJOenkmgbx-zw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraenglishhd/abr/aljazeeraenglishhd_1080p/l_27085_82820000_1061.ts?expires=1788954268&md5=np0lEuxbxNJOenkmgbx-zw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraenglishhd/abr/aljazeeraenglishhd_1080p/l_27085_82824000_1062.ts?expires=1788954268&md5=np0lEuxbxNJOenkmgbx-zw

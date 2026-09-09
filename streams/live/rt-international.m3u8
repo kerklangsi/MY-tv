@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_1080p/chunks.m3u8?md5=I4y2XauM4wO0EX2r3vj9zA&expires=1788953868
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:190999
+#EXT-X-DISCONTINUITY-SEQUENCE:21
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_1080p/l_4105_146276000_190999.ts?expires=1788954270&md5=xqO1KTW0W86cXLuIJ1c7jw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_1080p/l_4105_146280000_191000.ts?expires=1788954270&md5=xqO1KTW0W86cXLuIJ1c7jw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_1080p/l_4105_146284000_191001.ts?expires=1788954270&md5=xqO1KTW0W86cXLuIJ1c7jw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_1080p/l_4105_146288000_191002.ts?expires=1788954270&md5=xqO1KTW0W86cXLuIJ1c7jw

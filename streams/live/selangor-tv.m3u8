@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_1080p/chunks.m3u8?md5=7NNJaRHyIqDFLRBTfA5NlQ&expires=1788953868
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:138776
+#EXT-X-DISCONTINUITY-SEQUENCE:5
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_720p/l_4444_86644000_138776.ts?expires=1788954270&md5=g0oW6x1AunjJ8jCxJT_chw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_720p/l_4444_86648000_138777.ts?expires=1788954270&md5=g0oW6x1AunjJ8jCxJT_chw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_720p/l_4444_86652000_138778.ts?expires=1788954270&md5=g0oW6x1AunjJ8jCxJT_chw
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_720p/l_4444_86656000_138779.ts?expires=1788954270&md5=g0oW6x1AunjJ8jCxJT_chw

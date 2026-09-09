@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/radio/sabahvfm/chunks.m3u8?md5=7AiWxGSCjo36vKZpQEBEwQ&expires=1788953894
+#EXT-X-TARGETDURATION:5
+#EXT-X-MEDIA-SEQUENCE:773015
+#EXT-X-DISCONTINUITY-SEQUENCE:74
+#EXTINF:3.968,
+https://cuwf8jayq1.tenbytecdn.com/radio/sabahvfm/l_43_42092044_773015.aac?expires=1788954276&md5=pYM0EF2uQNUESyGIdw0b_Q
+#EXTINF:4.096,
+https://cuwf8jayq1.tenbytecdn.com/radio/sabahvfm/l_43_42096012_773016.aac?expires=1788954276&md5=pYM0EF2uQNUESyGIdw0b_Q
+#EXTINF:4.01,
+https://cuwf8jayq1.tenbytecdn.com/radio/sabahvfm/l_43_42100108_773017.aac?expires=1788954276&md5=pYM0EF2uQNUESyGIdw0b_Q
+#EXTINF:3.968,
+https://cuwf8jayq1.tenbytecdn.com/radio/sabahvfm/l_43_42104119_773018.aac?expires=1788954276&md5=pYM0EF2uQNUESyGIdw0b_Q

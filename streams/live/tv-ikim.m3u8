@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_1080p/chunks.m3u8?md5=PTEj07v-Nm4OMtRxhl0OEg&expires=1788953869
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:219628
+#EXT-X-DISCONTINUITY-SEQUENCE:9
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_1080p/l_59170_86772000_219628.ts?expires=1788954271&md5=1yo5iUzLgo6rqT2rMlIcCQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_1080p/l_59170_86776000_219629.ts?expires=1788954271&md5=1yo5iUzLgo6rqT2rMlIcCQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_1080p/l_59170_86780000_219630.ts?expires=1788954271&md5=1yo5iUzLgo6rqT2rMlIcCQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_1080p/l_59170_86784000_219631.ts?expires=1788954271&md5=1yo5iUzLgo6rqT2rMlIcCQ

@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_1080p/chunks.m3u8?md5=7IXJH35sHKW_ORpHbON9mA&expires=1788953864
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:772967
+#EXT-X-DISCONTINUITY-SEQUENCE:75
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_1080p/l_187_132820000_772967.ts?expires=1788954788&md5=lkIUH9XOk2eiBaF7qFqXrQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_1080p/l_187_132824000_772968.ts?expires=1788954788&md5=lkIUH9XOk2eiBaF7qFqXrQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_1080p/l_187_132828000_772969.ts?expires=1788954788&md5=lkIUH9XOk2eiBaF7qFqXrQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_1080p/l_187_132832000_772970.ts?expires=1788954788&md5=lkIUH9XOk2eiBaF7qFqXrQ

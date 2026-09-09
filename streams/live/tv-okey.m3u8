@@ -1,4 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/tvokey/abr/tvokey_1080p/chunks.m3u8?md5=7cm-Jl60YUXQj0jYqAVnAA&expires=1788953866
+#EXT-X-TARGETDURATION:4
+#EXT-X-MEDIA-SEQUENCE:177514
+#EXT-X-DISCONTINUITY-SEQUENCE:30
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/tvokey/abr/tvokey_1080p/l_4243_23016000_177514.ts?expires=1788952482&md5=8Qc0OqOo6NjrTxZxFa9yKQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/tvokey/abr/tvokey_1080p/l_4243_23020000_177515.ts?expires=1788952482&md5=8Qc0OqOo6NjrTxZxFa9yKQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/tvokey/abr/tvokey_1080p/l_4243_23024000_177516.ts?expires=1788952482&md5=8Qc0OqOo6NjrTxZxFa9yKQ
+#EXTINF:4,
+https://cuwf8jayq1.tenbytecdn.com/live/tvokey/abr/tvokey_1080p/l_4243_23028000_177517.ts?expires=1788952482&md5=8Qc0OqOo6NjrTxZxFa9yKQ
