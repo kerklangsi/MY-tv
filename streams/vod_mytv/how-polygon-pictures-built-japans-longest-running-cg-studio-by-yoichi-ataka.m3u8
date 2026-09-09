@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=997543,RESOLUTION=854x480,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/1c4ab273-e49b-48c5-abc7-2b39e341c39c/master.smil/480p.mp4_chunk.m3u8?md5=gU81BTZrCSBkn1FvPxf-Mw&expires=1788971652
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/how-polygon-pictures-built-japans-longest-running-cg-studio-by-yoichi-ataka-res1.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=1994779,RESOLUTION=1280x720,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/1c4ab273-e49b-48c5-abc7-2b39e341c39c/master.smil/720p.mp4_chunk.m3u8?md5=gU81BTZrCSBkn1FvPxf-Mw&expires=1788971652
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/how-polygon-pictures-built-japans-longest-running-cg-studio-by-yoichi-ataka-res2.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=2992200,RESOLUTION=1920x1080,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/1c4ab273-e49b-48c5-abc7-2b39e341c39c/master.smil/1080p.mp4_chunk.m3u8?md5=gU81BTZrCSBkn1FvPxf-Mw&expires=1788971652
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/how-polygon-pictures-built-japans-longest-running-cg-studio-by-yoichi-ataka-res3.m3u8

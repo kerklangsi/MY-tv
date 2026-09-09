@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=996516,RESOLUTION=854x480,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/67afdcac-59f1-4a64-b626-8cdf2220c5bc/master.smil/480p.mp4_chunk.m3u8?md5=G1PzHb76T1u1ztAtkWOU6g&expires=1788971652
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/esg-expert-the-playbook-corporates-use-to-decarbonize-by-eong-tat-founder-of-pantas-res1.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=1993581,RESOLUTION=1280x720,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/67afdcac-59f1-4a64-b626-8cdf2220c5bc/master.smil/720p.mp4_chunk.m3u8?md5=G1PzHb76T1u1ztAtkWOU6g&expires=1788971652
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/esg-expert-the-playbook-corporates-use-to-decarbonize-by-eong-tat-founder-of-pantas-res2.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=2990868,RESOLUTION=1920x1080,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/67afdcac-59f1-4a64-b626-8cdf2220c5bc/master.smil/1080p.mp4_chunk.m3u8?md5=G1PzHb76T1u1ztAtkWOU6g&expires=1788971652
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/esg-expert-the-playbook-corporates-use-to-decarbonize-by-eong-tat-founder-of-pantas-res3.m3u8

@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=1011525,RESOLUTION=854x480,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/676312a4-5309-4981-97d1-a06bb08ffd37/master.smil/480p.mp4_chunk.m3u8?md5=nTywX47mXvy4r3ge6FsrnA&expires=1788971655
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/karpet-merah-ep-12-res1.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=2020251,RESOLUTION=1280x720,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/676312a4-5309-4981-97d1-a06bb08ffd37/master.smil/720p.mp4_chunk.m3u8?md5=nTywX47mXvy4r3ge6FsrnA&expires=1788971655
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/karpet-merah-ep-12-res2.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=3034402,RESOLUTION=1920x1080,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/676312a4-5309-4981-97d1-a06bb08ffd37/master.smil/1080p.mp4_chunk.m3u8?md5=nTywX47mXvy4r3ge6FsrnA&expires=1788971655
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/karpet-merah-ep-12-res3.m3u8

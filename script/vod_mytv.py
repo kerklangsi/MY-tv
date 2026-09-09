@@ -37,7 +37,7 @@ def http_post(url, payload):
     return {}
 
 def fetch_raw_text(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Referer': 'https://mana2.my/'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Referer': 'https://mana2.my/'})
     resp = opener.open(req)
     if 200 <= resp.status < 300:
         return resp.read().decode('utf-8')
@@ -50,27 +50,6 @@ def slugify(text):
     text = re.sub(r'[^\w\s-]', '', text)
     text = re.sub(r'[\s_-]+', '-', text)
     return re.sub(r'^-+|-+$', '', text)
-
-def make_m3u8_absolute(m3u8_text, base_url):
-    if not m3u8_text:
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{base_url}\n"
-    parsed = urlparse(base_url)
-    base_dir = f"{parsed.scheme}://{parsed.netloc}{parsed.path.rsplit('/', 1)[0]}/"
-    query_str = f"?{parsed.query}" if parsed.query else ""
-    lines = []
-
-    for line in m3u8_text.splitlines():
-        line_str = line.strip()
-        if line_str and not line_str.startswith("#"):
-            if not line_str.startswith("http://") and not line_str.startswith("https://"):
-                # Strip stale static query string from sub-manifest name and apply fresh query string from playbackUrl
-                clean_path = line_str.split('?')[0]
-                if query_str:
-                    line_str = base_dir + clean_path + query_str
-                else:
-                    line_str = base_dir + clean_path
-        lines.append(line_str)
-    return "\n".join(lines) + "\n"
 
 def process_vod_shows(device_id):
     print("\n--- Processing MYTV VOD Shows & Movies ---")
@@ -136,14 +115,51 @@ def process_vod_shows(device_id):
 
         if signed_stream_url:
             master_manifest = fetch_raw_text(signed_stream_url)
-            abs_playlist_content = make_m3u8_absolute(master_manifest, signed_stream_url)
-            vod_file_path = f"streams/vod_mytv/{item_slug}.m3u8"
-            with open(vod_file_path, "w", encoding="utf-8") as f:
-                f.write(abs_playlist_content)
+            parsed_master = urlparse(signed_stream_url)
+            fresh_query = f"?{parsed_master.query}" if parsed_master.query else ""
+            base_cdn_dir = f"{parsed_master.scheme}://{parsed_master.netloc}{parsed_master.path.rsplit('/', 1)[0]}/"
+            
+            master_lines = []
+            variant_counter = 1
+
+            for line in master_manifest.splitlines():
+                line_str = line.strip()
+                if line_str and not line_str.startswith("#"):
+                    sub_filename = line_str.split('?')[0]
+                    sub_cdn_url = base_cdn_dir + sub_filename + fresh_query
+                    
+                    sub_manifest_raw = fetch_raw_text(sub_cdn_url)
+                    fixed_sub_lines = []
+                    
+                    for s_line in sub_manifest_raw.splitlines():
+                        s_str = s_line.strip()
+                        if s_str and not s_str.startswith("#"):
+                            ts_path_clean = s_str.split('?')[0]
+                            ts_abs_url = base_cdn_dir + ts_path_clean + fresh_query
+                            fixed_sub_lines.append(ts_abs_url)
+                        else:
+                            fixed_sub_lines.append(s_line)
+                    
+                    sub_slug_name = f"{item_slug}-res{variant_counter}.m3u8"
+                    variant_counter += 1
+                    sub_file_path = f"streams/vod_mytv/{sub_slug_name}"
+                    
+                    with open(sub_file_path, "w", encoding="utf-8") as f:
+                        f.write("\n".join(fixed_sub_lines) + "\n")
+                        
+                    raw_sub_github_url = f"{GITHUB_RAW_BASE}/streams/vod_mytv/{sub_slug_name}"
+                    master_lines.append(raw_sub_github_url)
+                else:
+                    master_lines.append(line)
+                    
+            master_file_path = f"streams/vod_mytv/{item_slug}.m3u8"
+            with open(master_file_path, "w", encoding="utf-8") as f:
+                f.write("\n".join(master_lines) + "\n")
                 
             clean_url = f"{GITHUB_RAW_BASE}/streams/vod_mytv/{item_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
             vod_entries.append((extinf, clean_url))
+            print(f"Processed VOD item: {item_title} -> {clean_url}")
 
     print(f"Total MYTV VOD items processed: {len(vod_entries)}")
     return vod_entries

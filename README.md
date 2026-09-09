@@ -10,7 +10,7 @@ Use these direct raw GitHub URLs in your IPTV client app (e.g., TiviMate, OTT Na
 
 ### 📺 Live TV & Radio Playlist (MYTV + Tonton)
 ```text
-https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/refs/heads/main/playlist.m3u
+https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/playlist.m3u
 ```
 
 ### 🎬 VOD Shows & Movies Playlist

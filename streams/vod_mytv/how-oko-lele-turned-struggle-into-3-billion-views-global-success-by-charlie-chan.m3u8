@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=997348,RESOLUTION=854x480,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/b548ab69-2acc-4dea-a56b-e2cb9534952c/master.smil/480p.mp4_chunk.m3u8?md5=_VKxCf-0lbaoHKGwg34n6A&expires=1788971653
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/how-oko-lele-turned-struggle-into-3-billion-views-global-success-by-charlie-chan-res1.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=1994826,RESOLUTION=1280x720,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/b548ab69-2acc-4dea-a56b-e2cb9534952c/master.smil/720p.mp4_chunk.m3u8?md5=_VKxCf-0lbaoHKGwg34n6A&expires=1788971653
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/how-oko-lele-turned-struggle-into-3-billion-views-global-success-by-charlie-chan-res2.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=2992456,RESOLUTION=1920x1080,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/b548ab69-2acc-4dea-a56b-e2cb9534952c/master.smil/1080p.mp4_chunk.m3u8?md5=_VKxCf-0lbaoHKGwg34n6A&expires=1788971653
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/how-oko-lele-turned-struggle-into-3-billion-views-global-success-by-charlie-chan-res3.m3u8

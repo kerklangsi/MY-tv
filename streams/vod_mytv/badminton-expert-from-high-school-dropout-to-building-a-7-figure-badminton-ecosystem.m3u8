@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=998383,RESOLUTION=854x480,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/dd6d152e-c19a-450c-8cee-0f73842a8c48/master.smil/480p.mp4_chunk.m3u8?md5=vhsypu3vEHIXVLfsimb1Tw&expires=1788971651
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/badminton-expert-from-high-school-dropout-to-building-a-7-figure-badminton-ecosystem-res1.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=1996393,RESOLUTION=1280x720,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/dd6d152e-c19a-450c-8cee-0f73842a8c48/master.smil/720p.mp4_chunk.m3u8?md5=vhsypu3vEHIXVLfsimb1Tw&expires=1788971651
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/badminton-expert-from-high-school-dropout-to-building-a-7-figure-badminton-ecosystem-res2.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=2994045,RESOLUTION=1920x1080,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/dd6d152e-c19a-450c-8cee-0f73842a8c48/master.smil/1080p.mp4_chunk.m3u8?md5=vhsypu3vEHIXVLfsimb1Tw&expires=1788971651
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/badminton-expert-from-high-school-dropout-to-building-a-7-figure-badminton-ecosystem-res3.m3u8
