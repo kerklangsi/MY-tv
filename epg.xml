@@ -56357,9 +56357,6 @@
     <title lang="en">Apartment 212</title>
     <desc lang="en">Escaping an abusive past, Jennifer moves into Apartment 212 for a fresh start, only to wake each day with painful bite marks. She soon discovers an ancient parasite that feeds on human flesh lurking within the walls. As attacks intensify, she must confront a nightmare more terrifying than her past before it consumes her.</desc>
   </programme>
-  <programme start="20260908160000 +0000" stop="20260908163000 +0000" channel="tv3">
-    <title lang="en">NIGHTLINE (2026/2027)</title>
-  </programme>
   <programme start="20260908163000 +0000" stop="20260908173000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
   </programme>
@@ -56467,6 +56464,9 @@
   </programme>
   <programme start="20260909160000 +0000" stop="20260909163000 +0000" channel="tv3">
     <title lang="en">NIGHTLINE (2026/2027)</title>
+  </programme>
+  <programme start="20260909163000 +0000" stop="20260909173000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
   </programme>
   <programme start="20260908160000 +0000" stop="20260908170000 +0000" channel="tv9">
     <title lang="en">KAPTEN KIT</title>

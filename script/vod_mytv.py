@@ -120,36 +120,19 @@ def process_vod_shows(device_id):
             path_dir = parsed_master.path.rsplit('/', 1)[0]
             base_cdn_dir = f"{parsed_master.scheme}://{parsed_master.netloc}{path_dir}/"
             
-            variants = []
+            absolute_master_lines = []
             for line in master_manifest.splitlines():
-                l_str = line.strip()
-                if l_str and not l_str.startswith("#"):
-                    sub_filename = l_str.split('?')[0]
-                    variants.append(sub_filename)
-
-            best_variant_file = variants[-1] if variants else ""
-            if best_variant_file:
-                sub_cdn_url = base_cdn_dir + best_variant_file + fresh_query
-                sub_manifest_raw = fetch_raw_text(sub_cdn_url)
-                fixed_sub_lines = []
-                
-                for s_line in sub_manifest_raw.splitlines():
-                    s_str = s_line.strip()
-                    if s_str and not s_str.startswith("#"):
-                        ts_path_clean = s_str.split('?')[0]
-                        ts_abs_url = base_cdn_dir + ts_path_clean + fresh_query
-                        fixed_sub_lines.append(ts_abs_url)
-                    else:
-                        fixed_sub_lines.append(s_line)
-                
-                master_file_path = f"streams/vod_mytv/{item_slug}.m3u8"
-                with open(master_file_path, "w", encoding="utf-8") as f:
-                    f.write("\n".join(fixed_sub_lines) + "\n")
+                line_str = line.strip()
+                if line_str and not line_str.startswith("#"):
+                    sub_filename = line_str.split('?')[0]
+                    abs_sub_url = base_cdn_dir + sub_filename + fresh_query
+                    absolute_master_lines.append(abs_sub_url)
+                else:
+                    absolute_master_lines.append(line)
                     
-                clean_url = f"{GITHUB_RAW_BASE}/streams/vod_mytv/{item_slug}.m3u8"
-                extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
-                vod_entries.append((extinf, clean_url))
-                print(f"Processed VOD item: {item_title} -> {clean_url}")
+            master_file_path = f"streams/vod_mytv/{item_slug}.m3u8"
+            with open(master_file_path, "w", encoding="utf-8") as f:
+                f.write("\n".join(absolute_master_lines) + "\n")
                 
             clean_url = f"{GITHUB_RAW_BASE}/streams/vod_mytv/{item_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
