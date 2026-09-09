@@ -56852,9 +56852,6 @@
   <programme start="20260914150000 +0000" stop="20260914160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260908150000 +0000" stop="20260908160000 +0000" channel="8tv">
-    <title lang="en">8 E-PULSE 2026</title>
-  </programme>
   <programme start="20260908160000 +0000" stop="20260908170000 +0000" channel="8tv">
     <title lang="en">WONDERLAND OF LOVE</title>
     <desc lang="en">Gu Wan Niang rasa terganggu kerana Li Ni tetap tidak menunjukkan sebarang minat terhadapnya. Dalam pada itu, Liu Cheng Feng yang masih hidup dan telah meloloskan diri dari penjara dan berkomplot dengan puak Jiesuo.</desc>
@@ -56928,9 +56925,9 @@
   <programme start="20260909150000 +0000" stop="20260909160000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
   </programme>
-  <programme start="20260908150000 +0000" stop="20260908160000 +0000" channel="drama-sangat">
-    <title lang="en">AKU BUKAN USTAZAH</title>
-    <desc lang="en">Aminah mula bekerja di Syarikat Tan Sri Hamid. Tan Sri Hamid memujuk Adam untuk masuk kerja dan ambil alih syarikat mereka itu kerana dia sudah bersedia untuk pencen tetapi Adam masih cakap yang dia perlukan sedikit masa lagi.</desc>
+  <programme start="20260909160000 +0000" stop="20260909170000 +0000" channel="8tv">
+    <title lang="en">WONDERLAND OF LOVE</title>
+    <desc lang="en">Cui Yi pulih daripada demensia selepas rawatan oleh Mu Xian He. Sementara itu Gu Xiang telah berpakat dengan seorang pemimpin Jiesuo, iaitu U Luo, untuk membunuh Cui Lin. Sebagai balasan Gu Xiang akan membantu U Luo</desc>
   </programme>
   <programme start="20260908160000 +0000" stop="20260908170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP</title>
@@ -57016,6 +57013,9 @@
     <title lang="en">SEKALI AKU BAHAGIA</title>
     <desc lang="en">Eli terlibat dengan lumba haram dan dibawa ke balai polis. Eli tuduh Delisha yang beritahu tentang segala aktivitinya kepada ibu dan ayah mereka. Kereta Delisha pula terlanggar lori kurier Firas ketika undur. Delisha terkejut Firas tidak marah.</desc>
   </programme>
+  <programme start="20260909160000 +0000" stop="20260909170000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP</title>
+  </programme>
   <programme start="20260908142715 +0000" stop="20260908163950 +0000" channel="fifa">
     <title lang="en">Sweden v Italy | Group G | FIFA Women's World Cup Australia &amp; New Zealand 2023™ | Full Match Replay</title>
     <desc lang="en">Watch the full match replay between Sweden and Italy at Wellington Regional Stadium, Wellington.</desc>
@@ -57080,10 +57080,6 @@
     <title lang="en">Sweden v Italy | Group G | FIFA Women's World Cup Australia &amp; New Zealand 2023™ | Full Match Replay</title>
     <desc lang="en">Watch the full match replay between Sweden and Italy at Wellington Regional Stadium, Wellington.</desc>
   </programme>
-  <programme start="20260908100000 +0000" stop="20260908160000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL Malaysia Season 18: Week 4</title>
-    <desc lang="en">Catch up on all the action from MPL Malaysia Season 18 Week 4 (4 - 6 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship!</desc>
-  </programme>
   <programme start="20260908160000 +0000" stop="20260908220000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 4</title>
     <desc lang="en">Catch up on all the action from MPL Malaysia Season 18 Week 4 (4 - 6 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship!</desc>
@@ -57100,9 +57096,9 @@
     <title lang="en">MPL Malaysia Season 18: Week 4</title>
     <desc lang="en">Catch up on all the action from MPL Malaysia Season 18 Week 4 (4 - 6 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship!</desc>
   </programme>
-  <programme start="20260908153000 +0000" stop="20260908160000 +0000" channel="ntv7">
-    <title lang="en">MARI BERCERITA</title>
-    <desc lang="en">Sebuah rancangan yang akan mengupas novel-novel bagi Bahasa Inggeris dan Bahasa Malaysia dengan lebih mendalam. Episod ini Sharifah Aleya mengupas buku KOMSAS bagi pelajar di Tingkatan 1 yang bertajuk Sejambak Bakti.</desc>
+  <programme start="20260909160000 +0000" stop="20260909220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL Malaysia Season 18: Week 4</title>
+    <desc lang="en">Catch up on all the action from MPL Malaysia Season 18 Week 4 (4 - 6 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship!</desc>
   </programme>
   <programme start="20260908160000 +0000" stop="20260908230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
@@ -57223,6 +57219,9 @@
     <title lang="en">MARI BERCERITA</title>
     <desc lang="en">Sebuah rancangan yang akan mengupas novel-novel bagi Bahasa Inggeris dan Bahasa Malaysia dengan lebih mendalam. Episod ini Nadia Aqilah mengupas buku KOMSAS bagi pelajar di Tingkatan 1 yang bertajuk Pelari Muda.</desc>
   </programme>
+  <programme start="20260909160000 +0000" stop="20260909230000 +0000" channel="ntv7">
+    <title lang="en">HOT FM@ntv7 2026</title>
+  </programme>
   <programme start="20260908100000 +0000" stop="20260908220000 +0000" channel="ppa-kl-cup">
     <title lang="en">PPA Asia 1000 Leapmotor Kuala Lumpur Cup 2026</title>
     <desc lang="en">PPA Tour Asia is heading to Malaysia’s capital. This 9–13 September, the tour lands in the heart of Kuala Lumpur for the Leapmotor Kuala Lumpur Cup — five days of world-class pickleball in one of Southeast Asia’s most electric cities.</desc>
@@ -57283,10 +57282,6 @@
     <title lang="en">PPA Asia 1000 Leapmotor Kuala Lumpur Cup 2026</title>
     <desc lang="en">PPA Tour Asia is heading to Malaysia’s capital. This 9–13 September, the tour lands in the heart of Kuala Lumpur for the Leapmotor Kuala Lumpur Cup — five days of world-class pickleball in one of Southeast Asia’s most electric cities.</desc>
   </programme>
-  <programme start="20260908142500 +0000" stop="20260908155500 +0000" channel="thrill">
-    <title lang="en">A Woman Scorned</title>
-    <desc lang="en">Jas's peaceful countryside getaway with her sister Laura is shattered when a group of drifters attacks them. After Laura is brutally killed, Jas discovers her lifeless body at their rented cabin. Consumed by grief and fury, she vows to hunt down the gang and take vengeance on her sister's murderer.</desc>
-  </programme>
   <programme start="20260908155500 +0000" stop="20260908174500 +0000" channel="thrill">
     <title lang="en">Whisper of Silent Body</title>
     <desc lang="en">Renowned as the "corpse whisperer," forensic pathologist Qin Ming uncovers vital clues from the corpses. During a homicide investigation, he unravels a murder case sixteen years ago in the snowy mountain with his assistant and a detective. Together, they unveil the secrets of the mysterious homicide.</desc>
@@ -57346,10 +57341,6 @@
   <programme start="20260909143500 +0000" stop="20260909160500 +0000" channel="thrill">
     <title lang="en">Rooftop</title>
     <desc lang="en">A group of friends invites Paul to a secret party on their campus rooftop. When a prank accidentally kills Paul, the friends cover up the incident and promised never to disclose it. Paul vows to take revenge by becoming a vicious ghost to haunt them into taking responsibility for their actions.</desc>
-  </programme>
-  <programme start="20260908150000 +0000" stop="20260908160000 +0000" channel="tv3">
-    <title lang="en">PENUNGGU GUNUNG RAYA</title>
-    <desc lang="en">Suatu malam Omar diberitahu tentang terdapatnya harta karun yang ditinggalkan oleh tentera Jepun di perigi kampung itu. Dia telah melarikan kotak yang dipercayai mengandungi jongkong emas tapi sebenarnya jelmaan iblis.</desc>
   </programme>
   <programme start="20260908160000 +0000" stop="20260908163000 +0000" channel="tv3">
     <title lang="en">NIGHTLINE (2026/2027)</title>
@@ -57459,9 +57450,8 @@
     <title lang="en">FIRST LADY</title>
     <desc lang="en">Isteri presiden mendakwa Su Yeon berkomplot mencetus konflik di kilang kimia. Ketegangan memuncak apabila Ji Woo diculik oleh Yang Hoon, yang kini mengugut Su Yeon menyerahkan bukti rakaman audio jenayahnya.</desc>
   </programme>
-  <programme start="20260908153000 +0000" stop="20260908160000 +0000" channel="tv9">
-    <title lang="en">DUNIA TERSEMBUNYI</title>
-    <desc lang="en">Sebuah dokumentari yang menyingkap kisah unik dan menarik di sebalik misteri dan perbezaan adat resam dan cara hidup beberapa puak dan kaum yang wujud di seluruh dunia yang masih diamalkan sehingga hari ini. Bersama hos Raziff Zulkafli.</desc>
+  <programme start="20260909160000 +0000" stop="20260909163000 +0000" channel="tv3">
+    <title lang="en">NIGHTLINE (2026/2027)</title>
   </programme>
   <programme start="20260908160000 +0000" stop="20260908170000 +0000" channel="tv9">
     <title lang="en">KAPTEN KIT</title>
@@ -57577,5 +57567,8 @@
   <programme start="20260909153000 +0000" stop="20260909160000 +0000" channel="tv9">
     <title lang="en">BANG BANG BOOM SEASON 11 &amp; 12</title>
     <desc lang="en">Sebuah program komedi yang dihoskan oleh Amat dan Azahari. Sejak diperkenalkan pada tahun 2007, BANG BANG BOOM! (BBB) sering melakukan pembaharuan dalam memberikan kejutan kepada para peminat setianya.</desc>
+  </programme>
+  <programme start="20260909160000 +0000" stop="20260909170000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
   </programme>
 </tv>
