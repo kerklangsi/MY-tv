@@ -1,0 +1,19 @@
+#EXTM3U x-tvg-url="tonton_epg.xml.gz"
+#EXTINF:-1 tvg-id="mpl-malaysia" tvg-name="MPL Malaysia" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6596743:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="13" group-title="Tonton Live",MPL Malaysia
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/streams/tonton/mpl-malaysia.m3u8
+#EXTINF:-1 tvg-id="tv3" tvg-name="TV3" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420323:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="1" group-title="Tonton Live",TV3
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/streams/tonton/tv3.m3u8
+#EXTINF:-1 tvg-id="ntv7" tvg-name="NTV7" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420324:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="2" group-title="Tonton Live",NTV7
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/streams/tonton/ntv7.m3u8
+#EXTINF:-1 tvg-id="8tv" tvg-name="8TV" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420325:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="3" group-title="Tonton Live",8TV
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/streams/tonton/8tv.m3u8
+#EXTINF:-1 tvg-id="tv9" tvg-name="TV9" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420326:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="4" group-title="Tonton Live",TV9
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/streams/tonton/tv9.m3u8
+#EXTINF:-1 tvg-id="drama-sangat" tvg-name="Drama Sangat" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420342:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="5" group-title="Tonton Live",Drama Sangat
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/streams/tonton/drama-sangat.m3u8
+#EXTINF:-1 tvg-id="thrill" tvg-name="thrill" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6522423:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="9" group-title="Tonton Live",thrill
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/streams/tonton/thrill.m3u8
+#EXTINF:-1 tvg-id="fifa" tvg-name="FIFA+" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6576795:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="11" group-title="Tonton Live",FIFA+
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/streams/tonton/fifa.m3u8
+#EXTINF:-1 tvg-id="ppa-kl-cup" tvg-name="PPA KL Cup" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6613864:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="20" group-title="Tonton Live",PPA KL Cup
+https://raw.githubusercontent.com/kerklangsi/MYtvmana2/main/streams/tonton/ppa-kl-cup.m3u8

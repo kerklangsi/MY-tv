@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=4000000
+https://headend-api.tonton.com.my/v600/api/playback.class.api.php/GOgetLiveConfig/378/1/6596743?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&serviceID=default&appVersion=6.1.7&deviceId=af6d7e02-00f5-48d5-a5e9-d4972fe6ed05&loginToken=
