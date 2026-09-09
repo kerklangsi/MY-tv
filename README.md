@@ -36,43 +36,6 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/epg.xml.gz
 
 ---
 
-## 📁 Directory Structure
-
-```text
-MY-tv/
-├── streams/
-│   ├── live/
-│   │   ├── tv1.m3u8
-│   │   ├── tv2.m3u8
-│   │   └── ...
-│   ├── radio/
-│   │   ├── fly-fm.m3u8
-│   │   ├── hot-fm.m3u8
-│   │   └── ...
-│   ├── tonton/
-│   │   ├── tv3.m3u8
-│   │   ├── ntv7.m3u8
-│   │   ├── 8tv.m3u8
-│   │   ├── tv9.m3u8
-│   │   └── ...
-│   └── vod/
-│       ├── trip-teaser.m3u8
-│       └── ...
-├── playlist.m3u
-├── playlist.m3u8
-├── vod.m3u
-├── vod.m3u8
-├── epg.xml
-├── epg.xml.gz
-├── generate_iptv.py
-├── generate_mytv.py
-├── generate_tonton.py
-├── README.md
-└── .github/workflows/update_iptv.yml
-```
-
----
-
 ## 🛠️ How to Deploy & Enable Auto-Updates
 
 1. Push this repository to your GitHub account:
