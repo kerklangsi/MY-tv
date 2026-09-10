@@ -1,4 +1,4 @@
 __pycache__/
 *.pyc
 scratch/
-streams/vod_*/
+streams/
