@@ -11,7 +11,7 @@ env:
 jobs:
   update-iptv:
     runs-on: self-hosted
-    timeout-minutes: 10
+    timeout-minutes: 3
 
     steps:
       - name: Checkout repository
@@ -26,13 +26,13 @@ jobs:
         run: python3 -m pip install cryptography
 
       - name: Run IPTV Generator
-        timeout-minutes: 8
+        timeout-minutes: 2
         env:
           PYTHONUNBUFFERED: "1"
         run: python3 script/iptv.py
 
       - name: Commit and push changes
-        timeout-minutes: 2
+        timeout-minutes: 1
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
