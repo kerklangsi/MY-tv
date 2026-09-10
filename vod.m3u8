@@ -1035,10 +1035,6 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/sanggar
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/sanggar-vista-ep4.m3u8
 #EXTINF:-1 tvg-id="sanggar-vista-ep3" tvg-name="Sanggar Vista Ep3" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/27d1414f-7ff6-401e-bf0e-dd432772296a/poster_landscape.jpeg" group-title="MYTV Shows",Sanggar Vista Ep3
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/sanggar-vista-ep3.m3u8
-#EXTINF:-1 tvg-id="sanggar-vista-ep2" tvg-name="Sanggar Vista Ep2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/14d46b9a-2168-4efc-8bf2-78469b8ecaa1/poster_landscape.jpeg" group-title="MYTV Shows",Sanggar Vista Ep2
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/sanggar-vista-ep2.m3u8
-#EXTINF:-1 tvg-id="sanggar-vista-ep1" tvg-name="Sanggar Vista Ep1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/71467ead-e4be-4af2-bc3a-87c555c65f80/poster_landscape.jpeg" group-title="MYTV Shows",Sanggar Vista Ep1
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/sanggar-vista-ep1.m3u8
 #EXTINF:-1 tvg-id="kebangkitan-mojo" tvg-name="KEBANGKITAN MOJO" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/308219e6-1204-4b0c-9276-fdd8eb7a3ac4/poster_landscape.png" group-title="MYTV Shows",KEBANGKITAN MOJO
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/kebangkitan-mojo.m3u8
 #EXTINF:-1 tvg-id="imbas-peristiwa" tvg-name="IMBAS PERISTIWA" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/4ea69409-ef18-4dab-a762-d67ab139d6fa/poster_landscape.png" group-title="MYTV Shows",IMBAS PERISTIWA
@@ -1111,8 +1107,6 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/nasi-ka
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/serabai-bahagian-2.m3u8
 #EXTINF:-1 tvg-id="serabai-bahagian-1" tvg-name="Serabai Bahagian 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/20f6d640-ed8a-4b91-960d-33062c11a03f/poster_landscape.png" group-title="MYTV Shows",Serabai Bahagian 1
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/serabai-bahagian-1.m3u8
-#EXTINF:-1 tvg-id="peknga-bahagian-2" tvg-name="Peknga Bahagian 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/e7669db4-2daa-42b5-95af-89e426ba4c1b/poster_landscape.png" group-title="MYTV Shows",Peknga Bahagian 2
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/peknga-bahagian-2.m3u8
 #EXTINF:-1 tvg-id="peknga-bahagian-1" tvg-name="Peknga Bahagian 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/c22f356c-61e3-4277-89d2-9c0e663985e5/poster_landscape.png" group-title="MYTV Shows",Peknga Bahagian 1
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/peknga-bahagian-1.m3u8
 #EXTINF:-1 tvg-id="laksa-beras-bahagian-2" tvg-name="Laksa Beras Bahagian 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/7b32a8ae-d317-4ddd-a85a-8b4103c8f36c/poster_landscape.png" group-title="MYTV Shows",Laksa Beras Bahagian 2
@@ -1125,16 +1119,12 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/roti-su
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/roti-surai-bahagian-1.m3u8
 #EXTINF:-1 tvg-id="nasi-lemuni-bahagian-2" tvg-name="Nasi Lemuni Bahagian 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/03ec45d9-e5d0-47d3-aa7f-b231ef9db80c/poster_landscape.png" group-title="MYTV Shows",Nasi Lemuni Bahagian 2
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/nasi-lemuni-bahagian-2.m3u8
-#EXTINF:-1 tvg-id="nasi-lemuni-bahagian-1" tvg-name="Nasi Lemuni Bahagian 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/f489ee68-6578-4aa0-9adb-4808d2b76365/poster_landscape.png" group-title="MYTV Shows",Nasi Lemuni Bahagian 1
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/nasi-lemuni-bahagian-1.m3u8
 #EXTINF:-1 tvg-id="murtabak" tvg-name="Murtabak" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/db0832a1-43b8-48f2-bd02-c5e16127b8f9/poster_landscape.png" group-title="MYTV Shows",Murtabak
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/murtabak.m3u8
 #EXTINF:-1 tvg-id="ketayap-bahagian-2" tvg-name="Ketayap Bahagian 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/e06a6dc6-3167-4df7-ba87-a594a76c86cc/poster_landscape.png" group-title="MYTV Shows",Ketayap Bahagian 2
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/ketayap-bahagian-2.m3u8
 #EXTINF:-1 tvg-id="ketayap-bahagian-1" tvg-name="Ketayap Bahagian 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/1ce7c6a5-4368-4c10-9a1d-cc7610eb9dd8/poster_landscape.png" group-title="MYTV Shows",Ketayap Bahagian 1
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/ketayap-bahagian-1.m3u8
-#EXTINF:-1 tvg-id="char-kuey-teow-bahagian-1" tvg-name="Char Kuey Teow Bahagian 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/92687b56-eea5-4b6e-be8a-bf4cc3019a8d/poster_landscape.png" group-title="MYTV Shows",Char Kuey Teow Bahagian 1
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/char-kuey-teow-bahagian-1.m3u8
 #EXTINF:-1 tvg-id="dangai-bahagian-2" tvg-name="Dangai Bahagian 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/cf90ece4-a4b3-4143-aaf5-e7f4084ce7db/poster_landscape.png" group-title="MYTV Shows",Dangai Bahagian 2
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/dangai-bahagian-2.m3u8
 #EXTINF:-1 tvg-id="dangai-bahagian-1" tvg-name="Dangai Bahagian 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/b5d16c28-c4ee-4204-b946-8e93ed4a5cfd/poster_landscape.png" group-title="MYTV Shows",Dangai Bahagian 1
@@ -1143,16 +1133,10 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/dangai-
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/nasi-dalca-bahagian-2.m3u8
 #EXTINF:-1 tvg-id="nasi-dalca-bahagian-1" tvg-name="Nasi Dalca Bahagian 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/91c957e8-6bb1-4479-8ad7-a30939200fa9/poster_landscape.png" group-title="MYTV Shows",Nasi Dalca Bahagian 1
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/nasi-dalca-bahagian-1.m3u8
-#EXTINF:-1 tvg-id="resepi-tok-perlis-ep-11" tvg-name="Resepi Tok Perlis Ep 11" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/edee2eb7-b72b-4768-8881-61e6fb184ad5/poster_landscape.png" group-title="MYTV Shows",Resepi Tok Perlis Ep 11
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/resepi-tok-perlis-ep-11.m3u8
 #EXTINF:-1 tvg-id="resepi-tok-perlis-ep-10" tvg-name="Resepi Tok Perlis Ep 10" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/330b3a2f-fc54-4044-b16b-c657f6980543/poster_landscape.png" group-title="MYTV Shows",Resepi Tok Perlis Ep 10
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/resepi-tok-perlis-ep-10.m3u8
 #EXTINF:-1 tvg-id="resepi-tok-perlis-ep-9" tvg-name="Resepi Tok Perlis Ep 9" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/b3c29100-9518-4373-8436-50c132a5c834/poster_landscape.png" group-title="MYTV Shows",Resepi Tok Perlis Ep 9
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/resepi-tok-perlis-ep-9.m3u8
-#EXTINF:-1 tvg-id="resepi-tok-perlis-ep-8" tvg-name="Resepi Tok Perlis Ep 8" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/928a11d5-79a4-49e9-af3d-08ac3ac0ce7d/poster_landscape.png" group-title="MYTV Shows",Resepi Tok Perlis Ep 8
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/resepi-tok-perlis-ep-8.m3u8
-#EXTINF:-1 tvg-id="resepi-tok-perlis-ep-7" tvg-name="Resepi Tok Perlis Ep 7" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/4b8a3e3f-80cd-4305-a27c-6b84fa903f24/poster_landscape.png" group-title="MYTV Shows",Resepi Tok Perlis Ep 7
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/resepi-tok-perlis-ep-7.m3u8
 #EXTINF:-1 tvg-id="resepi-tok-perlis-ep-6" tvg-name="Resepi Tok Perlis Ep 6" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/db1e8c25-b43e-4f53-9736-338715984f2d/poster_landscape.png" group-title="MYTV Shows",Resepi Tok Perlis Ep 6
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/resepi-tok-perlis-ep-6.m3u8
 #EXTINF:-1 tvg-id="resepi-tok-perlis-ep-5" tvg-name="Resepi Tok Perlis Ep 5" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/28b7a778-4334-4125-8ccd-bb6763d69210/poster_landscape.png" group-title="MYTV Shows",Resepi Tok Perlis Ep 5
@@ -1185,30 +1169,16 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/re-thin
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/re-think-ep-5.m3u8
 #EXTINF:-1 tvg-id="re-think-ep-4" tvg-name="Re-Think! Ep 4" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/4df955c8-130b-4004-9830-a1d5a41167d5/poster_landscape.png" group-title="MYTV Shows",Re-Think! Ep 4
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/re-think-ep-4.m3u8
-#EXTINF:-1 tvg-id="re-think-ep-3" tvg-name="Re-Think! Ep 3" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/bc501a0d-cf84-4877-9e6d-b04100a67ffe/poster_landscape.png" group-title="MYTV Shows",Re-Think! Ep 3
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/re-think-ep-3.m3u8
 #EXTINF:-1 tvg-id="re-think-ep-2" tvg-name="Re-Think! Ep 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/fc27d363-6945-477d-a2ee-7eb71441cb9d/poster_landscape.png" group-title="MYTV Shows",Re-Think! Ep 2
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/re-think-ep-2.m3u8
-#EXTINF:-1 tvg-id="re-think-ep-1" tvg-name="Re-Think! Ep 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/e3eb05b8-1d19-4d12-a99e-1a181ef5643e/poster_landscape.png" group-title="MYTV Shows",Re-Think! Ep 1
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/re-think-ep-1.m3u8
-#EXTINF:-1 tvg-id="puaka-6-adeep-nahar" tvg-name="Puaka 6 - Adeep Nahar" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/5135c678-381c-476e-ae92-d8f9ae9e9e90/poster_landscape.jpeg" group-title="MYTV Shows",Puaka 6 - Adeep Nahar
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/puaka-6-adeep-nahar.m3u8
-#EXTINF:-1 tvg-id="puaka-5-anne-idris" tvg-name="Puaka 5 - Anne Idris" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3f878968-4de1-4a27-b220-2c1761c9220d/poster_landscape.jpeg" group-title="MYTV Shows",Puaka 5 - Anne Idris
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/puaka-5-anne-idris.m3u8
 #EXTINF:-1 tvg-id="puaka-4-syaffiq-sahli-bosswan" tvg-name="Puaka 4 - Syaffiq Sahli & Bosswan" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/0f041008-bc5d-4390-b78a-5590621c4324/poster_landscape.jpeg" group-title="MYTV Shows",Puaka 4 - Syaffiq Sahli & Bosswan
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/puaka-4-syaffiq-sahli-bosswan.m3u8
 #EXTINF:-1 tvg-id="puaka-3-ellie-suriaty" tvg-name="Puaka 3 - Ellie Suriaty" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/0560101e-994b-4cb1-9e4c-2d3558daa351/poster_landscape.jpeg" group-title="MYTV Shows",Puaka 3 - Ellie Suriaty
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/puaka-3-ellie-suriaty.m3u8
-#EXTINF:-1 tvg-id="puaka-2-hasnul-rahmat" tvg-name="Puaka 2 - Hasnul Rahmat" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3ea3d122-6482-4563-b1c0-9028980161ab/poster_landscape.jpeg" group-title="MYTV Shows",Puaka 2 - Hasnul Rahmat
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/puaka-2-hasnul-rahmat.m3u8
 #EXTINF:-1 tvg-id="puaka-1-khatijah-tan" tvg-name="Puaka 1 - Khatijah Tan" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/7f63361b-56ae-4407-9c58-b69b2575eafa/poster_landscape.jpeg" group-title="MYTV Shows",Puaka 1 - Khatijah Tan
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/puaka-1-khatijah-tan.m3u8
 #EXTINF:-1 tvg-id="kampung-atas-air-paling-best-di-labuan-kg-patau-patau" tvg-name="Kampung Atas Air Paling Best di Labuan – Kg. Patau-Patau" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/85543868-0fd9-4a17-86ec-5f799ca02f36/poster_landscape.jpeg" group-title="MYTV Shows",Kampung Atas Air Paling Best di Labuan – Kg. Patau-Patau
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/kampung-atas-air-paling-best-di-labuan-kg-patau-patau.m3u8
-#EXTINF:-1 tvg-id="air-terjun-3-sisters-port-healing-dunia-paling-cantik-di-sarawak" tvg-name="Air Terjun 3 Sisters, Port Healing Dunia Paling Cantik di Sarawak!" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/9d9950ed-16e1-434f-a206-3d2f48dd7923/poster_landscape.jpeg" group-title="MYTV Shows",Air Terjun 3 Sisters, Port Healing Dunia Paling Cantik di Sarawak!
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/air-terjun-3-sisters-port-healing-dunia-paling-cantik-di-sarawak.m3u8
-#EXTINF:-1 tvg-id="kampung-paling-best-di-sarawak-yang-jarang-orang-pergi-long-san" tvg-name="Kampung Paling Best di Sarawak Yang Jarang Orang Pergi – Long San" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/dd5ccefd-8c17-4cb5-8e7e-dae1002dae07/poster_landscape.jpeg" group-title="MYTV Shows",Kampung Paling Best di Sarawak Yang Jarang Orang Pergi – Long San
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/kampung-paling-best-di-sarawak-yang-jarang-orang-pergi-long-san.m3u8
 #EXTINF:-1 tvg-id="rumah-panjang-tradisi-terakhir-iban-tersembunyi-di-nanga-kesit" tvg-name="Rumah Panjang Tradisi Terakhir Iban Tersembunyi di Nanga Kesit" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/8f4f4f6b-66f9-4b36-a10c-f03e53b0221d/poster_landscape.jpeg" group-title="MYTV Shows",Rumah Panjang Tradisi Terakhir Iban Tersembunyi di Nanga Kesit
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/rumah-panjang-tradisi-terakhir-iban-tersembunyi-di-nanga-kesit.m3u8
 #EXTINF:-1 tvg-id="ini-sebab-kenapa-sarawak-port-healing-terbaik-malaysia" tvg-name="Ini Sebab Kenapa Sarawak Port Healing Terbaik Malaysia" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/17032e66-b3ce-46dd-a485-a47c63c495df/poster_landscape.jpeg" group-title="MYTV Shows",Ini Sebab Kenapa Sarawak Port Healing Terbaik Malaysia
@@ -1275,16 +1245,10 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pit-sto
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pit-stop-negeri-sembilan.m3u8
 #EXTINF:-1 tvg-id="my-ramadan-in-palestine-and-malaysia" tvg-name="My Ramadan in Palestine and Malaysia" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/8f5cc6bf-3440-45ef-b1d9-dc1e95915ac6/poster_landscape.png" group-title="MYTV Shows",My Ramadan in Palestine and Malaysia
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/my-ramadan-in-palestine-and-malaysia.m3u8
-#EXTINF:-1 tvg-id="belajarlah-dari-kesilapan-bersama-ybhg-dato-dr-mashitah-ibrahim" tvg-name="'Belajarlah Dari Kesilapan' bersama YBhg. Dato' Dr. Mashitah Ibrahim" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/ee4991f2-2289-44ad-a198-c379ae216677/poster_landscape.png" group-title="MYTV Shows",'Belajarlah Dari Kesilapan' bersama YBhg. Dato' Dr. Mashitah Ibrahim
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/belajarlah-dari-kesilapan-bersama-ybhg-dato-dr-mashitah-ibrahim.m3u8
 #EXTINF:-1 tvg-id="valli-thirumanam" tvg-name="Valli Thirumanam" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/db9df8f2-647a-43c3-85ac-6e3ef26e722d/poster_landscape.jpeg" group-title="MYTV Shows",Valli Thirumanam
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/valli-thirumanam.m3u8
 #EXTINF:-1 tvg-id="thillana-mohanambal" tvg-name="Thillana Mohanambal" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/760f2422-a3f3-4b2f-94bd-eeaac99a10d0/poster_landscape.jpeg" group-title="MYTV Shows",Thillana Mohanambal
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/thillana-mohanambal.m3u8
-#EXTINF:-1 tvg-id="shiva-thandavom" tvg-name="Shiva Thandavom" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3597b089-e432-4a94-b3ac-3d1ef5113f91/poster_landscape.png" group-title="MYTV Shows",Shiva Thandavom
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/shiva-thandavom.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-16" tvg-name="Pemerindang Borneo S2 Ep 16" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/941043a1-1417-4b61-ab33-b3a469effa8f/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 16
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-16.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-15" tvg-name="Pemerindang Borneo S2 Ep 15" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/d2da1054-092d-4a7e-8ea3-7ea1f812aa19/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 15
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-15.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-14" tvg-name="Pemerindang Borneo S2 Ep 14" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/a7d34916-5fa6-4efc-9132-9788eabd1339/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 14
@@ -1297,28 +1261,16 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerin
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-11.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-10" tvg-name="Pemerindang Borneo S2 Ep 10" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/b04a228d-b8c9-46a2-b866-19dc48b9d187/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 10
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-10.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-9" tvg-name="Pemerindang Borneo S2 Ep 9" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/6431da85-234c-4eb7-8733-356e7d776161/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 9
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-9.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-8" tvg-name="Pemerindang Borneo S2 Ep 8" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/be89f191-14d8-43c1-bad5-57aefc822bb3/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 8
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-8.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-7" tvg-name="Pemerindang Borneo S2 Ep 7" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/7c5ccefb-79e7-4120-9129-16ff280ef42d/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 7
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-7.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-6" tvg-name="Pemerindang Borneo S2 Ep 6" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/9f6a5d3f-3dc1-4529-a32a-1f99a604704d/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 6
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-6.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-5" tvg-name="Pemerindang Borneo S2 Ep 5" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/790141ad-27ae-418f-b95c-5c156a026f8a/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 5
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-5.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-4" tvg-name="Pemerindang Borneo S2 Ep 4" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/c725cd87-0ac9-49de-8335-edd5b38beda5/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 4
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-4.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-3" tvg-name="Pemerindang Borneo S2 Ep 3" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/e69cafa5-7a5f-4e71-8e85-23f6885d3d3e/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 3
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-3.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-2" tvg-name="Pemerindang Borneo S2 Ep 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/ac4bfe6e-f58b-4736-b65e-f2fd38f173dd/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 2
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-2.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-s2-ep-1" tvg-name="Pemerindang Borneo S2 Ep 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/8f870b12-b777-4a2e-abae-24a15dde36bf/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo S2 Ep 1
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-s2-ep-1.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-ep-13" tvg-name="Pemerindang Borneo Ep 13" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/41e4f669-a908-4600-8308-4c66ab55175f/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 13
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-13.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-ep-12" tvg-name="Pemerindang Borneo Ep 12" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/dffee3ed-9537-47d7-9f37-398f75e816c1/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 12
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-12.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-ep-11" tvg-name="Pemerindang Borneo Ep 11" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/d7ea2485-a592-4fc6-b8d0-39e407ebb866/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 11
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-11.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-ep-10" tvg-name="Pemerindang Borneo Ep 10" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/6c5e9691-8ba9-4551-b9ee-54dc66b3de70/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 10
@@ -1331,60 +1283,36 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerin
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-7.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-ep-6" tvg-name="Pemerindang Borneo Ep 6" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/e8260138-b9cf-4956-9b02-2a65b11c70a5/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 6
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-6.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-ep-5" tvg-name="Pemerindang Borneo Ep 5" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/bd18e505-6981-4621-a462-4a21456c8f3a/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 5
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-5.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-ep-4" tvg-name="Pemerindang Borneo Ep 4" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/b89b1db2-5e24-4e8c-903f-47f64cb2aee0/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 4
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-4.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-ep-3" tvg-name="Pemerindang Borneo Ep 3" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/bbe7d559-a769-4277-9717-2d1f14738cb9/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 3
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-3.m3u8
 #EXTINF:-1 tvg-id="pemerindang-borneo-ep-2" tvg-name="Pemerindang Borneo Ep 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/632deaea-496f-4f69-b47b-792dd911053d/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 2
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-2.m3u8
-#EXTINF:-1 tvg-id="pemerindang-borneo-ep-1" tvg-name="Pemerindang Borneo Ep 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/25ecb9dc-0849-4cc0-a167-697debb20110/poster_landscape.jpeg" group-title="MYTV Shows",Pemerindang Borneo Ep 1
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pemerindang-borneo-ep-1.m3u8
 #EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-13" tvg-name="Pejalai Kamek Orang Ep 13" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/09a8ce6a-2f94-4cf4-b8e5-f8d2fdb9e9e8/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 13
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-13.m3u8
-#EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-12" tvg-name="Pejalai Kamek Orang Ep 12" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/6e6182f2-a09a-442c-b8dd-8d917677a7bc/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 12
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-12.m3u8
 #EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-11" tvg-name="Pejalai Kamek Orang Ep 11" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/ab488e7c-593a-4d36-8e6f-d3e25826998a/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 11
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-11.m3u8
-#EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-10" tvg-name="Pejalai Kamek Orang Ep 10" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/280adc27-88eb-4b29-bd3e-216ef01973ec/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 10
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-10.m3u8
 #EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-9" tvg-name="Pejalai Kamek Orang Ep 9" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/86ea0f02-7173-4c7f-9492-f160d496c2f2/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 9
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-9.m3u8
 #EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-8" tvg-name="Pejalai Kamek Orang Ep 8" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/533a1421-ceaa-40fb-9d0a-b0dfd226e0eb/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 8
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-8.m3u8
 #EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-7" tvg-name="Pejalai Kamek Orang Ep 7" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/7be698b0-7fbe-481c-b44a-6e7e9a11bbf6/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 7
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-7.m3u8
-#EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-6" tvg-name="Pejalai Kamek Orang Ep 6" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/524f4654-ad0e-4f13-81b2-166f73d0bcae/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 6
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-6.m3u8
 #EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-5" tvg-name="Pejalai Kamek Orang Ep 5" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/35de1061-03d5-49e6-aa31-d49b59a3e4f9/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 5
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-5.m3u8
-#EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-4" tvg-name="Pejalai Kamek Orang Ep 4" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/73742d21-08f8-4dcf-bcc5-18eecdc41ef8/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 4
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-4.m3u8
-#EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-3" tvg-name="Pejalai Kamek Orang Ep 3" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/d45a4ae8-b779-4c67-941a-ab0c8e9a9a7a/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 3
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-3.m3u8
 #EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-2" tvg-name="Pejalai Kamek Orang Ep 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/780681d7-9786-47c5-a783-b3b944238e3f/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 2
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-2.m3u8
 #EXTINF:-1 tvg-id="pejalai-kamek-orang-ep-1" tvg-name="Pejalai Kamek Orang Ep 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/faa2382e-5521-4981-ab4d-707c8edb60b2/poster_landscape.jpeg" group-title="MYTV Shows",Pejalai Kamek Orang Ep 1
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pejalai-kamek-orang-ep-1.m3u8
 #EXTINF:-1 tvg-id="8-kereta-bakal-masuk-malaysia-pada-2023" tvg-name="8 Kereta Bakal Masuk Malaysia Pada 2023" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/56ee432e-de23-496c-bdeb-a692eecf21b7/poster_landscape.png" group-title="MYTV Shows",8 Kereta Bakal Masuk Malaysia Pada 2023
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/8-kereta-bakal-masuk-malaysia-pada-2023.m3u8
-#EXTINF:-1 tvg-id="bmw-ix40-review" tvg-name="BMW iX40 Review" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/520a3717-4546-4b6a-832e-2a42c91bccb6/poster_landscape.png" group-title="MYTV Shows",BMW iX40 Review
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/bmw-ix40-review.m3u8
 #EXTINF:-1 tvg-id="bmw-x5-2020-review" tvg-name="BMW X5 2020 Review" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/5fec4f32-69a7-49b9-ad39-c42d0c016bb9/poster_landscape.png" group-title="MYTV Shows",BMW X5 2020 Review
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/bmw-x5-2020-review.m3u8
 #EXTINF:-1 tvg-id="bmw-x740i-review" tvg-name="BMW X740i Review" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/52a91038-b9be-471b-9787-e36ebd30279e/poster_landscape.png" group-title="MYTV Shows",BMW X740i Review
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/bmw-x740i-review.m3u8
-#EXTINF:-1 tvg-id="chery-omoda-5-preview" tvg-name="Chery Omoda 5 Preview" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3d1fe810-264a-4088-886f-bad6e3e6b3c6/poster_landscape.png" group-title="MYTV Shows",Chery Omoda 5 Preview
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/chery-omoda-5-preview.m3u8
-#EXTINF:-1 tvg-id="citroen-c4-space-tourer-review" tvg-name="Citroen C4 Space Tourer Review" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3bd6bacc-d390-4692-a551-071e0d4d8535/poster_landscape.png" group-title="MYTV Shows",Citroen C4 Space Tourer Review
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/citroen-c4-space-tourer-review.m3u8
 #EXTINF:-1 tvg-id="ducati-panigale-v2-review" tvg-name="Ducati Panigale V2 Review" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/ce9cef70-849b-41be-967b-77a2c111cf07/poster_landscape.png" group-title="MYTV Shows",Ducati Panigale V2 Review
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/ducati-panigale-v2-review.m3u8
 #EXTINF:-1 tvg-id="ferrari-812-gts-review" tvg-name="Ferrari 812 GTS Review" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/6d230be8-743b-4a7a-abf1-4cbe50720ca9/poster_landscape.png" group-title="MYTV Shows",Ferrari 812 GTS Review
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/ferrari-812-gts-review.m3u8
-#EXTINF:-1 tvg-id="hyundai-sonata-pandu-laju-bersama-rhys-william" tvg-name="Hyundai Sonata Pandu Laju Bersama Rhys William" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/36952dc0-2a4c-4069-936d-f8fff014b823/poster_landscape.png" group-title="MYTV Shows",Hyundai Sonata Pandu Laju Bersama Rhys William
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/hyundai-sonata-pandu-laju-bersama-rhys-william.m3u8
 #EXTINF:-1 tvg-id="jmc-vigus-pro-review" tvg-name="JMC Vigus Pro Review" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/57ec616e-1fbd-4136-89e0-de765dcfbe70/poster_landscape.png" group-title="MYTV Shows",JMC Vigus Pro Review
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/jmc-vigus-pro-review.m3u8
 #EXTINF:-1 tvg-id="legasi-proton-saga" tvg-name="Legasi Proton Saga" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/c94e4676-381e-48fa-9801-f26c67cf1b64/poster_landscape.png" group-title="MYTV Shows",Legasi Proton Saga
@@ -1407,8 +1335,6 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/nissan-
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/palestine-the-untold-story-part-2.m3u8
 #EXTINF:-1 tvg-id="palestine-the-untold-story-part-1" tvg-name="Palestine: The Untold Story (Part 1)" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/24552d0a-53ee-43c3-8fe1-1e8dbe527977/poster_landscape.jpeg" group-title="MYTV Shows",Palestine: The Untold Story (Part 1)
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/palestine-the-untold-story-part-1.m3u8
-#EXTINF:-1 tvg-id="orangfemes-ep04" tvg-name="OrangFemes EP04" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/05e98d02-876b-417e-94ec-b5e7d23ac252/poster_landscape.jpeg" group-title="MYTV Shows",OrangFemes EP04
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/orangfemes-ep04.m3u8
 #EXTINF:-1 tvg-id="orangfemes-ep03" tvg-name="OrangFemes EP03" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/5a8d7f11-db36-47b0-968a-acd2de0e1364/poster_landscape.jpeg" group-title="MYTV Shows",OrangFemes EP03
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/orangfemes-ep03.m3u8
 #EXTINF:-1 tvg-id="orangfemes-ep02" tvg-name="OrangFemes EP02" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/21b50bf6-5999-4ddd-89d9-94c248b2cb1e/poster_landscape.jpeg" group-title="MYTV Shows",OrangFemes EP02
@@ -3647,6 +3573,8 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/berebut
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/pulangkan-makanan-saya-ep-16.m3u8
 #EXTINF:-1 tvg-id="parasaurolophus-yang-cantik-ep-15" tvg-name="Parasaurolophus Yang Cantik Ep 15" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/8d609650-87f0-4321-a992-9d5dd160c219/poster_landscape.png" group-title="MYTV Shows",Parasaurolophus Yang Cantik Ep 15
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/parasaurolophus-yang-cantik-ep-15.m3u8
+#EXTINF:-1 tvg-id="raptor-yang-nakal-ep-14" tvg-name="Raptor Yang Nakal Ep 14" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/92c37cc8-39ea-4938-a47a-8bd5121e7917/poster_landscape.jpeg" group-title="MYTV Shows",Raptor Yang Nakal Ep 14
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/raptor-yang-nakal-ep-14.m3u8
 #EXTINF:-1 tvg-id="kenapa-kita-tak-boleh-bergerak-ep-13" tvg-name="Kenapa KITA.. Tak Boleh Bergerak ? Ep 13" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3e136cb6-b7a1-443b-8044-5a267e4a422d/poster_landscape.png" group-title="MYTV Shows",Kenapa KITA.. Tak Boleh Bergerak ? Ep 13
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/kenapa-kita-tak-boleh-bergerak-ep-13.m3u8
 #EXTINF:-1 tvg-id="dewan-latihan-yang-mistik-ep-12" tvg-name="Dewan Latihan Yang Mistik Ep 12" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/f2707b39-fe84-49c8-b9f0-464bae8441b0/poster_landscape.png" group-title="MYTV Shows",Dewan Latihan Yang Mistik Ep 12
