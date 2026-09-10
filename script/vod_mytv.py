@@ -117,6 +117,7 @@ def cleanup_stale_files(base_directory, active_files_set):
     if not os.path.exists(base_directory):
         return
     deleted_count = 0
+    deleted_dirs_count = 0
     for root, dirs, files in os.walk(base_directory, topdown=False):
         for fname in files:
             if fname.endswith(".m3u8"):
@@ -125,16 +126,15 @@ def cleanup_stale_files(base_directory, active_files_set):
                     if os.path.exists(full_path):
                         os.chmod(full_path, stat.S_IWRITE)
                         os.remove(full_path)
-                        print(f"[Deleted] Removed deleted provider file: {full_path}", flush=True)
                         deleted_count += 1
         for dname in dirs:
             dir_path = os.path.join(root, dname)
             if os.path.exists(dir_path) and not os.listdir(dir_path):
                 os.chmod(dir_path, stat.S_IWRITE)
                 os.rmdir(dir_path)
-                print(f"[Deleted] Removed empty folder: {dir_path}", flush=True)
-    if deleted_count > 0:
-        print(f"Cleaned up {deleted_count} stale/deleted files from {base_directory}.", flush=True)
+                deleted_dirs_count += 1
+    if deleted_count > 0 or deleted_dirs_count > 0:
+        print(f"Cleaned up {deleted_count} stale/deleted files and {deleted_dirs_count} empty folders from {base_directory}.", flush=True)
 
 def process_vod_shows(device_id):
     print("\n--- Processing MYTV VOD Shows & Movies ---")
@@ -163,6 +163,15 @@ def process_vod_shows(device_id):
 
     print(f"Loaded {len(official_series_index)} official series from mana2.my index.", flush=True)
 
+    # Build title keyword mapping from official series index (fast resolution without 2,497 HTTP calls)
+    official_title_keywords = []
+    for s_id, s_info in official_series_index.items():
+        raw_lower = s_info['raw_title'].lower().strip()
+        raw_clean = re.sub(r'\s+[-:\s]*(?:S|Season|Siri)\s*\d+$', '', raw_lower, flags=re.IGNORECASE)
+        if len(raw_clean) >= 3:
+            official_title_keywords.append((raw_clean, s_info['clean_slug']))
+    official_title_keywords.sort(key=lambda x: len(x[0]), reverse=True)
+
     shows = []
     page = 1
     limit = 50
@@ -181,19 +190,14 @@ def process_vod_shows(device_id):
         page += 1
 
     print(f"Total MYTV VOD items found: {len(shows)}")
-    print("Resolving series metadata and grouping episodes...", flush=True)
 
     os.makedirs("streams/vod_mytv", exist_ok=True)
 
-    # Pass 1: Resolve show slug for each item and count episodes per show
+    # Pass 1: Fast resolve series/movie subfolder for each item
     valid_items = []
     slug_counts = defaultdict(int)
 
-    for idx, item in enumerate(shows, 1):
-        if idx % 250 == 0 or idx == len(shows):
-            print(f"  [Pass 1/2] Resolving series metadata: {idx}/{len(shows)} items...", flush=True)
-
-        item_id = item['id']
+    for item in shows:
         item_title = item.get('title', 'Unknown Show')
         if is_teaser_or_trailer(item_title):
             continue
@@ -204,16 +208,13 @@ def process_vod_shows(device_id):
 
         subfolder = None
         if item_type == 'episode':
-            detail_res = http_get(f"{BASE_API}/public/content/{item_id}")
-            series_info = detail_res.get('data', {}).get('series')
-            if series_info and series_info.get('id') in official_series_index:
-                subfolder = official_series_index[series_info['id']]['clean_slug']
-            elif series_info and series_info.get('title'):
-                series_title = series_info.get('title')
-                subfolder = get_vod_subfolder(series_title, item_type)
-                if subfolder == 'movie':
-                    subfolder = slugify(series_title)
-                    subfolder = re.sub(r'-(?:s|season|siri)-?\d+$', '', subfolder, flags=re.IGNORECASE)
+            t_lower = item_title.lower()
+            for kw_raw, kw_slug in official_title_keywords:
+                if kw_raw in t_lower:
+                    subfolder = kw_slug
+                    break
+            if not subfolder:
+                subfolder = get_vod_subfolder(item_title, item_type)
 
         if not subfolder or subfolder == 'movie':
             subfolder = get_vod_subfolder(item_title, item_type)
@@ -224,79 +225,86 @@ def process_vod_shows(device_id):
         valid_items.append((item, subfolder))
         slug_counts[subfolder] += 1
 
-    # Pass 2: Generate VOD files. If a show folder has < 2 items, place under 'movie' so show folders are never alone!
-    vod_entries = []
-    used_vod_slugs = set()
-    active_files_set = set()
-
-    for idx, (item, prelim_subfolder) in enumerate(valid_items, 1):
-        item_id = item['id']
-        item_title = item.get('title', 'Unknown Show')
-        item_type = item.get('contentType', 'movie')
-        item_poster = item.get('posterLandscapeUrl') or item.get('posterPortraitUrl') or item.get('bannerUrl') or ''
-        
-        # Enforce rule: if a show has only 1 episode across catalog, store in 'movie' so show folders are not alone
+    # Pass 2: Group by series/movies subfolder and process items
+    items_by_subfolder = defaultdict(list)
+    for item, prelim_subfolder in valid_items:
         subfolder = prelim_subfolder
         if subfolder != 'movie' and slug_counts[subfolder] < 2:
             subfolder = 'movie'
+        items_by_subfolder[subfolder].append(item)
 
+    vod_entries = []
+    used_vod_slugs = set()
+    active_files_set = set()
+    total_subfolders = len(items_by_subfolder)
+
+    for idx, (subfolder, sub_items) in enumerate(sorted(items_by_subfolder.items()), 1):
         folder_path = f"streams/vod_mytv/{subfolder}"
         os.makedirs(folder_path, exist_ok=True)
-
-        title_slug = slugify(item_title)
-        base_slug = title_slug if title_slug else (item.get('slug') or item_id)
-            
-        item_slug = base_slug
-        if item_slug in used_vod_slugs:
-            item_slug = f"{base_slug}-{item_id}"
-        used_vod_slugs.add(item_slug)
-
         group_title = 'MYTV Shows' if subfolder != 'movie' else 'MYTV Movies'
+        updated_count = 0
+        kept_count = 0
 
-        play_payload = {
-            "contentId": item_id,
-            "deviceId": device_id,
-            "protocol": "hls",
-            "context": {
-                "deviceType": "web",
-                "app": "mytv-web",
-                "appVersion": "0.1.0",
-                "os": "Windows",
-                "network": "wifi"
+        for item in sub_items:
+            item_id = item['id']
+            item_title = item.get('title', 'Unknown Show')
+            item_poster = item.get('posterLandscapeUrl') or item.get('posterPortraitUrl') or item.get('bannerUrl') or ''
+
+            title_slug = slugify(item_title)
+            base_slug = title_slug if title_slug else (item.get('slug') or item_id)
+            item_slug = base_slug
+            if item_slug in used_vod_slugs:
+                item_slug = f"{base_slug}-{item_id}"
+            used_vod_slugs.add(item_slug)
+
+            play_payload = {
+                "contentId": item_id,
+                "deviceId": device_id,
+                "protocol": "hls",
+                "context": {
+                    "deviceType": "web",
+                    "app": "mytv-web",
+                    "appVersion": "0.1.0",
+                    "os": "Windows",
+                    "network": "wifi"
+                }
             }
-        }
-        
-        play_res = http_post(f"{BASE_API}/public/streaming/play", play_payload)
-        signed_stream_url = play_res.get('data', {}).get('playbackUrl', '')
-        master_file_path = f"{folder_path}/{item_slug}.m3u8"
-        active_files_set.add(os.path.normpath(master_file_path))
-        status_str = "Skipped"
-
-        if signed_stream_url:
-            master_manifest = fetch_raw_text(signed_stream_url)
-            parsed_master = urlparse(signed_stream_url)
-            fresh_query = f"?{parsed_master.query}" if parsed_master.query else ""
-            path_dir = parsed_master.path.rsplit('/', 1)[0]
-            base_cdn_dir = f"{parsed_master.scheme}://{parsed_master.netloc}{path_dir}/"
             
-            absolute_master_lines = []
-            for line in master_manifest.splitlines():
-                line_str = line.strip()
-                if line_str and not line_str.startswith("#"):
-                    sub_filename = line_str.split('?')[0]
-                    abs_sub_url = base_cdn_dir + sub_filename + fresh_query
-                    absolute_master_lines.append(abs_sub_url)
-                else:
-                    absolute_master_lines.append(line)
-                    
-            new_manifest_content = "\n".join(absolute_master_lines) + "\n"
-            updated = write_if_changed(master_file_path, new_manifest_content)
-            status_str = "Updated" if updated else "Kept (Unchanged)"
+            play_res = http_post(f"{BASE_API}/public/streaming/play", play_payload)
+            signed_stream_url = play_res.get('data', {}).get('playbackUrl', '')
+            master_file_path = f"{folder_path}/{item_slug}.m3u8"
+            active_files_set.add(os.path.normpath(master_file_path))
+
+            if signed_stream_url:
+                master_manifest = fetch_raw_text(signed_stream_url)
+                parsed_master = urlparse(signed_stream_url)
+                fresh_query = f"?{parsed_master.query}" if parsed_master.query else ""
+                path_dir = parsed_master.path.rsplit('/', 1)[0]
+                base_cdn_dir = f"{parsed_master.scheme}://{parsed_master.netloc}{path_dir}/"
                 
-        clean_url = f"{GITHUB_RAW_BASE}/{folder_path}/{item_slug}.m3u8"
-        extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
-        vod_entries.append((extinf, clean_url))
-        print(f"[{idx}/{len(valid_items)}] [{status_str}] Processed VOD item: {item_title} -> {clean_url}", flush=True)
+                absolute_master_lines = []
+                for line in master_manifest.splitlines():
+                    line_str = line.strip()
+                    if line_str and not line_str.startswith("#"):
+                        sub_filename = line_str.split('?')[0]
+                        abs_sub_url = base_cdn_dir + sub_filename + fresh_query
+                        absolute_master_lines.append(abs_sub_url)
+                    else:
+                        absolute_master_lines.append(line)
+                        
+                new_manifest_content = "\n".join(absolute_master_lines) + "\n"
+                updated = write_if_changed(master_file_path, new_manifest_content)
+                if updated:
+                    updated_count += 1
+                else:
+                    kept_count += 1
+
+            clean_url = f"{GITHUB_RAW_BASE}/{folder_path}/{item_slug}.m3u8"
+            extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
+            vod_entries.append((extinf, clean_url))
+
+        folder_label = f"Series '{subfolder}'" if subfolder != 'movie' else "Category 'movies'"
+        print(f"[{idx}/{total_subfolders}] Processed {folder_label} ({len(sub_items)} items: {updated_count} updated, {kept_count} kept)", flush=True)
 
     # Clean up stale files that are no longer in the provider catalog
     cleanup_stale_files("streams/vod_mytv", active_files_set)

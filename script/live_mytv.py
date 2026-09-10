@@ -126,6 +126,7 @@ def cleanup_stale_files(base_directory, active_files_set):
     if not os.path.exists(base_directory):
         return
     deleted_count = 0
+    deleted_dirs_count = 0
     for root, dirs, files in os.walk(base_directory, topdown=False):
         for fname in files:
             if fname.endswith(".m3u8"):
@@ -134,16 +135,15 @@ def cleanup_stale_files(base_directory, active_files_set):
                     if os.path.exists(full_path):
                         os.chmod(full_path, stat.S_IWRITE)
                         os.remove(full_path)
-                        print(f"[Deleted] Removed deleted provider file: {full_path}", flush=True)
                         deleted_count += 1
         for dname in dirs:
             dir_path = os.path.join(root, dname)
             if os.path.exists(dir_path) and not os.listdir(dir_path):
                 os.chmod(dir_path, stat.S_IWRITE)
                 os.rmdir(dir_path)
-                print(f"[Deleted] Removed empty folder: {dir_path}", flush=True)
-    if deleted_count > 0:
-        print(f"Cleaned up {deleted_count} stale/deleted files from {base_directory}.", flush=True)
+                deleted_dirs_count += 1
+    if deleted_count > 0 or deleted_dirs_count > 0:
+        print(f"Cleaned up {deleted_count} stale/deleted files and {deleted_dirs_count} empty folders from {base_directory}.", flush=True)
 
 def process_live_channels(device_id):
     print("--- Processing MYTV Live Channels & Radio ---")
