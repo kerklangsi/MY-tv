@@ -3,6 +3,7 @@ import json
 import uuid
 import base64
 import os
+import stat
 import gzip
 import re
 import time
@@ -92,6 +93,39 @@ def timestamp_to_xmltv(ts):
     dt_obj = datetime.fromtimestamp(int(ts), tz=timezone.utc)
     return dt_obj.strftime("%Y%m%d%H%M%S +0000")
 
+def write_if_changed(filepath, new_content):
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            existing = f.read()
+        if existing == new_content:
+            return False
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    return True
+
+def cleanup_stale_files(base_directory, active_files_set):
+    if not os.path.exists(base_directory):
+        return
+    deleted_count = 0
+    for root, dirs, files in os.walk(base_directory, topdown=False):
+        for fname in files:
+            if fname.endswith(".m3u8"):
+                full_path = os.path.normpath(os.path.join(root, fname))
+                if full_path not in active_files_set:
+                    if os.path.exists(full_path):
+                        os.chmod(full_path, stat.S_IWRITE)
+                        os.remove(full_path)
+                        print(f"[Deleted] Removed deleted provider file: {full_path}", flush=True)
+                        deleted_count += 1
+        for dname in dirs:
+            dir_path = os.path.join(root, dname)
+            if os.path.exists(dir_path) and not os.listdir(dir_path):
+                os.chmod(dir_path, stat.S_IWRITE)
+                os.rmdir(dir_path)
+                print(f"[Deleted] Removed empty folder: {dir_path}", flush=True)
+    if deleted_count > 0:
+        print(f"Cleaned up {deleted_count} stale/deleted files from {base_directory}.", flush=True)
+
 def process_tonton_live_channels(device_id):
     print("--- Processing Tonton Live Channels ---")
     channels_url = f"{BASE_API}/api/categoryTree.class.api.php/GOgetLiveChannels/378?format=json&appID=TONTON&plt=web&serviceID=default&apiVersion=2"
@@ -100,15 +134,11 @@ def process_tonton_live_channels(device_id):
     print(f"Total Tonton Live channels found: {len(live_channels)}")
 
     os.makedirs("streams/live_tonton", exist_ok=True)
-    if os.path.exists("streams/live_tonton"):
-        for fname in os.listdir("streams/live_tonton"):
-            fpath = os.path.join("streams/live_tonton", fname)
-            if os.path.isfile(fpath) and fname.endswith(".m3u8"):
-                os.remove(fpath)
 
     tonton_m3u_entries = []
     epg_channels = []
     processed_slugs = set()
+    active_files_set = set()
     tonton_token = os.getenv("TONTON_TOKEN", DEFAULT_TOKEN)
     dev_id = DEFAULT_DEVICE_ID
 
@@ -139,23 +169,26 @@ def process_tonton_live_channels(device_id):
         signed_stream_url = master_url
 
         ch_file_path = f"streams/live_tonton/{c_slug}.m3u8"
+        active_files_set.add(os.path.normpath(ch_file_path))
         if signed_stream_url:
             master_manifest, final_url = fetch_raw_text(signed_stream_url)
             abs_playlist_content = make_m3u8_absolute(master_manifest, final_url)
-            with open(ch_file_path, "w", encoding="utf-8") as f:
-                f.write(abs_playlist_content)
+            updated = write_if_changed(ch_file_path, abs_playlist_content)
         else:
-            with open(ch_file_path, "w", encoding="utf-8") as f:
-                f.write(f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{config_url}\n")
-                
+            fallback_content = f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{config_url}\n"
+            updated = write_if_changed(ch_file_path, fallback_content)
+            
+        status_str = "Updated" if updated else "Kept (Unchanged)"
         clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/live_tonton/{c_slug}.m3u8"
         extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
         tonton_m3u_entries.append((extinf, clean_m3u_url))
-        print(f"[{idx}/{len(live_channels)}] Added Tonton channel {c_num}: {c_name} ({c_code}) -> {clean_m3u_url}", flush=True)
+        print(f"[{idx}/{len(live_channels)}] [{status_str}] Added Tonton channel {c_num}: {c_name} ({c_code}) -> {clean_m3u_url}", flush=True)
 
         if c_slug not in processed_slugs:
             processed_slugs.add(c_slug)
             epg_channels.append({'id': c_slug, 'name': c_name, 'logo': c_logo, 'code': c_code})
+
+    cleanup_stale_files("streams/live_tonton", active_files_set)
 
     return tonton_m3u_entries, epg_channels
 

@@ -3,6 +3,7 @@ import json
 import uuid
 import base64
 import os
+import stat
 import gzip
 import re
 from xml.dom import minidom
@@ -111,6 +112,39 @@ def iso_to_xmltv(iso_str):
     dt_obj = datetime.strptime(clean_str, "%Y-%m-%dT%H:%M:%S")
     return dt_obj.strftime("%Y%m%d%H%M%S +0000")
 
+def write_if_changed(filepath, new_content):
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            existing = f.read()
+        if existing == new_content:
+            return False
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    return True
+
+def cleanup_stale_files(base_directory, active_files_set):
+    if not os.path.exists(base_directory):
+        return
+    deleted_count = 0
+    for root, dirs, files in os.walk(base_directory, topdown=False):
+        for fname in files:
+            if fname.endswith(".m3u8"):
+                full_path = os.path.normpath(os.path.join(root, fname))
+                if full_path not in active_files_set:
+                    if os.path.exists(full_path):
+                        os.chmod(full_path, stat.S_IWRITE)
+                        os.remove(full_path)
+                        print(f"[Deleted] Removed deleted provider file: {full_path}", flush=True)
+                        deleted_count += 1
+        for dname in dirs:
+            dir_path = os.path.join(root, dname)
+            if os.path.exists(dir_path) and not os.listdir(dir_path):
+                os.chmod(dir_path, stat.S_IWRITE)
+                os.rmdir(dir_path)
+                print(f"[Deleted] Removed empty folder: {dir_path}", flush=True)
+    if deleted_count > 0:
+        print(f"Cleaned up {deleted_count} stale/deleted files from {base_directory}.", flush=True)
+
 def process_live_channels(device_id):
     print("--- Processing MYTV Live Channels & Radio ---")
     channels_res = http_get(f"{BASE_API}/public/channels")
@@ -120,16 +154,10 @@ def process_live_channels(device_id):
     os.makedirs("streams/live_mytv", exist_ok=True)
     os.makedirs("streams/radio_mytv", exist_ok=True)
 
-    for subfolder in ["streams/live_mytv", "streams/radio_mytv"]:
-        if os.path.exists(subfolder):
-            for fname in os.listdir(subfolder):
-                fpath = os.path.join(subfolder, fname)
-                if os.path.isfile(fpath) and fname.endswith(".m3u8"):
-                    os.remove(fpath)
-
     m3u_entries = []
     epg_channels = []
     processed_slugs = set()
+    active_files_set = set()
 
     for idx, ch in enumerate(channels, 1):
         c_id = ch.get('id')
@@ -214,17 +242,21 @@ def process_live_channels(device_id):
 
         if signed_stream_url:
             ch_file_path = f"streams/{folder_name}/{c_slug}.m3u8"
-            with open(ch_file_path, "w", encoding="utf-8") as f:
-                f.write(ch_playlist_content)
+            active_files_set.add(os.path.normpath(ch_file_path))
+            updated = write_if_changed(ch_file_path, ch_playlist_content)
+            status_str = "Updated" if updated else "Kept (Unchanged)"
                 
             clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/{folder_name}/{c_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
             m3u_entries.append((extinf, clean_m3u_url))
-            print(f"[{idx}/{len(channels)}] Added {group_title} {c_num}: {c_name} -> {clean_m3u_url}", flush=True)
+            print(f"[{idx}/{len(channels)}] [{status_str}] Added {group_title} {c_num}: {c_name} -> {clean_m3u_url}", flush=True)
 
         if c_slug not in processed_slugs:
             processed_slugs.add(c_slug)
             epg_channels.append({'id': c_slug, 'name': c_name, 'logo': c_logo})
+
+    cleanup_stale_files("streams/live_mytv", active_files_set)
+    cleanup_stale_files("streams/radio_mytv", active_files_set)
 
     return m3u_entries, epg_channels
 

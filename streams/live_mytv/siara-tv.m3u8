@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=5252928,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_1080p/chunks.m3u8?md5=l4q_pbkf78bQRdwf_Azb6g&expires=1789051852
-#EXT-X-STREAM-INF:BANDWIDTH=3646835,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_720p/chunks.m3u8?md5=5X5wc03yxWnrAl8d8p36BA&expires=1789051853
-#EXT-X-STREAM-INF:BANDWIDTH=1703879,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_480p/chunks.m3u8?md5=lMfTqhVwf2RsdG8fTBNTYw&expires=1789051853
+#EXT-X-STREAM-INF:BANDWIDTH=1883248,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_1080p/chunks.m3u8?md5=MgXFdQpgbMNHrPp9eoUSIQ&expires=1789057791
+#EXT-X-STREAM-INF:BANDWIDTH=1382035,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_720p/chunks.m3u8?md5=EPhIi38MOcL-WwsL6KcU4g&expires=1789057791
+#EXT-X-STREAM-INF:BANDWIDTH=693398,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/siaratv/abr/siaratv_480p/chunks.m3u8?md5=ejBVC1JbP0KPfdF0Do5hcQ&expires=1789057791
