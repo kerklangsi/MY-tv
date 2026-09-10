@@ -82,7 +82,7 @@ def process_vod_shows(device_id):
     vod_entries = []
     used_vod_slugs = set()
 
-    for item in shows:
+    for idx, item in enumerate(shows, 1):
         item_id = item['id']
         item_title = item.get('title', 'Unknown Show')
         title_slug = slugify(item_title)
@@ -137,7 +137,7 @@ def process_vod_shows(device_id):
             clean_url = f"{GITHUB_RAW_BASE}/streams/vod_mytv/{item_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
             vod_entries.append((extinf, clean_url))
-            print(f"Processed VOD item: {item_title} -> {clean_url}")
+            print(f"[{idx}/{len(shows)}] Processed VOD item: {item_title} -> {clean_url}", flush=True)
 
     print(f"Total MYTV VOD items processed: {len(vod_entries)}")
     return vod_entries

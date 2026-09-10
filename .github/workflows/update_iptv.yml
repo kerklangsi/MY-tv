@@ -22,6 +22,8 @@ jobs:
         run: python3 -m pip install cryptography
 
       - name: Run IPTV Generator
+        env:
+          PYTHONUNBUFFERED: "1"
         run: python3 script/iptv.py
 
       - name: Commit and push changes
