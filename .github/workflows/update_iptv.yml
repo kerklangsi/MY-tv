@@ -22,10 +22,12 @@ jobs:
         run: pip install cryptography
 
       - name: Connect to Malaysia VPN (Optional)
-        if: ${{ secrets.MY_VPN_CONFIG != '' }}
+        env:
+          MY_VPN_CONFIG: ${{ secrets.MY_VPN_CONFIG }}
+        if: ${{ env.MY_VPN_CONFIG != '' }}
         run: |
           sudo apt-get update && sudo apt-get install -y openvpn
-          echo "${{ secrets.MY_VPN_CONFIG }}" > my_vpn.ovpn
+          echo "$MY_VPN_CONFIG" > my_vpn.ovpn
           sudo openvpn --config my_vpn.ovpn --daemon
           sleep 5
 
