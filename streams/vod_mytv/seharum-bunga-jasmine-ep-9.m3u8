@@ -1,0 +1,8 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=967226,RESOLUTION=270x480,LANGUAGE="eng"
+https://z9kkoi7p6o.tenbytecdn.com/vod/cbb64053-baea-4fcc-abac-2035c8a202fd/master.smil/480p.mp4_chunk.m3u8?md5=uK7i2Ri6vt8E27g65iukpg&expires=1789037278
+#EXT-X-STREAM-INF:BANDWIDTH=1917798,RESOLUTION=406x720,LANGUAGE="eng"
+https://z9kkoi7p6o.tenbytecdn.com/vod/cbb64053-baea-4fcc-abac-2035c8a202fd/master.smil/720p.mp4_chunk.m3u8?md5=uK7i2Ri6vt8E27g65iukpg&expires=1789037278
+#EXT-X-STREAM-INF:BANDWIDTH=2863793,RESOLUTION=608x1080,LANGUAGE="eng"
+https://z9kkoi7p6o.tenbytecdn.com/vod/cbb64053-baea-4fcc-abac-2035c8a202fd/master.smil/1080p.mp4_chunk.m3u8?md5=uK7i2Ri6vt8E27g65iukpg&expires=1789037278

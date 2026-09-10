@@ -62,10 +62,10 @@ def process_vod_shows(device_id):
         res = http_get(url)
         data = res.get('data', {})
         items = data.get('data', [])
-        pagination = data.get('pagination', {})
+        total = data.get('total', 0)
         
         shows.extend(items)
-        total_pages = pagination.get('totalPages', 1)
+        total_pages = (total + limit - 1) // limit if limit > 0 else 1
         if page >= total_pages or len(items) == 0:
             break
         page += 1
