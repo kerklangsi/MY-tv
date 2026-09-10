@@ -1,6 +1,10 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="trip-teaser" tvg-name="TRIP TEASER" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/12efa949-6434-410e-93f8-86bfa8da7dfe/posterLandscape.jpg" group-title="MYTV Movies",TRIP TEASER
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/trip-teaser.m3u8
+#EXTINF:-1 tvg-id="trip-episod-2" tvg-name="TRIP Episod 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/ae44beba-be65-4722-92ed-9c3ab6241b1e/posterLandscape.jpg" group-title="MYTV Shows",TRIP Episod 2
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/trip-episod-2.m3u8
+#EXTINF:-1 tvg-id="trip-episod-1" tvg-name="TRIP Episod 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/53a7e59b-b5a5-4f29-a1ff-e0e66c042946/posterLandscape.jpg" group-title="MYTV Shows",TRIP Episod 1
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/trip-episod-1.m3u8
 #EXTINF:-1 tvg-id="the-brutal-truth-why-malaysian-entrepreneurs-are-secretly-broke" tvg-name="The Brutal Truth: Why Malaysian Entrepreneurs Are Secretly Broke" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/59a96cb9-4227-4eea-8de1-a09a859f6837/poster_landscape.jpeg" group-title="MYTV Shows",The Brutal Truth: Why Malaysian Entrepreneurs Are Secretly Broke
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/the-brutal-truth-why-malaysian-entrepreneurs-are-secretly-broke.m3u8
 #EXTINF:-1 tvg-id="can-you-make-a-living-by-day-trading-the-brutal-truth-about-trading-louie-pinto" tvg-name="Can You Make A Living By Day Trading? The Brutal Truth About Trading | Louie Pinto" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/bb8d8e89-9b90-4a12-b9b0-b6974a5de31a/poster_landscape.jpeg" group-title="MYTV Shows",Can You Make A Living By Day Trading? The Brutal Truth About Trading | Louie Pinto
@@ -93,9 +97,3 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/galeri-
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/galeri-nusantara-ep-32.m3u8
 #EXTINF:-1 tvg-id="galeri-nusantara-ep-31" tvg-name="Galeri Nusantara Ep 31" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/66f75823-790b-4056-ada6-a24db69fb4b6/poster_landscape.jpeg" group-title="MYTV Shows",Galeri Nusantara Ep 31
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/galeri-nusantara-ep-31.m3u8
-#EXTINF:-1 tvg-id="galeri-nusantara-ep-30" tvg-name="Galeri Nusantara Ep 30" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/a803798c-11b7-4ed2-9e5f-04665d6574f7/poster_landscape.jpeg" group-title="MYTV Shows",Galeri Nusantara Ep 30
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/galeri-nusantara-ep-30.m3u8
-#EXTINF:-1 tvg-id="galeri-nusantara-ep-29" tvg-name="Galeri Nusantara Ep 29" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/e2a5d423-7b3b-4092-9b87-3103a880abd5/poster_landscape.jpeg" group-title="MYTV Shows",Galeri Nusantara Ep 29
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/galeri-nusantara-ep-29.m3u8
-#EXTINF:-1 tvg-id="galeri-nusantara-ep-28" tvg-name="Galeri Nusantara Ep 28" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/8cc6127b-f01b-4976-8116-99190963b0a8/poster_landscape.jpeg" group-title="MYTV Shows",Galeri Nusantara Ep 28
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/galeri-nusantara-ep-28.m3u8
