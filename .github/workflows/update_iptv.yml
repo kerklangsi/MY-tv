@@ -19,10 +19,10 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install cryptography
+        run: python3 -m pip install cryptography
 
       - name: Run IPTV Generator
-        run: python script/iptv.py
+        run: python3 script/iptv.py
 
       - name: Commit and push changes
         run: |
