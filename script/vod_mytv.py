@@ -181,6 +181,7 @@ def process_vod_shows(device_id):
         page += 1
 
     print(f"Total MYTV VOD items found: {len(shows)}")
+    print("Resolving series metadata and grouping episodes...", flush=True)
 
     os.makedirs("streams/vod_mytv", exist_ok=True)
 
@@ -189,6 +190,9 @@ def process_vod_shows(device_id):
     slug_counts = defaultdict(int)
 
     for idx, item in enumerate(shows, 1):
+        if idx % 250 == 0 or idx == len(shows):
+            print(f"  [Pass 1/2] Resolving series metadata: {idx}/{len(shows)} items...", flush=True)
+
         item_id = item['id']
         item_title = item.get('title', 'Unknown Show')
         if is_teaser_or_trailer(item_title):
