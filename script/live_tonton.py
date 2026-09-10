@@ -112,7 +112,7 @@ def process_tonton_live_channels(device_id):
     tonton_token = os.getenv("TONTON_TOKEN", DEFAULT_TOKEN)
     dev_id = DEFAULT_DEVICE_ID
 
-    for ch in live_channels:
+    for idx, ch in enumerate(live_channels, 1):
         c_id = ch.get('id')
         c_code = ch.get('channelCode', '')
         c_name = ch.get('title', 'Unknown')
@@ -151,7 +151,7 @@ def process_tonton_live_channels(device_id):
         clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/live_tonton/{c_slug}.m3u8"
         extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
         tonton_m3u_entries.append((extinf, clean_m3u_url))
-        print(f"Added Tonton channel {c_num}: {c_name} ({c_code}) -> {clean_m3u_url}")
+        print(f"[{idx}/{len(live_channels)}] Added Tonton channel {c_num}: {c_name} ({c_code}) -> {clean_m3u_url}", flush=True)
 
         if c_slug not in processed_slugs:
             processed_slugs.add(c_slug)

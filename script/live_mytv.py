@@ -131,7 +131,7 @@ def process_live_channels(device_id):
     epg_channels = []
     processed_slugs = set()
 
-    for ch in channels:
+    for idx, ch in enumerate(channels, 1):
         c_id = ch.get('id')
         c_num = ch.get('channelNumber', 0)
         c_name = ch.get('name', 'Unknown')
@@ -220,7 +220,7 @@ def process_live_channels(device_id):
             clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/{folder_name}/{c_slug}.m3u8"
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
             m3u_entries.append((extinf, clean_m3u_url))
-            print(f"Added {group_title} {c_num}: {c_name} -> {clean_m3u_url}")
+            print(f"[{idx}/{len(channels)}] Added {group_title} {c_num}: {c_name} -> {clean_m3u_url}", flush=True)
 
         if c_slug not in processed_slugs:
             processed_slugs.add(c_slug)

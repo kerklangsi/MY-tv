@@ -29,7 +29,7 @@ def main():
         f.write(playlist_content)
     with open("playlist.m3u8", "w", encoding="utf-8") as f:
         f.write(playlist_content)
-    print("\nSaved merged playlist.m3u and playlist.m3u8")
+    print("\nSaved merged playlist.m3u and playlist.m3u8", flush=True)
 
     # 3. Process VOD Shows & Movies (MYTV & Tonton)
     mytv_vod_entries = vod_mytv.process_vod_shows(device_id)
@@ -46,7 +46,7 @@ def main():
         f.write(vod_content)
     with open("vod.m3u8", "w", encoding="utf-8") as f:
         f.write(vod_content)
-    print("Saved merged vod.m3u and vod.m3u8")
+    print("Saved merged vod.m3u and vod.m3u8", flush=True)
 
     # 5. Process & Merge EPG Schedules (MYTV & Tonton)
     mytv_programmes = live_mytv.fetch_epg_programmes()
@@ -55,7 +55,7 @@ def main():
     all_epg_channels = mytv_epg_channels + tonton_epg_channels
     all_epg_programmes = mytv_programmes + tonton_programmes
 
-    print(f"\n--- Generating Merged EPG XML ({len(all_epg_channels)} channels, {len(all_epg_programmes)} programmes) ---")
+    print(f"\n--- Generating Merged EPG XML ({len(all_epg_channels)} channels, {len(all_epg_programmes)} programmes) ---", flush=True)
 
     tv_elem = ET.Element('tv', {'generator-info-name': 'MY-tv Merged IPTV Generator'})
 
@@ -89,11 +89,11 @@ def main():
 
     with open("epg.xml", "wb") as f:
         f.write(pretty_xml)
-    print("Saved merged epg.xml")
+    print("Saved merged epg.xml", flush=True)
 
     with gzip.open("epg.xml.gz", "wb") as f:
         f.write(pretty_xml)
-    print("Saved merged epg.xml.gz")
+    print("Saved merged epg.xml.gz", flush=True)
 
 if __name__ == '__main__':
     main()
