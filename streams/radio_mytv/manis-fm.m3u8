@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/radio/manisfm/playlist.m3u8?md5=pHCM5xEVnEjPwutX1hziog&expires=1789048395
+#EXT-X-STREAM-INF:BANDWIDTH=96346,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/manisfm/chunks.m3u8?md5=zZDz8OeeowgHXnBd3w3Y4g&expires=1789051875

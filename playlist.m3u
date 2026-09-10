@@ -29,8 +29,6 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/cna.m3
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/al-jazeera-english-hd.m3u8
 #EXTINF:-1 tvg-id="euronews" tvg-name="EURONEWS" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/8e664047-dc59-43f2-b43a-f99594c75094/logo.png" tvg-chno="217" group-title="MYTV Live",EURONEWS
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/euronews.m3u8
-#EXTINF:-1 tvg-id="arirang" tvg-name="ARIRANG" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/91a0697b-3d4c-4324-8b56-3fa5d9cba67d/logo.png" tvg-chno="218" group-title="MYTV Live",ARIRANG
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/arirang.m3u8
 #EXTINF:-1 tvg-id="taiwanplus" tvg-name="TaiwanPlus" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/a6de27c9-8a5d-48a7-941f-4511efc94808/logo.jpeg" tvg-chno="219" group-title="MYTV Live",TaiwanPlus
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/taiwanplus.m3u8
 #EXTINF:-1 tvg-id="nhk-world" tvg-name="NHK WORLD" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/632813f5-d3a7-4e17-a225-14a61b323f32/logo.png" tvg-chno="220" group-title="MYTV Live",NHK WORLD
@@ -47,8 +45,6 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/selang
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/usim-tv.m3u8
 #EXTINF:-1 tvg-id="tv-ikim" tvg-name="TVIKIM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/784dbb7e-ddd3-4183-8914-1983291524a3/logo.png" tvg-chno="226" group-title="MYTV Live",TVIKIM
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/tv-ikim.m3u8
-#EXTINF:-1 tvg-id="borneo-tv" tvg-name="BORNEO TV" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/ebb8ddd1-318a-471c-96c6-13bf7125be93/logo.png" tvg-chno="227" group-title="MYTV Live",BORNEO TV
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/borneo-tv.m3u8
 #EXTINF:-1 tvg-id="manis-fm" tvg-name="MANIS FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/6cb8b5c0-b4bc-4fa2-9f34-57efa0ea9cfe/logo.png" tvg-chno="205" group-title="MYTV Radio",MANIS FM
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/manis-fm.m3u8
 #EXTINF:-1 tvg-id="suria-fm" tvg-name="SURIA FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/7761d925-7202-44cf-851a-941306007abb/logo.png" tvg-chno="203" group-title="MYTV Radio",SURIA FM
@@ -67,28 +63,16 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/molek
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/eight-fm.m3u8
 #EXTINF:-1 tvg-id="kool-fm" tvg-name="KOOL FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/9f2416db-418a-4bac-a9b3-039a3b82ac75/logo.png" tvg-chno="211" group-title="MYTV Radio",KOOL FM
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/kool-fm.m3u8
-#EXTINF:-1 tvg-id="nasional-fm" tvg-name="NASIONAL FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/f1dcbb38-cc79-4e04-a5a3-10e057eb64bb/logo.png" tvg-chno="701" group-title="MYTV Radio",NASIONAL FM
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/nasional-fm.m3u8
-#EXTINF:-1 tvg-id="traxx-fm" tvg-name="TRAXX FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/e0471aaf-592c-406a-9d41-ad3160bb0985/logo.png" tvg-chno="702" group-title="MYTV Radio",TRAXX FM
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/traxx-fm.m3u8
 #EXTINF:-1 tvg-id="minnal-fm" tvg-name="MINNAL FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/496a28e4-5a0c-4c9a-b8f2-c2a48498bf9d/logo.png" tvg-chno="703" group-title="MYTV Radio",MINNAL FM
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/minnal-fm.m3u8
 #EXTINF:-1 tvg-id="ai-fm" tvg-name="AI FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/0a3d39c9-ec58-47c6-8481-7c5883163c5c/logo.png" tvg-chno="704" group-title="MYTV Radio",AI FM
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/ai-fm.m3u8
 #EXTINF:-1 tvg-id="radio-klasik" tvg-name="RADIO KLASIK" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/fb1f3e1e-7675-4469-93fe-f01482f4c448/logo.png" tvg-chno="705" group-title="MYTV Radio",RADIO KLASIK
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/radio-klasik.m3u8
-#EXTINF:-1 tvg-id="sabah-fm" tvg-name="SABAH FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/00274ca1-53a9-4bd9-bbef-460b46df228e/logo.png" tvg-chno="707" group-title="MYTV Radio",SABAH FM
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/sabah-fm.m3u8
-#EXTINF:-1 tvg-id="sabahv-fm" tvg-name="SABAHV FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/575a4646-6c41-4620-b4a7-8b4110f82e07/logo.png" tvg-chno="708" group-title="MYTV Radio",SABAHV FM
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/sabahv-fm.m3u8
-#EXTINF:-1 tvg-id="sarawak-fm" tvg-name="SARAWAK FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/d0de4a99-396c-4a4a-bde2-f4d642435878/logo.png" tvg-chno="709" group-title="MYTV Radio",SARAWAK FM
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/sarawak-fm.m3u8
 #EXTINF:-1 tvg-id="bernama-radio" tvg-name="BERNAMA RADIO" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/97320e8a-8443-49d1-b47d-144aec29794d/logo.png" tvg-chno="711" group-title="MYTV Radio",BERNAMA RADIO
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/bernama-radio.m3u8
 #EXTINF:-1 tvg-id="wai-fm" tvg-name="WAI FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/5d830a07-aa2e-4f4a-9577-9640c7c8628b/logo.png" tvg-chno="710" group-title="MYTV Radio",WAI FM
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/wai-fm.m3u8
-#EXTINF:-1 tvg-id="asyik-fm" tvg-name="ASYIK FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/7bad759d-8124-4318-b455-07cbcbe66c5c/logo.png" tvg-chno="706" group-title="MYTV Radio",ASYIK FM
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/asyik-fm.m3u8
 #EXTINF:-1 tvg-id="best-fm" tvg-name="BEST FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/b9ae6780-dda4-4e65-9c84-e84237759f4b/logo.png" tvg-chno="207" group-title="MYTV Radio",BEST FM
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/radio_mytv/best-fm.m3u8
 #EXTINF:-1 tvg-id="mpl-malaysia" tvg-name="MPL Malaysia" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6596743:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="13" group-title="Tonton Live",MPL Malaysia

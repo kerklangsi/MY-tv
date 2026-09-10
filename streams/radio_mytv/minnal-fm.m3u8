@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/radio/minnalfm/playlist.m3u8?md5=yL9v5zE9d1_uizq4FpvBZQ&expires=1789048399
+#EXT-X-STREAM-INF:BANDWIDTH=96163,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/minnalfm/chunks.m3u8?md5=N8W0HBjLSxus3O1s-9ujog&expires=1789051881

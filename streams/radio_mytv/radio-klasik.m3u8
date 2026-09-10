@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/radio/radioklasik/playlist.m3u8?md5=K5nhNl1YOtt8YDnpdeTRSA&expires=1789048400
+#EXT-X-STREAM-INF:BANDWIDTH=96154,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/radioklasik/chunks.m3u8

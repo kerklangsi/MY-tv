@@ -1,4 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/playlist.m3u8?md5=X-2A_TSraVfuFxyLwFIZUQ&expires=1789048393
+#EXT-X-STREAM-INF:BANDWIDTH=3324498,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/abr/aljazeeraarabichd_1080p/chunks.m3u8?md5=gYBpsEyJgo1-q8y7o1r-Kg&expires=1789051871
+#EXT-X-STREAM-INF:BANDWIDTH=2297360,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/abr/aljazeeraarabichd_720p/chunks.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1110163,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/abr/aljazeeraarabichd_480p/chunks.m3u8?md5=Q_-ZqIBX2yGA5L9I4_bn4g&expires=1789051871
