@@ -1,4 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/arirang/playlist.m3u8?md5=ZZtYc2RNLUnFBsfbiIAQbw&expires=1789007815
+#EXT-X-STREAM-INF:BANDWIDTH=3336945,FRAME-RATE=29.97,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_1080p/chunks.m3u8?md5=X2uHPl44W9LWS6Or95xInw&expires=1789035573
+#EXT-X-STREAM-INF:BANDWIDTH=2343510,FRAME-RATE=29.97,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_720p/chunks.m3u8?md5=7TKdQgL66wHIcVCbtTsrWg&expires=1789035574
+#EXT-X-STREAM-INF:BANDWIDTH=1179694,FRAME-RATE=29.97,RESOLUTION=854x480,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_480p/chunks.m3u8?md5=4aqgSYQHwcBic8sX8ArWZg&expires=1789035574

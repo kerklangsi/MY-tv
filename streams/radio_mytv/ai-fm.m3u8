@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/radio/aifm/playlist.m3u8?md5=CnTCcu1F_nCBi_AMY8lJIA&expires=1789007822
+#EXT-X-STREAM-INF:BANDWIDTH=96139,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/aifm/chunks.m3u8?md5=oIPTzXskHmRHQC_FLLpxng&expires=1789035581

@@ -1,4 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/tvokey/playlist.m3u8?md5=tKnkcUXN8OxsB3BomeYjqg&expires=1789007813
+#EXT-X-STREAM-INF:BANDWIDTH=3741742,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tvokey/abr/tvokey_1080p/chunks.m3u8?md5=plw75yjaqV3R7yE6JLl78Q&expires=1789035571
+#EXT-X-STREAM-INF:BANDWIDTH=2542738,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tvokey/abr/tvokey_720p/chunks.m3u8?md5=3p5iJlu9dB_TlIe02b6IHw&expires=1789035571
+#EXT-X-STREAM-INF:BANDWIDTH=1179286,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tvokey/abr/tvokey_480p/chunks.m3u8?md5=gAQdtP1ZvUjHnKpMyl--uA&expires=1789035572

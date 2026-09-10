@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/radio/rakitafm/playlist.m3u8?md5=fIJjq4RDZenWo6Vg5jwngg&expires=1789007819
+#EXT-X-STREAM-INF:BANDWIDTH=65603,CODECS="mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/radio/rakitafm/chunks.m3u8?md5=SrCsXnqBrc2ticBkqPIRqA&expires=1789035578

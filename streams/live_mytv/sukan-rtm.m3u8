@@ -1,4 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4000000
-https://cuwf8jayq1.tenbytecdn.com/live/sukanrtm/playlist.m3u8?md5=SMH2IzZeiyV-pDi0SziV2Q&expires=1789007812
+#EXT-X-STREAM-INF:BANDWIDTH=2803535,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/sukanrtm/abr/sukanrtm_1080p/chunks.m3u8?md5=Js6zcPvml8YEK-T-1den8g&expires=1789035571
+#EXT-X-STREAM-INF:BANDWIDTH=1719801,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/sukanrtm/abr/sukanrtm_720p/chunks.m3u8?md5=4kc18FSyk9YshwTMlGibDg&expires=1789035571
+#EXT-X-STREAM-INF:BANDWIDTH=813348,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/sukanrtm/abr/sukanrtm_480p/chunks.m3u8?md5=6fP4zbh1mJY_ZDawoVX6ZA&expires=1789035571
