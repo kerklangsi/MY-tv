@@ -13,19 +13,7 @@ import vod_tonton
 import live_unifi
 import vod_unifi
 
-def write_if_changed(filepath, new_content, is_binary=False):
-    if os.path.exists(filepath):
-        mode_read = "rb" if is_binary else "r"
-        encoding = None if is_binary else "utf-8"
-        with open(filepath, mode_read, encoding=encoding) as f:
-            existing = f.read()
-        if existing == new_content:
-            return False
-    mode_write = "wb" if is_binary else "w"
-    encoding = None if is_binary else "utf-8"
-    with open(filepath, mode_write, encoding=encoding) as f:
-        f.write(new_content)
-    return True
+from utils import write_if_changed
 
 def main():
     device_id = str(uuid.uuid4())

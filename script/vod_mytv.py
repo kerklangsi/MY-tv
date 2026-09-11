@@ -6,52 +6,12 @@ import re
 import stat
 from urllib.parse import urlparse
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
+
+from utils import http_get, http_post, fetch_raw_text, slugify, write_if_changed, cleanup_stale_files
 
 BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
 GITHUB_RAW_BASE = "https://raw.githubusercontent.com/kerklangsi/MY-tv/main"
-
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Origin': 'https://mana2.my',
-    'Referer': 'https://mana2.my/',
-    'Content-Type': 'application/json'
-}
-
-class NoRaiseHTTPErrorProcessor(urllib.request.HTTPErrorProcessor):
-    def http_response(self, request, response):
-        return response
-    https_response = http_response
-
-opener = urllib.request.build_opener(NoRaiseHTTPErrorProcessor)
-
-def http_get(url):
-    req = urllib.request.Request(url, headers=HEADERS)
-    resp = opener.open(req)
-    if 200 <= resp.status < 300:
-        return json.loads(resp.read().decode('utf-8'))
-    return {}
-
-def http_post(url, payload):
-    req = urllib.request.Request(url, headers=HEADERS, data=json.dumps(payload).encode('utf-8'))
-    resp = opener.open(req)
-    if 200 <= resp.status < 300:
-        return json.loads(resp.read().decode('utf-8'))
-    return {}
-
-def fetch_raw_text(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Referer': 'https://mana2.my/'})
-    resp = opener.open(req)
-    if 200 <= resp.status < 300:
-        return resp.read().decode('utf-8')
-    return ""
-
-def slugify(text):
-    if not text:
-        return ""
-    text = text.lower().strip()
-    text = re.sub(r'[^\w\s-]', '', text)
-    text = re.sub(r'[\s_-]+', '-', text)
-    return re.sub(r'^-+|-+$', '', text)
 
 def get_vod_subfolder(title, content_type):
     if not title:
@@ -103,39 +63,6 @@ def is_teaser_or_trailer(title):
             return True
     return False
 
-def write_if_changed(filepath, new_content):
-    if os.path.exists(filepath):
-        with open(filepath, "r", encoding="utf-8") as f:
-            existing = f.read()
-        if existing == new_content:
-            return False
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(new_content)
-    return True
-
-def cleanup_stale_files(base_directory, active_files_set):
-    if not os.path.exists(base_directory):
-        return
-    deleted_count = 0
-    deleted_dirs_count = 0
-    for root, dirs, files in os.walk(base_directory, topdown=False):
-        for fname in files:
-            if fname.endswith(".m3u8"):
-                full_path = os.path.normpath(os.path.join(root, fname))
-                if full_path not in active_files_set:
-                    if os.path.exists(full_path):
-                        os.chmod(full_path, stat.S_IWRITE)
-                        os.remove(full_path)
-                        deleted_count += 1
-        for dname in dirs:
-            dir_path = os.path.join(root, dname)
-            if os.path.exists(dir_path) and not os.listdir(dir_path):
-                os.chmod(dir_path, stat.S_IWRITE)
-                os.rmdir(dir_path)
-                deleted_dirs_count += 1
-    if deleted_count > 0 or deleted_dirs_count > 0:
-        print(f"Cleaned up {deleted_count} stale/deleted files and {deleted_dirs_count} empty folders from {base_directory}.", flush=True)
-
 def process_vod_shows(device_id):
     print("\n--- Processing MYTV VOD Shows & Movies ---")
 
@@ -163,13 +90,14 @@ def process_vod_shows(device_id):
 
     print(f"Loaded {len(official_series_index)} official series from mana2.my index.", flush=True)
 
-    # Build title keyword mapping from official series index (fast resolution without 2,497 HTTP calls)
+    # Build title keyword mapping from official series index
     official_title_keywords = []
     for s_id, s_info in official_series_index.items():
         raw_lower = s_info['raw_title'].lower().strip()
         raw_clean = re.sub(r'\s+[-:\s]*(?:S|Season|Siri)\s*\d+$', '', raw_lower, flags=re.IGNORECASE)
         if len(raw_clean) >= 3:
             official_title_keywords.append((raw_clean, s_info['clean_slug']))
+
     official_title_keywords.sort(key=lambda x: len(x[0]), reverse=True)
 
     shows = []
@@ -193,8 +121,21 @@ def process_vod_shows(device_id):
 
     os.makedirs("streams/vod_mytv", exist_ok=True)
 
-    # Pass 1: Fast resolve series/movie subfolder for each item
-    valid_items = []
+    # Pre-fetch detail API for episode items in parallel
+    ep_items = [
+        item for item in shows
+        if not is_teaser_or_trailer(item.get('title'))
+        and item.get('contentType') not in ['series', 'season', 'show']
+        and (item.get('contentType') == 'episode' or re.match(r'^\s*(?:Ep|Episod|Episode|S\d+)', item.get('title', ''), re.IGNORECASE))
+    ]
+
+    detail_cache_map = {}
+    with ThreadPoolExecutor(max_workers=25) as executor:
+        for item_id, series_info in executor.map(lambda it: (it['id'], (http_get(f"{BASE_API}/public/content/{it['id']}").get('data', {}).get('series') or {})), ep_items):
+            detail_cache_map[item_id] = series_info
+
+    # Single Pass: Resolve subfolder and count frequencies
+    prelim_items = []
     slug_counts = defaultdict(int)
 
     for item in shows:
@@ -207,30 +148,43 @@ def process_vod_shows(device_id):
             continue
 
         subfolder = None
-        if item_type == 'episode':
+
+        # 1. Detail API series metadata
+        if item['id'] in detail_cache_map:
+            s_info = detail_cache_map[item['id']]
+            s_slug = s_info.get('slug') or slugify(s_info.get('title'))
+            if s_slug:
+                subfolder = re.sub(r'-(?:s|season|siri)-?\d+$', '', s_slug, flags=re.IGNORECASE)
+
+        # 2. Official title keyword match
+        if not subfolder:
             t_lower = item_title.lower()
             for kw_raw, kw_slug in official_title_keywords:
                 if kw_raw in t_lower:
                     subfolder = kw_slug
                     break
-            if not subfolder:
-                subfolder = get_vod_subfolder(item_title, item_type)
 
-        if not subfolder or subfolder == 'movie':
+        # 3. Regex title structure fallback
+        if not subfolder:
             subfolder = get_vod_subfolder(item_title, item_type)
 
         if not subfolder:
             subfolder = 'movie'
 
-        valid_items.append((item, subfolder))
+        prelim_items.append((item, subfolder))
         slug_counts[subfolder] += 1
 
-    # Pass 2: Group by series/movies subfolder and process items
+    # Group items into final subfolders
     items_by_subfolder = defaultdict(list)
-    for item, prelim_subfolder in valid_items:
-        subfolder = prelim_subfolder
+    for item, subfolder in prelim_items:
         if subfolder != 'movie' and slug_counts[subfolder] < 2:
             subfolder = 'movie'
+
+        if subfolder == 'movie':
+            dur_sec = item.get('durationSeconds') or 0
+            if 0 < dur_sec < 1200:
+                subfolder = 'short-movies-and-clips'
+
         items_by_subfolder[subfolder].append(item)
 
     vod_entries = []
@@ -238,10 +192,23 @@ def process_vod_shows(device_id):
     active_files_set = set()
     total_subfolders = len(items_by_subfolder)
 
-    for idx, (subfolder, sub_items) in enumerate(sorted(items_by_subfolder.items()), 1):
+    sorted_subfolders = sorted([sf for sf in items_by_subfolder.keys() if sf not in ['movie', 'short-movies-and-clips']])
+    if 'short-movies-and-clips' in items_by_subfolder:
+        sorted_subfolders.append('short-movies-and-clips')
+    if 'movie' in items_by_subfolder:
+        sorted_subfolders.append('movie')
+
+    for idx, subfolder in enumerate(sorted_subfolders, 1):
+        sub_items = items_by_subfolder[subfolder]
         folder_path = f"streams/vod_mytv/{subfolder}"
         os.makedirs(folder_path, exist_ok=True)
-        group_title = 'MYTV Shows' if subfolder != 'movie' else 'MYTV Movies'
+        if subfolder == 'short-movies-and-clips':
+            group_title = 'MYTV Short Movies'
+        elif subfolder == 'movie':
+            group_title = 'MYTV Movies'
+        else:
+            group_title = 'MYTV Shows'
+
         updated_count = 0
         kept_count = 0
 
@@ -251,6 +218,11 @@ def process_vod_shows(device_id):
             item_poster = item.get('posterLandscapeUrl') or item.get('posterPortraitUrl') or item.get('bannerUrl') or ''
 
             title_slug = slugify(item_title)
+            if subfolder in ['movie', 'short-movies-and-clips']:
+                clean_t = re.sub(r'^\s*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+\s*[-:\s]*', '', item_title, flags=re.IGNORECASE)
+                clean_t = re.sub(r'\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+.*$', '', clean_t, flags=re.IGNORECASE)
+                if clean_t.strip():
+                    title_slug = slugify(clean_t)
             base_slug = title_slug if title_slug else (item.get('slug') or item_id)
             item_slug = base_slug
             if item_slug in used_vod_slugs:

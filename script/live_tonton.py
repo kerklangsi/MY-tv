@@ -10,121 +10,19 @@ import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 
+from utils import http_get, fetch_raw_text_and_url, slugify, make_m3u8_absolute, write_if_changed, cleanup_stale_files
+
 BASE_API = "https://headend-api.tonton.com.my/v600"
 GITHUB_RAW_BASE = "https://raw.githubusercontent.com/kerklangsi/MY-tv/main"
 
 DEFAULT_DEVICE_ID = "web-v3-0d63fbaa5090547e80c50e9ae5935bfb-6d5145cbec6729682bee9b52f23ef4a9-cmtu0gw320001dt3qqdhki7iz"
 DEFAULT_TOKEN = "e9703d2b5d5afc94230d72a108896062db0bc5e60e62253de53b75a471646cc01a2241395b6f96ca1dd1fae50e623bfb069a074e16cf8e51c4a60cc3afb7c92725952805eb226bcaef76bcfe5234eaa0a12f1c5a616e6b6e8ad686b346cb77f2a070e4a43fd1268e0c01701e8d562e6251ae07ab75f6930eb81fc2e04ffc3b7d77dde557ddd9be0162d826cf38fbdfba78db1cd65c1d45a0cc578fc8f08fb2c8fc3119bb8636b23c2edfdf141413175bae54ffe4964ef2158d8d25768822572fceea529c9bdbd1afd61dd9afb17c20fc17d04bb2772944d8caaed600b60a13571127f824c9e3364ab649d21fb20d10382cfc4cb7b9c5482db3d3cf2eed63924b84aec094fe5c774260061569d9d19aa90a6c3cb541cc0ce10fdc596c8917ff2d29bf3db232a2bbd4963adcc9e786f5b46ca41995c1bd52be24e7e0613eedea304e02d977757c213622d53342b53c61e9efc6419fbcedc3700633efaf7b2aeac6f4f83e8b50567fa3a95f782fc8cccd71fabd8dbd9a1236460b7f38a2d5a44bf92907971acb3f3f6726594fb969410d9eccf352aac739937da79ef16b5196896391a78f9d9aa2720813276885a6d40e6e11eb64849d0be42babd2aeb3a78007709c8aa859a8dd310da6cc237a71ef1888ed5f3b3b3dc68a767b7ab60bb2845ae60d522727e62e49b20b69b6de3f0fab9468ce3e3acd9ed4834ef519fa5dd04091ad8a9799deb209febe81a99b56de80bfad735e9b7bf80323db6a6faf27d8fdca558ce1d55199c54ec504abeaa2362795390fdca0ed80b6e85584e0edc3a456338192c8f268b5694de56cc3727ce7d4a66a05dacbd073b36c44c2a6622af94b317845ffe13014fe451ded35b8366b5766"
 
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Origin': 'https://watch.tonton.com.my',
-    'Referer': 'https://watch.tonton.com.my/',
-    'Content-Type': 'application/json'
-}
-
-class NoRaiseHTTPErrorProcessor(urllib.request.HTTPErrorProcessor):
-    def http_response(self, request, response):
-        return response
-    https_response = http_response
-
-opener = urllib.request.build_opener(NoRaiseHTTPErrorProcessor)
-
-def http_get(url):
-    req = urllib.request.Request(url, headers=HEADERS)
-    resp = opener.open(req)
-    if 200 <= resp.status < 300:
-        return json.loads(resp.read().decode('utf-8'))
-    return {}
-
-def fetch_raw_text(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Referer': 'https://watch.tonton.com.my/'})
-    with urllib.request.urlopen(req) as resp:
-        return resp.read().decode('utf-8'), resp.geturl()
-    return "", url
-
-def slugify(text):
-    if not text:
-        return ""
-    text = text.lower().strip()
-    text = re.sub(r'[^\w\s-]', '', text)
-    text = re.sub(r'[\s_-]+', '-', text)
-    return re.sub(r'^-+|-+$', '', text)
-
-def make_m3u8_absolute(m3u8_text, base_url):
-    if not m3u8_text:
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{base_url}\n"
-    parsed = urlparse(base_url)
-    base_dir = f"{parsed.scheme}://{parsed.netloc}{parsed.path.rsplit('/', 1)[0]}/"
-    query_str = f"?{parsed.query}" if parsed.query else ""
-    lines = []
-    in_ad_block = False
-
-    for line in m3u8_text.splitlines():
-        line_str = line.strip()
-        
-        # Filter ad tags / interstitial tags / CUE-OUT / CUE-IN / DAI / Ad URLs
-        if any(ad_tag in line_str for ad_tag in [
-            "#EXT-X-CUE-OUT", "#EXT-X-CUE-IN", "#EXT-X-SCTE35", 
-            "#EXT-OATCLS-SCTE35", "#EXT-X-ASSET", "DATERANGE:CLASS=\"com.apple.hls.interstitial\"",
-            "EXT-X-INTERSTITIAL", "pubads.g.doubleclick.net", "dai.tonton.com.my"
-        ]):
-            if "#EXT-X-CUE-OUT" in line_str:
-                in_ad_block = True
-            elif "#EXT-X-CUE-IN" in line_str:
-                in_ad_block = False
-            continue
-            
-        if in_ad_block:
-            continue
-            
-        if line_str and not line_str.startswith("#"):
-            if not line_str.startswith("http://") and not line_str.startswith("https://"):
-                if "?" not in line_str and query_str:
-                    line_str = base_dir + line_str + query_str
-                else:
-                    line_str = base_dir + line_str
-        lines.append(line_str)
-    return "\n".join(lines) + "\n"
-
 def timestamp_to_xmltv(ts):
     if not ts:
         return ""
     dt_obj = datetime.fromtimestamp(int(ts), tz=timezone.utc)
     return dt_obj.strftime("%Y%m%d%H%M%S +0000")
-
-def write_if_changed(filepath, new_content):
-    if os.path.exists(filepath):
-        with open(filepath, "r", encoding="utf-8") as f:
-            existing = f.read()
-        if existing == new_content:
-            return False
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(new_content)
-    return True
-
-def cleanup_stale_files(base_directory, active_files_set):
-    if not os.path.exists(base_directory):
-        return
-    deleted_count = 0
-    deleted_dirs_count = 0
-    for root, dirs, files in os.walk(base_directory, topdown=False):
-        for fname in files:
-            if fname.endswith(".m3u8"):
-                full_path = os.path.normpath(os.path.join(root, fname))
-                if full_path not in active_files_set:
-                    if os.path.exists(full_path):
-                        os.chmod(full_path, stat.S_IWRITE)
-                        os.remove(full_path)
-                        deleted_count += 1
-        for dname in dirs:
-            dir_path = os.path.join(root, dname)
-            if os.path.exists(dir_path) and not os.listdir(dir_path):
-                os.chmod(dir_path, stat.S_IWRITE)
-                os.rmdir(dir_path)
-                deleted_dirs_count += 1
-    if deleted_count > 0 or deleted_dirs_count > 0:
-        print(f"Cleaned up {deleted_count} stale/deleted files and {deleted_dirs_count} empty folders from {base_directory}.", flush=True)
 
 def process_tonton_live_channels(device_id):
     print("--- Processing Tonton Live Channels ---")
@@ -172,7 +70,7 @@ def process_tonton_live_channels(device_id):
         ch_file_path = f"streams/live_tonton/{c_slug}.m3u8"
         active_files_set.add(os.path.normpath(ch_file_path))
         if signed_stream_url:
-            master_manifest, final_url = fetch_raw_text(signed_stream_url)
+            master_manifest, final_url = fetch_raw_text_and_url(signed_stream_url)
             abs_playlist_content = make_m3u8_absolute(master_manifest, final_url)
             updated = write_if_changed(ch_file_path, abs_playlist_content)
         else:
