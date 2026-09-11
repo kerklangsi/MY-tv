@@ -52459,10 +52459,6 @@
   <programme start="20260916150000 +0000" stop="20260916160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260910140000 +0000" stop="20260910150000 +0000" channel="8tv">
-    <title lang="en">MY STAR FAMILY 2</title>
-    <desc lang="en">The younger sister receives invitations from several wealthy young entrepreneurs on social media and is torn about whom to accept. She brags to Keira, claiming she never expected to be more attractive than her older sister.</desc>
-  </programme>
   <programme start="20260910150000 +0000" stop="20260910160000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
   </programme>
@@ -52538,8 +52534,8 @@
     <title lang="en">THE GREATEST OF US</title>
     <desc lang="en">Episod ini bertemakan &quot;Suara Merdu Tersembunyi&quot; di mana 3 penyanyi tetap Uriah, Jeryl dan Firdaus mempersembahkan lagu-lagu yang telah dipopularkan di luar negara oleh penyanyi tempatan diikuti 7 penyanyi generasi baharu.</desc>
   </programme>
-  <programme start="20260910140000 +0000" stop="20260910150000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP</title>
+  <programme start="20260911150000 +0000" stop="20260911160000 +0000" channel="8tv">
+    <title lang="en">8 E-PULSE 2026</title>
   </programme>
   <programme start="20260910150000 +0000" stop="20260910160000 +0000" channel="drama-sangat">
     <title lang="en">SEKALI AKU BAHAGIA</title>
@@ -52613,6 +52609,10 @@
   <programme start="20260911140000 +0000" stop="20260911150000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP</title>
   </programme>
+  <programme start="20260911150000 +0000" stop="20260911160000 +0000" channel="drama-sangat">
+    <title lang="en">SEKALI AKU BAHAGIA</title>
+    <desc lang="en">Eli tidak hadir kelas dan dihalang dari ambil peperiksaan di kolej. Eli berang Delisha memarahinya di hadapan kawan-kawan. Firas beritahu Delisha yang dia juga tidak menyenangi sikap Eli yang tidak berubah.</desc>
+  </programme>
   <programme start="20260910132853 +0000" stop="20260910154528 +0000" channel="fifa">
     <title lang="en">England v Colombia | Quarter-final | FIFA Women's World Cup 2023 | Full Match Replay</title>
     <desc lang="en">Watch the full match replay between England and Colombia played at Stadium Australia, Sydney.</desc>
@@ -52685,6 +52685,10 @@
     <title lang="en">Germany v Brazil | Final | 2002 FIFA World Cup Korea/Japan™ | Full Match Replay</title>
     <desc lang="en">Watch the full replay from the match between Germany and Brazil.</desc>
   </programme>
+  <programme start="20260911145649 +0000" stop="20260911173335 +0000" channel="fifa">
+    <title lang="en">Italy v France | Final | 2006 FIFA World Cup Germany™ | Full Match Replay</title>
+    <desc lang="en">Watch the full replay from the match between Italy and France</desc>
+  </programme>
   <programme start="20260910100000 +0000" stop="20260910160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 4</title>
     <desc lang="en">Catch up on all the action from MPL Malaysia Season 18 Week 4 (4 - 6 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship!</desc>
@@ -52713,13 +52717,9 @@ iG vs TR</desc>
 
 SRG vs BTRM</desc>
   </programme>
-  <programme start="20260910140000 +0000" stop="20260910150000 +0000" channel="ntv7">
-    <title lang="en">MEMBINA JUARA</title>
-    <desc lang="en">Semua ibubapa mempunyai harapan anak akan membesar menjadi dewasa yang penuh keyakinan diri suatu hari nanti. Episod ini akan merungkai bagaimana ibubapa dan remaja dapat membina estim kendiri dan imej badan yang sihat.</desc>
-  </programme>
-  <programme start="20260910150000 +0000" stop="20260910153000 +0000" channel="ntv7">
-    <title lang="en">DUNIA TERSEMBUNYI</title>
-    <desc lang="en">LEGASI SABUNG.  Aktiviti menyabung ayam sudah menjadi aktiviti riadah yang popular di Filipina. Bahkan ianya merupakan aktiviti yang menjadi salah satu tarikan para pelancong.</desc>
+  <programme start="20260911153000 +0000" stop="20260911160000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Mobile Legends: Bang Bang Professional League (MPL) MY S18</desc>
   </programme>
   <programme start="20260910153000 +0000" stop="20260910160000 +0000" channel="ntv7">
     <title lang="en">MARI BERCERITA</title>
@@ -52830,6 +52830,14 @@ SRG vs BTRM</desc>
   <programme start="20260911140000 +0000" stop="20260911150000 +0000" channel="ntv7">
     <title lang="en">MEMBINA JUARA</title>
     <desc lang="en">Susulan daripada episod lepas, episod kali ini akan mengupas bagaimana remaja boleh memperbaiki pemakanan agar membesar dengan optimum. Bagaimana ibu bapa dapat memastikan golongan remaja mendapat nutrisi yang mencukupi?</desc>
+  </programme>
+  <programme start="20260911150000 +0000" stop="20260911153000 +0000" channel="ntv7">
+    <title lang="en">DUNIA TERSEMBUNYI</title>
+    <desc lang="en">POLIANDRI.  Amalan Poliandri terkenal dalam masyarakat di Kaza, sebuah kawasan tinggi di Himachal Pradesh, utara India, di mana isteri mempunyai lebih daripada seorang suami dalam satu masa.</desc>
+  </programme>
+  <programme start="20260911153000 +0000" stop="20260911160000 +0000" channel="ntv7">
+    <title lang="en">MARI BERCERITA</title>
+    <desc lang="en">Episod ini Nizam JJ mengupas novel grafik Bahasa Inggeris bagi pelajar di Tingkatan 1 yang bertajuk ‘The Swiss Family Robinson’.</desc>
   </programme>
   <programme start="20260910140000 +0000" stop="20260910220000 +0000" channel="ppa-kl-cup">
     <title lang="en">PPA Asia 1000 Leapmotor Kuala Lumpur Cup 2026</title>
@@ -52959,9 +52967,9 @@ SRG vs BTRM</desc>
     <title lang="en">Get in the Dark</title>
     <desc lang="en">A reporter hears three horror stories when investigating a case of the paper doll spirit 20 years ago. Miss Qiao had died in vain then, and her butler paid a paper craftsman to make a paper doll to be buried with her. Miss Qiao’s spirit is revived to take revenge when the doll’s eyes are drawn, and a series of horrible events begins to happen...</desc>
   </programme>
-  <programme start="20260910140000 +0000" stop="20260910150000 +0000" channel="tv3">
-    <title lang="en">KE MANA HILANG CINTA</title>
-    <desc lang="en">CEROBOH SEMPADAN.  Sya mula hilang identiti diri akibat kongkongan keras Aidil. Malah Aidil mula menceroboh sempadan profesionalisme dengan membuka email-email syarikat Sya. Jaris mula masuk ke rumah Azizah.</desc>
+  <programme start="20260911153500 +0000" stop="20260911171000 +0000" channel="thrill">
+    <title lang="en">Hide &amp; Seek</title>
+    <desc lang="en">Thirteen years after an explosion in an abandoned building killed their friend Noo Aon, Tong and his group return to the site—now their university campus. When a girl who looks exactly like Noo Aon appears, a childhood game turns into a lethal ritual. One by one, the friends are hunted by a vengeful spirit determined to settle a long-overdue score.</desc>
   </programme>
   <programme start="20260910150000 +0000" stop="20260910160000 +0000" channel="tv3">
     <title lang="en">FIRST LADY</title>
@@ -53068,9 +53076,9 @@ SRG vs BTRM</desc>
     <title lang="en">POLIS PERONDA</title>
     <desc lang="en">AYAH ( BHG I )  Hasnah diuji menjaga bapa yang lumpuh. Suaminya yang rasa terbeban sentiasa merungut dan mencadangkan suaya bapanya dihantar ke rumah orang tua.</desc>
   </programme>
-  <programme start="20260910143000 +0000" stop="20260910153000 +0000" channel="tv9">
-    <title lang="en">18 AGAIN</title>
-    <desc lang="en">Da Jung teringat kembali kisah silamnya bersama Dae Young dan segala kenanagan lama mereka berdua melalui dan akhirnya mempercayai bahawa Woo Young sememangnya adalah bekas suaminya Dae Young. Mereka berdua mula berpacaran.</desc>
+  <programme start="20260911150000 +0000" stop="20260911160000 +0000" channel="tv3">
+    <title lang="en">SCARLET HEART</title>
+    <desc lang="en">Ruo Xi, wanita moden yang merentasi masa ke era Dinasti Qing akibat renjatan elektrik, tersedar di istana Putera Ke-8 sebagai adik iparnya. Akibat tidak sabar untuk pulang ke dunia asal, dia nekad meluru ke tengah jalan.</desc>
   </programme>
   <programme start="20260910153000 +0000" stop="20260910160000 +0000" channel="tv9">
     <title lang="en">DETIK 12 MALAM 2022</title>
@@ -53183,5 +53191,9 @@ SRG vs BTRM</desc>
   <programme start="20260911143000 +0000" stop="20260911153000 +0000" channel="tv9">
     <title lang="en">AL-KULIYYAH 2019</title>
     <desc lang="en">ANTARA DUA DARJAT.  Alangkah baik kedudukan seseorang apabila Allah sentiasa melindunginya. Mereka yang mati syahid sebaik-baik dikebumikan, terasa luasnya kubur, nyaman, selesa dikelilingi para malaikat.</desc>
+  </programme>
+  <programme start="20260911153000 +0000" stop="20260911160000 +0000" channel="tv9">
+    <title lang="en">FESTIVAL: JURNAL KEMBARA DUNIA</title>
+    <desc lang="en">LA TOMATINA, VALENCIA SPAIN.  Episod ini, Keroz Nazri berkunjung ke Valencia, Sepanyol dan meninjau sambutan 'Paella &amp; Le Tomatina Festival'. Paella adalah masakan tradisi masyarakat Valencia. Apa yang menariknya sambutan ini?</desc>
   </programme>
 </tv>
