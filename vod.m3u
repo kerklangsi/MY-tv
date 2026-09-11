@@ -2991,8 +2991,6 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/n
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/cost-an-arm-and-a-leg.m3u8
 #EXTINF:-1 tvg-id="nabi-yusuf-dan-mimpi-sang-raja" tvg-name="Nabi Yusuf dan Mimpi Sang Raja" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/882bcd9a-9444-431e-95bb-1799aaef5bf5/poster_landscape.png" group-title="MYTV Movies",Nabi Yusuf dan Mimpi Sang Raja
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/nabi-yusuf-dan-mimpi-sang-raja.m3u8
-#EXTINF:-1 tvg-id="if" tvg-name="IF" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/f99de7c8-f034-4018-8eeb-a680c4a2523d/poster_landscape.jpeg" group-title="MYTV Movies",IF
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/if.m3u8
 #EXTINF:-1 tvg-id="kewpie-yeeesang" tvg-name="KEWPIE Yeeesang" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/88ab7841-bc31-4ce6-b7c7-f603ace330a4/poster_landscape.png" group-title="MYTV Movies",KEWPIE Yeeesang
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/kewpie-yeeesang.m3u8
 #EXTINF:-1 tvg-id="kewpie-tandoori-chicken-hainanes-rice" tvg-name="KEWPIE Tandoori Chicken Hainanes Rice" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/5192274b-71b2-43c8-90be-f209a79a64b2/poster_landscape.png" group-title="MYTV Movies",KEWPIE Tandoori Chicken Hainanes Rice
@@ -3581,6 +3579,8 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/e
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/ep-2-adakah-minat-skill-memadai.m3u8
 #EXTINF:-1 tvg-id="ep-1-tentang-trend-fashion-terkini" tvg-name="Ep 1 - Tentang Trend Fashion Terkini" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/2c314a9a-8342-4b4a-b4e9-a2d882acc7e2/poster_landscape.png" group-title="MYTV Movies",Ep 1 - Tentang Trend Fashion Terkini
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/ep-1-tentang-trend-fashion-terkini.m3u8
+#EXTINF:-1 tvg-id="if" tvg-name="IF" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/2261cf4f-092d-4d65-b6d2-3912bf936736/poster_landscape.jpeg" group-title="MYTV Movies",IF
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/if.m3u8
 #EXTINF:-1 tvg-id="roti-jala-kari-ayam-sparkling" tvg-name="Roti Jala & Kari Ayam Sparkling" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/8557531f-857f-479f-a7ad-762e9475cc0c/poster_landscape.jpeg" group-title="MYTV Movies",Roti Jala & Kari Ayam Sparkling
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/movie/roti-jala-kari-ayam-sparkling.m3u8
 #EXTINF:-1 tvg-id="rendang-tok-melting-sparkling-limau-pudina-selasih-sparkling" tvg-name="Rendang Tok Melting Sparkling & Limau Pudina Selasih Sparkling" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/bffac921-5f05-407f-8907-34fb2724cdc7/poster_landscape.jpeg" group-title="MYTV Movies",Rendang Tok Melting Sparkling & Limau Pudina Selasih Sparkling
@@ -4633,6 +4633,10 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/tazkira
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/the-secret-agent/the-secret-agent-part-2.m3u8
 #EXTINF:-1 tvg-id="the-secret-agent-part-1" tvg-name="The Secret Agent Part 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/420265e2-afca-4388-9c84-957feb664539/poster_landscape.jpeg" group-title="MYTV Shows",The Secret Agent Part 1
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/the-secret-agent/the-secret-agent-part-1.m3u8
+#EXTINF:-1 tvg-id="trip-episod-4" tvg-name="TRIP Episod 4" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/8771fa9a-9374-4748-a325-1493c9cd8438/posterLandscape.jpg" group-title="MYTV Shows",TRIP Episod 4
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/trip/trip-episod-4.m3u8
+#EXTINF:-1 tvg-id="trip-episod-3" tvg-name="TRIP Episod 3" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/c06ceaaa-e51e-4906-be0c-b68943170618/posterLandscape.jpg" group-title="MYTV Shows",TRIP Episod 3
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/trip/trip-episod-3.m3u8
 #EXTINF:-1 tvg-id="trip-episod-2" tvg-name="TRIP Episod 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/ae44beba-be65-4722-92ed-9c3ab6241b1e/posterLandscape.jpg" group-title="MYTV Shows",TRIP Episod 2
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/vod_mytv/trip/trip-episod-2.m3u8
 #EXTINF:-1 tvg-id="trip-episod-1" tvg-name="TRIP Episod 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/53a7e59b-b5a5-4f29-a1ff-e0e66c042946/posterLandscape.jpg" group-title="MYTV Shows",TRIP Episod 1
