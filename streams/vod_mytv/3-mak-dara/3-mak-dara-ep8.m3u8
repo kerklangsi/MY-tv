@@ -1,8 +1,0 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=977561,RESOLUTION=854x480,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/bb188df6-947f-454b-9d6b-7d97a71e37e1/master.smil/480p.mp4_chunk.m3u8?md5=qOVU_sN4SmX5BrTi3PibUg&expires=1789062125
-#EXT-X-STREAM-INF:BANDWIDTH=1957136,RESOLUTION=1280x720,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/bb188df6-947f-454b-9d6b-7d97a71e37e1/master.smil/720p.mp4_chunk.m3u8?md5=qOVU_sN4SmX5BrTi3PibUg&expires=1789062125
-#EXT-X-STREAM-INF:BANDWIDTH=2940444,RESOLUTION=1920x1080,LANGUAGE="eng"
-https://z9kkoi7p6o.tenbytecdn.com/vod/bb188df6-947f-454b-9d6b-7d97a71e37e1/master.smil/1080p.mp4_chunk.m3u8?md5=qOVU_sN4SmX5BrTi3PibUg&expires=1789062125
