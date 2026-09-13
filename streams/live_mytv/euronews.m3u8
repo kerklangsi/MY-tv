@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3005226,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_1080p/chunks.m3u8?md5=Uv7-oBQN6uycQvpmsnqj5A&expires=1789292087
-#EXT-X-STREAM-INF:BANDWIDTH=2085854,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_720p/chunks.m3u8?md5=fLUVS4zxmqwUq7FB0vd4gQ&expires=1789292087
-#EXT-X-STREAM-INF:BANDWIDTH=1038840,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_480p/chunks.m3u8?md5=iXM1OLGUyBpmF64__fFRqA&expires=1789292087
+#EXT-X-STREAM-INF:BANDWIDTH=2215261,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_1080p/chunks.m3u8?md5=ZnIKvs-6VdjlFrJPw18feQ&expires=1789298139
+#EXT-X-STREAM-INF:BANDWIDTH=1518345,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_720p/chunks.m3u8?md5=z7zum5q_CuHv1g7cN6gHAA&expires=1789298140
+#EXT-X-STREAM-INF:BANDWIDTH=748149,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/euronews/abr/euronews_480p/chunks.m3u8?md5=ScVE9pXNyin1MuigTogOgw&expires=1789298140
