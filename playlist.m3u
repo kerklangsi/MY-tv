@@ -1,8 +1,6 @@
 #EXTM3U x-tvg-url="epg.xml.gz"
 #EXTINF:-1 tvg-id="tv1" tvg-name="TV1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/26f16d3a-5713-4dc2-ad1c-4e0880899a13/logo.png" tvg-chno="101" group-title="MYTV Live",TV1
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/tv1.m3u8
-#EXTINF:-1 tvg-id="siara-tv" tvg-name="SIARA TV" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/c30bcb6d-8671-4fbf-8b82-9b322c65fadb/logo.jpg" tvg-chno="200" group-title="MYTV Live",SIARA TV
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/siara-tv.m3u8
 #EXTINF:-1 tvg-id="tv2" tvg-name="TV2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/659c6568-8cc8-4083-bbdc-2b7df2431f62/logo.png" tvg-chno="102" group-title="MYTV Live",TV2
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/tv2.m3u8
 #EXTINF:-1 tvg-id="free-movies" tvg-name="FREE MOVIES" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/48967da4-9597-48eb-8a8b-d91d68cad3ff/logo.png" tvg-chno="212" group-title="MYTV Live",FREE MOVIES
@@ -47,6 +45,8 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/selang
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/usim-tv.m3u8
 #EXTINF:-1 tvg-id="tv-ikim" tvg-name="TVIKIM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/784dbb7e-ddd3-4183-8914-1983291524a3/logo.png" tvg-chno="226" group-title="MYTV Live",TVIKIM
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/tv-ikim.m3u8
+#EXTINF:-1 tvg-id="siara-tv" tvg-name="SIARA TV" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/c30bcb6d-8671-4fbf-8b82-9b322c65fadb/logo.jpg" tvg-chno="200" group-title="MYTV Live",SIARA TV
+https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/siara-tv.m3u8
 #EXTINF:-1 tvg-id="borneo-tv" tvg-name="BORNEO TV" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/ebb8ddd1-318a-471c-96c6-13bf7125be93/logo.png" tvg-chno="227" group-title="MYTV Live",BORNEO TV
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/borneo-tv.m3u8
 #EXTINF:-1 tvg-id="manis-fm" tvg-name="MANIS FM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/6cb8b5c0-b4bc-4fa2-9f34-57efa0ea9cfe/logo.png" tvg-chno="205" group-title="MYTV Radio",MANIS FM
@@ -107,5 +107,3 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_tonton/dram
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_tonton/thrill.m3u8
 #EXTINF:-1 tvg-id="fifa" tvg-name="FIFA+" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6576795:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="111" group-title="Tonton Live",FIFA+
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_tonton/fifa.m3u8
-#EXTINF:-1 tvg-id="ppa-kl-cup" tvg-name="PPA KL Cup" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6613864:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="120" group-title="Tonton Live",PPA KL Cup
-https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_tonton/ppa-kl-cup.m3u8
