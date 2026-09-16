@@ -5,12 +5,17 @@ on:
     - cron: "0 */6 * * *" # Runs every 6 hours
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
+concurrency:
+  group: update-iptv-schedule
+  cancel-in-progress: true
+
 env:
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: "true"
 
 jobs:
   update-iptv:
     runs-on: self-hosted
+    timeout-minutes: 5
 
     steps:
       - name: Checkout repository
