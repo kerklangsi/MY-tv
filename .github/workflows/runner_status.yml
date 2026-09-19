@@ -7,7 +7,6 @@ on:
 
 permissions:
   actions: write
-  administration: read
   contents: write
 
 jobs:
