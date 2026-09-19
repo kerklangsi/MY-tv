@@ -5,3 +5,4 @@ streams/
 epg.*
 playlist.*
 vod.*
+.agents/
