@@ -5,12 +5,17 @@ on:
     - cron: "0 */3 * * *" # Runs every 3 hours
   workflow_dispatch:
 
+permissions:
+  actions: write
+  administration: read
+  contents: write
+
 jobs:
   check-and-trigger:
     runs-on: ubuntu-latest
     steps:
       - name: Check Runner Status & Trigger IPTV Update
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const runners = await github.rest.actions.listSelfHostedRunnersForRepo({
