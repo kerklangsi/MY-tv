@@ -12,15 +12,42 @@ concurrency:
 jobs:
   gatekeeper:
     runs-on: ubuntu-latest
-    timeout-minutes: 5 # Stops workflow if self-hosted runner doesn't pick up within 5 minutes
+    timeout-minutes: 5 # Stops gatekeeper if check stalls
+    permissions:
+      actions: write
+      contents: read
     outputs:
       should_run: ${{ steps.check.outputs.should_run }}
     steps:
-      - name: Verify Workflow Queue State
+      - name: Verify Workflow Queue & Runner Online State
         id: check
         uses: actions/github-script@v9
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         with:
           script: |
+            const token = process.env.GH_PAT || context.token;
+            const octokit = github.getOctokit(token);
+
+            // 1. Check if self-hosted runners are online
+            try {
+              const runnerRes = await octokit.rest.actions.listSelfHostedRunnersForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+              });
+              const onlineRunners = (runnerRes.data.runners || []).filter((r) => r.status === 'online');
+              if (onlineRunners.length === 0) {
+                console.log('No self-hosted runners are currently online. Auto-cancelling workflow.');
+                core.setOutput('should_run', 'false');
+                core.setFailed('Self-hosted runner is offline.');
+                return;
+              }
+              console.log(`Verified ${onlineRunners.length} self-hosted runner(s) online.`);
+            } catch (err) {
+              console.log('Runner online status check skipped (requires GH_PAT secret):', err.message);
+            }
+
+            // 2. Check for duplicate running workflow jobs
             const activeRuns = await github.rest.actions.listWorkflowRunsForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -68,6 +95,5 @@ jobs:
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -f streams/ playlist.m3u playlist.m3u8 vod.m3u vod.m3u8 epg.xml epg.xml.gz
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update IPTV playlist & EPG schedule" && git push)
