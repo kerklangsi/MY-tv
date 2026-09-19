@@ -26,12 +26,11 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         with:
           script: |
-            const token = process.env.GH_PAT || context.token;
-            const octokit = github.getOctokit(token);
+            const api = process.env.GH_PAT ? github.getOctokit(process.env.GH_PAT) : github;
 
             // 1. Check if self-hosted runners are online
             try {
-              const runnerRes = await octokit.rest.actions.listSelfHostedRunnersForRepo({
+              const runnerRes = await api.rest.actions.listSelfHostedRunnersForRepo({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
               });
