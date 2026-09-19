@@ -36,9 +36,8 @@ jobs:
               });
               const onlineRunners = (runnerRes.data.runners || []).filter((r) => r.status === 'online');
               if (onlineRunners.length === 0) {
-                console.log('No self-hosted runners are currently online. Auto-cancelling workflow.');
+                console.log('No self-hosted runners are currently online. Skipping IPTV update.');
                 core.setOutput('should_run', 'false');
-                core.setFailed('Self-hosted runner is offline.');
                 return;
               }
               console.log(`Verified ${onlineRunners.length} self-hosted runner(s) online.`);
@@ -59,9 +58,8 @@ jobs:
             );
 
             if (currentRunningJob.length > 0) {
-              console.log('An IPTV update job is already in progress. Auto-cancelling.');
+              console.log('An IPTV update job is already in progress. Skipping duplicate job.');
               core.setOutput('should_run', 'false');
-              core.setFailed('IPTV generator is already busy.');
               return;
             }
 
