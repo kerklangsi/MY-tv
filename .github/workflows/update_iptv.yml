@@ -1,15 +1,52 @@
 name: Update IPTV Playlist & EPG
 
 on:
-  workflow_dispatch: # Triggered by runner_status_check or manually
+  schedule:
+    - cron: "0 */3 * * *" # Runs every 3 hours
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 concurrency:
   group: update-iptv-schedule
   cancel-in-progress: true
 
 jobs:
+  gatekeeper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5 # Stops workflow if self-hosted runner doesn't pick up within 5 minutes
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - name: Verify Workflow Queue State
+        id: check
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const activeRuns = await github.rest.actions.listWorkflowRunsForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'update_iptv.yml',
+              status: 'in_progress',
+            });
+
+            const currentRunningJob = activeRuns.data.workflow_runs.filter(
+              (r) => r.id !== context.runId
+            );
+
+            if (currentRunningJob.length > 0) {
+              console.log('An IPTV update job is already in progress. Auto-cancelling.');
+              core.setOutput('should_run', 'false');
+              core.setFailed('IPTV generator is already busy.');
+              return;
+            }
+
+            console.log('No duplicate jobs running. Handing off to self-hosted runner.');
+            core.setOutput('should_run', 'true');
+
   update-iptv:
+    needs: gatekeeper
+    if: needs.gatekeeper.outputs.should_run == 'true'
     runs-on: self-hosted
+    #timeout-minutes: 60
 
     steps:
       - name: Checkout repository
