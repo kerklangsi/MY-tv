@@ -24,19 +24,29 @@ jobs:
           script: |
             const api = process.env.GH_PAT ? new github.constructor({ auth: process.env.GH_PAT }) : github;
 
-            // 1. Check if self-hosted runners are online
+            // 1. Check if an idle self-hosted runner is available
             try {
               const runnerRes = await api.rest.actions.listSelfHostedRunnersForRepo({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
               });
-              const onlineRunners = (runnerRes.data.runners || []).filter((r) => r.status === 'online');
+              const allRunners = runnerRes.data.runners || [];
+              const onlineRunners = allRunners.filter((r) => r.status === 'online');
+
               if (onlineRunners.length === 0) {
                 console.log('No self-hosted runners are currently online. Skipping IPTV update.');
                 core.setOutput('should_run', 'false');
                 return;
               }
-              console.log(`Verified ${onlineRunners.length} self-hosted runner(s) online.`);
+
+              const idleRunners = onlineRunners.filter((r) => !r.busy);
+              if (idleRunners.length === 0) {
+                console.log('All online self-hosted runners are currently busy. Auto-stopping new run.');
+                core.setOutput('should_run', 'false');
+                return;
+              }
+
+              console.log(`Verified ${idleRunners.length} idle self-hosted runner(s) available out of ${onlineRunners.length} online runner(s).`);
             } catch (err) {
               console.log('Runner online status check skipped (requires GH_PAT secret):', err.message);
             }
