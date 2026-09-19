@@ -1,9 +1,7 @@
 name: Update IPTV Playlist & EPG
 
 on:
-  schedule:
-    - cron: "0 */3 * * *" # Runs every 3 hours
-  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch: # Triggered by runner_status_check or manually
 
 concurrency:
   group: update-iptv-schedule
@@ -12,14 +10,8 @@ concurrency:
 jobs:
   update-iptv:
     runs-on: self-hosted
-    timeout-minutes: 15
 
     steps:
-      - name: Cancel Outdated & Duplicate Runs
-        uses: styfle/cancel-workflow-action@0.13.1
-        with:
-          access_token: ${{ github.token }}
-
       - name: Checkout repository
         uses: actions/checkout@v7
 

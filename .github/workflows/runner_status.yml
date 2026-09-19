@@ -1,0 +1,51 @@
+name: Runner Status Check
+
+on:
+  schedule:
+    - cron: "0 */3 * * *" # Runs every 3 hours
+  workflow_dispatch:
+
+jobs:
+  check-and-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Runner Status & Trigger IPTV Update
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runners = await github.rest.actions.listSelfHostedRunnersForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            });
+
+            const availableRunners = runners.data.runners.filter(
+              (r) => r.status === 'online' && !r.busy
+            );
+
+            if (availableRunners.length === 0) {
+              console.log('Self-hosted runner is offline or busy. Skipping trigger.');
+              return;
+            }
+
+            const activeRuns = await github.rest.actions.listWorkflowRunsForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              status: 'in_progress',
+            });
+
+            const duplicateRuns = activeRuns.data.workflow_runs.filter(
+              (r) => r.name === 'Update IPTV Playlist & EPG'
+            );
+
+            if (duplicateRuns.length > 0) {
+              console.log('Update IPTV workflow is already running. Skipping trigger.');
+              return;
+            }
+
+            console.log('Runner is online and idle. Triggering Update IPTV workflow...');
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'update_iptv.yml',
+              ref: 'main',
+            });
