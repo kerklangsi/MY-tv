@@ -26,8 +26,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         with:
           script: |
-            const githubModule = require('@actions/github');
-            const api = process.env.GH_PAT ? githubModule.getOctokit(process.env.GH_PAT) : github;
+            const api = process.env.GH_PAT ? new github.constructor({ auth: process.env.GH_PAT }) : github;
 
             // 1. Check if self-hosted runners are online
             try {
