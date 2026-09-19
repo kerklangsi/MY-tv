@@ -13,40 +13,26 @@ jobs:
   check-and-trigger:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Runner Status & Trigger IPTV Update
+      - name: Check Pending Runs & Trigger IPTV Update
         uses: actions/github-script@v9
         with:
           script: |
-            const runners = await github.rest.actions.listSelfHostedRunnersForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-            });
-
-            const availableRunners = runners.data.runners.filter(
-              (r) => r.status === 'online' && !r.busy
-            );
-
-            if (availableRunners.length === 0) {
-              console.log('Self-hosted runner is offline or busy. Skipping trigger.');
-              return;
-            }
-
             const activeRuns = await github.rest.actions.listWorkflowRunsForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              status: 'in_progress',
+              workflow_id: 'update_iptv.yml',
             });
 
-            const duplicateRuns = activeRuns.data.workflow_runs.filter(
-              (r) => r.name === 'Update IPTV Playlist & EPG'
+            const pendingRuns = activeRuns.data.workflow_runs.filter(
+              (r) => r.status === 'queued' || r.status === 'in_progress'
             );
 
-            if (duplicateRuns.length > 0) {
-              console.log('Update IPTV workflow is already running. Skipping trigger.');
+            if (pendingRuns.length > 0) {
+              console.log(`Update IPTV workflow is currently ${pendingRuns[0].status}. Skipping trigger to avoid duplicate queueing.`);
               return;
             }
 
-            console.log('Runner is online and idle. Triggering Update IPTV workflow...');
+            console.log('No pending IPTV update runs found. Triggering Update IPTV workflow...');
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
