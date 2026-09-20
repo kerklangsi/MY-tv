@@ -49396,6 +49396,10 @@
     <title lang="en">FACTS: Brazil v Italy | USA 94</title>
     <desc lang="en">Brazil winning in thrilling style against Italy explained.</desc>
   </programme>
+  <programme start="20260920092928 +0000" stop="20260920112057 +0000" channel="fifa">
+    <title lang="en">Brazil v China PR | Group D | FIFA Women's World Cup China 2007™ | Full Match Replay</title>
+    <desc lang="en">Watch the full match replay between Brazil and China PR from Wuhan, 15 September 2007.</desc>
+  </programme>
   <programme start="20260919090000 +0000" stop="20260919121500 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18: W6 Match 39</title>
     <desc lang="en">Mobile Legends: Bang Bang Professional League (MPL) MY S18
@@ -49431,10 +49435,6 @@ BTRM vs iG</desc>
     <desc lang="en">Mobile Legends: Bang Bang Professional League (MPL) MY S18
 
 SRG vs TR</desc>
-  </programme>
-  <programme start="20260919090000 +0000" stop="20260919093000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 24/25</title>
-    <desc lang="en">Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni.</desc>
   </programme>
   <programme start="20260919093000 +0000" stop="20260919100000 +0000" channel="ntv7">
     <title lang="en">MENENGAH ATAS 2026</title>
@@ -49551,9 +49551,8 @@ SRG vs TR</desc>
     <title lang="en">MENENGAH ATAS 24/25</title>
     <desc lang="en">Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni.</desc>
   </programme>
-  <programme start="20260919075000 +0000" stop="20260919092000 +0000" channel="thrill">
-    <title lang="en">Painted Face</title>
-    <desc lang="en">Scholar Wang Huai Qing sells paintings to save his ailing wife. He is attacked by a bird demon along the way but is rescued by Fox demon Xiao Rong. To elude the pursuit, Wang brings Xiao Rong home, sparking a love triangle and at the same time, unfolding an impending love between human and demon.</desc>
+  <programme start="20260920093000 +0000" stop="20260920100000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 2026</title>
   </programme>
   <programme start="20260919092000 +0000" stop="20260919094500 +0000" channel="thrill">
     <title lang="en">Model Family</title>
@@ -49627,12 +49626,13 @@ SRG vs TR</desc>
     <title lang="en">7ujuh</title>
     <desc lang="en">7 friends go on a road trip to a remote bungalow run by a village head and his daughter Suri. They host a party and ask Suri to help. Things spiral out of control and Suri is raped. Before killing herself, she curses them to be haunted in their dreams. As the friends are killed off one by one, they must break the curse to escape their deadly fate.</desc>
   </programme>
-  <programme start="20260919090000 +0000" stop="20260919093000 +0000" channel="tv3">
-    <title lang="en">MONEY MATTERS 2026/2027</title>
-    <desc lang="en">In an era where financial literacy drives empowerment, Money Matters on TV3 isn’t just another program. It’s the nation’s weekly compass for decoding finance. With 3 trusted hosts, Money Matters guiding viewers through macro trends, policy shifts.</desc>
+  <programme start="20260920091000 +0000" stop="20260920093500 +0000" channel="thrill">
+    <title lang="en">Model Family</title>
+    <desc lang="en">A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem.</desc>
   </programme>
-  <programme start="20260919093000 +0000" stop="20260919093500 +0000" channel="tv3">
-    <title lang="en">RINGKASAN PETANG (5 MIN) (2026/2027)</title>
+  <programme start="20260920093500 +0000" stop="20260920112000 +0000" channel="thrill">
+    <title lang="en">The Possession of Leah Dela Cruz</title>
+    <desc lang="en">A female police officer relocates to a quiet small town and is drawn into a chilling case involving a girl seemingly possessed by an evil spirit. As her investigation deepens, unsettling truths emerge. She soon realises this is not just an exorcism, but a psychological battle that uncovers the town’s dark secrets.</desc>
   </programme>
   <programme start="20260919093500 +0000" stop="20260919100500 +0000" channel="tv3">
     <title lang="en">EKSKLUSIF</title>
@@ -49742,9 +49742,12 @@ SRG vs TR</desc>
     <title lang="en">THE MAKING OF HANYA UNTUK DIA</title>
     <desc lang="en">Di sebalik tabir pembikinan drama bersiri &quot;Hanya Untuk Dia&quot; dibintangi oleh Aniq Suhair dan Amylia Aidura sebagai peneraju utama, serta disokong oleh barisan pelakon popular seperti Muaz Zabir, Liza Abdullah, Kazar Saisi, dan Ieda Moin.</desc>
   </programme>
-  <programme start="20260919090000 +0000" stop="20260919093000 +0000" channel="tv9">
-    <title lang="en">FAY &amp; TOM</title>
-    <desc lang="en">DIRTY STAINS.  Fay dan Toms ditugaskan membasuh dan membersihkan binatang ternakan mereka. Tom ditugaskan membersihkan lembunya yang sememangnya bertompok hitam putih, tetapi Tom cuba menghilangkan tompok hitam berkenaan.</desc>
+  <programme start="20260920093000 +0000" stop="20260920093500 +0000" channel="tv3">
+    <title lang="en">RINGKASAN PETANG (5 MIN) (2026/2027)</title>
+  </programme>
+  <programme start="20260920093500 +0000" stop="20260920103000 +0000" channel="tv3">
+    <title lang="en">HELO DOKTOR 2024/2025</title>
+    <desc lang="en">Helo Doktor membawa pakar industri perubatan dan tetamu selebriti membincangkan pelbagai topik kesihatan setiap minggu.</desc>
   </programme>
   <programme start="20260919093000 +0000" stop="20260919100000 +0000" channel="tv9">
     <title lang="en">GO GO DINO SEASON 4</title>
@@ -49851,5 +49854,9 @@ SRG vs TR</desc>
   <programme start="20260920090000 +0000" stop="20260920093000 +0000" channel="tv9">
     <title lang="en">ULTRAMAN TEO 2026</title>
     <desc lang="en">Rintaro yang membenci haiwan meluahkan hasrat berhenti pengajian veterinar kerana kerja amali yang membebankan. Di samping kekecewaan tersebut, dia turut membuat keputusan untuk mengundurkan diri daripada Kelab Astronomi.</desc>
+  </programme>
+  <programme start="20260920093000 +0000" stop="20260920100000 +0000" channel="tv9">
+    <title lang="en">ARMOR RANGERS SEASON 2</title>
+    <desc lang="en">Ketua musuh menyamar sebagai Haziq untuk memperalatkan Alya untuk mendapatkan semua Armor Core daripada pasukan Amor Rangers. Pada masa sama musuh sengaja mencetuskan huru hara untuk mengalih perhatian pasukan Amor Rangers.</desc>
   </programme>
 </tv>
