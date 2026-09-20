@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3311922,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_1080p/chunks.m3u8?md5=xFhCr7P28w7eMy_cFtjeoA&expires=1789907802
-#EXT-X-STREAM-INF:BANDWIDTH=2223372,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_720p/chunks.m3u8?md5=56L5qEgApy1VNo5Yv4tSGQ&expires=1789907802
-#EXT-X-STREAM-INF:BANDWIDTH=1015812,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_480p/chunks.m3u8?md5=kh1Yilkt_tYk_Y9vnuxvUQ&expires=1789907803
+#EXT-X-STREAM-INF:BANDWIDTH=3545153,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_1080p/chunks.m3u8?md5=iqlfDhEdh108RYqeu-Styg&expires=1789913036
+#EXT-X-STREAM-INF:BANDWIDTH=2193805,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_720p/chunks.m3u8?md5=ikV5iIZQjRypiOzaGLUKaw&expires=1789913037
+#EXT-X-STREAM-INF:BANDWIDTH=1126480,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/rti/abr/rti_480p/chunks.m3u8?md5=RB0_uIjx6lxqcMMnbUvVkg&expires=1789913037
