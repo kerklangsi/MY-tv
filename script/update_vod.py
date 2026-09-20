@@ -2,7 +2,7 @@ import uuid
 import vod_mytv
 import vod_tonton
 import vod_unifi
-from utils import write_if_changed
+from utils import write_if_changed, update_combined_playlist
 
 def main():
     device_id = str(uuid.uuid4())
@@ -22,5 +22,8 @@ def main():
     write_if_changed("vod.m3u8", vod_content)
     print("Saved merged vod.m3u and vod.m3u8", flush=True)
 
+    update_combined_playlist()
+
 if __name__ == '__main__':
     main()
+

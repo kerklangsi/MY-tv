@@ -10,7 +10,7 @@ import live_mytv
 import live_tonton
 import live_unifi
 
-from utils import write_if_changed
+from utils import write_if_changed, update_combined_playlist
 
 def main():
     device_id = str(uuid.uuid4())
@@ -79,5 +79,9 @@ def main():
     write_if_changed("epg.xml.gz", compressed_gz, is_binary=True)
     print("Saved merged epg.xml.gz", flush=True)
 
+    # 4. Generate Combined Master Playlist (all.m3u & all.m3u8)
+    update_combined_playlist()
+
 if __name__ == '__main__':
     main()
+

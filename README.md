@@ -34,6 +34,11 @@ https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/playlist.m3u
 https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/vod.m3u
 ```
 
+### 🍿 Combined Playlist (Live TV + Radio + VOD)
+```text
+https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/all.m3u
+```
+
 ### 📅 Electronic Program Guide (EPG)
 ```text
 https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/epg.xml.gz

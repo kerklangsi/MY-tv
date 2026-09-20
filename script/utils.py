@@ -141,3 +141,33 @@ def make_m3u8_absolute(m3u8_text, base_url):
                     line_str = base_dir + line_str
         lines.append(line_str)
     return "\n".join(lines) + "\n"
+
+def update_combined_playlist():
+    live_content = ""
+    vod_content = ""
+    if os.path.exists("playlist.m3u"):
+        with open("playlist.m3u", "r", encoding="utf-8") as f:
+            live_content = f.read()
+    if os.path.exists("vod.m3u"):
+        with open("vod.m3u", "r", encoding="utf-8") as f:
+            vod_content = f.read()
+
+    lines = ['#EXTM3U x-tvg-url="epg.xml.gz"']
+    
+    if live_content:
+        for line in live_content.splitlines():
+            if line.startswith("#EXTM3U") or not line.strip():
+                continue
+            lines.append(line)
+            
+    if vod_content:
+        for line in vod_content.splitlines():
+            if line.startswith("#EXTM3U") or not line.strip():
+                continue
+            lines.append(line)
+
+    all_content = "\n".join(lines) + "\n"
+    write_if_changed("all.m3u", all_content)
+    write_if_changed("all.m3u8", all_content)
+    print("Saved merged all.m3u and all.m3u8 (Combined Live + VOD)", flush=True)
+
