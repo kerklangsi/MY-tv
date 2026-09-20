@@ -2,7 +2,7 @@ name: Update IPTV Playlist & EPG
 
 on:
   schedule:
-    - cron: "17 */1 * * *" # Runs every hour at minute 17 (bypasses minute 00 queue congestion)
+    - cron: "10 * * * *" # Runs every hour at minute 10 (e.g. 01:10, 02:10, 03:10...)
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 jobs:
