@@ -1,8 +1,8 @@
-name: Update IPTV Playlist & EPG
+name: Update VOD Movies & Shows
 
 on:
   schedule:
-    - cron: "10 * * * *" # Runs every hour at minute 10 (e.g. 01:10, 02:10, 03:10...)
+    - cron: "0 */6 * * *" # Runs every 6 hours
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 jobs:
@@ -34,14 +34,14 @@ jobs:
               const onlineRunners = allRunners.filter((r) => r.status === 'online');
 
               if (onlineRunners.length === 0) {
-                console.log('No self-hosted runners are currently online. Skipping IPTV update.');
+                console.log('No self-hosted runners are currently online. Skipping VOD update.');
                 core.setOutput('should_run', 'false');
                 return;
               }
 
               const idleRunners = onlineRunners.filter((r) => !r.busy);
               if (idleRunners.length === 0) {
-                console.log('All online self-hosted runners are currently busy. Auto-stopping new run.');
+                console.log('All online self-hosted runners are currently busy. Auto-stopping new VOD run.');
                 core.setOutput('should_run', 'false');
                 return;
               }
@@ -51,11 +51,11 @@ jobs:
               console.log('Runner online status check skipped (requires GH_PAT secret):', err.message);
             }
 
-            // 2. Check for duplicate running workflow jobs
+            // 2. Check for duplicate running VOD workflow jobs
             const activeRuns = await github.rest.actions.listWorkflowRunsForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              workflow_id: 'update_iptv.yml',
+              workflow_id: 'update_vod.yml',
               status: 'in_progress',
             });
 
@@ -64,18 +64,19 @@ jobs:
             );
 
             if (currentRunningJob.length > 0) {
-              console.log('An IPTV update job is already in progress. Skipping duplicate job.');
+              console.log('A VOD update job is already in progress. Skipping duplicate job.');
               core.setOutput('should_run', 'false');
               return;
             }
 
-            console.log('No duplicate jobs running. Handing off to self-hosted runner.');
+            console.log('No duplicate jobs running. Handing off VOD to self-hosted runner.');
             core.setOutput('should_run', 'true');
 
-  update-iptv:
+  update-vod:
     needs: gatekeeper
     if: needs.gatekeeper.outputs.should_run == 'true'
     runs-on: self-hosted
+    timeout-minutes: 60
 
     steps:
       - name: Checkout repository
@@ -89,13 +90,13 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install cryptography
 
-      - name: Run Live TV & EPG Generator
+      - name: Run VOD Generator
         env:
           PYTHONUNBUFFERED: "1"
-        run: python3 script/update_live.py
+        run: python3 script/update_vod.py
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git add -f streams/live_mytv/ streams/live_tonton/ streams/live_unifi/ playlist.m3u playlist.m3u8 epg.xml epg.xml.gz
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Live TV streams & EPG schedule" && git push)
+          git add -f streams/vod_mytv/ streams/vod_tonton/ streams/vod_unifi/ vod.m3u vod.m3u8
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update VOD movies & shows playlist" && git push)
