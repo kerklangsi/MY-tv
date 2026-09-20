@@ -58,10 +58,55 @@ def is_teaser_or_trailer(title):
     if not title:
         return False
     t_lower = title.lower()
-    for kw in PROMO_KEYWORDS:
-        if re.search(r'\b' + re.escape(kw) + r'\b', t_lower):
-            return True
-    return False
+    return any(re.search(r'\b' + re.escape(kw) + r'\b', t_lower) for kw in PROMO_KEYWORDS)
+
+def fetch_and_process_single_vod(task):
+    item, folder_path, item_slug, group_title, device_id = task
+    item_id = item['id']
+    item_title = item.get('title', 'Unknown Show')
+    item_poster = item.get('posterLandscapeUrl') or item.get('posterPortraitUrl') or item.get('bannerUrl') or ''
+    master_file_path = f"{folder_path}/{item_slug}.m3u8"
+
+    play_payload = {
+        "contentId": item_id,
+        "deviceId": device_id,
+        "protocol": "hls",
+        "context": {
+            "deviceType": "web",
+            "app": "mytv-web",
+            "appVersion": "0.1.0",
+            "os": "Windows",
+            "network": "wifi"
+        }
+    }
+    
+    updated = False
+    play_res = http_post(f"{BASE_API}/public/streaming/play", play_payload)
+    signed_stream_url = play_res.get('data', {}).get('playbackUrl', '')
+
+    if signed_stream_url:
+        master_manifest = fetch_raw_text(signed_stream_url)
+        parsed_master = urlparse(signed_stream_url)
+        fresh_query = f"?{parsed_master.query}" if parsed_master.query else ""
+        path_dir = parsed_master.path.rsplit('/', 1)[0]
+        base_cdn_dir = f"{parsed_master.scheme}://{parsed_master.netloc}{path_dir}/"
+        
+        absolute_master_lines = []
+        for line in master_manifest.splitlines():
+            line_str = line.strip()
+            if line_str and not line_str.startswith("#"):
+                sub_filename = line_str.split('?')[0]
+                abs_sub_url = base_cdn_dir + sub_filename + fresh_query
+                absolute_master_lines.append(abs_sub_url)
+            else:
+                absolute_master_lines.append(line)
+                
+        new_manifest_content = "\n".join(absolute_master_lines) + "\n"
+        updated = write_if_changed(master_file_path, new_manifest_content)
+
+    clean_url = f"{GITHUB_RAW_BASE}/{folder_path}/{item_slug}.m3u8"
+    extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
+    return extinf, clean_url, master_file_path, updated
 
 def process_vod_shows(device_id):
     print("\n--- Processing MYTV VOD Shows & Movies ---")
@@ -195,10 +240,12 @@ def process_vod_shows(device_id):
     sorted_subfolders = sorted([sf for sf in items_by_subfolder.keys() if sf not in ['movie', 'short-movies-and-clips']])
     if 'short-movies-and-clips' in items_by_subfolder:
         sorted_subfolders.append('short-movies-and-clips')
+
     if 'movie' in items_by_subfolder:
         sorted_subfolders.append('movie')
 
-    for idx, subfolder in enumerate(sorted_subfolders, 1):
+    tasks_by_subfolder = defaultdict(list)
+    for subfolder in sorted_subfolders:
         sub_items = items_by_subfolder[subfolder]
         folder_path = f"streams/vod_mytv/{subfolder}"
         os.makedirs(folder_path, exist_ok=True)
@@ -209,13 +256,9 @@ def process_vod_shows(device_id):
         else:
             group_title = 'MYTV Shows'
 
-        updated_count = 0
-        kept_count = 0
-
         for item in sub_items:
             item_id = item['id']
             item_title = item.get('title', 'Unknown Show')
-            item_poster = item.get('posterLandscapeUrl') or item.get('posterPortraitUrl') or item.get('bannerUrl') or ''
 
             title_slug = slugify(item_title)
             if subfolder in ['movie', 'short-movies-and-clips']:
@@ -229,54 +272,33 @@ def process_vod_shows(device_id):
                 item_slug = f"{base_slug}-{item_id}"
             used_vod_slugs.add(item_slug)
 
-            play_payload = {
-                "contentId": item_id,
-                "deviceId": device_id,
-                "protocol": "hls",
-                "context": {
-                    "deviceType": "web",
-                    "app": "mytv-web",
-                    "appVersion": "0.1.0",
-                    "os": "Windows",
-                    "network": "wifi"
-                }
-            }
-            
-            play_res = http_post(f"{BASE_API}/public/streaming/play", play_payload)
-            signed_stream_url = play_res.get('data', {}).get('playbackUrl', '')
-            master_file_path = f"{folder_path}/{item_slug}.m3u8"
-            active_files_set.add(os.path.normpath(master_file_path))
+            tasks_by_subfolder[subfolder].append((item, folder_path, item_slug, group_title, device_id))
 
-            if signed_stream_url:
-                master_manifest = fetch_raw_text(signed_stream_url)
-                parsed_master = urlparse(signed_stream_url)
-                fresh_query = f"?{parsed_master.query}" if parsed_master.query else ""
-                path_dir = parsed_master.path.rsplit('/', 1)[0]
-                base_cdn_dir = f"{parsed_master.scheme}://{parsed_master.netloc}{path_dir}/"
-                
-                absolute_master_lines = []
-                for line in master_manifest.splitlines():
-                    line_str = line.strip()
-                    if line_str and not line_str.startswith("#"):
-                        sub_filename = line_str.split('?')[0]
-                        abs_sub_url = base_cdn_dir + sub_filename + fresh_query
-                        absolute_master_lines.append(abs_sub_url)
-                    else:
-                        absolute_master_lines.append(line)
-                        
-                new_manifest_content = "\n".join(absolute_master_lines) + "\n"
-                updated = write_if_changed(master_file_path, new_manifest_content)
-                if updated:
-                    updated_count += 1
-                else:
-                    kept_count += 1
+    all_tasks = []
+    for subfolder in sorted_subfolders:
+        all_tasks.extend(tasks_by_subfolder[subfolder])
 
-            clean_url = f"{GITHUB_RAW_BASE}/{folder_path}/{item_slug}.m3u8"
-            extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
-            vod_entries.append((extinf, clean_url))
+    print(f"Fetching {len(all_tasks)} MYTV VOD items using 20 parallel threads...", flush=True)
 
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        results = list(executor.map(fetch_and_process_single_vod, all_tasks))
+
+    subfolder_stats = defaultdict(lambda: {'updated': 0, 'kept': 0, 'count': 0})
+
+    for (extinf, clean_url, master_file_path, updated), (item, folder_path, item_slug, group_title, device_id) in zip(results, all_tasks):
+        active_files_set.add(os.path.normpath(master_file_path))
+        vod_entries.append((extinf, clean_url))
+        sf = folder_path.rsplit('/', 1)[-1]
+        subfolder_stats[sf]['count'] += 1
+        if updated:
+            subfolder_stats[sf]['updated'] += 1
+        else:
+            subfolder_stats[sf]['kept'] += 1
+
+    for idx, subfolder in enumerate(sorted_subfolders, 1):
+        stats = subfolder_stats[subfolder]
         folder_label = f"Series '{subfolder}'" if subfolder != 'movie' else "Category 'movies'"
-        print(f"[{idx}/{total_subfolders}] Processed {folder_label} ({len(sub_items)} items: {updated_count} updated, {kept_count} kept)", flush=True)
+        print(f"[{idx}/{total_subfolders}] Processed {folder_label} ({stats['count']} items: {stats['updated']} updated, {stats['kept']} kept)", flush=True)
 
     # Clean up stale files that are no longer in the provider catalog
     cleanup_stale_files("streams/vod_mytv", active_files_set)
