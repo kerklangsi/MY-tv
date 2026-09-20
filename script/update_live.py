@@ -22,8 +22,9 @@ def main():
     unifi_m3u_entries, unifi_epg_channels = live_unifi.process_unifi_live_channels(device_id)
 
     # 2. Build Merged Master Playlist (playlist.m3u & playlist.m3u8)
-    m3u_lines = ['#EXTM3U x-tvg-url="epg.xml.gz"']
+    m3u_lines = ['#EXTM3U x-tvg-url="https://raw.githubusercontent.com/kerklangsi/MY-tv/main/epg.xml.gz"']
     for extinf, url in mytv_m3u_entries + tonton_m3u_entries + unifi_m3u_entries:
+
         m3u_lines.append(extinf)
         m3u_lines.append(url)
 

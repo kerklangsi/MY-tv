@@ -152,7 +152,8 @@ def update_combined_playlist():
         with open("vod.m3u", "r", encoding="utf-8") as f:
             vod_content = f.read()
 
-    lines = ['#EXTM3U x-tvg-url="epg.xml.gz"']
+    lines = ['#EXTM3U x-tvg-url="https://raw.githubusercontent.com/kerklangsi/MY-tv/main/epg.xml.gz"']
+
     
     if live_content:
         for line in live_content.splitlines():

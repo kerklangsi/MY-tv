@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="epg.xml.gz"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/kerklangsi/MY-tv/main/epg.xml.gz"
 #EXTINF:-1 tvg-id="tv1" tvg-name="TV1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/26f16d3a-5713-4dc2-ad1c-4e0880899a13/logo.png" tvg-chno="101" group-title="MYTV Live",TV1
 https://raw.githubusercontent.com/kerklangsi/MY-tv/main/streams/live_mytv/tv1.m3u8
 #EXTINF:-1 tvg-id="tv2" tvg-name="TV2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/659c6568-8cc8-4083-bbdc-2b7df2431f62/logo.png" tvg-chno="102" group-title="MYTV Live",TV2
