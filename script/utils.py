@@ -116,17 +116,15 @@ def cleanup_stale_files(base_directory, active_files_set):
         print(f"Cleaned up {deleted_count} stale/deleted files and {deleted_dirs_count} empty folders from {base_directory}.", flush=True)
 
 # Convert relative segment and playlist paths in M3U8 content into absolute URLs.
-def make_m3u8_absolute(m3u8_text, base_url, user_agent=None):
+def make_m3u8_absolute(m3u8_text, base_url):
     if not m3u8_text:
-        header_opt = f"#EXTVLCOPT:http-user-agent={user_agent}\n" if user_agent else ""
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n{header_opt}#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{base_url}\n"
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{base_url}\n"
     parsed = urlparse(base_url)
     base_dir = f"{parsed.scheme}://{parsed.netloc}{parsed.path.rsplit('/', 1)[0]}/"
     query_str = f"?{parsed.query}" if parsed.query else ""
     lines = []
     in_ad_block = False
 
-    header_added = False
     for line in m3u8_text.splitlines():
         line_str = line.strip()
         if any(ad_tag in line_str for ad_tag in [
@@ -151,12 +149,6 @@ def make_m3u8_absolute(m3u8_text, base_url, user_agent=None):
                 else:
                     line_str = base_dir + line_str
         lines.append(line_str)
-        if line_str.startswith("#EXTM3U") and user_agent and not header_added:
-            lines.append(f"#EXTVLCOPT:http-user-agent={user_agent}")
-            header_added = True
-
-    if user_agent and not header_added:
-        lines.insert(1 if lines and lines[0].startswith("#EXTM3U") else 0, f"#EXTVLCOPT:http-user-agent={user_agent}")
 
     return "\n".join(lines) + "\n"
 

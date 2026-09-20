@@ -75,7 +75,7 @@ def process_tonton_live_channels(device_id):
         if signed_stream_url:
             active_files_set.add(os.path.normpath(ch_file_path))
             master_manifest, final_url = fetch_raw_text_and_url(signed_stream_url, headers={'User-Agent': USER_AGENT_STR})
-            abs_playlist_content = make_m3u8_absolute(master_manifest, final_url, user_agent=USER_AGENT_STR)
+            abs_playlist_content = make_m3u8_absolute(master_manifest, final_url)
             updated = write_if_changed(ch_file_path, abs_playlist_content)
             status_str = "Updated" if updated else "Kept (Unchanged)"
             clean_m3u_url = f"{GITHUB_URL}/streams/live_tonton/{c_slug}.m3u8"
