@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3861994,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.42c028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_1080p/chunks.m3u8?md5=sgbXw2duL2btohJvHTg7Ig&expires=1789903931
-#EXT-X-STREAM-INF:BANDWIDTH=2843832,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.42c01f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_720p/chunks.m3u8?md5=IHjZ4etWypGSld413HvlTQ&expires=1789903932
-#EXT-X-STREAM-INF:BANDWIDTH=1413923,FRAME-RATE=25,RESOLUTION=852x480,CODECS="avc1.42c01e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_480p/chunks.m3u8?md5=weqpOM-JEDHUCOa6YOd2Xg&expires=1789903932
+#EXT-X-STREAM-INF:BANDWIDTH=4018713,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.42c028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_1080p/chunks.m3u8?md5=f9XAxXZrsr-ov0z99CaI0A&expires=1789905005
+#EXT-X-STREAM-INF:BANDWIDTH=2872148,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.42c01f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_720p/chunks.m3u8?md5=Y11jwSyvAPEg1zKXEFXzdw&expires=1789905005
+#EXT-X-STREAM-INF:BANDWIDTH=1368361,FRAME-RATE=25,RESOLUTION=852x480,CODECS="avc1.42c01e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/borneotv/abr/borneotv_480p/chunks.m3u8?md5=KPBWUQYHTcdPIoH2jVRcBg&expires=1789905005
