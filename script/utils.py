@@ -151,32 +151,41 @@ def make_m3u8_absolute(m3u8_text, base_url):
         lines.append(line_str)
     return "\n".join(lines) + "\n"
 
-# Merge live TV and VOD playlists into all.m3u and all.m3u8.
+# Extract integer channel number from tvg-chno attribute for sorting.
+def extract_chno_from_extinf(extinf):
+    match = re.search(r'tvg-chno="(\d+)"', extinf)
+    if match:
+        return int(match.group(1))
+    return 999999
+
+# Merge live TV and VOD playlists into all.m3u and all.m3u8 sorted by tvg-chno.
 def update_combined_playlist():
-    live_content = ""
-    vod_content = ""
+    live_entries = []
+    vod_entries = []
+    
     if os.path.exists("playlist.m3u"):
         with open("playlist.m3u", "r", encoding="utf-8") as f:
-            live_content = f.read()
+            lines = [l.strip() for l in f.read().splitlines() if l.strip() and not l.startswith("#EXTM3U")]
+            for i in range(0, len(lines) - 1, 2):
+                if lines[i].startswith("#EXTINF"):
+                    live_entries.append((lines[i], lines[i+1]))
+
     if os.path.exists("vod.m3u"):
         with open("vod.m3u", "r", encoding="utf-8") as f:
-            vod_content = f.read()
+            lines = [l.strip() for l in f.read().splitlines() if l.strip() and not l.startswith("#EXTM3U")]
+            for i in range(0, len(lines) - 1, 2):
+                if lines[i].startswith("#EXTINF"):
+                    vod_entries.append((lines[i], lines[i+1]))
+
+    live_entries.sort(key=lambda item: extract_chno_from_extinf(item[0]))
 
     lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
 
-    if live_content:
-        for line in live_content.splitlines():
-            if line.startswith("#EXTM3U") or not line.strip():
-                continue
-            lines.append(line)
-            
-    if vod_content:
-        for line in vod_content.splitlines():
-            if line.startswith("#EXTM3U") or not line.strip():
-                continue
-            lines.append(line)
+    for extinf, url in live_entries + vod_entries:
+        lines.append(extinf)
+        lines.append(url)
 
     all_content = "\n".join(lines) + "\n"
     write_if_changed("all.m3u", all_content)
     write_if_changed("all.m3u8", all_content)
-    print("Saved merged all.m3u and all.m3u8 (Combined Live + VOD)", flush=True)
+    print("Saved merged all.m3u and all.m3u8 (Combined Live + VOD, sorted by tvg-chno)", flush=True)

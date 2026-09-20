@@ -3,6 +3,7 @@ import json
 import uuid
 import os
 import gzip
+import re
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
@@ -11,6 +12,13 @@ import live_tonton
 import live_unifi
 
 from utils import write_if_changed, update_combined_playlist
+
+# Extract channel number integer from tvg-chno attribute for sorting.
+def extract_chno(extinf):
+    match = re.search(r'tvg-chno="(\d+)"', extinf)
+    if match:
+        return int(match.group(1))
+    return 999999
 
 # Orchestrate live channel processing, playlist generation, and EPG schedule merging.
 def main():
@@ -22,10 +30,13 @@ def main():
     tonton_m3u_entries, tonton_epg_channels = live_tonton.process_tonton_live_channels(device_id)
     unifi_m3u_entries, unifi_epg_channels = live_unifi.process_unifi_live_channels(device_id)
 
-    # 2. Build Merged Master Playlist (playlist.m3u & playlist.m3u8)
+    # 2. Build Merged Master Playlist (playlist.m3u & playlist.m3u8) sorted by tvg-chno
+    all_live_entries = mytv_m3u_entries + tonton_m3u_entries + unifi_m3u_entries
+    all_live_entries.sort(key=lambda item: extract_chno(item[0]))
+
     m3u_lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
 
-    for extinf, url in mytv_m3u_entries + tonton_m3u_entries + unifi_m3u_entries:
+    for extinf, url in all_live_entries:
         m3u_lines.append(extinf)
         m3u_lines.append(url)
 
