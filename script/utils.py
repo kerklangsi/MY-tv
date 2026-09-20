@@ -47,14 +47,19 @@ def fetch_raw_text(url, headers=None):
         return resp.read().decode('utf-8')
     return ""
 
+redirect_opener = urllib.request.build_opener(urllib.request.HTTPRedirectHandler())
+
 def fetch_raw_text_and_url(url, headers=None):
     req_headers = {'User-Agent': DEFAULT_HEADERS['User-Agent']}
     if headers:
         req_headers.update(headers)
     req = urllib.request.Request(url, headers=req_headers)
-    resp = opener.open(req)
-    if 200 <= resp.status < 300:
-        return resp.read().decode('utf-8'), resp.geturl()
+    try:
+        resp = redirect_opener.open(req)
+        if 200 <= resp.status < 300:
+            return resp.read().decode('utf-8', errors='ignore'), resp.geturl()
+    except Exception as e:
+        pass
     return "", url
 
 def slugify(text):
