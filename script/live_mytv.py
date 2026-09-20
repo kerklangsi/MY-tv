@@ -14,7 +14,9 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from utils import http_get, http_post, fetch_raw_text, slugify, make_m3u8_absolute, write_if_changed, cleanup_stale_files
 
 BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
-GITHUB_RAW_BASE = "https://raw.githubusercontent.com/kerklangsi/MY-tv/main"
+GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
+
+
 
 ME_KEY = "u6nCKz4ogW09a27lOzGcYkdJP9QJ6ABgw9GZuIBmWtMWswdz".encode('utf-8')[:32]
 
@@ -135,7 +137,8 @@ def process_live_channels(device_id):
             updated = write_if_changed(ch_file_path, ch_playlist_content)
             status_str = "Updated" if updated else "Kept (Unchanged)"
                 
-            clean_m3u_url = f"{GITHUB_RAW_BASE}/streams/{folder_name}/{c_slug}.m3u8"
+            clean_m3u_url = f"{GITHUB_URL}/streams/{folder_name}/{c_slug}.m3u8"
+
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
             m3u_entries.append((extinf, clean_m3u_url))
             print(f"[{idx}/{len(channels)}] [{status_str}] Added {group_title} {c_num}: {c_name} -> {clean_m3u_url}", flush=True)

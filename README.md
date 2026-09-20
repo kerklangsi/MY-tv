@@ -22,28 +22,28 @@ Automated IPTV provider generator for **MYTV Mana-Mana** ([mana2.my](https://man
 
 ## 🚀 Public Playlist & EPG Links
 
-Use these direct raw GitHub URLs in your IPTV client app (e.g., TiviMate, OTT Navigator, IPTV Smarters, VLC, Televizo):
+Use these short GitHub Pages URLs in your IPTV client app (e.g., TiviMate, OTT Navigator, IPTV Smarters, VLC, Televizo):
+
+### 🍿 Combined Playlist (Live TV + Radio + VOD)
+```text
+https://kerklangsi.github.io/MY-tv/all.m3u
+```
 
 ### 📺 Live TV & Radio Playlist (MYTV + Tonton + Unifi)
 ```text
-https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/playlist.m3u
+https://kerklangsi.github.io/MY-tv/playlist.m3u
 ```
 
 ### 🎬 VOD Shows & Movies Playlist
 ```text
-https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/vod.m3u
-```
-
-### 🍿 Combined Playlist (Live TV + Radio + VOD)
-```text
-https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/all.m3u
+https://kerklangsi.github.io/MY-tv/vod.m3u
 ```
 
 ### 📅 Electronic Program Guide (EPG)
 ```text
-https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/epg.xml.gz
+https://kerklangsi.github.io/MY-tv/epg.xml.gz
 ```
-*(Uncompressed XML format: `https://raw.githubusercontent.com/kerklangsi/MY-tv/refs/heads/main/epg.xml`)*
+*(Uncompressed XML format: `https://kerklangsi.github.io/MY-tv/epg.xml`)*
 
 ---
 

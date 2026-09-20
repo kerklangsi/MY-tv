@@ -11,7 +11,9 @@ from concurrent.futures import ThreadPoolExecutor
 from utils import http_get, http_post, fetch_raw_text, slugify, write_if_changed, cleanup_stale_files
 
 BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
-GITHUB_RAW_BASE = "https://raw.githubusercontent.com/kerklangsi/MY-tv/main"
+GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
+
+
 
 def get_vod_subfolder(title, content_type):
     if not title:
@@ -104,7 +106,8 @@ def fetch_and_process_single_vod(task):
         new_manifest_content = "\n".join(absolute_master_lines) + "\n"
         updated = write_if_changed(master_file_path, new_manifest_content)
 
-    clean_url = f"{GITHUB_RAW_BASE}/{folder_path}/{item_slug}.m3u8"
+    clean_url = f"{GITHUB_URL}/{folder_path}/{item_slug}.m3u8"
+
     extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
     return extinf, clean_url, master_file_path, updated
 
