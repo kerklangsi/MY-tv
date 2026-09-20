@@ -75,13 +75,14 @@ def process_tonton_live_channels(device_id):
         if signed_stream_url:
             active_files_set.add(os.path.normpath(ch_file_path))
             master_manifest, final_url = fetch_raw_text_and_url(signed_stream_url, headers={'User-Agent': USER_AGENT_STR})
-            abs_playlist_content = make_m3u8_absolute(master_manifest, final_url)
+            abs_playlist_content = make_m3u8_absolute(master_manifest, final_url, user_agent=USER_AGENT_STR)
             updated = write_if_changed(ch_file_path, abs_playlist_content)
             status_str = "Updated" if updated else "Kept (Unchanged)"
             clean_m3u_url = f"{GITHUB_URL}/streams/live_tonton/{c_slug}.m3u8"
 
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}" http-user-agent="{USER_AGENT_STR}",{c_name}'
-            tonton_m3u_entries.append((extinf, clean_m3u_url))
+            extra_lines = [f'#EXTVLCOPT:http-user-agent={USER_AGENT_STR}']
+            tonton_m3u_entries.append((extinf, extra_lines, clean_m3u_url))
             print(f"[{idx}/{len(live_channels)}] [{status_str}] Added Tonton channel {c_num}: {c_name} ({c_code}) -> {clean_m3u_url}", flush=True)
         else:
             print(f"[{idx}/{len(live_channels)}] [Warning] Tonton channel {c_num}: {c_name} requires valid TONTON_TOKEN env variable.", flush=True)

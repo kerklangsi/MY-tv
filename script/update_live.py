@@ -32,12 +32,14 @@ def main():
 
     # 2. Build Merged Master Playlist (playlist.m3u & playlist.m3u8) sorted by tvg-chno
     all_live_entries = mytv_m3u_entries + tonton_m3u_entries + unifi_m3u_entries
-    all_live_entries.sort(key=lambda item: extract_chno(item[0]))
+    all_live_entries.sort(key=lambda item: (extract_chno(item[0]), item[0]))
 
     m3u_lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
 
-    for extinf, url in all_live_entries:
+    for extinf, extra_lines, url in all_live_entries:
         m3u_lines.append(extinf)
+        for el in extra_lines:
+            m3u_lines.append(el)
         m3u_lines.append(url)
 
     playlist_content = "\n".join(m3u_lines) + "\n"

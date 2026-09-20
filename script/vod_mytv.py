@@ -110,7 +110,7 @@ def fetch_and_process_single_vod(task):
     clean_url = f"{GITHUB_URL}/{folder_path}/{item_slug}.m3u8"
 
     extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
-    return extinf, clean_url, master_file_path, updated
+    return extinf, [], clean_url, master_file_path, updated
 
 # Process all MYTV VOD shows and movies using parallel execution.
 def process_vod_shows(device_id):
@@ -290,9 +290,9 @@ def process_vod_shows(device_id):
 
     subfolder_stats = defaultdict(lambda: {'updated': 0, 'kept': 0, 'count': 0})
 
-    for (extinf, clean_url, master_file_path, updated), (item, folder_path, item_slug, group_title, device_id) in zip(results, all_tasks):
+    for (extinf, extra_lines, clean_url, master_file_path, updated), (item, folder_path, item_slug, group_title, device_id) in zip(results, all_tasks):
         active_files_set.add(os.path.normpath(master_file_path))
-        vod_entries.append((extinf, clean_url))
+        vod_entries.append((extinf, extra_lines, clean_url))
         sf = folder_path.rsplit('/', 1)[-1]
         subfolder_stats[sf]['count'] += 1
         if updated:

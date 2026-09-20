@@ -14,8 +14,10 @@ def main():
     unifi_vod_entries = vod_unifi.process_unifi_vod(device_id)
 
     vod_lines = ['#EXTM3U']
-    for extinf, url in mytv_vod_entries + tonton_vod_entries + unifi_vod_entries:
+    for extinf, extra_lines, url in mytv_vod_entries + tonton_vod_entries + unifi_vod_entries:
         vod_lines.append(extinf)
+        for el in extra_lines:
+            vod_lines.append(el)
         vod_lines.append(url)
 
     vod_content = "\n".join(vod_lines) + "\n"

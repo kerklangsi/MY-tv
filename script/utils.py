@@ -6,7 +6,7 @@ import re
 from urllib.parse import urlparse
 
 DEFAULT_HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Content-Type': 'application/json'
 }
 
@@ -116,15 +116,17 @@ def cleanup_stale_files(base_directory, active_files_set):
         print(f"Cleaned up {deleted_count} stale/deleted files and {deleted_dirs_count} empty folders from {base_directory}.", flush=True)
 
 # Convert relative segment and playlist paths in M3U8 content into absolute URLs.
-def make_m3u8_absolute(m3u8_text, base_url):
+def make_m3u8_absolute(m3u8_text, base_url, user_agent=None):
     if not m3u8_text:
-        return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{base_url}\n"
+        header_opt = f"#EXTVLCOPT:http-user-agent={user_agent}\n" if user_agent else ""
+        return f"#EXTM3U\n#EXT-X-VERSION:3\n{header_opt}#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{base_url}\n"
     parsed = urlparse(base_url)
     base_dir = f"{parsed.scheme}://{parsed.netloc}{parsed.path.rsplit('/', 1)[0]}/"
     query_str = f"?{parsed.query}" if parsed.query else ""
     lines = []
     in_ad_block = False
 
+    header_added = False
     for line in m3u8_text.splitlines():
         line_str = line.strip()
         if any(ad_tag in line_str for ad_tag in [
@@ -149,6 +151,13 @@ def make_m3u8_absolute(m3u8_text, base_url):
                 else:
                     line_str = base_dir + line_str
         lines.append(line_str)
+        if line_str.startswith("#EXTM3U") and user_agent and not header_added:
+            lines.append(f"#EXTVLCOPT:http-user-agent={user_agent}")
+            header_added = True
+
+    if user_agent and not header_added:
+        lines.insert(1 if lines and lines[0].startswith("#EXTM3U") else 0, f"#EXTVLCOPT:http-user-agent={user_agent}")
+
     return "\n".join(lines) + "\n"
 
 # Extract integer channel number from tvg-chno attribute for sorting.
@@ -158,31 +167,42 @@ def extract_chno_from_extinf(extinf):
         return int(match.group(1))
     return 999999
 
+# Parse M3U playlist file into list of (extinf, extra_lines, url) entries.
+def parse_m3u_entries(filepath):
+    entries = []
+    if not os.path.exists(filepath):
+        return entries
+    with open(filepath, "r", encoding="utf-8") as f:
+        lines = [l.strip() for l in f.read().splitlines() if l.strip() and not l.startswith("#EXTM3U")]
+    i = 0
+    while i < len(lines):
+        if lines[i].startswith("#EXTINF"):
+            extinf = lines[i]
+            i += 1
+            extra_lines = []
+            while i < len(lines) and lines[i].startswith("#EXTVLCOPT"):
+                extra_lines.append(lines[i])
+                i += 1
+            if i < len(lines):
+                url = lines[i]
+                entries.append((extinf, extra_lines, url))
+        i += 1
+    return entries
+
 # Merge live TV and VOD playlists into all.m3u and all.m3u8 sorted by tvg-chno.
 def update_combined_playlist():
-    live_entries = []
-    vod_entries = []
-    
-    if os.path.exists("playlist.m3u"):
-        with open("playlist.m3u", "r", encoding="utf-8") as f:
-            lines = [l.strip() for l in f.read().splitlines() if l.strip() and not l.startswith("#EXTM3U")]
-            for i in range(0, len(lines) - 1, 2):
-                if lines[i].startswith("#EXTINF"):
-                    live_entries.append((lines[i], lines[i+1]))
+    live_entries = parse_m3u_entries("playlist.m3u")
+    vod_entries = parse_m3u_entries("vod.m3u")
 
-    if os.path.exists("vod.m3u"):
-        with open("vod.m3u", "r", encoding="utf-8") as f:
-            lines = [l.strip() for l in f.read().splitlines() if l.strip() and not l.startswith("#EXTM3U")]
-            for i in range(0, len(lines) - 1, 2):
-                if lines[i].startswith("#EXTINF"):
-                    vod_entries.append((lines[i], lines[i+1]))
-
-    live_entries.sort(key=lambda item: extract_chno_from_extinf(item[0]))
+    live_entries.sort(key=lambda item: (extract_chno_from_extinf(item[0]), item[0]))
+    vod_entries.sort(key=lambda item: (extract_chno_from_extinf(item[0]), item[0]))
 
     lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
 
-    for extinf, url in live_entries + vod_entries:
+    for extinf, extra_lines, url in live_entries + vod_entries:
         lines.append(extinf)
+        for el in extra_lines:
+            lines.append(el)
         lines.append(url)
 
     all_content = "\n".join(lines) + "\n"
