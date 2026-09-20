@@ -1,11 +1,10 @@
 #EXTM3U
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=600000,RESOLUTION=480x270
-https://live-01.tonton.com.my/1789916611/e64440f087dad8992d0b049623b7d41811aee8131f7f4a627056f954228a92c7/live-hls/tonton6_270p/index.m3u8
+https://live-01.tonton.com.my/1789917437/45b9887bce6401eff1698a0111f4969b9a3c5718049ae622dabd40d7dbec2a4e/live-hls/tonton6_270p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=900000,RESOLUTION=640x360
-https://live-01.tonton.com.my/1789916611/e64440f087dad8992d0b049623b7d41811aee8131f7f4a627056f954228a92c7/live-hls/tonton6_360p/index.m3u8
+https://live-01.tonton.com.my/1789917437/45b9887bce6401eff1698a0111f4969b9a3c5718049ae622dabd40d7dbec2a4e/live-hls/tonton6_360p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1200000,RESOLUTION=854x480
-https://live-01.tonton.com.my/1789916611/e64440f087dad8992d0b049623b7d41811aee8131f7f4a627056f954228a92c7/live-hls/tonton6_480p/index.m3u8
+https://live-01.tonton.com.my/1789917437/45b9887bce6401eff1698a0111f4969b9a3c5718049ae622dabd40d7dbec2a4e/live-hls/tonton6_480p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1600000,RESOLUTION=1280x720
-https://live-01.tonton.com.my/1789916611/e64440f087dad8992d0b049623b7d41811aee8131f7f4a627056f954228a92c7/live-hls/tonton6_720p/index.m3u8
+https://live-01.tonton.com.my/1789917437/45b9887bce6401eff1698a0111f4969b9a3c5718049ae622dabd40d7dbec2a4e/live-hls/tonton6_720p/index.m3u8

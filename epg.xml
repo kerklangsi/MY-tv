@@ -49793,10 +49793,6 @@
   <programme start="20260925150000 +0000" stop="20260925160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260919110000 +0000" stop="20260919120000 +0000" channel="8tv">
-    <title lang="en">LET ME TAKE YOUR PULSE</title>
-    <desc lang="en">Selepas klinik ditutup, Juanqi meluahkan cintanya kepada Jiaying. Yuanzhi kembali ke Klinik Lulin, manakala kemahiran pembentukan tulang Shaoguang di klinik Juanqi yang cemerlang mula membuatkan Sisi berasa tertekan.</desc>
-  </programme>
   <programme start="20260919120000 +0000" stop="20260919130000 +0000" channel="8tv">
     <title lang="en">MANDARIN NEWS ( 2026/2027 )</title>
   </programme>
@@ -49875,6 +49871,9 @@
   <programme start="20260920110000 +0000" stop="20260920120000 +0000" channel="8tv">
     <title lang="en">LET ME TAKE YOUR PULSE</title>
     <desc lang="en">Digantung tugas akibat siasatan kematian mengejut pesakit, Jiaying meluahkan perasaan kepada Qingjin. Dia mula mendedahkan keraguan dan kekurangan kepercayaan yang dihadapinya sebagai pengamal perubatan tradisional Cina.</desc>
+  </programme>
+  <programme start="20260920120000 +0000" stop="20260920130000 +0000" channel="8tv">
+    <title lang="en">MANDARIN NEWS ( 2026/2027 )</title>
   </programme>
   <programme start="20260919110000 +0000" stop="20260919130000 +0000" channel="drama-sangat">
     <title lang="en">KISAH CINTA KITA</title>
@@ -50052,10 +50051,6 @@ BTRM vs iG</desc>
 
 SRG vs TR</desc>
   </programme>
-  <programme start="20260919113000 +0000" stop="20260919120000 +0000" channel="ntv7">
-    <title lang="en">BEYBLADE X (GEN 4)</title>
-    <desc lang="en">Pasukan Persona wajib melepasi ujian Kardova untuk layak ke satu tahap yang lebih tinggi.Kegagalan Kazami dalam ujian pertama membuat dia hilang keyakinan.Rakan sepasukan mangatur program latihan khas untuk  mengembalikan keyakinan Kazami.</desc>
-  </programme>
   <programme start="20260919120000 +0000" stop="20260919130000 +0000" channel="ntv7">
     <title lang="en">PECUTAN 2022 Q3 Q4</title>
     <desc lang="en">Episod ini menyediakan perkongsian teknik menjawab soalan  penulisan jawapan untuk bahagian A dan bahagian B. Fokus utama slot ini adalah untuk memberi pendedahan kepada murid tentang kaedah menjawab soalan.</desc>
@@ -50170,6 +50165,10 @@ SRG vs TR</desc>
     <title lang="en">BEYBLADE X (GEN 4)</title>
     <desc lang="en">Pasukan Persona berehat seketika daripada saingan kedudukan pasukan untuk menyertai Solo Battle Fest.Meskipun tewas,Kazami menerima pujian dan kata-kata semangat daripada seorang blader terkenal yang bertarung buat kali terakhir.</desc>
   </programme>
+  <programme start="20260920120000 +0000" stop="20260920130000 +0000" channel="ntv7">
+    <title lang="en">PECUTAN 2022 Q3 Q4</title>
+    <desc lang="en">Episod ini menumpukan kepada dua bahagian soalan iaitu,  Bahagian A – Murid didedahkan dengan pelbagai soalan objektif jenis non-MCQ dengan konstruk berbeza serta teknik menjawab yang tepat.</desc>
+  </programme>
   <programme start="20260919111500 +0000" stop="20260919130000 +0000" channel="thrill">
     <title lang="en">Apartment 212</title>
     <desc lang="en">Escaping an abusive past, Jennifer moves into Apartment 212 for a fresh start, only to wake each day with painful bite marks. She soon discovers an ancient parasite that feeds on human flesh lurking within the walls. As attacks intensify, she must confront a nightmare more terrifying than her past before it consumes her.</desc>
@@ -50245,10 +50244,6 @@ SRG vs TR</desc>
   <programme start="20260920112000 +0000" stop="20260920130000 +0000" channel="thrill">
     <title lang="en">Open the Coffin</title>
     <desc lang="en">Ghost Hand and his tomb raiders resurface in Jiang City to seek gold in ancient tombs after a 3-year absence. They released an evil spirit from a coffin and all four died at home eventually. Poison and pinholes in the corpses become the sole clue for police investigation. A tomb raid now unfolds as a perplexing and mysterious case.</desc>
-  </programme>
-  <programme start="20260919110000 +0000" stop="20260919120000 +0000" channel="tv3">
-    <title lang="en">WANITA MILIK KAIDEN</title>
-    <desc lang="en">Dilla sedar rancangannya dengan Akmal tidak mungkin berjaya. Dilla dan Erman sama-sama insaf. Mereka berusaha untuk menyatukan Haila dengan Kaiden. Sementara itu Datin cuba menghasut Kaiden untuk membenci Haila.</desc>
   </programme>
   <programme start="20260919120000 +0000" stop="20260919130000 +0000" channel="tv3">
     <title lang="en">BULETIN UTAMA (2026/2027)</title>
@@ -50362,6 +50357,9 @@ SRG vs TR</desc>
   <programme start="20260920110000 +0000" stop="20260920120000 +0000" channel="tv3">
     <title lang="en">WANITA MILIK KAIDEN</title>
     <desc lang="en">Erman bantu Kaiden buat laporan polis. Datin koma setelah menjalani pembedahan. Erman mendedahkan rancangan jahat Dilla dengan Akmal kepada Kaiden. Erman cuba memujuk dan menasihati Dilla.</desc>
+  </programme>
+  <programme start="20260920120000 +0000" stop="20260920130000 +0000" channel="tv3">
+    <title lang="en">BULETIN UTAMA (2026/2027)</title>
   </programme>
   <programme start="20260919115000 +0000" stop="20260919124000 +0000" channel="tv9">
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
