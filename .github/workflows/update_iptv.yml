@@ -2,7 +2,7 @@ name: Update IPTV Playlist & EPG
 
 on:
   schedule:
-    - cron: "10 * * * *" # Runs every hour at minute 10 (e.g. 01:10, 02:10, 03:10...)
+    - cron: "10 * * * *" # Runs every hour at minute 10
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 jobs:
@@ -72,10 +72,11 @@ jobs:
             console.log('No duplicate jobs running. Handing off to self-hosted runner.');
             core.setOutput('should_run', 'true');
 
-  update-iptv:
+  update-live:
     needs: gatekeeper
     if: needs.gatekeeper.outputs.should_run == 'true'
     runs-on: self-hosted
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
@@ -94,8 +95,37 @@ jobs:
           PYTHONUNBUFFERED: "1"
         run: python3 script/update_live.py
 
-      - name: Commit and push changes
+      - name: Commit and push Live TV changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git add -f streams/live_mytv/ streams/live_tonton/ streams/live_unifi/ playlist.m3u playlist.m3u8 epg.xml epg.xml.gz
+          git add -f streams/live_mytv/ streams/live_tonton/ streams/live_unifi/ streams/radio_mytv/ playlist.m3u playlist.m3u8 epg.xml epg.xml.gz
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Live TV streams & EPG schedule" && git push)
+
+  update-vod:
+    needs: gatekeeper
+    if: needs.gatekeeper.outputs.should_run == 'true'
+    runs-on: self-hosted
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python3 -m pip install cryptography
+
+      - name: Run VOD Generator
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python3 script/update_vod.py
+
+      - name: Commit and push VOD changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git add -f streams/vod_mytv/ streams/vod_tonton/ streams/vod_unifi/ vod.m3u vod.m3u8
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update VOD movies & shows playlist" && git push)
