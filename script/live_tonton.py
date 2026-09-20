@@ -14,16 +14,19 @@ from utils import http_get, fetch_raw_text_and_url, slugify, make_m3u8_absolute,
 
 BASE_API = "https://headend-api.tonton.com.my/v600"
 GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
+USER_AGENT_STR = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 DEFAULT_DEVICE_ID = "web-v3-0d63fbaa5090547e80c50e9ae5935bfb-6d5145cbec6729682bee9b52f23ef4a9-cmtu0gw320001dt3qqdhki7iz"
 DEFAULT_TOKEN = "e9703d2b5d5afc94230d72a108896062db0bc5e60e62253de53b75a471646cc01a2241395b6f96ca1dd1fae50e623bfb069a074e16cf8e51c4a60cc3afb7c92725952805eb226bcaef76bcfe5234eaa0a12f1c5a616e6b6e8ad686b346cb77f2a070e4a43fd1268e0c01701e8d562e6251ae07ab75f6930eb81fc2e04ffc3b7d77dde557ddd9be0162d826cf38fbdfba78db1cd65c1d45a0cc578fc8f08fb2c8fc3119bb8636b23c2edfdf141413175bae54ffe4964ef2158d8d25768822572fceea529c9bdbd1afd61dd9afb17c20fc17d04bb2772944d8caaed600b60a13571127f824c9e3364ab649d21fb20d10382cfc4cb7b9c5482db3d3cf2eed63924b84aec094fe5c774260061569d9d19aa90a6c3cb541cc0ce10fdc596c8917ff2d29bf3db232a2bbd4963adcc9e786f5b46ca41995c1bd52be24e7e0613eedea304e02d977757c213622d53342b53c61e9efc6419fbcedc3700633efaf7b2aeac6f4f83e8b50567fa3a95f782fc8cccd71fabd8dbd9a1236460b7f38a2d5a44bf92907971acb3f3f6726594fb969410d9eccf352aac739937da79ef16b5196896391a78f9d9aa2720813276885a6d40e6e11eb64849d0be42babd2aeb3a78007709c8aa859a8dd310da6cc237a71ef1888ed5f3b3b3dc68a767b7ab60bb2845ae60d522727e62e49b20b69b6de3f0fab9468ce3e3acd9ed4834ef519fa5dd04091ad8a9799deb209febe81a99b56de80bfad735e9b7bf80323db6a6faf27d8fdca558ce1d55199c54ec504abeaa2362795390fdca0ed80b6e85584e0edc3a456338192c8f268b5694de56cc3727ce7d4a66a05dacbd073b36c44c2a6622af94b317845ffe13014fe451ded35b8366b5766"
 
+# Convert Unix timestamp to XMLTV datetime string format.
 def timestamp_to_xmltv(ts):
     if not ts:
         return ""
     dt_obj = datetime.fromtimestamp(int(ts), tz=timezone.utc)
     return dt_obj.strftime("%Y%m%d%H%M%S +0000")
 
+# Process Tonton live TV channels, generate m3u8 manifests and M3U entries with browser headers.
 def process_tonton_live_channels(device_id):
     print("--- Processing Tonton Live Channels ---")
     channels_url = f"{BASE_API}/api/categoryTree.class.api.php/GOgetLiveChannels/378?format=json&appID=TONTON&plt=web&serviceID=default&apiVersion=2"
@@ -78,9 +81,9 @@ def process_tonton_live_channels(device_id):
             updated = write_if_changed(ch_file_path, fallback_content)
             
         status_str = "Updated" if updated else "Kept (Unchanged)"
-        clean_m3u_url = f"{GITHUB_URL}/streams/live_tonton/{c_slug}.m3u8"
+        clean_m3u_url = f"{GITHUB_URL}/streams/live_tonton/{c_slug}.m3u8|User-Agent={USER_AGENT_STR}"
 
-        extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
+        extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}" http-user-agent="{USER_AGENT_STR}",{c_name}'
         tonton_m3u_entries.append((extinf, clean_m3u_url))
         print(f"[{idx}/{len(live_channels)}] [{status_str}] Added Tonton channel {c_num}: {c_name} ({c_code}) -> {clean_m3u_url}", flush=True)
 
@@ -92,6 +95,7 @@ def process_tonton_live_channels(device_id):
 
     return tonton_m3u_entries, epg_channels
 
+# Fetch EPG programme schedule for Tonton live channels.
 def fetch_tonton_epg_programmes(epg_channels):
     print("\n--- Fetching Tonton EPG Schedule ---")
     now_ts = int(time.time())

@@ -4,6 +4,7 @@ import vod_tonton
 import vod_unifi
 from utils import write_if_changed, update_combined_playlist
 
+# Orchestrate VOD processing and combined playlist creation.
 def main():
     device_id = str(uuid.uuid4())
 
@@ -26,4 +27,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

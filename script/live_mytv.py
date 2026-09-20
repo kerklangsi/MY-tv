@@ -16,10 +16,9 @@ from utils import http_get, http_post, fetch_raw_text, slugify, make_m3u8_absolu
 BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
 GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
 
-
-
 ME_KEY = "u6nCKz4ogW09a27lOzGcYkdJP9QJ6ABgw9GZuIBmWtMWswdz".encode('utf-8')[:32]
 
+# Decrypt AES-GCM encrypted CDN signature payload.
 def decrypt_cdn_payload(payload_b64):
     raw = base64.b64decode(payload_b64)
     iv = raw[:12]
@@ -29,6 +28,7 @@ def decrypt_cdn_payload(payload_b64):
     decrypted_bytes = aesgcm.decrypt(iv, ciphertext + tag, None)
     return json.loads(decrypted_bytes.decode('utf-8'))
 
+# Convert ISO timestamp string to XMLTV datetime format.
 def iso_to_xmltv(iso_str):
     if not iso_str:
         return ""
@@ -36,6 +36,7 @@ def iso_to_xmltv(iso_str):
     dt_obj = datetime.strptime(clean_str, "%Y-%m-%dT%H:%M:%S")
     return dt_obj.strftime("%Y%m%d%H%M%S +0000")
 
+# Process MYTV live TV and radio channels, signing HLS streams and generating playlists.
 def process_live_channels(device_id):
     print("--- Processing MYTV Live Channels & Radio ---")
     channels_res = http_get(f"{BASE_API}/public/channels")
@@ -152,6 +153,7 @@ def process_live_channels(device_id):
 
     return m3u_entries, epg_channels
 
+# Fetch EPG schedule for MYTV channels.
 def fetch_epg_programmes():
     print("\n--- Fetching MYTV EPG Schedule ---")
     today = datetime.now(timezone.utc)

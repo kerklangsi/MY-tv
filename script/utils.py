@@ -11,12 +11,14 @@ DEFAULT_HEADERS = {
 }
 
 class NoRaiseHTTPErrorProcessor(urllib.request.HTTPErrorProcessor):
+    # Handle HTTP response without raising exceptions for non-2xx status codes.
     def http_response(self, request, response):
         return response
     https_response = http_response
 
 opener = urllib.request.build_opener(NoRaiseHTTPErrorProcessor)
 
+# Perform HTTP GET request and return parsed JSON response data.
 def http_get(url, headers=None):
     req_headers = DEFAULT_HEADERS.copy()
     if headers:
@@ -27,6 +29,7 @@ def http_get(url, headers=None):
         return json.loads(resp.read().decode('utf-8'))
     return {}
 
+# Perform HTTP POST request with JSON payload and return parsed JSON response.
 def http_post(url, payload, headers=None):
     req_headers = DEFAULT_HEADERS.copy()
     if headers:
@@ -37,6 +40,7 @@ def http_post(url, payload, headers=None):
         return json.loads(resp.read().decode('utf-8'))
     return {}
 
+# Fetch raw text content from the specified URL.
 def fetch_raw_text(url, headers=None):
     req_headers = {'User-Agent': DEFAULT_HEADERS['User-Agent']}
     if headers:
@@ -49,6 +53,7 @@ def fetch_raw_text(url, headers=None):
 
 redirect_opener = urllib.request.build_opener(urllib.request.HTTPRedirectHandler())
 
+# Fetch raw text content and final resolved URL following redirects.
 def fetch_raw_text_and_url(url, headers=None):
     req_headers = {'User-Agent': DEFAULT_HEADERS['User-Agent']}
     if headers:
@@ -62,6 +67,7 @@ def fetch_raw_text_and_url(url, headers=None):
         pass
     return "", url
 
+# Convert input text string into a clean URL-friendly slug.
 def slugify(text):
     if not text:
         return ""
@@ -70,6 +76,7 @@ def slugify(text):
     text = re.sub(r'[\s_-]+', '-', text)
     return re.sub(r'^-+|-+$', '', text)
 
+# Write content to file only if new content differs from existing file content.
 def write_if_changed(filepath, new_content, is_binary=False):
     if os.path.exists(filepath):
         mode_read = "rb" if is_binary else "r"
@@ -84,6 +91,7 @@ def write_if_changed(filepath, new_content, is_binary=False):
         f.write(new_content)
     return True
 
+# Remove stale m3u8 files and empty folders not matching active file set.
 def cleanup_stale_files(base_directory, active_files_set):
     if not os.path.exists(base_directory):
         return
@@ -107,6 +115,7 @@ def cleanup_stale_files(base_directory, active_files_set):
     if deleted_count > 0 or deleted_dirs_count > 0:
         print(f"Cleaned up {deleted_count} stale/deleted files and {deleted_dirs_count} empty folders from {base_directory}.", flush=True)
 
+# Convert relative segment and playlist paths in M3U8 content into absolute URLs.
 def make_m3u8_absolute(m3u8_text, base_url):
     if not m3u8_text:
         return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{base_url}\n"
@@ -142,6 +151,7 @@ def make_m3u8_absolute(m3u8_text, base_url):
         lines.append(line_str)
     return "\n".join(lines) + "\n"
 
+# Merge live TV and VOD playlists into all.m3u and all.m3u8.
 def update_combined_playlist():
     live_content = ""
     vod_content = ""
@@ -152,9 +162,8 @@ def update_combined_playlist():
         with open("vod.m3u", "r", encoding="utf-8") as f:
             vod_content = f.read()
 
-    lines = ['#EXTM3U x-tvg-url="https://raw.githubusercontent.com/kerklangsi/MY-tv/main/epg.xml.gz"']
+    lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
 
-    
     if live_content:
         for line in live_content.splitlines():
             if line.startswith("#EXTM3U") or not line.strip():
@@ -171,4 +180,3 @@ def update_combined_playlist():
     write_if_changed("all.m3u", all_content)
     write_if_changed("all.m3u8", all_content)
     print("Saved merged all.m3u and all.m3u8 (Combined Live + VOD)", flush=True)
-

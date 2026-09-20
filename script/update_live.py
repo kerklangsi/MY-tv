@@ -12,6 +12,7 @@ import live_unifi
 
 from utils import write_if_changed, update_combined_playlist
 
+# Orchestrate live channel processing, playlist generation, and EPG schedule merging.
 def main():
     device_id = str(uuid.uuid4())
 
@@ -25,7 +26,6 @@ def main():
     m3u_lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
 
     for extinf, url in mytv_m3u_entries + tonton_m3u_entries + unifi_m3u_entries:
-
         m3u_lines.append(extinf)
         m3u_lines.append(url)
 
@@ -45,7 +45,6 @@ def main():
     print(f"\n--- Generating Merged EPG XML ({len(all_epg_channels)} channels, {len(all_epg_programmes)} programmes) ---", flush=True)
 
     tv_elem = ET.Element('tv', {'generator-info-name': 'MY-tv IPTV Generator'})
-
 
     for ch_info in all_epg_channels:
         ch_elem = ET.SubElement(tv_elem, 'channel', {'id': ch_info['id']})
@@ -87,4 +86,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

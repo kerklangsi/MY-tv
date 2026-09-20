@@ -15,6 +15,7 @@ import vod_unifi
 
 from utils import write_if_changed
 
+# Orchestrate full IPTV pipeline including Live, VOD, and EPG schedule generation.
 def main():
     device_id = str(uuid.uuid4())
 
@@ -24,7 +25,7 @@ def main():
     unifi_m3u_entries, unifi_epg_channels = live_unifi.process_unifi_live_channels(device_id)
 
     # 2. Build Merged Master Playlist (playlist.m3u & playlist.m3u8)
-    m3u_lines = ['#EXTM3U x-tvg-url="epg.xml.gz"']
+    m3u_lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
     for extinf, url in mytv_m3u_entries + tonton_m3u_entries + unifi_m3u_entries:
         m3u_lines.append(extinf)
         m3u_lines.append(url)
@@ -60,7 +61,7 @@ def main():
 
     print(f"\n--- Generating Merged EPG XML ({len(all_epg_channels)} channels, {len(all_epg_programmes)} programmes) ---", flush=True)
 
-    tv_elem = ET.Element('tv', {'generator-info-name': 'MY-tv Merged IPTV Generator'})
+    tv_elem = ET.Element('tv', {'generator-info-name': 'MY-tv IPTV Generator'})
 
     for ch_info in all_epg_channels:
         ch_elem = ET.SubElement(tv_elem, 'channel', {'id': ch_info['id']})

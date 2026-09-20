@@ -13,8 +13,7 @@ from utils import http_get, http_post, fetch_raw_text, slugify, write_if_changed
 BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
 GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
 
-
-
+# Determine VOD series subfolder or movie category based on title patterns.
 def get_vod_subfolder(title, content_type):
     if not title:
         return 'movie'
@@ -56,12 +55,14 @@ def get_vod_subfolder(title, content_type):
 
 PROMO_KEYWORDS = {'teaser', 'trailer', 'promo', 'preview', 'highlight', 'highlights', 'behind the scene', 'behind the scenes', 'bts', 'sedutan'}
 
+# Check if VOD title indicates a promo, teaser, or trailer.
 def is_teaser_or_trailer(title):
     if not title:
         return False
     t_lower = title.lower()
     return any(re.search(r'\b' + re.escape(kw) + r'\b', t_lower) for kw in PROMO_KEYWORDS)
 
+# Fetch HLS manifest for a single VOD item and write manifest file.
 def fetch_and_process_single_vod(task):
     item, folder_path, item_slug, group_title, device_id = task
     item_id = item['id']
@@ -111,6 +112,7 @@ def fetch_and_process_single_vod(task):
     extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
     return extinf, clean_url, master_file_path, updated
 
+# Process all MYTV VOD shows and movies using parallel execution.
 def process_vod_shows(device_id):
     print("\n--- Processing MYTV VOD Shows & Movies ---")
 
