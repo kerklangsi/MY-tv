@@ -2,7 +2,7 @@ name: Update IPTV Playlist & EPG
 
 on:
   schedule:
-    - cron: "0 */3 * * *" # Runs every 3 hours
+    - cron: "0 */1 * * *" # Runs every 1 hours
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 jobs:
@@ -76,7 +76,6 @@ jobs:
     needs: gatekeeper
     if: needs.gatekeeper.outputs.should_run == 'true'
     runs-on: self-hosted
-    #timeout-minutes: 60
 
     steps:
       - name: Checkout repository
