@@ -30,7 +30,7 @@ def timestamp_to_xmltv(ts):
 def process_tonton_live_channels(device_id):
     print("--- Processing Tonton Live Channels ---")
     channels_url = f"{BASE_API}/api/categoryTree.class.api.php/GOgetLiveChannels/378?format=json&appID=TONTON&plt=web&serviceID=default&apiVersion=2"
-    channels_res = http_get(channels_url)
+    channels_res = http_get(channels_url, headers={'User-Agent': USER_AGENT_STR})
     live_channels = channels_res.get('liveChannel', [])
     print(f"Total Tonton Live channels found: {len(live_channels)}")
 
@@ -56,7 +56,7 @@ def process_tonton_live_channels(device_id):
         group_title = "Tonton Live"
 
         config_url = f"{BASE_API}/api/playback.class.api.php/GOgetLiveConfig/378/1/{c_id}?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&manufacturer=chrome&serviceID=default&model=Mozilla/5.0&firmwareVersion=10&appVersion=6.1.7&deviceOS=PCBROWSER&limitAdTracking=0&pageId=live-tv&deviceId={dev_id}&loginToken={tonton_token}"
-        config_res = http_get(config_url)
+        config_res = http_get(config_url, headers={'User-Agent': USER_AGENT_STR})
         playback_data = config_res.get('playback', {}) or config_res
         
         master_url = ""
@@ -74,11 +74,11 @@ def process_tonton_live_channels(device_id):
         
         if signed_stream_url:
             active_files_set.add(os.path.normpath(ch_file_path))
-            master_manifest, final_url = fetch_raw_text_and_url(signed_stream_url)
+            master_manifest, final_url = fetch_raw_text_and_url(signed_stream_url, headers={'User-Agent': USER_AGENT_STR})
             abs_playlist_content = make_m3u8_absolute(master_manifest, final_url)
             updated = write_if_changed(ch_file_path, abs_playlist_content)
             status_str = "Updated" if updated else "Kept (Unchanged)"
-            clean_m3u_url = f"{GITHUB_URL}/streams/live_tonton/{c_slug}.m3u8|User-Agent={USER_AGENT_STR}"
+            clean_m3u_url = f"{GITHUB_URL}/streams/live_tonton/{c_slug}.m3u8"
 
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}" http-user-agent="{USER_AGENT_STR}",{c_name}'
             tonton_m3u_entries.append((extinf, clean_m3u_url))
@@ -105,7 +105,7 @@ def fetch_tonton_epg_programmes(epg_channels):
     channels_filter = ",".join(channel_codes)
 
     epg_url = f"{BASE_API}/api/epg.class.api.php/getChannelListings/378?filter_starttime={start_ts}&filter_endtime={end_ts}&filter_channels={channels_filter}&format=json&appID=TONTON&serviceId=default"
-    epg_res = http_get(epg_url)
+    epg_res = http_get(epg_url, headers={'User-Agent': USER_AGENT_STR})
     
     epg_programmes = []
     listings = epg_res if isinstance(epg_res, list) else []
