@@ -102,6 +102,7 @@ def fetch_tonton_epg_programmes(epg_channels):
     
     channel_codes = [ch['code'] for ch in epg_channels if ch.get('code')]
     channels_filter = ",".join(channel_codes)
+    filter_fields = "Duration,EventTitle,EpisodeTitle,ParentalRating,ShortSynopsis,ParentalAdvice,Genre,MainGenre,SubGenre,StartTimeUTC,ProgramID,EndTimeUTC,RawStartTimeUTC,RawEndTimeUTC,YearOfProduction,Keywords,ReportingGenre,ReportingSubGenre,ClosedCaption,HighDefinition,SeriesNumber,EpisodeNumber"
 
     epg_programmes = []
     seen_programmes = set()
@@ -109,7 +110,7 @@ def fetch_tonton_epg_programmes(epg_channels):
     for day_offset in range(-1, 6):
         start_ts = now_ts + (day_offset * 86400)
         end_ts = start_ts + 86400
-        epg_url = f"{BASE_API}/api/epg.class.api.php/getChannelListings/378?filter_starttime={start_ts}&filter_endtime={end_ts}&filter_channels={channels_filter}&format=json&appID=TONTON&serviceId=default"
+        epg_url = f"{BASE_API}/api/epg.class.api.php/getChannelListings/378?filter_starttime={start_ts}&filter_endtime={end_ts}&filter_channels={channels_filter}&filter_fields={filter_fields}&format=json&appID=TONTON&serviceId=default"
         epg_res = http_get(epg_url, headers={'User-Agent': USER_AGENT_STR})
         listings = epg_res if isinstance(epg_res, list) else []
 
@@ -127,8 +128,24 @@ def fetch_tonton_epg_programmes(epg_channels):
 
             for evt in events:
                 p_title = evt.get('EventTitle', '')
-                p_desc = evt.get('ShortSynopsis', '') or evt.get('EpisodeTitle', '') or ''
-                p_genre = evt.get('Genre', '')
+                p_ep_title = evt.get('EpisodeTitle', '')
+                p_ep_num = evt.get('EpisodeNumber', '')
+                p_synopsis = evt.get('ShortSynopsis', '')
+                p_rating = evt.get('ParentalRating', '')
+
+                # Build rich description string
+                desc_parts = []
+                if p_ep_num:
+                    desc_parts.append(f"Episode {p_ep_num}")
+                if p_ep_title and p_ep_title != p_title:
+                    desc_parts.append(p_ep_title)
+                if p_synopsis:
+                    desc_parts.append(p_synopsis)
+                if p_rating:
+                    desc_parts.append(f"[{p_rating}]")
+
+                p_desc = " - ".join(desc_parts)
+                p_genre = evt.get('Genre') or evt.get('MainGenre') or ''
                 p_start = timestamp_to_xmltv(evt.get('StartTimeUTC') or evt.get('RawStartTimeUTC'))
                 p_end = timestamp_to_xmltv(evt.get('EndTimeUTC') or evt.get('RawEndTimeUTC'))
 
