@@ -36,6 +36,62 @@ def iso_to_xmltv(iso_str):
     dt_obj = datetime.strptime(clean_str, "%Y-%m-%dT%H:%M:%S")
     return dt_obj.strftime("%Y%m%d%H%M%S +0000")
 
+MYTV_LCN_MAP = {
+    "TV1": 101,
+    "TV2": 102,
+    "TV3": 103,
+    "NTV7": 107,
+    "8TV": 108,
+    "TV9": 109,
+    "TV OKEY": 110,
+    "SUKAN+": 111,
+    "SUKAN RTM": 111,
+    "TV ALHIJRAH": 114,
+    "BERNAMA": 121,
+    "BERNAMA TV": 121,
+    "TVS": 122,
+    "BERITA RTM": 123,
+    "SIARA TV": 200,
+    "FREE MOVIES": 212,
+    "THE INDONESIA CHANNEL": 214,
+    "CNA": 215,
+    "AL JAZEERA ENGLISH HD": 216,
+    "EURONEWS": 217,
+    "ARIRANG": 218,
+    "TAIWANPLUS": 219,
+    "NHK WORLD": 220,
+    "DW": 221,
+    "RT INTERNATIONAL": 222,
+    "AL JAZEERA ARABIC HD": 223,
+    "USIM TV": 224,
+    "SELANGOR TV": 225,
+    "TVIKIM": 226,
+    "BORNEO TV": 227,
+    "MYSPORTS": 228,
+    "HOT FM": 201,
+    "FLY FM": 202,
+    "SURIA FM": 203,
+    "RAKITA FM": 204,
+    "MANIS FM": 205,
+    "MOLEK FM": 206,
+    "BEST FM": 207,
+    "IKIMFM": 208,
+    "IKIM FM": 208,
+    "EIGHT FM": 210,
+    "KOOL FM": 211,
+    "NASIONAL FM": 701,
+    "TRAXX FM": 702,
+    "MINNAL FM": 703,
+    "AI FM": 704,
+    "RADIO KLASIK": 705,
+    "ASYIK FM": 706,
+    "SABAH FM": 707,
+    "SABAHV FM": 708,
+    "SARAWAK FM": 709,
+    "WAI FM": 710,
+    "BERNAMA RADIO": 711,
+}
+
 # Process MYTV live TV and radio channels, signing HLS streams and generating playlists.
 def process_live_channels(device_id):
     print("--- Processing MYTV Live Channels & Radio ---")
@@ -53,9 +109,19 @@ def process_live_channels(device_id):
 
     for idx, ch in enumerate(channels, 1):
         c_id = ch.get('id')
-        c_num = ch.get('channelNumber', 0)
         c_name = ch.get('name', 'Unknown')
         c_slug = ch.get('slug') or c_id
+
+        c_name_upper = c_name.strip().upper()
+        c_slug_upper = c_slug.strip().upper().replace('-', ' ')
+
+        if c_name_upper in MYTV_LCN_MAP:
+            c_num = MYTV_LCN_MAP[c_name_upper]
+        elif c_slug_upper in MYTV_LCN_MAP:
+            c_num = MYTV_LCN_MAP[c_slug_upper]
+        else:
+            c_num = ch.get('channelNumber', 0)
+
         c_logo = ch.get('logoUrl') or ch.get('thumbnailUrl') or ''
         c_type = ch.get('channelType', 'video')
         
