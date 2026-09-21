@@ -56106,10 +56106,6 @@
   <programme start="20260926150000 +0000" stop="20260926160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260920170000 +0000" stop="20260920230000 +0000" channel="8tv">
-    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
-    <desc lang="en">Episode 82 - [NC]</desc>
-  </programme>
   <programme start="20260920230000 +0000" stop="20260921000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 53 - [NC]</desc>
@@ -56194,9 +56190,9 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 83 - [NC]</desc>
   </programme>
-  <programme start="20260920220000 +0000" stop="20260920230000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 101 - [NC]</desc>
+  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="8tv">
+    <title lang="en">8 E-PULSE 2026</title>
+    <desc lang="en">Episode 54 - [NC]</desc>
   </programme>
   <programme start="20260920230000 +0000" stop="20260921000000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
@@ -56294,6 +56290,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 56 - [NC]</desc>
   </programme>
+  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="drama-sangat">
+    <title lang="en">I AM NOT A LOSER</title>
+    <desc lang="en">Episode 10 - Zhan Wang yang menyedari Pakcik Zhang mengalami penyakit Alzheimer itu, menasihatinya supaya berterus terang kepada anaknya Wen Qi. Akan tetapi Pakcik Zhang enggan. Zhen Xin pula rela menggantikan Ke En untuk menyertai suatu aktiviti di hutan. - [NC]</desc>
+  </programme>
   <programme start="20260920220759 +0000" stop="20260920235845 +0000" channel="fifa">
     <title lang="en">Brazil v Australia | Group D | FIFA Women's World Cup Germany 2011™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Brazil and Australia from Moenchengladbach, 29 June 2011. - [NC]</desc>
@@ -56341,10 +56341,6 @@
   <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260920160000 +0000" stop="20260920230000 +0000" channel="ntv7">
-    <title lang="en">HOT FM@ntv7 2026</title>
-    <desc lang="en">Episode 264 - [NC]</desc>
   </programme>
   <programme start="20260920230000 +0000" stop="20260920233000 +0000" channel="ntv7">
     <title lang="en">GO GO DINO SEASON 4</title>
@@ -56474,6 +56470,10 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 265 - [NC]</desc>
   </programme>
+  <programme start="20260921230000 +0000" stop="20260921233000 +0000" channel="ntv7">
+    <title lang="en">GO GO DINO SEASON 4</title>
+    <desc lang="en">Episode 11 - Dino Explorers terserempak dengan Rio, seekor Liopleurodon ketika meneroka dalam laut. Mereka membawa Rio ke darat untuk menikmati pemandangan indah. // Tiga ekor Iguanodon berlumba di tepi laut dan terperangap di atas jambatan gantung. - [NC]</desc>
+  </programme>
   <programme start="20260920215500 +0000" stop="20260920232500 +0000" channel="thrill">
     <title lang="en">Room For Rent</title>
     <desc lang="en">Episode 1 - Lonely widow Joyce rents out a room in her house and becomes dangerously obsessed with a younger guest. Desperate for love, she is willing to eliminate anyone hindering her pursuit of happiness, and a chilling tale of obsession unfolds. - [NC]</desc>
@@ -56549,10 +56549,6 @@
   <programme start="20260921222000 +0000" stop="20260922000000 +0000" channel="thrill">
     <title lang="en">Detective Dee's Seven Deadly Sin</title>
     <desc lang="en">Episode 1 - Detective Dee becomes embroiled in a series of murders that shake the Tang Empire. The killer invokes the &quot;Seven Deadly Sins&quot; to justify a twisted sense of justice. In his relentless pursuit of the truth, Detective Dee uncovers the mask of false righteousness and exposes the darkness hidden beneath. - [NC]</desc>
-  </programme>
-  <programme start="20260920223000 +0000" stop="20260920225000 +0000" channel="tv3">
-    <title lang="en">BACAAN YASIN 2025</title>
-    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
   <programme start="20260920225000 +0000" stop="20260921000000 +0000" channel="tv3">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
@@ -56682,9 +56678,9 @@
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
-  <programme start="20260920223000 +0000" stop="20260920225000 +0000" channel="tv9">
-    <title lang="en">BACAAN YASIN 2025</title>
-    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
+  <programme start="20260921225000 +0000" stop="20260922000000 +0000" channel="tv3">
+    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
+    <desc lang="en">Episode 60 - [NC]</desc>
   </programme>
   <programme start="20260920225000 +0000" stop="20260921000000 +0000" channel="tv9">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
@@ -56810,9 +56806,9 @@
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
-  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="8tv">
-    <title lang="en">8 E-PULSE 2026</title>
-    <desc lang="en">Episode 54 - [NC]</desc>
+  <programme start="20260921225000 +0000" stop="20260922000000 +0000" channel="tv9">
+    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
+    <desc lang="en">Episode 60 - [NC]</desc>
   </programme>
   <programme start="20260922000000 +0000" stop="20260922003000 +0000" channel="8tv">
     <title lang="en">AMUSING RACE SEASON 2</title>
@@ -56894,9 +56890,9 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 84 - [NC]</desc>
   </programme>
-  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="drama-sangat">
-    <title lang="en">I AM NOT A LOSER</title>
-    <desc lang="en">Episode 10 - Zhan Wang yang menyedari Pakcik Zhang mengalami penyakit Alzheimer itu, menasihatinya supaya berterus terang kepada anaknya Wen Qi. Akan tetapi Pakcik Zhang enggan. Zhen Xin pula rela menggantikan Ke En untuk menyertai suatu aktiviti di hutan. - [NC]</desc>
+  <programme start="20260922230000 +0000" stop="20260923000000 +0000" channel="8tv">
+    <title lang="en">8 E-PULSE 2026</title>
+    <desc lang="en">Episode 55 - [NC]</desc>
   </programme>
   <programme start="20260922000000 +0000" stop="20260922010000 +0000" channel="drama-sangat">
     <title lang="en">MELASTIK KE HATIMU 2</title>
@@ -56990,6 +56986,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 501 - [NC]</desc>
   </programme>
+  <programme start="20260922230000 +0000" stop="20260923000000 +0000" channel="drama-sangat">
+    <title lang="en">I AM NOT A LOSER</title>
+    <desc lang="en">Episode 11 - The heroine of the story – Zhen Xin has been handed a seven years prison sentence as she involves in a case of bullying which caused the death of her classmate while she was at school. - [NC]</desc>
+  </programme>
   <programme start="20260922040000 +0000" stop="20260922100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
@@ -57021,10 +57021,6 @@
   <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260921230000 +0000" stop="20260921233000 +0000" channel="ntv7">
-    <title lang="en">GO GO DINO SEASON 4</title>
-    <desc lang="en">Episode 11 - Dino Explorers terserempak dengan Rio, seekor Liopleurodon ketika meneroka dalam laut. Mereka membawa Rio ke darat untuk menikmati pemandangan indah. // Tiga ekor Iguanodon berlumba di tepi laut dan terperangap di atas jambatan gantung. - [NC]</desc>
   </programme>
   <programme start="20260921233000 +0000" stop="20260922000000 +0000" channel="ntv7">
     <title lang="en">KELAB DAN PERSATUAN 24/25</title>
@@ -57154,6 +57150,10 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 266 - [NC]</desc>
   </programme>
+  <programme start="20260922230000 +0000" stop="20260922233000 +0000" channel="ntv7">
+    <title lang="en">JUNGLE AGENT SEASON 2</title>
+    <desc lang="en">Episode 7 - 3 ekor Kucing Ninja menyelinap ke dalam pengkalan Profesor Tianxin dan terjumpa sebuah mesin klon. // Hutan diserang oleh suara nyanyian pelik di waktu malam. Profesor Tianxin telah memanipulasi suara ini untuk kepentingannya. - [NC]</desc>
+  </programme>
   <programme start="20260922000000 +0000" stop="20260922013500 +0000" channel="thrill">
     <title lang="en">Mulu Nakru </title>
     <desc lang="en">Episode 1 - After moving into a house with her boyfriend, Gun, architect May learns of her stepmother’s mysterious death. When May takes in her stepsister Noon, the girl begins showing signs of possession, while May suffers disturbing visions and insomnia. As dark secrets emerge, spiritual masters uncover an ancient black-magic curse hidden within the house. - [NC]</desc>
@@ -57221,10 +57221,6 @@
   <programme start="20260922223000 +0000" stop="20260923000500 +0000" channel="thrill">
     <title lang="en">Mama Ghost</title>
     <desc lang="en">Episode 1 - In a coastal town, a forbidden romance sparks between Rico and Sisca, and their love unleashes a malevolent spirit. As chilling deaths plague the town, past secrets are being unraveled and the town is possessed by evil and fear. Rico must defy destiny and fight against the evil spirit to save his loved one. - [NC]</desc>
-  </programme>
-  <programme start="20260921225000 +0000" stop="20260922000000 +0000" channel="tv3">
-    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
-    <desc lang="en">Episode 60 - [NC]</desc>
   </programme>
   <programme start="20260922000000 +0000" stop="20260922010000 +0000" channel="tv3">
     <title lang="en">SETELAH KU DIMILIKI</title>
@@ -57350,9 +57346,9 @@
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
-  <programme start="20260921225000 +0000" stop="20260922000000 +0000" channel="tv9">
+  <programme start="20260922225000 +0000" stop="20260923000000 +0000" channel="tv3">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
-    <desc lang="en">Episode 60 - [NC]</desc>
+    <desc lang="en">Episode 61 - [NC]</desc>
   </programme>
   <programme start="20260922000000 +0000" stop="20260922003000 +0000" channel="tv9">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
@@ -57474,9 +57470,9 @@
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
-  <programme start="20260922230000 +0000" stop="20260923000000 +0000" channel="8tv">
-    <title lang="en">8 E-PULSE 2026</title>
-    <desc lang="en">Episode 55 - [NC]</desc>
+  <programme start="20260922225000 +0000" stop="20260923000000 +0000" channel="tv9">
+    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
+    <desc lang="en">Episode 61 - [NC]</desc>
   </programme>
   <programme start="20260923000000 +0000" stop="20260923003000 +0000" channel="8tv">
     <title lang="en">AMUSING RACE SEASON 2</title>
@@ -57558,9 +57554,9 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 85 - [NC]</desc>
   </programme>
-  <programme start="20260922230000 +0000" stop="20260923000000 +0000" channel="drama-sangat">
-    <title lang="en">I AM NOT A LOSER</title>
-    <desc lang="en">Episode 11 - The heroine of the story – Zhen Xin has been handed a seven years prison sentence as she involves in a case of bullying which caused the death of her classmate while she was at school. - [NC]</desc>
+  <programme start="20260923230000 +0000" stop="20260924000000 +0000" channel="8tv">
+    <title lang="en">8 E-PULSE 2026</title>
+    <desc lang="en">Episode 56 - [NC]</desc>
   </programme>
   <programme start="20260923000000 +0000" stop="20260923010000 +0000" channel="drama-sangat">
     <title lang="en">SEOUL CINTA</title>
@@ -57654,6 +57650,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 916 - [NC]</desc>
   </programme>
+  <programme start="20260923230000 +0000" stop="20260924000000 +0000" channel="drama-sangat">
+    <title lang="en">I AM NOT A LOSER</title>
+    <desc lang="en">Episode 12 - Wen Qi cuba membunuh diri kerana kecewa dengan keputusan peperiksaannya. Mujurlah Zhen Xin berjaya memberi motivasi dan menyakinkannya supaya melepaskan niat tersebut. Zhen Xin juga rela memberi Qen Qi tempat tinggal - [NC]</desc>
+  </programme>
   <programme start="20260923040000 +0000" stop="20260923100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
@@ -57685,10 +57685,6 @@
   <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260922230000 +0000" stop="20260922233000 +0000" channel="ntv7">
-    <title lang="en">JUNGLE AGENT SEASON 2</title>
-    <desc lang="en">Episode 7 - 3 ekor Kucing Ninja menyelinap ke dalam pengkalan Profesor Tianxin dan terjumpa sebuah mesin klon. // Hutan diserang oleh suara nyanyian pelik di waktu malam. Profesor Tianxin telah memanipulasi suara ini untuk kepentingannya. - [NC]</desc>
   </programme>
   <programme start="20260922233000 +0000" stop="20260923000000 +0000" channel="ntv7">
     <title lang="en">BADAN BERUNIFORM 24/25</title>
@@ -57818,6 +57814,10 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 267 - [NC]</desc>
   </programme>
+  <programme start="20260923230000 +0000" stop="20260923233000 +0000" channel="ntv7">
+    <title lang="en">JUNGLE AGENT SEASON 2</title>
+    <desc lang="en">Episode 8 - Selepas El Matador melakukan pukulan mudah semasa perlawanan, dia melarikan diri dari pasukan. Shakes dan Klaus menjejakinya ke sebuah kapal persiaran terbiar dan menjumpai sekumpulan orang yang kelihatan serupa dengan El Matador. - [NC]</desc>
+  </programme>
   <programme start="20260923000500 +0000" stop="20260923014500 +0000" channel="thrill">
     <title lang="en">Open the Coffin</title>
     <desc lang="en">Episode 1 - Ghost Hand and his tomb raiders resurface in Jiang City to seek gold in ancient tombs after a 3-year absence. They released an evil spirit from a coffin and all four died at home eventually. Poison and pinholes in the corpses become the sole clue for police investigation. A tomb raid now unfolds as a perplexing and mysterious case. - [NC]</desc>
@@ -57878,9 +57878,9 @@
     <title lang="en">Jealousy</title>
     <desc lang="en">Episode 1 - Model Min dies mysteriously in a hospital rumoured to be haunted. Soon after, her photographer receives eerie phone calls, a writer suffers a bizarre car accident, and Min’s friend suddenly vanishes. As fear spreads, dark secrets and supernatural forces emerge, drawing them into a terrifying nightmare linked to Min’s death. - [NC]</desc>
   </programme>
-  <programme start="20260922225000 +0000" stop="20260923000000 +0000" channel="tv3">
-    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
-    <desc lang="en">Episode 61 - [NC]</desc>
+  <programme start="20260923223500 +0000" stop="20260924000000 +0000" channel="thrill">
+    <title lang="en">Detective Dee: The Ghosts in Weird Town</title>
+    <desc lang="en">Episode 1 - Detective Dee investigates a series of terrifying vampire transformations in Youming Town, uncovering a sinister conspiracy masterminded by Prince Li Zhen, who plots to overthrow the empire. Armed with courage and ingenuity, Dee defeats the bloodthirsty vampires and ultimately exposes the prince’s dark ambitions. - [NC]</desc>
   </programme>
   <programme start="20260923000000 +0000" stop="20260923010000 +0000" channel="tv3">
     <title lang="en">SETELAH KU DIMILIKI</title>
@@ -58006,9 +58006,9 @@
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 94 - Episod ini hos Fedtri Yahya membincangkan tajuk 'Nasihat Untuk Wanita' bersama Ustaz Harryanto Rizal Rokman berdasarkan Kitab Riyadhus Shalihin dan Al-Quran, serta membuka ruang promosi dan sumbangan bagi pembinaan kompleks tahfiz. - [NC]</desc>
   </programme>
-  <programme start="20260922225000 +0000" stop="20260923000000 +0000" channel="tv9">
+  <programme start="20260923225000 +0000" stop="20260924000000 +0000" channel="tv3">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
-    <desc lang="en">Episode 61 - [NC]</desc>
+    <desc lang="en">Episode 62 - [NC]</desc>
   </programme>
   <programme start="20260923000000 +0000" stop="20260923003000 +0000" channel="tv9">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
@@ -58126,9 +58126,9 @@
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 94 - Episod ini hos Fedtri Yahya membincangkan tajuk 'Nasihat Untuk Wanita' bersama Ustaz Harryanto Rizal Rokman berdasarkan Kitab Riyadhus Shalihin dan Al-Quran, serta membuka ruang promosi dan sumbangan bagi pembinaan kompleks tahfiz. - [NC]</desc>
   </programme>
-  <programme start="20260923230000 +0000" stop="20260924000000 +0000" channel="8tv">
-    <title lang="en">8 E-PULSE 2026</title>
-    <desc lang="en">Episode 56 - [NC]</desc>
+  <programme start="20260923225000 +0000" stop="20260924000000 +0000" channel="tv9">
+    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
+    <desc lang="en">Episode 62 - [NC]</desc>
   </programme>
   <programme start="20260924000000 +0000" stop="20260924003000 +0000" channel="8tv">
     <title lang="en">AMUSING RACE SEASON 2</title>
@@ -58210,9 +58210,9 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 86 - [NC]</desc>
   </programme>
-  <programme start="20260923230000 +0000" stop="20260924000000 +0000" channel="drama-sangat">
-    <title lang="en">I AM NOT A LOSER</title>
-    <desc lang="en">Episode 12 - Wen Qi cuba membunuh diri kerana kecewa dengan keputusan peperiksaannya. Mujurlah Zhen Xin berjaya memberi motivasi dan menyakinkannya supaya melepaskan niat tersebut. Zhen Xin juga rela memberi Qen Qi tempat tinggal - [NC]</desc>
+  <programme start="20260924230000 +0000" stop="20260925000000 +0000" channel="8tv">
+    <title lang="en">8 E-PULSE 2026</title>
+    <desc lang="en">Episode 57 - [NC]</desc>
   </programme>
   <programme start="20260924000000 +0000" stop="20260924010000 +0000" channel="drama-sangat">
     <title lang="en">SEOUL CINTA</title>
@@ -58302,6 +58302,10 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">Episode 52 - [NC]</desc>
   </programme>
+  <programme start="20260924230000 +0000" stop="20260925000000 +0000" channel="drama-sangat">
+    <title lang="en">I AM NOT A LOSER</title>
+    <desc lang="en">Episode 13 - Rakan sepenjara Zhen Xin, iaitu Wan Ling, telah dibebaskan dari penjara. Wan Ling menumpang dibilik sewa Zhen Xin buat sementara waktu. Mereka terserempak dengan Zhan Wang dan Guang Yao semasa minum di sebuah bar - [NC]</desc>
+  </programme>
   <programme start="20260924040000 +0000" stop="20260924100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
@@ -58333,10 +58337,6 @@
   <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260923230000 +0000" stop="20260923233000 +0000" channel="ntv7">
-    <title lang="en">JUNGLE AGENT SEASON 2</title>
-    <desc lang="en">Episode 8 - Selepas El Matador melakukan pukulan mudah semasa perlawanan, dia melarikan diri dari pasukan. Shakes dan Klaus menjejakinya ke sebuah kapal persiaran terbiar dan menjumpai sekumpulan orang yang kelihatan serupa dengan El Matador. - [NC]</desc>
   </programme>
   <programme start="20260923233000 +0000" stop="20260924000000 +0000" channel="ntv7">
     <title lang="en">SUKAN 24/25</title>
@@ -58466,9 +58466,9 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 268 - [NC]</desc>
   </programme>
-  <programme start="20260923223500 +0000" stop="20260924000000 +0000" channel="thrill">
-    <title lang="en">Detective Dee: The Ghosts in Weird Town</title>
-    <desc lang="en">Episode 1 - Detective Dee investigates a series of terrifying vampire transformations in Youming Town, uncovering a sinister conspiracy masterminded by Prince Li Zhen, who plots to overthrow the empire. Armed with courage and ingenuity, Dee defeats the bloodthirsty vampires and ultimately exposes the prince’s dark ambitions. - [NC]</desc>
+  <programme start="20260924230000 +0000" stop="20260924233000 +0000" channel="ntv7">
+    <title lang="en">DINO TRAINERS SEASON 2</title>
+    <desc lang="en">Episode 6 - Ritchie, Howell dan Laura terkena gas beracun Tarbo, dinosaur milik Samuel. T-Rex dibantu oleh Brachio dan Tricy mencari  penawar untuk mereka. // Ritchie, Howell dan Laura melalui pelbagai cabaran di Ujian Dewan Bintang. - [NC]</desc>
   </programme>
   <programme start="20260924000000 +0000" stop="20260924011500 +0000" channel="thrill">
     <title lang="en">Night at the Eagle Inn</title>
@@ -58538,9 +58538,9 @@
     <title lang="en">The Elite of Devils</title>
     <desc lang="en">Episode 1 - Five university students are assigned a project at a mysterious estate, where they meet Lady Salakjit, an elite socialite with a deadly secret. As her demonic powers surface, their academic trip turns into a frantic struggle for survival against a centuries-old curse of the ruling class. - [NC]</desc>
   </programme>
-  <programme start="20260923225000 +0000" stop="20260924000000 +0000" channel="tv3">
-    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
-    <desc lang="en">Episode 62 - [NC]</desc>
+  <programme start="20260924225500 +0000" stop="20260925003000 +0000" channel="thrill">
+    <title lang="en">The Getaway</title>
+    <desc lang="en">Episode 1 - Three KOLs embark on a live-streaming trip to a remote island. However, they are deceived by a mysterious old woman who traps them, intending to find brides for her disabled grandsons. As they realise they have been captured, they must race against time to escape this nightmare island. - [NC]</desc>
   </programme>
   <programme start="20260924000000 +0000" stop="20260924010000 +0000" channel="tv3">
     <title lang="en">SETELAH KU DIMILIKI</title>
@@ -58662,9 +58662,9 @@
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 95 - Episod ini hos Fedtri Yahya mengupas tajuk 'Hak Suami Terhadap Isteri' bersama Ustaz Dr. Shamsul Hakim berpandukan Al-Quran dan Kitab Riyadhus Shalihin, selain menyelitkan kempen kutipan derma Kompleks Masjid Kampung Semarang. - [NC]</desc>
   </programme>
-  <programme start="20260923225000 +0000" stop="20260924000000 +0000" channel="tv9">
+  <programme start="20260924225000 +0000" stop="20260925000000 +0000" channel="tv3">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
-    <desc lang="en">Episode 62 - [NC]</desc>
+    <desc lang="en">Episode 63 - [NC]</desc>
   </programme>
   <programme start="20260924000000 +0000" stop="20260924003000 +0000" channel="tv9">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
@@ -58782,9 +58782,9 @@
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 95 - Episod ini hos Fedtri Yahya mengupas tajuk 'Hak Suami Terhadap Isteri' bersama Ustaz Dr. Shamsul Hakim berpandukan Al-Quran dan Kitab Riyadhus Shalihin, selain menyelitkan kempen kutipan derma Kompleks Masjid Kampung Semarang. - [NC]</desc>
   </programme>
-  <programme start="20260924230000 +0000" stop="20260925000000 +0000" channel="8tv">
-    <title lang="en">8 E-PULSE 2026</title>
-    <desc lang="en">Episode 57 - [NC]</desc>
+  <programme start="20260924225000 +0000" stop="20260925000000 +0000" channel="tv9">
+    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
+    <desc lang="en">Episode 63 - [NC]</desc>
   </programme>
   <programme start="20260925000000 +0000" stop="20260925003000 +0000" channel="8tv">
     <title lang="en">HO CHAK! 2025/2026</title>
@@ -58870,9 +58870,9 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 87 - [NC]</desc>
   </programme>
-  <programme start="20260924230000 +0000" stop="20260925000000 +0000" channel="drama-sangat">
-    <title lang="en">I AM NOT A LOSER</title>
-    <desc lang="en">Episode 13 - Rakan sepenjara Zhen Xin, iaitu Wan Ling, telah dibebaskan dari penjara. Wan Ling menumpang dibilik sewa Zhen Xin buat sementara waktu. Mereka terserempak dengan Zhan Wang dan Guang Yao semasa minum di sebuah bar - [NC]</desc>
+  <programme start="20260925230000 +0000" stop="20260925234500 +0000" channel="8tv">
+    <title lang="en">PROUD OF YOU (301-600)</title>
+    <desc lang="en">Episode 499 - Qianna/ Xiao Hai memberitahu Yunyun dan Zixian tentang pertengkaran mereka. Yunyun membawa keluar Xiao Ai secara paksa dari bilik Zixian. Dia mengancam Xiao Ai dan mendedahkan identitinya. - [NC]</desc>
   </programme>
   <programme start="20260925000000 +0000" stop="20260925020000 +0000" channel="drama-sangat">
     <title lang="en">AYYAD AISYAH</title>
@@ -58950,6 +58950,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 32 - [NC]</desc>
   </programme>
+  <programme start="20260925230000 +0000" stop="20260926010000 +0000" channel="drama-sangat">
+    <title lang="en">KISAH CINTA KITA</title>
+    <desc lang="en">Episode 4 - Lakonan Aleesa menyamar sebagi Natasya berjaya menyedarkan Datuk Ramzi. Pada masa sama dia menjaga ibunya selepas pembedahan sakit kansernya. Amer mengarahkan Aleesa terus menjaga Datuk Ramzi sekalipun dia telah sembuh. - [NC]</desc>
+  </programme>
   <programme start="20260925040000 +0000" stop="20260925100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
@@ -58981,10 +58985,6 @@
   <programme start="20260925220000 +0000" stop="20260926040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260924230000 +0000" stop="20260924233000 +0000" channel="ntv7">
-    <title lang="en">DINO TRAINERS SEASON 2</title>
-    <desc lang="en">Episode 6 - Ritchie, Howell dan Laura terkena gas beracun Tarbo, dinosaur milik Samuel. T-Rex dibantu oleh Brachio dan Tricy mencari  penawar untuk mereka. // Ritchie, Howell dan Laura melalui pelbagai cabaran di Ujian Dewan Bintang. - [NC]</desc>
   </programme>
   <programme start="20260924233000 +0000" stop="20260925000000 +0000" channel="ntv7">
     <title lang="en">SUKAN 24/25</title>
@@ -59086,9 +59086,9 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 269 - [NC]</desc>
   </programme>
-  <programme start="20260924225500 +0000" stop="20260925003000 +0000" channel="thrill">
-    <title lang="en">The Getaway</title>
-    <desc lang="en">Episode 1 - Three KOLs embark on a live-streaming trip to a remote island. However, they are deceived by a mysterious old woman who traps them, intending to find brides for her disabled grandsons. As they realise they have been captured, they must race against time to escape this nightmare island. - [NC]</desc>
+  <programme start="20260925230000 +0000" stop="20260925233000 +0000" channel="ntv7">
+    <title lang="en">DINO TRAINERS SEASON 2</title>
+    <desc lang="en">Episode 7 - Ritchie, Howell dan Hardy serta dinosaur peliharaan mereka berjaya melalui ujian mencabar di Ujian Dewan Bintang. / Ritchie berjaya merampas balik T-Rex setelah dinosaur Laura dan Hardy bergabung tenaga. - [NC]</desc>
   </programme>
   <programme start="20260925003000 +0000" stop="20260925015000 +0000" channel="thrill">
     <title lang="en">Ten Minutes to Midnight</title>
@@ -59162,9 +59162,9 @@
     <title lang="en">Mid-night Two</title>
     <desc lang="en">Episode 1 - Yi Cheng and his friends venture into a haunted mountain that hides an ancient corpse and an eternal ghostly flame. No one who enters the mountain ever returns and at 2:30 AM, Yi Cheng’s friends vanish one by one. While searching for them in the eerie forest, Yi Cheng enters a realm of infinite reincarnation, facing a series of terrifying events… - [NC]</desc>
   </programme>
-  <programme start="20260924225000 +0000" stop="20260925000000 +0000" channel="tv3">
-    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
-    <desc lang="en">Episode 63 - [NC]</desc>
+  <programme start="20260925224000 +0000" stop="20260926001000 +0000" channel="thrill">
+    <title lang="en">Evie</title>
+    <desc lang="en">Episode 1 - When young Evie discovers a cursed necklace washed up on the beach, she is unaware of the malevolent force tied to it. As the necklace's dark power begins to grip her, she inadvertently awakens a deadly water demon intent on claiming her and everyone she holds dear. - [NC]</desc>
   </programme>
   <programme start="20260925000000 +0000" stop="20260925010000 +0000" channel="tv3">
     <title lang="en">SETELAH KU DIMILIKI</title>
@@ -59298,9 +59298,9 @@
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 96 - Episod ini Saudara Amin Idris mengupas tajuk 'Nafkahi Keluarga' bersama Ustaz Dr. Nur Mohammad Hadi berpandukan Al-Quran dan Kitab Riyadhus Shalihin, menyelitkan kempen kemudahan sumbangan pembinaan Pertubuhan Akademi Al-Bayan. - [NC]</desc>
   </programme>
-  <programme start="20260924225000 +0000" stop="20260925000000 +0000" channel="tv9">
-    <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
-    <desc lang="en">Episode 63 - [NC]</desc>
+  <programme start="20260925225000 +0000" stop="20260926000000 +0000" channel="tv3">
+    <title lang="en">TANYALAH USTAZ 2026 (SAT &amp; SUN) : JAN - DEC</title>
+    <desc lang="en">Episode 71 - [NC]</desc>
   </programme>
   <programme start="20260925000000 +0000" stop="20260925003000 +0000" channel="tv9">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
@@ -59422,9 +59422,9 @@
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 96 - Episod ini Saudara Amin Idris mengupas tajuk 'Nafkahi Keluarga' bersama Ustaz Dr. Nur Mohammad Hadi berpandukan Al-Quran dan Kitab Riyadhus Shalihin, menyelitkan kempen kemudahan sumbangan pembinaan Pertubuhan Akademi Al-Bayan. - [NC]</desc>
   </programme>
-  <programme start="20260925230000 +0000" stop="20260925234500 +0000" channel="8tv">
-    <title lang="en">PROUD OF YOU (301-600)</title>
-    <desc lang="en">Episode 499 - Qianna/ Xiao Hai memberitahu Yunyun dan Zixian tentang pertengkaran mereka. Yunyun membawa keluar Xiao Ai secara paksa dari bilik Zixian. Dia mengancam Xiao Ai dan mendedahkan identitinya. - [NC]</desc>
+  <programme start="20260925225000 +0000" stop="20260926003000 +0000" channel="tv9">
+    <title lang="en">TANYALAH USTAZ 2026 (SAT &amp; SUN) : JAN - DEC</title>
+    <desc lang="en">Episode 71 - [NC]</desc>
   </programme>
   <programme start="20260925234500 +0000" stop="20260926003000 +0000" channel="8tv">
     <title lang="en">PROUD OF YOU (301-600)</title>
@@ -59506,9 +59506,9 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 88 - [NC]</desc>
   </programme>
-  <programme start="20260925230000 +0000" stop="20260926010000 +0000" channel="drama-sangat">
-    <title lang="en">KISAH CINTA KITA</title>
-    <desc lang="en">Episode 4 - Lakonan Aleesa menyamar sebagi Natasya berjaya menyedarkan Datuk Ramzi. Pada masa sama dia menjaga ibunya selepas pembedahan sakit kansernya. Amer mengarahkan Aleesa terus menjaga Datuk Ramzi sekalipun dia telah sembuh. - [NC]</desc>
+  <programme start="20260926230000 +0000" stop="20260926234500 +0000" channel="8tv">
+    <title lang="en">PROUD OF YOU (301-600)</title>
+    <desc lang="en">Episode 501 - Ta Li menemani Pi Xuen ke bilik mayat Thong disimpan. Pihak polis membawa Shanhe ke balai polis untuk siasatan tentang kematian Thong dan kecederaan San Hao. Liu mengaku kepada polis tentang pembunuh Thong dan San Hao. - [NC]</desc>
   </programme>
   <programme start="20260926010000 +0000" stop="20260926020000 +0000" channel="drama-sangat">
     <title lang="en">TAKDIR YANG TERTULIS</title>
@@ -59586,6 +59586,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 765 - [NC]</desc>
   </programme>
+  <programme start="20260926230000 +0000" stop="20260927010000 +0000" channel="drama-sangat">
+    <title lang="en">KISAH CINTA KITA</title>
+    <desc lang="en">Episode 6 - Aleesa kecewa sebab perkahwinannya dengan Amer terpaksa disembunyikan daripada pengetahuan ibunya Hanisah. Alisa juga sudah masuk syarikat Hana Beuty menggantikan Natasya. Penyamarannya semakin besar, - [NC]</desc>
+  </programme>
   <programme start="20260926040000 +0000" stop="20260926100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
@@ -59617,10 +59621,6 @@
   <programme start="20260926220000 +0000" stop="20260927040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260925230000 +0000" stop="20260925233000 +0000" channel="ntv7">
-    <title lang="en">DINO TRAINERS SEASON 2</title>
-    <desc lang="en">Episode 7 - Ritchie, Howell dan Hardy serta dinosaur peliharaan mereka berjaya melalui ujian mencabar di Ujian Dewan Bintang. / Ritchie berjaya merampas balik T-Rex setelah dinosaur Laura dan Hardy bergabung tenaga. - [NC]</desc>
   </programme>
   <programme start="20260925233000 +0000" stop="20260926000000 +0000" channel="ntv7">
     <title lang="en">KESENIAN 24/25</title>
@@ -59742,9 +59742,9 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 270 - [NC]</desc>
   </programme>
-  <programme start="20260925224000 +0000" stop="20260926001000 +0000" channel="thrill">
-    <title lang="en">Evie</title>
-    <desc lang="en">Episode 1 - When young Evie discovers a cursed necklace washed up on the beach, she is unaware of the malevolent force tied to it. As the necklace's dark power begins to grip her, she inadvertently awakens a deadly water demon intent on claiming her and everyone she holds dear. - [NC]</desc>
+  <programme start="20260926230000 +0000" stop="20260926233000 +0000" channel="ntv7">
+    <title lang="en">DINO TRAINERS SEASON 2</title>
+    <desc lang="en">Episode 8 - Ritchie, Howell dan Hardy berjaya melalui ujian terakhir di mana dinosaur mereka bermain bola sepak bagi menilai semangat kerjasama mereka. // Styra, dinosaur tercedera yang diselamatkan Ritchie telah dirampas oleh pemburu. - [NC]</desc>
   </programme>
   <programme start="20260926001000 +0000" stop="20260926003500 +0000" channel="thrill">
     <title lang="en">Model Family</title>
@@ -59822,9 +59822,9 @@
     <title lang="en">Fate Jealous Greed</title>
     <desc lang="en">Episode 1 - The film consists of three short horror stories: a man tries to survive after he received a haunted mail predicting his death; while a man mourns the death of his beloved wife, she becomes a ghost and tries to communicate with him; three brothers clash over the care options of their elderly mother during dinner, leading to a terrifying murder. - [NC]</desc>
   </programme>
-  <programme start="20260925225000 +0000" stop="20260926000000 +0000" channel="tv3">
-    <title lang="en">TANYALAH USTAZ 2026 (SAT &amp; SUN) : JAN - DEC</title>
-    <desc lang="en">Episode 71 - [NC]</desc>
+  <programme start="20260926224000 +0000" stop="20260927001000 +0000" channel="thrill">
+    <title lang="en">The Windmill Massacre</title>
+    <desc lang="en">Episode 1 - Jennifer joins a tour to explore the renowned windmills of the Netherlands. As their tour coach breaks down on the way, they seek refuge in a creepy shed near a sinister windmill with a dark history. When some tour members suddenly disappear, Jennifer discovers a shared secret among them, linking their fates in a chilling revelation. - [NC]</desc>
   </programme>
   <programme start="20260926000000 +0000" stop="20260926010000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -59966,9 +59966,9 @@
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
-  <programme start="20260925225000 +0000" stop="20260926003000 +0000" channel="tv9">
+  <programme start="20260926225000 +0000" stop="20260927000000 +0000" channel="tv3">
     <title lang="en">TANYALAH USTAZ 2026 (SAT &amp; SUN) : JAN - DEC</title>
-    <desc lang="en">Episode 71 - [NC]</desc>
+    <desc lang="en">Episode 72 - [NC]</desc>
   </programme>
   <programme start="20260926003000 +0000" stop="20260926013000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -60082,9 +60082,9 @@
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
-  <programme start="20260926230000 +0000" stop="20260926234500 +0000" channel="8tv">
-    <title lang="en">PROUD OF YOU (301-600)</title>
-    <desc lang="en">Episode 501 - Ta Li menemani Pi Xuen ke bilik mayat Thong disimpan. Pihak polis membawa Shanhe ke balai polis untuk siasatan tentang kematian Thong dan kecederaan San Hao. Liu mengaku kepada polis tentang pembunuh Thong dan San Hao. - [NC]</desc>
+  <programme start="20260926225000 +0000" stop="20260927003000 +0000" channel="tv9">
+    <title lang="en">TANYALAH USTAZ 2026 (SAT &amp; SUN) : JAN - DEC</title>
+    <desc lang="en">Episode 72 - [NC]</desc>
   </programme>
   <programme start="20260926234500 +0000" stop="20260927003000 +0000" channel="8tv">
     <title lang="en">PROUD OF YOU (301-600)</title>
@@ -60170,9 +60170,10 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 89 - [NC]</desc>
   </programme>
-  <programme start="20260926230000 +0000" stop="20260927010000 +0000" channel="drama-sangat">
-    <title lang="en">KISAH CINTA KITA</title>
-    <desc lang="en">Episode 6 - Aleesa kecewa sebab perkahwinannya dengan Amer terpaksa disembunyikan daripada pengetahuan ibunya Hanisah. Alisa juga sudah masuk syarikat Hana Beuty menggantikan Natasya. Penyamarannya semakin besar, - [NC]</desc>
+  <programme start="20260927230000 +0000" stop="20260927230337 +0000" channel="8tv">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
   </programme>
   <programme start="20260927010000 +0000" stop="20260927020000 +0000" channel="drama-sangat">
     <title lang="en">TAKDIR YANG TERTULIS</title>
@@ -60246,7 +60247,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927220000 +0000" stop="20260927223329 +0000" channel="drama-sangat">
+  <programme start="20260927220000 +0000" stop="20260927230337 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -60282,10 +60283,6 @@
   <programme start="20260927220000 +0000" stop="20260928040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260926230000 +0000" stop="20260926233000 +0000" channel="ntv7">
-    <title lang="en">DINO TRAINERS SEASON 2</title>
-    <desc lang="en">Episode 8 - Ritchie, Howell dan Hardy berjaya melalui ujian terakhir di mana dinosaur mereka bermain bola sepak bagi menilai semangat kerjasama mereka. // Styra, dinosaur tercedera yang diselamatkan Ritchie telah dirampas oleh pemburu. - [NC]</desc>
   </programme>
   <programme start="20260926233000 +0000" stop="20260927000000 +0000" channel="ntv7">
     <title lang="en">BADAN BERUNIFORM 24/25</title>
@@ -60427,14 +60424,10 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927220000 +0000" stop="20260927223329 +0000" channel="ntv7">
+  <programme start="20260927220000 +0000" stop="20260927230337 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
-  </programme>
-  <programme start="20260926224000 +0000" stop="20260927001000 +0000" channel="thrill">
-    <title lang="en">The Windmill Massacre</title>
-    <desc lang="en">Episode 1 - Jennifer joins a tour to explore the renowned windmills of the Netherlands. As their tour coach breaks down on the way, they seek refuge in a creepy shed near a sinister windmill with a dark history. When some tour members suddenly disappear, Jennifer discovers a shared secret among them, linking their fates in a chilling revelation. - [NC]</desc>
   </programme>
   <programme start="20260927001000 +0000" stop="20260927010000 +0000" channel="thrill">
     <title lang="en">3AM - The Hospital</title>
@@ -60507,10 +60500,6 @@
   <programme start="20260927215500 +0000" stop="20260927232000 +0000" channel="thrill">
     <title lang="en">Chop Chop</title>
     <desc lang="en">Episode 1 - A young couple's tranquility is shattered by a psychotic serial killer one quiet evening. Their battle for survival reveals hidden truths, entangling them unwittingly with the criminal underworld. - [NC]</desc>
-  </programme>
-  <programme start="20260926225000 +0000" stop="20260927000000 +0000" channel="tv3">
-    <title lang="en">TANYALAH USTAZ 2026 (SAT &amp; SUN) : JAN - DEC</title>
-    <desc lang="en">Episode 72 - [NC]</desc>
   </programme>
   <programme start="20260927000000 +0000" stop="20260927010000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -60652,14 +60641,10 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260927223000 +0000" stop="20260927223329 +0000" channel="tv3">
+  <programme start="20260927223000 +0000" stop="20260927230337 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
-  </programme>
-  <programme start="20260926225000 +0000" stop="20260927003000 +0000" channel="tv9">
-    <title lang="en">TANYALAH USTAZ 2026 (SAT &amp; SUN) : JAN - DEC</title>
-    <desc lang="en">Episode 72 - [NC]</desc>
   </programme>
   <programme start="20260927003000 +0000" stop="20260927013000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -60761,7 +60746,7 @@
     <title lang="en">MY #QURANTIME 2.0            </title>
     <desc lang="en">Episode 1384 - [NC]</desc>
   </programme>
-  <programme start="20260927220000 +0000" stop="20260927223329 +0000" channel="tv9">
+  <programme start="20260927220000 +0000" stop="20260927230337 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
