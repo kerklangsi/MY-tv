@@ -54256,10 +54256,6 @@
   <programme start="20260926150000 +0000" stop="20260926160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260920103000 +0000" stop="20260920110000 +0000" channel="8tv">
-    <title lang="en">HO CHAK! 2025/2026</title>
-    <desc lang="en">Episod ini hos Orange mengesyorkan 3 buah restoran di sekitar Kuala Lumpur untuk menikmati pelbagai jenis hidangan yang enak dan autentik. Antaranya, IOI Grill &amp; Bar, di Sg Wang Plaza, KL; Pandan Cafe &amp; Dining TTDI, di Taman Tun, KL.</desc>
-  </programme>
   <programme start="20260920110000 +0000" stop="20260920120000 +0000" channel="8tv">
     <title lang="en">LET ME TAKE YOUR PULSE</title>
     <desc lang="en">Digantung tugas akibat siasatan kematian mengejut pesakit, Jiaying meluahkan perasaan kepada Qingjin. Dia mula mendedahkan keraguan dan kekurangan kepercayaan yang dihadapinya sebagai pengamal perubatan tradisional Cina.</desc>
@@ -54329,8 +54325,9 @@
   <programme start="20260921100000 +0000" stop="20260921110000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
   </programme>
-  <programme start="20260920100000 +0000" stop="20260920110000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
+  <programme start="20260921110000 +0000" stop="20260921120000 +0000" channel="8tv">
+    <title lang="en">HEROES IN WHITE</title>
+    <desc lang="en">Sai-hang memburu jurucakap Herbal Painless Ma Yik-chenug. Wing-sum tersalah anggap Wai-man merindui majlis makan ketika dia merawat Yee-ting. Dia berasa lega apabila mengetahui bahawa Wai-man tertangguh kerana merawat Chi-hung.</desc>
   </programme>
   <programme start="20260920110000 +0000" stop="20260920130000 +0000" channel="drama-sangat">
     <title lang="en">KISAH CINTA KITA</title>
@@ -54416,9 +54413,9 @@
   <programme start="20260921100000 +0000" stop="20260921110000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
   </programme>
-  <programme start="20260920092928 +0000" stop="20260920112057 +0000" channel="fifa">
-    <title lang="en">Brazil v China PR | Group D | FIFA Women's World Cup China 2007™ | Full Match Replay</title>
-    <desc lang="en">Watch the full match replay between Brazil and China PR from Wuhan, 15 September 2007.</desc>
+  <programme start="20260921110000 +0000" stop="20260921120000 +0000" channel="drama-sangat">
+    <title lang="en">I AM NOT A LOSER</title>
+    <desc lang="en">Keikhlasan Zhan Wang berjaya menyentuh hati Ke En. Ke En bersetuju untuk menjadi teman wanita Zhan Wang, dan mula menjalinkan hubungan rapat dengannya. Sementara itu, Zhen Xin yang dijemput ke rumah Guang Yao untuk menyambut hari jadi Yao.</desc>
   </programme>
   <programme start="20260920112057 +0000" stop="20260920131143 +0000" channel="fifa">
     <title lang="en">Brazil v Australia | Group D | FIFA Women's World Cup Germany 2011™ | Full Match Replay</title>
@@ -54494,13 +54491,6 @@ SRG vs TR</desc>
   <programme start="20260921100000 +0000" stop="20260921160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship!</desc>
-  </programme>
-  <programme start="20260920103000 +0000" stop="20260920110000 +0000" channel="ntv7">
-    <title lang="en">BADAN BERUNIFORM 24/25</title>
-    <desc lang="en">Program ini memberi pengetahuan dan kemahiran asas kepada murid mengenai konsep kegiatan kokurikulum Badan Beruniform; meningkatkan pengetahuan dan kefahaman dalam perancangan serta pengurusan Badan Beruniform.</desc>
-  </programme>
-  <programme start="20260920110000 +0000" stop="20260920113000 +0000" channel="ntv7">
-    <title lang="en">BULETIN DIDIK 2026 (JULY - DEC)</title>
   </programme>
   <programme start="20260920113000 +0000" stop="20260920120000 +0000" channel="ntv7">
     <title lang="en">BEYBLADE X (GEN 4)</title>
@@ -54619,9 +54609,12 @@ SRG vs TR</desc>
     <title lang="en">KESENIAN 24/25</title>
     <desc lang="en">Program ini menyediakan pelbagai kemahiran dalam kesenian membabitkan elemen seperti nyanyian, seni tari dan seni visual yang  memainkan peranan penting dalam pembangunan sahsiah murid.</desc>
   </programme>
-  <programme start="20260920093500 +0000" stop="20260920112000 +0000" channel="thrill">
-    <title lang="en">The Possession of Leah Dela Cruz</title>
-    <desc lang="en">A female police officer relocates to a quiet small town and is drawn into a chilling case involving a girl seemingly possessed by an evil spirit. As her investigation deepens, unsettling truths emerge. She soon realises this is not just an exorcism, but a psychological battle that uncovers the town’s dark secrets.</desc>
+  <programme start="20260921110000 +0000" stop="20260921113000 +0000" channel="ntv7">
+    <title lang="en">BULETIN DIDIK 2026 (JULY - DEC)</title>
+  </programme>
+  <programme start="20260921113000 +0000" stop="20260921120000 +0000" channel="ntv7">
+    <title lang="en">ULTRAMAN TEO 2026</title>
+    <desc lang="en">Pegawai penyiasat melaporkan serangan raksasa dan gergasi biru kepada UTTF yang berhasrat menangkapnya untuk eksperimen. Sementara itu, Emma Kazama dan rakan-rakannya berencana mencari penjaga baharu bagi kucing peliharaan.</desc>
   </programme>
   <programme start="20260920112000 +0000" stop="20260920130000 +0000" channel="thrill">
     <title lang="en">Open the Coffin</title>
@@ -54695,9 +54688,9 @@ SRG vs TR</desc>
     <title lang="en">A Woman Scorned</title>
     <desc lang="en">Jas's peaceful countryside getaway with her sister Laura is shattered when a group of drifters attacks them. After Laura is brutally killed, Jas discovers her lifeless body at their rented cabin. Consumed by grief and fury, she vows to hunt down the gang and take vengeance on her sister's murderer.</desc>
   </programme>
-  <programme start="20260920103000 +0000" stop="20260920110000 +0000" channel="tv3">
-    <title lang="en">BERSAMAMU 2026/2027</title>
-    <desc lang="en">Sebuah program kemanusiaan yang menyelami dan memaparkan kehidupan individu dan keluarga daripada golongan yang kurang bernasib baik. Penonton boleh menyalurkan sumbangan melalui Tabung Bersamamu TV3.</desc>
+  <programme start="20260921112500 +0000" stop="20260921130000 +0000" channel="thrill">
+    <title lang="en">Red Rain</title>
+    <desc lang="en">Based on true events, a young scientist who specialises in the study of aliens and extraterrestrials sets out to uncover the mystery behind a series of strange occurrences in Kerala.</desc>
   </programme>
   <programme start="20260920110000 +0000" stop="20260920120000 +0000" channel="tv3">
     <title lang="en">WANITA MILIK KAIDEN</title>
@@ -54807,12 +54800,9 @@ SRG vs TR</desc>
     <title lang="en">WANITA SYURGA</title>
     <desc lang="en">Luqman buka semula kes Ardini dengan memfailkan tuntutan hadanah ke atas Amar. Amar semakin sakit hati dan cemburu pada Ardini yang semakin cantik dan dekat dengan Luqman. Niat Ardini hanya mahu mendapatkan semula anak-anaknya.</desc>
   </programme>
-  <programme start="20260920103000 +0000" stop="20260920110000 +0000" channel="tv9">
-    <title lang="en">SUPA STRIKAS (SEASON 4 - 6)</title>
-    <desc lang="en">Supa Strikas akan menentang Nakama FC di Stadium Gashuku, Tokyo. Shakes bersedia untuk mencipta sejarah dengan memecahkan rekod yang dipegang oleh Edwin selama bertahun-tahun. Shakes cuba menjauhkan diri dari gembar-gembur.</desc>
-  </programme>
-  <programme start="20260920110000 +0000" stop="20260920115000 +0000" channel="tv9">
-    <title lang="en">BULETIN TV9 2026/2027</title>
+  <programme start="20260921110000 +0000" stop="20260921120000 +0000" channel="tv3">
+    <title lang="en">HANYA UNTUK DIA</title>
+    <desc lang="en">Kisah ini mengangkat perjalanan hidup Ain Nuraina, seorang gadis yang cekal, keras hati dan terbiasa menyembunyikan luka di sebalik senyuman. Selepas kehilangan kedua ibubapanya, Ain memikul tanggungjawab besar menjaga abangnya, Ikram.</desc>
   </programme>
   <programme start="20260920115000 +0000" stop="20260920124000 +0000" channel="tv9">
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
@@ -54921,5 +54911,12 @@ SRG vs TR</desc>
   <programme start="20260921103000 +0000" stop="20260921110000 +0000" channel="tv9">
     <title lang="en">SUPA STRIKAS (SEASON 4 - 6)</title>
     <desc lang="en">ON KLAUS INSPECTION.  Supa Strikas bersedia untuk perlawanan dengan Iron Tank F.C di stadium Fortress hujung minggu ini. Apabila mereka memilih ruang untuk berehat, mereka telah bertemu dengan 3 lelaki: Uber, Skarra dan Toni Vern.</desc>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921115000 +0000" channel="tv9">
+    <title lang="en">BULETIN TV9 2026/2027</title>
+  </programme>
+  <programme start="20260921115000 +0000" stop="20260921124000 +0000" channel="tv9">
+    <title lang="en">BUKAN CINTA AKU</title>
+    <desc lang="en">Remy memberitahu emak dan ayahnya tentang hubungan kakaknya Riana dan Arjuna. Namun apabila Riana tidak mengaku, emak dan ayahnya mempercayainya. Tengku Isma kenalkan Qisya kepada emaknya tetapi emaknya tidak sukakan Qisya.</desc>
   </programme>
 </tv>
