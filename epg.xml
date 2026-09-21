@@ -55389,10 +55389,6 @@
   <programme start="20260926150000 +0000" stop="20260926160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260920150000 +0000" stop="20260920160000 +0000" channel="8tv">
-    <title lang="en">WEAVING A TALE OF LOVE S2</title>
-    <desc lang="en">Episode 33 - Ayah Hui mengesyorkan abang Zhan Min untuk mengetuai pasukan penghantaran bekalan makanan ke kem tentera. Walau bagaimanapun, Pei Xingjian dengan sukarela diberikan tugas itu. Berita ini membuatkan Jeneral Shu gembira. - [NC]</desc>
-  </programme>
   <programme start="20260920160000 +0000" stop="20260920170000 +0000" channel="8tv">
     <title lang="en">WEAVING A TALE OF LOVE S2</title>
     <desc lang="en">Episode 34 - Jeneral Shu mengetuai tenteranya untuk mengepung rumah Pei Xingjian dengan alasan untuk menangkap seorang pengkhianat. Liu Li mengetahui bahawa Jeneral Shu cuba membalas dendam terhadap Pei Xingjian berkenaan kehilangan askarnya. - [NC]</desc>
@@ -55477,9 +55473,9 @@
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 54 - [NC]</desc>
   </programme>
-  <programme start="20260920150000 +0000" stop="20260920160000 +0000" channel="drama-sangat">
-    <title lang="en">SEKALI AKU BAHAGIA</title>
-    <desc lang="en">Episode 13 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
+  <programme start="20260921160000 +0000" stop="20260921170000 +0000" channel="8tv">
+    <title lang="en">THE LEGEND OF HEROES</title>
+    <desc lang="en">Episode 3 - Huang Rong dan Guo Jing menyusup masuk ke istana putera untuk mencuri penawar. Namun identiti Guo Jing terdedah dan diserang oleh seekor ular raksasa. Setelah pertarungan sengit, Guo Jing berjaya membunuh ular itu. - [NC]</desc>
   </programme>
   <programme start="20260920160000 +0000" stop="20260920170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -55577,9 +55573,9 @@
     <title lang="en">AKU BUKAN USTAZAH</title>
     <desc lang="en">Episode 8 - Aminah keluar meninggalkan Omar dan rakan-rakannya kerana tidak tahan disindir oleh Sally. Di ofis, Aminah berbalah dengan Adam berebutkan tempat parking kereta. Tuan Hamid memperkenalkan Adam sebagai CEO syarikatnya. - [NC]</desc>
   </programme>
-  <programme start="20260920150135 +0000" stop="20260920154502 +0000" channel="fifa">
-    <title lang="en">A Look Back: 1970 FIFA World Cup Mexico™</title>
-    <desc lang="en">Episode 1 - Brazil Highlights in the1970 FIFA World Cup Mexico™ - [NC]</desc>
+  <programme start="20260921160000 +0000" stop="20260921170000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 56 - [NC]</desc>
   </programme>
   <programme start="20260920154502 +0000" stop="20260920173524 +0000" channel="fifa">
     <title lang="en">Italy v Brazil | Second Round | 1982 FIFA World Cup Spain™ | Full Match Replay</title>
@@ -55617,9 +55613,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260920144500 +0000" stop="20260920160000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL MY S18</title>
-    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260920160000 +0000" stop="20260920220000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -55637,9 +55633,9 @@
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
-  <programme start="20260920153000 +0000" stop="20260920160000 +0000" channel="ntv7">
-    <title lang="en">MARI BERCERITA</title>
-    <desc lang="en">Episode 18 - Episod ini Sugeeta akan mengupas novel Bahasa Inggeris bagi pelajar di Tingkatan 3 yang bertajuk ‘Moby Dick’. - [NC]</desc>
+  <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL Malaysia Season 18: Week 6</title>
+    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
   <programme start="20260920160000 +0000" stop="20260920230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
@@ -55769,6 +55765,10 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
+  <programme start="20260921160000 +0000" stop="20260921230000 +0000" channel="ntv7">
+    <title lang="en">HOT FM@ntv7 2026</title>
+    <desc lang="en">Episode 265 - [NC]</desc>
+  </programme>
   <programme start="20260920152500 +0000" stop="20260920162500 +0000" channel="thrill">
     <title lang="en">Sinister - The Gates of Hell</title>
     <desc lang="en">Episode 3 - Artiste Yin Qing enters Hell's Gate through a supernatural TV show and reunites with her late friend Mei Qi. At Mei Qi's gravesite, Yin Qing encounters Mei Qi's husband, Dong Sheng, and a series of mysterious incidents unfold. She then brings Dong Sheng onto the show, where Mei Qi exposes his infidelity and reveals the conspiracy behind her death. - [NC]</desc>
@@ -55841,9 +55841,9 @@
     <title lang="en">Detective Dee's Seven Deadly Sin</title>
     <desc lang="en">Episode 1 - Detective Dee becomes embroiled in a series of murders that shake the Tang Empire. The killer invokes the &quot;Seven Deadly Sins&quot; to justify a twisted sense of justice. In his relentless pursuit of the truth, Detective Dee uncovers the mask of false righteousness and exposes the darkness hidden beneath. - [NC]</desc>
   </programme>
-  <programme start="20260920150000 +0000" stop="20260920160000 +0000" channel="tv3">
-    <title lang="en">PENUNGGU GUNUNG RAYA</title>
-    <desc lang="en">Episode 13 - Usaha Lebai Awang untuk menghapuskan iblis yang mengganggu kampung itu gagal kerana iblis itu dibantu oleh manusia sendiri yang memujanya. Azam dan Intan bersama neneknya cuba selamatkan kampung itu dari terus diganggu oleh iblis. - [NC]</desc>
+  <programme start="20260921160000 +0000" stop="20260921173500 +0000" channel="thrill">
+    <title lang="en">Mulu Nakru </title>
+    <desc lang="en">Episode 1 - After moving into a house with her boyfriend, Gun, architect May learns of her stepmother’s mysterious death. When May takes in her stepsister Noon, the girl begins showing signs of possession, while May suffers disturbing visions and insomnia. As dark secrets emerge, spiritual masters uncover an ancient black-magic curse hidden within the house. - [NC]</desc>
   </programme>
   <programme start="20260920160000 +0000" stop="20260920163000 +0000" channel="tv3">
     <title lang="en">NIGHTLINE (2026/2027)</title>
@@ -55973,9 +55973,9 @@
     <title lang="en">REMANG</title>
     <desc lang="en">Episode 1 - DENDAM SAKA.  DJ Ejay mengendalikan program Slot Remang Malam di radio. Kisah ini mengenai Jen dan Danial bermalam di sebuah rumah mewah yang ditinggalkan sempena menyambut ulangtahun perkahwinan mereka. - [NC]</desc>
   </programme>
-  <programme start="20260920153000 +0000" stop="20260920160000 +0000" channel="tv9">
-    <title lang="en">KISAH BENAR TRAGEDI ( SS 2 )</title>
-    <desc lang="en">Episode 5 - Seorang lelaki dan teman wanita, Salina telah disamun oleh sekumpulan lelaki. Salina juga turut dirogol dan kereta mereka telah dilarikan oleh kumpulan geng samun tersebut. Ekoran kejadian itu beberapa orang saksi telah disoal siasat oleh pihak polis - [NC]</desc>
+  <programme start="20260921160000 +0000" stop="20260921163000 +0000" channel="tv3">
+    <title lang="en">NIGHTLINE (2026/2027)</title>
+    <desc lang="en">Episode 83 - [NC]</desc>
   </programme>
   <programme start="20260920160000 +0000" stop="20260920170000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -56101,9 +56101,9 @@
     <title lang="en">KINTANG KINTUNG</title>
     <desc lang="en">Episode 5 - Episod ini bual bicara komedi ini memaparkan pengacara Harun Salim Bachik dan Achey bersama tetamu jemputan Encik Mohamad dan Encik Sulhie membincangkan isu 'Poligami'. Tetamu jemputan turut berkongsi pengalaman. - [NC]</desc>
   </programme>
-  <programme start="20260921160000 +0000" stop="20260921170000 +0000" channel="8tv">
-    <title lang="en">THE LEGEND OF HEROES</title>
-    <desc lang="en">Episode 3 - Huang Rong dan Guo Jing menyusup masuk ke istana putera untuk mencuri penawar. Namun identiti Guo Jing terdedah dan diserang oleh seekor ular raksasa. Setelah pertarungan sengit, Guo Jing berjaya membunuh ular itu. - [NC]</desc>
+  <programme start="20260921160000 +0000" stop="20260921170000 +0000" channel="tv9">
+    <title lang="en">PLAN B</title>
+    <desc lang="en">Episode 1 - Ya You menguruskan permohonan tadika untuk anak perempuannya, Ni Tong, yang kini berusia dua tahun. Kehidupan seharian mereka sekeluarga turut diwarnai dengan pelbagai cadangan pemilihan tadika daripada ibunya, Chu Qiao. - [NC]</desc>
   </programme>
   <programme start="20260921170000 +0000" stop="20260921230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
@@ -56185,9 +56185,9 @@
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 55 - [NC]</desc>
   </programme>
-  <programme start="20260921160000 +0000" stop="20260921170000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 56 - [NC]</desc>
+  <programme start="20260922160000 +0000" stop="20260922170000 +0000" channel="8tv">
+    <title lang="en">THE LEGEND OF HEROES</title>
+    <desc lang="en">Episode 4 - Mu Yi sebenarnya ayah kandung Wan Yan Kang bernama Yang Tiexin, yang terselamat dalam pertempuran dengan askar Jin. Yang Tiexin bersatu kembali dengan isterinya Bao Xiruo, tetapi Wan Yan Kang enggan mengaku dia ayah kandungnya. - [NC]</desc>
   </programme>
   <programme start="20260921170000 +0000" stop="20260921180000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
@@ -56281,9 +56281,9 @@
     <title lang="en">AKU BUKAN USTAZAH</title>
     <desc lang="en">Episode 9 - Aminah terpaksa menerima pelawaan Adam sebagai majikannya untuk keluar makan bersama. Mereka kemudian terjumpa dengan Sally dan berlaku perbalahan sehingga menyebabkan hubungan Sally dan Aminah menjadi keruh. - [NC]</desc>
   </programme>
-  <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260922160000 +0000" stop="20260922170000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 501 - [NC]</desc>
   </programme>
   <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -56297,9 +56297,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL Malaysia Season 18: Week 6</title>
-    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -56313,9 +56313,9 @@
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
-  <programme start="20260921160000 +0000" stop="20260921230000 +0000" channel="ntv7">
-    <title lang="en">HOT FM@ntv7 2026</title>
-    <desc lang="en">Episode 265 - [NC]</desc>
+  <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL Malaysia Season 18: Week 6</title>
+    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
   <programme start="20260921230000 +0000" stop="20260921233000 +0000" channel="ntv7">
     <title lang="en">GO GO DINO SEASON 4</title>
@@ -56445,9 +56445,9 @@
     <title lang="en">MARI BERCERITA</title>
     <desc lang="en">Episode 19 - Episod ini Nadia Aqilah akan mengupas buku KOMSAS bagi pelajar di Tingkatan 4 yang bertajuk ‘Pantai Kasih’. - [NC]</desc>
   </programme>
-  <programme start="20260921160000 +0000" stop="20260921173500 +0000" channel="thrill">
-    <title lang="en">Mulu Nakru </title>
-    <desc lang="en">Episode 1 - After moving into a house with her boyfriend, Gun, architect May learns of her stepmother’s mysterious death. When May takes in her stepsister Noon, the girl begins showing signs of possession, while May suffers disturbing visions and insomnia. As dark secrets emerge, spiritual masters uncover an ancient black-magic curse hidden within the house. - [NC]</desc>
+  <programme start="20260922160000 +0000" stop="20260922230000 +0000" channel="ntv7">
+    <title lang="en">HOT FM@ntv7 2026</title>
+    <desc lang="en">Episode 266 - [NC]</desc>
   </programme>
   <programme start="20260921173500 +0000" stop="20260921180000 +0000" channel="thrill">
     <title lang="en">Model Family</title>
@@ -56517,9 +56517,9 @@
     <title lang="en">Mama Ghost</title>
     <desc lang="en">Episode 1 - In a coastal town, a forbidden romance sparks between Rico and Sisca, and their love unleashes a malevolent spirit. As chilling deaths plague the town, past secrets are being unraveled and the town is possessed by evil and fear. Rico must defy destiny and fight against the evil spirit to save his loved one. - [NC]</desc>
   </programme>
-  <programme start="20260921160000 +0000" stop="20260921163000 +0000" channel="tv3">
-    <title lang="en">NIGHTLINE (2026/2027)</title>
-    <desc lang="en">Episode 83 - [NC]</desc>
+  <programme start="20260922160500 +0000" stop="20260922174500 +0000" channel="thrill">
+    <title lang="en">Open the Coffin</title>
+    <desc lang="en">Episode 1 - Ghost Hand and his tomb raiders resurface in Jiang City to seek gold in ancient tombs after a 3-year absence. They released an evil spirit from a coffin and all four died at home eventually. Poison and pinholes in the corpses become the sole clue for police investigation. A tomb raid now unfolds as a perplexing and mysterious case. - [NC]</desc>
   </programme>
   <programme start="20260921163000 +0000" stop="20260921173000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -56645,9 +56645,9 @@
     <title lang="en">REMANG</title>
     <desc lang="en">Episode 2 - Program Remang Malam oleh DJ Ejay mendapat sambutan hangat dari pendengar. Panggilan seterusnya daripada Linda berkongsi kisah rakannya Nur, 5 tahun lalu terlanggar sesuatu tanpa disedari itu adalah susuk tubuh seseorang. - [NC]</desc>
   </programme>
-  <programme start="20260921160000 +0000" stop="20260921170000 +0000" channel="tv9">
-    <title lang="en">PLAN B</title>
-    <desc lang="en">Episode 1 - Ya You menguruskan permohonan tadika untuk anak perempuannya, Ni Tong, yang kini berusia dua tahun. Kehidupan seharian mereka sekeluarga turut diwarnai dengan pelbagai cadangan pemilihan tadika daripada ibunya, Chu Qiao. - [NC]</desc>
+  <programme start="20260922160000 +0000" stop="20260922163000 +0000" channel="tv3">
+    <title lang="en">NIGHTLINE (2026/2027)</title>
+    <desc lang="en">Episode 84 - [NC]</desc>
   </programme>
   <programme start="20260921170000 +0000" stop="20260921175000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -56769,9 +56769,9 @@
     <title lang="en">DUNIA TERSEMBUNYI</title>
     <desc lang="en">Episode 9 - LEGASI SABUNG.  Aktiviti menyabung ayam sudah menjadi aktiviti riadah yang popular di Filipina. Bahkan ianya merupakan aktiviti yang menjadi salah satu tarikan para pelancong. - [NC]</desc>
   </programme>
-  <programme start="20260922160000 +0000" stop="20260922170000 +0000" channel="8tv">
-    <title lang="en">THE LEGEND OF HEROES</title>
-    <desc lang="en">Episode 4 - Mu Yi sebenarnya ayah kandung Wan Yan Kang bernama Yang Tiexin, yang terselamat dalam pertempuran dengan askar Jin. Yang Tiexin bersatu kembali dengan isterinya Bao Xiruo, tetapi Wan Yan Kang enggan mengaku dia ayah kandungnya. - [NC]</desc>
+  <programme start="20260922160000 +0000" stop="20260922170000 +0000" channel="tv9">
+    <title lang="en">PLAN B</title>
+    <desc lang="en">Episode 2 - Khai dan Airis kedua-dua mereka daripada keluarga kaya  mempertaruhkan wang dalam satu perlumbaan haram kereta &quot;drift&quot;. Airis memenangi perlumbaan itu dengan imbuhan wang sebanyak RM20 ribu. Khai tidak berpuas hati. - [NC]</desc>
   </programme>
   <programme start="20260922170000 +0000" stop="20260922230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
@@ -56853,9 +56853,9 @@
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 56 - [NC]</desc>
   </programme>
-  <programme start="20260922160000 +0000" stop="20260922170000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 501 - [NC]</desc>
+  <programme start="20260923160000 +0000" stop="20260923170000 +0000" channel="8tv">
+    <title lang="en">THE LEGEND OF HEROES</title>
+    <desc lang="en">Episode 5 - Mu Nianci dan Yang Tiexin yang bersatu dengan Bao Xiruo dikepung askar Jin ketika cuba melarikan diri. Yang Tiexin membunuh diri kerana tak sanggup membebani orang lain. Bao Xiruo yang patah hati turut mengikutnya mengorbankan diri - [NC]</desc>
   </programme>
   <programme start="20260922170000 +0000" stop="20260922180000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
@@ -56949,9 +56949,9 @@
     <title lang="en">SEKALI AKU BAHAGIA</title>
     <desc lang="en">Episode 14 - Delisha tak sangka ibu kandungnya masih hidup. Firas berterus terang di hadapan Muaz dan Rania yang kelak dia akan menyunting Delisha sebagai suri hatinya. Eli mengamuk Firas tak pernah mengaku mereka ada hubungan istimewa. - [NC]</desc>
   </programme>
-  <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260923160000 +0000" stop="20260923170000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 916 - [NC]</desc>
   </programme>
   <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -56965,9 +56965,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL Malaysia Season 18: Week 6</title>
-    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  <programme start="20260923160000 +0000" stop="20260923220000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -56981,9 +56981,9 @@
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
-  <programme start="20260922160000 +0000" stop="20260922230000 +0000" channel="ntv7">
-    <title lang="en">HOT FM@ntv7 2026</title>
-    <desc lang="en">Episode 266 - [NC]</desc>
+  <programme start="20260923160000 +0000" stop="20260923220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL Malaysia Season 18: Week 6</title>
+    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
   <programme start="20260922230000 +0000" stop="20260922233000 +0000" channel="ntv7">
     <title lang="en">JUNGLE AGENT SEASON 2</title>
@@ -57113,9 +57113,9 @@
     <title lang="en">MARI BERCERITA</title>
     <desc lang="en">Episode 20 - Episod ini Hafizul akan mengupas buku KOMSAS bagi pelajar di Tingkatan 4 yang bertajuk ‘Leftenan Adnan Wira Bangsa’. - [NC]</desc>
   </programme>
-  <programme start="20260922160500 +0000" stop="20260922174500 +0000" channel="thrill">
-    <title lang="en">Open the Coffin</title>
-    <desc lang="en">Episode 1 - Ghost Hand and his tomb raiders resurface in Jiang City to seek gold in ancient tombs after a 3-year absence. They released an evil spirit from a coffin and all four died at home eventually. Poison and pinholes in the corpses become the sole clue for police investigation. A tomb raid now unfolds as a perplexing and mysterious case. - [NC]</desc>
+  <programme start="20260923160000 +0000" stop="20260923230000 +0000" channel="ntv7">
+    <title lang="en">HOT FM@ntv7 2026</title>
+    <desc lang="en">Episode 267 - [NC]</desc>
   </programme>
   <programme start="20260922174500 +0000" stop="20260922192500 +0000" channel="thrill">
     <title lang="en">Get in the Dark</title>
@@ -57173,9 +57173,9 @@
     <title lang="en">Detective Dee: The Ghosts in Weird Town</title>
     <desc lang="en">Episode 1 - Detective Dee investigates a series of terrifying vampire transformations in Youming Town, uncovering a sinister conspiracy masterminded by Prince Li Zhen, who plots to overthrow the empire. Armed with courage and ingenuity, Dee defeats the bloodthirsty vampires and ultimately exposes the prince’s dark ambitions. - [NC]</desc>
   </programme>
-  <programme start="20260922160000 +0000" stop="20260922163000 +0000" channel="tv3">
-    <title lang="en">NIGHTLINE (2026/2027)</title>
-    <desc lang="en">Episode 84 - [NC]</desc>
+  <programme start="20260923160000 +0000" stop="20260923171500 +0000" channel="thrill">
+    <title lang="en">Night at the Eagle Inn</title>
+    <desc lang="en">Episode 1 - A pair of fraternal twins spend a terrifying night in a remote inn to investigate the last known whereabouts of their father who mysteriously disappeared the night they were born. As they dive deeper, the property's dark secrets ensnare them in a hellish labyrinth which they must escape before dawn. - [NC]</desc>
   </programme>
   <programme start="20260922163000 +0000" stop="20260922173000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -57301,9 +57301,9 @@
     <title lang="en">SCARLET HEART</title>
     <desc lang="en">Episode 5 - [NC]</desc>
   </programme>
-  <programme start="20260922160000 +0000" stop="20260922170000 +0000" channel="tv9">
-    <title lang="en">PLAN B</title>
-    <desc lang="en">Episode 2 - Khai dan Airis kedua-dua mereka daripada keluarga kaya  mempertaruhkan wang dalam satu perlumbaan haram kereta &quot;drift&quot;. Airis memenangi perlumbaan itu dengan imbuhan wang sebanyak RM20 ribu. Khai tidak berpuas hati. - [NC]</desc>
+  <programme start="20260923160000 +0000" stop="20260923163000 +0000" channel="tv3">
+    <title lang="en">NIGHTLINE (2026/2027)</title>
+    <desc lang="en">Episode 85 - [NC]</desc>
   </programme>
   <programme start="20260922170000 +0000" stop="20260922175000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -57425,9 +57425,9 @@
     <title lang="en">BANG BANG BOOM SEASON 11 &amp; 12</title>
     <desc lang="en">Episode 21 - Sebuah program komedi yang dihoskan oleh Amat dan Azahari. Sejak diperkenalkan pada tahun 2007, BANG BANG BOOM! (BBB) sering melakukan pembaharuan dalam memberikan kejutan kepada para peminat setianya. - [NC]</desc>
   </programme>
-  <programme start="20260923160000 +0000" stop="20260923170000 +0000" channel="8tv">
-    <title lang="en">THE LEGEND OF HEROES</title>
-    <desc lang="en">Episode 5 - Mu Nianci dan Yang Tiexin yang bersatu dengan Bao Xiruo dikepung askar Jin ketika cuba melarikan diri. Yang Tiexin membunuh diri kerana tak sanggup membebani orang lain. Bao Xiruo yang patah hati turut mengikutnya mengorbankan diri - [NC]</desc>
+  <programme start="20260923160000 +0000" stop="20260923170000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260923170000 +0000" stop="20260923230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
@@ -57509,9 +57509,9 @@
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 57 - [NC]</desc>
   </programme>
-  <programme start="20260923160000 +0000" stop="20260923170000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 916 - [NC]</desc>
+  <programme start="20260924160000 +0000" stop="20260924170000 +0000" channel="8tv">
+    <title lang="en">THE LEGEND OF HEROES</title>
+    <desc lang="en">Episode 6 - Huang Rong dan Guo Jing bertemu dengan Hong Qigong. Huang Rong memasak hidangan ayam yang enak untuk memikat Hong Qigong, agar dia rela mengajar Guo Jing kungfu &quot;Lapan Belas Telapak Penunduk Naga&quot;. - [NC]</desc>
   </programme>
   <programme start="20260923170000 +0000" stop="20260923180000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
@@ -57605,9 +57605,9 @@
     <title lang="en">SEKALI AKU BAHAGIA</title>
     <desc lang="en">Episode 15 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
   </programme>
-  <programme start="20260923160000 +0000" stop="20260923220000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260924160000 +0000" stop="20260924170000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">Episode 52 - [NC]</desc>
   </programme>
   <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -57621,9 +57621,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260923160000 +0000" stop="20260923220000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL Malaysia Season 18: Week 6</title>
-    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  <programme start="20260924160000 +0000" stop="20260924220000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -57637,9 +57637,9 @@
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
-  <programme start="20260923160000 +0000" stop="20260923230000 +0000" channel="ntv7">
-    <title lang="en">HOT FM@ntv7 2026</title>
-    <desc lang="en">Episode 267 - [NC]</desc>
+  <programme start="20260924160000 +0000" stop="20260924220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20260923230000 +0000" stop="20260923233000 +0000" channel="ntv7">
     <title lang="en">JUNGLE AGENT SEASON 2</title>
@@ -57769,9 +57769,9 @@
     <title lang="en">MARI BERCERITA</title>
     <desc lang="en">Episode 21 - Episod ini Vince Chong akan mengupas dua cerita pendek yang terdapat di dalam buku ‘Changing Their Skies’ untuk pelajar di Tingkatan 4. - [NC]</desc>
   </programme>
-  <programme start="20260923160000 +0000" stop="20260923171500 +0000" channel="thrill">
-    <title lang="en">Night at the Eagle Inn</title>
-    <desc lang="en">Episode 1 - A pair of fraternal twins spend a terrifying night in a remote inn to investigate the last known whereabouts of their father who mysteriously disappeared the night they were born. As they dive deeper, the property's dark secrets ensnare them in a hellish labyrinth which they must escape before dawn. - [NC]</desc>
+  <programme start="20260924160000 +0000" stop="20260924230000 +0000" channel="ntv7">
+    <title lang="en">HOT FM@ntv7 2026</title>
+    <desc lang="en">Episode 268 - [NC]</desc>
   </programme>
   <programme start="20260923171500 +0000" stop="20260923184500 +0000" channel="thrill">
     <title lang="en">Endless Love</title>
@@ -57840,10 +57840,6 @@
   <programme start="20260924145500 +0000" stop="20260924163000 +0000" channel="thrill">
     <title lang="en">The Getaway</title>
     <desc lang="en">Episode 1 - Three KOLs embark on a live-streaming trip to a remote island. However, they are deceived by a mysterious old woman who traps them, intending to find brides for her disabled grandsons. As they realise they have been captured, they must race against time to escape this nightmare island. - [NC]</desc>
-  </programme>
-  <programme start="20260923160000 +0000" stop="20260923163000 +0000" channel="tv3">
-    <title lang="en">NIGHTLINE (2026/2027)</title>
-    <desc lang="en">Episode 85 - [NC]</desc>
   </programme>
   <programme start="20260923163000 +0000" stop="20260923173000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -57965,9 +57961,9 @@
     <title lang="en">SCARLET HEART</title>
     <desc lang="en">Episode 6 - [NC]</desc>
   </programme>
-  <programme start="20260923160000 +0000" stop="20260923170000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260924160000 +0000" stop="20260924163000 +0000" channel="tv3">
+    <title lang="en">NIGHTLINE (2026/2027)</title>
+    <desc lang="en">Episode 86 - [NC]</desc>
   </programme>
   <programme start="20260923170000 +0000" stop="20260923175000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -58085,9 +58081,9 @@
     <title lang="en">DETIK 12 MALAM 2022</title>
     <desc lang="en">Episode 26 - Episod ini, hos Saiful Azmi membongkar pengamalan misteri di sebalik tabir yang dialami oleh kru produksi termasuk penerbit, pengarah, penolong pengarah, perakam bunyi dan pembantu produksi di sepanjang penggambaran. - [NC]</desc>
   </programme>
-  <programme start="20260924160000 +0000" stop="20260924170000 +0000" channel="8tv">
-    <title lang="en">THE LEGEND OF HEROES</title>
-    <desc lang="en">Episode 6 - Huang Rong dan Guo Jing bertemu dengan Hong Qigong. Huang Rong memasak hidangan ayam yang enak untuk memikat Hong Qigong, agar dia rela mengajar Guo Jing kungfu &quot;Lapan Belas Telapak Penunduk Naga&quot;. - [NC]</desc>
+  <programme start="20260924160000 +0000" stop="20260924170000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260924170000 +0000" stop="20260924230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
@@ -58173,9 +58169,9 @@
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 58 - [NC]</desc>
   </programme>
-  <programme start="20260924160000 +0000" stop="20260924170000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">Episode 52 - [NC]</desc>
+  <programme start="20260925160000 +0000" stop="20260925170000 +0000" channel="8tv">
+    <title lang="en">TILL THE END OF THE MOON</title>
+    <desc lang="en">Episode 24 - Bing Chang diturunkan pangkat sebagai pembantu istana akibat daripada peristiwa &quot;benang cinta&quot; itu. Tai Jin yang sebelum ini tidak mempunyai perasaan merasakan &quot;benang cintanya&quot; kian berkembang disebabkan oleh Xi Wu. - [NC]</desc>
   </programme>
   <programme start="20260924170000 +0000" stop="20260924180000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
@@ -58253,9 +58249,9 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 1 - Hospital Insani menerima seorang doktor baru yang kacak bernama Dr. Arfan Qori. Sophia pula adalah staf rehabilitasi yang disenangi ramai pesakit terutama orang dewasa. Arfan berjumpa dengan kawan-kawan beliau di hospital berkenaan. - [NC]</desc>
   </programme>
-  <programme start="20260924160000 +0000" stop="20260924220000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260925160000 +0000" stop="20260925170000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 32 - [NC]</desc>
   </programme>
   <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -58269,9 +58265,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260924160000 +0000" stop="20260924220000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL MY S18</title>
-    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  <programme start="20260925160000 +0000" stop="20260925220000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
@@ -58285,9 +58281,9 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20260924160000 +0000" stop="20260924230000 +0000" channel="ntv7">
-    <title lang="en">HOT FM@ntv7 2026</title>
-    <desc lang="en">Episode 268 - [NC]</desc>
+  <programme start="20260925160000 +0000" stop="20260925220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20260924230000 +0000" stop="20260924233000 +0000" channel="ntv7">
     <title lang="en">DINO TRAINERS SEASON 2</title>
@@ -58389,6 +58385,10 @@
     <title lang="en">MARI BERCERITA</title>
     <desc lang="en">Episode 22 - Episod ini Hafizul akan mengupas buku KOMSAS bagi pelajar di Tingkatan 4 yang bertajuk ‘Jendela Menghadap Jalan’. - [NC]</desc>
   </programme>
+  <programme start="20260925160000 +0000" stop="20260925230000 +0000" channel="ntv7">
+    <title lang="en">HOT FM@ntv7 2026</title>
+    <desc lang="en">Episode 269 - [NC]</desc>
+  </programme>
   <programme start="20260924163000 +0000" stop="20260924175000 +0000" channel="thrill">
     <title lang="en">Ten Minutes to Midnight</title>
     <desc lang="en">Episode 1 - Radio host Amy is bitten by a mysterious bat, but she returns to the station to host that night’s late-night show. Instead, she is set up and fired by her ruthless boss, then replaced by a newcomer. As a violent storm traps everyone in the station and her mysterious wound worsens, Amy gradually loses control and unleashes a bloody massacre. - [NC]</desc>
@@ -58460,10 +58460,6 @@
   <programme start="20260925144000 +0000" stop="20260925161000 +0000" channel="thrill">
     <title lang="en">Evie</title>
     <desc lang="en">Episode 1 - When young Evie discovers a cursed necklace washed up on the beach, she is unaware of the malevolent force tied to it. As the necklace's dark power begins to grip her, she inadvertently awakens a deadly water demon intent on claiming her and everyone she holds dear. - [NC]</desc>
-  </programme>
-  <programme start="20260924160000 +0000" stop="20260924163000 +0000" channel="tv3">
-    <title lang="en">NIGHTLINE (2026/2027)</title>
-    <desc lang="en">Episode 86 - [NC]</desc>
   </programme>
   <programme start="20260924163000 +0000" stop="20260924173000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -58597,9 +58593,9 @@
     <title lang="en">SCARLET HEART</title>
     <desc lang="en">Episode 7 - [NC]</desc>
   </programme>
-  <programme start="20260924160000 +0000" stop="20260924170000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260925160000 +0000" stop="20260925163000 +0000" channel="tv3">
+    <title lang="en">NIGHTLINE (2026/2027)</title>
+    <desc lang="en">Episode 87 - [NC]</desc>
   </programme>
   <programme start="20260924170000 +0000" stop="20260924175000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -58721,9 +58717,9 @@
     <title lang="en">JET LAG</title>
     <desc lang="en">Episode 1 - Episod ini Iedil Putra menyempurnakan 72 cabaran di 8 buah negara demi tiket festival &quot;Big Day Out&quot;. Mula menjelajah Istanbul dengan RM1,000 dan misi khas, mampukah beliau melepasi ujian penuh rintangan ini? - [NC]</desc>
   </programme>
-  <programme start="20260925160000 +0000" stop="20260925170000 +0000" channel="8tv">
-    <title lang="en">TILL THE END OF THE MOON</title>
-    <desc lang="en">Episode 24 - Bing Chang diturunkan pangkat sebagai pembantu istana akibat daripada peristiwa &quot;benang cinta&quot; itu. Tai Jin yang sebelum ini tidak mempunyai perasaan merasakan &quot;benang cintanya&quot; kian berkembang disebabkan oleh Xi Wu. - [NC]</desc>
+  <programme start="20260925160000 +0000" stop="20260925170000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260925170000 +0000" stop="20260925230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
@@ -58805,9 +58801,9 @@
     <title lang="en">HEALING HEROES</title>
     <desc lang="en">Episode 113 - Jin Kok sebenarnya telah dibawa keluar bersiar-siar oleh Yi Ge dan Yi Fan. Dia mengaku kepada Yi Shi bahawa dia takut Shi akan meninggalkannya memandangkan keadaannya sekarang. Yi Shi memberi dia jaminan yang tegas. - [NC]</desc>
   </programme>
-  <programme start="20260925160000 +0000" stop="20260925170000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 32 - [NC]</desc>
+  <programme start="20260926160000 +0000" stop="20260926170000 +0000" channel="8tv">
+    <title lang="en">HEALING HEROES</title>
+    <desc lang="en">Episode 115 - Seorang pesakit menderma tiket loteri ke dalam kotak derma Jabatan Pesakit Luar sebagai bayaran untuk rawatan yang diterimanya. Keadaan Ren Hui semakin merosot dan harus menjalani rawatan Pertukaran Plasma (Plasma Exchange). - [NC]</desc>
   </programme>
   <programme start="20260925170000 +0000" stop="20260925190000 +0000" channel="drama-sangat">
     <title lang="en">KISAH CINTA KITA</title>
@@ -58885,9 +58881,9 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 2 - Opah dibawa ke hospital dan dirawat oleh doktor Arfan dan Sophia juga turut menyantuni Opahnya semasa rawatan. Opah cuba untuk melaga-lagakan Sophia dengan doktor Arfan supaya boleh berkenalan antara satu sama lain. - [NC]</desc>
   </programme>
-  <programme start="20260925160000 +0000" stop="20260925220000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260926160000 +0000" stop="20260926170000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 765 - [NC]</desc>
   </programme>
   <programme start="20260925220000 +0000" stop="20260926040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -58901,9 +58897,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260925160000 +0000" stop="20260925220000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL MY S18</title>
-    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  <programme start="20260926160000 +0000" stop="20260926220000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260925220000 +0000" stop="20260926040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
@@ -58917,9 +58913,9 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20260925160000 +0000" stop="20260925230000 +0000" channel="ntv7">
-    <title lang="en">HOT FM@ntv7 2026</title>
-    <desc lang="en">Episode 269 - [NC]</desc>
+  <programme start="20260926160000 +0000" stop="20260926220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20260925230000 +0000" stop="20260925233000 +0000" channel="ntv7">
     <title lang="en">DINO TRAINERS SEASON 2</title>
@@ -59041,6 +59037,10 @@
     <title lang="en">MARI BERCERITA</title>
     <desc lang="en">Episode 23 - Episod ini Nadia Aqilah akan mengupas buku KOMSAS bagi pelajar di Tingkatan 5 yang bertajuk ‘Tirani’. - [NC]</desc>
   </programme>
+  <programme start="20260926160000 +0000" stop="20260926230000 +0000" channel="ntv7">
+    <title lang="en">HOT FM@ntv7 2026</title>
+    <desc lang="en">Episode 270 - [NC]</desc>
+  </programme>
   <programme start="20260925161000 +0000" stop="20260925163500 +0000" channel="thrill">
     <title lang="en">Model Family</title>
     <desc lang="en">Episode 5 - A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem. - [NC]</desc>
@@ -59124,10 +59124,6 @@
   <programme start="20260926144000 +0000" stop="20260926161000 +0000" channel="thrill">
     <title lang="en">The Windmill Massacre</title>
     <desc lang="en">Episode 1 - Jennifer joins a tour to explore the renowned windmills of the Netherlands. As their tour coach breaks down on the way, they seek refuge in a creepy shed near a sinister windmill with a dark history. When some tour members suddenly disappear, Jennifer discovers a shared secret among them, linking their fates in a chilling revelation. - [NC]</desc>
-  </programme>
-  <programme start="20260925160000 +0000" stop="20260925163000 +0000" channel="tv3">
-    <title lang="en">NIGHTLINE (2026/2027)</title>
-    <desc lang="en">Episode 87 - [NC]</desc>
   </programme>
   <programme start="20260925163000 +0000" stop="20260925173000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -59269,9 +59265,9 @@
     <title lang="en">MATAHARI TAK BERCAHAYA</title>
     <desc lang="en">Episode 1 - Mastura (Nad Zainal), seorang penjaga taska yang bertugas menjaga anak-anak tadika. Dia juga isteri kepada Shazan (Fattah Amin). Mereka hidup dalam keadaan gembira dan disenangi orang kampung sehinggalah terjadinya satu insiden. - [NC]</desc>
   </programme>
-  <programme start="20260925160000 +0000" stop="20260925170000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260926160000 +0000" stop="20260926163000 +0000" channel="tv3">
+    <title lang="en">NIGHTLINE (2026/2027)</title>
+    <desc lang="en">Episode 88 - [NC]</desc>
   </programme>
   <programme start="20260925170000 +0000" stop="20260925175000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -59385,9 +59381,9 @@
     <title lang="en">HERO OVEN 2017</title>
     <desc lang="en">Episode 5 - Enam peserta bersaing menyiapkan dua resipi, Strawberry Shortcake dan Biscotti, untuk penilaian Chef Fikree dan Chef Sarah. Martin akhirnya berjaya menyerlah dan terpilih sebagai &quot;Hero of the Week&quot;. - [NC]</desc>
   </programme>
-  <programme start="20260926160000 +0000" stop="20260926170000 +0000" channel="8tv">
-    <title lang="en">HEALING HEROES</title>
-    <desc lang="en">Episode 115 - Seorang pesakit menderma tiket loteri ke dalam kotak derma Jabatan Pesakit Luar sebagai bayaran untuk rawatan yang diterimanya. Keadaan Ren Hui semakin merosot dan harus menjalani rawatan Pertukaran Plasma (Plasma Exchange). - [NC]</desc>
+  <programme start="20260926160000 +0000" stop="20260926170000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260926170000 +0000" stop="20260926230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
@@ -59477,10 +59473,6 @@
     <title lang="en">WEAVING A TALE OF LOVE S2</title>
     <desc lang="en">Episode 36 - Pei Xingjian mengiringi Hui Zhou Yu untuk berperang melawan puak dari utara. Pei Xingjian pada masa yang sama secara rahsia menghantar hambanya yang dipercayai untuk membawa mesej kepada Maharaja tentang jenayah Jeneral Shu. - [NC]</desc>
   </programme>
-  <programme start="20260926160000 +0000" stop="20260926170000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 765 - [NC]</desc>
-  </programme>
   <programme start="20260926170000 +0000" stop="20260926190000 +0000" channel="drama-sangat">
     <title lang="en">KISAH CINTA KITA</title>
     <desc lang="en">Episode 6 - Aleesa kecewa sebab perkahwinannya dengan Amer terpaksa disembunyikan daripada pengetahuan ibunya Hanisah. Alisa juga sudah masuk syarikat Hana Beuty menggantikan Natasya. Penyamarannya semakin besar, - [NC]</desc>
@@ -59557,9 +59549,10 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 3 - Seorang doktor pakar jantung yang mempunyai agendanya tersendiri cuba mempengaruhi seorang pesakit untuk mengulangi satu prosedur jantung. Doktor Arfan dan Sophia mula rapat setelah Sophia menjadi jurupulih beliau. - [NC]</desc>
   </programme>
-  <programme start="20260926160000 +0000" stop="20260926220000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260927160000 +0000" stop="20260927160602 +0000" channel="drama-sangat">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
   </programme>
   <programme start="20260926220000 +0000" stop="20260927040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -59573,9 +59566,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260926160000 +0000" stop="20260926220000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL MY S18</title>
-    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  <programme start="20260927160000 +0000" stop="20260927220000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260926220000 +0000" stop="20260927040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
@@ -59589,9 +59582,9 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20260926160000 +0000" stop="20260926230000 +0000" channel="ntv7">
-    <title lang="en">HOT FM@ntv7 2026</title>
-    <desc lang="en">Episode 270 - [NC]</desc>
+  <programme start="20260927160000 +0000" stop="20260927220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20260926230000 +0000" stop="20260926233000 +0000" channel="ntv7">
     <title lang="en">DINO TRAINERS SEASON 2</title>
@@ -59717,6 +59710,11 @@
     <title lang="en">MARI BERCERITA</title>
     <desc lang="en">Episode 24 - Episod ini Sugheeta akan mengupas buku KOMSAS bagi pelajar di Tingkatan 5 yang bertajuk ‘Songket Berbenang Emas’. - [NC]</desc>
   </programme>
+  <programme start="20260927160000 +0000" stop="20260927160602 +0000" channel="ntv7">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
+  </programme>
   <programme start="20260926161000 +0000" stop="20260926170000 +0000" channel="thrill">
     <title lang="en">3AM - The Hospital</title>
     <desc lang="en">Episode 3 - A woman in hospital accidentally discovers her husband’s affair. On the verge of breakdown, she begins to encounter a “stranger” who claims to also be a victim of the affair. Is this entity a figment of her imagination or a vengeful spirit? As she struggles to control her thoughts and actions, can she stop herself from hurting those around her? - [NC]</desc>
@@ -59792,10 +59790,6 @@
   <programme start="20260927152000 +0000" stop="20260927165500 +0000" channel="thrill">
     <title lang="en">Malee</title>
     <desc lang="en">Episode 1 - When four best friends reunite for a funeral at an ancient estate, a reckless act with a cursed Manohra dancer's headdress awakens a vengeful spirit that begins to haunt and follow them relentlessly. As paranormal phenomena escalate, they are forced to confront the estate's dark secrets in a desperate struggle for survival.  - [NC]</desc>
-  </programme>
-  <programme start="20260926160000 +0000" stop="20260926163000 +0000" channel="tv3">
-    <title lang="en">NIGHTLINE (2026/2027)</title>
-    <desc lang="en">Episode 88 - [NC]</desc>
   </programme>
   <programme start="20260926163000 +0000" stop="20260926173000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -59941,9 +59935,9 @@
     <title lang="en">REMANG</title>
     <desc lang="en">Episode 3 - BOTOL PUAKA.  Episod ini, DJ Ejay mendapat panggilan Rizal menceritakan mengenai keluarga Hazim dan keluarganya pergi berkelah. Azmi secara tidak sengaja telah membuka penutup sebiji botol misteri. - [NC]</desc>
   </programme>
-  <programme start="20260926160000 +0000" stop="20260926170000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260927160000 +0000" stop="20260927163000 +0000" channel="tv3">
+    <title lang="en">NIGHTLINE (2026/2027)</title>
+    <desc lang="en">Episode 89 - [NC]</desc>
   </programme>
   <programme start="20260926170000 +0000" stop="20260926175000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -60056,5 +60050,9 @@
   <programme start="20260927153000 +0000" stop="20260927160000 +0000" channel="tv9">
     <title lang="en">KISAH BENAR TRAGEDI ( SS 2 )</title>
     <desc lang="en">Episode 6 - SEHIDUP SEMATI.  Tan Boon Chai, ahli kumpulan kongsi gelap yang terlibat dengan kes pemerasan wang perlindungan, mati ditikam oleh rakannya sendiri selepas ditangkap dan disoal siasat oleh pihak polis. - [NC]</desc>
+  </programme>
+  <programme start="20260927160000 +0000" stop="20260927170000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
 </tv>
