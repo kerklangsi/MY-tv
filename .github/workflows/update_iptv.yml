@@ -4,6 +4,11 @@ on:
   repository_dispatch:
     types: [update-iptv] # Allows external cron webhooks for exact time-based triggers
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+    inputs:
+      tonton_token:
+        description: 'Optional custom Tonton login token'
+        required: false
+        default: ''
 
 jobs:
   gatekeeper:
@@ -91,6 +96,7 @@ jobs:
       - name: Run Live TV & EPG Generator
         env:
           PYTHONUNBUFFERED: "1"
+          TONTON_TOKEN: ${{ github.event.inputs.tonton_token || github.event.client_payload.tonton_token || secrets.TONTON_TOKEN }}
         run: python3 script/update_live.py
 
       - name: Commit and push Live TV changes
@@ -119,6 +125,7 @@ jobs:
       - name: Run VOD Generator
         env:
           PYTHONUNBUFFERED: "1"
+          TONTON_TOKEN: ${{ github.event.inputs.tonton_token || github.event.client_payload.tonton_token || secrets.TONTON_TOKEN }}
         run: python3 script/update_vod.py
 
       - name: Commit and push VOD changes
