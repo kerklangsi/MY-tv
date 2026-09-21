@@ -1,10 +1,10 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=600000,RESOLUTION=480x270
-https://live-01.tonton.com.my/1790027000/85d36b50acc4f259a9102fbe9a0d63bfae6ac670f2514f97326d4ecb6517a1e0/live-hls/tonton6_270p/index.m3u8
+https://live-01.tonton.com.my/1790028812/028bb47910fa592219615d83ff9cf25e865ea99130f45e9cc8b9cd0fc53c358d/live-hls/tonton6_270p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=900000,RESOLUTION=640x360
-https://live-01.tonton.com.my/1790027000/85d36b50acc4f259a9102fbe9a0d63bfae6ac670f2514f97326d4ecb6517a1e0/live-hls/tonton6_360p/index.m3u8
+https://live-01.tonton.com.my/1790028812/028bb47910fa592219615d83ff9cf25e865ea99130f45e9cc8b9cd0fc53c358d/live-hls/tonton6_360p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1200000,RESOLUTION=854x480
-https://live-01.tonton.com.my/1790027000/85d36b50acc4f259a9102fbe9a0d63bfae6ac670f2514f97326d4ecb6517a1e0/live-hls/tonton6_480p/index.m3u8
+https://live-01.tonton.com.my/1790028812/028bb47910fa592219615d83ff9cf25e865ea99130f45e9cc8b9cd0fc53c358d/live-hls/tonton6_480p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1600000,RESOLUTION=1280x720
-https://live-01.tonton.com.my/1790027000/85d36b50acc4f259a9102fbe9a0d63bfae6ac670f2514f97326d4ecb6517a1e0/live-hls/tonton6_720p/index.m3u8
+https://live-01.tonton.com.my/1790028812/028bb47910fa592219615d83ff9cf25e865ea99130f45e9cc8b9cd0fc53c358d/live-hls/tonton6_720p/index.m3u8
