@@ -56083,10 +56083,6 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 83 - [NC]</desc>
   </programme>
-  <programme start="20260920210000 +0000" stop="20260920220000 +0000" channel="drama-sangat">
-    <title lang="en">AKU BUKAN USTAZAH</title>
-    <desc lang="en">Episode 8 - Aminah keluar meninggalkan Omar dan rakan-rakannya kerana tidak tahan disindir oleh Sally. Di ofis, Aminah berbalah dengan Adam berebutkan tempat parking kereta. Tuan Hamid memperkenalkan Adam sebagai CEO syarikatnya. - [NC]</desc>
-  </programme>
   <programme start="20260920220000 +0000" stop="20260920230000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 101 - [NC]</desc>
@@ -56183,6 +56179,10 @@
     <title lang="en">AKU BUKAN USTAZAH</title>
     <desc lang="en">Episode 9 - Aminah terpaksa menerima pelawaan Adam sebagai majikannya untuk keluar makan bersama. Mereka kemudian terjumpa dengan Sally dan berlaku perbalahan sehingga menyebabkan hubungan Sally dan Aminah menjadi keruh. - [NC]</desc>
   </programme>
+  <programme start="20260921220000 +0000" stop="20260921230000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 56 - [NC]</desc>
+  </programme>
   <programme start="20260920201631 +0000" stop="20260920220759 +0000" channel="fifa">
     <title lang="en">Brazil v China PR | Group D | FIFA Women's World Cup China 2007™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Brazil and China PR from Wuhan, 15 September 2007. - [NC]</desc>
@@ -56211,9 +56211,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260920160000 +0000" stop="20260920220000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL Malaysia Season 18: Week 6</title>
-    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260920220000 +0000" stop="20260921040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -56228,6 +56228,10 @@
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
   <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL Malaysia Season 18: Week 6</title>
+    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  </programme>
+  <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
@@ -56362,10 +56366,6 @@
   <programme start="20260921160000 +0000" stop="20260921230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 265 - [NC]</desc>
-  </programme>
-  <programme start="20260920210000 +0000" stop="20260920215500 +0000" channel="thrill">
-    <title lang="en">Sinister - Girlfriend</title>
-    <desc lang="en">Episode 4 - Bullied by his coworkers, the lonely Ah Zhen turns to the internet in search of his ideal girl. However, when Mina, the woman of his dreams, suddenly enters his life, a series of unexpected events begins to unfold. - [NC]</desc>
   </programme>
   <programme start="20260920215500 +0000" stop="20260920232500 +0000" channel="thrill">
     <title lang="en">Room For Rent</title>
@@ -56571,10 +56571,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260920210000 +0000" stop="20260920220000 +0000" channel="tv9">
-    <title lang="en">MY #QURANTIME 2.0            </title>
-    <desc lang="en">Episode 1377 - [NC]</desc>
-  </programme>
   <programme start="20260920220000 +0000" stop="20260920222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
@@ -56699,6 +56695,10 @@
     <title lang="en">MY #QURANTIME 2.0            </title>
     <desc lang="en">Episode 1378 - Episod ini tadabbur Surah Al-Qasas ayat 78-79 mengupas iktibar keangkuhan Qarun yang mendakwa kekayaan hasil kehebatannya sendiri, serta pengajaran buat manusia agar tidak terpedaya dengan silau kemewahan dunia yang fana. - [NC]</desc>
   </programme>
+  <programme start="20260921220000 +0000" stop="20260921222000 +0000" channel="tv9">
+    <title lang="en">BACAAN YASIN 2025</title>
+    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
+  </programme>
   <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 54 - [NC]</desc>
@@ -56782,10 +56782,6 @@
   <programme start="20260922170000 +0000" stop="20260922230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 84 - [NC]</desc>
-  </programme>
-  <programme start="20260921220000 +0000" stop="20260921230000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 56 - [NC]</desc>
   </programme>
   <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
@@ -56879,9 +56875,9 @@
     <title lang="en">SEKALI AKU BAHAGIA</title>
     <desc lang="en">Episode 14 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
   </programme>
-  <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260922220000 +0000" stop="20260922230000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 501 - [NC]</desc>
   </programme>
   <programme start="20260922040000 +0000" stop="20260922100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -56895,9 +56891,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL Malaysia Season 18: Week 6</title>
-    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260922040000 +0000" stop="20260922100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -56908,6 +56904,10 @@
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
   <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL Malaysia Season 18: Week 6</title>
+    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  </programme>
+  <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
@@ -57239,10 +57239,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260921220000 +0000" stop="20260921222000 +0000" channel="tv9">
-    <title lang="en">BACAAN YASIN 2025</title>
-    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
-  </programme>
   <programme start="20260921222000 +0000" stop="20260921223000 +0000" channel="tv9">
     <title lang="en">KAPSUL SURAH (2018)</title>
     <desc lang="en">Episode 8 - Bacaan SURAH AL-MULK serta terjemahannya. - [NC]</desc>
@@ -57363,6 +57359,10 @@
     <title lang="en">MY #QURANTIME 2.0            </title>
     <desc lang="en">Episode 1379 - Tadabbur Surah Al-Qasas ayat 80-82 bersama Tn Hj Fazrul Ismail dan Jalaluddin Mohd Zaiki. Menghayati kebijaksanaan orang berilmu, iktibar kebinasaan Qarun, serta kesedaran hakikat ketetapan rezeki daripada Allah. - [NC]</desc>
   </programme>
+  <programme start="20260922220000 +0000" stop="20260922222000 +0000" channel="tv9">
+    <title lang="en">BACAAN YASIN 2025</title>
+    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
+  </programme>
   <programme start="20260922230000 +0000" stop="20260923000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 55 - [NC]</desc>
@@ -57446,10 +57446,6 @@
   <programme start="20260923170000 +0000" stop="20260923230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 85 - [NC]</desc>
-  </programme>
-  <programme start="20260922220000 +0000" stop="20260922230000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 501 - [NC]</desc>
   </programme>
   <programme start="20260922230000 +0000" stop="20260923000000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
@@ -57543,9 +57539,9 @@
     <title lang="en">SEKALI AKU BAHAGIA</title>
     <desc lang="en">Episode 15 - Firas bernikah dengan Delisha setelah Delisha selamatkan Eli dari nyaris dirogol dan Delisya koma sebelum sedar semula. Eli insaf. Kaki Muaz terpaksa dipotong akibat kemalangan yang silap dirancang Naufal untuk Aireen. - [NC]</desc>
   </programme>
-  <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260923220000 +0000" stop="20260923230000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 916 - [NC]</desc>
   </programme>
   <programme start="20260923040000 +0000" stop="20260923100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -57559,9 +57555,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL Malaysia Season 18: Week 6</title>
-    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260923040000 +0000" stop="20260923100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -57572,6 +57568,10 @@
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
   <programme start="20260923160000 +0000" stop="20260923220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL Malaysia Season 18: Week 6</title>
+    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  </programme>
+  <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
@@ -57895,7 +57895,7 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260922220000 +0000" stop="20260922222000 +0000" channel="tv9">
+  <programme start="20260923220000 +0000" stop="20260923222000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
@@ -58019,6 +58019,10 @@
     <title lang="en">MY #QURANTIME 2.0            </title>
     <desc lang="en">Episode 1380 - [NC]</desc>
   </programme>
+  <programme start="20260923220000 +0000" stop="20260923222000 +0000" channel="tv9">
+    <title lang="en">BACAAN YASIN 2025</title>
+    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
+  </programme>
   <programme start="20260923230000 +0000" stop="20260924000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 56 - [NC]</desc>
@@ -58102,10 +58106,6 @@
   <programme start="20260924170000 +0000" stop="20260924230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 86 - [NC]</desc>
-  </programme>
-  <programme start="20260923220000 +0000" stop="20260923230000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 916 - [NC]</desc>
   </programme>
   <programme start="20260923230000 +0000" stop="20260924000000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
@@ -58195,9 +58195,9 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 1 - Hospital Insani menerima seorang doktor baru yang kacak bernama Dr. Arfan Qori. Sophia pula adalah staf rehabilitasi yang disenangi ramai pesakit terutama orang dewasa. Arfan berjumpa dengan kawan-kawan beliau di hospital berkenaan. - [NC]</desc>
   </programme>
-  <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260924220000 +0000" stop="20260924230000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">Episode 52 - [NC]</desc>
   </programme>
   <programme start="20260924040000 +0000" stop="20260924100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -58211,9 +58211,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL Malaysia Season 18: Week 6</title>
-    <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
+  <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260924040000 +0000" stop="20260924100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -58224,6 +58224,10 @@
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
   <programme start="20260924160000 +0000" stop="20260924220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  </programme>
+  <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
@@ -58431,10 +58435,6 @@
     <title lang="en">The Elite of Devils</title>
     <desc lang="en">Episode 1 - Five university students are assigned a project at a mysterious estate, where they meet Lady Salakjit, an elite socialite with a deadly secret. As her demonic powers surface, their academic trip turns into a frantic struggle for survival against a centuries-old curse of the ruling class. - [NC]</desc>
   </programme>
-  <programme start="20260923220000 +0000" stop="20260923222000 +0000" channel="tv3">
-    <title lang="en">BACAAN YASIN 2025</title>
-    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
-  </programme>
   <programme start="20260923222000 +0000" stop="20260923225000 +0000" channel="tv3">
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 94 - Episod ini hos Fedtri Yahya membincangkan tajuk 'Nasihat Untuk Wanita' bersama Ustaz Harryanto Rizal Rokman berdasarkan Kitab Riyadhus Shalihin dan Al-Quran, serta membuka ruang promosi dan sumbangan bagi pembinaan kompleks tahfiz. - [NC]</desc>
@@ -58555,7 +58555,7 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260923220000 +0000" stop="20260923222000 +0000" channel="tv9">
+  <programme start="20260924220000 +0000" stop="20260924222000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
@@ -58675,6 +58675,10 @@
     <title lang="en">MY #QURANTIME 2.0            </title>
     <desc lang="en">Episode 1381 - [NC]</desc>
   </programme>
+  <programme start="20260924220000 +0000" stop="20260924222000 +0000" channel="tv9">
+    <title lang="en">BACAAN YASIN 2025</title>
+    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
+  </programme>
   <programme start="20260924230000 +0000" stop="20260925000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 57 - [NC]</desc>
@@ -58763,10 +58767,6 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 87 - [NC]</desc>
   </programme>
-  <programme start="20260924220000 +0000" stop="20260924230000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">Episode 52 - [NC]</desc>
-  </programme>
   <programme start="20260924230000 +0000" stop="20260925000000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
     <desc lang="en">Episode 13 - Rakan sepenjara Zhen Xin, iaitu Wan Ling, telah dibebaskan dari penjara. Wan Ling menumpang dibilik sewa Zhen Xin buat sementara waktu. Mereka terserempak dengan Zhan Wang dan Guang Yao semasa minum di sebuah bar - [NC]</desc>
@@ -58843,9 +58843,9 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 2 - Opah dibawa ke hospital dan dirawat oleh doktor Arfan dan Sophia juga turut menyantuni Opahnya semasa rawatan. Opah cuba untuk melaga-lagakan Sophia dengan doktor Arfan supaya boleh berkenalan antara satu sama lain. - [NC]</desc>
   </programme>
-  <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260925220000 +0000" stop="20260925230000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 32 - [NC]</desc>
   </programme>
   <programme start="20260925040000 +0000" stop="20260925100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -58859,9 +58859,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL MY S18</title>
-    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  <programme start="20260925220000 +0000" stop="20260926040000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260925040000 +0000" stop="20260925100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
@@ -58872,6 +58872,10 @@
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20260925160000 +0000" stop="20260925220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  </programme>
+  <programme start="20260925220000 +0000" stop="20260926040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
@@ -59055,10 +59059,6 @@
     <title lang="en">Mid-night Two</title>
     <desc lang="en">Episode 1 - Yi Cheng and his friends venture into a haunted mountain that hides an ancient corpse and an eternal ghostly flame. No one who enters the mountain ever returns and at 2:30 AM, Yi Cheng’s friends vanish one by one. While searching for them in the eerie forest, Yi Cheng enters a realm of infinite reincarnation, facing a series of terrifying events… - [NC]</desc>
   </programme>
-  <programme start="20260924220000 +0000" stop="20260924222000 +0000" channel="tv3">
-    <title lang="en">BACAAN YASIN 2025</title>
-    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
-  </programme>
   <programme start="20260924222000 +0000" stop="20260924225000 +0000" channel="tv3">
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 95 - Episod ini hos Fedtri Yahya mengupas tajuk 'Hak Suami Terhadap Isteri' bersama Ustaz Dr. Shamsul Hakim berpandukan Al-Quran dan Kitab Riyadhus Shalihin, selain menyelitkan kempen kutipan derma Kompleks Masjid Kampung Semarang. - [NC]</desc>
@@ -59191,7 +59191,7 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260924220000 +0000" stop="20260924222000 +0000" channel="tv9">
+  <programme start="20260925220000 +0000" stop="20260925222000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
   </programme>
@@ -59315,6 +59315,10 @@
     <title lang="en">MY #QURANTIME 2.0            </title>
     <desc lang="en">Episode 1382 - [NC]</desc>
   </programme>
+  <programme start="20260925220000 +0000" stop="20260925222000 +0000" channel="tv9">
+    <title lang="en">BACAAN YASIN 2025</title>
+    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
+  </programme>
   <programme start="20260925230000 +0000" stop="20260925234500 +0000" channel="8tv">
     <title lang="en">PROUD OF YOU (301-600)</title>
     <desc lang="en">Episode 499 - Qianna/ Xiao Hai memberitahu Yunyun dan Zixian tentang pertengkaran mereka. Yunyun membawa keluar Xiao Ai secara paksa dari bilik Zixian. Dia mengancam Xiao Ai dan mendedahkan identitinya. - [NC]</desc>
@@ -59399,10 +59403,6 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 88 - [NC]</desc>
   </programme>
-  <programme start="20260925220000 +0000" stop="20260925230000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 32 - [NC]</desc>
-  </programme>
   <programme start="20260925230000 +0000" stop="20260926010000 +0000" channel="drama-sangat">
     <title lang="en">KISAH CINTA KITA</title>
     <desc lang="en">Episode 4 - Lakonan Aleesa menyamar sebagi Natasya berjaya menyedarkan Datuk Ramzi. Pada masa sama dia menjaga ibunya selepas pembedahan sakit kansernya. Amer mengarahkan Aleesa terus menjaga Datuk Ramzi sekalipun dia telah sembuh. - [NC]</desc>
@@ -59479,9 +59479,9 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 3 - Seorang doktor pakar jantung yang mempunyai agendanya tersendiri cuba mempengaruhi seorang pesakit untuk mengulangi satu prosedur jantung. Doktor Arfan dan Sophia mula rapat setelah Sophia menjadi jurupulih beliau. - [NC]</desc>
   </programme>
-  <programme start="20260925220000 +0000" stop="20260926040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260926220000 +0000" stop="20260926230000 +0000" channel="drama-sangat">
+    <title lang="en">WOW SHOP </title>
+    <desc lang="en">Episode 765 - [NC]</desc>
   </programme>
   <programme start="20260926040000 +0000" stop="20260926100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -59495,9 +59495,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260925220000 +0000" stop="20260926040000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL MY S18</title>
-    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  <programme start="20260926220000 +0000" stop="20260927040000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260926040000 +0000" stop="20260926100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
@@ -59508,6 +59508,10 @@
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20260926160000 +0000" stop="20260926220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  </programme>
+  <programme start="20260926220000 +0000" stop="20260927040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
@@ -59715,10 +59719,6 @@
     <title lang="en">Fate Jealous Greed</title>
     <desc lang="en">Episode 1 - The film consists of three short horror stories: a man tries to survive after he received a haunted mail predicting his death; while a man mourns the death of his beloved wife, she becomes a ghost and tries to communicate with him; three brothers clash over the care options of their elderly mother during dinner, leading to a terrifying murder. - [NC]</desc>
   </programme>
-  <programme start="20260925220000 +0000" stop="20260925222000 +0000" channel="tv3">
-    <title lang="en">BACAAN YASIN 2025</title>
-    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
-  </programme>
   <programme start="20260925222000 +0000" stop="20260925225000 +0000" channel="tv3">
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 96 - Episod ini Saudara Amin Idris mengupas tajuk 'Nafkahi Keluarga' bersama Ustaz Dr. Nur Mohammad Hadi berpandukan Al-Quran dan Kitab Riyadhus Shalihin, menyelitkan kempen kemudahan sumbangan pembinaan Pertubuhan Akademi Al-Bayan. - [NC]</desc>
@@ -59863,10 +59863,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260925220000 +0000" stop="20260925222000 +0000" channel="tv9">
-    <title lang="en">BACAAN YASIN 2025</title>
-    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
-  </programme>
   <programme start="20260925222000 +0000" stop="20260925225000 +0000" channel="tv9">
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
     <desc lang="en">Episode 96 - Episod ini Saudara Amin Idris mengupas tajuk 'Nafkahi Keluarga' bersama Ustaz Dr. Nur Mohammad Hadi berpandukan Al-Quran dan Kitab Riyadhus Shalihin, menyelitkan kempen kemudahan sumbangan pembinaan Pertubuhan Akademi Al-Bayan. - [NC]</desc>
@@ -59975,6 +59971,10 @@
     <title lang="en">MY #QURANTIME 2.0            </title>
     <desc lang="en">Episode 1383 - [NC]</desc>
   </programme>
+  <programme start="20260926220000 +0000" stop="20260926222000 +0000" channel="tv9">
+    <title lang="en">BACAAN YASIN 2025</title>
+    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
+  </programme>
   <programme start="20260926230000 +0000" stop="20260926234500 +0000" channel="8tv">
     <title lang="en">PROUD OF YOU (301-600)</title>
     <desc lang="en">Episode 501 - Ta Li menemani Pi Xuen ke bilik mayat Thong disimpan. Pihak polis membawa Shanhe ke balai polis untuk siasatan tentang kematian Thong dan kecederaan San Hao. Liu mengaku kepada polis tentang pembunuh Thong dan San Hao. - [NC]</desc>
@@ -60063,10 +60063,6 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 89 - [NC]</desc>
   </programme>
-  <programme start="20260926220000 +0000" stop="20260926230000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 765 - [NC]</desc>
-  </programme>
   <programme start="20260926230000 +0000" stop="20260927010000 +0000" channel="drama-sangat">
     <title lang="en">KISAH CINTA KITA</title>
     <desc lang="en">Episode 6 - Aleesa kecewa sebab perkahwinannya dengan Amer terpaksa disembunyikan daripada pengetahuan ibunya Hanisah. Alisa juga sudah masuk syarikat Hana Beuty menggantikan Natasya. Penyamarannya semakin besar, - [NC]</desc>
@@ -60138,14 +60134,15 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927203000 +0000" stop="20260927213333 +0000" channel="drama-sangat">
+  <programme start="20260927203000 +0000" stop="20260927220000 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260926220000 +0000" stop="20260927040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260927220000 +0000" stop="20260927220605 +0000" channel="drama-sangat">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
   </programme>
   <programme start="20260927040000 +0000" stop="20260927100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -60159,9 +60156,9 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260926220000 +0000" stop="20260927040000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL MY S18</title>
-    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  <programme start="20260927220000 +0000" stop="20260928040000 +0000" channel="fifa">
+    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260927040000 +0000" stop="20260927100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
@@ -60172,6 +60169,10 @@
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20260927160000 +0000" stop="20260927220000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
+  </programme>
+  <programme start="20260927220000 +0000" stop="20260928040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
@@ -60314,7 +60315,12 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927203000 +0000" stop="20260927213333 +0000" channel="ntv7">
+  <programme start="20260927203000 +0000" stop="20260927220000 +0000" channel="ntv7">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
+  </programme>
+  <programme start="20260927220000 +0000" stop="20260927220605 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -60390,6 +60396,10 @@
   <programme start="20260927210000 +0000" stop="20260927215500 +0000" channel="thrill">
     <title lang="en">3AM - The Campus</title>
     <desc lang="en">Episode 2 - A school girl joins two internet content creators in a horror video project filmed in an old building behind their school. The trio encounters a bullying gang and as events unfold, it becomes clear that the girl holds a personal grudge against the gang and is blinded by hatred to exercise justice, even if it means sacrificing the innocents… - [NC]</desc>
+  </programme>
+  <programme start="20260927215500 +0000" stop="20260927232000 +0000" channel="thrill">
+    <title lang="en">Chop Chop</title>
+    <desc lang="en">Episode 1 - A young couple's tranquility is shattered by a psychotic serial killer one quiet evening. Their battle for survival reveals hidden truths, entangling them unwittingly with the criminal underworld. - [NC]</desc>
   </programme>
   <programme start="20260926223000 +0000" stop="20260926225000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -60539,10 +60549,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260926220000 +0000" stop="20260926222000 +0000" channel="tv9">
-    <title lang="en">BACAAN YASIN 2025</title>
-    <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
-  </programme>
   <programme start="20260926222000 +0000" stop="20260926223000 +0000" channel="tv9">
     <title lang="en">KAPSUL SURAH (2018)</title>
     <desc lang="en">Episode 8 - Bacaan SURAH AL-MULK serta terjemahannya. - [NC]</desc>
@@ -60654,5 +60660,10 @@
   <programme start="20260927210000 +0000" stop="20260927220000 +0000" channel="tv9">
     <title lang="en">MY #QURANTIME 2.0            </title>
     <desc lang="en">Episode 1384 - [NC]</desc>
+  </programme>
+  <programme start="20260927220000 +0000" stop="20260927220605 +0000" channel="tv9">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
   </programme>
 </tv>
