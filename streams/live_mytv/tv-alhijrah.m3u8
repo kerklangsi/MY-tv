@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3192789,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/tvalhijrah/abr/tvalhijrah_1080p/chunks.m3u8?md5=P2mrkWxlP-othwyMpXq4Lg&expires=1790024503
-#EXT-X-STREAM-INF:BANDWIDTH=2342973,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/tvalhijrah/abr/tvalhijrah_720p/chunks.m3u8?md5=Qpy0LZg82LRC9X5puXD77A&expires=1790024503
-#EXT-X-STREAM-INF:BANDWIDTH=1227702,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/tvalhijrah/abr/tvalhijrah_480p/chunks.m3u8?md5=YvkcOEldctz3m15zJIvYDQ&expires=1790024503
+#EXT-X-STREAM-INF:BANDWIDTH=3186424,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tvalhijrah/abr/tvalhijrah_1080p/chunks.m3u8?md5=vz_ZUy232r6NYgm3Ac1rEg&expires=1790026302
+#EXT-X-STREAM-INF:BANDWIDTH=2197944,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tvalhijrah/abr/tvalhijrah_720p/chunks.m3u8?md5=jDcYqTZhGBIt-rCj1p6lYw&expires=1790026302
+#EXT-X-STREAM-INF:BANDWIDTH=1114386,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tvalhijrah/abr/tvalhijrah_480p/chunks.m3u8?md5=eKpTJzKBCCiEuUKrnJ2tig&expires=1790026302
