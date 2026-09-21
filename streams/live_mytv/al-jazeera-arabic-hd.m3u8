@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3603575,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/abr/aljazeeraarabichd_1080p/chunks.m3u8?md5=vRLjT1-qvcfDa0CBEkGT3w&expires=1790010258
-#EXT-X-STREAM-INF:BANDWIDTH=2500545,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/abr/aljazeeraarabichd_720p/chunks.m3u8?md5=dY7T9k5m8eugqsPtVGcvqQ&expires=1790010258
-#EXT-X-STREAM-INF:BANDWIDTH=1181062,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/abr/aljazeeraarabichd_480p/chunks.m3u8?md5=0YsHNByOPVoWhkD8p4xfKQ&expires=1790010258
+#EXT-X-STREAM-INF:BANDWIDTH=3665395,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/abr/aljazeeraarabichd_1080p/chunks.m3u8?md5=9Sb6uwzVmIKXFOUwQbgfTg&expires=1790011932
+#EXT-X-STREAM-INF:BANDWIDTH=2507914,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/abr/aljazeeraarabichd_720p/chunks.m3u8?md5=O51k8s2mV3ZR7G7UdOi51Q&expires=1790011932
+#EXT-X-STREAM-INF:BANDWIDTH=1189766,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/abr/aljazeeraarabichd/abr/aljazeeraarabichd_480p/chunks.m3u8?md5=TJSBPmhwPXG2g644Sll9pQ&expires=1790011932

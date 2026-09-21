@@ -56054,10 +56054,6 @@
   <programme start="20260926150000 +0000" stop="20260926160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260920160000 +0000" stop="20260920170000 +0000" channel="8tv">
-    <title lang="en">WEAVING A TALE OF LOVE S2</title>
-    <desc lang="en">Episode 34 - Jeneral Shu mengetuai tenteranya untuk mengepung rumah Pei Xingjian dengan alasan untuk menangkap seorang pengkhianat. Liu Li mengetahui bahawa Jeneral Shu cuba membalas dendam terhadap Pei Xingjian berkenaan kehilangan askarnya. - [NC]</desc>
-  </programme>
   <programme start="20260920170000 +0000" stop="20260920230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 82 - [NC]</desc>
@@ -56142,9 +56138,9 @@
     <title lang="en">THE LEGEND OF HEROES</title>
     <desc lang="en">Episode 3 - Huang Rong dan Guo Jing menyusup masuk ke istana putera untuk mencuri penawar. Namun identiti Guo Jing terdedah dan diserang oleh seekor ular raksasa. Setelah pertarungan sengit, Guo Jing berjaya membunuh ular itu. - [NC]</desc>
   </programme>
-  <programme start="20260920160000 +0000" stop="20260920170000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 101 - [NC]</desc>
+  <programme start="20260921170000 +0000" stop="20260921230000 +0000" channel="8tv">
+    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
+    <desc lang="en">Episode 83 - [NC]</desc>
   </programme>
   <programme start="20260920170000 +0000" stop="20260920180000 +0000" channel="drama-sangat">
     <title lang="en">I AM NOT A LOSER</title>
@@ -56241,6 +56237,10 @@
   <programme start="20260921160000 +0000" stop="20260921170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 56 - [NC]</desc>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921180000 +0000" channel="drama-sangat">
+    <title lang="en">I AM NOT A LOSER</title>
+    <desc lang="en">Episode 10 - The heroine of the story – Zhen Xin has been handed a seven years prison sentence as she involves in a case of bullying which caused the death of her classmate while she was at school. - [NC]</desc>
   </programme>
   <programme start="20260920154502 +0000" stop="20260920173524 +0000" channel="fifa">
     <title lang="en">Italy v Brazil | Second Round | 1982 FIFA World Cup Spain™ | Full Match Replay</title>
@@ -56638,10 +56638,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260920160000 +0000" stop="20260920170000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260920170000 +0000" stop="20260920175000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -56766,9 +56762,9 @@
     <title lang="en">PLAN B</title>
     <desc lang="en">Episode 1 - Ya You menguruskan permohonan tadika untuk anak perempuannya, Ni Tong, yang kini berusia dua tahun. Kehidupan seharian mereka sekeluarga turut diwarnai dengan pelbagai cadangan pemilihan tadika daripada ibunya, Chu Qiao. - [NC]</desc>
   </programme>
-  <programme start="20260921170000 +0000" stop="20260921230000 +0000" channel="8tv">
-    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
-    <desc lang="en">Episode 83 - [NC]</desc>
+  <programme start="20260921170000 +0000" stop="20260921175000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
@@ -56850,9 +56846,9 @@
     <title lang="en">THE LEGEND OF HEROES</title>
     <desc lang="en">Episode 4 - Mu Yi sebenarnya ayah kandung Wan Yan Kang bernama Yang Tiexin, yang terselamat dalam pertempuran dengan askar Jin. Yang Tiexin bersatu kembali dengan isterinya Bao Xiruo, tetapi Wan Yan Kang enggan mengaku dia ayah kandungnya. - [NC]</desc>
   </programme>
-  <programme start="20260921170000 +0000" stop="20260921180000 +0000" channel="drama-sangat">
-    <title lang="en">I AM NOT A LOSER</title>
-    <desc lang="en">Episode 10 - The heroine of the story – Zhen Xin has been handed a seven years prison sentence as she involves in a case of bullying which caused the death of her classmate while she was at school. - [NC]</desc>
+  <programme start="20260922170000 +0000" stop="20260922230000 +0000" channel="8tv">
+    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
+    <desc lang="en">Episode 84 - [NC]</desc>
   </programme>
   <programme start="20260921180000 +0000" stop="20260921190000 +0000" channel="drama-sangat">
     <title lang="en">MELASTIK KE HATIMU 2</title>
@@ -56945,6 +56941,10 @@
   <programme start="20260922160000 +0000" stop="20260922170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 501 - [NC]</desc>
+  </programme>
+  <programme start="20260922170000 +0000" stop="20260922180000 +0000" channel="drama-sangat">
+    <title lang="en">I AM NOT A LOSER</title>
+    <desc lang="en">Episode 11 - Wen Qi mahu berhenti sekolah untuk mengambil alih perusahaan gerai mi ayahnya, agar dirinya boleh bekerja sebagai seorang tukang masak. Akan tetapi ayahnya tidak bersetuju, dan berpendirian keras supaya anaknya itu melanjutkan pelajaran di Australia. - [NC]</desc>
   </programme>
   <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -57310,10 +57310,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260921170000 +0000" stop="20260921175000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260921175000 +0000" stop="20260921175500 +0000" channel="tv9">
     <title lang="en">SENANG TERHIBUR SHORTS </title>
     <desc lang="en">Episode 184 - Sedutan klip video dari rancangan hiburan Pi Mai Pi Mai. - [NC]</desc>
@@ -57434,9 +57430,9 @@
     <title lang="en">PLAN B</title>
     <desc lang="en">Episode 2 - Khai dan Airis kedua-dua mereka daripada keluarga kaya  mempertaruhkan wang dalam satu perlumbaan haram kereta &quot;drift&quot;. Airis memenangi perlumbaan itu dengan imbuhan wang sebanyak RM20 ribu. Khai tidak berpuas hati. - [NC]</desc>
   </programme>
-  <programme start="20260922170000 +0000" stop="20260922230000 +0000" channel="8tv">
-    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
-    <desc lang="en">Episode 84 - [NC]</desc>
+  <programme start="20260922170000 +0000" stop="20260922175000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260922230000 +0000" stop="20260923000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
@@ -57518,9 +57514,9 @@
     <title lang="en">THE LEGEND OF HEROES</title>
     <desc lang="en">Episode 5 - Mu Nianci dan Yang Tiexin yang bersatu dengan Bao Xiruo dikepung askar Jin ketika cuba melarikan diri. Yang Tiexin membunuh diri kerana tak sanggup membebani orang lain. Bao Xiruo yang patah hati turut mengikutnya mengorbankan diri - [NC]</desc>
   </programme>
-  <programme start="20260922170000 +0000" stop="20260922180000 +0000" channel="drama-sangat">
-    <title lang="en">I AM NOT A LOSER</title>
-    <desc lang="en">Episode 11 - Wen Qi mahu berhenti sekolah untuk mengambil alih perusahaan gerai mi ayahnya, agar dirinya boleh bekerja sebagai seorang tukang masak. Akan tetapi ayahnya tidak bersetuju, dan berpendirian keras supaya anaknya itu melanjutkan pelajaran di Australia. - [NC]</desc>
+  <programme start="20260923170000 +0000" stop="20260923230000 +0000" channel="8tv">
+    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
+    <desc lang="en">Episode 85 - [NC]</desc>
   </programme>
   <programme start="20260922180000 +0000" stop="20260922190000 +0000" channel="drama-sangat">
     <title lang="en">SEOUL CINTA</title>
@@ -57613,6 +57609,10 @@
   <programme start="20260923160000 +0000" stop="20260923170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 916 - [NC]</desc>
+  </programme>
+  <programme start="20260923170000 +0000" stop="20260923180000 +0000" channel="drama-sangat">
+    <title lang="en">I AM NOT A LOSER</title>
+    <desc lang="en">Episode 12 - The heroine of the story – Zhen Xin has been handed a seven years prison sentence as she involves in a case of bullying which caused the death of her classmate while she was at school. - [NC]</desc>
   </programme>
   <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -57966,10 +57966,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260922170000 +0000" stop="20260922175000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260922175000 +0000" stop="20260922175500 +0000" channel="tv9">
     <title lang="en">SENANG TERHIBUR SHORTS </title>
     <desc lang="en">Episode 186 - Sedutan klip video dari rancangan hiburan Pi Mai Pi Mai. - [NC]</desc>
@@ -58090,9 +58086,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260923170000 +0000" stop="20260923230000 +0000" channel="8tv">
-    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
-    <desc lang="en">Episode 85 - [NC]</desc>
+  <programme start="20260923170000 +0000" stop="20260923175000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260923230000 +0000" stop="20260924000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
@@ -58174,9 +58170,9 @@
     <title lang="en">THE LEGEND OF HEROES</title>
     <desc lang="en">Episode 6 - Huang Rong dan Guo Jing bertemu dengan Hong Qigong. Huang Rong memasak hidangan ayam yang enak untuk memikat Hong Qigong, agar dia rela mengajar Guo Jing kungfu &quot;Lapan Belas Telapak Penunduk Naga&quot;. - [NC]</desc>
   </programme>
-  <programme start="20260923170000 +0000" stop="20260923180000 +0000" channel="drama-sangat">
-    <title lang="en">I AM NOT A LOSER</title>
-    <desc lang="en">Episode 12 - The heroine of the story – Zhen Xin has been handed a seven years prison sentence as she involves in a case of bullying which caused the death of her classmate while she was at school. - [NC]</desc>
+  <programme start="20260924170000 +0000" stop="20260924230000 +0000" channel="8tv">
+    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
+    <desc lang="en">Episode 86 - [NC]</desc>
   </programme>
   <programme start="20260923180000 +0000" stop="20260923190000 +0000" channel="drama-sangat">
     <title lang="en">SEOUL CINTA</title>
@@ -58269,6 +58265,10 @@
   <programme start="20260924160000 +0000" stop="20260924170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">Episode 52 - [NC]</desc>
+  </programme>
+  <programme start="20260924170000 +0000" stop="20260924180000 +0000" channel="drama-sangat">
+    <title lang="en">I AM NOT A LOSER</title>
+    <desc lang="en">Episode 13 - The heroine of the story – Zhen Xin has been handed a seven years prison sentence as she involves in a case of bullying which caused the death of her classmate while she was at school. - [NC]</desc>
   </programme>
   <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -58630,10 +58630,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260923170000 +0000" stop="20260923175000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260923175000 +0000" stop="20260923175500 +0000" channel="tv9">
     <title lang="en">SENANG TERHIBUR SHORTS </title>
     <desc lang="en">Episode 188 - Sedutan klip video dari rancangan hiburan Pi Mai Pi Mai. - [NC]</desc>
@@ -58750,9 +58746,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260924170000 +0000" stop="20260924230000 +0000" channel="8tv">
-    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
-    <desc lang="en">Episode 86 - [NC]</desc>
+  <programme start="20260924170000 +0000" stop="20260924175000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260924230000 +0000" stop="20260925000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
@@ -58838,9 +58834,9 @@
     <title lang="en">TILL THE END OF THE MOON</title>
     <desc lang="en">Episode 24 - Bing Chang diturunkan pangkat sebagai pembantu istana akibat daripada peristiwa &quot;benang cinta&quot; itu. Tai Jin yang sebelum ini tidak mempunyai perasaan merasakan &quot;benang cintanya&quot; kian berkembang disebabkan oleh Xi Wu. - [NC]</desc>
   </programme>
-  <programme start="20260924170000 +0000" stop="20260924180000 +0000" channel="drama-sangat">
-    <title lang="en">I AM NOT A LOSER</title>
-    <desc lang="en">Episode 13 - The heroine of the story – Zhen Xin has been handed a seven years prison sentence as she involves in a case of bullying which caused the death of her classmate while she was at school. - [NC]</desc>
+  <programme start="20260925170000 +0000" stop="20260925230000 +0000" channel="8tv">
+    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
+    <desc lang="en">Episode 87 - [NC]</desc>
   </programme>
   <programme start="20260924180000 +0000" stop="20260924200000 +0000" channel="drama-sangat">
     <title lang="en">AYYAD AISYAH</title>
@@ -58917,6 +58913,10 @@
   <programme start="20260925160000 +0000" stop="20260925170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 32 - [NC]</desc>
+  </programme>
+  <programme start="20260925170000 +0000" stop="20260925190000 +0000" channel="drama-sangat">
+    <title lang="en">KISAH CINTA KITA</title>
+    <desc lang="en">Episode 4 - Lakonan Aleesa menyamar sebagi Natasya berjaya menyedarkan Datuk Ramzi. Pada masa sama dia menjaga ibunya selepas pembedahan sakit kansernya. Amer mengarahkan Aleesa terus menjaga Datuk Ramzi sekalipun dia telah sembuh. - [NC]</desc>
   </programme>
   <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -59126,6 +59126,10 @@
     <title lang="en">Model Family</title>
     <desc lang="en">Episode 5 - A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem. - [NC]</desc>
   </programme>
+  <programme start="20260925163500 +0000" stop="20260925170500 +0000" channel="thrill">
+    <title lang="en">Model Family</title>
+    <desc lang="en">Episode 6 - A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem. - [NC]</desc>
+  </programme>
   <programme start="20260924173000 +0000" stop="20260924183000 +0000" channel="tv3">
     <title lang="en">HANYA UNTUK DIA</title>
     <desc lang="en">Episode 2 - Dr Zafran memberi perhatian kepada Ain hingga mencetuskan cemburu Irma. Dalam pada itu, masalah buah pinggang Ikram semakin parah, lalu Ayah Cik dan Ayah Uda berusaha memulihkan semula keyakinan dirinya yang kian pudar. - [NC]</desc>
@@ -59262,10 +59266,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260924170000 +0000" stop="20260924175000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260924175000 +0000" stop="20260924175500 +0000" channel="tv9">
     <title lang="en">SENANG TERHIBUR SHORTS </title>
     <desc lang="en">Episode 190 - Sedutan klip video dari rancangan hiburan Pi Mai Pi Mai. - [NC]</desc>
@@ -59386,9 +59386,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260925170000 +0000" stop="20260925230000 +0000" channel="8tv">
-    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
-    <desc lang="en">Episode 87 - [NC]</desc>
+  <programme start="20260925170000 +0000" stop="20260925175000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260925230000 +0000" stop="20260925234500 +0000" channel="8tv">
     <title lang="en">PROUD OF YOU (301-600)</title>
@@ -59470,9 +59470,9 @@
     <title lang="en">HEALING HEROES</title>
     <desc lang="en">Episode 115 - Seorang pesakit menderma tiket loteri ke dalam kotak derma Jabatan Pesakit Luar sebagai bayaran untuk rawatan yang diterimanya. Keadaan Ren Hui semakin merosot dan harus menjalani rawatan Pertukaran Plasma (Plasma Exchange). - [NC]</desc>
   </programme>
-  <programme start="20260925170000 +0000" stop="20260925190000 +0000" channel="drama-sangat">
-    <title lang="en">KISAH CINTA KITA</title>
-    <desc lang="en">Episode 4 - Lakonan Aleesa menyamar sebagi Natasya berjaya menyedarkan Datuk Ramzi. Pada masa sama dia menjaga ibunya selepas pembedahan sakit kansernya. Amer mengarahkan Aleesa terus menjaga Datuk Ramzi sekalipun dia telah sembuh. - [NC]</desc>
+  <programme start="20260926170000 +0000" stop="20260926230000 +0000" channel="8tv">
+    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
+    <desc lang="en">Episode 88 - [NC]</desc>
   </programme>
   <programme start="20260925190000 +0000" stop="20260925200000 +0000" channel="drama-sangat">
     <title lang="en">TAKDIR YANG TERTULIS</title>
@@ -59549,6 +59549,10 @@
   <programme start="20260926160000 +0000" stop="20260926170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 765 - [NC]</desc>
+  </programme>
+  <programme start="20260926170000 +0000" stop="20260926190000 +0000" channel="drama-sangat">
+    <title lang="en">KISAH CINTA KITA</title>
+    <desc lang="en">Episode 6 - Aleesa kecewa sebab perkahwinannya dengan Amer terpaksa disembunyikan daripada pengetahuan ibunya Hanisah. Alisa juga sudah masuk syarikat Hana Beuty menggantikan Natasya. Penyamarannya semakin besar, - [NC]</desc>
   </programme>
   <programme start="20260925220000 +0000" stop="20260926040000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -59706,10 +59710,6 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 270 - [NC]</desc>
   </programme>
-  <programme start="20260925163500 +0000" stop="20260925170500 +0000" channel="thrill">
-    <title lang="en">Model Family</title>
-    <desc lang="en">Episode 6 - A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem. - [NC]</desc>
-  </programme>
   <programme start="20260925170500 +0000" stop="20260925184000 +0000" channel="thrill">
     <title lang="en">Waning Moon</title>
     <desc lang="en">Episode 1 - Nuanchan is a famous and highly respected spiritual medium in a rural village in Thailand. She wants to train her niece, Ploy, to succeed her and Ploy needs to remain a virgin. When Ploy falls in love with her childhood friend Tul, their lives are in danger as the secret of the spiritual world is being unveiled. - [NC]</desc>
@@ -59789,6 +59789,10 @@
   <programme start="20260926161000 +0000" stop="20260926170000 +0000" channel="thrill">
     <title lang="en">3AM - The Hospital</title>
     <desc lang="en">Episode 3 - A woman in hospital accidentally discovers her husband’s affair. On the verge of breakdown, she begins to encounter a “stranger” who claims to also be a victim of the affair. Is this entity a figment of her imagination or a vengeful spirit? As she struggles to control her thoughts and actions, can she stop herself from hurting those around her? - [NC]</desc>
+  </programme>
+  <programme start="20260926170000 +0000" stop="20260926183000 +0000" channel="thrill">
+    <title lang="en">Rooftop</title>
+    <desc lang="en">Episode 1 - A group of friends invites Paul to a secret party on their campus rooftop. When a prank accidentally kills Paul, the friends cover up the incident and promised never to disclose it. Paul vows to take revenge by becoming a vicious ghost to haunt them into taking responsibility for their actions. - [NC]</desc>
   </programme>
   <programme start="20260925173000 +0000" stop="20260925183000 +0000" channel="tv3">
     <title lang="en">HANYA UNTUK DIA</title>
@@ -59934,10 +59938,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260925170000 +0000" stop="20260925175000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260925175000 +0000" stop="20260925175500 +0000" channel="tv9">
     <title lang="en">SENANG TERHIBUR SHORTS </title>
     <desc lang="en">Episode 192 - Sedutan klip video dari rancangan hiburan Pi Mai Pi Mai. - [NC]</desc>
@@ -60050,9 +60050,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260926170000 +0000" stop="20260926230000 +0000" channel="8tv">
-    <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
-    <desc lang="en">Episode 88 - [NC]</desc>
+  <programme start="20260926170000 +0000" stop="20260926175000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260926230000 +0000" stop="20260926234500 +0000" channel="8tv">
     <title lang="en">PROUD OF YOU (301-600)</title>
@@ -60142,10 +60142,6 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 89 - [NC]</desc>
   </programme>
-  <programme start="20260926170000 +0000" stop="20260926190000 +0000" channel="drama-sangat">
-    <title lang="en">KISAH CINTA KITA</title>
-    <desc lang="en">Episode 6 - Aleesa kecewa sebab perkahwinannya dengan Amer terpaksa disembunyikan daripada pengetahuan ibunya Hanisah. Alisa juga sudah masuk syarikat Hana Beuty menggantikan Natasya. Penyamarannya semakin besar, - [NC]</desc>
-  </programme>
   <programme start="20260926190000 +0000" stop="20260926200000 +0000" channel="drama-sangat">
     <title lang="en">TAKDIR YANG TERTULIS</title>
     <desc lang="en">Episode 13 - Cik Salmah bertemu dengan Hakim di rumah lamanya. Hakim cuba tenangkan Cik Salmah yang marahkan tindakan Ruhila. Mereka berdua semakin ligat membuat rancangan baru untuk menjatuhkan Azlan dan Juweta. - [NC]</desc>
@@ -60218,7 +60214,7 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 3 - Seorang doktor pakar jantung yang mempunyai agendanya tersendiri cuba mempengaruhi seorang pesakit untuk mengulangi satu prosedur jantung. Doktor Arfan dan Sophia mula rapat setelah Sophia menjadi jurupulih beliau. - [NC]</desc>
   </programme>
-  <programme start="20260927160000 +0000" stop="20260927163444 +0000" channel="drama-sangat">
+  <programme start="20260927160000 +0000" stop="20260927170348 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -60379,14 +60375,10 @@
     <title lang="en">MARI BERCERITA</title>
     <desc lang="en">Episode 24 - Episod ini Sugheeta akan mengupas buku KOMSAS bagi pelajar di Tingkatan 5 yang bertajuk ‘Songket Berbenang Emas’. - [NC]</desc>
   </programme>
-  <programme start="20260927160000 +0000" stop="20260927163444 +0000" channel="ntv7">
+  <programme start="20260927160000 +0000" stop="20260927170348 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
-  </programme>
-  <programme start="20260926170000 +0000" stop="20260926183000 +0000" channel="thrill">
-    <title lang="en">Rooftop</title>
-    <desc lang="en">Episode 1 - A group of friends invites Paul to a secret party on their campus rooftop. When a prank accidentally kills Paul, the friends cover up the incident and promised never to disclose it. Paul vows to take revenge by becoming a vicious ghost to haunt them into taking responsibility for their actions. - [NC]</desc>
   </programme>
   <programme start="20260926183000 +0000" stop="20260926200000 +0000" channel="thrill">
     <title lang="en">Room For Rent</title>
@@ -60455,6 +60447,10 @@
   <programme start="20260927152000 +0000" stop="20260927165500 +0000" channel="thrill">
     <title lang="en">Malee</title>
     <desc lang="en">Episode 1 - When four best friends reunite for a funeral at an ancient estate, a reckless act with a cursed Manohra dancer's headdress awakens a vengeful spirit that begins to haunt and follow them relentlessly. As paranormal phenomena escalate, they are forced to confront the estate's dark secrets in a desperate struggle for survival.  - [NC]</desc>
+  </programme>
+  <programme start="20260927165500 +0000" stop="20260927183000 +0000" channel="thrill">
+    <title lang="en">Ghost Wedding</title>
+    <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a &quot;woman in red&quot;, leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a &quot;ghost marriage&quot;... - [NC]</desc>
   </programme>
   <programme start="20260926173000 +0000" stop="20260926183000 +0000" channel="tv3">
     <title lang="en">HAI CINTA,DENGARKANLAH</title>
@@ -60604,10 +60600,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260926170000 +0000" stop="20260926175000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260926175000 +0000" stop="20260926180000 +0000" channel="tv9">
     <title lang="en">LEKAT KE IDOK?</title>
     <desc lang="en">Episode 1 - Bell Ngasri kecil-kecil pun tapi berbisa! Memang tak kering gusi Harris Anuar melayan gelagat pihak lawannya. Minggu ini antara Bell Ngasri dan Harris Anuar, siapa yang akan menang? Jom tengok &quot;Lekat Ke Idok?&quot;. - [NC]</desc>
@@ -60717,6 +60709,10 @@
     <desc lang="en">Episode 6 - SEHIDUP SEMATI.  Tan Boon Chai, ahli kumpulan kongsi gelap yang terlibat dengan kes pemerasan wang perlindungan, mati ditikam oleh rakannya sendiri selepas ditangkap dan disoal siasat oleh pihak polis. - [NC]</desc>
   </programme>
   <programme start="20260927160000 +0000" stop="20260927170000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
+  </programme>
+  <programme start="20260927170000 +0000" stop="20260927175000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
