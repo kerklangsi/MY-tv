@@ -2,7 +2,9 @@ name: Update IPTV Playlist & EPG
 
 on:
   schedule:
-    - cron: "10 * * * *" # Runs every hour at minute 10
+    - cron: "*/30 * * * *" # Triggers every 30 minutes to guarantee hourly updates despite GitHub schedule delays
+  repository_dispatch:
+    types: [update-iptv] # Allows external cron webhooks for exact time-based triggers
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 jobs:
