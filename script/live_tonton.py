@@ -95,50 +95,54 @@ def process_tonton_live_channels(device_id):
 
     return tonton_m3u_entries, epg_channels
 
-# Fetch EPG programme schedule for Tonton live channels.
+# Fetch EPG programme schedule for Tonton live channels across full 7-day window.
 def fetch_tonton_epg_programmes(epg_channels):
     print("\n--- Fetching Tonton EPG Schedule ---")
     now_ts = int(time.time())
-    start_ts = now_ts - 86400
-    end_ts = now_ts + (5 * 86400)
     
     channel_codes = [ch['code'] for ch in epg_channels if ch.get('code')]
     channels_filter = ",".join(channel_codes)
 
-    epg_url = f"{BASE_API}/api/epg.class.api.php/getChannelListings/378?filter_starttime={start_ts}&filter_endtime={end_ts}&filter_channels={channels_filter}&format=json&appID=TONTON&serviceId=default"
-    epg_res = http_get(epg_url, headers={'User-Agent': USER_AGENT_STR})
-    
     epg_programmes = []
-    listings = epg_res if isinstance(epg_res, list) else []
+    seen_programmes = set()
 
-    for listing in listings:
-        source_ch = listing.get('SourceChannel', {})
-        ch_code = source_ch.get('ChannelTag') or source_ch.get('ChannelName')
-        
-        ch_slug = ch_code.lower() if ch_code else ''
-        for ch in epg_channels:
-            if ch.get('code') == ch_code:
-                ch_slug = ch['id']
+    for day_offset in range(-1, 6):
+        start_ts = now_ts + (day_offset * 86400)
+        end_ts = start_ts + 86400
+        epg_url = f"{BASE_API}/api/epg.class.api.php/getChannelListings/378?filter_starttime={start_ts}&filter_endtime={end_ts}&filter_channels={channels_filter}&format=json&appID=TONTON&serviceId=default"
+        epg_res = http_get(epg_url, headers={'User-Agent': USER_AGENT_STR})
+        listings = epg_res if isinstance(epg_res, list) else []
 
-        schedule = listing.get('ChannelSchedule', {})
-        events = schedule.get('EventList', [])
+        for listing in listings:
+            source_ch = listing.get('SourceChannel', {})
+            ch_code = source_ch.get('ChannelTag') or source_ch.get('ChannelName')
+            
+            ch_slug = ch_code.lower() if ch_code else ''
+            for ch in epg_channels:
+                if ch.get('code') == ch_code:
+                    ch_slug = ch['id']
 
-        for evt in events:
-            p_title = evt.get('EventTitle', '')
-            p_desc = evt.get('ShortSynopsis', '') or evt.get('EpisodeTitle', '') or ''
-            p_genre = evt.get('Genre', '')
-            p_start = timestamp_to_xmltv(evt.get('StartTimeUTC') or evt.get('RawStartTimeUTC'))
-            p_end = timestamp_to_xmltv(evt.get('EndTimeUTC') or evt.get('RawEndTimeUTC'))
+            schedule = listing.get('ChannelSchedule', {})
+            events = schedule.get('EventList', [])
 
-            if p_start and p_end and p_title:
-                epg_programmes.append({
-                    'channel': ch_slug,
-                    'start': p_start,
-                    'stop': p_end,
-                    'title': p_title,
-                    'desc': p_desc,
-                    'genre': p_genre
-                })
+            for evt in events:
+                p_title = evt.get('EventTitle', '')
+                p_desc = evt.get('ShortSynopsis', '') or evt.get('EpisodeTitle', '') or ''
+                p_genre = evt.get('Genre', '')
+                p_start = timestamp_to_xmltv(evt.get('StartTimeUTC') or evt.get('RawStartTimeUTC'))
+                p_end = timestamp_to_xmltv(evt.get('EndTimeUTC') or evt.get('RawEndTimeUTC'))
+
+                prog_key = (ch_slug, p_start, p_end, p_title)
+                if p_start and p_end and p_title and prog_key not in seen_programmes:
+                    seen_programmes.add(prog_key)
+                    epg_programmes.append({
+                        'channel': ch_slug,
+                        'start': p_start,
+                        'stop': p_end,
+                        'title': p_title,
+                        'desc': p_desc,
+                        'genre': p_genre
+                    })
 
     print(f"Total Tonton EPG programmes collected: {len(epg_programmes)}")
     return epg_programmes
