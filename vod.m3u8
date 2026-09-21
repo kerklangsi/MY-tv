@@ -2463,10 +2463,6 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/malaysian-talents/malaysian-
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/malaysian-talents/malaysian-talents-ep-2.m3u8
 #EXTINF:-1 tvg-id="malaysian-talents-ep-1" tvg-name="Malaysian Talents Ep 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/c89ac0a4-3bb2-42b8-98fe-8ad0cd3de871/poster_landscape.png" group-title="MYTV Shows",Malaysian Talents Ep 1
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/malaysian-talents/malaysian-talents-ep-1.m3u8
-#EXTINF:-1 tvg-id="manorama-pt-2" tvg-name="Manorama Pt 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/f8467de3-98b8-49ba-8e19-91ef98493385/poster_landscape.png" group-title="MYTV Shows",Manorama Pt 2
-https://kerklangsi.github.io/MY-tv/streams/vod_mytv/manorama/manorama-pt-2.m3u8
-#EXTINF:-1 tvg-id="manorama" tvg-name="Manorama" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/752dedac-f2b0-496c-80f4-1009ae4d3942/poster_landscape.png" group-title="MYTV Shows",Manorama
-https://kerklangsi.github.io/MY-tv/streams/vod_mytv/manorama/manorama.m3u8
 #EXTINF:-1 tvg-id="mat-salleh-makan-nasi-ep-10" tvg-name="Mat Salleh Makan Nasi Ep 10" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/81fcc276-7696-46c0-ac32-866034dc1347/poster_landscape.jpeg" group-title="MYTV Shows",Mat Salleh Makan Nasi Ep 10
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/mat-salleh-makan-nasi/mat-salleh-makan-nasi-ep-10.m3u8
 #EXTINF:-1 tvg-id="mat-salleh-makan-nasi-ep-9" tvg-name="Mat Salleh Makan Nasi Ep 9" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/bf1fcdef-5e1e-42d2-a7ef-22ab00306ffd/poster_landscape.jpeg" group-title="MYTV Shows",Mat Salleh Makan Nasi Ep 9
@@ -4003,6 +3999,10 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/take-me-to-sarawak/take-me-t
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/take-me-to-sarawak/take-me-to-sarawak-ep-2.m3u8
 #EXTINF:-1 tvg-id="take-me-to-sarawak-ep-1" tvg-name="Take Me To Sarawak Ep 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/a3e0b07b-9b19-4c42-98e0-114253df724e/poster_landscape.jpeg" group-title="MYTV Shows",Take Me To Sarawak Ep 1
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/take-me-to-sarawak/take-me-to-sarawak-ep-1.m3u8
+#EXTINF:-1 tvg-id="manorama-pt-2" tvg-name="Manorama Pt 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/f8467de3-98b8-49ba-8e19-91ef98493385/poster_landscape.png" group-title="MYTV Shows",Manorama Pt 2
+https://kerklangsi.github.io/MY-tv/streams/vod_mytv/tamil-cinema-celebrities/manorama-pt-2.m3u8
+#EXTINF:-1 tvg-id="manorama" tvg-name="Manorama" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/752dedac-f2b0-496c-80f4-1009ae4d3942/poster_landscape.png" group-title="MYTV Shows",Manorama
+https://kerklangsi.github.io/MY-tv/streams/vod_mytv/tamil-cinema-celebrities/manorama.m3u8
 #EXTINF:-1 tvg-id="ramesh-kanna" tvg-name="Ramesh Kanna" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/d38d3558-3d0f-4b7a-83bd-3c547a6eae7d/poster_landscape.png" group-title="MYTV Shows",Ramesh Kanna
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/tamil-cinema-celebrities/ramesh-kanna.m3u8
 #EXTINF:-1 tvg-id="jaguar-thangam" tvg-name="Jaguar Thangam" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/7d55b30b-8b8a-4988-a75a-90c20ce90222/poster_landscape.png" group-title="MYTV Shows",Jaguar Thangam
