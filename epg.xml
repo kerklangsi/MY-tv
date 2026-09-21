@@ -56439,10 +56439,6 @@
     <title lang="en">Ten Minutes to Midnight</title>
     <desc lang="en">Episode 1 - Radio host Amy is bitten by a mysterious bat, but she returns to the station to host that night’s late-night show. Instead, she is set up and fired by her ruthless boss, then replaced by a newcomer. As a violent storm traps everyone in the station and her mysterious wound worsens, Amy gradually loses control and unleashes a bloody massacre. - [NC]</desc>
   </programme>
-  <programme start="20260920210000 +0000" stop="20260920213000 +0000" channel="tv3">
-    <title lang="en">BACAAN AL-QURAN 2014</title>
-    <desc lang="en">Episode 2 - Bacaan ayat suci Al-Quran surah Al-Fatihah oleh Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
-  </programme>
   <programme start="20260920213000 +0000" stop="20260920223000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -56570,6 +56566,10 @@
   <programme start="20260921210000 +0000" stop="20260921213000 +0000" channel="tv3">
     <title lang="en">BACAAN AL-QURAN 2014</title>
     <desc lang="en">Episode 4 - Bacaan ayat suci Al-Quran surah AR-Rahmman oleh Ustaz Ahmad Tirmizi Hj Ali. - [NC]</desc>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921223000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260920210000 +0000" stop="20260920220000 +0000" channel="tv9">
     <title lang="en">MY #QURANTIME 2.0            </title>
@@ -57111,10 +57111,6 @@
     <title lang="en">Painted Face</title>
     <desc lang="en">Episode 1 - Scholar Wang Huai Qing sells paintings to save his ailing wife. He is attacked by a bird demon along the way but is rescued by Fox demon Xiao Rong. To elude the pursuit, Wang brings Xiao Rong home, sparking a love triangle and at the same time, unfolding an impending love between human and demon. - [NC]</desc>
   </programme>
-  <programme start="20260921213000 +0000" stop="20260921223000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260921223000 +0000" stop="20260921225000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
@@ -57238,6 +57234,10 @@
   <programme start="20260922210000 +0000" stop="20260922213000 +0000" channel="tv3">
     <title lang="en">BACAAN AL-QURAN 2014</title>
     <desc lang="en">Episode 6 - Bacaan ayat suci Al-Quran surah Al-Juma'ah oleh Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
+  </programme>
+  <programme start="20260922213000 +0000" stop="20260922223000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260921220000 +0000" stop="20260921222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -57770,10 +57770,6 @@
   <programme start="20260923210000 +0000" stop="20260923223500 +0000" channel="thrill">
     <title lang="en">Jealousy</title>
     <desc lang="en">Episode 1 - Model Min dies mysteriously in a hospital rumoured to be haunted. Soon after, her photographer receives eerie phone calls, a writer suffers a bizarre car accident, and Min’s friend suddenly vanishes. As fear spreads, dark secrets and supernatural forces emerge, drawing them into a terrifying nightmare linked to Min’s death. - [NC]</desc>
-  </programme>
-  <programme start="20260922213000 +0000" stop="20260922223000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260922223000 +0000" stop="20260922225000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -59863,6 +59859,10 @@
     <title lang="en">BACAAN AL-QURAN 2014</title>
     <desc lang="en">Episode 1 - Bacaan ayat suci Al-Quran surah Al-Fatihah oleh Ustaz Ahmad Tirmizi Hj Ali &amp; Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
   </programme>
+  <programme start="20260926213000 +0000" stop="20260926223000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
+  </programme>
   <programme start="20260925220000 +0000" stop="20260925222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
@@ -60138,7 +60138,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927203000 +0000" stop="20260927210336 +0000" channel="drama-sangat">
+  <programme start="20260927203000 +0000" stop="20260927213333 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -60314,7 +60314,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927203000 +0000" stop="20260927210336 +0000" channel="ntv7">
+  <programme start="20260927203000 +0000" stop="20260927213333 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -60390,10 +60390,6 @@
   <programme start="20260927210000 +0000" stop="20260927215500 +0000" channel="thrill">
     <title lang="en">3AM - The Campus</title>
     <desc lang="en">Episode 2 - A school girl joins two internet content creators in a horror video project filmed in an old building behind their school. The trio encounters a bullying gang and as events unfold, it becomes clear that the girl holds a personal grudge against the gang and is blinded by hatred to exercise justice, even if it means sacrificing the innocents… - [NC]</desc>
-  </programme>
-  <programme start="20260926213000 +0000" stop="20260926223000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260926223000 +0000" stop="20260926225000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -60538,6 +60534,10 @@
   <programme start="20260927210000 +0000" stop="20260927213000 +0000" channel="tv3">
     <title lang="en">BACAAN AL-QURAN 2014</title>
     <desc lang="en">Episode 1 - Bacaan ayat suci Al-Quran surah Al-Fatihah oleh Ustaz Ahmad Tirmizi Hj Ali &amp; Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
+  </programme>
+  <programme start="20260927213000 +0000" stop="20260927223000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260926220000 +0000" stop="20260926222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
