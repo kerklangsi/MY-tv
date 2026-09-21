@@ -1,6 +1,8 @@
 name: Update IPTV Playlist & EPG
 
 on:
+  schedule:
+    - cron: '0 0 * * *' # Daily at 00:00 UTC
   repository_dispatch:
     types: [update-iptv] # Allows external cron webhooks for exact time-based triggers
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
@@ -91,7 +93,16 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: python3 -m pip install cryptography
+        run: |
+          python3 -m pip install cryptography playwright
+          python3 -m playwright install --with-deps chromium
+
+      - name: Refresh Tonton Authentication Token
+        env:
+          TONTON_EMAIL: ${{ secrets.TONTON_EMAIL }}
+          TONTON_PASSWORD: ${{ secrets.TONTON_PASSWORD }}
+          TONTON_TOKEN: ${{ github.event.inputs.tonton_token || github.event.client_payload.tonton_token || secrets.TONTON_TOKEN }}
+        run: python3 script/tonton_auth.py --force
 
       - name: Run Live TV & EPG Generator
         env:

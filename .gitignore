@@ -5,4 +5,5 @@ streams/
 epg.*
 playlist.*
 vod.*
-.agents/
+.agents/
+.tonton_token
