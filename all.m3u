@@ -456,7 +456,7 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/aroma-sungkei/aroma-sungkei-
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/kooki-s-crafty-show/arrr-me-hearties.m3u8
 #EXTINF:-1 tvg-id="asal-usul-peniti-tudung-perempuan-bini-bini-psiko-3" tvg-name="Asal-Usul Peniti Tudung Perempuan! Bini-Bini Psiko 3" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/b3a5a04b-1eaa-4132-ba1f-6084701b71de/poster_landscape.jpeg" group-title="MYTV Shows",Asal-Usul Peniti Tudung Perempuan! Bini-Bini Psiko 3
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/mtas-production/asal-usul-peniti-tudung-perempuan-bini-bini-psiko-3.m3u8
-#EXTINF:-1 tvg-id="astonishing-animals" tvg-name="Astonishing Animals" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/4201af45-56dc-464f-8fa8-290aca8d2cb6/poster_landscape.jpeg" group-title="MYTV Shows",Astonishing Animals
+#EXTINF:-1 tvg-id="astonishing-animals" tvg-name="Astonishing Animals" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/1c19e857-af6c-47d4-9a26-89671210de9d/posterLandscape.jpg" group-title="MYTV Shows",Astonishing Animals
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/astonishing-animals.m3u8
 #EXTINF:-1 tvg-id="asyik-asyik-nak-sentap" tvg-name="Asyik-Asyik Nak Sentap" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3f7eda54-4edc-4eeb-9727-df561d9ab7a2/poster_landscape.png" group-title="MYTV Shows",Asyik-Asyik Nak Sentap
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/mtas-production/asyik-asyik-nak-sentap.m3u8
@@ -526,7 +526,7 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/mtas-production/balik-kampun
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/house-tour-malaysia/bangi.m3u8
 #EXTINF:-1 tvg-id="batik-girl" tvg-name="Batik Girl" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/c1fae542-880e-4419-8847-f9a876915cb1/poster_landscape.jpeg" group-title="MYTV Short Movies",Batik Girl
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/short-movies-and-clips/batik-girl.m3u8
-#EXTINF:-1 tvg-id="beautiful-teeth" tvg-name="Beautiful Teeth" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/1d246c0c-d92a-41a4-8456-58622dc2d976/poster_landscape.jpeg" group-title="MYTV Shows",Beautiful Teeth
+#EXTINF:-1 tvg-id="beautiful-teeth" tvg-name="Beautiful Teeth" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/b7a69646-d76e-4ecd-bcee-196b2ccb5350/posterLandscape.jpg" group-title="MYTV Shows",Beautiful Teeth
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/beautiful-teeth.m3u8
 #EXTINF:-1 tvg-id="beauty-tips-ep-1" tvg-name="Beauty Tips Ep 1" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/1460c83c-5366-4279-b948-ee9da53224c7/poster_landscape.jpeg" group-title="MYTV Shows",Beauty Tips Ep 1
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/beauty-tips/beauty-tips-ep-1.m3u8
@@ -896,7 +896,7 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/mtas-production/cover-baek-p
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/shape-the-world/crash-it-down.m3u8
 #EXTINF:-1 tvg-id="crazy-about-a-clownfish" tvg-name="Crazy About A Clownfish" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/610844fc-6255-413c-8a60-da5125f7814d/poster_landscape.png" group-title="MYTV Shows",Crazy About A Clownfish
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/bath-time/crazy-about-a-clownfish.m3u8
-#EXTINF:-1 tvg-id="crazy-colours" tvg-name="Crazy Colours" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/b37544a9-cfce-498a-b784-b773c1ef77d0/poster_landscape.jpeg" group-title="MYTV Shows",Crazy Colours
+#EXTINF:-1 tvg-id="crazy-colours" tvg-name="Crazy Colours" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/ffd6466d-ec53-4520-b12c-c425884b55f2/posterLandscape.jpg" group-title="MYTV Shows",Crazy Colours
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/crazy-colours.m3u8
 #EXTINF:-1 tvg-id="cuai" tvg-name="Cuai" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/a86a86be-2ce5-4fbb-807e-ca0a1d5f266c/poster_landscape.jpeg" group-title="MYTV Short Movies",Cuai
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/short-movies-and-clips/cuai.m3u8
@@ -1594,10 +1594,6 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-35-how-to-do
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-36-barbell-workout.m3u8
 #EXTINF:-1 tvg-id="episode-37-eye-of-tiger" tvg-name="Episode 37 – “Eye of Tiger”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/73ac3b1d-1b40-4d8a-b330-a99fd810e7e2/poster_landscape.png" group-title="MYTV Shows",Episode 37 – “Eye of Tiger”
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-37-eye-of-tiger.m3u8
-#EXTINF:-1 tvg-id="episode-38-gift-from-the-sky" tvg-name="Episode 38 – “Gift from the Sky”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/173372f7-b751-4be5-849d-eb1da69757dc/poster_landscape.png" group-title="MYTV Shows",Episode 38 – “Gift from the Sky”
-https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-38-gift-from-the-sky.m3u8
-#EXTINF:-1 tvg-id="episode-39-frozen" tvg-name="Episode 39 – “Frozen”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/bd679156-5311-45da-83ec-fc914729f86e/poster_landscape.png" group-title="MYTV Shows",Episode 39 – “Frozen”
-https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-39-frozen.m3u8
 #EXTINF:-1 tvg-id="episode-4-slingshot" tvg-name="Episode 4 “Slingshot”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/fddf96ce-a4a2-46c3-94eb-8ea2f0c45847/poster_landscape.png" group-title="MYTV Shows",Episode 4 “Slingshot”
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-4-slingshot.m3u8
 #EXTINF:-1 tvg-id="episode-40-treasure-box" tvg-name="Episode 40 – “Treasure Box”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/6787fe49-d695-44d9-8318-dccc358aa520/poster_landscape.png" group-title="MYTV Shows",Episode 40 – “Treasure Box”
@@ -1640,8 +1636,6 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-56-the-princ
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-57-the-love-story.m3u8
 #EXTINF:-1 tvg-id="episode-58-zombies-part-1" tvg-name="Episode 58 – “Zombies Part 1”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/9ea414f5-6d4b-4d86-a771-d276af9692ab/poster_landscape.png" group-title="MYTV Shows",Episode 58 – “Zombies Part 1”
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-58-zombies-part-1.m3u8
-#EXTINF:-1 tvg-id="episode-59-zombies-part-2" tvg-name="Episode 59 – “Zombies Part 2”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/6e7c384b-e45f-4e3c-92a9-74e8f7397a33/poster_landscape.png" group-title="MYTV Shows",Episode 59 – “Zombies Part 2”
-https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-59-zombies-part-2.m3u8
 #EXTINF:-1 tvg-id="episode-6-bombastic-soup" tvg-name="Episode 6 “Bombastic Soup”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/2533860c-cfb2-47b7-b10b-cf9928e3c633/poster_landscape.png" group-title="MYTV Shows",Episode 6 “Bombastic Soup”
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-6-bombastic-soup.m3u8
 #EXTINF:-1 tvg-id="episode-60-zombies-part-3" tvg-name="Episode 60 – “Zombies Part 3”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/e3ec9eb7-d349-4ef3-838d-98743305eb56/poster_landscape.png" group-title="MYTV Shows",Episode 60 – “Zombies Part 3”
@@ -1684,8 +1678,6 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-76-turtle-an
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-77-midnight-party.m3u8
 #EXTINF:-1 tvg-id="episode-78-under-the-sea" tvg-name="Episode 78 – “Under the Sea”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/188abdff-7af3-4247-989d-25064e6b882a/poster_landscape.png" group-title="MYTV Shows",Episode 78 – “Under the Sea”
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-78-under-the-sea.m3u8
-#EXTINF:-1 tvg-id="episode-79-sword-fight" tvg-name="Episode 79 – “Sword Fight”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3c4cb3f3-80d3-47e7-af9d-4333fcba5e78/poster_landscape.png" group-title="MYTV Shows",Episode 79 – “Sword Fight”
-https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-79-sword-fight.m3u8
 #EXTINF:-1 tvg-id="episode-8-eva" tvg-name="Episode 8 “Eva”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/02026e86-b464-4b89-a7ee-30312fd7b130/poster_landscape.png" group-title="MYTV Shows",Episode 8 “Eva”
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/okolele/episode-8-eva.m3u8
 #EXTINF:-1 tvg-id="episode-80-king-of-the-sea" tvg-name="Episode 80 – “King of the Sea”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/9705aa55-a00f-41b9-80e6-a77b2a22901c/poster_landscape.png" group-title="MYTV Shows",Episode 80 – “King of the Sea”
@@ -1742,7 +1734,7 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/movie/expatriot.m3u8
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/jelly-jamm/experiments-in-invisibility.m3u8
 #EXTINF:-1 tvg-id="express-with-shapes" tvg-name="Express with Shapes" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/308fbba0-25f4-4b05-9ec5-a993aedcc12a/poster_landscape.jpeg" group-title="MYTV Shows",Express with Shapes
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/shape-the-world/express-with-shapes.m3u8
-#EXTINF:-1 tvg-id="extraordinary-eggs" tvg-name="Extraordinary Eggs" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/c56d674c-e2ac-4d5e-b822-efa58361d6e9/poster_landscape.jpeg" group-title="MYTV Shows",Extraordinary Eggs
+#EXTINF:-1 tvg-id="extraordinary-eggs" tvg-name="Extraordinary Eggs" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/97724c74-9cd5-44b1-a987-96ec0c54bf0a/posterLandscape.jpg" group-title="MYTV Shows",Extraordinary Eggs
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/extraordinary-eggs.m3u8
 #EXTINF:-1 tvg-id="far-east-kembali" tvg-name="Far East – Kembali" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/26a62de1-e3fe-44c8-afcb-7212c188c392/poster_landscape.jpeg" group-title="MYTV Short Movies",Far East – Kembali
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/short-movies-and-clips/far-east-kembali.m3u8
@@ -1884,6 +1876,8 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/korpus-warisan-melayu/foto-k
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/movie/framed-by-my-sister.m3u8
 #EXTINF:-1 tvg-id="framed-memories" tvg-name="Framed Memories" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/8fedd2b5-421d-46cb-b360-090be19de1e4/poster_landscape.jpeg" group-title="MYTV Short Movies",Framed Memories
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/short-movies-and-clips/framed-memories.m3u8
+#EXTINF:-1 tvg-id="frozen" tvg-name="Episode 39 – “Frozen”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/bd679156-5311-45da-83ec-fc914729f86e/poster_landscape.png" group-title="MYTV Short Movies",Episode 39 – “Frozen”
+https://kerklangsi.github.io/MY-tv/streams/vod_mytv/short-movies-and-clips/frozen.m3u8
 #EXTINF:-1 tvg-id="fruity-shapey-fruits" tvg-name="Fruity Shapey Fruits" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/c23f23e0-323e-4c97-82a8-71c986eda2d5/poster_landscape.jpeg" group-title="MYTV Shows",Fruity Shapey Fruits
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/shape-the-world/fruity-shapey-fruits.m3u8
 #EXTINF:-1 tvg-id="gadjet-yang-ganas" tvg-name="GADJET YANG GANAS" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/cb6b2a0d-5be6-4181-8b4a-474f8a63baac/poster_landscape.png" group-title="MYTV Shows",GADJET YANG GANAS
@@ -1962,6 +1956,8 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/movie/gemersik-maulid.m3u8
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/movie/geng-qiraat.m3u8
 #EXTINF:-1 tvg-id="ghandimathi" tvg-name="Ghandimathi" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/09ac4922-ab29-4722-9f45-675666567643/poster_landscape.png" group-title="MYTV Shows",Ghandimathi
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/tamil-cinema-celebrities/ghandimathi.m3u8
+#EXTINF:-1 tvg-id="gift-from-the-sky" tvg-name="Episode 38 – “Gift from the Sky”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/173372f7-b751-4be5-849d-eb1da69757dc/poster_landscape.png" group-title="MYTV Short Movies",Episode 38 – “Gift from the Sky”
+https://kerklangsi.github.io/MY-tv/streams/vod_mytv/short-movies-and-clips/gift-from-the-sky.m3u8
 #EXTINF:-1 tvg-id="go-the-extra-mile" tvg-name="Go the Extra Mile" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/ae92b83c-3de0-4d97-b6ae-2012232784d5/poster_landscape.png" group-title="MYTV Shows",Go the Extra Mile
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/infinite-minds/go-the-extra-mile.m3u8
 #EXTINF:-1 tvg-id="going-on-a-shape-hunt" tvg-name="Going On A Shape Hunt" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/69570fd9-c6db-4955-998a-3d01bd35d261/poster_landscape.jpeg" group-title="MYTV Shows",Going On A Shape Hunt
@@ -3318,7 +3314,7 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/resepi-tok-pulau-pinang/nasi
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/resepi-tok-pulau-pinang/nasi-lemuni-bahagian-1.m3u8
 #EXTINF:-1 tvg-id="nasi-lemuni-bahagian-2" tvg-name="Nasi Lemuni Bahagian 2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/03ec45d9-e5d0-47d3-aa7f-b231ef9db80c/poster_landscape.png" group-title="MYTV Shows",Nasi Lemuni Bahagian 2
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/resepi-tok-pulau-pinang/nasi-lemuni-bahagian-2.m3u8
-#EXTINF:-1 tvg-id="natures-noise-makers" tvg-name="Nature's Noise Makers" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/53913120-7670-40d2-a274-f15e20918f53/poster_landscape.jpeg" group-title="MYTV Shows",Nature's Noise Makers
+#EXTINF:-1 tvg-id="natures-noise-makers" tvg-name="Nature's Noise Makers" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/8821c0c6-0e41-46d3-a08b-8c666e0de34d/posterLandscape.jpg" group-title="MYTV Shows",Nature's Noise Makers
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/natures-noise-makers.m3u8
 #EXTINF:-1 tvg-id="nazrey-johani-akhil-hayy-suara-hidayah-official-music-video" tvg-name="Nazrey Johani & Akhil Hayy – Suara Hidayah (Official Music Video)" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3b841a1b-8273-4625-a429-d3f440b574b2/poster_landscape.png" group-title="MYTV Short Movies",Nazrey Johani & Akhil Hayy – Suara Hidayah (Official Music Video)
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/short-movies-and-clips/nazrey-johani-akhil-hayy-suara-hidayah-official-music-video.m3u8
@@ -4388,12 +4384,14 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/movie/suke-tune-seloka-irama
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/jelly-jamm/super-jelly-league.m3u8
 #EXTINF:-1 tvg-id="super-simple-friends" tvg-name="Super Simple Friends" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/25a0a6fd-4419-4ad8-b634-0a717ca9cba8/poster_landscape.jpeg" group-title="MYTV Shows",Super Simple Friends
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/shape-the-world/super-simple-friends.m3u8
-#EXTINF:-1 tvg-id="supersize" tvg-name="Supersize" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/453e1127-1bb1-4395-99d8-5c76834067d0/poster_landscape.jpeg" group-title="MYTV Shows",Supersize
+#EXTINF:-1 tvg-id="supersize" tvg-name="Supersize" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/d43d8c1c-4454-49f6-931d-34bd3a9b5a83/posterLandscape.jpg" group-title="MYTV Shows",Supersize
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/supersize.m3u8
 #EXTINF:-1 tvg-id="surah-al-kahf-ayat-9-13" tvg-name="Surah Al-Kahf (Ayat 9-13)" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/28c8d14b-a13a-4bba-94de-06b1d2c6d5ee/poster_landscape.png" group-title="MYTV Shows",Surah Al-Kahf (Ayat 9-13)
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/asbab-al-nuzul/surah-al-kahf-ayat-9-13.m3u8
 #EXTINF:-1 tvg-id="surah-ali-imran-ayat-110" tvg-name="Surah Ali-Imran (Ayat 110)" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/dc3d369a-215f-4817-b7d3-ca6ee94a9f8d/poster_landscape.png" group-title="MYTV Shows",Surah Ali-Imran (Ayat 110)
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/asbab-al-nuzul/surah-ali-imran-ayat-110.m3u8
+#EXTINF:-1 tvg-id="sword-fight" tvg-name="Episode 79 – “Sword Fight”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3c4cb3f3-80d3-47e7-af9d-4333fcba5e78/poster_landscape.png" group-title="MYTV Short Movies",Episode 79 – “Sword Fight”
+https://kerklangsi.github.io/MY-tv/streams/vod_mytv/short-movies-and-clips/sword-fight.m3u8
 #EXTINF:-1 tvg-id="syafiq-farhain" tvg-name="Syafiq Farhain" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/9474bb70-e34e-4821-82ec-818af9af8ae3/poster_landscape.png" group-title="MYTV Shows",Syafiq Farhain
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/famous-2-famous/syafiq-farhain.m3u8
 #EXTINF:-1 tvg-id="syukur" tvg-name="Syukur" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/aa2760d2-df33-4ea9-ac66-86f7dcfdacf0/poster_landscape.jpeg" group-title="MYTV Movies",Syukur
@@ -4614,7 +4612,7 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/tvs-live/tvs-live-ep-8.m3u8
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/tvs-live/tvs-live-ep-9.m3u8
 #EXTINF:-1 tvg-id="twinkle-twinkle-little-star" tvg-name="Twinkle, Twinkle Little Star" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/ee9a734c-0025-4c3c-992f-c027c1dcea9e/poster_landscape.jpeg" group-title="MYTV Shows",Twinkle, Twinkle Little Star
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/shape-the-world/twinkle-twinkle-little-star.m3u8
-#EXTINF:-1 tvg-id="twisted-tails" tvg-name="Twisted Tails" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/0cfe59dd-68ba-4f93-97bf-cdab46ccb48c/poster_landscape.jpeg" group-title="MYTV Shows",Twisted Tails
+#EXTINF:-1 tvg-id="twisted-tails" tvg-name="Twisted Tails" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/a102f1ea-26b2-46df-9b50-e6e9c2065557/posterLandscape.jpg" group-title="MYTV Shows",Twisted Tails
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/twisted-tails.m3u8
 #EXTINF:-1 tvg-id="typical-malaysian-be-like" tvg-name="Typical Malaysian Be Like" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/e4cc8e99-553d-44df-af58-0e2729b7423e/poster_landscape.jpeg" group-title="MYTV Shows",Typical Malaysian Be Like
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/mtas-production/typical-malaysian-be-like.m3u8
@@ -4746,11 +4744,11 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/wedding-stone/wedding-stone-
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/wedding-stone/wedding-stone-ep-5.m3u8
 #EXTINF:-1 tvg-id="wedding-stone-ep-6" tvg-name="Wedding Stone Ep 6" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/8ffecd01-c1b0-44c7-bfc1-f381cf781275/poster_landscape.jpeg" group-title="MYTV Shows",Wedding Stone Ep 6
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/wedding-stone/wedding-stone-ep-6.m3u8
-#EXTINF:-1 tvg-id="wet-and-wild" tvg-name="Wet and Wild" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/6c074dd3-bab5-47a2-9751-b30a2b0e533f/poster_landscape.jpeg" group-title="MYTV Shows",Wet and Wild
+#EXTINF:-1 tvg-id="wet-and-wild" tvg-name="Wet and Wild" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/923f32b6-b276-45d8-b066-127f337629c1/posterLandscape.jpg" group-title="MYTV Shows",Wet and Wild
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/wet-and-wild.m3u8
 #EXTINF:-1 tvg-id="what-is-respectful-parenting-and-are-you-doing-it" tvg-name="What Is Respectful Parenting and Are You Doing It?" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/ed9bb5e1-85db-4cb1-aed4-6430b95b6e12/poster_landscape.jpeg" group-title="MYTV Shows",What Is Respectful Parenting and Are You Doing It?
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/the-enterpreneur-journal/what-is-respectful-parenting-and-are-you-doing-it.m3u8
-#EXTINF:-1 tvg-id="whats-for-dinner" tvg-name="What's For Dinner ?" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/bc0274e2-b659-4b3f-adb0-c86123567bfd/poster_landscape.jpeg" group-title="MYTV Shows",What's For Dinner ?
+#EXTINF:-1 tvg-id="whats-for-dinner" tvg-name="What's For Dinner ?" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/aac26f91-f06a-4da7-b41c-d01ee7fa43cd/posterLandscape.jpg" group-title="MYTV Shows",What's For Dinner ?
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/whats-for-dinner.m3u8
 #EXTINF:-1 tvg-id="whats-in-the-box" tvg-name="What's in the Box" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/3b37faeb-0f36-473c-a513-091ac59b42ee/poster_landscape.jpeg" group-title="MYTV Shows",What's in the Box
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/shape-the-world/whats-in-the-box.m3u8
@@ -4760,7 +4758,7 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/shape-the-world/who-took-the
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/the-enterpreneur-journal/why-alpha-males-are-actually-insecure-the-fake-success-trap.m3u8
 #EXTINF:-1 tvg-id="why-most-creators-are-trapped-moo-reveals-the-secret-they-dont-tell-you" tvg-name="Why Most Creators Are Trapped? Moo Reveals The Secret They Don’t Tell You" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/d8a6a5f8-8ec0-4c9b-ab11-328398a701a0/poster_landscape.jpeg" group-title="MYTV Shows",Why Most Creators Are Trapped? Moo Reveals The Secret They Don’t Tell You
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/the-enterpreneur-journal/why-most-creators-are-trapped-moo-reveals-the-secret-they-dont-tell-you.m3u8
-#EXTINF:-1 tvg-id="wild-and-weird" tvg-name="Wild and Weird" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/f19ded67-9c51-44d3-9bbd-c3de9c8b5dc3/poster_landscape.jpeg" group-title="MYTV Shows",Wild and Weird
+#EXTINF:-1 tvg-id="wild-and-weird" tvg-name="Wild and Weird" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/0a17721e-916f-476c-abcb-e1be5020064e/posterLandscape.jpg" group-title="MYTV Shows",Wild and Weird
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/animal-all-star/wild-and-weird.m3u8
 #EXTINF:-1 tvg-id="wrasse-clean-o-matic" tvg-name="Wrasse Clean-O-Matic" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/96d16f78-b766-443f-9a6c-f2cc5d205d58/poster_landscape.png" group-title="MYTV Shows",Wrasse Clean-O-Matic
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/fix-it-with-piglet/wrasse-clean-o-matic.m3u8
@@ -4788,6 +4786,8 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/inteam-tv/zikir-harian-subha
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/inteam-tv/zikir-harian-subhanallahi-wabihamdihi.m3u8
 #EXTINF:-1 tvg-id="zikir-taubat-tubna-ilallah" tvg-name="Zikir Taubat-Tubna Ilallah" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/e558278d-1a5f-4e61-989d-f8990d7adfa5/poster_landscape.png" group-title="MYTV Shows",Zikir Taubat-Tubna Ilallah
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/inteam-tv/zikir-taubat-tubna-ilallah.m3u8
+#EXTINF:-1 tvg-id="zombies" tvg-name="Episode 59 – “Zombies Part 2”" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/6e7c384b-e45f-4e3c-92a9-74e8f7397a33/poster_landscape.png" group-title="MYTV Short Movies",Episode 59 – “Zombies Part 2”
+https://kerklangsi.github.io/MY-tv/streams/vod_mytv/short-movies-and-clips/zombies.m3u8
 #EXTINF:-1 tvg-id="zoo-zoo-zoo" tvg-name="Zoo Zoo Zoo" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/5cdf52aa-cd37-484a-a055-b1b429001677/poster_landscape.jpeg" group-title="MYTV Shows",Zoo Zoo Zoo
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/shape-the-world/zoo-zoo-zoo.m3u8
 #EXTINF:-1 tvg-id="zukie-kokom-rebut-awek" tvg-name="Zukie Kokom Rebut Awek!!" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/af46203d-c790-4c0f-bb06-a88bb3b91556/poster_landscape.jpeg" group-title="MYTV Shows",Zukie Kokom Rebut Awek!!
