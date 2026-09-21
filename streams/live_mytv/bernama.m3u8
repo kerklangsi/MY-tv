@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3697489,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_1080p/chunks.m3u8?md5=B9Xva_rmV_2AkMkr0qsyzg&expires=1790015497
-#EXT-X-STREAM-INF:BANDWIDTH=2436533,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_720p/chunks.m3u8?md5=Y6ZMILFrA0qnyWGKHV30oA&expires=1790015497
-#EXT-X-STREAM-INF:BANDWIDTH=972794,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_480p/chunks.m3u8?md5=SU7Va2IQ880WXTqadTRQQw&expires=1790015498
+#EXT-X-STREAM-INF:BANDWIDTH=3407228,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_1080p/chunks.m3u8?md5=yERpVFoynPGRswdyE96jIw&expires=1790017301
+#EXT-X-STREAM-INF:BANDWIDTH=2251183,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_720p/chunks.m3u8?md5=3taFOZQv-zAC0LP0lctpCg&expires=1790017302
+#EXT-X-STREAM-INF:BANDWIDTH=1032841,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/bernama/abr/bernamatv_480p/chunks.m3u8?md5=N-ZwcR6f7rrRnltLhjCLew&expires=1790017302
