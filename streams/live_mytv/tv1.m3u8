@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3526413,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/tv1/abr/tv1_1080p/chunks.m3u8?md5=cJ4ObiBrTmQ3It5a0-G5bQ&expires=1790044293
-#EXT-X-STREAM-INF:BANDWIDTH=2674634,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/tv1/abr/tv1_720p/chunks.m3u8?md5=dQzy8CbsXXbRlakUCkF1HQ&expires=1790044293
-#EXT-X-STREAM-INF:BANDWIDTH=1338190,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/tv1/abr/tv1_480p/chunks.m3u8?md5=rMVehiOmkGXlHlIFw745OA&expires=1790044293
+#EXT-X-STREAM-INF:BANDWIDTH=3454434,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tv1/abr/tv1_1080p/chunks.m3u8?md5=bhT_e4EgOK9VZSmqSRUD7A&expires=1790045081
+#EXT-X-STREAM-INF:BANDWIDTH=2338244,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tv1/abr/tv1_720p/chunks.m3u8?md5=3uHwp9L48WM_fPtTNVRrKA&expires=1790045081
+#EXT-X-STREAM-INF:BANDWIDTH=1112762,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tv1/abr/tv1_480p/chunks.m3u8?md5=ZzHiEVCE4BY3N0oSmTcZ4g&expires=1790045082

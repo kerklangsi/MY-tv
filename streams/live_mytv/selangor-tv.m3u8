@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4794016,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_1080p/chunks.m3u8?md5=EUUXVp8tFJbS6hzASw4jLg&expires=1790044322
-#EXT-X-STREAM-INF:BANDWIDTH=3442630,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_720p/chunks.m3u8?md5=YAmrpRoadi-puPLWEGDOFA&expires=1790044322
-#EXT-X-STREAM-INF:BANDWIDTH=1604510,FRAME-RATE=25,RESOLUTION=852x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_480p/chunks.m3u8?md5=s1xd3zKM1czuSdYZxXY6yA&expires=1790044323
+#EXT-X-STREAM-INF:BANDWIDTH=4220678,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_1080p/chunks.m3u8?md5=n6lhqO9mZMc7a4vp0fQehg&expires=1790045111
+#EXT-X-STREAM-INF:BANDWIDTH=2557946,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_720p/chunks.m3u8?md5=Q-kylVxyqlmjgdO8Mg2-aA&expires=1790045111
+#EXT-X-STREAM-INF:BANDWIDTH=1114849,FRAME-RATE=25,RESOLUTION=852x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/selangortv/abr/selangortv_480p/chunks.m3u8?md5=Ob5PT9wXxSsGlmybq8atlQ&expires=1790045111
