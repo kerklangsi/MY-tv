@@ -3,35 +3,14 @@
 https://kerklangsi.github.io/MY-tv/streams/live_mytv/tv1.m3u8
 #EXTINF:-1 tvg-id="tv2" tvg-name="TV2" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/659c6568-8cc8-4083-bbdc-2b7df2431f62/logo.png" tvg-chno="102" group-title="MYTV Live",TV2
 https://kerklangsi.github.io/MY-tv/streams/live_mytv/tv2.m3u8
-#EXTINF:-1 tvg-id="tv3" tvg-name="TV3" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420323:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="103" group-title="Tonton Live" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36",TV3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://kerklangsi.github.io/MY-tv/streams/live_tonton/tv3.m3u8
-#EXTINF:-1 tvg-id="ntv7" tvg-name="NTV7" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420324:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="107" group-title="Tonton Live" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36",NTV7
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://kerklangsi.github.io/MY-tv/streams/live_tonton/ntv7.m3u8
-#EXTINF:-1 tvg-id="8tv" tvg-name="8TV" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420325:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="108" group-title="Tonton Live" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36",8TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://kerklangsi.github.io/MY-tv/streams/live_tonton/8tv.m3u8
-#EXTINF:-1 tvg-id="tv9" tvg-name="TV9" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420326:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="109" group-title="Tonton Live" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36",TV9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://kerklangsi.github.io/MY-tv/streams/live_tonton/tv9.m3u8
 #EXTINF:-1 tvg-id="tv-okey" tvg-name="TV OKEY" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/fc596cbc-6f4f-4ab8-bb60-82fb27e38089/logo.png" tvg-chno="110" group-title="MYTV Live",TV OKEY
 https://kerklangsi.github.io/MY-tv/streams/live_mytv/tv-okey.m3u8
 #EXTINF:-1 tvg-id="sukan-rtm" tvg-name="SUKAN+" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/f99e8ffe-7f22-4639-9d7a-497e21f24ad0/logo.jpeg" tvg-chno="111" group-title="MYTV Live",SUKAN+
 https://kerklangsi.github.io/MY-tv/streams/live_mytv/sukan-rtm.m3u8
 #EXTINF:-1 tvg-id="tv-alhijrah" tvg-name="TV ALHIJRAH" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/e725be7c-615d-42bd-9399-fef5cf386ecb/logo.png" tvg-chno="114" group-title="MYTV Live",TV ALHIJRAH
 https://kerklangsi.github.io/MY-tv/streams/live_mytv/tv-alhijrah.m3u8
-#EXTINF:-1 tvg-id="drama-sangat" tvg-name="Drama Sangat" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420342:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="116" group-title="Tonton Live" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36",Drama Sangat
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://kerklangsi.github.io/MY-tv/streams/live_tonton/drama-sangat.m3u8
-#EXTINF:-1 tvg-id="fifa" tvg-name="FIFA+" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6576795:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="120" group-title="Tonton Live" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36",FIFA+
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://kerklangsi.github.io/MY-tv/streams/live_tonton/fifa.m3u8
 #EXTINF:-1 tvg-id="bernama" tvg-name="BERNAMA" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/2fc2f258-9179-414e-ba99-d700499aed50/logo.png" tvg-chno="121" group-title="MYTV Live",BERNAMA
 https://kerklangsi.github.io/MY-tv/streams/live_mytv/bernama.m3u8
-#EXTINF:-1 tvg-id="mpl-malaysia" tvg-name="MPL Malaysia" tvg-logo="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6596743:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" tvg-chno="121" group-title="Tonton Live" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36",MPL Malaysia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://kerklangsi.github.io/MY-tv/streams/live_tonton/mpl-malaysia.m3u8
 #EXTINF:-1 tvg-id="tvs" tvg-name="TVS" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/c62a6f83-ebd8-4106-890d-d8b299b7a3fe/logo.jpeg" tvg-chno="122" group-title="MYTV Live",TVS
 https://kerklangsi.github.io/MY-tv/streams/live_mytv/tvs.m3u8
 #EXTINF:-1 tvg-id="berita-rtm" tvg-name="BERITA RTM" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/channels/6245eaa8-f825-4fef-b1f8-2d44fa8676e9/logo.png" tvg-chno="123" group-title="MYTV Live",BERITA RTM
@@ -756,7 +735,7 @@ https://kerklangsi.github.io/MY-tv/streams/vod_mytv/chanakya-sabatham/chanakya-s
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/resepi-tok-pulau-pinang/char-kuey-teow-bahagian-1.m3u8
 #EXTINF:-1 tvg-id="cheek-pouches" tvg-name="Cheek Pouches" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/d4482edd-cbe1-4528-a286-eb0d6c87359b/poster_landscape.png" group-title="MYTV Shows",Cheek Pouches
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/fix-it-with-piglet/cheek-pouches.m3u8
-#EXTINF:-1 tvg-id="cheetah-running-spikes" tvg-name="Cheetah Running Spikes" tvg-logo="" group-title="MYTV Shows",Cheetah Running Spikes
+#EXTINF:-1 tvg-id="cheetah-running-spikes" tvg-name="Cheetah Running Spikes" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/content/34ac34c1-bf44-46cb-8c3b-67cca4e36a24/posterLandscape.jpg" group-title="MYTV Shows",Cheetah Running Spikes
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/the-adventure-machine/cheetah-running-spikes.m3u8
 #EXTINF:-1 tvg-id="cheeting-bracelets" tvg-name="Cheeting Bracelets" tvg-logo="https://7d8zpfv0fh.tenbytecdn.com/web-assets/images/47bd2f48-4d59-462b-b75d-cf71316ed04c/poster_landscape.jpeg" group-title="MYTV Shows",Cheeting Bracelets
 https://kerklangsi.github.io/MY-tv/streams/vod_mytv/jelly-jamm/cheeting-bracelets.m3u8
