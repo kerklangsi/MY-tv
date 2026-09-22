@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3611793,FRAME-RATE=29.97,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_1080p/chunks.m3u8?md5=RixCPm4yHCqDL0M-a6lI0g&expires=1790038902
-#EXT-X-STREAM-INF:BANDWIDTH=2569122,FRAME-RATE=29.97,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_720p/chunks.m3u8?md5=1-JwbYIHucCsP1mOEAQlCQ&expires=1790038902
-#EXT-X-STREAM-INF:BANDWIDTH=1321589,FRAME-RATE=29.97,RESOLUTION=854x480,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_480p/chunks.m3u8?md5=wZImmYOUT11NYOfqLi7AzA&expires=1790038903
+#EXT-X-STREAM-INF:BANDWIDTH=3598034,FRAME-RATE=29.97,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_1080p/chunks.m3u8?md5=U_8-BOWnlpzltWvDE0Zr7A&expires=1790040716
+#EXT-X-STREAM-INF:BANDWIDTH=2570026,FRAME-RATE=29.97,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_720p/chunks.m3u8?md5=_aRfuiWKrEtqGlFLLQ3JeA&expires=1790040716
+#EXT-X-STREAM-INF:BANDWIDTH=1300913,FRAME-RATE=29.97,RESOLUTION=854x480,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/arirang/abr/arirang_480p/chunks.m3u8?md5=VSY3tnj51-8dmKi-h5IFpA&expires=1790040717
