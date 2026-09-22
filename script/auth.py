@@ -1,4 +1,5 @@
-import urllib
+import urllib.request
+import re
 import os
 import sys
 import time
@@ -58,31 +59,72 @@ def get_device_id():
             pass
     return dev_id
 
-# Static MYTV AES-128 key embedded in the MYTV web app (public, not a secret)
-_MYTV_STATIC_ME_KEY = "u6nCKz4ogW09a27lOzGcYkdJP9QJ6ABg"
-
-# Retrieve MYTV AES encryption key (from auth/me_key file, env var, or static fallback)
+# Retrieve or auto-fetch MYTV AES encryption key from mana2.my
 def get_me_key():
-    # 1. From auth/me_key file (written by workflow from ME_KEY secret)
-    key_str = _read_auth_file("me_key")
+    key_str = _read_auth_file("me_key") or os.environ.get("ME_KEY", "").strip()
     if key_str:
         return key_str.encode('utf-8')[:32]
 
-    # 2. From ME_KEY environment variable (set in GitHub Actions)
-    env_key = os.environ.get("ME_KEY", "").strip()
-    if env_key:
-        print("[MYTV Auth] Using ME_KEY from environment variable.")
-        return env_key.encode('utf-8')[:32]
+    print("[MYTV Auth] Fetching MYTV AES decryption key from https://mana2.my/...")
+    extracted_key = ""
+    ua = USER_AGENT if 'USER_AGENT' in globals() and USER_AGENT else "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    headers = {"User-Agent": ua}
 
-    # 3. Static fallback (MYTV public key embedded in web app)
-    print("[MYTV Auth] Using static ME_KEY fallback.")
-    return _MYTV_STATIC_ME_KEY.encode('utf-8')[:32]
+    try:
+        req = urllib.request.Request("https://mana2.my/", headers=headers)
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            html = resp.read().decode('utf-8', errors='ignore')
 
-USER_AGENT = get_user_agent()
+        scripts = re.findall(r'src=["\'](/assets/[^"\']+\.js)["\']', html)
+        for s in scripts:
+            js_url = "https://mana2.my" + s
+            try:
+                req_js = urllib.request.Request(js_url, headers=headers)
+                with urllib.request.urlopen(req_js, timeout=10) as r:
+                    content = r.read().decode('utf-8', errors='ignore')
+                    m_direct = re.search(r'="([A-Za-z0-9]{40,60})"\.trim\(\)', content)
+                    if m_direct:
+                        extracted_key = m_direct.group(1)
+                        break
+
+                    pl_matches = re.findall(r'assets/player-license-[^"\']+\.js', content)
+                    for pl in pl_matches:
+                        pl_url = "https://mana2.my/" + pl
+                        req_pl = urllib.request.Request(pl_url, headers=headers)
+                        with urllib.request.urlopen(req_pl, timeout=10) as r_pl:
+                            pl_code = r_pl.read().decode('utf-8', errors='ignore')
+                            m = re.search(r'="([A-Za-z0-9]{40,60})"\.trim\(\)', pl_code)
+                            if m:
+                                extracted_key = m.group(1)
+                                break
+                    if extracted_key:
+                        break
+            except Exception:
+                pass
+    except Exception as e:
+        print(f"[MYTV Auth Warning] Dynamic mana2.my key scrape encountered: {e}")
+
+    # Fallback to known production key if dynamic fetch could not extract it
+    if not extracted_key:
+        extracted_key = "u6nCKz4ogW09a27lOzGcYkdJP9QJ6ABgw9GZuIBmWtMWswdz"
+
+    if extracted_key:
+        os.makedirs(AUTH_DIR, exist_ok=True)
+        try:
+            with open(os.path.join(AUTH_DIR, "me_key"), "w", encoding="utf-8") as f:
+                f.write(extracted_key)
+            print("[MYTV Auth] Successfully saved ME_KEY to auth/me_key")
+        except Exception:
+            pass
+        return extracted_key.encode('utf-8')[:32]
+
+    return b""
+
+USER_AGENT = get_user_agent() or "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 DEVICE_ID = get_device_id()
 ME_KEY = get_me_key()
-EMAIL = _read_auth_file("email") or os.environ.get("EMAIL", "")
-PASSWORD = _read_auth_file("password") or os.environ.get("PASSWORD", "")
+EMAIL = (_read_auth_file("email") or os.environ.get("EMAIL", "")).strip()
+PASSWORD = (_read_auth_file("password") or os.environ.get("PASSWORD", "")).strip()
 
 # Retrieve active Tonton session token from local cache or browser session
 def get_token(force_refresh=False):
@@ -131,7 +173,11 @@ def get_token(force_refresh=False):
                     page.goto("https://watch.tonton.com.my/login", wait_until="networkidle", timeout=30000)
                     page.wait_for_timeout(3000)
 
-                    sign_in_btn = page.query_selector("button:has-text('Sign In'), a:has-text('Sign In')")
+                    sign_in_btn = page.query_selector(
+                        "button:has-text('Sign In'), a:has-text('Sign In'), "
+                        "button:has-text('Log In'), a:has-text('Log In'), "
+                        "button:has-text('Masuk'), a:has-text('Masuk')"
+                    )
                     if not sign_in_btn:
                         sign_in_btn = page.query_selector("button")
 
@@ -166,7 +212,12 @@ def get_token(force_refresh=False):
                     submit_btn = target.query_selector("button[type='submit'], input[type='submit'], button:has-text('Sign In'), button:has-text('Log In'), button:has-text('Masuk')")
                     if submit_btn:
                         submit_btn.click()
-                        page.wait_for_timeout(7000)
+                        if popup_page:
+                            try:
+                                popup_page.wait_for_event("close", timeout=8000)
+                            except Exception:
+                                pass
+                        page.wait_for_timeout(5000)
                 except Exception as login_err:
                     print(f"[Tonton Auth Warning] Web login interaction encountered: {login_err}")
 
@@ -174,6 +225,7 @@ def get_token(force_refresh=False):
             page.wait_for_timeout(4000)
 
             ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
+            cookies = context.cookies()
             browser.close()
 
             final_token = None
@@ -194,8 +246,21 @@ def get_token(force_refresh=False):
                     final_token = s_obj.get("loginToken") or s_obj.get("token")
                     final_dev_id = s_obj.get("deviceId-v3") or s_obj.get("deviceId")
 
+                if not final_token:
+                    # Scan any other key containing token
+                    for k, val in ls_dict.items():
+                        if "token" in k.lower() and isinstance(val, str) and len(val) > 20:
+                            final_token = val
+                            break
+
             if not final_token and captured_tokens:
                 final_token = captured_tokens[0]
+
+            if not final_token and cookies:
+                for c in cookies:
+                    if c.get("name") in ["loginToken", "token", "tonton_token"] and len(c.get("value", "")) > 20:
+                        final_token = c.get("value")
+                        break
 
             if final_token:
                 os.makedirs(AUTH_DIR, exist_ok=True)
@@ -220,6 +285,8 @@ def refresh_token():
 def main():
     force = "--force" in sys.argv or "-f" in sys.argv
     token = get_token(force_refresh=force)
+    global ME_KEY
+    ME_KEY = get_me_key()
     me_key_str = _read_auth_file("me_key")
     
     print("\n====================================================")
