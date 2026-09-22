@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=2496552,FRAME-RATE=30,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_1080p/chunks.m3u8?md5=w2PPXjXuNhuDGXnTatW_rA&expires=1790082127
-#EXT-X-STREAM-INF:BANDWIDTH=1642471,FRAME-RATE=30,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_720p/chunks.m3u8?md5=8dxB67x-c_jTFNtAa3SGMA&expires=1790082127
-#EXT-X-STREAM-INF:BANDWIDTH=865694,FRAME-RATE=30,RESOLUTION=854x480,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_480p/chunks.m3u8?md5=-5kq9ezugRuMcz1yj_ffFQ&expires=1790082128
+#EXT-X-STREAM-INF:BANDWIDTH=1909300,FRAME-RATE=30,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_1080p/chunks.m3u8?md5=eRsd8u6WxbTfIkkIc9f6Zg&expires=1790083927
+#EXT-X-STREAM-INF:BANDWIDTH=1247791,FRAME-RATE=30,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_720p/chunks.m3u8?md5=S5n5zMpDkS9bO0EFKSqxyQ&expires=1790083927
+#EXT-X-STREAM-INF:BANDWIDTH=707304,FRAME-RATE=30,RESOLUTION=854x480,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/tvikim/abr/tvikim_480p/chunks.m3u8?md5=n2XtORxhJelbxksZYA_VcA&expires=1790083927
