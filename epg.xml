@@ -55710,10 +55710,6 @@
   <programme start="20260927150000 +0000" stop="20260927160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260921003000 +0000" stop="20260921013000 +0000" channel="8tv">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260921013000 +0000" stop="20260921014500 +0000" channel="8tv">
     <title lang="en">8TV MORNING EXPRESS 2026/2027 (LIVE)</title>
     <desc lang="en">Episode 59 - [NC]</desc>
@@ -55797,6 +55793,10 @@
   <programme start="20260922003000 +0000" stop="20260922013000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
+  </programme>
+  <programme start="20260922013000 +0000" stop="20260922014500 +0000" channel="8tv">
+    <title lang="en">8TV MORNING EXPRESS 2026/2027 (LIVE)</title>
+    <desc lang="en">Episode 60 - [NC]</desc>
   </programme>
   <programme start="20260921010000 +0000" stop="20260921020000 +0000" channel="drama-sangat">
     <title lang="en">AKAD TAK DIPINTA</title>
@@ -55942,10 +55942,6 @@
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
-  <programme start="20260921010000 +0000" stop="20260921013000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 24/25</title>
-    <desc lang="en">Episode 86 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
-  </programme>
   <programme start="20260921013000 +0000" stop="20260921020000 +0000" channel="ntv7">
     <title lang="en">MENENGAH ATAS 2026</title>
     <desc lang="en">Episode 17 - [NC]</desc>
@@ -56074,6 +56070,10 @@
     <title lang="en">MENENGAH ATAS 24/25</title>
     <desc lang="en">Episode 89 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260922013000 +0000" stop="20260922020000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 2026</title>
+    <desc lang="en">Episode 18 - [NC]</desc>
+  </programme>
   <programme start="20260921002500 +0000" stop="20260921015500 +0000" channel="thrill">
     <title lang="en">Night Watch</title>
     <desc lang="en">Episode 1 - After a car accident erases his memory, Wang Ren Jie takes a job as a night guard. When the clock strikes midnight, he reports for duty at an abandoned building — only to find three lost souls awaiting him, and unravels a revenge plot at the same time. Is this fate or a curse cast by vengeful spirits? - [NC]</desc>
@@ -56145,10 +56145,6 @@
   <programme start="20260922000000 +0000" stop="20260922013500 +0000" channel="thrill">
     <title lang="en">Mulu Nakru </title>
     <desc lang="en">Episode 1 - After moving into a house with her boyfriend, Gun, architect May learns of her stepmother’s mysterious death. When May takes in her stepsister Noon, the girl begins showing signs of possession, while May suffers disturbing visions and insomnia. As dark secrets emerge, spiritual masters uncover an ancient black-magic curse hidden within the house. - [NC]</desc>
-  </programme>
-  <programme start="20260921010000 +0000" stop="20260921013000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260921013000 +0000" stop="20260921020000 +0000" channel="tv3">
     <title lang="en">BULETIN PAGI (2026/2027)</title>
@@ -56278,9 +56274,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260921003000 +0000" stop="20260921013000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260922013000 +0000" stop="20260922020000 +0000" channel="tv3">
+    <title lang="en">BULETIN PAGI (2026/2027)</title>
+    <desc lang="en">Episode 84 - [NC]</desc>
   </programme>
   <programme start="20260921013000 +0000" stop="20260921023000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -56406,9 +56402,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260922013000 +0000" stop="20260922014500 +0000" channel="8tv">
-    <title lang="en">8TV MORNING EXPRESS 2026/2027 (LIVE)</title>
-    <desc lang="en">Episode 60 - [NC]</desc>
+  <programme start="20260922013000 +0000" stop="20260922023000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260922014500 +0000" stop="20260922023500 +0000" channel="8tv">
     <title lang="en">GREAT TIMES</title>
@@ -56489,6 +56485,10 @@
   <programme start="20260923003000 +0000" stop="20260923013000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
+  </programme>
+  <programme start="20260923013000 +0000" stop="20260923014500 +0000" channel="8tv">
+    <title lang="en">8TV MORNING EXPRESS 2026/2027 (LIVE)</title>
+    <desc lang="en">Episode 61 - [NC]</desc>
   </programme>
   <programme start="20260922020000 +0000" stop="20260922030000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -56618,10 +56618,6 @@
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
-  <programme start="20260922013000 +0000" stop="20260922020000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 2026</title>
-    <desc lang="en">Episode 18 - [NC]</desc>
-  </programme>
   <programme start="20260922020000 +0000" stop="20260922023000 +0000" channel="ntv7">
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 73 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
@@ -56750,6 +56746,10 @@
     <title lang="en">MENENGAH ATAS 24/25</title>
     <desc lang="en">Episode 87 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260923013000 +0000" stop="20260923020000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 2026</title>
+    <desc lang="en">Episode 19 - [NC]</desc>
+  </programme>
   <programme start="20260922013500 +0000" stop="20260922020000 +0000" channel="thrill">
     <title lang="en">Model Family</title>
     <desc lang="en">Episode 4 - A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem. - [NC]</desc>
@@ -56817,10 +56817,6 @@
   <programme start="20260923000500 +0000" stop="20260923014500 +0000" channel="thrill">
     <title lang="en">Open the Coffin</title>
     <desc lang="en">Episode 1 - Ghost Hand and his tomb raiders resurface in Jiang City to seek gold in ancient tombs after a 3-year absence. They released an evil spirit from a coffin and all four died at home eventually. Poison and pinholes in the corpses become the sole clue for police investigation. A tomb raid now unfolds as a perplexing and mysterious case. - [NC]</desc>
-  </programme>
-  <programme start="20260922013000 +0000" stop="20260922020000 +0000" channel="tv3">
-    <title lang="en">BULETIN PAGI (2026/2027)</title>
-    <desc lang="en">Episode 84 - [NC]</desc>
   </programme>
   <programme start="20260922020000 +0000" stop="20260922030000 +0000" channel="tv3">
     <title lang="en">MALAYSIA HARI INI 2026/2027</title>
@@ -56946,9 +56942,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260922013000 +0000" stop="20260922023000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260923013000 +0000" stop="20260923020000 +0000" channel="tv3">
+    <title lang="en">BULETIN PAGI (2026/2027)</title>
+    <desc lang="en">Episode 85 - [NC]</desc>
   </programme>
   <programme start="20260922023000 +0000" stop="20260922033000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -57070,9 +57066,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260923013000 +0000" stop="20260923014500 +0000" channel="8tv">
-    <title lang="en">8TV MORNING EXPRESS 2026/2027 (LIVE)</title>
-    <desc lang="en">Episode 61 - [NC]</desc>
+  <programme start="20260923013000 +0000" stop="20260923023000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260923014500 +0000" stop="20260923023500 +0000" channel="8tv">
     <title lang="en">GREAT TIMES</title>
@@ -57153,6 +57149,10 @@
   <programme start="20260924003000 +0000" stop="20260924013000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
+  </programme>
+  <programme start="20260924013000 +0000" stop="20260924014500 +0000" channel="8tv">
+    <title lang="en">8TV MORNING EXPRESS 2026/2027 (LIVE)</title>
+    <desc lang="en">Episode 62 - [NC]</desc>
   </programme>
   <programme start="20260923020000 +0000" stop="20260923030000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -57282,10 +57282,6 @@
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
   </programme>
-  <programme start="20260923013000 +0000" stop="20260923020000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 2026</title>
-    <desc lang="en">Episode 19 - [NC]</desc>
-  </programme>
   <programme start="20260923020000 +0000" stop="20260923023000 +0000" channel="ntv7">
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 75 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
@@ -57414,6 +57410,10 @@
     <title lang="en">MENENGAH ATAS 24/25</title>
     <desc lang="en">Episode 90 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260924013000 +0000" stop="20260924020000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 2026</title>
+    <desc lang="en">Episode 20 - [NC]</desc>
+  </programme>
   <programme start="20260923014500 +0000" stop="20260923032500 +0000" channel="thrill">
     <title lang="en">Get in the Dark</title>
     <desc lang="en">Episode 1 - A reporter hears three horror stories when investigating a case of the paper doll spirit 20 years ago. Miss Qiao had died in vain then, and her butler paid a paper craftsman to make a paper doll to be buried with her. Miss Qiao’s spirit is revived to take revenge when the doll’s eyes are drawn, and a series of horrible events begins to happen... - [NC]</desc>
@@ -57478,9 +57478,9 @@
     <title lang="en">Night at the Eagle Inn</title>
     <desc lang="en">Episode 1 - A pair of fraternal twins spend a terrifying night in a remote inn to investigate the last known whereabouts of their father who mysteriously disappeared the night they were born. As they dive deeper, the property's dark secrets ensnare them in a hellish labyrinth which they must escape before dawn. - [NC]</desc>
   </programme>
-  <programme start="20260923013000 +0000" stop="20260923020000 +0000" channel="tv3">
-    <title lang="en">BULETIN PAGI (2026/2027)</title>
-    <desc lang="en">Episode 85 - [NC]</desc>
+  <programme start="20260924011500 +0000" stop="20260924024500 +0000" channel="thrill">
+    <title lang="en">Endless Love</title>
+    <desc lang="en">Episode 1 - A young girl encounters a novelist in a bar and quickly falls in love with him. However, it turns out she has fallen into a trap set up by the novelist and his ex-girlfriend who is a ghost with a disfigured face. The journey of revenge and ultimate terror has just begun! - [NC]</desc>
   </programme>
   <programme start="20260923020000 +0000" stop="20260923030000 +0000" channel="tv3">
     <title lang="en">MALAYSIA HARI INI 2026/2027</title>
@@ -57606,9 +57606,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260923013000 +0000" stop="20260923023000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260924013000 +0000" stop="20260924020000 +0000" channel="tv3">
+    <title lang="en">BULETIN PAGI (2026/2027)</title>
+    <desc lang="en">Episode 86 - [NC]</desc>
   </programme>
   <programme start="20260923023000 +0000" stop="20260923033000 +0000" channel="tv9">
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
@@ -57726,9 +57726,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260924013000 +0000" stop="20260924014500 +0000" channel="8tv">
-    <title lang="en">8TV MORNING EXPRESS 2026/2027 (LIVE)</title>
-    <desc lang="en">Episode 62 - [NC]</desc>
+  <programme start="20260924013000 +0000" stop="20260924023000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260924014500 +0000" stop="20260924023500 +0000" channel="8tv">
     <title lang="en">GREAT TIMES</title>
@@ -57809,6 +57809,10 @@
   <programme start="20260925003000 +0000" stop="20260925013000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
+  </programme>
+  <programme start="20260925013000 +0000" stop="20260925014500 +0000" channel="8tv">
+    <title lang="en">8TV MORNING EXPRESS 2026/2027 (LIVE)</title>
+    <desc lang="en">Episode 63 - [NC]</desc>
   </programme>
   <programme start="20260924020000 +0000" stop="20260924030000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -57929,10 +57933,6 @@
   <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260924013000 +0000" stop="20260924020000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 2026</title>
-    <desc lang="en">Episode 20 - [NC]</desc>
   </programme>
   <programme start="20260924020000 +0000" stop="20260924023000 +0000" channel="ntv7">
     <title lang="en">MENENGAH RENDAH 24/25</title>
@@ -58062,9 +58062,9 @@
     <title lang="en">MENENGAH ATAS 24/25</title>
     <desc lang="en">Episode 93 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
-  <programme start="20260924011500 +0000" stop="20260924024500 +0000" channel="thrill">
-    <title lang="en">Endless Love</title>
-    <desc lang="en">Episode 1 - A young girl encounters a novelist in a bar and quickly falls in love with him. However, it turns out she has fallen into a trap set up by the novelist and his ex-girlfriend who is a ghost with a disfigured face. The journey of revenge and ultimate terror has just begun! - [NC]</desc>
+  <programme start="20260925013000 +0000" stop="20260925020000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 24/25</title>
+    <desc lang="en">Episode 98 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
   <programme start="20260924024500 +0000" stop="20260924041000 +0000" channel="thrill">
     <title lang="en">Chop Chop</title>
@@ -58133,10 +58133,6 @@
   <programme start="20260925003000 +0000" stop="20260925015000 +0000" channel="thrill">
     <title lang="en">Ten Minutes to Midnight</title>
     <desc lang="en">Episode 1 - Radio host Amy is bitten by a mysterious bat, but she returns to the station to host that night’s late-night show. Instead, she is set up and fired by her ruthless boss, then replaced by a newcomer. As a violent storm traps everyone in the station and her mysterious wound worsens, Amy gradually loses control and unleashes a bloody massacre. - [NC]</desc>
-  </programme>
-  <programme start="20260924013000 +0000" stop="20260924020000 +0000" channel="tv3">
-    <title lang="en">BULETIN PAGI (2026/2027)</title>
-    <desc lang="en">Episode 86 - [NC]</desc>
   </programme>
   <programme start="20260924020000 +0000" stop="20260924030000 +0000" channel="tv3">
     <title lang="en">MALAYSIA HARI INI 2026/2027</title>
@@ -58258,9 +58254,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260924013000 +0000" stop="20260924023000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260925013000 +0000" stop="20260925020000 +0000" channel="tv3">
+    <title lang="en">BULETIN PAGI (2026/2027)</title>
+    <desc lang="en">Episode 87 - [NC]</desc>
   </programme>
   <programme start="20260924023000 +0000" stop="20260924033000 +0000" channel="tv9">
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
@@ -58378,9 +58374,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260925013000 +0000" stop="20260925014500 +0000" channel="8tv">
-    <title lang="en">8TV MORNING EXPRESS 2026/2027 (LIVE)</title>
-    <desc lang="en">Episode 63 - [NC]</desc>
+  <programme start="20260925013000 +0000" stop="20260925023000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260925014500 +0000" stop="20260925023500 +0000" channel="8tv">
     <title lang="en">GREAT TIMES</title>
@@ -58465,6 +58461,10 @@
   <programme start="20260926003000 +0000" stop="20260926013000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
+  </programme>
+  <programme start="20260926013000 +0000" stop="20260926023000 +0000" channel="8tv">
+    <title lang="en">GREAT TIMES</title>
+    <desc lang="en">Episode 854 - Chee Qian ditahan polis berkaitan kes Huan Run. Ruzhen dan Ruguan meminta Chiu Yeh untuk menarik balik kes terhadap Chee Qian terutamanya apabila Huan Run telah pulih sepenuhnya, juga penglihatannya. - [NC]</desc>
   </programme>
   <programme start="20260925020000 +0000" stop="20260925030000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -58578,10 +58578,6 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20260925013000 +0000" stop="20260925020000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 24/25</title>
-    <desc lang="en">Episode 98 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
-  </programme>
   <programme start="20260925020000 +0000" stop="20260925023000 +0000" channel="ntv7">
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 79 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
@@ -58682,6 +58678,10 @@
     <title lang="en">MENENGAH ATAS 24/25</title>
     <desc lang="en">Episode 87 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260926013000 +0000" stop="20260926020000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 2026</title>
+    <desc lang="en">Episode 19 - [NC]</desc>
+  </programme>
   <programme start="20260925015000 +0000" stop="20260925031500 +0000" channel="thrill">
     <title lang="en">Detrimental</title>
     <desc lang="en">Episode 1 - You Ji Ren is a blind man who works at a factory on an outlying island. When the factory is cut off from the outside world by a hurricane one day, a monster appears and turns whoever sees it into black shadows. As You cannot see the monster, he is able to help his other co-workers escape safely and fight to kill the monster. - [NC]</desc>
@@ -58762,9 +58762,9 @@
     <title lang="en">Model Family</title>
     <desc lang="en">Episode 6 - A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem. - [NC]</desc>
   </programme>
-  <programme start="20260925013000 +0000" stop="20260925020000 +0000" channel="tv3">
-    <title lang="en">BULETIN PAGI (2026/2027)</title>
-    <desc lang="en">Episode 87 - [NC]</desc>
+  <programme start="20260926010500 +0000" stop="20260926024000 +0000" channel="thrill">
+    <title lang="en">Waning Moon</title>
+    <desc lang="en">Episode 1 - Nuanchan is a famous and highly respected spiritual medium in a rural village in Thailand. She wants to train her niece, Ploy, to succeed her and Ploy needs to remain a virgin. When Ploy falls in love with her childhood friend Tul, their lives are in danger as the secret of the spiritual world is being unveiled. - [NC]</desc>
   </programme>
   <programme start="20260925020000 +0000" stop="20260925030000 +0000" channel="tv3">
     <title lang="en">MALAYSIA HARI INI 2026/2027</title>
@@ -58898,9 +58898,9 @@
     <title lang="en">BREAD BARBERSHOP (SEASON 1)</title>
     <desc lang="en">Episode 25 - SOCCER KING BREAD.  Pasukan bola sepak Bakery Town mengadakan sesi pemilihan pemain, dan Bread berbangga dengan zaman kegemilangannya sebagai bintang bola sepak sambil menggunakan kaedah pelik untuk melatih Wilk. - [NC]</desc>
   </programme>
-  <programme start="20260925013000 +0000" stop="20260925023000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260926013000 +0000" stop="20260926020000 +0000" channel="tv3">
+    <title lang="en">BULETIN PAGI (2026/2027)</title>
+    <desc lang="en">Episode 88 - [NC]</desc>
   </programme>
   <programme start="20260925023000 +0000" stop="20260925033000 +0000" channel="tv9">
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
@@ -59018,9 +59018,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260926013000 +0000" stop="20260926023000 +0000" channel="8tv">
-    <title lang="en">GREAT TIMES</title>
-    <desc lang="en">Episode 854 - Chee Qian ditahan polis berkaitan kes Huan Run. Ruzhen dan Ruguan meminta Chiu Yeh untuk menarik balik kes terhadap Chee Qian terutamanya apabila Huan Run telah pulih sepenuhnya, juga penglihatannya. - [NC]</desc>
+  <programme start="20260926013000 +0000" stop="20260926023000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260926023000 +0000" stop="20260926033000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
@@ -59101,6 +59101,10 @@
   <programme start="20260927003000 +0000" stop="20260927013000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
+  </programme>
+  <programme start="20260927013000 +0000" stop="20260927023000 +0000" channel="8tv">
+    <title lang="en">GREAT TIMES</title>
+    <desc lang="en">Episode 855 - Chengyuan dan Ruguan bergegas ke atas bangunan untuk menasihati Ruzhen supaya turun. Chiu Yeh tiba dan sebaliknya menuduh Ruzhen hanya berlakon dan berkeras menghantar Chee Qian ke penjara. - [NC]</desc>
   </programme>
   <programme start="20260926020000 +0000" stop="20260926030000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -59213,10 +59217,6 @@
   <programme start="20260926220000 +0000" stop="20260927040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260926013000 +0000" stop="20260926020000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 2026</title>
-    <desc lang="en">Episode 19 - [NC]</desc>
   </programme>
   <programme start="20260926020000 +0000" stop="20260926023000 +0000" channel="ntv7">
     <title lang="en">MENENGAH RENDAH 24/25</title>
@@ -59338,9 +59338,9 @@
     <title lang="en">MENENGAH ATAS 24/25</title>
     <desc lang="en">Episode 90 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
-  <programme start="20260926010500 +0000" stop="20260926024000 +0000" channel="thrill">
-    <title lang="en">Waning Moon</title>
-    <desc lang="en">Episode 1 - Nuanchan is a famous and highly respected spiritual medium in a rural village in Thailand. She wants to train her niece, Ploy, to succeed her and Ploy needs to remain a virgin. When Ploy falls in love with her childhood friend Tul, their lives are in danger as the secret of the spiritual world is being unveiled. - [NC]</desc>
+  <programme start="20260927013000 +0000" stop="20260927020000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 2026</title>
+    <desc lang="en">Episode 20 - [NC]</desc>
   </programme>
   <programme start="20260926024000 +0000" stop="20260926035500 +0000" channel="thrill">
     <title lang="en">The Case of Disappearances</title>
@@ -59417,10 +59417,6 @@
   <programme start="20260927010000 +0000" stop="20260927023000 +0000" channel="thrill">
     <title lang="en">Rooftop</title>
     <desc lang="en">Episode 1 - A group of friends invites Paul to a secret party on their campus rooftop. When a prank accidentally kills Paul, the friends cover up the incident and promised never to disclose it. Paul vows to take revenge by becoming a vicious ghost to haunt them into taking responsibility for their actions. - [NC]</desc>
-  </programme>
-  <programme start="20260926013000 +0000" stop="20260926020000 +0000" channel="tv3">
-    <title lang="en">BULETIN PAGI (2026/2027)</title>
-    <desc lang="en">Episode 88 - [NC]</desc>
   </programme>
   <programme start="20260926020000 +0000" stop="20260926020200 +0000" channel="tv3">
     <title lang="en">LINTAS LANGSUNG DI KARNIVAL JOM HEBOH 2026</title>
@@ -59562,9 +59558,9 @@
     <title lang="en">BREAD BARBERSHOP (SEASON 1)</title>
     <desc lang="en">Episode 28 - SUSHI TOURIST.  Episod ini memaparkan watak-watak sushi yang berkunjung dari Sushi Town; mereka kehilangan rambut sashimi akibat satu penipuan di Bakery Town lalu mendapatkan bantuan daripada Master Bread. - [NC]</desc>
   </programme>
-  <programme start="20260926013000 +0000" stop="20260926023000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260927013000 +0000" stop="20260927020000 +0000" channel="tv3">
+    <title lang="en">BULETIN PAGI (2026/2027)</title>
+    <desc lang="en">Episode 89 - [NC]</desc>
   </programme>
   <programme start="20260926023000 +0000" stop="20260926033000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -59678,9 +59674,9 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260927013000 +0000" stop="20260927023000 +0000" channel="8tv">
-    <title lang="en">GREAT TIMES</title>
-    <desc lang="en">Episode 855 - Chengyuan dan Ruguan bergegas ke atas bangunan untuk menasihati Ruzhen supaya turun. Chiu Yeh tiba dan sebaliknya menuduh Ruzhen hanya berlakon dan berkeras menghantar Chee Qian ke penjara. - [NC]</desc>
+  <programme start="20260927013000 +0000" stop="20260927023000 +0000" channel="tv9">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260927023000 +0000" stop="20260927033000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
@@ -59759,7 +59755,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928003000 +0000" stop="20260928010326 +0000" channel="8tv">
+  <programme start="20260928003000 +0000" stop="20260928013324 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -59842,7 +59838,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928010000 +0000" stop="20260928010326 +0000" channel="drama-sangat">
+  <programme start="20260928010000 +0000" stop="20260928013324 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -59878,10 +59874,6 @@
   <programme start="20260927220000 +0000" stop="20260928040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260927013000 +0000" stop="20260927020000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 2026</title>
-    <desc lang="en">Episode 20 - [NC]</desc>
   </programme>
   <programme start="20260927020000 +0000" stop="20260927023000 +0000" channel="ntv7">
     <title lang="en">MENENGAH RENDAH 24/25</title>
@@ -60017,7 +60009,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928010000 +0000" stop="20260928010326 +0000" channel="ntv7">
+  <programme start="20260928010000 +0000" stop="20260928013324 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -60093,10 +60085,6 @@
   <programme start="20260928005500 +0000" stop="20260928023000 +0000" channel="thrill">
     <title lang="en">Ghost Wedding</title>
     <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a &quot;woman in red&quot;, leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a &quot;ghost marriage&quot;... - [NC]</desc>
-  </programme>
-  <programme start="20260927013000 +0000" stop="20260927020000 +0000" channel="tv3">
-    <title lang="en">BULETIN PAGI (2026/2027)</title>
-    <desc lang="en">Episode 89 - [NC]</desc>
   </programme>
   <programme start="20260927020000 +0000" stop="20260927020200 +0000" channel="tv3">
     <title lang="en">LINTAS LANGSUNG DI KARNIVAL JOM HEBOH 2026</title>
@@ -60231,14 +60219,15 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928000000 +0000" stop="20260928010326 +0000" channel="tv3">
+  <programme start="20260928000000 +0000" stop="20260928013000 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927013000 +0000" stop="20260927023000 +0000" channel="tv9">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260928013000 +0000" stop="20260928013324 +0000" channel="tv3">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
   </programme>
   <programme start="20260927023000 +0000" stop="20260927033000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -60342,7 +60331,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928010000 +0000" stop="20260928010326 +0000" channel="tv9">
+  <programme start="20260928010000 +0000" stop="20260928013324 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
