@@ -59670,6 +59670,14 @@
     <title lang="en">Canada v New Zealand | Group E | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Canada and New Zealand from Grenoble, 15 June 2019. - [NC]</desc>
   </programme>
+  <programme start="20260922130352 +0000" stop="20260922133127 +0000" channel="fifa">
+    <title lang="en">Hwang Hee-Chan | Life in GB</title>
+    <desc lang="en">Episode 1 - Hwang Hee-Chan for a day, as he learns to adjust to a new life in Wolverhampton, England. - [NC]</desc>
+  </programme>
+  <programme start="20260922133127 +0000" stop="20260922135620 +0000" channel="fifa">
+    <title lang="en">Mana Iwabuchi | Life in Arsenal</title>
+    <desc lang="en">Episode 1 - A diamond of the Japan national women's team who plays for Arsenal in England. - [NC]</desc>
+  </programme>
   <programme start="20260921100000 +0000" stop="20260921160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
@@ -59689,10 +59697,6 @@
   <programme start="20260922100000 +0000" stop="20260922160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="ntv7">
-    <title lang="en">MAJALAH DIDIK 2026</title>
-    <desc lang="en">Episode 8 - [NC]</desc>
   </programme>
   <programme start="20260921133000 +0000" stop="20260921140000 +0000" channel="ntv7">
     <title lang="en">KELAB PODCAST</title>
@@ -59821,6 +59825,10 @@
   <programme start="20260922130000 +0000" stop="20260922133000 +0000" channel="ntv7">
     <title lang="en">MYINOVASI</title>
     <desc lang="en">Episode 2 - [NC]</desc>
+  </programme>
+  <programme start="20260922133000 +0000" stop="20260922140000 +0000" channel="ntv7">
+    <title lang="en">ILHAM KREATIF</title>
+    <desc lang="en">Episode 13 - Ilham Kreatif ialah rancangan praktikal yang memberi inspirasi kepada penonton untuk menyerlahkan kreativiti mereka dan mengubah bahan harian menjadi hiasan rumah, hadiah atau projek peribadi yang menakjubkan. - [NC]</desc>
   </programme>
   <programme start="20260921130000 +0000" stop="20260921142000 +0000" channel="thrill">
     <title lang="en">Ten Minutes to Midnight</title>
@@ -60338,14 +60346,6 @@
     <title lang="en">AKAD TAK DIPINTA</title>
     <desc lang="en">Episode 10 - Lyn meminta Seth menjadi teman lelaki mainan untuk menjauhkan Eden, sementara Seri terus menjaga ibu Seth sambil berkongsi kisah hidupnya. Selepas kerja, Seth menumpangkan Lyn pulang dalam kenderaan yang sama. - [NC]</desc>
   </programme>
-  <programme start="20260922130352 +0000" stop="20260922133127 +0000" channel="fifa">
-    <title lang="en">Hwang Hee-Chan | Life in GB</title>
-    <desc lang="en">Episode 1 - Hwang Hee-Chan for a day, as he learns to adjust to a new life in Wolverhampton, England. - [NC]</desc>
-  </programme>
-  <programme start="20260922133127 +0000" stop="20260922135620 +0000" channel="fifa">
-    <title lang="en">Mana Iwabuchi | Life in Arsenal</title>
-    <desc lang="en">Episode 1 - A diamond of the Japan national women's team who plays for Arsenal in England. - [NC]</desc>
-  </programme>
   <programme start="20260922135620 +0000" stop="20260922142247 +0000" channel="fifa">
     <title lang="en">Kyogo Furuhashi | Life in Glasgow</title>
     <desc lang="en">Episode 1 - Follow the highs and lows of Japanese international Kyogo Furuhashi's first year living in Glasgow, Scotland. - [NC]</desc>
@@ -60410,6 +60410,10 @@
     <title lang="en">Sweden v USA | Group B | FIFA Women's World Cup China PR 1991™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Sweden and USA played at Ying Dong Stadium, Panyu District. - [NC]</desc>
   </programme>
+  <programme start="20260923130806 +0000" stop="20260923134006 +0000" channel="fifa">
+    <title lang="en">A LOOK BACK: FIFA Women's World Cup China PR 1991™</title>
+    <desc lang="en">Episode 1 - USA Highlights in the FIFA Women's World Cup China PR 1991™ - [NC]</desc>
+  </programme>
   <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
@@ -60425,10 +60429,6 @@
   <programme start="20260923100000 +0000" stop="20260923160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260922133000 +0000" stop="20260922140000 +0000" channel="ntv7">
-    <title lang="en">ILHAM KREATIF</title>
-    <desc lang="en">Episode 13 - Ilham Kreatif ialah rancangan praktikal yang memberi inspirasi kepada penonton untuk menyerlahkan kreativiti mereka dan mengubah bahan harian menjadi hiasan rumah, hadiah atau projek peribadi yang menakjubkan. - [NC]</desc>
   </programme>
   <programme start="20260922140000 +0000" stop="20260922150000 +0000" channel="ntv7">
     <title lang="en">MEMBINA JUARA</title>
@@ -60557,6 +60557,10 @@
   <programme start="20260923130000 +0000" stop="20260923133000 +0000" channel="ntv7">
     <title lang="en">GENERASI MADANI 2026</title>
     <desc lang="en">Episode 9 - [NC]</desc>
+  </programme>
+  <programme start="20260923133000 +0000" stop="20260923140000 +0000" channel="ntv7">
+    <title lang="en">SEKOLAHKU 24/25</title>
+    <desc lang="en">Episode 11 - Program ini memaparkan keunikan sesebuah sekolah dan aspek yang menarik, sehingga dapat menjana rasa cinta kepada sekolah dan dijadikan contoh kepada sekolah lain. - [NC]</desc>
   </programme>
   <programme start="20260922143000 +0000" stop="20260922160500 +0000" channel="thrill">
     <title lang="en">Mama Ghost</title>
@@ -61050,10 +61054,6 @@
     <title lang="en">AKAD TAK DIPINTA</title>
     <desc lang="en">Episode 11 - Seri terpaksa menghadapi kerenah Seth di kampungnya yang berlakon menyayangi beliau di hadapan ibunya. Lyn dapat tahu yang Seth sebenarnya telah menjadi suami Seri dan terus menuntut kebenaran tersebut dari Seth di pejabat. - [NC]</desc>
   </programme>
-  <programme start="20260923130806 +0000" stop="20260923134006 +0000" channel="fifa">
-    <title lang="en">A LOOK BACK: FIFA Women's World Cup China PR 1991™</title>
-    <desc lang="en">Episode 1 - USA Highlights in the FIFA Women's World Cup China PR 1991™ - [NC]</desc>
-  </programme>
   <programme start="20260923134006 +0000" stop="20260923153451 +0000" channel="fifa">
     <title lang="en">USA v Colombia | Round of 16 | FIFA Women's World Cup Canada 2015™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between USA and Colombia from Edmonton, 22 June 2015. - [NC]</desc>
@@ -61125,10 +61125,6 @@
   <programme start="20260924100000 +0000" stop="20260924160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260923133000 +0000" stop="20260923140000 +0000" channel="ntv7">
-    <title lang="en">SEKOLAHKU 24/25</title>
-    <desc lang="en">Episode 11 - Program ini memaparkan keunikan sesebuah sekolah dan aspek yang menarik, sehingga dapat menjana rasa cinta kepada sekolah dan dijadikan contoh kepada sekolah lain. - [NC]</desc>
   </programme>
   <programme start="20260923140000 +0000" stop="20260923150000 +0000" channel="ntv7">
     <title lang="en">MEMBINA JUARA</title>
@@ -61257,6 +61253,10 @@
   <programme start="20260924130000 +0000" stop="20260924133000 +0000" channel="ntv7">
     <title lang="en">PERMATA BELANTARA</title>
     <desc lang="en">Episode 5 - [NC]</desc>
+  </programme>
+  <programme start="20260924133000 +0000" stop="20260924140000 +0000" channel="ntv7">
+    <title lang="en">INSANI</title>
+    <desc lang="en">Episode 1 - Program ini bertujuan memfokuskan aspek karamah insaniah dan pendidikan manusiawi melalui penerapan nilai-nilai murni dan bimbingan amalan yang baik dalam kehidupan seharian. - [NC]</desc>
   </programme>
   <programme start="20260923143500 +0000" stop="20260923160000 +0000" channel="thrill">
     <title lang="en">Detective Dee: The Ghosts in Weird Town</title>
@@ -61662,6 +61662,10 @@
     <title lang="en">BOSS NEVER OFF SEASON 2</title>
     <desc lang="en">Episode 12 - [NC]</desc>
   </programme>
+  <programme start="20260925133000 +0000" stop="20260925150000 +0000" channel="8tv">
+    <title lang="en">THE GREATEST OF US</title>
+    <desc lang="en">Episode 5 - Episod ini tiga peserta tetap iaitu Jeryl, Uriah dan Firdhaus—bergabung dengan lima penyanyi tersohor: Michael, Jess, A-Bin, Penny dan Kala. Mereka bersiap memukau penonton menerusi persembahan lagu-lagu ciptaan tempatan yang indah. - [NC]</desc>
+  </programme>
   <programme start="20260924140000 +0000" stop="20260924150000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 584 - [NC]</desc>
@@ -61805,10 +61809,6 @@
   <programme start="20260925100000 +0000" stop="20260925160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260924133000 +0000" stop="20260924140000 +0000" channel="ntv7">
-    <title lang="en">INSANI</title>
-    <desc lang="en">Episode 1 - Program ini bertujuan memfokuskan aspek karamah insaniah dan pendidikan manusiawi melalui penerapan nilai-nilai murni dan bimbingan amalan yang baik dalam kehidupan seharian. - [NC]</desc>
   </programme>
   <programme start="20260924140000 +0000" stop="20260924150000 +0000" channel="ntv7">
     <title lang="en">MEMBINA JUARA</title>
@@ -62241,10 +62241,6 @@
   <programme start="20260925124000 +0000" stop="20260925140000 +0000" channel="tv9">
     <title lang="en">I CAN SEE YOUR VOICE MALAYSIA MUSIM KE 7</title>
     <desc lang="en">Episode 10 - Episod ini hos Izzue Islam &amp; Shiha Zikir menampilkan Harissa Adlynn &amp; Fahimi Rahmat untuk meneka penyanyi sebenar dibantu Sharifah Rose &amp; Ezzrin Loy. Selepas 4 pusingan, penyamar No. 5 Siti Zakirah berjaya membawa pulang RM3000. - [NC]</desc>
-  </programme>
-  <programme start="20260925133000 +0000" stop="20260925150000 +0000" channel="8tv">
-    <title lang="en">THE GREATEST OF US</title>
-    <desc lang="en">Episode 5 - Episod ini tiga peserta tetap iaitu Jeryl, Uriah dan Firdhaus—bergabung dengan lima penyanyi tersohor: Michael, Jess, A-Bin, Penny dan Kala. Mereka bersiap memukau penonton menerusi persembahan lagu-lagu ciptaan tempatan yang indah. - [NC]</desc>
   </programme>
   <programme start="20260925150000 +0000" stop="20260925160000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
@@ -63655,7 +63651,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928123000 +0000" stop="20260928130336 +0000" channel="8tv">
+  <programme start="20260928123000 +0000" stop="20260928133355 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -63738,7 +63734,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130000 +0000" stop="20260928130336 +0000" channel="drama-sangat">
+  <programme start="20260928130000 +0000" stop="20260928133355 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -63857,7 +63853,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130000 +0000" stop="20260928130336 +0000" channel="ntv7">
+  <programme start="20260928130000 +0000" stop="20260928133355 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -64015,7 +64011,12 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928120000 +0000" stop="20260928130336 +0000" channel="tv3">
+  <programme start="20260928120000 +0000" stop="20260928133000 +0000" channel="tv3">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
+  </programme>
+  <programme start="20260928133000 +0000" stop="20260928133355 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -64106,7 +64107,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130000 +0000" stop="20260928130336 +0000" channel="tv9">
+  <programme start="20260928130000 +0000" stop="20260928133355 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
