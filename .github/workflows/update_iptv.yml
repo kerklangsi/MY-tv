@@ -5,6 +5,10 @@ on:
     types: [update-iptv] # Allows external cron webhooks for exact time-based triggers
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
+concurrency:
+  group: update-iptv
+  cancel-in-progress: false
+
 jobs:
   gatekeeper:
     runs-on: ubuntu-latest
@@ -14,7 +18,7 @@ jobs:
     outputs:
       should_run: ${{ steps.check.outputs.should_run }}
     steps:
-      - name: Verify Workflow Queue & Runner Online State
+      - name: Verify Runner Online State
         id: check
         uses: actions/github-script@v9
         env:
@@ -23,7 +27,7 @@ jobs:
           script: |
             const api = process.env.GH_PAT ? new github.constructor({ auth: process.env.GH_PAT }) : github;
 
-            // 1. Check if an idle self-hosted runner is available
+            // Check if at least one self-hosted runner is online
             try {
               const runnerRes = await api.rest.actions.listSelfHostedRunnersForRepo({
                 owner: context.repo.owner,
@@ -38,37 +42,11 @@ jobs:
                 return;
               }
 
-              const idleRunners = onlineRunners.filter((r) => !r.busy);
-              if (idleRunners.length === 0) {
-                console.log('All online self-hosted runners are currently busy. Auto-stopping new run.');
-                core.setOutput('should_run', 'false');
-                return;
-              }
-
-              console.log(`Verified ${idleRunners.length} idle self-hosted runner(s) available out of ${onlineRunners.length} online runner(s).`);
+              console.log(`Verified ${onlineRunners.length} self-hosted runner(s) online.`);
             } catch (err) {
               console.log('Runner online status check skipped (requires GH_PAT secret):', err.message);
             }
 
-            // 2. Check for duplicate running workflow jobs
-            const activeRuns = await github.rest.actions.listWorkflowRunsForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'update_iptv.yml',
-              status: 'in_progress',
-            });
-
-            const currentRunningJob = activeRuns.data.workflow_runs.filter(
-              (r) => r.id !== context.runId
-            );
-
-            if (currentRunningJob.length > 0) {
-              console.log('An IPTV update job is already in progress. Skipping duplicate job.');
-              core.setOutput('should_run', 'false');
-              return;
-            }
-
-            console.log('No duplicate jobs running. Handing off to self-hosted runner.');
             core.setOutput('should_run', 'true');
 
   update-live:
