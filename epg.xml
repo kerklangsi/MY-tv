@@ -59913,10 +59913,6 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 84 - [NC]</desc>
   </programme>
-  <programme start="20260921200000 +0000" stop="20260921210000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 132 - [NC]</desc>
-  </programme>
   <programme start="20260921210000 +0000" stop="20260921220000 +0000" channel="drama-sangat">
     <title lang="en">AKU BUKAN USTAZAH</title>
     <desc lang="en">Episode 9 - Aminah terpaksa menerima pelawaan Adam sebagai majikannya untuk keluar makan bersama. Mereka kemudian terjumpa dengan Sally dan berlaku perbalahan sehingga menyebabkan hubungan Sally dan Aminah menjadi keruh. - [NC]</desc>
@@ -60013,9 +60009,9 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 185 - [NC]</desc>
   </programme>
-  <programme start="20260921183630 +0000" stop="20260921203649 +0000" channel="fifa">
-    <title lang="en">France v Poland | Round of 16 | FIFA World Cup Qatar 2022™ | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full match replay between France and Poland played at Al Thumama Stadium, Doha. - [NC]</desc>
+  <programme start="20260922210000 +0000" stop="20260922220000 +0000" channel="drama-sangat">
+    <title lang="en">SEKALI AKU BAHAGIA</title>
+    <desc lang="en">Episode 14 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
   </programme>
   <programme start="20260921203649 +0000" stop="20260921213909 +0000" channel="fifa">
     <title lang="en">All Goals | FIFA World Cup Qatar 2022™</title>
@@ -60100,6 +60096,10 @@
   <programme start="20260922181046 +0000" stop="20260922205537 +0000" channel="fifa">
     <title lang="en">Netherlands v Sweden | Semi-finals | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Netherlands and Sweden from Lyon, 3 July 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260922205537 +0000" stop="20260922225102 +0000" channel="fifa">
+    <title lang="en">Scotland v Argentina | Group D | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Scotland and Argentina from Paris, 19 June 2019. - [NC]</desc>
   </programme>
   <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -60257,10 +60257,6 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 266 - [NC]</desc>
   </programme>
-  <programme start="20260921193000 +0000" stop="20260921210000 +0000" channel="thrill">
-    <title lang="en">Tear Us Apart</title>
-    <desc lang="en">Episode 1 - After their young daughter’s mysterious disappearance, Drew and Helen retreat to a secluded woodland cottage for therapy. As they struggle to salvage their marriage, isolation fractures their sanity. Haunted by visions and strange events, Helen can no longer tell what is real as her mind unravels. - [NC]</desc>
-  </programme>
   <programme start="20260921210000 +0000" stop="20260921222000 +0000" channel="thrill">
     <title lang="en">Ten Minutes to Midnight</title>
     <desc lang="en">Episode 1 - Radio host Amy is bitten by a mysterious bat, but she returns to the station to host that night’s late-night show. Instead, she is set up and fired by her ruthless boss, then replaced by a newcomer. As a violent storm traps everyone in the station and her mysterious wound worsens, Amy gradually loses control and unleashes a bloody massacre. - [NC]</desc>
@@ -60329,9 +60325,9 @@
     <title lang="en">The Ice Cream Truck</title>
     <desc lang="en">Episode 1 - Mary moves back to her suburban hometown as her husband is relocated there for work. While waiting for her husband in their new house, Mary becomes the target of an evil slasher that stalks the suburbs in an ice-cream truck. She soon learns that the suburbs are not what they seem... - [NC]</desc>
   </programme>
-  <programme start="20260921203000 +0000" stop="20260921210000 +0000" channel="tv3">
-    <title lang="en">KAPSUL SURAH (2018)</title>
-    <desc lang="en">Episode 9 - Bacaan SURAH AL-WAQIAH serta terjemahannya. - [NC]</desc>
+  <programme start="20260922210000 +0000" stop="20260922223000 +0000" channel="thrill">
+    <title lang="en">Painted Face</title>
+    <desc lang="en">Episode 1 - Scholar Wang Huai Qing sells paintings to save his ailing wife. He is attacked by a bird demon along the way but is rescued by Fox demon Xiao Rong. To elude the pursuit, Wang brings Xiao Rong home, sparking a love triangle and at the same time, unfolding an impending love between human and demon. - [NC]</desc>
   </programme>
   <programme start="20260921210000 +0000" stop="20260921213000 +0000" channel="tv3">
     <title lang="en">BACAAN AL-QURAN 2014</title>
@@ -60461,9 +60457,9 @@
     <title lang="en">KAPSUL SURAH (2018)</title>
     <desc lang="en">Episode 1 - Bacaan SURAH AL-FATIHAH serta terjemahannya. - [NC]</desc>
   </programme>
-  <programme start="20260921203000 +0000" stop="20260921210000 +0000" channel="tv9">
-    <title lang="en">AJAK OH IJAL</title>
-    <desc lang="en">Episode 17 - Hari Raya disambut dengan meriah dengan kehadiran semula Mahmud. Mak Jah dan Mahmud mula mengingati kembali kisah percintaan lama mereka. Mahmud ingin merujuk semula pada Mak Jah. - [NC]</desc>
+  <programme start="20260922210000 +0000" stop="20260922213000 +0000" channel="tv3">
+    <title lang="en">BACAAN AL-QURAN 2014</title>
+    <desc lang="en">Episode 6 - Bacaan ayat suci Al-Quran surah Al-Juma'ah oleh Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
   </programme>
   <programme start="20260921210000 +0000" stop="20260921220000 +0000" channel="tv9">
     <title lang="en">MY #QURANTIME 2.0            </title>
@@ -60589,6 +60585,10 @@
     <title lang="en">AJAK OH IJAL</title>
     <desc lang="en">Episode 18 - Sebelum majlis perkahwinan, kawan-kawan KL Razak dan Rizal tak boleh terima hakikat dan merancang untuk berdepan dengan Razak dan Rizal. Razak dan Rizal meminta Amani dan Amina memberi mereka masa untuk selesaikan. - [NC]</desc>
   </programme>
+  <programme start="20260922210000 +0000" stop="20260922220000 +0000" channel="tv9">
+    <title lang="en">MY #QURANTIME 2.0            </title>
+    <desc lang="en">Episode 1379 - Tadabbur Surah Al-Qasas ayat 80-82 bersama Tn Hj Fazrul Ismail dan Jalaluddin Mohd Zaiki. Menghayati kebijaksanaan orang berilmu, iktibar kebinasaan Qarun, serta kesedaran hakikat ketetapan rezeki daripada Allah. - [NC]</desc>
+  </programme>
   <programme start="20260922230000 +0000" stop="20260923000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 55 - [NC]</desc>
@@ -60672,10 +60672,6 @@
   <programme start="20260923170000 +0000" stop="20260923230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 85 - [NC]</desc>
-  </programme>
-  <programme start="20260922210000 +0000" stop="20260922220000 +0000" channel="drama-sangat">
-    <title lang="en">SEKALI AKU BAHAGIA</title>
-    <desc lang="en">Episode 14 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
   </programme>
   <programme start="20260922220000 +0000" stop="20260922230000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -60769,9 +60765,9 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 584 - [NC]</desc>
   </programme>
-  <programme start="20260922205537 +0000" stop="20260922225102 +0000" channel="fifa">
-    <title lang="en">Scotland v Argentina | Group D | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full match replay between Scotland and Argentina from Paris, 19 June 2019. - [NC]</desc>
+  <programme start="20260923210000 +0000" stop="20260923220000 +0000" channel="drama-sangat">
+    <title lang="en">SEKALI AKU BAHAGIA</title>
+    <desc lang="en">Episode 15 - Firas bernikah dengan Delisha setelah Delisha selamatkan Eli dari nyaris dirogol dan Delisya koma sebelum sedar semula. Eli insaf. Kaki Muaz terpaksa dipotong akibat kemalangan yang silap dirancang Naufal untuk Aireen. - [NC]</desc>
   </programme>
   <programme start="20260922225102 +0000" stop="20260923004717 +0000" channel="fifa">
     <title lang="en">Canada v New Zealand | Group E | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
@@ -60977,10 +60973,6 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 267 - [NC]</desc>
   </programme>
-  <programme start="20260922210000 +0000" stop="20260922223000 +0000" channel="thrill">
-    <title lang="en">Painted Face</title>
-    <desc lang="en">Episode 1 - Scholar Wang Huai Qing sells paintings to save his ailing wife. He is attacked by a bird demon along the way but is rescued by Fox demon Xiao Rong. To elude the pursuit, Wang brings Xiao Rong home, sparking a love triangle and at the same time, unfolding an impending love between human and demon. - [NC]</desc>
-  </programme>
   <programme start="20260922223000 +0000" stop="20260923000500 +0000" channel="thrill">
     <title lang="en">Mama Ghost</title>
     <desc lang="en">Episode 1 - In a coastal town, a forbidden romance sparks between Rico and Sisca, and their love unleashes a malevolent spirit. As chilling deaths plague the town, past secrets are being unraveled and the town is possessed by evil and fear. Rico must defy destiny and fight against the evil spirit to save his loved one. - [NC]</desc>
@@ -61041,9 +61033,9 @@
     <title lang="en">Sinister - Live Art Model</title>
     <desc lang="en">Episode 5 - Jing Wen, a struggling drama student, takes on a modelling job to help cover her tuition costs. As she becomes a model for an enigmatic artist specializing in expressive human body sketches, Jing Wen accidentally uncovers a shocking truth, plunging her into a desperate fight for survival. - [NC]</desc>
   </programme>
-  <programme start="20260922210000 +0000" stop="20260922213000 +0000" channel="tv3">
-    <title lang="en">BACAAN AL-QURAN 2014</title>
-    <desc lang="en">Episode 6 - Bacaan ayat suci Al-Quran surah Al-Juma'ah oleh Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
+  <programme start="20260923210000 +0000" stop="20260923223500 +0000" channel="thrill">
+    <title lang="en">Jealousy</title>
+    <desc lang="en">Episode 1 - Model Min dies mysteriously in a hospital rumoured to be haunted. Soon after, her photographer receives eerie phone calls, a writer suffers a bizarre car accident, and Min’s friend suddenly vanishes. As fear spreads, dark secrets and supernatural forces emerge, drawing them into a terrifying nightmare linked to Min’s death. - [NC]</desc>
   </programme>
   <programme start="20260922213000 +0000" stop="20260922223000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -61169,9 +61161,9 @@
     <title lang="en">KAPSUL SURAH (2018)</title>
     <desc lang="en">Episode 5 - Bacaan AYAT KURSI serta terjemahannya. - [NC]</desc>
   </programme>
-  <programme start="20260922210000 +0000" stop="20260922220000 +0000" channel="tv9">
-    <title lang="en">MY #QURANTIME 2.0            </title>
-    <desc lang="en">Episode 1379 - Tadabbur Surah Al-Qasas ayat 80-82 bersama Tn Hj Fazrul Ismail dan Jalaluddin Mohd Zaiki. Menghayati kebijaksanaan orang berilmu, iktibar kebinasaan Qarun, serta kesedaran hakikat ketetapan rezeki daripada Allah. - [NC]</desc>
+  <programme start="20260923210000 +0000" stop="20260923220000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260922220000 +0000" stop="20260922222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -61293,6 +61285,10 @@
     <title lang="en">SUAMIKU MAT PIUN</title>
     <desc lang="en">Episode 1 - Lapan tahun lalu, percintaan Poji dan Nieza ditentang keluarga Nieza kerana latar belakang dan taraf pendidikan Poji rendah. Namun, si kutu novel Nieza percaya bahawa cinta yang terhalang itulah cinta teragung. - [NC]</desc>
   </programme>
+  <programme start="20260923210000 +0000" stop="20260923220000 +0000" channel="tv9">
+    <title lang="en">MY #QURANTIME 2.0            </title>
+    <desc lang="en">Episode 1380 - [NC]</desc>
+  </programme>
   <programme start="20260923230000 +0000" stop="20260924000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 56 - [NC]</desc>
@@ -61376,10 +61372,6 @@
   <programme start="20260924170000 +0000" stop="20260924230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 86 - [NC]</desc>
-  </programme>
-  <programme start="20260923210000 +0000" stop="20260923220000 +0000" channel="drama-sangat">
-    <title lang="en">SEKALI AKU BAHAGIA</title>
-    <desc lang="en">Episode 15 - Firas bernikah dengan Delisha setelah Delisha selamatkan Eli dari nyaris dirogol dan Delisya koma sebelum sedar semula. Eli insaf. Kaki Muaz terpaksa dipotong akibat kemalangan yang silap dirancang Naufal untuk Aireen. - [NC]</desc>
   </programme>
   <programme start="20260923220000 +0000" stop="20260923230000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -61468,6 +61460,10 @@
   <programme start="20260924200000 +0000" stop="20260924210000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 138 - [NC]</desc>
+  </programme>
+  <programme start="20260924210000 +0000" stop="20260924220000 +0000" channel="drama-sangat">
+    <title lang="en">HOSPITAL LOVELINE</title>
+    <desc lang="en">Episode 1 - Hospital Insani menerima seorang doktor baru yang kacak bernama Dr. Arfan Qori. Sophia pula adalah staf rehabilitasi yang disenangi ramai pesakit terutama orang dewasa. Arfan berjumpa dengan kawan-kawan beliau di hospital berkenaan. - [NC]</desc>
   </programme>
   <programme start="20260923214642 +0000" stop="20260923221135 +0000" channel="fifa">
     <title lang="en">Icons of the Women's Game</title>
@@ -61673,10 +61669,6 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 268 - [NC]</desc>
   </programme>
-  <programme start="20260923210000 +0000" stop="20260923223500 +0000" channel="thrill">
-    <title lang="en">Jealousy</title>
-    <desc lang="en">Episode 1 - Model Min dies mysteriously in a hospital rumoured to be haunted. Soon after, her photographer receives eerie phone calls, a writer suffers a bizarre car accident, and Min’s friend suddenly vanishes. As fear spreads, dark secrets and supernatural forces emerge, drawing them into a terrifying nightmare linked to Min’s death. - [NC]</desc>
-  </programme>
   <programme start="20260923223500 +0000" stop="20260924000000 +0000" channel="thrill">
     <title lang="en">Detective Dee: The Ghosts in Weird Town</title>
     <desc lang="en">Episode 1 - Detective Dee investigates a series of terrifying vampire transformations in Youming Town, uncovering a sinister conspiracy masterminded by Prince Li Zhen, who plots to overthrow the empire. Armed with courage and ingenuity, Dee defeats the bloodthirsty vampires and ultimately exposes the prince’s dark ambitions. - [NC]</desc>
@@ -61745,9 +61737,9 @@
     <title lang="en">Sinister - The Virtual Game</title>
     <desc lang="en">Episode 1 - Jia Hao and his friends gather to celebrate his birthday at a villa. However, the festivities take a dark turn when they connect to a deadly VR game in which they must light candles and dodge ghosts to survive. Tragedy strikes as two of his friends fall victim to the escalating horrors within, plunging them all deeper into a chilling nightmare. - [NC]</desc>
   </programme>
-  <programme start="20260923210000 +0000" stop="20260923220000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260924210000 +0000" stop="20260924225500 +0000" channel="thrill">
+    <title lang="en">The Elite of Devils</title>
+    <desc lang="en">Episode 1 - Five university students are assigned a project at a mysterious estate, where they meet Lady Salakjit, an elite socialite with a deadly secret. As her demonic powers surface, their academic trip turns into a frantic struggle for survival against a centuries-old curse of the ruling class. - [NC]</desc>
   </programme>
   <programme start="20260923220000 +0000" stop="20260923222000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -61869,9 +61861,9 @@
     <title lang="en">KAPSUL SURAH (2018)</title>
     <desc lang="en">Episode 10 - Bacaan SURAH AL-KAHFI serta terjemahannya. - [NC]</desc>
   </programme>
-  <programme start="20260923210000 +0000" stop="20260923220000 +0000" channel="tv9">
-    <title lang="en">MY #QURANTIME 2.0            </title>
-    <desc lang="en">Episode 1380 - [NC]</desc>
+  <programme start="20260924210000 +0000" stop="20260924220000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260923220000 +0000" stop="20260923222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -61989,6 +61981,10 @@
     <title lang="en">SUAMIKU MAT PIUN</title>
     <desc lang="en">Episode 2 - Selepas melalui pelbagai dugaan Poji dan Nieza pulang dan berdepan dengan keluarga masing-masing. Mereka berbincang sehingga mencapai kata muafakat dan akhirnya selamat diijabkabulkan. - [NC]</desc>
   </programme>
+  <programme start="20260924210000 +0000" stop="20260924220000 +0000" channel="tv9">
+    <title lang="en">MY #QURANTIME 2.0            </title>
+    <desc lang="en">Episode 1381 - [NC]</desc>
+  </programme>
   <programme start="20260924230000 +0000" stop="20260925000000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
     <desc lang="en">Episode 57 - [NC]</desc>
@@ -62077,10 +62073,6 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 87 - [NC]</desc>
   </programme>
-  <programme start="20260924210000 +0000" stop="20260924220000 +0000" channel="drama-sangat">
-    <title lang="en">HOSPITAL LOVELINE</title>
-    <desc lang="en">Episode 1 - Hospital Insani menerima seorang doktor baru yang kacak bernama Dr. Arfan Qori. Sophia pula adalah staf rehabilitasi yang disenangi ramai pesakit terutama orang dewasa. Arfan berjumpa dengan kawan-kawan beliau di hospital berkenaan. - [NC]</desc>
-  </programme>
   <programme start="20260924220000 +0000" stop="20260924230000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">Episode 52 - [NC]</desc>
@@ -62157,6 +62149,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 96 - [NC]</desc>
   </programme>
+  <programme start="20260925210000 +0000" stop="20260925220000 +0000" channel="drama-sangat">
+    <title lang="en">HOSPITAL LOVELINE</title>
+    <desc lang="en">Episode 2 - Opah dibawa ke hospital dan dirawat oleh doktor Arfan dan Sophia juga turut menyantuni Opahnya semasa rawatan. Opah cuba untuk melaga-lagakan Sophia dengan doktor Arfan supaya boleh berkenalan antara satu sama lain. - [NC]</desc>
+  </programme>
   <programme start="20260924223343 +0000" stop="20260925005017 +0000" channel="fifa">
     <title lang="en">U20 FIFA World Cup, Women 2026 - Korean People's Republic U20 v Costa Rica U20</title>
     <desc lang="en">Episode 1 - U20 FIFA World Cup, Women 2026 - Korean People's Republic U20 v Costa Rica U20 - [NC]</desc>
@@ -62200,6 +62196,10 @@
   <programme start="20260925183311 +0000" stop="20260925203322 +0000" channel="fifa">
     <title lang="en">Spain v USA | Round of 16 | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Spain and USA played at Stade Auguste Delaune - [NC]</desc>
+  </programme>
+  <programme start="20260925203322 +0000" stop="20260925223100 +0000" channel="fifa">
+    <title lang="en">Norway v Nigeria | Group A | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Norway and Nigeria from Reims, 8 June 2019. - [NC]</desc>
   </programme>
   <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
@@ -62321,10 +62321,6 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 269 - [NC]</desc>
   </programme>
-  <programme start="20260924210000 +0000" stop="20260924225500 +0000" channel="thrill">
-    <title lang="en">The Elite of Devils</title>
-    <desc lang="en">Episode 1 - Five university students are assigned a project at a mysterious estate, where they meet Lady Salakjit, an elite socialite with a deadly secret. As her demonic powers surface, their academic trip turns into a frantic struggle for survival against a centuries-old curse of the ruling class. - [NC]</desc>
-  </programme>
   <programme start="20260924225500 +0000" stop="20260925003000 +0000" channel="thrill">
     <title lang="en">The Getaway</title>
     <desc lang="en">Episode 1 - Three KOLs embark on a live-streaming trip to a remote island. However, they are deceived by a mysterious old woman who traps them, intending to find brides for her disabled grandsons. As they realise they have been captured, they must race against time to escape this nightmare island. - [NC]</desc>
@@ -62397,9 +62393,9 @@
     <title lang="en">Sinister - Luk Krok</title>
     <desc lang="en">Episode 2 - Si Nan and her husband travel to Kuala Lumpur for a vacation to relieve her pregnancy stress. However, she soon uncovers his evil plan to turn their child into a 'Luk Krok' for profit, which puts her in grave danger. With the help of the hotel ghosts, she manages to flee and alert the police to arrest him, finally giving birth to her child. - [NC]</desc>
   </programme>
-  <programme start="20260924210000 +0000" stop="20260924220000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260925210000 +0000" stop="20260925224000 +0000" channel="thrill">
+    <title lang="en">Mid-night Two</title>
+    <desc lang="en">Episode 1 - Yi Cheng and his friends venture into a haunted mountain that hides an ancient corpse and an eternal ghostly flame. No one who enters the mountain ever returns and at 2:30 AM, Yi Cheng’s friends vanish one by one. While searching for them in the eerie forest, Yi Cheng enters a realm of infinite reincarnation, facing a series of terrifying events… - [NC]</desc>
   </programme>
   <programme start="20260924220000 +0000" stop="20260924222000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -62533,9 +62529,9 @@
     <title lang="en">KAPSUL SURAH (2018)</title>
     <desc lang="en">Episode 7 - Bacaan SURAH YAASIN serta terjemahannya. - [NC]</desc>
   </programme>
-  <programme start="20260924210000 +0000" stop="20260924220000 +0000" channel="tv9">
-    <title lang="en">MY #QURANTIME 2.0            </title>
-    <desc lang="en">Episode 1381 - [NC]</desc>
+  <programme start="20260925210000 +0000" stop="20260925220000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260924220000 +0000" stop="20260924222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -62657,6 +62653,10 @@
     <title lang="en">JET LAG</title>
     <desc lang="en">Episode 1 - Episod ini Iedil Putra menyempurnakan 72 cabaran di 8 buah negara demi tiket festival &quot;Big Day Out&quot;. Mula menjelajah Istanbul dengan RM1,000 dan misi khas, mampukah beliau melepasi ujian penuh rintangan ini? - [NC]</desc>
   </programme>
+  <programme start="20260925210000 +0000" stop="20260925220000 +0000" channel="tv9">
+    <title lang="en">MY #QURANTIME 2.0            </title>
+    <desc lang="en">Episode 1382 - [NC]</desc>
+  </programme>
   <programme start="20260925230000 +0000" stop="20260925234500 +0000" channel="8tv">
     <title lang="en">PROUD OF YOU (301-600)</title>
     <desc lang="en">Episode 499 - Qianna/ Xiao Hai memberitahu Yunyun dan Zixian tentang pertengkaran mereka. Yunyun membawa keluar Xiao Ai secara paksa dari bilik Zixian. Dia mengancam Xiao Ai dan mendedahkan identitinya. - [NC]</desc>
@@ -62741,10 +62741,6 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 88 - [NC]</desc>
   </programme>
-  <programme start="20260925210000 +0000" stop="20260925220000 +0000" channel="drama-sangat">
-    <title lang="en">HOSPITAL LOVELINE</title>
-    <desc lang="en">Episode 2 - Opah dibawa ke hospital dan dirawat oleh doktor Arfan dan Sophia juga turut menyantuni Opahnya semasa rawatan. Opah cuba untuk melaga-lagakan Sophia dengan doktor Arfan supaya boleh berkenalan antara satu sama lain. - [NC]</desc>
-  </programme>
   <programme start="20260925220000 +0000" stop="20260925230000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 32 - [NC]</desc>
@@ -62821,9 +62817,9 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 127 - [NC]</desc>
   </programme>
-  <programme start="20260925203322 +0000" stop="20260925223100 +0000" channel="fifa">
-    <title lang="en">Norway v Nigeria | Group A | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full match replay between Norway and Nigeria from Reims, 8 June 2019. - [NC]</desc>
+  <programme start="20260926210000 +0000" stop="20260926220000 +0000" channel="drama-sangat">
+    <title lang="en">HOSPITAL LOVELINE</title>
+    <desc lang="en">Episode 3 - Seorang doktor pakar jantung yang mempunyai agendanya tersendiri cuba mempengaruhi seorang pesakit untuk mengulangi satu prosedur jantung. Doktor Arfan dan Sophia mula rapat setelah Sophia menjadi jurupulih beliau. - [NC]</desc>
   </programme>
   <programme start="20260925223100 +0000" stop="20260926004227 +0000" channel="fifa">
     <title lang="en">Japan v Sweden | Quarter-final | FIFA Women's World Cup 2023 | Full Match Replay</title>
@@ -62985,10 +62981,6 @@
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 270 - [NC]</desc>
   </programme>
-  <programme start="20260925210000 +0000" stop="20260925224000 +0000" channel="thrill">
-    <title lang="en">Mid-night Two</title>
-    <desc lang="en">Episode 1 - Yi Cheng and his friends venture into a haunted mountain that hides an ancient corpse and an eternal ghostly flame. No one who enters the mountain ever returns and at 2:30 AM, Yi Cheng’s friends vanish one by one. While searching for them in the eerie forest, Yi Cheng enters a realm of infinite reincarnation, facing a series of terrifying events… - [NC]</desc>
-  </programme>
   <programme start="20260925224000 +0000" stop="20260926001000 +0000" channel="thrill">
     <title lang="en">Evie</title>
     <desc lang="en">Episode 1 - When young Evie discovers a cursed necklace washed up on the beach, she is unaware of the malevolent force tied to it. As the necklace's dark power begins to grip her, she inadvertently awakens a deadly water demon intent on claiming her and everyone she holds dear. - [NC]</desc>
@@ -63065,9 +63057,9 @@
     <title lang="en">Sinister - The Gates of Hell</title>
     <desc lang="en">Episode 3 - Artiste Yin Qing enters Hell's Gate through a supernatural TV show and reunites with her late friend Mei Qi. At Mei Qi's gravesite, Yin Qing encounters Mei Qi's husband, Dong Sheng, and a series of mysterious incidents unfold. She then brings Dong Sheng onto the show, where Mei Qi exposes his infidelity and reveals the conspiracy behind her death. - [NC]</desc>
   </programme>
-  <programme start="20260925210000 +0000" stop="20260925220000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
+  <programme start="20260926210000 +0000" stop="20260926224000 +0000" channel="thrill">
+    <title lang="en">Fate Jealous Greed</title>
+    <desc lang="en">Episode 1 - The film consists of three short horror stories: a man tries to survive after he received a haunted mail predicting his death; while a man mourns the death of his beloved wife, she becomes a ghost and tries to communicate with him; three brothers clash over the care options of their elderly mother during dinner, leading to a terrifying murder. - [NC]</desc>
   </programme>
   <programme start="20260925220000 +0000" stop="20260925222000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -63209,9 +63201,9 @@
     <title lang="en">KAPSUL SURAH (2018)</title>
     <desc lang="en">Episode 8 - Bacaan SURAH AL-MULK serta terjemahannya. - [NC]</desc>
   </programme>
-  <programme start="20260925210000 +0000" stop="20260925220000 +0000" channel="tv9">
-    <title lang="en">MY #QURANTIME 2.0            </title>
-    <desc lang="en">Episode 1382 - [NC]</desc>
+  <programme start="20260926210000 +0000" stop="20260926213000 +0000" channel="tv3">
+    <title lang="en">BACAAN AL-QURAN 2014</title>
+    <desc lang="en">Episode 1 - Bacaan ayat suci Al-Quran surah Al-Fatihah oleh Ustaz Ahmad Tirmizi Hj Ali &amp; Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
   </programme>
   <programme start="20260925220000 +0000" stop="20260925222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -63321,6 +63313,10 @@
     <title lang="en">HERO OVEN 2017</title>
     <desc lang="en">Episode 5 - Enam peserta bersaing menyiapkan dua resipi, Strawberry Shortcake dan Biscotti, untuk penilaian Chef Fikree dan Chef Sarah. Martin akhirnya berjaya menyerlah dan terpilih sebagai &quot;Hero of the Week&quot;. - [NC]</desc>
   </programme>
+  <programme start="20260926210000 +0000" stop="20260926220000 +0000" channel="tv9">
+    <title lang="en">MY #QURANTIME 2.0            </title>
+    <desc lang="en">Episode 1383 - [NC]</desc>
+  </programme>
   <programme start="20260926230000 +0000" stop="20260926234500 +0000" channel="8tv">
     <title lang="en">PROUD OF YOU (301-600)</title>
     <desc lang="en">Episode 501 - Ta Li menemani Pi Xuen ke bilik mayat Thong disimpan. Pihak polis membawa Shanhe ke balai polis untuk siasatan tentang kematian Thong dan kecederaan San Hao. Liu mengaku kepada polis tentang pembunuh Thong dan San Hao. - [NC]</desc>
@@ -63409,10 +63405,6 @@
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
     <desc lang="en">Episode 89 - [NC]</desc>
   </programme>
-  <programme start="20260926210000 +0000" stop="20260926220000 +0000" channel="drama-sangat">
-    <title lang="en">HOSPITAL LOVELINE</title>
-    <desc lang="en">Episode 3 - Seorang doktor pakar jantung yang mempunyai agendanya tersendiri cuba mempengaruhi seorang pesakit untuk mengulangi satu prosedur jantung. Doktor Arfan dan Sophia mula rapat setelah Sophia menjadi jurupulih beliau. - [NC]</desc>
-  </programme>
   <programme start="20260926220000 +0000" stop="20260926230000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 765 - [NC]</desc>
@@ -63488,7 +63480,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927203000 +0000" stop="20260927203158 +0000" channel="drama-sangat">
+  <programme start="20260927203000 +0000" stop="20260927210211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -63664,14 +63656,10 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927203000 +0000" stop="20260927203158 +0000" channel="ntv7">
+  <programme start="20260927203000 +0000" stop="20260927210211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
-  </programme>
-  <programme start="20260926210000 +0000" stop="20260926224000 +0000" channel="thrill">
-    <title lang="en">Fate Jealous Greed</title>
-    <desc lang="en">Episode 1 - The film consists of three short horror stories: a man tries to survive after he received a haunted mail predicting his death; while a man mourns the death of his beloved wife, she becomes a ghost and tries to communicate with him; three brothers clash over the care options of their elderly mother during dinner, leading to a terrifying murder. - [NC]</desc>
   </programme>
   <programme start="20260926224000 +0000" stop="20260927001000 +0000" channel="thrill">
     <title lang="en">The Windmill Massacre</title>
@@ -63741,9 +63729,9 @@
     <title lang="en">Sinister - Girlfriend</title>
     <desc lang="en">Episode 4 - Bullied by his coworkers, the lonely Ah Zhen turns to the internet in search of his ideal girl. However, when Mina, the woman of his dreams, suddenly enters his life, a series of unexpected events begins to unfold. - [NC]</desc>
   </programme>
-  <programme start="20260926210000 +0000" stop="20260926213000 +0000" channel="tv3">
-    <title lang="en">BACAAN AL-QURAN 2014</title>
-    <desc lang="en">Episode 1 - Bacaan ayat suci Al-Quran surah Al-Fatihah oleh Ustaz Ahmad Tirmizi Hj Ali &amp; Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
+  <programme start="20260927210000 +0000" stop="20260927215500 +0000" channel="thrill">
+    <title lang="en">3AM - The Campus</title>
+    <desc lang="en">Episode 2 - A school girl joins two internet content creators in a horror video project filmed in an old building behind their school. The trio encounters a bullying gang and as events unfold, it becomes clear that the girl holds a personal grudge against the gang and is blinded by hatred to exercise justice, even if it means sacrificing the innocents… - [NC]</desc>
   </programme>
   <programme start="20260926213000 +0000" stop="20260926223000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -63889,9 +63877,9 @@
     <title lang="en">KAPSUL SURAH (2018)</title>
     <desc lang="en">Episode 7 - Bacaan SURAH YAASIN serta terjemahannya. - [NC]</desc>
   </programme>
-  <programme start="20260926210000 +0000" stop="20260926220000 +0000" channel="tv9">
-    <title lang="en">MY #QURANTIME 2.0            </title>
-    <desc lang="en">Episode 1383 - [NC]</desc>
+  <programme start="20260927210000 +0000" stop="20260927213000 +0000" channel="tv3">
+    <title lang="en">BACAAN AL-QURAN 2014</title>
+    <desc lang="en">Episode 1 - Bacaan ayat suci Al-Quran surah Al-Fatihah oleh Ustaz Ahmad Tirmizi Hj Ali &amp; Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
   </programme>
   <programme start="20260926220000 +0000" stop="20260926222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -64005,6 +63993,10 @@
     <title lang="en">KISAH BENAR TRAGEDI ( SS 2 )</title>
     <desc lang="en">Episode 6 - SEHIDUP SEMATI.  Tan Boon Chai, ahli kumpulan kongsi gelap yang terlibat dengan kes pemerasan wang perlindungan, mati ditikam oleh rakannya sendiri selepas ditangkap dan disoal siasat oleh pihak polis. - [NC]</desc>
   </programme>
+  <programme start="20260927210000 +0000" stop="20260927220000 +0000" channel="tv9">
+    <title lang="en">MY #QURANTIME 2.0            </title>
+    <desc lang="en">Episode 1384 - [NC]</desc>
+  </programme>
   <programme start="20260927230000 +0000" stop="20260928003000 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
@@ -64075,87 +64067,87 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928200000 +0000" stop="20260928203158 +0000" channel="8tv">
+  <programme start="20260928200000 +0000" stop="20260928210211 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927203158 +0000" stop="20260927220158 +0000" channel="drama-sangat">
+  <programme start="20260927210211 +0000" stop="20260927223211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927220158 +0000" stop="20260927233158 +0000" channel="drama-sangat">
+  <programme start="20260927223211 +0000" stop="20260928000211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927233158 +0000" stop="20260928010158 +0000" channel="drama-sangat">
+  <programme start="20260928000211 +0000" stop="20260928013211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928010158 +0000" stop="20260928023158 +0000" channel="drama-sangat">
+  <programme start="20260928013211 +0000" stop="20260928030211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928023158 +0000" stop="20260928040158 +0000" channel="drama-sangat">
+  <programme start="20260928030211 +0000" stop="20260928043211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928040158 +0000" stop="20260928053158 +0000" channel="drama-sangat">
+  <programme start="20260928043211 +0000" stop="20260928060211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928053158 +0000" stop="20260928070158 +0000" channel="drama-sangat">
+  <programme start="20260928060211 +0000" stop="20260928073211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928070158 +0000" stop="20260928083158 +0000" channel="drama-sangat">
+  <programme start="20260928073211 +0000" stop="20260928090211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928083158 +0000" stop="20260928100158 +0000" channel="drama-sangat">
+  <programme start="20260928090211 +0000" stop="20260928103211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928100158 +0000" stop="20260928113158 +0000" channel="drama-sangat">
+  <programme start="20260928103211 +0000" stop="20260928120211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928113158 +0000" stop="20260928130158 +0000" channel="drama-sangat">
+  <programme start="20260928120211 +0000" stop="20260928133211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130158 +0000" stop="20260928143158 +0000" channel="drama-sangat">
+  <programme start="20260928133211 +0000" stop="20260928150211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928143158 +0000" stop="20260928160158 +0000" channel="drama-sangat">
+  <programme start="20260928150211 +0000" stop="20260928163211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928160158 +0000" stop="20260928173158 +0000" channel="drama-sangat">
+  <programme start="20260928163211 +0000" stop="20260928180211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928173158 +0000" stop="20260928190158 +0000" channel="drama-sangat">
+  <programme start="20260928180211 +0000" stop="20260928193211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928190158 +0000" stop="20260928203158 +0000" channel="drama-sangat">
+  <programme start="20260928193211 +0000" stop="20260928210211 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -64192,89 +64184,85 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20260927203158 +0000" stop="20260927220158 +0000" channel="ntv7">
+  <programme start="20260927210211 +0000" stop="20260927223211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927220158 +0000" stop="20260927233158 +0000" channel="ntv7">
+  <programme start="20260927223211 +0000" stop="20260928000211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927233158 +0000" stop="20260928010158 +0000" channel="ntv7">
+  <programme start="20260928000211 +0000" stop="20260928013211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928010158 +0000" stop="20260928023158 +0000" channel="ntv7">
+  <programme start="20260928013211 +0000" stop="20260928030211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928023158 +0000" stop="20260928040158 +0000" channel="ntv7">
+  <programme start="20260928030211 +0000" stop="20260928043211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928040158 +0000" stop="20260928053158 +0000" channel="ntv7">
+  <programme start="20260928043211 +0000" stop="20260928060211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928053158 +0000" stop="20260928070158 +0000" channel="ntv7">
+  <programme start="20260928060211 +0000" stop="20260928073211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928070158 +0000" stop="20260928083158 +0000" channel="ntv7">
+  <programme start="20260928073211 +0000" stop="20260928090211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928083158 +0000" stop="20260928100158 +0000" channel="ntv7">
+  <programme start="20260928090211 +0000" stop="20260928103211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928100158 +0000" stop="20260928113158 +0000" channel="ntv7">
+  <programme start="20260928103211 +0000" stop="20260928120211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928113158 +0000" stop="20260928130158 +0000" channel="ntv7">
+  <programme start="20260928120211 +0000" stop="20260928133211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130158 +0000" stop="20260928143158 +0000" channel="ntv7">
+  <programme start="20260928133211 +0000" stop="20260928150211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928143158 +0000" stop="20260928160158 +0000" channel="ntv7">
+  <programme start="20260928150211 +0000" stop="20260928163211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928160158 +0000" stop="20260928173158 +0000" channel="ntv7">
+  <programme start="20260928163211 +0000" stop="20260928180211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928173158 +0000" stop="20260928190158 +0000" channel="ntv7">
+  <programme start="20260928180211 +0000" stop="20260928193211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928190158 +0000" stop="20260928203158 +0000" channel="ntv7">
+  <programme start="20260928193211 +0000" stop="20260928210211 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
-  </programme>
-  <programme start="20260927210000 +0000" stop="20260927215500 +0000" channel="thrill">
-    <title lang="en">3AM - The Campus</title>
-    <desc lang="en">Episode 2 - A school girl joins two internet content creators in a horror video project filmed in an old building behind their school. The trio encounters a bullying gang and as events unfold, it becomes clear that the girl holds a personal grudge against the gang and is blinded by hatred to exercise justice, even if it means sacrificing the innocents… - [NC]</desc>
   </programme>
   <programme start="20260927215500 +0000" stop="20260927232000 +0000" channel="thrill">
     <title lang="en">Chop Chop</title>
@@ -64348,9 +64336,9 @@
     <title lang="en">3AM - The Campsite</title>
     <desc lang="en">Episode 4 - A group of friends goes on a camping trip inside a supposedly haunted forest despite warning not to do so. As night falls and camps are set, the complicated relationships of lust and love between them are exposed, triggering a series of paranormal events that punishes them.  When dawn breaks, who will get out of the forest alive? - [NC]</desc>
   </programme>
-  <programme start="20260927210000 +0000" stop="20260927213000 +0000" channel="tv3">
-    <title lang="en">BACAAN AL-QURAN 2014</title>
-    <desc lang="en">Episode 1 - Bacaan ayat suci Al-Quran surah Al-Fatihah oleh Ustaz Ahmad Tirmizi Hj Ali &amp; Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
+  <programme start="20260928210000 +0000" stop="20260928223000 +0000" channel="thrill">
+    <title lang="en">Creepy Pasta</title>
+    <desc lang="en">Episode 1 - Amnesiac Marco awakens imprisoned in an abandoned house surrounded by corpses. Trapped inside, he is forced by a mysterious mastermind to play ten disturbing videos on a flash drive. As deadly curses unfold, he is plagued by terrifying visions while his body, memory and life slowly unravel. With the countdown to death underway, can he survive? - [NC]</desc>
   </programme>
   <programme start="20260927213000 +0000" stop="20260927223000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -64426,14 +64414,15 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928193000 +0000" stop="20260928203158 +0000" channel="tv3">
+  <programme start="20260928193000 +0000" stop="20260928210000 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927210000 +0000" stop="20260927220000 +0000" channel="tv9">
-    <title lang="en">MY #QURANTIME 2.0            </title>
-    <desc lang="en">Episode 1384 - [NC]</desc>
+  <programme start="20260928210000 +0000" stop="20260928210211 +0000" channel="tv3">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
   </programme>
   <programme start="20260927220000 +0000" stop="20260927233000 +0000" channel="tv9">
     <title lang="en">No listing available</title>
@@ -64510,7 +64499,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928203000 +0000" stop="20260928203158 +0000" channel="tv9">
+  <programme start="20260928203000 +0000" stop="20260928210211 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
