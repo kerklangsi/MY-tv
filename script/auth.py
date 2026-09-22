@@ -58,28 +58,25 @@ def get_device_id():
             pass
     return dev_id
 
-# Retrieve or auto-fetch MYTV AES encryption key
+# Static MYTV AES-128 key embedded in the MYTV web app (public, not a secret)
+_MYTV_STATIC_ME_KEY = "u6nCKz4ogW09a27lOzGcYkdJP9QJ6ABg"
+
+# Retrieve MYTV AES encryption key (from auth/me_key file, env var, or static fallback)
 def get_me_key():
+    # 1. From auth/me_key file (written by workflow from ME_KEY secret)
     key_str = _read_auth_file("me_key")
     if key_str:
         return key_str.encode('utf-8')[:32]
 
-    print("[MYTV Auth] Fetching MYTV AES decryption key from web API...")
-    try:
-        req = urllib.request.Request("https://co3y6iwoio.tenbytecdn.com/api/v1/public/config", headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read().decode('utf-8'))
-            fetched_key = data.get('key') or data.get('me_key') or data.get('data', {}).get('me_key') or ""
-            if fetched_key:
-                os.makedirs(AUTH_DIR, exist_ok=True)
-                with open(os.path.join(AUTH_DIR, "me_key"), "w", encoding="utf-8") as f:
-                    f.write(fetched_key)
-                print("[MYTV Auth] Successfully fetched and saved ME_KEY to auth/me_key")
-                return fetched_key.encode('utf-8')[:32]
-    except Exception as e:
-        print(f"[MYTV Auth Warning] Dynamic web key fetch encountered: {e}")
+    # 2. From ME_KEY environment variable (set in GitHub Actions)
+    env_key = os.environ.get("ME_KEY", "").strip()
+    if env_key:
+        print("[MYTV Auth] Using ME_KEY from environment variable.")
+        return env_key.encode('utf-8')[:32]
 
-    return b""
+    # 3. Static fallback (MYTV public key embedded in web app)
+    print("[MYTV Auth] Using static ME_KEY fallback.")
+    return _MYTV_STATIC_ME_KEY.encode('utf-8')[:32]
 
 USER_AGENT = get_user_agent()
 DEVICE_ID = get_device_id()

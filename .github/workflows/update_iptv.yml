@@ -66,6 +66,15 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install cryptography
 
+      - name: Restore auth files from secrets
+        env:
+          TONTON_TOKEN: ${{ secrets.TONTON_TOKEN }}
+          ME_KEY: ${{ secrets.ME_KEY }}
+        run: |
+          mkdir -p auth
+          [ -n "$TONTON_TOKEN" ] && echo "$TONTON_TOKEN" > auth/tonton || true
+          [ -n "$ME_KEY" ] && echo "$ME_KEY" > auth/me_key || true
+
       - name: Run Live TV & EPG Generator
         env:
           PYTHONUNBUFFERED: "1"
@@ -93,6 +102,15 @@ jobs:
 
       - name: Install dependencies
         run: python3 -m pip install cryptography
+
+      - name: Restore auth files from secrets
+        env:
+          TONTON_TOKEN: ${{ secrets.TONTON_TOKEN }}
+          ME_KEY: ${{ secrets.ME_KEY }}
+        run: |
+          mkdir -p auth
+          [ -n "$TONTON_TOKEN" ] && echo "$TONTON_TOKEN" > auth/tonton || true
+          [ -n "$ME_KEY" ] && echo "$ME_KEY" > auth/me_key || true
 
       - name: Run VOD Generator
         env:
