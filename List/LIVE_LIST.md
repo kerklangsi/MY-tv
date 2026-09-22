@@ -1,6 +1,6 @@
 # 📡 Live TV & Radio Channels Directory
 
-**Total Live Channels:** 54 (53 Playable, 1 VIP)
+**Total Live Channels:** 54 (46 Playable, 8 VIP)
 
 > Master Playlists: [`playlist.m3u`](../playlist.m3u) | [`playlist.m3u8`](../playlist.m3u8) | [`all.m3u`](../all.m3u) | [`all.m3u8`](../all.m3u8)
 > EPG Schedule: [`epg.xml`](../epg.xml) | [`epg.xml.gz`](../epg.xml.gz)
@@ -41,18 +41,18 @@
 ---
 
 ## Tonton Live
-**Total Channels:** 8 (7 Playable, 1 VIP)
+**Total Channels:** 8 (0 Playable, 8 VIP)
 
 | CH # | Logo | Channel Name | EPG ID | Stream Link |
 |:---:|:---:|---|---|---|
-| 103 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420323:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="TV3" /> | **TV3** | `tv3` | [Play Stream](https://kerklangsi.github.io/MY-tv/streams/live_tonton/tv3.m3u8) |
-| 107 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420324:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="NTV7" /> | **NTV7** | `ntv7` | [Play Stream](https://kerklangsi.github.io/MY-tv/streams/live_tonton/ntv7.m3u8) |
-| 108 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420325:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="8TV" /> | **8TV** | `8tv` | [Play Stream](https://kerklangsi.github.io/MY-tv/streams/live_tonton/8tv.m3u8) |
-| 109 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420326:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="TV9" /> | **TV9** | `tv9` | [Play Stream](https://kerklangsi.github.io/MY-tv/streams/live_tonton/tv9.m3u8) |
-| 116 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420342:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="Drama Sangat" /> | **Drama Sangat** | `drama-sangat` | [Play Stream](https://kerklangsi.github.io/MY-tv/streams/live_tonton/drama-sangat.m3u8) |
+| 103 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420323:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="TV3" /> | **TV3** | `tv3` | 🔒 *(Requires Tonton UP / VIP)* |
+| 107 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420324:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="NTV7" /> | **NTV7** | `ntv7` | 🔒 *(Requires Tonton UP / VIP)* |
+| 108 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420325:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="8TV" /> | **8TV** | `8tv` | 🔒 *(Requires Tonton UP / VIP)* |
+| 109 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420326:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="TV9" /> | **TV9** | `tv9` | 🔒 *(Requires Tonton UP / VIP)* |
+| 116 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6420342:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="Drama Sangat" /> | **Drama Sangat** | `drama-sangat` | 🔒 *(Requires Tonton UP / VIP)* |
 | 119 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6522423:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="thrill" /> | **thrill** | `thrill` | 🔒 *(Requires Tonton UP / VIP)* |
-| 120 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6576795:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="FIFA+" /> | **FIFA+** | `fifa` | [Play Stream](https://kerklangsi.github.io/MY-tv/streams/live_tonton/fifa.m3u8) |
-| 121 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6596743:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="MPL Malaysia" /> | **MPL Malaysia** | `mpl-malaysia` | [Play Stream](https://kerklangsi.github.io/MY-tv/streams/live_tonton/mpl-malaysia.m3u8) |
+| 120 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6576795:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="FIFA+" /> | **FIFA+** | `fifa` | 🔒 *(Requires Tonton UP / VIP)* |
+| 121 | <img src="https://headend-api.tonton.com.my/v600/imageHelper.php?id=6596743:378:CHANNEL:IMAGE:png&w=500&appID=TONTON" width="40" height="40" alt="MPL Malaysia" /> | **MPL Malaysia** | `mpl-malaysia` | 🔒 *(Requires Tonton UP / VIP)* |
 
 ---
 
