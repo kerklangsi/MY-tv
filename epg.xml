@@ -58425,10 +58425,6 @@
   <programme start="20260927150000 +0000" stop="20260927160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260921014500 +0000" stop="20260921023500 +0000" channel="8tv">
-    <title lang="en">GREAT TIMES</title>
-    <desc lang="en">Episode 849 - Jia Hui memberitahu Jia Mei bahawa dia berasa pelik dengan Ruo Lan baru-baru ini. Jia Mei menemui foto Chee Kan dan Ruo Lan di atas katil. Dia kemudian berhadapan dengan Ruo Lan. - [NC]</desc>
-  </programme>
   <programme start="20260921023500 +0000" stop="20260921033000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -58513,9 +58509,9 @@
     <title lang="en">GREAT TIMES</title>
     <desc lang="en">Episode 850 - Jia Mei memutuskan hubungannya dengan Ruo Lan dan mahu bercerai. Chee Kan tiba untuk meminta maaf daripada Jia Mei dan Xing Mei. Jia Mei berteduh di kediaman Shu Shu. Xing Mei datang menemui Shu Shu membawa berita. - [NC]</desc>
   </programme>
-  <programme start="20260921020000 +0000" stop="20260921030000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 98 - [NC]</desc>
+  <programme start="20260922023500 +0000" stop="20260922033000 +0000" channel="8tv">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260921030000 +0000" stop="20260921040000 +0000" channel="drama-sangat">
     <title lang="en">AKU BUKAN USTAZAH</title>
@@ -58613,9 +58609,14 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 132 - [NC]</desc>
   </programme>
-  <programme start="20260921014837 +0000" stop="20260921040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260922030000 +0000" stop="20260922040000 +0000" channel="drama-sangat">
+    <title lang="en">AKU BUKAN USTAZAH</title>
+    <desc lang="en">Episode 9 - Aminah terpaksa menerima pelawaan Adam sebagai majikannya untuk keluar makan bersama. Mereka kemudian terjumpa dengan Sally dan berlaku perbalahan sehingga menyebabkan hubungan Sally dan Aminah menjadi keruh. - [NC]</desc>
+  </programme>
+  <programme start="20260921030332 +0000" stop="20260921040000 +0000" channel="fifa">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
   </programme>
   <programme start="20260921040000 +0000" stop="20260921100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
@@ -58625,13 +58626,53 @@
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="fifa">
+  <programme start="20260921160000 +0000" stop="20260921173515 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260921173515 +0000" stop="20260921180555 +0000" channel="fifa">
+    <title lang="en">The Best of FIFA Women's World Cup Germany 2011™</title>
+    <desc lang="en">Episode 1 - A showcase of the tournament’s top goals, assists, and award-winning moments from Germany 2011. - [NC]</desc>
+  </programme>
+  <programme start="20260921180555 +0000" stop="20260921183630 +0000" channel="fifa">
+    <title lang="en">Lucy Bronze | Icons</title>
+    <desc lang="en">Episode 1 - The inspirational tale of England defender Lucy Bronze. - [NC]</desc>
+  </programme>
+  <programme start="20260921183630 +0000" stop="20260921203649 +0000" channel="fifa">
+    <title lang="en">France v Poland | Round of 16 | FIFA World Cup Qatar 2022™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between France and Poland played at Al Thumama Stadium, Doha. - [NC]</desc>
+  </programme>
+  <programme start="20260921203649 +0000" stop="20260921213909 +0000" channel="fifa">
+    <title lang="en">All Goals | FIFA World Cup Qatar 2022™</title>
+    <desc lang="en">Episode 1 - Watch all goals scored at the FIFA World Cup Qatar 2022™. - [NC]</desc>
+  </programme>
+  <programme start="20260921213909 +0000" stop="20260921232954 +0000" channel="fifa">
+    <title lang="en">Nigeria v Sweden | Group B | FIFA Women's World Cup China 2007™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Nigeria and Sweden from Chengdu, 11 September 2007. - [NC]</desc>
+  </programme>
+  <programme start="20260921232954 +0000" stop="20260922012026 +0000" channel="fifa">
+    <title lang="en">Norway v Canada | Group C | FIFA Women's World Cup China 2007™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Norway and Canada from Hangzhou, 12 September 2007. - [NC]</desc>
+  </programme>
+  <programme start="20260922012026 +0000" stop="20260922014802 +0000" channel="fifa">
+    <title lang="en">Hwang Hee-Chan | Life in GB</title>
+    <desc lang="en">Episode 1 - Hwang Hee-Chan for a day, as he learns to adjust to a new life in Wolverhampton, England. - [NC]</desc>
+  </programme>
+  <programme start="20260922014802 +0000" stop="20260922021255 +0000" channel="fifa">
+    <title lang="en">Mana Iwabuchi | Life in Arsenal</title>
+    <desc lang="en">Episode 1 - A diamond of the Japan national women's team who plays for Arsenal in England. - [NC]</desc>
+  </programme>
+  <programme start="20260922021255 +0000" stop="20260922023921 +0000" channel="fifa">
+    <title lang="en">Kyogo Furuhashi | Life in Glasgow</title>
+    <desc lang="en">Episode 1 - Follow the highs and lows of Japanese international Kyogo Furuhashi's first year living in Glasgow, Scotland. - [NC]</desc>
+  </programme>
+  <programme start="20260922023921 +0000" stop="20260922025847 +0000" channel="fifa">
+    <title lang="en">Messi at The Best</title>
+    <desc lang="en">Episode 1 - Explore each of the ceremonies where Messi was crowned as the FIFA Ballon d'Or and The Best award winner. - [NC]</desc>
+  </programme>
+  <programme start="20260922025847 +0000" stop="20260922034028 +0000" channel="fifa">
+    <title lang="en">FACTS: Germany v Sweden | USA 2003</title>
+    <desc lang="en">Episode 1 - Germany beats Sweden with a golden goal to claim their first Women’s World Cup title. - [NC]</desc>
   </programme>
   <programme start="20260920220000 +0000" stop="20260921040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -58652,10 +58693,6 @@
   <programme start="20260921220000 +0000" stop="20260922040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260921023000 +0000" stop="20260921030000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH RENDAH 24/25</title>
-    <desc lang="en">Episode 72 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
   <programme start="20260921030000 +0000" stop="20260921033000 +0000" channel="ntv7">
     <title lang="en">PRASEKOLAH 2026</title>
@@ -58785,6 +58822,10 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 74 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260922030000 +0000" stop="20260922033000 +0000" channel="ntv7">
+    <title lang="en">PRASEKOLAH 2026</title>
+    <desc lang="en">Episode 22 - [NC]</desc>
+  </programme>
   <programme start="20260921015500 +0000" stop="20260921032500 +0000" channel="thrill">
     <title lang="en">A Woman Scorned</title>
     <desc lang="en">Episode 1 - Jas's peaceful countryside getaway with her sister Laura is shattered when a group of drifters attacks them. After Laura is brutally killed, Jas discovers her lifeless body at their rented cabin. Consumed by grief and fury, she vows to hunt down the gang and take vengeance on her sister's murderer. - [NC]</desc>
@@ -58860,10 +58901,6 @@
   <programme start="20260922020000 +0000" stop="20260922033000 +0000" channel="thrill">
     <title lang="en">Anak Perjanjian Syaitan 2</title>
     <desc lang="en">Episode 1 - Haunted since childhood, orphan Azlinda believes her torment stems from her parents' dark history. Her friends Zurina, Wati, and Ustaz join forces to end her suffering, but a malevolent demon interrupts their efforts. Will Azlinda succeed in severing the cursed ties that bind her, or is she destined to remain trapped in darkness forever? - [NC]</desc>
-  </programme>
-  <programme start="20260921020000 +0000" stop="20260921030000 +0000" channel="tv3">
-    <title lang="en">MALAYSIA HARI INI 2026/2027</title>
-    <desc lang="en">Episode 59 - [NC]</desc>
   </programme>
   <programme start="20260921030000 +0000" stop="20260921033000 +0000" channel="tv3">
     <title lang="en">SUPA STRIKAS (SEASON 4 - 6)</title>
@@ -58993,6 +59030,10 @@
     <title lang="en">MALAYSIA HARI INI 2026/2027</title>
     <desc lang="en">Episode 60 - [NC]</desc>
   </programme>
+  <programme start="20260922030000 +0000" stop="20260922033000 +0000" channel="tv3">
+    <title lang="en">SUPA STRIKAS (SEASON 4 - 6)</title>
+    <desc lang="en">Episode 31 - HOT PROPERTY.  Rakan pasukan Supa Strikas berkumpul di apartmen Shakes untuk menyaksikan pasukan Liga Super terbaru, Cognito FC, menentang Iron Tank. Shakes tidak boleh menghilangkan kebimbangannya terhadap jurulatih Cognito, In-Yo. - [NC]</desc>
+  </programme>
   <programme start="20260921023000 +0000" stop="20260921033000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -59121,10 +59162,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260922023500 +0000" stop="20260922033000 +0000" channel="8tv">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260922033000 +0000" stop="20260922043000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -59205,9 +59242,9 @@
     <title lang="en">GREAT TIMES</title>
     <desc lang="en">Episode 851 - Jia Mei enggan menerima nasihat  Xing Mei dan bergegas keluar dari kediaman Shu Shu. Shu Shu menelefon Huan Run yang sedang dalam proses memeriksa penglihatannya di klinik. Huan Run kembali dapat melihat dan bergegas ke kuil. - [NC]</desc>
   </programme>
-  <programme start="20260922030000 +0000" stop="20260922040000 +0000" channel="drama-sangat">
-    <title lang="en">AKU BUKAN USTAZAH</title>
-    <desc lang="en">Episode 9 - Aminah terpaksa menerima pelawaan Adam sebagai majikannya untuk keluar makan bersama. Mereka kemudian terjumpa dengan Sally dan berlaku perbalahan sehingga menyebabkan hubungan Sally dan Aminah menjadi keruh. - [NC]</desc>
+  <programme start="20260923023500 +0000" stop="20260923033000 +0000" channel="8tv">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260922040000 +0000" stop="20260922050000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -59301,21 +59338,81 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 185 - [NC]</desc>
   </programme>
-  <programme start="20260922040000 +0000" stop="20260922100000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260923030000 +0000" stop="20260923040000 +0000" channel="drama-sangat">
+    <title lang="en">SEKALI AKU BAHAGIA</title>
+    <desc lang="en">Episode 14 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
   </programme>
-  <programme start="20260922100000 +0000" stop="20260922160000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260922034028 +0000" stop="20260922041521 +0000" channel="fifa">
+    <title lang="en">The Best of FIFA Women's World Cup France 2019™</title>
+    <desc lang="en">Episode 1 - A showcase of the tournament’s top goals, assists, and award-winning moments from France 2019. - [NC]</desc>
   </programme>
-  <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260922041521 +0000" stop="20260922062721 +0000" channel="fifa">
+    <title lang="en">U20 FIFA World Cup, Women 2026 - Italy U20 v New Zealand U20</title>
+    <desc lang="en">Episode 1 - U20 FIFA World Cup, Women 2026 - Italy U20 v New Zealand U20 - [NC]</desc>
   </programme>
-  <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260922062721 +0000" stop="20260922091212 +0000" channel="fifa">
+    <title lang="en">Netherlands v Sweden | Semi-finals | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Netherlands and Sweden from Lyon, 3 July 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260922091212 +0000" stop="20260922110736 +0000" channel="fifa">
+    <title lang="en">Scotland v Argentina | Group D | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Scotland and Argentina from Paris, 19 June 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260922110736 +0000" stop="20260922130352 +0000" channel="fifa">
+    <title lang="en">Canada v New Zealand | Group E | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Canada and New Zealand from Grenoble, 15 June 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260922130352 +0000" stop="20260922133127 +0000" channel="fifa">
+    <title lang="en">Hwang Hee-Chan | Life in GB</title>
+    <desc lang="en">Episode 1 - Hwang Hee-Chan for a day, as he learns to adjust to a new life in Wolverhampton, England. - [NC]</desc>
+  </programme>
+  <programme start="20260922133127 +0000" stop="20260922135620 +0000" channel="fifa">
+    <title lang="en">Mana Iwabuchi | Life in Arsenal</title>
+    <desc lang="en">Episode 1 - A diamond of the Japan national women's team who plays for Arsenal in England. - [NC]</desc>
+  </programme>
+  <programme start="20260922135620 +0000" stop="20260922142247 +0000" channel="fifa">
+    <title lang="en">Kyogo Furuhashi | Life in Glasgow</title>
+    <desc lang="en">Episode 1 - Follow the highs and lows of Japanese international Kyogo Furuhashi's first year living in Glasgow, Scotland. - [NC]</desc>
+  </programme>
+  <programme start="20260922142247 +0000" stop="20260922144212 +0000" channel="fifa">
+    <title lang="en">Messi at The Best</title>
+    <desc lang="en">Episode 1 - Explore each of the ceremonies where Messi was crowned as the FIFA Ballon d'Or and The Best award winner. - [NC]</desc>
+  </programme>
+  <programme start="20260922144212 +0000" stop="20260922152353 +0000" channel="fifa">
+    <title lang="en">FACTS: Germany v Sweden | USA 2003</title>
+    <desc lang="en">Episode 1 - Germany beats Sweden with a golden goal to claim their first Women’s World Cup title. - [NC]</desc>
+  </programme>
+  <programme start="20260922152353 +0000" stop="20260922155846 +0000" channel="fifa">
+    <title lang="en">The Best of FIFA Women's World Cup France 2019™</title>
+    <desc lang="en">Episode 1 - A showcase of the tournament’s top goals, assists, and award-winning moments from France 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260922155846 +0000" stop="20260922181046 +0000" channel="fifa">
+    <title lang="en">U20 FIFA World Cup, Women 2026 - Italy U20 v New Zealand U20</title>
+    <desc lang="en">Episode 1 - U20 FIFA World Cup, Women 2026 - Italy U20 v New Zealand U20 - [NC]</desc>
+  </programme>
+  <programme start="20260922181046 +0000" stop="20260922205537 +0000" channel="fifa">
+    <title lang="en">Netherlands v Sweden | Semi-finals | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Netherlands and Sweden from Lyon, 3 July 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260922205537 +0000" stop="20260922225102 +0000" channel="fifa">
+    <title lang="en">Scotland v Argentina | Group D | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Scotland and Argentina from Paris, 19 June 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260922225102 +0000" stop="20260923004717 +0000" channel="fifa">
+    <title lang="en">Canada v New Zealand | Group E | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Canada and New Zealand from Grenoble, 15 June 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260923004717 +0000" stop="20260923022557 +0000" channel="fifa">
+    <title lang="en">Sweden v USA | Group B | FIFA Women's World Cup China PR 1991™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Sweden and USA played at Ying Dong Stadium, Panyu District. - [NC]</desc>
+  </programme>
+  <programme start="20260923022557 +0000" stop="20260923025757 +0000" channel="fifa">
+    <title lang="en">A LOOK BACK: FIFA Women's World Cup China PR 1991™</title>
+    <desc lang="en">Episode 1 - USA Highlights in the FIFA Women's World Cup China PR 1991™ - [NC]</desc>
+  </programme>
+  <programme start="20260923025757 +0000" stop="20260923045242 +0000" channel="fifa">
+    <title lang="en">USA v Colombia | Round of 16 | FIFA Women's World Cup Canada 2015™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between USA and Colombia from Edmonton, 22 June 2015. - [NC]</desc>
   </programme>
   <programme start="20260922040000 +0000" stop="20260922100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -59332,10 +59429,6 @@
   <programme start="20260922220000 +0000" stop="20260923040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260922030000 +0000" stop="20260922033000 +0000" channel="ntv7">
-    <title lang="en">PRASEKOLAH 2026</title>
-    <desc lang="en">Episode 22 - [NC]</desc>
   </programme>
   <programme start="20260922033000 +0000" stop="20260922040000 +0000" channel="ntv7">
     <title lang="en">TAHAP I 2026</title>
@@ -59465,6 +59558,10 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 76 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260923030000 +0000" stop="20260923033000 +0000" channel="ntv7">
+    <title lang="en">PRASEKOLAH 2026</title>
+    <desc lang="en">Episode 23 - [NC]</desc>
+  </programme>
   <programme start="20260922033000 +0000" stop="20260922050000 +0000" channel="thrill">
     <title lang="en">Tear Us Apart</title>
     <desc lang="en">Episode 1 - After their young daughter’s mysterious disappearance, Drew and Helen retreat to a secluded woodland cottage for therapy. As they struggle to salvage their marriage, isolation fractures their sanity. Haunted by visions and strange events, Helen can no longer tell what is real as her mind unravels. - [NC]</desc>
@@ -59528,10 +59625,6 @@
   <programme start="20260923014500 +0000" stop="20260923032500 +0000" channel="thrill">
     <title lang="en">Get in the Dark</title>
     <desc lang="en">Episode 1 - A reporter hears three horror stories when investigating a case of the paper doll spirit 20 years ago. Miss Qiao had died in vain then, and her butler paid a paper craftsman to make a paper doll to be buried with her. Miss Qiao’s spirit is revived to take revenge when the doll’s eyes are drawn, and a series of horrible events begins to happen... - [NC]</desc>
-  </programme>
-  <programme start="20260922030000 +0000" stop="20260922033000 +0000" channel="tv3">
-    <title lang="en">SUPA STRIKAS (SEASON 4 - 6)</title>
-    <desc lang="en">Episode 31 - HOT PROPERTY.  Rakan pasukan Supa Strikas berkumpul di apartmen Shakes untuk menyaksikan pasukan Liga Super terbaru, Cognito FC, menentang Iron Tank. Shakes tidak boleh menghilangkan kebimbangannya terhadap jurulatih Cognito, In-Yo. - [NC]</desc>
   </programme>
   <programme start="20260922033000 +0000" stop="20260922033200 +0000" channel="tv3">
     <title lang="en">MY ROLE MODEL</title>
@@ -59657,6 +59750,10 @@
     <title lang="en">MALAYSIA HARI INI 2026/2027</title>
     <desc lang="en">Episode 61 - [NC]</desc>
   </programme>
+  <programme start="20260923030000 +0000" stop="20260923033000 +0000" channel="tv3">
+    <title lang="en">SUPA STRIKAS (SEASON 4 - 6)</title>
+    <desc lang="en">Episode 32 - Toni Vern mencipta sejenis rumput di padang bola untuk menggagalkan penjaringan gol oleh Supa Strikas. Ciptaannya diketahui oleh El Matador yang cuba mengubah cahaya dalam stadium untuk tangkapan gambarnya yang terbaik. - [NC]</desc>
+  </programme>
   <programme start="20260922033000 +0000" stop="20260922040000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -59781,10 +59878,6 @@
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
     <desc lang="en">Episode 37 - Nasi Lemak Kopi O akan menghidupkan semula pagi anda dengan sentuhan baharu dan kontemporari. Rancangan ini akan kembali dengan penampilan baharu dan kandungan penuh menarik buat penonton setia kami. - [NC]</desc>
   </programme>
-  <programme start="20260923023500 +0000" stop="20260923033000 +0000" channel="8tv">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260923033000 +0000" stop="20260923043000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -59865,9 +59958,9 @@
     <title lang="en">GREAT TIMES</title>
     <desc lang="en">Episode 852 - Ruguan, Chiu Yeh, Huan Qin dan Zhi Xin berasa gembira apabila Huan Run dapat melihat semula. Huan Run terdiam apabila Chiu Yeh mengumumkan perkahwinan antara Huan Run dan Zhi Xin. - [NC]</desc>
   </programme>
-  <programme start="20260923030000 +0000" stop="20260923040000 +0000" channel="drama-sangat">
-    <title lang="en">SEKALI AKU BAHAGIA</title>
-    <desc lang="en">Episode 14 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
+  <programme start="20260924023500 +0000" stop="20260924033000 +0000" channel="8tv">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260923040000 +0000" stop="20260923050000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -59961,21 +60054,69 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 584 - [NC]</desc>
   </programme>
-  <programme start="20260923040000 +0000" stop="20260923100000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260924030000 +0000" stop="20260924040000 +0000" channel="drama-sangat">
+    <title lang="en">SEKALI AKU BAHAGIA</title>
+    <desc lang="en">Episode 15 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
   </programme>
-  <programme start="20260923100000 +0000" stop="20260923160000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260923045242 +0000" stop="20260923065152 +0000" channel="fifa">
+    <title lang="en">Australia v Brazil | Group C | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Australia and Brazil from Montpellier, 13 June 2019. - [NC]</desc>
   </programme>
-  <programme start="20260923160000 +0000" stop="20260923220000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260923065152 +0000" stop="20260923084516 +0000" channel="fifa">
+    <title lang="en">Canada v Cameroon | Group E | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Canada and Cameroon from Montpellier, 10 June 2019. - [NC]</desc>
   </programme>
-  <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="fifa">
-    <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260923084516 +0000" stop="20260923110432 +0000" channel="fifa">
+    <title lang="en">U20 FIFA World Cup, Women 2026 - Benin U20 v Argentina U20</title>
+    <desc lang="en">Episode 1 - U20 FIFA World Cup, Women 2026 - Benin U20 v Argentina U20 - [NC]</desc>
+  </programme>
+  <programme start="20260923110432 +0000" stop="20260923112926 +0000" channel="fifa">
+    <title lang="en">Icons of the Women's Game</title>
+    <desc lang="en">Episode 1 - Marta, Christine Sinclair, Sam Kerr, Mary Earps... get to know some of the great icons of women's football. - [NC]</desc>
+  </programme>
+  <programme start="20260923112926 +0000" stop="20260923130806 +0000" channel="fifa">
+    <title lang="en">Sweden v USA | Group B | FIFA Women's World Cup China PR 1991™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Sweden and USA played at Ying Dong Stadium, Panyu District. - [NC]</desc>
+  </programme>
+  <programme start="20260923130806 +0000" stop="20260923134006 +0000" channel="fifa">
+    <title lang="en">A LOOK BACK: FIFA Women's World Cup China PR 1991™</title>
+    <desc lang="en">Episode 1 - USA Highlights in the FIFA Women's World Cup China PR 1991™ - [NC]</desc>
+  </programme>
+  <programme start="20260923134006 +0000" stop="20260923153451 +0000" channel="fifa">
+    <title lang="en">USA v Colombia | Round of 16 | FIFA Women's World Cup Canada 2015™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between USA and Colombia from Edmonton, 22 June 2015. - [NC]</desc>
+  </programme>
+  <programme start="20260923153451 +0000" stop="20260923173401 +0000" channel="fifa">
+    <title lang="en">Australia v Brazil | Group C | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Australia and Brazil from Montpellier, 13 June 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260923173401 +0000" stop="20260923192725 +0000" channel="fifa">
+    <title lang="en">Canada v Cameroon | Group E | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Canada and Cameroon from Montpellier, 10 June 2019. - [NC]</desc>
+  </programme>
+  <programme start="20260923192725 +0000" stop="20260923214642 +0000" channel="fifa">
+    <title lang="en">U20 FIFA World Cup, Women 2026 - Benin U20 v Argentina U20</title>
+    <desc lang="en">Episode 1 - U20 FIFA World Cup, Women 2026 - Benin U20 v Argentina U20 - [NC]</desc>
+  </programme>
+  <programme start="20260923214642 +0000" stop="20260923221135 +0000" channel="fifa">
+    <title lang="en">Icons of the Women's Game</title>
+    <desc lang="en">Episode 1 - Marta, Christine Sinclair, Sam Kerr, Mary Earps... get to know some of the great icons of women's football. - [NC]</desc>
+  </programme>
+  <programme start="20260923221135 +0000" stop="20260923235015 +0000" channel="fifa">
+    <title lang="en">Sweden v USA | Group B | FIFA Women's World Cup China PR 1991™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Sweden and USA played at Ying Dong Stadium, Panyu District. - [NC]</desc>
+  </programme>
+  <programme start="20260923235015 +0000" stop="20260924002216 +0000" channel="fifa">
+    <title lang="en">A LOOK BACK: FIFA Women's World Cup China PR 1991™</title>
+    <desc lang="en">Episode 1 - USA Highlights in the FIFA Women's World Cup China PR 1991™ - [NC]</desc>
+  </programme>
+  <programme start="20260924002216 +0000" stop="20260924023849 +0000" channel="fifa">
+    <title lang="en">U20 FIFA World Cup, Women 2026 - Korean People's Republic U20 v Costa Rica U20</title>
+    <desc lang="en">Episode 1 - U20 FIFA World Cup, Women 2026 - Korean People's Republic U20 v Costa Rica U20 - [NC]</desc>
+  </programme>
+  <programme start="20260924023849 +0000" stop="20260924045247 +0000" channel="fifa">
+    <title lang="en">Netherlands v South Africa | Round of 16 | FIFA Women's World Cup Australia &amp; New Zealand 2023™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Netherlands and South Africa at Sydney Football Stadium, Sydney. - [NC]</desc>
   </programme>
   <programme start="20260923040000 +0000" stop="20260923100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
@@ -59992,10 +60133,6 @@
   <programme start="20260923220000 +0000" stop="20260924040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260923030000 +0000" stop="20260923033000 +0000" channel="ntv7">
-    <title lang="en">PRASEKOLAH 2026</title>
-    <desc lang="en">Episode 23 - [NC]</desc>
   </programme>
   <programme start="20260923033000 +0000" stop="20260923040000 +0000" channel="ntv7">
     <title lang="en">TAHAP I 2026</title>
@@ -60125,6 +60262,10 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 78 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260924030000 +0000" stop="20260924033000 +0000" channel="ntv7">
+    <title lang="en">PRASEKOLAH 2026</title>
+    <desc lang="en">Episode 24 - [NC]</desc>
+  </programme>
   <programme start="20260923032500 +0000" stop="20260923050000 +0000" channel="thrill">
     <title lang="en">The Ice Cream Truck</title>
     <desc lang="en">Episode 1 - Mary moves back to her suburban hometown as her husband is relocated there for work. While waiting for her husband in their new house, Mary becomes the target of an evil slasher that stalks the suburbs in an ice-cream truck. She soon learns that the suburbs are not what they seem... - [NC]</desc>
@@ -60189,9 +60330,9 @@
     <title lang="en">Endless Love</title>
     <desc lang="en">Episode 1 - A young girl encounters a novelist in a bar and quickly falls in love with him. However, it turns out she has fallen into a trap set up by the novelist and his ex-girlfriend who is a ghost with a disfigured face. The journey of revenge and ultimate terror has just begun! - [NC]</desc>
   </programme>
-  <programme start="20260923030000 +0000" stop="20260923033000 +0000" channel="tv3">
-    <title lang="en">SUPA STRIKAS (SEASON 4 - 6)</title>
-    <desc lang="en">Episode 32 - Toni Vern mencipta sejenis rumput di padang bola untuk menggagalkan penjaringan gol oleh Supa Strikas. Ciptaannya diketahui oleh El Matador yang cuba mengubah cahaya dalam stadium untuk tangkapan gambarnya yang terbaik. - [NC]</desc>
+  <programme start="20260924024500 +0000" stop="20260924041000 +0000" channel="thrill">
+    <title lang="en">Chop Chop</title>
+    <desc lang="en">Episode 1 - A young couple's tranquility is shattered by a psychotic serial killer one quiet evening. Their battle for survival reveals hidden truths, entangling them unwittingly with the criminal underworld. - [NC]</desc>
   </programme>
   <programme start="20260923033000 +0000" stop="20260923033200 +0000" channel="tv3">
     <title lang="en">MY ROLE MODEL</title>
@@ -60317,6 +60458,10 @@
     <title lang="en">MALAYSIA HARI INI 2026/2027</title>
     <desc lang="en">Episode 62 - [NC]</desc>
   </programme>
+  <programme start="20260924030000 +0000" stop="20260924033000 +0000" channel="tv3">
+    <title lang="en">BEYBLADE X (GEN 4)</title>
+    <desc lang="en">Episode 15 - [NC]</desc>
+  </programme>
   <programme start="20260923033000 +0000" stop="20260923040000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -60437,10 +60582,6 @@
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
     <desc lang="en">Episode 38 - [NC]</desc>
   </programme>
-  <programme start="20260924023500 +0000" stop="20260924033000 +0000" channel="8tv">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260924033000 +0000" stop="20260924043000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -60521,9 +60662,9 @@
     <title lang="en">GREAT TIMES</title>
     <desc lang="en">Episode 853 - Jia Mei terdengar Xing Mei bersetuju dengan Ruo Lan untuk melahirkan anak Chee Kan. Dia bertegas memberitahu Xing Mei dan Ruo Lan bahawa dia memutuskan hubungan dengan mereka. Esoknya, Jia Mei dan Chee Kan memfailkan surat cerai. - [NC]</desc>
   </programme>
-  <programme start="20260924030000 +0000" stop="20260924040000 +0000" channel="drama-sangat">
-    <title lang="en">SEKALI AKU BAHAGIA</title>
-    <desc lang="en">Episode 15 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
+  <programme start="20260925023500 +0000" stop="20260925033000 +0000" channel="8tv">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260924040000 +0000" stop="20260924050000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -60609,7 +60750,15 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 138 - [NC]</desc>
   </programme>
-  <programme start="20260924040000 +0000" stop="20260924100000 +0000" channel="fifa">
+  <programme start="20260925030000 +0000" stop="20260925040000 +0000" channel="drama-sangat">
+    <title lang="en">HOSPITAL LOVELINE</title>
+    <desc lang="en">Episode 1 - Hospital Insani menerima seorang doktor baru yang kacak bernama Dr. Arfan Qori. Sophia pula adalah staf rehabilitasi yang disenangi ramai pesakit terutama orang dewasa. Arfan berjumpa dengan kawan-kawan beliau di hospital berkenaan. - [NC]</desc>
+  </programme>
+  <programme start="20260924045247 +0000" stop="20260924065151 +0000" channel="fifa">
+    <title lang="en">Inter Miami CF v FC Porto | Group A | FIFA Club World Cup 2025™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Inter Miami CF and FC Porto. - [NC]</desc>
+  </programme>
+  <programme start="20260924065151 +0000" stop="20260924100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
@@ -60640,10 +60789,6 @@
   <programme start="20260924220000 +0000" stop="20260925040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260924030000 +0000" stop="20260924033000 +0000" channel="ntv7">
-    <title lang="en">PRASEKOLAH 2026</title>
-    <desc lang="en">Episode 24 - [NC]</desc>
   </programme>
   <programme start="20260924033000 +0000" stop="20260924040000 +0000" channel="ntv7">
     <title lang="en">TAHAP I 2026</title>
@@ -60773,9 +60918,9 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 80 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
-  <programme start="20260924024500 +0000" stop="20260924041000 +0000" channel="thrill">
-    <title lang="en">Chop Chop</title>
-    <desc lang="en">Episode 1 - A young couple's tranquility is shattered by a psychotic serial killer one quiet evening. Their battle for survival reveals hidden truths, entangling them unwittingly with the criminal underworld. - [NC]</desc>
+  <programme start="20260925030000 +0000" stop="20260925033000 +0000" channel="ntv7">
+    <title lang="en">PRASEKOLAH 2026</title>
+    <desc lang="en">Episode 25 - [NC]</desc>
   </programme>
   <programme start="20260924041000 +0000" stop="20260924050000 +0000" channel="thrill">
     <title lang="en">Sinister - Live Art Model</title>
@@ -60844,10 +60989,6 @@
   <programme start="20260925015000 +0000" stop="20260925031500 +0000" channel="thrill">
     <title lang="en">Detrimental</title>
     <desc lang="en">Episode 1 - You Ji Ren is a blind man who works at a factory on an outlying island. When the factory is cut off from the outside world by a hurricane one day, a monster appears and turns whoever sees it into black shadows. As You cannot see the monster, he is able to help his other co-workers escape safely and fight to kill the monster. - [NC]</desc>
-  </programme>
-  <programme start="20260924030000 +0000" stop="20260924033000 +0000" channel="tv3">
-    <title lang="en">BEYBLADE X (GEN 4)</title>
-    <desc lang="en">Episode 15 - [NC]</desc>
   </programme>
   <programme start="20260924033000 +0000" stop="20260924033200 +0000" channel="tv3">
     <title lang="en">MY ROLE MODEL</title>
@@ -60969,6 +61110,10 @@
     <title lang="en">MALAYSIA HARI INI 2026/2027</title>
     <desc lang="en">Episode 63 - [NC]</desc>
   </programme>
+  <programme start="20260925030000 +0000" stop="20260925033000 +0000" channel="tv3">
+    <title lang="en">BEYBLADE X (GEN 4)</title>
+    <desc lang="en">Episode 16 - [NC]</desc>
+  </programme>
   <programme start="20260924033000 +0000" stop="20260924040000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -61089,10 +61234,6 @@
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
     <desc lang="en">Episode 39 - [NC]</desc>
   </programme>
-  <programme start="20260925023500 +0000" stop="20260925033000 +0000" channel="8tv">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260925033000 +0000" stop="20260925043000 +0000" channel="8tv">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -61177,10 +61318,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260925030000 +0000" stop="20260925040000 +0000" channel="drama-sangat">
-    <title lang="en">HOSPITAL LOVELINE</title>
-    <desc lang="en">Episode 1 - Hospital Insani menerima seorang doktor baru yang kacak bernama Dr. Arfan Qori. Sophia pula adalah staf rehabilitasi yang disenangi ramai pesakit terutama orang dewasa. Arfan berjumpa dengan kawan-kawan beliau di hospital berkenaan. - [NC]</desc>
-  </programme>
   <programme start="20260925040000 +0000" stop="20260925050000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">Episode 52 - [NC]</desc>
@@ -61257,6 +61394,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 96 - [NC]</desc>
   </programme>
+  <programme start="20260926030000 +0000" stop="20260926040000 +0000" channel="drama-sangat">
+    <title lang="en">HOSPITAL LOVELINE</title>
+    <desc lang="en">Episode 2 - Opah dibawa ke hospital dan dirawat oleh doktor Arfan dan Sophia juga turut menyantuni Opahnya semasa rawatan. Opah cuba untuk melaga-lagakan Sophia dengan doktor Arfan supaya boleh berkenalan antara satu sama lain. - [NC]</desc>
+  </programme>
   <programme start="20260925040000 +0000" stop="20260925100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
@@ -61288,10 +61429,6 @@
   <programme start="20260925220000 +0000" stop="20260926040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260925030000 +0000" stop="20260925033000 +0000" channel="ntv7">
-    <title lang="en">PRASEKOLAH 2026</title>
-    <desc lang="en">Episode 25 - [NC]</desc>
   </programme>
   <programme start="20260925033000 +0000" stop="20260925040000 +0000" channel="ntv7">
     <title lang="en">TAHAP I 24/25</title>
@@ -61393,6 +61530,10 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 76 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260926030000 +0000" stop="20260926033000 +0000" channel="ntv7">
+    <title lang="en">PRASEKOLAH 2026</title>
+    <desc lang="en">Episode 23 - [NC]</desc>
+  </programme>
   <programme start="20260925031500 +0000" stop="20260925041000 +0000" channel="thrill">
     <title lang="en">3AM - The Driver</title>
     <desc lang="en">Episode 5 - A taxi driver who is constantly judging others by his own standards, also reads into their every move and sets out to help ‘victims’ in his own way. When a woman he likes seems to be bullied by her son, he goes about setting things right for her, even resorting to turning himself into a cold-blooded serial killer… - [NC]</desc>
@@ -61473,9 +61614,9 @@
     <title lang="en">Waning Moon</title>
     <desc lang="en">Episode 1 - Nuanchan is a famous and highly respected spiritual medium in a rural village in Thailand. She wants to train her niece, Ploy, to succeed her and Ploy needs to remain a virgin. When Ploy falls in love with her childhood friend Tul, their lives are in danger as the secret of the spiritual world is being unveiled. - [NC]</desc>
   </programme>
-  <programme start="20260925030000 +0000" stop="20260925033000 +0000" channel="tv3">
-    <title lang="en">BEYBLADE X (GEN 4)</title>
-    <desc lang="en">Episode 16 - [NC]</desc>
+  <programme start="20260926024000 +0000" stop="20260926035500 +0000" channel="thrill">
+    <title lang="en">The Case of Disappearances</title>
+    <desc lang="en">Episode 1 - In Misty Village, the adopted son Wen Jie is haunted by a recurring nightmare. He delves into a series of disappearance cases in the village to seek his true identity. As more villagers die mysteriously, belief in the curse of Emperor Jing Lung intensifies. Wen Jie teams up with the security chief to unveil the conspiracy and protect the villagers. - [NC]</desc>
   </programme>
   <programme start="20260925033000 +0000" stop="20260925033200 +0000" channel="tv3">
     <title lang="en">MY ROLE MODEL</title>
@@ -61616,6 +61757,10 @@
   <programme start="20260926023000 +0000" stop="20260926030000 +0000" channel="tv3">
     <title lang="en">WINX CLUB - THE MAGIC IS BACK</title>
     <desc lang="en">Episode 3 - [NC]</desc>
+  </programme>
+  <programme start="20260926030000 +0000" stop="20260926033000 +0000" channel="tv3">
+    <title lang="en">ULTRAMAN TEO 2026</title>
+    <desc lang="en">Episode 11 - Raksasa muncul kembali dan merosakkan bangunan berhampiran kolej pengajian. Para pelajar lari bertempiaran untuk menyelamatkan diri. Ibuki menyedari kehadiran raksasa lalu menukarkan dirinya menjadi gergasi biru. - [NC]</desc>
   </programme>
   <programme start="20260925033000 +0000" stop="20260925040000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -61821,10 +61966,6 @@
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
   </programme>
-  <programme start="20260926030000 +0000" stop="20260926040000 +0000" channel="drama-sangat">
-    <title lang="en">HOSPITAL LOVELINE</title>
-    <desc lang="en">Episode 2 - Opah dibawa ke hospital dan dirawat oleh doktor Arfan dan Sophia juga turut menyantuni Opahnya semasa rawatan. Opah cuba untuk melaga-lagakan Sophia dengan doktor Arfan supaya boleh berkenalan antara satu sama lain. - [NC]</desc>
-  </programme>
   <programme start="20260926040000 +0000" stop="20260926050000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 32 - [NC]</desc>
@@ -61901,6 +62042,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 127 - [NC]</desc>
   </programme>
+  <programme start="20260927030000 +0000" stop="20260927040000 +0000" channel="drama-sangat">
+    <title lang="en">HOSPITAL LOVELINE</title>
+    <desc lang="en">Episode 3 - Seorang doktor pakar jantung yang mempunyai agendanya tersendiri cuba mempengaruhi seorang pesakit untuk mengulangi satu prosedur jantung. Doktor Arfan dan Sophia mula rapat setelah Sophia menjadi jurupulih beliau. - [NC]</desc>
+  </programme>
   <programme start="20260926040000 +0000" stop="20260926100000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
@@ -61932,10 +62077,6 @@
   <programme start="20260926220000 +0000" stop="20260927040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260926030000 +0000" stop="20260926033000 +0000" channel="ntv7">
-    <title lang="en">PRASEKOLAH 2026</title>
-    <desc lang="en">Episode 23 - [NC]</desc>
   </programme>
   <programme start="20260926033000 +0000" stop="20260926040000 +0000" channel="ntv7">
     <title lang="en">TAHAP I 2026</title>
@@ -62057,9 +62198,9 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 78 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
-  <programme start="20260926024000 +0000" stop="20260926035500 +0000" channel="thrill">
-    <title lang="en">The Case of Disappearances</title>
-    <desc lang="en">Episode 1 - In Misty Village, the adopted son Wen Jie is haunted by a recurring nightmare. He delves into a series of disappearance cases in the village to seek his true identity. As more villagers die mysteriously, belief in the curse of Emperor Jing Lung intensifies. Wen Jie teams up with the security chief to unveil the conspiracy and protect the villagers. - [NC]</desc>
+  <programme start="20260927030000 +0000" stop="20260927033000 +0000" channel="ntv7">
+    <title lang="en">PRASEKOLAH 2026</title>
+    <desc lang="en">Episode 24 - [NC]</desc>
   </programme>
   <programme start="20260926035500 +0000" stop="20260926050000 +0000" channel="thrill">
     <title lang="en">Sinister - Luk Krok</title>
@@ -62136,10 +62277,6 @@
   <programme start="20260927023000 +0000" stop="20260927040000 +0000" channel="thrill">
     <title lang="en">Room For Rent</title>
     <desc lang="en">Episode 1 - Lonely widow Joyce rents out a room in her house and becomes dangerously obsessed with a younger guest. Desperate for love, she is willing to eliminate anyone hindering her pursuit of happiness, and a chilling tale of obsession unfolds. - [NC]</desc>
-  </programme>
-  <programme start="20260926030000 +0000" stop="20260926033000 +0000" channel="tv3">
-    <title lang="en">ULTRAMAN TEO 2026</title>
-    <desc lang="en">Episode 11 - Raksasa muncul kembali dan merosakkan bangunan berhampiran kolej pengajian. Para pelajar lari bertempiaran untuk menyelamatkan diri. Ibuki menyedari kehadiran raksasa lalu menukarkan dirinya menjadi gergasi biru. - [NC]</desc>
   </programme>
   <programme start="20260926033000 +0000" stop="20260926033200 +0000" channel="tv3">
     <title lang="en">MY ROLE MODEL</title>
@@ -62280,6 +62417,10 @@
   <programme start="20260927023000 +0000" stop="20260927030000 +0000" channel="tv3">
     <title lang="en">BLIPPI WONDERS</title>
     <desc lang="en">Episode 1 - RAINBOW COLORS.  Blippi dan rakannya Tabbs meneruskan pengembaraan mereka untuk menemui sains di sebalik pelangi. Mereka mencari tahu bagaimana pelangi mendapat warnanya dan apakah warna pelangi. - [NC]</desc>
+  </programme>
+  <programme start="20260927030000 +0000" stop="20260927033000 +0000" channel="tv3">
+    <title lang="en">SUPA STRIKAS (SEASON 4 - 6)</title>
+    <desc lang="en">Episode 33 - Supa Strikas akan menentang Nakama FC di Stadium Gashuku, Tokyo. Shakes bersedia untuk mencipta sejarah dengan memecahkan rekod yang dipegang oleh Edwin selama bertahun-tahun. Shakes cuba menjauhkan diri dari gembar-gembur. - [NC]</desc>
   </programme>
   <programme start="20260926033000 +0000" stop="20260926040000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -62475,14 +62616,10 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928020000 +0000" stop="20260928023326 +0000" channel="8tv">
+  <programme start="20260928020000 +0000" stop="20260928030332 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
-  </programme>
-  <programme start="20260927030000 +0000" stop="20260927040000 +0000" channel="drama-sangat">
-    <title lang="en">HOSPITAL LOVELINE</title>
-    <desc lang="en">Episode 3 - Seorang doktor pakar jantung yang mempunyai agendanya tersendiri cuba mempengaruhi seorang pesakit untuk mengulangi satu prosedur jantung. Doktor Arfan dan Sophia mula rapat setelah Sophia menjadi jurupulih beliau. - [NC]</desc>
   </programme>
   <programme start="20260927040000 +0000" stop="20260927050000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -62559,7 +62696,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928023000 +0000" stop="20260928023326 +0000" channel="drama-sangat">
+  <programme start="20260928023000 +0000" stop="20260928030332 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -62595,10 +62732,6 @@
   <programme start="20260927220000 +0000" stop="20260928040000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260927030000 +0000" stop="20260927033000 +0000" channel="ntv7">
-    <title lang="en">PRASEKOLAH 2026</title>
-    <desc lang="en">Episode 24 - [NC]</desc>
   </programme>
   <programme start="20260927033000 +0000" stop="20260927040000 +0000" channel="ntv7">
     <title lang="en">TAHAP I 24/25</title>
@@ -62727,7 +62860,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928023000 +0000" stop="20260928023326 +0000" channel="ntv7">
+  <programme start="20260928023000 +0000" stop="20260928030332 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -62803,10 +62936,6 @@
   <programme start="20260928023000 +0000" stop="20260928040500 +0000" channel="thrill">
     <title lang="en">The Spore</title>
     <desc lang="en">Episode 1 - Global warming has awakened a malevolent spore from beneath an ancient ice field, unleashing a horrific plague that ravages humanity. Fleeing the chaos, Meadow takes refuge in an abandoned cabin. Together with other strangers, she fights to survive as some succumb to the plague, transforming into ravenous hunters who now stalk the living. - [NC]</desc>
-  </programme>
-  <programme start="20260927030000 +0000" stop="20260927033000 +0000" channel="tv3">
-    <title lang="en">SUPA STRIKAS (SEASON 4 - 6)</title>
-    <desc lang="en">Episode 33 - Supa Strikas akan menentang Nakama FC di Stadium Gashuku, Tokyo. Shakes bersedia untuk mencipta sejarah dengan memecahkan rekod yang dipegang oleh Edwin selama bertahun-tahun. Shakes cuba menjauhkan diri dari gembar-gembur. - [NC]</desc>
   </programme>
   <programme start="20260927033000 +0000" stop="20260927033200 +0000" channel="tv3">
     <title lang="en">KAMPONG GATAL (KGG)</title>
@@ -62930,7 +63059,12 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928013000 +0000" stop="20260928023326 +0000" channel="tv3">
+  <programme start="20260928013000 +0000" stop="20260928030000 +0000" channel="tv3">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
+  </programme>
+  <programme start="20260928030000 +0000" stop="20260928030332 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -63038,7 +63172,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928023000 +0000" stop="20260928023326 +0000" channel="tv9">
+  <programme start="20260928023000 +0000" stop="20260928030332 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>

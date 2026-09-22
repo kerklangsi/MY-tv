@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3080109,FRAME-RATE=30,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/nhkworld/abr/nhkworld_1080p/chunks.m3u8?md5=SNTLK9OrLrrPj3BHm7oKPw&expires=1790046112
-#EXT-X-STREAM-INF:BANDWIDTH=2115822,FRAME-RATE=30,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/nhkworld/abr/nhkworld_720p/chunks.m3u8?md5=SKwSt7aVnvkRRBaDyRpokA&expires=1790046112
-#EXT-X-STREAM-INF:BANDWIDTH=1036512,FRAME-RATE=30,RESOLUTION=854x480,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/nhkworld/abr/nhkworld_480p/chunks.m3u8?md5=c5bDtVRY_9h75JyWEGnIhw&expires=1790046112
+#EXT-X-STREAM-INF:BANDWIDTH=2949250,FRAME-RATE=30,RESOLUTION=1920x1080,CODECS="avc1.4d4028"
+https://cuwf8jayq1.tenbytecdn.com/live/nhkworld/abr/nhkworld_1080p/chunks.m3u8?md5=mqrxu7JpbWKKgGtQF3OtUQ&expires=1790047918
+#EXT-X-STREAM-INF:BANDWIDTH=2024102,FRAME-RATE=30,RESOLUTION=1280x720,CODECS="avc1.4d401f"
+https://cuwf8jayq1.tenbytecdn.com/live/nhkworld/abr/nhkworld_720p/chunks.m3u8?md5=NtnVho9f3igq8KZyssTYuA&expires=1790047918
+#EXT-X-STREAM-INF:BANDWIDTH=923362,FRAME-RATE=30,RESOLUTION=854x480,CODECS="avc1.4d401f"
+https://cuwf8jayq1.tenbytecdn.com/live/nhkworld/abr/nhkworld_480p/chunks.m3u8?md5=RhP39sU2V8aWN9PbhKEzRw&expires=1790047918
