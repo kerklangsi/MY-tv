@@ -92,7 +92,30 @@ The repository includes preconfigured GitHub Actions workflows located in `.gith
 
 ### 2. `refresh_token.yml` (Headless SSO Token Refresh)
 - **Schedule**: Automatically refreshes the Tonton SSO authentication token and device pairing using headless Playwright Chromium.
-- Intercepts SSO callbacks from `https://id.tonton.com.my/` and securely caches the session.
+- **Manual Trigger**: Can be manually run from **Actions** tab > **Refresh Token** > **Run workflow**.
+- **External Webhook (cron-job.org)**: Triggered via `repository_dispatch`:
+  ```bash
+  curl -X POST https://api.github.com/repos/kerklangsi/MY-tv/dispatches \
+    -H "Accept: application/vnd.github.v3+json" \
+    -H "Authorization: token <YOUR_GH_TOKEN>" \
+    -H "User-Agent: cron-job.org" \
+    -d '{"event_type": "refresh-token"}'
+  ```
+
+#### 🌐 Setting up on cron-job.org:
+1. **URL**: `https://api.github.com/repos/kerklangsi/MY-tv/dispatches`
+2. **Execution Schedule**: Every 12 hours (e.g. `0 */12 * * *`)
+3. **Request Method**: `POST`
+4. **HTTP Headers**:
+   - `Accept`: `application/vnd.github.v3+json`
+   - `Authorization`: `Bearer <YOUR_GITHUB_PAT>`
+   - `User-Agent`: `cron-job.org`
+5. **Request Body (JSON)**:
+   ```json
+   {
+     "event_type": "refresh-token"
+   }
+   ```
 
 ---
 

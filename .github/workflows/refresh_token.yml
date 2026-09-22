@@ -2,11 +2,78 @@ name: Refresh Token
 
 on:
   repository_dispatch:
-    types: [ ] # Trigger via webhook repository_dispatch
+    types: [refresh-token] # Trigger via webhook from cron-job.org
   workflow_dispatch: # Trigger manually from GitHub Actions tab
 
 jobs:
+  gatekeeper:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - name: Verify Workflow Queue & Runner Online State
+        id: check
+        uses: actions/github-script@v9
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        with:
+          script: |
+            const api = process.env.GH_PAT ? new github.constructor({ auth: process.env.GH_PAT }) : github;
+
+            // 1. Check if an idle self-hosted runner is available
+            try {
+              const runnerRes = await api.rest.actions.listSelfHostedRunnersForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+              });
+              const allRunners = runnerRes.data.runners || [];
+              const onlineRunners = allRunners.filter((r) => r.status === 'online');
+
+              if (onlineRunners.length === 0) {
+                console.log('No self-hosted runners are currently online. Skipping token refresh.');
+                core.setOutput('should_run', 'false');
+                return;
+              }
+
+              const idleRunners = onlineRunners.filter((r) => !r.busy);
+              if (idleRunners.length === 0) {
+                console.log('All online self-hosted runners are currently busy. Auto-stopping new run.');
+                core.setOutput('should_run', 'false');
+                return;
+              }
+
+              console.log(`Verified ${idleRunners.length} idle self-hosted runner(s) available out of ${onlineRunners.length} online runner(s).`);
+            } catch (err) {
+              console.log('Runner online status check skipped (requires GH_PAT secret):', err.message);
+            }
+
+            // 2. Check for duplicate running workflow jobs
+            const activeRuns = await github.rest.actions.listWorkflowRunsForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'refresh_token.yml',
+              status: 'in_progress',
+            });
+
+            const currentRunningJob = activeRuns.data.workflow_runs.filter(
+              (r) => r.id !== context.runId
+            );
+
+            if (currentRunningJob.length > 0) {
+              console.log('A refresh token job is already in progress. Skipping duplicate job.');
+              core.setOutput('should_run', 'false');
+              return;
+            }
+
+            console.log('No duplicate jobs running. Handing off to self-hosted runner.');
+            core.setOutput('should_run', 'true');
+
   refresh-token:
+    needs: gatekeeper
+    if: needs.gatekeeper.outputs.should_run == 'true'
     runs-on: self-hosted
 
     steps:
@@ -28,3 +95,14 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: python3 script/auth.py --force
+
+      - name: Update GitHub Secret TONTON_TOKEN
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -n "$GH_PAT" ] && [ -f auth/tonton ] && [ -s auth/tonton ]; then
+            echo "$GH_PAT" | gh auth login --with-token
+            gh secret set TONTON_TOKEN --body "$(cat auth/tonton)" --repo kerklangsi/MY-tv
+            echo "Successfully synced refreshed token to GitHub Secret TONTON_TOKEN"
+          fi
+
