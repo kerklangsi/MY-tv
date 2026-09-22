@@ -82,11 +82,12 @@ The repository includes preconfigured GitHub Actions workflows located in `.gith
 ### 1. `update_iptv.yml` (IPTV & EPG Updater)
 - **Schedule**: Runs automatically every 6 hours (`cron: '0 */6 * * *'`).
 - **Manual Trigger**: Can be manually run anytime via **Actions** tab > **Run workflow** (`workflow_dispatch`).
-- **Webhook Dispatch**: Can be triggered via external repository dispatch:
+- **Webhook Dispatch**: Can be triggered via external repository dispatch (e.g. from **cron-job.org**):
   ```bash
   curl -X POST https://api.github.com/repos/kerklangsi/MY-tv/dispatches \
     -H "Accept: application/vnd.github.v3+json" \
     -H "Authorization: token <YOUR_GH_TOKEN>" \
+    -H "User-Agent: CronJobWebHook" \
     -d '{"event_type": "update-iptv"}'
   ```
 
@@ -98,7 +99,7 @@ The repository includes preconfigured GitHub Actions workflows located in `.gith
   curl -X POST https://api.github.com/repos/kerklangsi/MY-tv/dispatches \
     -H "Accept: application/vnd.github.v3+json" \
     -H "Authorization: token <YOUR_GH_TOKEN>" \
-    -H "User-Agent: cron-job.org" \
+    -H "User-Agent: CronJobWebHook" \
     -d '{"event_type": "refresh-token"}'
   ```
 
@@ -109,7 +110,7 @@ The repository includes preconfigured GitHub Actions workflows located in `.gith
 4. **HTTP Headers**:
    - `Accept`: `application/vnd.github.v3+json`
    - `Authorization`: `Bearer <YOUR_GITHUB_PAT>`
-   - `User-Agent`: `cron-job.org`
+   - `User-Agent`: `CronJobWebHook`
 5. **Request Body (JSON)**:
    ```json
    {
