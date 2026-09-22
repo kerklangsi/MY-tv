@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3387627,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/theindonesiachannel/abr/theindonesiachannel_1080p/chunks.m3u8?md5=d05bfnYNoQXDiXz4wYx_Tg&expires=1790037151
-#EXT-X-STREAM-INF:BANDWIDTH=2347433,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/theindonesiachannel/abr/theindonesiachannel_720p/chunks.m3u8?md5=JFl8K0O2SftoetxDC1iLvw&expires=1790037151
-#EXT-X-STREAM-INF:BANDWIDTH=1106978,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/theindonesiachannel/abr/theindonesiachannel_480p/chunks.m3u8?md5=lpXq9xP6I2N_p_zmwOqLuw&expires=1790037152
+#EXT-X-STREAM-INF:BANDWIDTH=3710263,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/theindonesiachannel/abr/theindonesiachannel_1080p/chunks.m3u8?md5=JaIu7MdkvQNpzehMSKN2Nw&expires=1790038896
+#EXT-X-STREAM-INF:BANDWIDTH=2499353,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/theindonesiachannel/abr/theindonesiachannel_720p/chunks.m3u8?md5=nb9yoddr1PUeyvVXJbd71w&expires=1790038897
+#EXT-X-STREAM-INF:BANDWIDTH=1179079,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/theindonesiachannel/abr/theindonesiachannel_480p/chunks.m3u8?md5=PilZOAVdj-ToX1gYIBeovg&expires=1790038897

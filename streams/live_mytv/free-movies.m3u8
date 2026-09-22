@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3760803,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/freemovies/abr/freemovies_1080p/chunks.m3u8?md5=In1GtN_jv8s6ncHYMf4dsg&expires=1790037138
-#EXT-X-STREAM-INF:BANDWIDTH=2443061,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/freemovies/abr/freemovies_720p/chunks.m3u8?md5=HJW41nKUD_oVrjlOgHqE2w&expires=1790037138
-#EXT-X-STREAM-INF:BANDWIDTH=1083530,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
-https://cuwf8jayq1.tenbytecdn.com/live/freemovies/abr/freemovies_480p/chunks.m3u8?md5=ph_inmmLlkO0cXF9SnKdDg&expires=1790037138
+#EXT-X-STREAM-INF:BANDWIDTH=4164244,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d4028,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/freemovies/abr/freemovies_1080p/chunks.m3u8?md5=gayfpFrWtxy-HLZpEjAdgg&expires=1790038888
+#EXT-X-STREAM-INF:BANDWIDTH=2433956,FRAME-RATE=25,RESOLUTION=1280x720,CODECS="avc1.4d401f,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/freemovies/abr/freemovies_720p/chunks.m3u8?md5=E0qbFnmGrwisnSL5k-qs4w&expires=1790038888
+#EXT-X-STREAM-INF:BANDWIDTH=1171996,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.4d401e,mp4a.40.2"
+https://cuwf8jayq1.tenbytecdn.com/live/freemovies/abr/freemovies_480p/chunks.m3u8?md5=WpGiJWpCihBNLRKueWNtQw&expires=1790038888
