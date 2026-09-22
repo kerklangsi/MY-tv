@@ -104,10 +104,6 @@ def get_me_key():
     except Exception as e:
         print(f"[MYTV Auth Warning] Dynamic mana2.my key scrape encountered: {e}")
 
-    # Fallback to known production key if dynamic fetch could not extract it
-    if not extracted_key:
-        extracted_key = "u6nCKz4ogW09a27lOzGcYkdJP9QJ6ABgw9GZuIBmWtMWswdz"
-
     if extracted_key:
         os.makedirs(AUTH_DIR, exist_ok=True)
         try:
