@@ -214,17 +214,30 @@ def get_token(force_refresh=False):
                         submit_btn.click()
                         if popup_page:
                             try:
-                                popup_page.wait_for_event("close", timeout=8000)
+                                popup_page.wait_for_event("close", timeout=12000)
                             except Exception:
                                 pass
+
+                    # Wait for SSO callback to finish and write loginToken to localStorage
+                    try:
+                        page.wait_for_function(
+                            "() => { try { const s = JSON.parse(localStorage.getItem('SHARED_DEVICE')); return !!(s && (s.loginToken || s.token)); } catch(e) { return false; } }",
+                            timeout=20000
+                        )
+                    except Exception:
                         page.wait_for_timeout(5000)
                 except Exception as login_err:
                     print(f"[Tonton Auth Warning] Web login interaction encountered: {login_err}")
 
-            page.goto("https://watch.tonton.com.my/live", timeout=30000)
-            page.wait_for_timeout(4000)
-
+            # Check if token is already present before navigating
             ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
+            if not ls_raw or '"loginToken"' not in ls_raw:
+                try:
+                    page.goto("https://watch.tonton.com.my/live", timeout=30000)
+                    page.wait_for_timeout(4000)
+                    ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
+                except Exception:
+                    pass
             cookies = context.cookies()
             browser.close()
 
