@@ -60329,10 +60329,6 @@
     <title lang="en">Painted Face</title>
     <desc lang="en">Episode 1 - Scholar Wang Huai Qing sells paintings to save his ailing wife. He is attacked by a bird demon along the way but is rescued by Fox demon Xiao Rong. To elude the pursuit, Wang brings Xiao Rong home, sparking a love triangle and at the same time, unfolding an impending love between human and demon. - [NC]</desc>
   </programme>
-  <programme start="20260921210000 +0000" stop="20260921213000 +0000" channel="tv3">
-    <title lang="en">BACAAN AL-QURAN 2014</title>
-    <desc lang="en">Episode 4 - Bacaan ayat suci Al-Quran surah AR-Rahmman oleh Ustaz Ahmad Tirmizi Hj Ali. - [NC]</desc>
-  </programme>
   <programme start="20260921213000 +0000" stop="20260921223000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -60460,6 +60456,10 @@
   <programme start="20260922210000 +0000" stop="20260922213000 +0000" channel="tv3">
     <title lang="en">BACAAN AL-QURAN 2014</title>
     <desc lang="en">Episode 6 - Bacaan ayat suci Al-Quran surah Al-Juma'ah oleh Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
+  </programme>
+  <programme start="20260922213000 +0000" stop="20260922223000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260921210000 +0000" stop="20260921220000 +0000" channel="tv9">
     <title lang="en">MY #QURANTIME 2.0            </title>
@@ -61036,10 +61036,6 @@
   <programme start="20260923210000 +0000" stop="20260923223500 +0000" channel="thrill">
     <title lang="en">Jealousy</title>
     <desc lang="en">Episode 1 - Model Min dies mysteriously in a hospital rumoured to be haunted. Soon after, her photographer receives eerie phone calls, a writer suffers a bizarre car accident, and Min’s friend suddenly vanishes. As fear spreads, dark secrets and supernatural forces emerge, drawing them into a terrifying nightmare linked to Min’s death. - [NC]</desc>
-  </programme>
-  <programme start="20260922213000 +0000" stop="20260922223000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260922223000 +0000" stop="20260922225000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -63205,6 +63201,10 @@
     <title lang="en">BACAAN AL-QURAN 2014</title>
     <desc lang="en">Episode 1 - Bacaan ayat suci Al-Quran surah Al-Fatihah oleh Ustaz Ahmad Tirmizi Hj Ali &amp; Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
   </programme>
+  <programme start="20260926213000 +0000" stop="20260926223000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
+  </programme>
   <programme start="20260925220000 +0000" stop="20260925222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
     <desc lang="en">Episode 1 - Bacaan Surah Yasin - [NC]</desc>
@@ -63480,7 +63480,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927203000 +0000" stop="20260927210211 +0000" channel="drama-sangat">
+  <programme start="20260927203000 +0000" stop="20260927213203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -63656,7 +63656,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927203000 +0000" stop="20260927210211 +0000" channel="ntv7">
+  <programme start="20260927203000 +0000" stop="20260927213203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -63732,10 +63732,6 @@
   <programme start="20260927210000 +0000" stop="20260927215500 +0000" channel="thrill">
     <title lang="en">3AM - The Campus</title>
     <desc lang="en">Episode 2 - A school girl joins two internet content creators in a horror video project filmed in an old building behind their school. The trio encounters a bullying gang and as events unfold, it becomes clear that the girl holds a personal grudge against the gang and is blinded by hatred to exercise justice, even if it means sacrificing the innocents… - [NC]</desc>
-  </programme>
-  <programme start="20260926213000 +0000" stop="20260926223000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260926223000 +0000" stop="20260926225000 +0000" channel="tv3">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -63880,6 +63876,10 @@
   <programme start="20260927210000 +0000" stop="20260927213000 +0000" channel="tv3">
     <title lang="en">BACAAN AL-QURAN 2014</title>
     <desc lang="en">Episode 1 - Bacaan ayat suci Al-Quran surah Al-Fatihah oleh Ustaz Ahmad Tirmizi Hj Ali &amp; Ustaz Ahmad Tarmizi Abdul Rahman. - [NC]</desc>
+  </programme>
+  <programme start="20260927213000 +0000" stop="20260927223000 +0000" channel="tv3">
+    <title lang="en">WOW SHOP</title>
+    <desc lang="en">[NC]</desc>
   </programme>
   <programme start="20260926220000 +0000" stop="20260926222000 +0000" channel="tv9">
     <title lang="en">BACAAN YASIN 2025</title>
@@ -64067,87 +64067,92 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928200000 +0000" stop="20260928210211 +0000" channel="8tv">
+  <programme start="20260928200000 +0000" stop="20260928213000 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927210211 +0000" stop="20260927223211 +0000" channel="drama-sangat">
+  <programme start="20260928213000 +0000" stop="20260928213203 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927223211 +0000" stop="20260928000211 +0000" channel="drama-sangat">
+  <programme start="20260927213203 +0000" stop="20260927230203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928000211 +0000" stop="20260928013211 +0000" channel="drama-sangat">
+  <programme start="20260927230203 +0000" stop="20260928003203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928013211 +0000" stop="20260928030211 +0000" channel="drama-sangat">
+  <programme start="20260928003203 +0000" stop="20260928020203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928030211 +0000" stop="20260928043211 +0000" channel="drama-sangat">
+  <programme start="20260928020203 +0000" stop="20260928033203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928043211 +0000" stop="20260928060211 +0000" channel="drama-sangat">
+  <programme start="20260928033203 +0000" stop="20260928050203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928060211 +0000" stop="20260928073211 +0000" channel="drama-sangat">
+  <programme start="20260928050203 +0000" stop="20260928063203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928073211 +0000" stop="20260928090211 +0000" channel="drama-sangat">
+  <programme start="20260928063203 +0000" stop="20260928080203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928090211 +0000" stop="20260928103211 +0000" channel="drama-sangat">
+  <programme start="20260928080203 +0000" stop="20260928093203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928103211 +0000" stop="20260928120211 +0000" channel="drama-sangat">
+  <programme start="20260928093203 +0000" stop="20260928110203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928120211 +0000" stop="20260928133211 +0000" channel="drama-sangat">
+  <programme start="20260928110203 +0000" stop="20260928123203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928133211 +0000" stop="20260928150211 +0000" channel="drama-sangat">
+  <programme start="20260928123203 +0000" stop="20260928140203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928150211 +0000" stop="20260928163211 +0000" channel="drama-sangat">
+  <programme start="20260928140203 +0000" stop="20260928153203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928163211 +0000" stop="20260928180211 +0000" channel="drama-sangat">
+  <programme start="20260928153203 +0000" stop="20260928170203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928180211 +0000" stop="20260928193211 +0000" channel="drama-sangat">
+  <programme start="20260928170203 +0000" stop="20260928183203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928193211 +0000" stop="20260928210211 +0000" channel="drama-sangat">
+  <programme start="20260928183203 +0000" stop="20260928200203 +0000" channel="drama-sangat">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
+  </programme>
+  <programme start="20260928200203 +0000" stop="20260928213203 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -64184,82 +64189,82 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20260927210211 +0000" stop="20260927223211 +0000" channel="ntv7">
+  <programme start="20260927213203 +0000" stop="20260927230203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927223211 +0000" stop="20260928000211 +0000" channel="ntv7">
+  <programme start="20260927230203 +0000" stop="20260928003203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928000211 +0000" stop="20260928013211 +0000" channel="ntv7">
+  <programme start="20260928003203 +0000" stop="20260928020203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928013211 +0000" stop="20260928030211 +0000" channel="ntv7">
+  <programme start="20260928020203 +0000" stop="20260928033203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928030211 +0000" stop="20260928043211 +0000" channel="ntv7">
+  <programme start="20260928033203 +0000" stop="20260928050203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928043211 +0000" stop="20260928060211 +0000" channel="ntv7">
+  <programme start="20260928050203 +0000" stop="20260928063203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928060211 +0000" stop="20260928073211 +0000" channel="ntv7">
+  <programme start="20260928063203 +0000" stop="20260928080203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928073211 +0000" stop="20260928090211 +0000" channel="ntv7">
+  <programme start="20260928080203 +0000" stop="20260928093203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928090211 +0000" stop="20260928103211 +0000" channel="ntv7">
+  <programme start="20260928093203 +0000" stop="20260928110203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928103211 +0000" stop="20260928120211 +0000" channel="ntv7">
+  <programme start="20260928110203 +0000" stop="20260928123203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928120211 +0000" stop="20260928133211 +0000" channel="ntv7">
+  <programme start="20260928123203 +0000" stop="20260928140203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928133211 +0000" stop="20260928150211 +0000" channel="ntv7">
+  <programme start="20260928140203 +0000" stop="20260928153203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928150211 +0000" stop="20260928163211 +0000" channel="ntv7">
+  <programme start="20260928153203 +0000" stop="20260928170203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928163211 +0000" stop="20260928180211 +0000" channel="ntv7">
+  <programme start="20260928170203 +0000" stop="20260928183203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928180211 +0000" stop="20260928193211 +0000" channel="ntv7">
+  <programme start="20260928183203 +0000" stop="20260928200203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928193211 +0000" stop="20260928210211 +0000" channel="ntv7">
+  <programme start="20260928200203 +0000" stop="20260928213203 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -64340,10 +64345,6 @@
     <title lang="en">Creepy Pasta</title>
     <desc lang="en">Episode 1 - Amnesiac Marco awakens imprisoned in an abandoned house surrounded by corpses. Trapped inside, he is forced by a mysterious mastermind to play ten disturbing videos on a flash drive. As deadly curses unfold, he is plagued by terrifying visions while his body, memory and life slowly unravel. With the countdown to death underway, can he survive? - [NC]</desc>
   </programme>
-  <programme start="20260927213000 +0000" stop="20260927223000 +0000" channel="tv3">
-    <title lang="en">WOW SHOP</title>
-    <desc lang="en">[NC]</desc>
-  </programme>
   <programme start="20260927223000 +0000" stop="20260928000000 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
@@ -64419,7 +64420,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928210000 +0000" stop="20260928210211 +0000" channel="tv3">
+  <programme start="20260928210000 +0000" stop="20260928213203 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -64499,7 +64500,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928203000 +0000" stop="20260928210211 +0000" channel="tv9">
+  <programme start="20260928203000 +0000" stop="20260928213203 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
