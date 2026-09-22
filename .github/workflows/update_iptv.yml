@@ -1,16 +1,9 @@
 name: Update IPTV Playlist & EPG
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # Daily at 00:00 UTC
   repository_dispatch:
     types: [update-iptv] # Allows external cron webhooks for exact time-based triggers
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
-    inputs:
-      tonton_token:
-        description: 'Optional custom Tonton login token'
-        required: false
-        default: ''
 
 jobs:
   gatekeeper:
@@ -93,28 +86,18 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          python3 -m pip install cryptography playwright
-          python3 -m playwright install --with-deps chromium
-
-      - name: Refresh Tonton Authentication Token
-        env:
-          TONTON_EMAIL: ${{ secrets.TONTON_EMAIL }}
-          TONTON_PASSWORD: ${{ secrets.TONTON_PASSWORD }}
-          TONTON_TOKEN: ${{ github.event.inputs.tonton_token || github.event.client_payload.tonton_token || secrets.TONTON_TOKEN }}
-        run: python3 script/tonton_auth.py --force
+        run: python3 -m pip install cryptography
 
       - name: Run Live TV & EPG Generator
         env:
           PYTHONUNBUFFERED: "1"
-          TONTON_TOKEN: ${{ github.event.inputs.tonton_token || github.event.client_payload.tonton_token || secrets.TONTON_TOKEN }}
         run: python3 script/update_live.py
 
       - name: Commit and push Live TV changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git add -f streams/live_mytv/ streams/live_tonton/ streams/live_unifi/ streams/radio_mytv/ playlist.m3u playlist.m3u8 all.m3u all.m3u8 epg.xml epg.xml.gz
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Live TV streams & EPG schedule" && git pull --rebase origin main && git push)
+          git add playlist.m3u playlist.m3u8 all.m3u all.m3u8 epg.xml epg.xml.gz List/LIVE_LIST.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Live TV streams, EPG schedule & catalogs" && git pull --rebase origin main && git push)
 
   update-vod:
     needs: gatekeeper
@@ -136,13 +119,13 @@ jobs:
       - name: Run VOD Generator
         env:
           PYTHONUNBUFFERED: "1"
-          TONTON_TOKEN: ${{ github.event.inputs.tonton_token || github.event.client_payload.tonton_token || secrets.TONTON_TOKEN }}
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: python3 script/update_vod.py
 
       - name: Commit and push VOD changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git add -f streams/vod_mytv/ streams/vod_tonton/ streams/vod_unifi/ vod.m3u vod.m3u8 all.m3u all.m3u8
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update VOD movies & shows playlist" && git pull --rebase origin main && git push)
-
+          git add vod.m3u vod.m3u8 all.m3u all.m3u8 List/SHOWS_LIST.md List/MOVIES_LIST.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update VOD movies & shows playlist and catalogs" && git pull --rebase origin main && git push)
 

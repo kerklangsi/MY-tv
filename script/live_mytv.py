@@ -12,11 +12,10 @@ from urllib.parse import urlparse
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 from utils import http_get, http_post, fetch_raw_text, slugify, make_m3u8_absolute, write_if_changed, cleanup_stale_files
+from auth import ME_KEY
 
 BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
 GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
-
-ME_KEY = "u6nCKz4ogW09a27lOzGcYkdJP9QJ6ABgw9GZuIBmWtMWswdz".encode('utf-8')[:32]
 
 # Decrypt AES-GCM encrypted CDN signature payload.
 def decrypt_cdn_payload(payload_b64):

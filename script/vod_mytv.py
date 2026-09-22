@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
-from utils import http_get, http_post, fetch_raw_text, slugify, write_if_changed, cleanup_stale_files
+from utils import http_get, http_post, fetch_raw_text, slugify, write_if_changed, cleanup_stale_files, update_catalog_shows, update_catalog_movies
 
 BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
 GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
@@ -291,6 +291,7 @@ def process_vod_shows(device_id):
     subfolder_stats = defaultdict(lambda: {'updated': 0, 'kept': 0, 'count': 0})
 
     for (extinf, extra_lines, clean_url, master_file_path, updated), (item, folder_path, item_slug, group_title, device_id) in zip(results, all_tasks):
+        item['clean_url'] = clean_url
         active_files_set.add(os.path.normpath(master_file_path))
         vod_entries.append((extinf, extra_lines, clean_url))
         sf = folder_path.rsplit('/', 1)[-1]
@@ -308,5 +309,33 @@ def process_vod_shows(device_id):
     # Clean up stale files that are no longer in the provider catalog
     cleanup_stale_files("streams/vod_mytv", active_files_set)
 
+    mytv_shows_dict = defaultdict(lambda: {'title': '', 'episodes': []})
+    mytv_movies_list = []
+
+    for subfolder, sub_items in items_by_subfolder.items():
+        if subfolder in ['movie', 'short-movies-and-clips']:
+            for m in sub_items:
+                m_title = m.get('title', 'Unknown Movie')
+                dur_sec = m.get('durationSeconds') or 0
+                if subfolder == 'movie' and dur_sec >= 1200:
+                    mytv_movies_list.append({'title': m_title, 'duration': dur_sec, 'url': m.get('clean_url', '')})
+        else:
+            first_title = sub_items[0].get('title', subfolder)
+            m_s = re.match(r'^(.*?)\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+', first_title, re.IGNORECASE)
+            s_title = m_s.group(1).strip() if m_s else subfolder.replace('-', ' ').title()
+            mytv_shows_dict[subfolder]['title'] = s_title
+            for ep in sub_items:
+                ep_t = ep.get('title', 'Unknown Episode')
+                ep_url = ep.get('clean_url', '')
+                ep_str = f"[{ep_t}]({ep_url})" if ep_url else ep_t
+                mytv_shows_dict[subfolder]['episodes'].append(ep_str)
+
+    update_catalog_shows('MYTV', 'MYTV Shows', 'streams/vod_mytv', mytv_shows_dict)
+    update_catalog_movies('MYTV', 'MYTV Feature Movies', mytv_movies_list)
+
     print(f"Total MYTV VOD items processed: {len(vod_entries)}")
     return vod_entries
+
+if __name__ == '__main__':
+    dev_id = str(uuid.uuid4())
+    process_vod_shows(dev_id)

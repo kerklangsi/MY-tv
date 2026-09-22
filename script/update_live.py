@@ -11,7 +11,7 @@ import live_mytv
 import live_tonton
 import live_unifi
 
-from utils import write_if_changed, update_combined_playlist
+from utils import write_if_changed, update_combined_playlist, update_catalog_live
 
 # Extract channel number integer from tvg-chno attribute for sorting.
 def extract_chno(extinf):
@@ -34,13 +34,17 @@ def main():
     all_live_entries = mytv_m3u_entries + tonton_m3u_entries + unifi_m3u_entries
     all_live_entries.sort(key=lambda item: (extract_chno(item[0]), item[0]))
 
+    # Generate/Update List/LIVE_LIST.md catalog
+    update_catalog_live(all_live_entries)
+
     m3u_lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
 
     for extinf, extra_lines, url in all_live_entries:
-        m3u_lines.append(extinf)
-        for el in extra_lines:
-            m3u_lines.append(el)
-        m3u_lines.append(url)
+        if url:
+            m3u_lines.append(extinf)
+            for el in extra_lines:
+                m3u_lines.append(el)
+            m3u_lines.append(url)
 
     playlist_content = "\n".join(m3u_lines) + "\n"
     write_if_changed("playlist.m3u", playlist_content)

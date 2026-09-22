@@ -11,13 +11,10 @@ from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 
 from utils import http_get, fetch_raw_text_and_url, slugify, make_m3u8_absolute, write_if_changed, cleanup_stale_files
-from tonton_auth import get_tonton_token
+from auth import get_token, USER_AGENT, DEVICE_ID
 
 BASE_API = "https://headend-api.tonton.com.my/v600"
 GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
-USER_AGENT_STR = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36"
-
-DEFAULT_DEVICE_ID = "web-v3-0d63fbaa5090547e80c50e9ae5935bfb-6d5145cbec6729682bee9b52f23ef4a9-cmtu0gw320001dt3qqdhki7iz"
 
 TONTON_LCN_MAP = {
     "TV3": 103,
@@ -41,7 +38,7 @@ def timestamp_to_xmltv(ts):
 def process_tonton_live_channels(device_id):
     print("--- Processing Tonton Live Channels ---")
     channels_url = f"{BASE_API}/api/categoryTree.class.api.php/GOgetLiveChannels/378?format=json&appID=TONTON&plt=web&serviceID=default&apiVersion=2"
-    channels_res = http_get(channels_url, headers={'User-Agent': USER_AGENT_STR})
+    channels_res = http_get(channels_url, headers={'User-Agent': USER_AGENT})
     live_channels = channels_res.get('liveChannel', [])
     print(f"Total Tonton Live channels found: {len(live_channels)}")
 
@@ -51,8 +48,8 @@ def process_tonton_live_channels(device_id):
     epg_channels = []
     processed_slugs = set()
     active_files_set = set()
-    tonton_token = get_tonton_token()
-    dev_id = DEFAULT_DEVICE_ID
+    tonton_token = get_token()
+    dev_id = DEVICE_ID
 
     for idx, ch in enumerate(live_channels, 1):
         c_id = ch.get('id')
@@ -76,7 +73,7 @@ def process_tonton_live_channels(device_id):
         group_title = "Tonton Live"
 
         config_url = f"{BASE_API}/api/playback.class.api.php/GOgetLiveConfig/378/1/{c_id}?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&manufacturer=chrome&serviceID=default&model=Mozilla/5.0&firmwareVersion=10&appVersion=6.1.7&deviceOS=PCBROWSER&limitAdTracking=0&pageId=live-tv&deviceId={dev_id}&loginToken={tonton_token}"
-        config_res = http_get(config_url, headers={'User-Agent': USER_AGENT_STR})
+        config_res = http_get(config_url, headers={'User-Agent': USER_AGENT})
         playback_data = config_res.get('playback', {}) or config_res
         
         master_url = ""
@@ -91,21 +88,22 @@ def process_tonton_live_channels(device_id):
         signed_stream_url = master_url
 
         ch_file_path = f"streams/live_tonton/{c_slug}.m3u8"
+        extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}" http-user-agent="{USER_AGENT}",{c_name}'
+        extra_lines = [f'#EXTVLCOPT:http-user-agent={USER_AGENT}']
         
         if signed_stream_url:
             active_files_set.add(os.path.normpath(ch_file_path))
-            master_manifest, final_url = fetch_raw_text_and_url(signed_stream_url, headers={'User-Agent': USER_AGENT_STR})
+            master_manifest, final_url = fetch_raw_text_and_url(signed_stream_url, headers={'User-Agent': USER_AGENT})
             abs_playlist_content = make_m3u8_absolute(master_manifest, final_url)
             updated = write_if_changed(ch_file_path, abs_playlist_content)
             status_str = "Updated" if updated else "Kept (Unchanged)"
             clean_m3u_url = f"{GITHUB_URL}/streams/live_tonton/{c_slug}.m3u8"
 
-            extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}" http-user-agent="{USER_AGENT_STR}",{c_name}'
-            extra_lines = [f'#EXTVLCOPT:http-user-agent={USER_AGENT_STR}']
             tonton_m3u_entries.append((extinf, extra_lines, clean_m3u_url))
             print(f"[{idx}/{len(live_channels)}] [{status_str}] Added Tonton channel {c_num}: {c_name} ({c_code}) -> {clean_m3u_url}", flush=True)
         else:
-            print(f"[{idx}/{len(live_channels)}] [Warning] Tonton channel {c_num}: {c_name} requires valid TONTON_TOKEN env variable.", flush=True)
+            tonton_m3u_entries.append((extinf, extra_lines, None))
+            print(f"[{idx}/{len(live_channels)}] [Paywalled VIP] Tonton channel {c_num}: {c_name} (Requires Tonton UP / VIP)", flush=True)
 
         if c_slug not in processed_slugs:
             processed_slugs.add(c_slug)
@@ -131,7 +129,7 @@ def fetch_tonton_epg_programmes(epg_channels):
         start_ts = now_ts + (day_offset * 86400)
         end_ts = start_ts + 86400
         epg_url = f"{BASE_API}/api/epg.class.api.php/getChannelListings/378?filter_starttime={start_ts}&filter_endtime={end_ts}&filter_channels={channels_filter}&filter_fields={filter_fields}&format=json&appID=TONTON&serviceId=default"
-        epg_res = http_get(epg_url, headers={'User-Agent': USER_AGENT_STR})
+        epg_res = http_get(epg_url, headers={'User-Agent': USER_AGENT})
         listings = epg_res if isinstance(epg_res, list) else []
 
         for listing in listings:

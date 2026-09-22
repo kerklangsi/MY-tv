@@ -7,3 +7,4 @@ playlist.*
 vod.*
 .agents/
 .tonton_token
+auth/
