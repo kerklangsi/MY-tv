@@ -2894,7 +2894,7 @@
 <!-- SECTION:TONTON:START -->
 ## 📺 Tonton Shows
 
-**Total Series Shows:** 645 | **Total Episodes:** 9366 (0 Playable, 9366 VIP)
+**Total Series Shows:** 645 | **Total Episodes:** 9371 (0 Playable, 9371 VIP)
 
 ---
 
@@ -3326,7 +3326,7 @@
 
 ### 18. 8TV Midday Mandarin News (2026)
 - **Folder**: `streams/vod_tonton/8tv-middaymandarinnews-2026`
-- **Total Episodes**: 10 (0 Playable, 10 VIP)
+- **Total Episodes**: 11 (0 Playable, 11 VIP)
 - **Episode List**:
   - 🔒 Episod 167 - 8TV Midday Mandarin News (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 198 - 8TV Midday Mandarin News (2026) *(Requires Tonton UP / VIP)*
@@ -3338,10 +3338,11 @@
   - 🔒 Episod 261 - 8TV Midday Mandarin News (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 262 - 8TV Midday Mandarin News (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 263 - 8TV Midday Mandarin News (2026) *(Requires Tonton UP / VIP)*
+  - 🔒 Episod 264 - 8TV Midday Mandarin News (2026) *(Requires Tonton UP / VIP)*
 
 ### 19. 8TV Morning Express (2026)
 - **Folder**: `streams/vod_tonton/8tv-morning-express-2026`
-- **Total Episodes**: 6 (0 Playable, 6 VIP)
+- **Total Episodes**: 7 (0 Playable, 7 VIP)
 - **Episode List**:
   - 🔒 Episod 116 - 8TV Morning Express (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 138 - 8TV Morning Express (2026) *(Requires Tonton UP / VIP)*
@@ -3349,6 +3350,7 @@
   - 🔒 Episod 182 - 8TV Morning Express (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 183 - 8TV Morning Express (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 184 - 8TV Morning Express (2026) *(Requires Tonton UP / VIP)*
+  - 🔒 Episod 185 - 8TV Morning Express (2026) *(Requires Tonton UP / VIP)*
 
 ### 20. 8TV Starfluencer Awards 2025 CUCKOO
 - **Folder**: `streams/vod_tonton/8tv-starfluencer-awards-2025`
@@ -4535,7 +4537,7 @@
 
 ### 85. Buletin Pagi (2026)
 - **Folder**: `streams/vod_tonton/buletin-pagi-2026`
-- **Total Episodes**: 6 (0 Playable, 6 VIP)
+- **Total Episodes**: 7 (0 Playable, 7 VIP)
 - **Episode List**:
   - 🔒 Episod 260 - Buletin Pagi (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 261 - Buletin Pagi (2026) *(Requires Tonton UP / VIP)*
@@ -4543,6 +4545,7 @@
   - 🔒 Episod 263 - Buletin Pagi (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 264 - Buletin Pagi (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 265 - Buletin Pagi (2026) *(Requires Tonton UP / VIP)*
+  - 🔒 Episod 266 - Buletin Pagi (2026) *(Requires Tonton UP / VIP)*
 
 ### 86. Buletin TV9 (2026)
 - **Folder**: `streams/vod_tonton/buletin-tv9-2026`
@@ -11588,7 +11591,7 @@
 
 ### 368. Tanyalah Ustaz (2026)
 - **Folder**: `streams/vod_tonton/tanyalah-ustaz-2026`
-- **Total Episodes**: 251 (0 Playable, 251 VIP)
+- **Total Episodes**: 252 (0 Playable, 252 VIP)
 - **Episode List**:
   - 🔒 Episod 1 - Tanyalah Ustaz (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 2 - Tanyalah Ustaz (2026) *(Requires Tonton UP / VIP)*
@@ -11841,6 +11844,7 @@
   - 🔒 Episod 250 - Tanyalah Ustaz (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 251 - Tanyalah Ustaz (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 252 - Tanyalah Ustaz (2026) *(Requires Tonton UP / VIP)*
+  - 🔒 Episod 253 - Tanyalah Ustaz (2026) *(Requires Tonton UP / VIP)*
 
 ### 369. Tanyalah Ustaz: Salam Ya Rasul
 - **Folder**: `streams/vod_tonton/tanyalah-ustaz-salamyarasul`
@@ -15374,7 +15378,7 @@
 
 ### 640. WHI Vibe (2026)
 - **Folder**: `streams/vod_tonton/wanita-hari-ini-vibe-2026`
-- **Total Episodes**: 7 (0 Playable, 7 VIP)
+- **Total Episodes**: 8 (0 Playable, 8 VIP)
 - **Episode List**:
   - 🔒 Episod 1 - WHI Vibe (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 2 - WHI Vibe (2026) *(Requires Tonton UP / VIP)*
@@ -15383,6 +15387,7 @@
   - 🔒 Episod 5 - WHI Vibe (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 6 - WHI Vibe (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 7 - WHI Vibe (2026) *(Requires Tonton UP / VIP)*
+  - 🔒 Episod 8 - WHI Vibe (2026) *(Requires Tonton UP / VIP)*
 
 ### 641. Whimsical Elf 5
 - **Folder**: `streams/vod_tonton/whimsical-elf`
