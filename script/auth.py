@@ -232,20 +232,48 @@ def get_token(force_refresh=False):
 
 
             popup_page = None
-            def on_popup(popup):
-                nonlocal popup_page
-                popup_page = popup
-
-            context.on("page", on_popup)
-
             captured_tokens = []
+
+            # Intercept token from request URLs (legacy fallback)
             def on_request(req):
                 if "loginToken=" in req.url:
                     tok = req.url.split("loginToken=")[1].split("&")[0]
                     if tok and len(tok) > 20:
                         captured_tokens.append(tok)
 
+            # Intercept token from PKCE OAuth2 callback response body or redirect URL
+            def on_response(resp):
+                try:
+                    url = resp.url
+                    if "callback" in url and "tonton.com.my" in url:
+                        try:
+                            body = resp.text()
+                            if body and "loginToken" in body:
+                                import re as _re
+                                m = _re.search(r'["\']?loginToken["\']?\s*[=:,]\s*["\']?([A-Za-z0-9_\-\.]{20,})', body)
+                                if m:
+                                    captured_tokens.append(m.group(1))
+                                    print(f"[Tonton Auth Debug] Token captured from callback response body")
+                        except Exception:
+                            pass
+                    if "loginToken=" in url:
+                        tok = url.split("loginToken=")[1].split("&")[0]
+                        if tok and len(tok) > 20:
+                            captured_tokens.append(tok)
+                            print(f"[Tonton Auth Debug] Token captured from redirect URL")
+                except Exception:
+                    pass
+
+            # Single context page handler — tracks popup AND attaches token listeners
+            def on_new_page(new_pg):
+                nonlocal popup_page
+                popup_page = new_pg
+                new_pg.on("request", on_request)
+                new_pg.on("response", on_response)
+
+            context.on("page", on_new_page)
             page.on("request", on_request)
+            page.on("response", on_response)
 
             if EMAIL and PASSWORD:
                 print("[Tonton Auth] EMAIL and PASSWORD detected, attempting web login...")
@@ -374,7 +402,7 @@ def get_token(force_refresh=False):
                             except Exception:
                                 pass
 
-                    # Wait for SSO callback — check multiple localStorage keys
+                    # Wait for SSO callback — token arrives via network, also check localStorage
                     try:
                         page.wait_for_function(
                             """() => {
@@ -383,19 +411,21 @@ def get_token(force_refresh=False):
                                     if (sd && (sd.loginToken || sd.token)) return true;
                                     const up = JSON.parse(localStorage.getItem('USER_PROFILE') || 'null');
                                     if (up && (up.loginToken || up.token)) return true;
+                                    // Only match values that are long enough to be real tokens (>50 chars)
                                     return Object.keys(localStorage).some(
                                         k => k.toLowerCase().includes('token') &&
                                              localStorage.getItem(k) &&
-                                             localStorage.getItem(k).length > 20
+                                             localStorage.getItem(k).length > 50 &&
+                                             !localStorage.getItem(k).startsWith('{')
                                     );
                                 } catch(e) { return false; }
                             }""",
-                            timeout=25000
+                            timeout=15000
                         )
                         print("[Tonton Auth Debug] localStorage token found via wait_for_function")
                     except Exception:
-                        print("[Tonton Auth Debug] wait_for_function timed out — falling back to 8s wait")
-                        page.wait_for_timeout(8000)
+                        print("[Tonton Auth Debug] localStorage token not found — relying on network capture")
+                        page.wait_for_timeout(5000)
 
                     print(f"[Tonton Auth Debug] Final page URL after login: {page.url} | Title: {page.title()}")
                 except Exception as login_err:
