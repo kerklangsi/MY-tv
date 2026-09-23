@@ -245,15 +245,22 @@ def get_token(force_refresh=False):
             def on_response(resp):
                 try:
                     url = resp.url
-                    if "callback" in url and "tonton.com.my" in url:
+                    # Log ALL tonton API responses to find where token is delivered
+                    if "tonton.com.my" in url and resp.status < 400:
                         try:
                             body = resp.text()
-                            if body and "loginToken" in body:
+                            if body and ("loginToken" in body or "accessToken" in body or "access_token" in body):
+                                print(f"[Tonton Auth Debug] Token found in response from: {url[:120]}")
+                                print(f"[Tonton Auth Debug] Response body (first 500): {body[:500]}")
                                 import re as _re
-                                m = _re.search(r'["\']?loginToken["\']?\s*[=:,]\s*["\']?([A-Za-z0-9_\-\.]{20,})', body)
-                                if m:
-                                    captured_tokens.append(m.group(1))
-                                    print(f"[Tonton Auth Debug] Token captured from callback response body")
+                                for pattern in [r'loginToken["\']?\s*[=:,]\s*["\']?([A-Za-z0-9_\-\.]{20,})',
+                                                r'accessToken["\']?\s*[=:,]\s*["\']?([A-Za-z0-9_\-\.]{20,})',
+                                                r'access_token["\']?\s*[=:,]\s*["\']?([A-Za-z0-9_\-\.]{20,})']:
+                                    m = _re.search(pattern, body)
+                                    if m:
+                                        captured_tokens.append(m.group(1))
+                                        print(f"[Tonton Auth Debug] Token captured from API response")
+                                        break
                         except Exception:
                             pass
                     if "loginToken=" in url:
@@ -448,13 +455,18 @@ def get_token(force_refresh=False):
             final_token = None
             final_dev_id = None
 
-            # Debug: dump all localStorage key-value pairs (values truncated to 40 chars)
+            # Debug: dump key localStorage values in full
             if ls_raw:
                 ls_dict = json.loads(ls_raw)
                 print(f"[Tonton Auth Debug] Full localStorage dump ({len(ls_dict)} keys):")
                 for k, v in ls_dict.items():
                     v_str = str(v)[:40] if v else "(empty)"
                     print(f"  {k!r}: {v_str!r}")
+                # Print FULL value of SHARED_DEVICE and any value containing 'loginToken' or 'token'
+                for k, v in ls_dict.items():
+                    v_str = str(v) if v else ""
+                    if k == "SHARED_DEVICE" or "loginToken" in v_str or ("token" in v_str.lower() and len(v_str) > 50):
+                        print(f"[Tonton Auth Debug] FULL value of {k!r}: {v_str}")
             print(f"[Tonton Auth Debug] Captured request tokens: {len(captured_tokens)}")
 
             if ls_raw:
