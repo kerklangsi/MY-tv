@@ -26,13 +26,12 @@ def _read_auth_file(filename):
 # Real desktop Chrome UA — headless UA is blocked by Tonton's ua-barrier-menu
 DESKTOP_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 
-# Return a guaranteed desktop UA, purging any stale headless UA from cache
+# Return or set default desktop User-Agent, persisting to auth/user_agent file
 def get_user_agent():
     cached = _read_auth_file("user_agent")
-    # Reject any cached UA that contains headless/bot markers
     if cached and not any(x in cached.lower() for x in ["headless", "bot", "crawler", "python"]):
         return cached
-    # Wipe stale headless UA file so it doesn't persist
+
     ua_file = os.path.join(AUTH_DIR, "user_agent")
     if os.path.exists(ua_file):
         try:
@@ -40,7 +39,15 @@ def get_user_agent():
             print("[Tonton Auth] Removed stale/headless user_agent cache file.")
         except Exception:
             pass
-    return DESKTOP_UA
+
+    ua = DESKTOP_UA
+    os.makedirs(AUTH_DIR, exist_ok=True)
+    try:
+        with open(ua_file, "w", encoding="utf-8") as f:
+            f.write(ua)
+    except Exception:
+        pass
+    return ua
 
 # Retrieve or generate unique web Device ID for new users
 def get_device_id():
