@@ -54730,10 +54730,6 @@
   <programme start="20260928150000 +0000" stop="20260928160000 +0000" channel="best-fm">
     <title lang="en">Program @ 11:00 PM</title>
   </programme>
-  <programme start="20260922080000 +0000" stop="20260922090000 +0000" channel="8tv">
-    <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
-    <desc lang="en">Episode 218 - Ivan meminta kebenaran Chang Sheng untuk ke luar negara bersama Jing Yi, dan permohonannya direstui. Majlis bertukar kecoh apabila Li Ping muncul dan menghalang Dong Jun daripada memanggil Chang Sheng sebagai bapanya. - [NC]</desc>
-  </programme>
   <programme start="20260922090000 +0000" stop="20260922100000 +0000" channel="8tv">
     <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
     <desc lang="en">Episode 219 - Ivan dan Jing Yi terkejut mendengar berita kematian Miku. Chang Sheng menegas tidak melakukan kebakaran di pusat rawatan dan menyebabkan kematian Miku. Kumpulan setelah itu bergegas ke bilik mayat untuk menziarah Miku. - [NC]</desc>
@@ -54818,9 +54814,9 @@
     <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
     <desc lang="en">Episode 219 - Ivan dan Jing Yi terkejut mendengar berita kematian Miku. Chang Sheng menegas tidak melakukan kebakaran di pusat rawatan dan menyebabkan kematian Miku. Kumpulan setelah itu bergegas ke bilik mayat untuk menziarah Miku. - [NC]</desc>
   </programme>
-  <programme start="20260922080000 +0000" stop="20260922090000 +0000" channel="drama-sangat">
-    <title lang="en">WOW SHOP </title>
-    <desc lang="en">Episode 132 - [NC]</desc>
+  <programme start="20260923090000 +0000" stop="20260923100000 +0000" channel="8tv">
+    <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
+    <desc lang="en">Episode 220 - Li Ping marah atas kerjasama Dong Jun dan Ya Jie bersama Chang Sheng. Dong Jun menjelaskan mereka tiada pilihan kerana Ya Jie telah menggadaikan saham Kumpulan Yong Xing bagi melabur dalam syarikat milik Chang Sheng. - [NC]</desc>
   </programme>
   <programme start="20260922090000 +0000" stop="20260922100000 +0000" channel="drama-sangat">
     <title lang="en">AKU BUKAN USTAZAH</title>
@@ -54918,6 +54914,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 185 - [NC]</desc>
   </programme>
+  <programme start="20260923090000 +0000" stop="20260923100000 +0000" channel="drama-sangat">
+    <title lang="en">SEKALI AKU BAHAGIA</title>
+    <desc lang="en">Episode 14 - Delisha tak sangka ibu kandungnya masih hidup. Firas berterus terang di hadapan Muaz dan Rania yang kelak dia akan menyunting Delisha sebagai suri hatinya. Eli mengamuk Firas tak pernah mengaku mereka ada hubungan istimewa. - [NC]</desc>
+  </programme>
   <programme start="20260922062721 +0000" stop="20260922091212 +0000" channel="fifa">
     <title lang="en">Netherlands v Sweden | Semi-finals | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Netherlands and Sweden from Lyon, 3 July 2019. - [NC]</desc>
@@ -54990,6 +54990,10 @@
     <title lang="en">Canada v Cameroon | Group E | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Canada and Cameroon from Montpellier, 10 June 2019. - [NC]</desc>
   </programme>
+  <programme start="20260923084516 +0000" stop="20260923110432 +0000" channel="fifa">
+    <title lang="en">U20 FIFA World Cup, Women 2026 - Benin U20 v Argentina U20</title>
+    <desc lang="en">Episode 1 - U20 FIFA World Cup, Women 2026 - Benin U20 v Argentina U20 - [NC]</desc>
+  </programme>
   <programme start="20260922040000 +0000" stop="20260922100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
@@ -55009,10 +55013,6 @@
   <programme start="20260923040000 +0000" stop="20260923100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260922083000 +0000" stop="20260922090000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH RENDAH 24/25</title>
-    <desc lang="en">Episode 84 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
   <programme start="20260922090000 +0000" stop="20260922093000 +0000" channel="ntv7">
     <title lang="en">MENENGAH ATAS 24/25</title>
@@ -55146,6 +55146,10 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 86 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260923090000 +0000" stop="20260923093000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 24/25</title>
+    <desc lang="en">Episode 107 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
+  </programme>
   <programme start="20260922080000 +0000" stop="20260922093500 +0000" channel="thrill">
     <title lang="en">Mulu Nakru </title>
     <desc lang="en">Episode 1 - After moving into a house with her boyfriend, Gun, architect May learns of her stepmother’s mysterious death. When May takes in her stepsister Noon, the girl begins showing signs of possession, while May suffers disturbing visions and insomnia. As dark secrets emerge, spiritual masters uncover an ancient black-magic curse hidden within the house. - [NC]</desc>
@@ -55213,10 +55217,6 @@
   <programme start="20260923080500 +0000" stop="20260923094500 +0000" channel="thrill">
     <title lang="en">Open the Coffin</title>
     <desc lang="en">Episode 1 - Ghost Hand and his tomb raiders resurface in Jiang City to seek gold in ancient tombs after a 3-year absence. They released an evil spirit from a coffin and all four died at home eventually. Poison and pinholes in the corpses become the sole clue for police investigation. A tomb raid now unfolds as a perplexing and mysterious case. - [NC]</desc>
-  </programme>
-  <programme start="20260922080000 +0000" stop="20260922090000 +0000" channel="tv3">
-    <title lang="en">ALI BABA: DASTAAN-E-KABUL (SEASON 2)</title>
-    <desc lang="en">Episode 37 - [NC]</desc>
   </programme>
   <programme start="20260922090000 +0000" stop="20260922100000 +0000" channel="tv3">
     <title lang="en">WOW SHOP</title>
@@ -55346,9 +55346,9 @@
     <title lang="en">ALI BABA: DASTAAN-E-KABUL (SEASON 2)</title>
     <desc lang="en">Episode 38 - [NC]</desc>
   </programme>
-  <programme start="20260922080000 +0000" stop="20260922090000 +0000" channel="tv9">
-    <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
-    <desc lang="en">Episode 35 - Nasi Lemak Kopi O akan menghidupkan semula pagi anda dengan sentuhan baharu dan kontemporari. Rancangan ini akan kembali dengan penampilan baharu dan kandungan penuh menarik buat penonton setia kami. - [NC]</desc>
+  <programme start="20260923090000 +0000" stop="20260923100000 +0000" channel="tv3">
+    <title lang="en">LELAKI ITU</title>
+    <desc lang="en">Episode 25 - Tekanan Qaidah bertambah apabila dia susah menuntut harta sepencarian kerana suaminya telah meninggal dunia.  Secara automatik semua harta di atas nama Mirza akan dibahagikan secara faraid. - [NC]</desc>
   </programme>
   <programme start="20260922090000 +0000" stop="20260922093000 +0000" channel="tv9">
     <title lang="en">BEYBLADE X (GEN 4)</title>
@@ -55474,9 +55474,9 @@
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
     <desc lang="en">Episode 36 - Nasi Lemak Kopi O akan menghidupkan semula pagi anda dengan sentuhan baharu dan kontemporari. Rancangan ini akan kembali dengan penampilan baharu dan kandungan penuh menarik buat penonton setia kami. - [NC]</desc>
   </programme>
-  <programme start="20260923090000 +0000" stop="20260923100000 +0000" channel="8tv">
-    <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
-    <desc lang="en">Episode 220 - Li Ping marah atas kerjasama Dong Jun dan Ya Jie bersama Chang Sheng. Dong Jun menjelaskan mereka tiada pilihan kerana Ya Jie telah menggadaikan saham Kumpulan Yong Xing bagi melabur dalam syarikat milik Chang Sheng. - [NC]</desc>
+  <programme start="20260923090000 +0000" stop="20260923093000 +0000" channel="tv9">
+    <title lang="en">COCOMELON</title>
+    <desc lang="en">Episode 8 - Animasi lagu dan puisi berima kanak-kanak. - [NC]</desc>
   </programme>
   <programme start="20260923100000 +0000" stop="20260923110000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
@@ -55558,9 +55558,9 @@
     <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
     <desc lang="en">Episode 220 - Li Ping marah atas kerjasama Dong Jun dan Ya Jie bersama Chang Sheng. Dong Jun menjelaskan mereka tiada pilihan kerana Ya Jie telah menggadaikan saham Kumpulan Yong Xing bagi melabur dalam syarikat milik Chang Sheng. - [NC]</desc>
   </programme>
-  <programme start="20260923090000 +0000" stop="20260923100000 +0000" channel="drama-sangat">
-    <title lang="en">SEKALI AKU BAHAGIA</title>
-    <desc lang="en">Episode 14 - Delisha tak sangka ibu kandungnya masih hidup. Firas berterus terang di hadapan Muaz dan Rania yang kelak dia akan menyunting Delisha sebagai suri hatinya. Eli mengamuk Firas tak pernah mengaku mereka ada hubungan istimewa. - [NC]</desc>
+  <programme start="20260924090000 +0000" stop="20260924100000 +0000" channel="8tv">
+    <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
+    <desc lang="en">Episode 221 - Yi Lin mengaku menculik Meng Zi dan Shi Wei atas desakan You De. Sementara itu, Chang Sheng menghasut Zhou Lai Fa dan Zheng Zhe untuk bekerjasama bagi merampas semula saham Syarikat KY Motor daripada Kumpulan Yong Xing. - [NC]</desc>
   </programme>
   <programme start="20260923100000 +0000" stop="20260923110000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -55654,9 +55654,9 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 584 - [NC]</desc>
   </programme>
-  <programme start="20260923084516 +0000" stop="20260923110432 +0000" channel="fifa">
-    <title lang="en">U20 FIFA World Cup, Women 2026 - Benin U20 v Argentina U20</title>
-    <desc lang="en">Episode 1 - U20 FIFA World Cup, Women 2026 - Benin U20 v Argentina U20 - [NC]</desc>
+  <programme start="20260924090000 +0000" stop="20260924100000 +0000" channel="drama-sangat">
+    <title lang="en">SEKALI AKU BAHAGIA</title>
+    <desc lang="en">Episode 15 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
   </programme>
   <programme start="20260923110432 +0000" stop="20260923112926 +0000" channel="fifa">
     <title lang="en">Icons of the Women's Game</title>
@@ -55714,6 +55714,10 @@
     <title lang="en">Mamelodi Sundowns FC v Borussia Dortmund | Group F | FIFA Club World Cup 2025™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Mamelodi Sundowns FC and Borussia Dortmund. - [NC]</desc>
   </programme>
+  <programme start="20260924085240 +0000" stop="20260924105812 +0000" channel="fifa">
+    <title lang="en">Paris Saint-Germain v Botafogo | Group B | FIFA Club World Cup 2025™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Paris Saint-Germain and Botafogo. - [NC]</desc>
+  </programme>
   <programme start="20260923100000 +0000" stop="20260923160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
@@ -55729,10 +55733,6 @@
   <programme start="20260924040000 +0000" stop="20260924100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL Malaysia Season 18: Week 6</title>
     <desc lang="en">Episode 1 - Catch up on all the action from MPL Malaysia Season 18 Week 6 (18 - 20 Sep 2026). Watch 8 top teams clash for the championship and coveted spots at the M7 World Championship! - [NC]</desc>
-  </programme>
-  <programme start="20260923090000 +0000" stop="20260923093000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 24/25</title>
-    <desc lang="en">Episode 107 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
   <programme start="20260923093000 +0000" stop="20260923100000 +0000" channel="ntv7">
     <title lang="en">MENENGAH ATAS 24/25</title>
@@ -55862,6 +55862,10 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 88 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260924090000 +0000" stop="20260924093000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 24/25</title>
+    <desc lang="en">Episode 110 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
+  </programme>
   <programme start="20260923094500 +0000" stop="20260923112500 +0000" channel="thrill">
     <title lang="en">Get in the Dark</title>
     <desc lang="en">Episode 1 - A reporter hears three horror stories when investigating a case of the paper doll spirit 20 years ago. Miss Qiao had died in vain then, and her butler paid a paper craftsman to make a paper doll to be buried with her. Miss Qiao’s spirit is revived to take revenge when the doll’s eyes are drawn, and a series of horrible events begins to happen... - [NC]</desc>
@@ -55929,10 +55933,6 @@
   <programme start="20260924080000 +0000" stop="20260924091500 +0000" channel="thrill">
     <title lang="en">Night at the Eagle Inn</title>
     <desc lang="en">Episode 1 - A pair of fraternal twins spend a terrifying night in a remote inn to investigate the last known whereabouts of their father who mysteriously disappeared the night they were born. As they dive deeper, the property's dark secrets ensnare them in a hellish labyrinth which they must escape before dawn. - [NC]</desc>
-  </programme>
-  <programme start="20260923090000 +0000" stop="20260923100000 +0000" channel="tv3">
-    <title lang="en">LELAKI ITU</title>
-    <desc lang="en">Episode 25 - Tekanan Qaidah bertambah apabila dia susah menuntut harta sepencarian kerana suaminya telah meninggal dunia.  Secara automatik semua harta di atas nama Mirza akan dibahagikan secara faraid. - [NC]</desc>
   </programme>
   <programme start="20260923100000 +0000" stop="20260923110000 +0000" channel="tv3">
     <title lang="en">WANITA SYURGA</title>
@@ -56058,9 +56058,9 @@
     <title lang="en">ALI BABA: DASTAAN-E-KABUL (SEASON 2)</title>
     <desc lang="en">Episode 39 - [NC]</desc>
   </programme>
-  <programme start="20260923090000 +0000" stop="20260923093000 +0000" channel="tv9">
-    <title lang="en">COCOMELON</title>
-    <desc lang="en">Episode 8 - Animasi lagu dan puisi berima kanak-kanak. - [NC]</desc>
+  <programme start="20260924090000 +0000" stop="20260924100000 +0000" channel="tv3">
+    <title lang="en">LELAKI ITU</title>
+    <desc lang="en">Episode 26 - Qaidah bukan saja mengabaikan Batrisyia malah mengawalnya setelah Khairullah curi datang ke villa untuk memastikan keadaan Batrisyia yang kemurungan. Bahiyah adalah kakak yang sentiasa risau dan memantau keadaan adiknya. - [NC]</desc>
   </programme>
   <programme start="20260923093000 +0000" stop="20260923100000 +0000" channel="tv9">
     <title lang="en">ODDBODS SEASON 4</title>
@@ -56178,9 +56178,9 @@
     <title lang="en">SPA Q</title>
     <desc lang="en">Episode 29 - Farah bersedih selepas Shawal membuat keputusan untuk berpisah dan membuat haluan masing-masing. Rizman menjadi panik dan pergi ke rumah Fatin. Fatin telah menceritakan tentang kunjungan Dafi membuatkan Rizman panik. - [NC]</desc>
   </programme>
-  <programme start="20260924090000 +0000" stop="20260924100000 +0000" channel="8tv">
-    <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
-    <desc lang="en">Episode 221 - Yi Lin mengaku menculik Meng Zi dan Shi Wei atas desakan You De. Sementara itu, Chang Sheng menghasut Zhou Lai Fa dan Zheng Zhe untuk bekerjasama bagi merampas semula saham Syarikat KY Motor daripada Kumpulan Yong Xing. - [NC]</desc>
+  <programme start="20260924090000 +0000" stop="20260924093000 +0000" channel="tv9">
+    <title lang="en">COCOMELON</title>
+    <desc lang="en">Episode 15 - Animasi lagu dan puisi berima kanak-kanak. - [NC]</desc>
   </programme>
   <programme start="20260924100000 +0000" stop="20260924110000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
@@ -56262,9 +56262,9 @@
     <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
     <desc lang="en">Episode 221 - Yi Lin mengaku menculik Meng Zi dan Shi Wei atas desakan You De. Sementara itu, Chang Sheng menghasut Zhou Lai Fa dan Zheng Zhe untuk bekerjasama bagi merampas semula saham Syarikat KY Motor daripada Kumpulan Yong Xing. - [NC]</desc>
   </programme>
-  <programme start="20260924090000 +0000" stop="20260924100000 +0000" channel="drama-sangat">
-    <title lang="en">SEKALI AKU BAHAGIA</title>
-    <desc lang="en">Episode 15 - Aireen and Naufal are siblings, and Naufal runs a poultry shop. Aireen, who had visited her brother’s shop, developed strong feelings for Muaz - a staff at Naufal’s shop, who was already married to Rania. - [NC]</desc>
+  <programme start="20260925090000 +0000" stop="20260925100000 +0000" channel="8tv">
+    <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
+    <desc lang="en">Episode 222 - Yi Lin mengaku menculik Meng Zi dan Shi Wei atas desakan You De. Sementara itu, Chang Sheng menghasut Zhou Lai Fa dan Zheng Zhe untuk bekerjasama bagi merampas semula saham Syarikat KY Motor daripada Kumpulan Yong Xing. - [NC]</desc>
   </programme>
   <programme start="20260924100000 +0000" stop="20260924110000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -56346,9 +56346,9 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 138 - [NC]</desc>
   </programme>
-  <programme start="20260924085240 +0000" stop="20260924105812 +0000" channel="fifa">
-    <title lang="en">Paris Saint-Germain v Botafogo | Group B | FIFA Club World Cup 2025™ | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full match replay between Paris Saint-Germain and Botafogo. - [NC]</desc>
+  <programme start="20260925090000 +0000" stop="20260925100000 +0000" channel="drama-sangat">
+    <title lang="en">HOSPITAL LOVELINE</title>
+    <desc lang="en">Episode 1 - Hospital Insani menerima seorang doktor baru yang kacak bernama Dr. Arfan Qori. Sophia pula adalah staf rehabilitasi yang disenangi ramai pesakit terutama orang dewasa. Arfan berjumpa dengan kawan-kawan beliau di hospital berkenaan. - [NC]</desc>
   </programme>
   <programme start="20260924105812 +0000" stop="20260924115747 +0000" channel="fifa">
     <title lang="en">Keane &amp; Vieira: Best of Enemies</title>
@@ -56409,10 +56409,6 @@
   <programme start="20260925040000 +0000" stop="20260925100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260924090000 +0000" stop="20260924093000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 24/25</title>
-    <desc lang="en">Episode 110 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
   <programme start="20260924093000 +0000" stop="20260924100000 +0000" channel="ntv7">
     <title lang="en">MENENGAH ATAS 24/25</title>
@@ -56598,10 +56594,6 @@
     <title lang="en">Ten Minutes to Midnight</title>
     <desc lang="en">Episode 1 - Radio host Amy is bitten by a mysterious bat, but she returns to the station to host that night’s late-night show. Instead, she is set up and fired by her ruthless boss, then replaced by a newcomer. As a violent storm traps everyone in the station and her mysterious wound worsens, Amy gradually loses control and unleashes a bloody massacre. - [NC]</desc>
   </programme>
-  <programme start="20260924090000 +0000" stop="20260924100000 +0000" channel="tv3">
-    <title lang="en">LELAKI ITU</title>
-    <desc lang="en">Episode 26 - Qaidah bukan saja mengabaikan Batrisyia malah mengawalnya setelah Khairullah curi datang ke villa untuk memastikan keadaan Batrisyia yang kemurungan. Bahiyah adalah kakak yang sentiasa risau dan memantau keadaan adiknya. - [NC]</desc>
-  </programme>
   <programme start="20260924100000 +0000" stop="20260924110000 +0000" channel="tv3">
     <title lang="en">WANITA SYURGA</title>
     <desc lang="en">Episode 30 - Tindakan Amar dikecam ibu dan kawan-kawan. Amar rasa bersalah dan memaksa Farah menarik dakwaan terhadap Ardini. Pada masa sama Lukman berusaha mengembalikan hak Ardini melalui saluran undang-undang tapi dibantah Nally. - [NC]</desc>
@@ -56726,9 +56718,13 @@
     <title lang="en">SEMBANG VIRAL SS 2 (2022)</title>
     <desc lang="en">Episode 9 - DERA BUDAK.  Penderaan boleh dikategorikan kepada penderaan fizikal, emosi, seksual dan pengabaian. Nor Zabetha berkongsi tentang Akta Kanak-kanak 2001 serta kesan dan trauma yang dialami mangsa penderaan. - [NC]</desc>
   </programme>
-  <programme start="20260924090000 +0000" stop="20260924093000 +0000" channel="tv9">
-    <title lang="en">COCOMELON</title>
-    <desc lang="en">Episode 15 - Animasi lagu dan puisi berima kanak-kanak. - [NC]</desc>
+  <programme start="20260925090000 +0000" stop="20260925090200 +0000" channel="tv3">
+    <title lang="en">LINTAS LANGSUNG DI KARNIVAL JOM HEBOH 2026</title>
+    <desc lang="en">Episode 33 - [NC]</desc>
+  </programme>
+  <programme start="20260925090200 +0000" stop="20260925100000 +0000" channel="tv3">
+    <title lang="en">LELAKI ITU</title>
+    <desc lang="en">Episode 27 - Khairullah membawa Batrisyia keluar dari villa bagi mendapat rawatan doktor pakar tapi Qaidah arahkan Bahiyah membawa Batrisyia keluar dari hospital dan meneruskan rawatannya di rumah. Perbicaraan tuntutan harta Mirza diteruskan. - [NC]</desc>
   </programme>
   <programme start="20260924093000 +0000" stop="20260924100000 +0000" channel="tv9">
     <title lang="en">ODDBODS SEASON 4</title>
@@ -56846,9 +56842,9 @@
     <title lang="en">SPA Q</title>
     <desc lang="en">Episode 30 - Riezman terus menuduh Qistina berlaku curang  menjalinkan hubungan dengan Helmi. Dafi ke rumah Fatin dan memberi amaran supaya menjauhkan diri dari ayahnya dan jangan cuba untuk menghancurkan keluarganya. - [NC]</desc>
   </programme>
-  <programme start="20260925090000 +0000" stop="20260925100000 +0000" channel="8tv">
-    <title lang="en">FIGHT FOR JUSTICE (1 - 250)</title>
-    <desc lang="en">Episode 222 - Yi Lin mengaku menculik Meng Zi dan Shi Wei atas desakan You De. Sementara itu, Chang Sheng menghasut Zhou Lai Fa dan Zheng Zhe untuk bekerjasama bagi merampas semula saham Syarikat KY Motor daripada Kumpulan Yong Xing. - [NC]</desc>
+  <programme start="20260925090000 +0000" stop="20260925093000 +0000" channel="tv9">
+    <title lang="en">COCOMELON</title>
+    <desc lang="en">Episode 22 - Animasi lagu dan puisi berima kanak-kanak. - [NC]</desc>
   </programme>
   <programme start="20260925100000 +0000" stop="20260925110000 +0000" channel="8tv">
     <title lang="en">8 E-PULSE 2026</title>
@@ -56934,9 +56930,13 @@
     <title lang="en">THIS IS MY SHOW</title>
     <desc lang="en">Episode 6 - Peserta-peserta dengan bakat berbeza akan dilatih oleh penerbit dan jemputan selebriti terkenal daripada pelbagai bidang antaranya lakonan, nyanyian, peragaan bagi melahirkan bakat muda yang versatil. - [NC]</desc>
   </programme>
-  <programme start="20260925090000 +0000" stop="20260925100000 +0000" channel="drama-sangat">
-    <title lang="en">HOSPITAL LOVELINE</title>
-    <desc lang="en">Episode 1 - Hospital Insani menerima seorang doktor baru yang kacak bernama Dr. Arfan Qori. Sophia pula adalah staf rehabilitasi yang disenangi ramai pesakit terutama orang dewasa. Arfan berjumpa dengan kawan-kawan beliau di hospital berkenaan. - [NC]</desc>
+  <programme start="20260926085800 +0000" stop="20260926090000 +0000" channel="8tv">
+    <title lang="en">8 E-PULSE CAPSULE 2026</title>
+    <desc lang="en">Episode 24 - [NC]</desc>
+  </programme>
+  <programme start="20260926090000 +0000" stop="20260926100000 +0000" channel="8tv">
+    <title lang="en">LOVE LIKE THE GALAXY</title>
+    <desc lang="en">Episode 27 - Demi keselamatan keluarga Shao Shang, Bu Yi terpaksa mengawal segala-galanya, membuatkan Shao Shang dan abangnya berasa terkongkong. Ekoran itu, Shao Shang melarikan diri untuk bertemu Qi Qi. - [NC]</desc>
   </programme>
   <programme start="20260925100000 +0000" stop="20260925110000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP</title>
@@ -57013,6 +57013,10 @@
   <programme start="20260926080000 +0000" stop="20260926090000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 96 - [NC]</desc>
+  </programme>
+  <programme start="20260926090000 +0000" stop="20260926100000 +0000" channel="drama-sangat">
+    <title lang="en">HOSPITAL LOVELINE</title>
+    <desc lang="en">Episode 2 - Opah dibawa ke hospital dan dirawat oleh doktor Arfan dan Sophia juga turut menyantuni Opahnya semasa rawatan. Opah cuba untuk melaga-lagakan Sophia dengan doktor Arfan supaya boleh berkenalan antara satu sama lain. - [NC]</desc>
   </programme>
   <programme start="20260925091139 +0000" stop="20260925110918 +0000" channel="fifa">
     <title lang="en">Norway v Nigeria | Group A | FIFA Women's World Cup France 2019™ | Full Match Replay</title>
@@ -57186,6 +57190,10 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 86 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
+  <programme start="20260926090000 +0000" stop="20260926093000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 24/25</title>
+    <desc lang="en">Episode 107 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
+  </programme>
   <programme start="20260925095000 +0000" stop="20260925111500 +0000" channel="thrill">
     <title lang="en">Detrimental</title>
     <desc lang="en">Episode 1 - You Ji Ren is a blind man who works at a factory on an outlying island. When the factory is cut off from the outside world by a hurricane one day, a monster appears and turns whoever sees it into black shadows. As You cannot see the monster, he is able to help his other co-workers escape safely and fight to kill the monster. - [NC]</desc>
@@ -57266,13 +57274,9 @@
     <title lang="en">Model Family</title>
     <desc lang="en">Episode 5 - A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem. - [NC]</desc>
   </programme>
-  <programme start="20260925090000 +0000" stop="20260925090200 +0000" channel="tv3">
-    <title lang="en">LINTAS LANGSUNG DI KARNIVAL JOM HEBOH 2026</title>
-    <desc lang="en">Episode 33 - [NC]</desc>
-  </programme>
-  <programme start="20260925090200 +0000" stop="20260925100000 +0000" channel="tv3">
-    <title lang="en">LELAKI ITU</title>
-    <desc lang="en">Episode 27 - Khairullah membawa Batrisyia keluar dari villa bagi mendapat rawatan doktor pakar tapi Qaidah arahkan Bahiyah membawa Batrisyia keluar dari hospital dan meneruskan rawatannya di rumah. Perbicaraan tuntutan harta Mirza diteruskan. - [NC]</desc>
+  <programme start="20260926083500 +0000" stop="20260926090500 +0000" channel="thrill">
+    <title lang="en">Model Family</title>
+    <desc lang="en">Episode 6 - A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem. - [NC]</desc>
   </programme>
   <programme start="20260925100000 +0000" stop="20260925110000 +0000" channel="tv3">
     <title lang="en">WANITA SYURGA</title>
@@ -57410,9 +57414,13 @@
     <title lang="en">ANIMALS LIKE US</title>
     <desc lang="en">Episode 2 - Episod ini memperkenalkan kehidupan cimpanzi di Afrika Barat dan orang hutan di Borneo dan Sumatra. Filem setelah itu memaparkan kehidupan binatang liar di Belize Amerika Tengah, California USA, Mexico, Costa Rica. - [NC]</desc>
   </programme>
-  <programme start="20260925090000 +0000" stop="20260925093000 +0000" channel="tv9">
-    <title lang="en">COCOMELON</title>
-    <desc lang="en">Episode 22 - Animasi lagu dan puisi berima kanak-kanak. - [NC]</desc>
+  <programme start="20260926090000 +0000" stop="20260926090200 +0000" channel="tv3">
+    <title lang="en">LINTAS LANGSUNG DI KARNIVAL JOM HEBOH 2026</title>
+    <desc lang="en">Episode 38 - [NC]</desc>
+  </programme>
+  <programme start="20260926090200 +0000" stop="20260926093000 +0000" channel="tv3">
+    <title lang="en">MONEY MATTERS 2026/2027</title>
+    <desc lang="en">Episode 8 - [NC]</desc>
   </programme>
   <programme start="20260925093000 +0000" stop="20260925100000 +0000" channel="tv9">
     <title lang="en">JUNGLE AGENT SEASON 2</title>
@@ -57530,13 +57538,9 @@
     <title lang="en">SALAM TAJ MAHAL</title>
     <desc lang="en">Episode 7 - Fatihah dan Asha jumpa Kamarul.Kamarul tanya Asha tentang permohonannya utk ke India. Fatihah ikut Asha balik ke kampungnya. Asha teringat waktu usia 8 tahun dia dibesarkan di rumah Bakti. - [NC]</desc>
   </programme>
-  <programme start="20260926085800 +0000" stop="20260926090000 +0000" channel="8tv">
-    <title lang="en">8 E-PULSE CAPSULE 2026</title>
-    <desc lang="en">Episode 24 - [NC]</desc>
-  </programme>
-  <programme start="20260926090000 +0000" stop="20260926100000 +0000" channel="8tv">
-    <title lang="en">LOVE LIKE THE GALAXY</title>
-    <desc lang="en">Episode 27 - Demi keselamatan keluarga Shao Shang, Bu Yi terpaksa mengawal segala-galanya, membuatkan Shao Shang dan abangnya berasa terkongkong. Ekoran itu, Shao Shang melarikan diri untuk bertemu Qi Qi. - [NC]</desc>
+  <programme start="20260926090000 +0000" stop="20260926093000 +0000" channel="tv9">
+    <title lang="en">FAY &amp; TOM</title>
+    <desc lang="en">Episode 1 - Fay dan adiknya Tom sibuk membuat persediaan untuk menganjurkan parti pada esok hari dengan menghias rumah dan laman mereka. Haiwan-haiwan akan hadir di jamuan berkenaan. Fay dan Tom menjemput seekor kuda jirannya. - [NC]</desc>
   </programme>
   <programme start="20260926100000 +0000" stop="20260926110000 +0000" channel="8tv">
     <title lang="en">LOVE LIKE THE GALAXY</title>
@@ -57618,9 +57622,13 @@
     <title lang="en">STEP FORWARD ( SS11 )</title>
     <desc lang="en">Episode 4 - Episod ini hos Baki Zainal telah mengunjungi rumah Parma untuk memahami tentang latar belakang dan adat istiadat perayaan Ponggal yang diraikan oleh kaum India. Seterusnya, Baki telah melawat kilang membuat pasu kepunyaan Ramadas. - [NC]</desc>
   </programme>
-  <programme start="20260926090000 +0000" stop="20260926100000 +0000" channel="drama-sangat">
-    <title lang="en">HOSPITAL LOVELINE</title>
-    <desc lang="en">Episode 2 - Opah dibawa ke hospital dan dirawat oleh doktor Arfan dan Sophia juga turut menyantuni Opahnya semasa rawatan. Opah cuba untuk melaga-lagakan Sophia dengan doktor Arfan supaya boleh berkenalan antara satu sama lain. - [NC]</desc>
+  <programme start="20260927085800 +0000" stop="20260927090000 +0000" channel="8tv">
+    <title lang="en">8 E-PULSE CAPSULE 2026</title>
+    <desc lang="en">Episode 23 - [NC]</desc>
+  </programme>
+  <programme start="20260927090000 +0000" stop="20260927103000 +0000" channel="8tv">
+    <title lang="en">TOP SINGERS</title>
+    <desc lang="en">Episode 13 - Wu Ying Jing dan Huang Yu Han dipencabar Lin Kai Xiu sebelum mara bersama. Dalam saingan lain, Weng Yu Jun dan Lin Xiu Qi kekal mempertahankan kedudukan mereka untuk turut melangkah ke pusingan yang seterusnya. - [NC]</desc>
   </programme>
   <programme start="20260926100000 +0000" stop="20260926110000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -57698,6 +57706,10 @@
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 127 - [NC]</desc>
   </programme>
+  <programme start="20260927090000 +0000" stop="20260927100000 +0000" channel="drama-sangat">
+    <title lang="en">HOSPITAL LOVELINE</title>
+    <desc lang="en">Episode 3 - Seorang doktor pakar jantung yang mempunyai agendanya tersendiri cuba mempengaruhi seorang pesakit untuk mengulangi satu prosedur jantung. Doktor Arfan dan Sophia mula rapat setelah Sophia menjadi jurupulih beliau. - [NC]</desc>
+  </programme>
   <programme start="20260926100000 +0000" stop="20260926160000 +0000" channel="fifa">
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
@@ -57729,10 +57741,6 @@
   <programme start="20260927040000 +0000" stop="20260927100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260926090000 +0000" stop="20260926093000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 24/25</title>
-    <desc lang="en">Episode 107 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
   <programme start="20260926093000 +0000" stop="20260926100000 +0000" channel="ntv7">
     <title lang="en">MENENGAH ATAS 24/25</title>
@@ -57858,9 +57866,9 @@
     <title lang="en">MENENGAH RENDAH 24/25</title>
     <desc lang="en">Episode 88 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Rendah (Tingkatan 1, 2 dan 3) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
-  <programme start="20260926083500 +0000" stop="20260926090500 +0000" channel="thrill">
-    <title lang="en">Model Family</title>
-    <desc lang="en">Episode 6 - A single-parent family (Yu Xiang and Tong Tong) moves into a new neighbourhood where everyone’s life seems perfect.  However, while things may look rosy on the outside, dark secrets and horror raid each family from the inside, and nothing really are as they seem. - [NC]</desc>
+  <programme start="20260927090000 +0000" stop="20260927093000 +0000" channel="ntv7">
+    <title lang="en">MENENGAH ATAS 24/25</title>
+    <desc lang="en">Episode 110 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
   <programme start="20260926090500 +0000" stop="20260926104000 +0000" channel="thrill">
     <title lang="en">Waning Moon</title>
@@ -57934,13 +57942,9 @@
     <title lang="en">3AM - The Hospital</title>
     <desc lang="en">Episode 3 - A woman in hospital accidentally discovers her husband’s affair. On the verge of breakdown, she begins to encounter a “stranger” who claims to also be a victim of the affair. Is this entity a figment of her imagination or a vengeful spirit? As she struggles to control her thoughts and actions, can she stop herself from hurting those around her? - [NC]</desc>
   </programme>
-  <programme start="20260926090000 +0000" stop="20260926090200 +0000" channel="tv3">
-    <title lang="en">LINTAS LANGSUNG DI KARNIVAL JOM HEBOH 2026</title>
-    <desc lang="en">Episode 38 - [NC]</desc>
-  </programme>
-  <programme start="20260926090200 +0000" stop="20260926093000 +0000" channel="tv3">
-    <title lang="en">MONEY MATTERS 2026/2027</title>
-    <desc lang="en">Episode 8 - [NC]</desc>
+  <programme start="20260927090000 +0000" stop="20260927103000 +0000" channel="thrill">
+    <title lang="en">Rooftop</title>
+    <desc lang="en">Episode 1 - A group of friends invites Paul to a secret party on their campus rooftop. When a prank accidentally kills Paul, the friends cover up the incident and promised never to disclose it. Paul vows to take revenge by becoming a vicious ghost to haunt them into taking responsibility for their actions. - [NC]</desc>
   </programme>
   <programme start="20260926093000 +0000" stop="20260926093500 +0000" channel="tv3">
     <title lang="en">RINGKASAN PETANG (5 MIN) (2026/2027)</title>
@@ -58078,9 +58082,13 @@
     <title lang="en">KISAH CINTA KITA</title>
     <desc lang="en">Episode 10 - Alisa terkejut bila dapat tahu yang rupaya Datin Laila itu ibu kandung Amer. Mulanya dia rahsiakan tapi akhirnya berterus terang kerana kasihankan Amer. Amer dapat tahu Natasya lari daripada tempat persembunyiannya. - [NC]</desc>
   </programme>
-  <programme start="20260926090000 +0000" stop="20260926093000 +0000" channel="tv9">
-    <title lang="en">FAY &amp; TOM</title>
-    <desc lang="en">Episode 1 - Fay dan adiknya Tom sibuk membuat persediaan untuk menganjurkan parti pada esok hari dengan menghias rumah dan laman mereka. Haiwan-haiwan akan hadir di jamuan berkenaan. Fay dan Tom menjemput seekor kuda jirannya. - [NC]</desc>
+  <programme start="20260927090000 +0000" stop="20260927090200 +0000" channel="tv3">
+    <title lang="en">LINTAS LANGSUNG DI KARNIVAL JOM HEBOH 2026</title>
+    <desc lang="en">Episode 43 - [NC]</desc>
+  </programme>
+  <programme start="20260927090200 +0000" stop="20260927093000 +0000" channel="tv3">
+    <title lang="en">THE MAKING OF ANDAI MASIH</title>
+    <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
   <programme start="20260926093000 +0000" stop="20260926100000 +0000" channel="tv9">
     <title lang="en">GO GO DINO SEASON 5</title>
@@ -58194,13 +58202,9 @@
     <title lang="en">SALAM TAJ MAHAL</title>
     <desc lang="en">Episode 8 - Masterji amat yakin Fatihah adiknya. Masterji ingat pesanan arwah Pakcik Nawab supaya mencari adik perempuannya. Asha pergi ziarah kubur ibubapa yg tdk pernah dikenalinya. Fatihah tanya Asha sdh ada teman lelaki. Pak Kamsan serahkan sekeping gambar keluarga Asha. - [NC]</desc>
   </programme>
-  <programme start="20260927085800 +0000" stop="20260927090000 +0000" channel="8tv">
-    <title lang="en">8 E-PULSE CAPSULE 2026</title>
-    <desc lang="en">Episode 23 - [NC]</desc>
-  </programme>
-  <programme start="20260927090000 +0000" stop="20260927103000 +0000" channel="8tv">
-    <title lang="en">TOP SINGERS</title>
-    <desc lang="en">Episode 13 - Wu Ying Jing dan Huang Yu Han dipencabar Lin Kai Xiu sebelum mara bersama. Dalam saingan lain, Weng Yu Jun dan Lin Xiu Qi kekal mempertahankan kedudukan mereka untuk turut melangkah ke pusingan yang seterusnya. - [NC]</desc>
+  <programme start="20260927090000 +0000" stop="20260927093000 +0000" channel="tv9">
+    <title lang="en">ULTRAMAN TEO 2026</title>
+    <desc lang="en">Episode 10 - Ibuki dan ahli kelab Astonomi mengadakan kem latihan dan berkhemah di dalam hutan. Ketika kawan-kawannya bertanyakan tentang asal usulnya, Ibuki teringat ketika planetnya diserang sekumpulan raksasa dan dia melarikan ke bumi. - [NC]</desc>
   </programme>
   <programme start="20260927103000 +0000" stop="20260927110000 +0000" channel="8tv">
     <title lang="en">HO CHAK! 2025/2026</title>
@@ -58260,14 +58264,10 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928080000 +0000" stop="20260928083207 +0000" channel="8tv">
+  <programme start="20260928080000 +0000" stop="20260928090357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
-  </programme>
-  <programme start="20260927090000 +0000" stop="20260927100000 +0000" channel="drama-sangat">
-    <title lang="en">HOSPITAL LOVELINE</title>
-    <desc lang="en">Episode 3 - Seorang doktor pakar jantung yang mempunyai agendanya tersendiri cuba mempengaruhi seorang pesakit untuk mengulangi satu prosedur jantung. Doktor Arfan dan Sophia mula rapat setelah Sophia menjadi jurupulih beliau. - [NC]</desc>
   </programme>
   <programme start="20260927100000 +0000" stop="20260927110000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
@@ -58344,7 +58344,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928083000 +0000" stop="20260928083207 +0000" channel="drama-sangat">
+  <programme start="20260928083000 +0000" stop="20260928090357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -58380,10 +58380,6 @@
   <programme start="20260928040000 +0000" stop="20260928100000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20260927090000 +0000" stop="20260927093000 +0000" channel="ntv7">
-    <title lang="en">MENENGAH ATAS 24/25</title>
-    <desc lang="en">Episode 110 - Program ini ialah kandungan pengajaran dan pembelajaran (PdP) bagi murid Menengah Atas (Tingkatan 4 dan 5) berdasarkan sukatan pelajaran di sekolah yang menerapkan pelbagai elemen kemahiran, penyampaian ilmu dan juga nilai murni. - [NC]</desc>
   </programme>
   <programme start="20260927093000 +0000" stop="20260927100000 +0000" channel="ntv7">
     <title lang="en">MENENGAH ATAS 24/25</title>
@@ -58484,14 +58480,10 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928083000 +0000" stop="20260928083207 +0000" channel="ntv7">
+  <programme start="20260928083000 +0000" stop="20260928090357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
-  </programme>
-  <programme start="20260927090000 +0000" stop="20260927103000 +0000" channel="thrill">
-    <title lang="en">Rooftop</title>
-    <desc lang="en">Episode 1 - A group of friends invites Paul to a secret party on their campus rooftop. When a prank accidentally kills Paul, the friends cover up the incident and promised never to disclose it. Paul vows to take revenge by becoming a vicious ghost to haunt them into taking responsibility for their actions. - [NC]</desc>
   </programme>
   <programme start="20260927103000 +0000" stop="20260927120000 +0000" channel="thrill">
     <title lang="en">Room For Rent</title>
@@ -58561,13 +58553,9 @@
     <title lang="en">Malee</title>
     <desc lang="en">Episode 1 - When four best friends reunite for a funeral at an ancient estate, a reckless act with a cursed Manohra dancer's headdress awakens a vengeful spirit that begins to haunt and follow them relentlessly. As paranormal phenomena escalate, they are forced to confront the estate's dark secrets in a desperate struggle for survival.  - [NC]</desc>
   </programme>
-  <programme start="20260927090000 +0000" stop="20260927090200 +0000" channel="tv3">
-    <title lang="en">LINTAS LANGSUNG DI KARNIVAL JOM HEBOH 2026</title>
-    <desc lang="en">Episode 43 - [NC]</desc>
-  </programme>
-  <programme start="20260927090200 +0000" stop="20260927093000 +0000" channel="tv3">
-    <title lang="en">THE MAKING OF ANDAI MASIH</title>
-    <desc lang="en">Episode 1 - [NC]</desc>
+  <programme start="20260928085500 +0000" stop="20260928103000 +0000" channel="thrill">
+    <title lang="en">Ghost Wedding</title>
+    <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a &quot;woman in red&quot;, leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a &quot;ghost marriage&quot;... - [NC]</desc>
   </programme>
   <programme start="20260927093000 +0000" stop="20260927093500 +0000" channel="tv3">
     <title lang="en">RINGKASAN PETANG (5 MIN) (2026/2027)</title>
@@ -58663,14 +58651,15 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928073000 +0000" stop="20260928083207 +0000" channel="tv3">
+  <programme start="20260928073000 +0000" stop="20260928090000 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260927090000 +0000" stop="20260927093000 +0000" channel="tv9">
-    <title lang="en">ULTRAMAN TEO 2026</title>
-    <desc lang="en">Episode 10 - Ibuki dan ahli kelab Astonomi mengadakan kem latihan dan berkhemah di dalam hutan. Ketika kawan-kawannya bertanyakan tentang asal usulnya, Ibuki teringat ketika planetnya diserang sekumpulan raksasa dan dia melarikan ke bumi. - [NC]</desc>
+  <programme start="20260928090000 +0000" stop="20260928090357 +0000" channel="tv3">
+    <title lang="en">No listing available</title>
+    <desc lang="en">No listing available - [NC]</desc>
+    <category lang="en">Unknown</category>
   </programme>
   <programme start="20260927093000 +0000" stop="20260927100000 +0000" channel="tv9">
     <title lang="en">ARMOR RANGERS SEASON 2</title>
@@ -58767,167 +58756,167 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928083000 +0000" stop="20260928083207 +0000" channel="tv9">
+  <programme start="20260928083000 +0000" stop="20260928090357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928083207 +0000" stop="20260928100207 +0000" channel="8tv">
+  <programme start="20260928090357 +0000" stop="20260928103357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928100207 +0000" stop="20260928113207 +0000" channel="8tv">
+  <programme start="20260928103357 +0000" stop="20260928120357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928113207 +0000" stop="20260928130207 +0000" channel="8tv">
+  <programme start="20260928120357 +0000" stop="20260928133357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130207 +0000" stop="20260928143207 +0000" channel="8tv">
+  <programme start="20260928133357 +0000" stop="20260928150357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928143207 +0000" stop="20260928160207 +0000" channel="8tv">
+  <programme start="20260928150357 +0000" stop="20260928163357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928160207 +0000" stop="20260928173207 +0000" channel="8tv">
+  <programme start="20260928163357 +0000" stop="20260928180357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928173207 +0000" stop="20260928190207 +0000" channel="8tv">
+  <programme start="20260928180357 +0000" stop="20260928193357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928190207 +0000" stop="20260928203207 +0000" channel="8tv">
+  <programme start="20260928193357 +0000" stop="20260928210357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928203207 +0000" stop="20260928220207 +0000" channel="8tv">
+  <programme start="20260928210357 +0000" stop="20260928223357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928220207 +0000" stop="20260928233207 +0000" channel="8tv">
+  <programme start="20260928223357 +0000" stop="20260929000357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928233207 +0000" stop="20260929010207 +0000" channel="8tv">
+  <programme start="20260929000357 +0000" stop="20260929013357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929010207 +0000" stop="20260929023207 +0000" channel="8tv">
+  <programme start="20260929013357 +0000" stop="20260929030357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929023207 +0000" stop="20260929040207 +0000" channel="8tv">
+  <programme start="20260929030357 +0000" stop="20260929043357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929040207 +0000" stop="20260929053207 +0000" channel="8tv">
+  <programme start="20260929043357 +0000" stop="20260929060357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929053207 +0000" stop="20260929070207 +0000" channel="8tv">
+  <programme start="20260929060357 +0000" stop="20260929073357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929070207 +0000" stop="20260929083207 +0000" channel="8tv">
+  <programme start="20260929073357 +0000" stop="20260929090357 +0000" channel="8tv">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928083207 +0000" stop="20260928100207 +0000" channel="drama-sangat">
+  <programme start="20260928090357 +0000" stop="20260928103357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928100207 +0000" stop="20260928113207 +0000" channel="drama-sangat">
+  <programme start="20260928103357 +0000" stop="20260928120357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928113207 +0000" stop="20260928130207 +0000" channel="drama-sangat">
+  <programme start="20260928120357 +0000" stop="20260928133357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130207 +0000" stop="20260928143207 +0000" channel="drama-sangat">
+  <programme start="20260928133357 +0000" stop="20260928150357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928143207 +0000" stop="20260928160207 +0000" channel="drama-sangat">
+  <programme start="20260928150357 +0000" stop="20260928163357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928160207 +0000" stop="20260928173207 +0000" channel="drama-sangat">
+  <programme start="20260928163357 +0000" stop="20260928180357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928173207 +0000" stop="20260928190207 +0000" channel="drama-sangat">
+  <programme start="20260928180357 +0000" stop="20260928193357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928190207 +0000" stop="20260928203207 +0000" channel="drama-sangat">
+  <programme start="20260928193357 +0000" stop="20260928210357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928203207 +0000" stop="20260928220207 +0000" channel="drama-sangat">
+  <programme start="20260928210357 +0000" stop="20260928223357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928220207 +0000" stop="20260928233207 +0000" channel="drama-sangat">
+  <programme start="20260928223357 +0000" stop="20260929000357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928233207 +0000" stop="20260929010207 +0000" channel="drama-sangat">
+  <programme start="20260929000357 +0000" stop="20260929013357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929010207 +0000" stop="20260929023207 +0000" channel="drama-sangat">
+  <programme start="20260929013357 +0000" stop="20260929030357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929023207 +0000" stop="20260929040207 +0000" channel="drama-sangat">
+  <programme start="20260929030357 +0000" stop="20260929043357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929040207 +0000" stop="20260929053207 +0000" channel="drama-sangat">
+  <programme start="20260929043357 +0000" stop="20260929060357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929053207 +0000" stop="20260929070207 +0000" channel="drama-sangat">
+  <programme start="20260929060357 +0000" stop="20260929073357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929070207 +0000" stop="20260929083207 +0000" channel="drama-sangat">
+  <programme start="20260929073357 +0000" stop="20260929090357 +0000" channel="drama-sangat">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -58964,89 +58953,85 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20260928083207 +0000" stop="20260928100207 +0000" channel="ntv7">
+  <programme start="20260928090357 +0000" stop="20260928103357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928100207 +0000" stop="20260928113207 +0000" channel="ntv7">
+  <programme start="20260928103357 +0000" stop="20260928120357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928113207 +0000" stop="20260928130207 +0000" channel="ntv7">
+  <programme start="20260928120357 +0000" stop="20260928133357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130207 +0000" stop="20260928143207 +0000" channel="ntv7">
+  <programme start="20260928133357 +0000" stop="20260928150357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928143207 +0000" stop="20260928160207 +0000" channel="ntv7">
+  <programme start="20260928150357 +0000" stop="20260928163357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928160207 +0000" stop="20260928173207 +0000" channel="ntv7">
+  <programme start="20260928163357 +0000" stop="20260928180357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928173207 +0000" stop="20260928190207 +0000" channel="ntv7">
+  <programme start="20260928180357 +0000" stop="20260928193357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928190207 +0000" stop="20260928203207 +0000" channel="ntv7">
+  <programme start="20260928193357 +0000" stop="20260928210357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928203207 +0000" stop="20260928220207 +0000" channel="ntv7">
+  <programme start="20260928210357 +0000" stop="20260928223357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928220207 +0000" stop="20260928233207 +0000" channel="ntv7">
+  <programme start="20260928223357 +0000" stop="20260929000357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928233207 +0000" stop="20260929010207 +0000" channel="ntv7">
+  <programme start="20260929000357 +0000" stop="20260929013357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929010207 +0000" stop="20260929023207 +0000" channel="ntv7">
+  <programme start="20260929013357 +0000" stop="20260929030357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929023207 +0000" stop="20260929040207 +0000" channel="ntv7">
+  <programme start="20260929030357 +0000" stop="20260929043357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929040207 +0000" stop="20260929053207 +0000" channel="ntv7">
+  <programme start="20260929043357 +0000" stop="20260929060357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929053207 +0000" stop="20260929070207 +0000" channel="ntv7">
+  <programme start="20260929060357 +0000" stop="20260929073357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929070207 +0000" stop="20260929083207 +0000" channel="ntv7">
+  <programme start="20260929073357 +0000" stop="20260929090357 +0000" channel="ntv7">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
-  </programme>
-  <programme start="20260928085500 +0000" stop="20260928103000 +0000" channel="thrill">
-    <title lang="en">Ghost Wedding</title>
-    <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a &quot;woman in red&quot;, leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a &quot;ghost marriage&quot;... - [NC]</desc>
   </programme>
   <programme start="20260928103000 +0000" stop="20260928120500 +0000" channel="thrill">
     <title lang="en">The Spore</title>
@@ -59124,162 +59109,162 @@
     <title lang="en">Mama Ghost</title>
     <desc lang="en">Episode 1 - In a coastal town, a forbidden romance sparks between Rico and Sisca, and their love unleashes a malevolent spirit. As chilling deaths plague the town, past secrets are being unraveled and the town is possessed by evil and fear. Rico must defy destiny and fight against the evil spirit to save his loved one. - [NC]</desc>
   </programme>
-  <programme start="20260928083207 +0000" stop="20260928100207 +0000" channel="tv3">
+  <programme start="20260928090357 +0000" stop="20260928103357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928100207 +0000" stop="20260928113207 +0000" channel="tv3">
+  <programme start="20260928103357 +0000" stop="20260928120357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928113207 +0000" stop="20260928130207 +0000" channel="tv3">
+  <programme start="20260928120357 +0000" stop="20260928133357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130207 +0000" stop="20260928143207 +0000" channel="tv3">
+  <programme start="20260928133357 +0000" stop="20260928150357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928143207 +0000" stop="20260928160207 +0000" channel="tv3">
+  <programme start="20260928150357 +0000" stop="20260928163357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928160207 +0000" stop="20260928173207 +0000" channel="tv3">
+  <programme start="20260928163357 +0000" stop="20260928180357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928173207 +0000" stop="20260928190207 +0000" channel="tv3">
+  <programme start="20260928180357 +0000" stop="20260928193357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928190207 +0000" stop="20260928203207 +0000" channel="tv3">
+  <programme start="20260928193357 +0000" stop="20260928210357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928203207 +0000" stop="20260928220207 +0000" channel="tv3">
+  <programme start="20260928210357 +0000" stop="20260928223357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928220207 +0000" stop="20260928233207 +0000" channel="tv3">
+  <programme start="20260928223357 +0000" stop="20260929000357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928233207 +0000" stop="20260929010207 +0000" channel="tv3">
+  <programme start="20260929000357 +0000" stop="20260929013357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929010207 +0000" stop="20260929023207 +0000" channel="tv3">
+  <programme start="20260929013357 +0000" stop="20260929030357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929023207 +0000" stop="20260929040207 +0000" channel="tv3">
+  <programme start="20260929030357 +0000" stop="20260929043357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929040207 +0000" stop="20260929053207 +0000" channel="tv3">
+  <programme start="20260929043357 +0000" stop="20260929060357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929053207 +0000" stop="20260929070207 +0000" channel="tv3">
+  <programme start="20260929060357 +0000" stop="20260929073357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929070207 +0000" stop="20260929083207 +0000" channel="tv3">
+  <programme start="20260929073357 +0000" stop="20260929090357 +0000" channel="tv3">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928083207 +0000" stop="20260928100207 +0000" channel="tv9">
+  <programme start="20260928090357 +0000" stop="20260928103357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928100207 +0000" stop="20260928113207 +0000" channel="tv9">
+  <programme start="20260928103357 +0000" stop="20260928120357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928113207 +0000" stop="20260928130207 +0000" channel="tv9">
+  <programme start="20260928120357 +0000" stop="20260928133357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928130207 +0000" stop="20260928143207 +0000" channel="tv9">
+  <programme start="20260928133357 +0000" stop="20260928150357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928143207 +0000" stop="20260928160207 +0000" channel="tv9">
+  <programme start="20260928150357 +0000" stop="20260928163357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928160207 +0000" stop="20260928173207 +0000" channel="tv9">
+  <programme start="20260928163357 +0000" stop="20260928180357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928173207 +0000" stop="20260928190207 +0000" channel="tv9">
+  <programme start="20260928180357 +0000" stop="20260928193357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928190207 +0000" stop="20260928203207 +0000" channel="tv9">
+  <programme start="20260928193357 +0000" stop="20260928210357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928203207 +0000" stop="20260928220207 +0000" channel="tv9">
+  <programme start="20260928210357 +0000" stop="20260928223357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928220207 +0000" stop="20260928233207 +0000" channel="tv9">
+  <programme start="20260928223357 +0000" stop="20260929000357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260928233207 +0000" stop="20260929010207 +0000" channel="tv9">
+  <programme start="20260929000357 +0000" stop="20260929013357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929010207 +0000" stop="20260929023207 +0000" channel="tv9">
+  <programme start="20260929013357 +0000" stop="20260929030357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929023207 +0000" stop="20260929040207 +0000" channel="tv9">
+  <programme start="20260929030357 +0000" stop="20260929043357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929040207 +0000" stop="20260929053207 +0000" channel="tv9">
+  <programme start="20260929043357 +0000" stop="20260929060357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929053207 +0000" stop="20260929070207 +0000" channel="tv9">
+  <programme start="20260929060357 +0000" stop="20260929073357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20260929070207 +0000" stop="20260929083207 +0000" channel="tv9">
+  <programme start="20260929073357 +0000" stop="20260929090357 +0000" channel="tv9">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
