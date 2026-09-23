@@ -273,6 +273,31 @@ def get_token(force_refresh=False):
                     except Exception as ss_err:
                         print(f"[Tonton Auth Debug] Screenshot failed: {ss_err}")
 
+                    # Wait for Tonton splash ad overlay to disappear before interacting
+                    print("[Tonton Auth Debug] Waiting for splash ad to clear...")
+                    try:
+                        page.wait_for_selector(".adContainer, .adContainerSplash", state="hidden", timeout=15000)
+                        print("[Tonton Auth Debug] Ad overlay gone.")
+                    except Exception:
+                        # Ad may not exist or may have already dismissed — try clicking it away
+                        ad = page.query_selector(".adContainer, .adContainerSplash")
+                        if ad:
+                            try:
+                                ad.click()
+                                page.wait_for_timeout(1000)
+                            except Exception:
+                                pass
+                        print("[Tonton Auth Debug] Ad wait timed out, proceeding anyway.")
+
+                    page.wait_for_timeout(1000)
+
+                    # Take a post-ad screenshot to confirm real page is visible
+                    try:
+                        page.screenshot(path=os.path.join(AUTH_DIR, "login_after_ad.png"))
+                    except Exception:
+                        pass
+
+                    # Find real sign-in button — never fall back to bare 'button' (catches ad buttons)
                     sign_in_btn = page.query_selector(
                         "button:has-text('Sign In'), a:has-text('Sign In'), "
                         "button:has-text('Log In'), a:has-text('Log In'), "
@@ -280,8 +305,6 @@ def get_token(force_refresh=False):
                         "button:has-text('Login'), a:has-text('Login'), "
                         "[aria-label*='login' i], [aria-label*='sign' i]"
                     )
-                    if not sign_in_btn:
-                        sign_in_btn = page.query_selector("button")
                     print(f"[Tonton Auth Debug] Sign-in button found: {sign_in_btn is not None}")
                     if sign_in_btn:
                         btn_text = sign_in_btn.text_content()
