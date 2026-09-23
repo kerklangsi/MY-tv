@@ -418,6 +418,15 @@ def get_token(force_refresh=False):
             final_token = None
             final_dev_id = None
 
+            # Debug: dump all localStorage key-value pairs (values truncated to 40 chars)
+            if ls_raw:
+                ls_dict = json.loads(ls_raw)
+                print(f"[Tonton Auth Debug] Full localStorage dump ({len(ls_dict)} keys):")
+                for k, v in ls_dict.items():
+                    v_str = str(v)[:40] if v else "(empty)"
+                    print(f"  {k!r}: {v_str!r}")
+            print(f"[Tonton Auth Debug] Captured request tokens: {len(captured_tokens)}")
+
             if ls_raw:
                 ls_dict = json.loads(ls_raw)
                 user_profile = ls_dict.get("USER_PROFILE")
@@ -434,14 +443,29 @@ def get_token(force_refresh=False):
                     final_dev_id = s_obj.get("deviceId-v3") or s_obj.get("deviceId")
 
                 if not final_token:
-                    # Scan any other key containing token
+                    # Scan all keys — check both key name containing 'token' AND long string values
                     for k, val in ls_dict.items():
-                        if "token" in k.lower() and isinstance(val, str) and len(val) > 20:
+                        if isinstance(val, str) and len(val) > 30:
+                            # Try to parse as JSON object with token inside
+                            try:
+                                obj = json.loads(val)
+                                if isinstance(obj, dict):
+                                    t = obj.get("loginToken") or obj.get("token") or obj.get("accessToken")
+                                    if t and len(t) > 20:
+                                        final_token = t
+                                        final_dev_id = obj.get("deviceId-v3") or obj.get("deviceId")
+                                        print(f"[Tonton Auth Debug] Token extracted from nested key: {k!r}")
+                                        break
+                            except Exception:
+                                pass
+                        if not final_token and "token" in k.lower() and isinstance(val, str) and len(val) > 20:
                             final_token = val
+                            print(f"[Tonton Auth Debug] Token extracted from key: {k!r}")
                             break
 
             if not final_token and captured_tokens:
                 final_token = captured_tokens[0]
+                print(f"[Tonton Auth Debug] Token extracted from captured request URL")
 
             if not final_token and cookies:
                 for c in cookies:
