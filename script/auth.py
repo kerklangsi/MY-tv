@@ -23,28 +23,24 @@ def _read_auth_file(filename):
             pass
     return ""
 
-# Retrieve or dynamically generate User-Agent string via browser
-def get_user_agent():
-    ua = _read_auth_file("user_agent")
-    if not ua:
-        try:
-            with sync_playwright() as p:
-                browser = p.chromium.launch(headless=True)
-                page = browser.new_page()
-                ua = page.evaluate("navigator.userAgent")
-                browser.close()
-        except Exception as e:
-            print(f"[Auth Warning] Failed to dynamically retrieve browser User-Agent: {e}")
-            ua = ""
+# Real desktop Chrome UA — headless UA is blocked by Tonton's ua-barrier-menu
+DESKTOP_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 
-        if ua:
-            os.makedirs(AUTH_DIR, exist_ok=True)
-            try:
-                with open(os.path.join(AUTH_DIR, "user_agent"), "w", encoding="utf-8") as f:
-                    f.write(ua)
-            except Exception:
-                pass
-    return ua
+# Return a guaranteed desktop UA, purging any stale headless UA from cache
+def get_user_agent():
+    cached = _read_auth_file("user_agent")
+    # Reject any cached UA that contains headless/bot markers
+    if cached and not any(x in cached.lower() for x in ["headless", "bot", "crawler", "python"]):
+        return cached
+    # Wipe stale headless UA file so it doesn't persist
+    ua_file = os.path.join(AUTH_DIR, "user_agent")
+    if os.path.exists(ua_file):
+        try:
+            os.remove(ua_file)
+            print("[Tonton Auth] Removed stale/headless user_agent cache file.")
+        except Exception:
+            pass
+    return DESKTOP_UA
 
 # Retrieve or generate unique web Device ID for new users
 def get_device_id():
@@ -196,15 +192,36 @@ def get_token(force_refresh=False):
         with sync_playwright() as p:
             browser = p.chromium.launch(
                 headless=True,
-                args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
+                args=[
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                    "--disable-dev-shm-usage",
+                    "--disable-gpu",
+                    "--window-size=1920,1080",
+                    f"--user-agent={USER_AGENT}",
+                ]
             )
             context = browser.new_context(
                 user_agent=USER_AGENT,
-                viewport={"width": 1920, "height": 1080}
-            ) if USER_AGENT else browser.new_context()
+                viewport={"width": 1920, "height": 1080},
+                locale="en-US",
+                timezone_id="Asia/Kuala_Lumpur",
+                extra_http_headers={
+                    "Accept-Language": "en-US,en;q=0.9,ms;q=0.8",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+                }
+            )
 
-            # Mask webdriver and pre-seed the persistent Device ID so a new device is never created
-            context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+            # Comprehensive bot detection bypass — spoof navigator properties
+            context.add_init_script("""
+                Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+                Object.defineProperty(navigator, 'platform', {get: () => 'Win32'});
+                Object.defineProperty(navigator, 'vendor', {get: () => 'Google Inc.'});
+                Object.defineProperty(navigator, 'languages', {get: () => ['en-US', 'en', 'ms']});
+                Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
+                window.chrome = {runtime: {}};
+            """)
+            # Pre-seed persistent Device ID so a new device is never registered
             context.add_init_script(f"""
                 localStorage.setItem('SHARED_DEVICE', JSON.stringify({{
                     'deviceId-v3': '{dev_id}',
