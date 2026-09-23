@@ -75,7 +75,7 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
-          mkdir -p auth
+          [ -L auth ] && mkdir -p "$(readlink -m auth)" || mkdir -p auth
           [ -n "$EMAIL" ] && echo "$EMAIL" > auth/email || true
           [ -n "$PASSWORD" ] && echo "$PASSWORD" > auth/password || true
 
