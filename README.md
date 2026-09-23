@@ -80,7 +80,6 @@ To enable automated token refreshes and authenticated Tonton streams in GitHub A
 The repository includes preconfigured GitHub Actions workflows located in `.github/workflows/`:
 
 ### 1. `update_iptv.yml` (IPTV & EPG Updater)
-- **Schedule**: Runs automatically every 6 hours (`cron: '0 */6 * * *'`).
 - **Manual Trigger**: Can be manually run anytime via **Actions** tab > **Run workflow** (`workflow_dispatch`).
 - **Webhook Dispatch**: Can be triggered via external repository dispatch (e.g. from **cron-job.org**):
   ```bash

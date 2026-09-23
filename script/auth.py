@@ -48,16 +48,34 @@ def get_user_agent():
 
 # Retrieve or generate unique web Device ID for new users
 def get_device_id():
-    dev_id = _read_auth_file("device_id")
+    dev_id = _read_auth_file("device_id") or os.environ.get("DEVICE_ID", "").strip()
     if not dev_id:
         dev_id = f"web-v3-{uuid.uuid4().hex}-{uuid.uuid4().hex}"
-        os.makedirs(AUTH_DIR, exist_ok=True)
+    os.makedirs(AUTH_DIR, exist_ok=True)
+    dev_file = os.path.join(AUTH_DIR, "device_id")
+    if not os.path.exists(dev_file) or not _read_auth_file("device_id"):
         try:
-            with open(os.path.join(AUTH_DIR, "device_id"), "w", encoding="utf-8") as f:
+            with open(dev_file, "w", encoding="utf-8") as f:
                 f.write(dev_id)
         except Exception:
             pass
     return dev_id
+
+# Verify whether a Tonton streaming token is currently accepted by the headend API
+def is_token_valid(token, device_id=None):
+    if not token or len(token) < 20:
+        return False
+    dev = device_id or get_device_id()
+    ua = USER_AGENT if 'USER_AGENT' in globals() and USER_AGENT else "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    test_url = f"https://headend-api.tonton.com.my/v600/api/playback.class.api.php/GOgetLiveConfig/378/1/1?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&deviceId={dev}&loginToken={token}"
+    req = urllib.request.Request(test_url, headers={"User-Agent": ua})
+    try:
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            playback = data.get("playback") or data
+            return bool(playback.get("media") or playback.get("url") or playback.get("playbackUrl"))
+    except Exception:
+        return False
 
 # Retrieve or auto-fetch MYTV AES encryption key from mana2.my
 def get_me_key():
@@ -119,33 +137,82 @@ def get_me_key():
 USER_AGENT = get_user_agent() or "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 DEVICE_ID = get_device_id()
 ME_KEY = get_me_key()
+
 EMAIL = (_read_auth_file("email") or os.environ.get("EMAIL", "")).strip()
 PASSWORD = (_read_auth_file("password") or os.environ.get("PASSWORD", "")).strip()
 
+# Persist environment credentials to local auth files if not already present
+if EMAIL and not _read_auth_file("email"):
+    try:
+        os.makedirs(AUTH_DIR, exist_ok=True)
+        with open(os.path.join(AUTH_DIR, "email"), "w", encoding="utf-8") as f:
+            f.write(EMAIL)
+    except Exception:
+        pass
+
+if PASSWORD and not _read_auth_file("password"):
+    try:
+        os.makedirs(AUTH_DIR, exist_ok=True)
+        with open(os.path.join(AUTH_DIR, "password"), "w", encoding="utf-8") as f:
+            f.write(PASSWORD)
+    except Exception:
+        pass
+
 # Retrieve active Tonton session token from local cache or browser session
 def get_token(force_refresh=False):
+    dev_id = get_device_id()
+
+    # 1. Check local cached token file
+    if os.path.exists(TOKEN_FILE):
+        try:
+            with open(TOKEN_FILE, "r", encoding="utf-8") as f:
+                cached = f.read().strip()
+                if cached:
+                    print(f"[Tonton Auth] Testing cached token from {TOKEN_FILE}...")
+                    if is_token_valid(cached, dev_id):
+                        print(f"[Tonton Auth] Cached token is verified valid! Reusing token.")
+                        return cached
+                    print("[Tonton Auth] Cached token is expired or rejected.")
+        except Exception as e:
+            print(f"[Tonton Auth Warning] Failed to read {TOKEN_FILE}: {e}")
+
+    # 2. Check environment variable token if provided
     env_token = os.environ.get("TONTON_TOKEN", "").strip()
     if env_token:
-        return env_token
-
-    if not force_refresh and os.path.exists(TOKEN_FILE):
-        file_age = time.time() - os.path.getmtime(TOKEN_FILE)
-        if file_age < TOKEN_MAX_AGE_SECONDS:
+        print(f"[Tonton Auth] Testing TONTON_TOKEN environment variable...")
+        if is_token_valid(env_token, dev_id):
+            print(f"[Tonton Auth] Environment TONTON_TOKEN is valid!")
             try:
-                with open(TOKEN_FILE, "r", encoding="utf-8") as f:
-                    cached = f.read().strip()
-                    if cached:
-                        print(f"[Tonton Auth] Using cached token from hidden {TOKEN_FILE} (age: {int(file_age/3600)}h)")
-                        return cached
-            except Exception as e:
-                print(f"[Tonton Auth Warning] Failed to read {TOKEN_FILE}: {e}")
+                os.makedirs(AUTH_DIR, exist_ok=True)
+                with open(TOKEN_FILE, "w", encoding="utf-8") as f:
+                    f.write(env_token)
+            except Exception:
+                pass
+            return env_token
+        print("[Tonton Auth] Environment TONTON_TOKEN is expired or rejected.")
 
-    print("[Tonton Auth] Fetching fresh session token from watch.tonton.com.my...")
+    print("[Tonton Auth] Token missing or expired. Fetching fresh session token from watch.tonton.com.my...")
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            context = browser.new_context(user_agent=USER_AGENT) if USER_AGENT else browser.new_context()
+            browser = p.chromium.launch(
+                headless=True,
+                args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
+            )
+            context = browser.new_context(
+                user_agent=USER_AGENT,
+                viewport={"width": 1920, "height": 1080}
+            ) if USER_AGENT else browser.new_context()
+
+            # Mask webdriver and pre-seed the persistent Device ID so a new device is never created
+            context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+            context.add_init_script(f"""
+                localStorage.setItem('SHARED_DEVICE', JSON.stringify({{
+                    'deviceId-v3': '{dev_id}',
+                    'deviceId': '{dev_id}'
+                }}));
+            """)
             page = context.new_page()
+
 
             popup_page = None
             def on_popup(popup):

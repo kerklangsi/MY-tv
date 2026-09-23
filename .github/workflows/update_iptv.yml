@@ -66,14 +66,14 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install cryptography
 
-      - name: Restore auth files from secrets
+      - name: Setup auth credentials
         env:
-          TONTON_TOKEN: ${{ secrets.TONTON_TOKEN }}
-          ME_KEY: ${{ secrets.ME_KEY }}
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           mkdir -p auth
-          [ -n "$TONTON_TOKEN" ] && echo "$TONTON_TOKEN" > auth/tonton || true
-          [ -n "$ME_KEY" ] && echo "$ME_KEY" > auth/me_key || true
+          [ -n "$EMAIL" ] && echo "$EMAIL" > auth/email || true
+          [ -n "$PASSWORD" ] && echo "$PASSWORD" > auth/password || true
 
       - name: Run Live TV & EPG Generator
         env:
@@ -103,14 +103,14 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install cryptography
 
-      - name: Restore auth files from secrets
+      - name: Setup auth credentials
         env:
-          TONTON_TOKEN: ${{ secrets.TONTON_TOKEN }}
-          ME_KEY: ${{ secrets.ME_KEY }}
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           mkdir -p auth
-          [ -n "$TONTON_TOKEN" ] && echo "$TONTON_TOKEN" > auth/tonton || true
-          [ -n "$ME_KEY" ] && echo "$ME_KEY" > auth/me_key || true
+          [ -n "$EMAIL" ] && echo "$EMAIL" > auth/email || true
+          [ -n "$PASSWORD" ] && echo "$PASSWORD" > auth/password || true
 
       - name: Run VOD Generator
         env:

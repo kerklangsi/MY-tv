@@ -68,19 +68,17 @@ jobs:
           python3 -m pip install playwright cryptography
           python3 -m playwright install --with-deps chromium
 
-      - name: Refresh Tonton Token
+      - name: Setup auth credentials
         env:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
-        run: python3 script/auth.py --force
-
-      - name: Update GitHub Secret TONTON_TOKEN
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          if [ -n "$GH_PAT" ] && [ -f auth/tonton ] && [ -s auth/tonton ]; then
-            echo "$GH_PAT" | gh auth login --with-token
-            gh secret set TONTON_TOKEN --body "$(cat auth/tonton)" --repo kerklangsi/MY-tv
-            echo "Successfully synced refreshed token to GitHub Secret TONTON_TOKEN"
-          fi
+          mkdir -p auth
+          [ -n "$EMAIL" ] && echo "$EMAIL" > auth/email || true
+          [ -n "$PASSWORD" ] && echo "$PASSWORD" > auth/password || true
+
+      - name: Refresh Tonton Token
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python3 script/auth.py
 
