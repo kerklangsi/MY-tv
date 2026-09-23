@@ -235,7 +235,7 @@ def get_token(force_refresh=False):
                 try:
                     page.goto("https://watch.tonton.com.my/login", wait_until="networkidle", timeout=30000)
                     page.wait_for_timeout(3000)
-                    print(f"[Tonton Auth Debug] Login page URL: {page.url()} | Title: {page.title()}")
+                    print(f"[Tonton Auth Debug] Login page URL: {page.url} | Title: {page.title()}")
 
                     sign_in_btn = page.query_selector(
                         "button:has-text('Sign In'), a:has-text('Sign In'), "
@@ -256,7 +256,7 @@ def get_token(force_refresh=False):
                         page.wait_for_timeout(1000)
 
                     print(f"[Tonton Auth Debug] Popup detected: {popup_page is not None}")
-                    print(f"[Tonton Auth Debug] Current page URL after click: {page.url()}")
+                    print(f"[Tonton Auth Debug] Current page URL after click: {page.url}")
 
                     # Support both popup SSO and inline redirect SSO
                     target = popup_page if popup_page else page
@@ -264,7 +264,7 @@ def get_token(force_refresh=False):
                         target.wait_for_load_state("networkidle", timeout=15000)
                     except Exception:
                         pass
-                    print(f"[Tonton Auth Debug] Target URL: {target.url()} | Title: {target.title()}")
+                    print(f"[Tonton Auth Debug] Target URL: {target.url} | Title: {target.title()}")
 
                     target.wait_for_timeout(2000)
                     email_input = target.query_selector(
@@ -325,7 +325,7 @@ def get_token(force_refresh=False):
                         print("[Tonton Auth Debug] wait_for_function timed out — falling back to 8s wait")
                         page.wait_for_timeout(8000)
 
-                    print(f"[Tonton Auth Debug] Final page URL after login: {page.url()} | Title: {page.title()}")
+                    print(f"[Tonton Auth Debug] Final page URL after login: {page.url} | Title: {page.title()}")
                 except Exception as login_err:
                     print(f"[Tonton Auth Warning] Web login interaction encountered: {login_err}")
 
