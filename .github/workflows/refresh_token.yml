@@ -82,5 +82,5 @@ jobs:
       - name: Refresh Tonton Token
         env:
           PYTHONUNBUFFERED: "1"
-        run: python3 script/auth.py
+        run: python3 script/auth.py --force
 

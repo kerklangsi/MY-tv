@@ -162,8 +162,8 @@ if PASSWORD and not _read_auth_file("password"):
 def get_token(force_refresh=False):
     dev_id = get_device_id()
 
-    # 1. Check local cached token file
-    if os.path.exists(TOKEN_FILE):
+    # 1. Check local cached token file (skip if force_refresh)
+    if not force_refresh and os.path.exists(TOKEN_FILE):
         try:
             with open(TOKEN_FILE, "r", encoding="utf-8") as f:
                 cached = f.read().strip()
@@ -235,6 +235,7 @@ def get_token(force_refresh=False):
                 try:
                     page.goto("https://watch.tonton.com.my/login", wait_until="networkidle", timeout=30000)
                     page.wait_for_timeout(3000)
+                    print(f"[Tonton Auth Debug] Login page URL: {page.url()} | Title: {page.title()}")
 
                     sign_in_btn = page.query_selector(
                         "button:has-text('Sign In'), a:has-text('Sign In'), "
@@ -243,62 +244,100 @@ def get_token(force_refresh=False):
                     )
                     if not sign_in_btn:
                         sign_in_btn = page.query_selector("button")
+                    print(f"[Tonton Auth Debug] Sign-in button found: {sign_in_btn is not None}")
 
                     if sign_in_btn:
                         sign_in_btn.click()
 
+                    # Wait for popup OR inline redirect (up to 10s)
                     for _ in range(10):
                         if popup_page:
                             break
                         page.wait_for_timeout(1000)
 
+                    print(f"[Tonton Auth Debug] Popup detected: {popup_page is not None}")
+                    print(f"[Tonton Auth Debug] Current page URL after click: {page.url()}")
+
+                    # Support both popup SSO and inline redirect SSO
                     target = popup_page if popup_page else page
                     try:
                         target.wait_for_load_state("networkidle", timeout=15000)
                     except Exception:
                         pass
+                    print(f"[Tonton Auth Debug] Target URL: {target.url()} | Title: {target.title()}")
 
                     target.wait_for_timeout(2000)
-                    email_input = target.query_selector("input[type='email'], input[name='username'], input[name='email'], input[placeholder*='Email'], input[placeholder*='email']")
+                    email_input = target.query_selector(
+                        "input[type='email'], input[name='username'], input[name='email'], "
+                        "input[placeholder*='Email'], input[placeholder*='email'], "
+                        "input[placeholder*='emel'], input[id*='email'], input[id*='username']"
+                    )
                     if not email_input:
                         inputs = target.query_selector_all("input")
-                        if inputs:
-                            email_input = inputs[0]
+                        email_input = inputs[0] if inputs else None
+                    print(f"[Tonton Auth Debug] Email input found: {email_input is not None}")
 
                     if email_input:
                         email_input.fill(EMAIL)
 
-                    pass_input = target.query_selector("input[type='password'], input[name='password'], input[placeholder*='Password']")
+                    pass_input = target.query_selector(
+                        "input[type='password'], input[name='password'], "
+                        "input[placeholder*='Password'], input[placeholder*='password']"
+                    )
+                    print(f"[Tonton Auth Debug] Password input found: {pass_input is not None}")
                     if pass_input:
                         pass_input.fill(PASSWORD)
 
-                    submit_btn = target.query_selector("button[type='submit'], input[type='submit'], button:has-text('Sign In'), button:has-text('Log In'), button:has-text('Masuk')")
+                    submit_btn = target.query_selector(
+                        "button[type='submit'], input[type='submit'], "
+                        "button:has-text('Sign In'), button:has-text('Log In'), "
+                        "button:has-text('Masuk'), button:has-text('Login')"
+                    )
+                    print(f"[Tonton Auth Debug] Submit button found: {submit_btn is not None}")
                     if submit_btn:
                         submit_btn.click()
                         if popup_page:
                             try:
-                                popup_page.wait_for_event("close", timeout=12000)
+                                popup_page.wait_for_event("close", timeout=15000)
                             except Exception:
                                 pass
 
-                    # Wait for SSO callback to finish and write loginToken to localStorage
+                    # Wait for SSO callback — check multiple localStorage keys
                     try:
                         page.wait_for_function(
-                            "() => { try { const s = JSON.parse(localStorage.getItem('SHARED_DEVICE')); return !!(s && (s.loginToken || s.token)); } catch(e) { return false; } }",
-                            timeout=20000
+                            """() => {
+                                try {
+                                    const sd = JSON.parse(localStorage.getItem('SHARED_DEVICE') || 'null');
+                                    if (sd && (sd.loginToken || sd.token)) return true;
+                                    const up = JSON.parse(localStorage.getItem('USER_PROFILE') || 'null');
+                                    if (up && (up.loginToken || up.token)) return true;
+                                    return Object.keys(localStorage).some(
+                                        k => k.toLowerCase().includes('token') &&
+                                             localStorage.getItem(k) &&
+                                             localStorage.getItem(k).length > 20
+                                    );
+                                } catch(e) { return false; }
+                            }""",
+                            timeout=25000
                         )
+                        print("[Tonton Auth Debug] localStorage token found via wait_for_function")
                     except Exception:
-                        page.wait_for_timeout(5000)
+                        print("[Tonton Auth Debug] wait_for_function timed out — falling back to 8s wait")
+                        page.wait_for_timeout(8000)
+
+                    print(f"[Tonton Auth Debug] Final page URL after login: {page.url()} | Title: {page.title()}")
                 except Exception as login_err:
                     print(f"[Tonton Auth Warning] Web login interaction encountered: {login_err}")
 
             # Check if token is already present before navigating
             ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
+            print(f"[Tonton Auth Debug] localStorage keys: {list(json.loads(ls_raw).keys()) if ls_raw else 'none'}")
             if not ls_raw or '"loginToken"' not in ls_raw:
                 try:
                     page.goto("https://watch.tonton.com.my/live", timeout=30000)
-                    page.wait_for_timeout(4000)
+                    page.wait_for_timeout(5000)
                     ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
+                    print(f"[Tonton Auth Debug] localStorage keys after /live: {list(json.loads(ls_raw).keys()) if ls_raw else 'none'}")
                 except Exception:
                     pass
             cookies = context.cookies()
