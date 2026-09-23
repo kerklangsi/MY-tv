@@ -2894,7 +2894,7 @@
 <!-- SECTION:TONTON:START -->
 ## 📺 Tonton Shows
 
-**Total Series Shows:** 645 | **Total Episodes:** 9371 (0 Playable, 9371 VIP)
+**Total Series Shows:** 645 | **Total Episodes:** 9373 (0 Playable, 9373 VIP)
 
 ---
 
@@ -3604,7 +3604,7 @@
 
 ### 36. Ali Baba: Dastaan E-Kabul (Season 2)
 - **Folder**: `streams/vod_tonton/ali-baba-dastaan-e-kabul-s2`
-- **Total Episodes**: 37 (0 Playable, 37 VIP)
+- **Total Episodes**: 38 (0 Playable, 38 VIP)
 - **Episode List**:
   - 🔒 Episod 1 - Ali Baba: Dastaan E-Kabul (Season 2) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 2 - Ali Baba: Dastaan E-Kabul (Season 2) *(Requires Tonton UP / VIP)*
@@ -3643,6 +3643,7 @@
   - 🔒 Episod 35 - Ali Baba: Dastaan E-Kabul (Season 2) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 36 - Ali Baba: Dastaan E-Kabul (Season 2) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 37 - Ali Baba: Dastaan E-Kabul (Season 2) *(Requires Tonton UP / VIP)*
+  - 🔒 Episod 38 - Ali Baba: Dastaan E-Kabul (Season 2) *(Requires Tonton UP / VIP)*
 
 ### 37. Alice Kampung Baru
 - **Folder**: `streams/vod_tonton/alice-kampung-baru`
@@ -4515,7 +4516,7 @@
 
 ### 83. Buletin 1:30 (2026)
 - **Folder**: `streams/vod_tonton/buletin-130-2026`
-- **Total Episodes**: 11 (0 Playable, 11 VIP)
+- **Total Episodes**: 12 (0 Playable, 12 VIP)
 - **Episode List**:
   - 🔒 Episod 92 - Buletin 1:30 (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 145 - Buletin 1:30 (2026) *(Requires Tonton UP / VIP)*
@@ -4528,6 +4529,7 @@
   - 🔒 Episod 225 - Buletin 1:30 (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 226 - Buletin 1:30 (2026) *(Requires Tonton UP / VIP)*
   - 🔒 Episod 227 - Buletin 1:30 (2026) *(Requires Tonton UP / VIP)*
+  - 🔒 Episod 228 - Buletin 1:30 (2026) *(Requires Tonton UP / VIP)*
 
 ### 84. Buletin Pagi (2025)
 - **Folder**: `streams/vod_tonton/buletin-pagi-20252026`
