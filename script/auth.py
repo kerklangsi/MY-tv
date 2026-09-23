@@ -233,24 +233,46 @@ def get_token(force_refresh=False):
             if EMAIL and PASSWORD:
                 print("[Tonton Auth] EMAIL and PASSWORD detected, attempting web login...")
                 try:
-                    page.goto("https://watch.tonton.com.my/login", wait_until="networkidle", timeout=30000)
-                    page.wait_for_timeout(3000)
+                    page.goto("https://watch.tonton.com.my/login", wait_until="domcontentloaded", timeout=30000)
+
+                    # Wait for React to mount any interactive element (up to 15s)
+                    try:
+                        page.wait_for_selector("input, button, a[href*='login'], a[href*='signin']", timeout=15000)
+                    except Exception:
+                        pass
+                    page.wait_for_timeout(2000)
                     print(f"[Tonton Auth Debug] Login page URL: {page.url} | Title: {page.title()}")
+
+                    # Dump first 1500 chars of rendered HTML for diagnosis
+                    html_snippet = page.evaluate("() => document.body ? document.body.innerHTML.substring(0, 1500) : 'no body'")
+                    print(f"[Tonton Auth Debug] Page HTML snippet: {html_snippet}")
+
+                    # Save screenshot to auth dir for inspection
+                    try:
+                        screenshot_path = os.path.join(AUTH_DIR, "login_debug.png")
+                        os.makedirs(AUTH_DIR, exist_ok=True)
+                        page.screenshot(path=screenshot_path)
+                        print(f"[Tonton Auth Debug] Screenshot saved to {screenshot_path}")
+                    except Exception as ss_err:
+                        print(f"[Tonton Auth Debug] Screenshot failed: {ss_err}")
 
                     sign_in_btn = page.query_selector(
                         "button:has-text('Sign In'), a:has-text('Sign In'), "
                         "button:has-text('Log In'), a:has-text('Log In'), "
-                        "button:has-text('Masuk'), a:has-text('Masuk')"
+                        "button:has-text('Masuk'), a:has-text('Masuk'), "
+                        "button:has-text('Login'), a:has-text('Login'), "
+                        "[aria-label*='login' i], [aria-label*='sign' i]"
                     )
                     if not sign_in_btn:
                         sign_in_btn = page.query_selector("button")
                     print(f"[Tonton Auth Debug] Sign-in button found: {sign_in_btn is not None}")
-
                     if sign_in_btn:
+                        btn_text = sign_in_btn.text_content()
+                        print(f"[Tonton Auth Debug] Button text: {repr(btn_text)}")
                         sign_in_btn.click()
 
-                    # Wait for popup OR inline redirect (up to 10s)
-                    for _ in range(10):
+                    # Wait for popup OR inline redirect (up to 12s)
+                    for _ in range(12):
                         if popup_page:
                             break
                         page.wait_for_timeout(1000)
@@ -266,7 +288,16 @@ def get_token(force_refresh=False):
                         pass
                     print(f"[Tonton Auth Debug] Target URL: {target.url} | Title: {target.title()}")
 
-                    target.wait_for_timeout(2000)
+                    # Wait for email/password fields to appear in SSO page
+                    try:
+                        target.wait_for_selector("input", timeout=10000)
+                    except Exception:
+                        pass
+                    target.wait_for_timeout(1000)
+
+                    # Dump SSO page HTML for diagnosis
+                    target_html = target.evaluate("() => document.body ? document.body.innerHTML.substring(0, 1500) : 'no body'")
+                    print(f"[Tonton Auth Debug] Target HTML snippet: {target_html}")
                     email_input = target.query_selector(
                         "input[type='email'], input[name='username'], input[name='email'], "
                         "input[placeholder*='Email'], input[placeholder*='email'], "
@@ -291,7 +322,8 @@ def get_token(force_refresh=False):
                     submit_btn = target.query_selector(
                         "button[type='submit'], input[type='submit'], "
                         "button:has-text('Sign In'), button:has-text('Log In'), "
-                        "button:has-text('Masuk'), button:has-text('Login')"
+                        "button:has-text('Masuk'), button:has-text('Login'), "
+                        "button:has-text('Submit')"
                     )
                     print(f"[Tonton Auth Debug] Submit button found: {submit_btn is not None}")
                     if submit_btn:
