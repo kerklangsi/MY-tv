@@ -76,6 +76,7 @@ jobs:
       - name: Commit and push Live TV changes
         run: |
           git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add playlist.m3u playlist.m3u8 all.m3u all.m3u8 epg.xml epg.xml.gz List/LIVE_LIST.md
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Live TV streams, EPG schedule & catalogs" && git pull --rebase origin main && git push)
 
@@ -106,6 +107,7 @@ jobs:
       - name: Commit and push VOD changes
         run: |
           git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add vod.m3u vod.m3u8 all.m3u all.m3u8 List/SHOWS_LIST.md List/MOVIES_LIST.md
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update VOD movies & shows playlist and catalogs" && git pull --rebase origin main && git push)
 
