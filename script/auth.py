@@ -272,6 +272,7 @@ def get_token(force_refresh=False):
                                     if m:
                                         tok = m.group(1)
                                         captured_tokens.insert(0, tok)  # Prioritise over URL-captured tokens
+                                        print(f"[Tonton Auth Debug] Token captured from: {url[:100]}")
                                         return
                         except Exception:
                             pass
@@ -280,6 +281,7 @@ def get_token(force_refresh=False):
                         tok = url.split("loginToken=")[1].split("&")[0]
                         if tok and len(tok) > 20:
                             captured_tokens.append(tok)
+                            print(f"[Tonton Auth Debug] Token captured from redirect URL")
                 except Exception:
                     pass
 
@@ -305,10 +307,26 @@ def get_token(force_refresh=False):
                     except Exception:
                         pass
                     page.wait_for_timeout(2000)
+                    print(f"[Tonton Auth Debug] Login page URL: {page.url} | Title: {page.title()}")
+
+                    # Dump first 1500 chars of rendered HTML for diagnosis
+                    html_snippet = page.evaluate("() => document.body ? document.body.innerHTML.substring(0, 1500) : 'no body'")
+                    print(f"[Tonton Auth Debug] Page HTML snippet: {html_snippet}")
+
+                    # Save screenshot to auth dir for inspection
+                    try:
+                        screenshot_path = os.path.join(AUTH_DIR, "login_debug.png")
+                        os.makedirs(AUTH_DIR, exist_ok=True)
+                        page.screenshot(path=screenshot_path)
+                        print(f"[Tonton Auth Debug] Screenshot saved to {screenshot_path}")
+                    except Exception as ss_err:
+                        print(f"[Tonton Auth Debug] Screenshot failed: {ss_err}")
 
                     # Wait for Tonton splash ad overlay to disappear before interacting
+                    print("[Tonton Auth Debug] Waiting for splash ad to clear...")
                     try:
                         page.wait_for_selector(".adContainer, .adContainerSplash", state="hidden", timeout=15000)
+                        print("[Tonton Auth Debug] Ad overlay gone.")
                     except Exception:
                         # Ad may not exist or may have already dismissed — try clicking it away
                         ad = page.query_selector(".adContainer, .adContainerSplash")
@@ -318,8 +336,15 @@ def get_token(force_refresh=False):
                                 page.wait_for_timeout(1000)
                             except Exception:
                                 pass
+                        print("[Tonton Auth Debug] Ad wait timed out, proceeding anyway.")
 
                     page.wait_for_timeout(1000)
+
+                    # Take a post-ad screenshot to confirm real page is visible
+                    try:
+                        page.screenshot(path=os.path.join(AUTH_DIR, "login_after_ad.png"))
+                    except Exception:
+                        pass
 
                     # Find real sign-in button — never fall back to bare 'button' (catches ad buttons)
                     sign_in_btn = page.query_selector(
@@ -329,7 +354,10 @@ def get_token(force_refresh=False):
                         "button:has-text('Login'), a:has-text('Login'), "
                         "[aria-label*='login' i], [aria-label*='sign' i]"
                     )
+                    print(f"[Tonton Auth Debug] Sign-in button found: {sign_in_btn is not None}")
                     if sign_in_btn:
+                        btn_text = sign_in_btn.text_content()
+                        print(f"[Tonton Auth Debug] Button text: {repr(btn_text)}")
                         sign_in_btn.click()
 
                     # Wait for popup OR inline redirect (up to 12s)
@@ -338,12 +366,16 @@ def get_token(force_refresh=False):
                             break
                         page.wait_for_timeout(1000)
 
+                    print(f"[Tonton Auth Debug] Popup detected: {popup_page is not None}")
+                    print(f"[Tonton Auth Debug] Current page URL after click: {page.url}")
+
                     # Support both popup SSO and inline redirect SSO
                     target = popup_page if popup_page else page
                     try:
                         target.wait_for_load_state("networkidle", timeout=15000)
                     except Exception:
                         pass
+                    print(f"[Tonton Auth Debug] Target URL: {target.url} | Title: {target.title()}")
 
                     # Wait for email/password fields to appear in SSO page
                     try:
@@ -352,6 +384,9 @@ def get_token(force_refresh=False):
                         pass
                     target.wait_for_timeout(1000)
 
+                    # Dump SSO page HTML for diagnosis
+                    target_html = target.evaluate("() => document.body ? document.body.innerHTML.substring(0, 1500) : 'no body'")
+                    print(f"[Tonton Auth Debug] Target HTML snippet: {target_html}")
                     email_input = target.query_selector(
                         "input[type='email'], input[name='username'], input[name='email'], "
                         "input[placeholder*='Email'], input[placeholder*='email'], "
@@ -360,6 +395,7 @@ def get_token(force_refresh=False):
                     if not email_input:
                         inputs = target.query_selector_all("input")
                         email_input = inputs[0] if inputs else None
+                    print(f"[Tonton Auth Debug] Email input found: {email_input is not None}")
 
                     if email_input:
                         email_input.fill(EMAIL)
@@ -368,6 +404,7 @@ def get_token(force_refresh=False):
                         "input[type='password'], input[name='password'], "
                         "input[placeholder*='Password'], input[placeholder*='password']"
                     )
+                    print(f"[Tonton Auth Debug] Password input found: {pass_input is not None}")
                     if pass_input:
                         pass_input.fill(PASSWORD)
 
@@ -377,6 +414,7 @@ def get_token(force_refresh=False):
                         "button:has-text('Masuk'), button:has-text('Login'), "
                         "button:has-text('Submit')"
                     )
+                    print(f"[Tonton Auth Debug] Submit button found: {submit_btn is not None}")
                     if submit_btn:
                         submit_btn.click()
                         if popup_page:
@@ -405,18 +443,24 @@ def get_token(force_refresh=False):
                             }""",
                             timeout=15000
                         )
+                        print("[Tonton Auth Debug] localStorage token found via wait_for_function")
                     except Exception:
+                        print("[Tonton Auth Debug] localStorage token not found — relying on network capture")
                         page.wait_for_timeout(5000)
+
+                    print(f"[Tonton Auth Debug] Final page URL after login: {page.url} | Title: {page.title()}")
                 except Exception as login_err:
                     print(f"[Tonton Auth Warning] Web login interaction encountered: {login_err}")
 
             # Check if token is already present before navigating
             ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
+            print(f"[Tonton Auth Debug] localStorage keys: {list(json.loads(ls_raw).keys()) if ls_raw else 'none'}")
             if not ls_raw or '"loginToken"' not in ls_raw:
                 try:
                     page.goto("https://watch.tonton.com.my/live", timeout=30000)
                     page.wait_for_timeout(5000)
                     ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
+                    print(f"[Tonton Auth Debug] localStorage keys after /live: {list(json.loads(ls_raw).keys()) if ls_raw else 'none'}")
                 except Exception:
                     pass
             cookies = context.cookies()
@@ -424,6 +468,8 @@ def get_token(force_refresh=False):
 
             final_token = None
             final_dev_id = None
+
+            print(f"[Tonton Auth Debug] Captured tokens: {len(captured_tokens)}")
 
             if ls_raw:
                 ls_dict = json.loads(ls_raw)
@@ -452,15 +498,18 @@ def get_token(force_refresh=False):
                                     if t and len(t) > 20:
                                         final_token = t
                                         final_dev_id = obj.get("deviceId-v3") or obj.get("deviceId")
+                                        print(f"[Tonton Auth Debug] Token extracted from nested key: {k!r}")
                                         break
                             except Exception:
                                 pass
                         if not final_token and "token" in k.lower() and isinstance(val, str) and len(val) > 20:
                             final_token = val
+                            print(f"[Tonton Auth Debug] Token extracted from key: {k!r}")
                             break
 
             if not final_token and captured_tokens:
                 final_token = captured_tokens[0]
+                print(f"[Tonton Auth Debug] Token extracted from captured request URL")
 
             if not final_token and cookies:
                 for c in cookies:
