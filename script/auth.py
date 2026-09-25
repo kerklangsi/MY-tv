@@ -272,7 +272,7 @@ def get_token(force_refresh=False):
                                     if m:
                                         tok = m.group(1)
                                         captured_tokens.insert(0, tok)  # Prioritise over URL-captured tokens
-                                        print(f"[Tonton Auth Debug] Token captured from: {url[:100]}")
+                                        print(f"[Tonton Auth] Token captured from network: {url[:80]}")
                                         return
                         except Exception:
                             pass
@@ -281,7 +281,7 @@ def get_token(force_refresh=False):
                         tok = url.split("loginToken=")[1].split("&")[0]
                         if tok and len(tok) > 20:
                             captured_tokens.append(tok)
-                            print(f"[Tonton Auth Debug] Token captured from redirect URL")
+                            print("[Tonton Auth] Token captured from redirect URL")
                 except Exception:
                     pass
 
@@ -296,56 +296,96 @@ def get_token(force_refresh=False):
             page.on("request", on_request)
             page.on("response", on_response)
 
+            debug_dir = os.path.join(AUTH_DIR, "debug")
+            os.makedirs(debug_dir, exist_ok=True)
+
+            # Helper: save screenshot and log page state at each debug step
+            def debug_step(label, pg):
+                try:
+                    shot_path = os.path.join(debug_dir, f"{label}.png")
+                    pg.screenshot(path=shot_path, full_page=True)
+                    print(f"[Tonton Auth Debug] [{label}] URL: {pg.url}")
+                    print(f"[Tonton Auth Debug] [{label}] Title: {pg.title()}")
+                    body_text = (pg.inner_text("body") or "")[:300].replace("\n", " ")
+                    print(f"[Tonton Auth Debug] [{label}] Body: {body_text}")
+                except Exception as dbg_e:
+                    print(f"[Tonton Auth Debug] [{label}] Screenshot failed: {dbg_e}")
+
+            # Helper: dump all inputs and buttons found on the page for selector debugging
+            def dump_elements(pg):
+                try:
+                    inputs = pg.query_selector_all("input")
+                    btns = pg.query_selector_all("button, a[href]")
+                    print(f"[Tonton Auth Debug] Found {len(inputs)} input(s):")
+                    for el in inputs[:6]:
+                        t = el.get_attribute("type") or "text"
+                        n = el.get_attribute("name") or ""
+                        ph = el.get_attribute("placeholder") or ""
+                        i = el.get_attribute("id") or ""
+                        print(f"  input type={t!r} name={n!r} placeholder={ph!r} id={i!r}")
+                    print(f"[Tonton Auth Debug] Found {len(btns)} button/link(s):")
+                    for el in btns[:8]:
+                        txt = (el.inner_text() or "").strip()[:40]
+                        href = el.get_attribute("href") or ""
+                        cls = el.get_attribute("class") or ""
+                        print(f"  btn/a text={txt!r} href={href[:40]!r} class={cls[:40]!r}")
+                except Exception as de:
+                    print(f"[Tonton Auth Debug] dump_elements error: {de}")
+
             if EMAIL and PASSWORD:
                 print("[Tonton Auth] EMAIL and PASSWORD detected, attempting web login...")
                 try:
                     page.goto("https://watch.tonton.com.my/login", wait_until="domcontentloaded", timeout=30000)
 
-                    # Wait for React to mount any interactive element (up to 15s)
+                    # Wait for React to mount any interactive element (up to 20s)
                     try:
-                        page.wait_for_selector("input, button, a[href*='login'], a[href*='signin']", timeout=15000)
+                        page.wait_for_selector("input, button, a[href*='login'], a[href*='signin']", timeout=20000)
                     except Exception:
                         pass
                     page.wait_for_timeout(2000)
-                    print(f"[Tonton Auth] Login page loaded: {page.url}")
+                    debug_step("01_login_page_loaded", page)
 
-                    # Wait for Tonton splash ad overlay to disappear before interacting
+                    # Dismiss any ad/splash overlay — wait up to 20s, then try clicking it away
                     try:
-                        page.wait_for_selector(".adContainer, .adContainerSplash", state="hidden", timeout=15000)
+                        page.wait_for_selector(".adContainer, .adContainerSplash, [class*='ad-overlay'], [class*='splash']", state="hidden", timeout=20000)
+                        print("[Tonton Auth] Ad overlay dismissed.")
                     except Exception:
-                        # Ad may not exist or may have already dismissed — try clicking it away
-                        ad = page.query_selector(".adContainer, .adContainerSplash")
-                        if ad:
-                            try:
-                                ad.click()
-                                page.wait_for_timeout(1000)
-                            except Exception:
-                                pass
+                        for ad_sel in [".adContainer", ".adContainerSplash", "[class*='ad-overlay']", "[class*='splash']"]:
+                            ad = page.query_selector(ad_sel)
+                            if ad and ad.is_visible():
+                                try:
+                                    ad.click(force=True)
+                                    page.wait_for_timeout(1000)
+                                    print(f"[Tonton Auth] Clicked away ad: {ad_sel}")
+                                except Exception:
+                                    pass
+                    page.wait_for_timeout(1500)
+                    debug_step("02_after_ad_dismiss", page)
+                    dump_elements(page)
 
-                    page.wait_for_timeout(1000)
+                    # Find real sign-in button using broad keyword matching
+                    sign_in_btn = None
+                    sign_in_texts = ["sign in", "log in", "login", "masuk", "daftar masuk"]
+                    for btn in page.query_selector_all("button, a"):
+                        try:
+                            txt = (btn.inner_text() or "").strip().lower()
+                            aria = (btn.get_attribute("aria-label") or "").lower()
+                            if any(kw in txt or kw in aria for kw in sign_in_texts):
+                                if btn.is_visible():
+                                    sign_in_btn = btn
+                                    print(f"[Tonton Auth] Found Sign In element: text={txt!r}")
+                                    break
+                        except Exception:
+                            pass
 
-                    # Take a post-ad screenshot to confirm real page is visible
-                    try:
-                        page.screenshot(path=os.path.join(AUTH_DIR, "login_after_ad.png"))
-                    except Exception:
-                        pass
-
-                    # Find real sign-in button — never fall back to bare 'button' (catches ad buttons)
-                    sign_in_btn = page.query_selector(
-                        "button:has-text('Sign In'), a:has-text('Sign In'), "
-                        "button:has-text('Log In'), a:has-text('Log In'), "
-                        "button:has-text('Masuk'), a:has-text('Masuk'), "
-                        "button:has-text('Login'), a:has-text('Login'), "
-                        "[aria-label*='login' i], [aria-label*='sign' i]"
-                    )
                     if sign_in_btn:
-                        print("[Tonton Auth] Clicking Sign In button...")
                         sign_in_btn.click()
+                        print("[Tonton Auth] Clicked Sign In button.")
                     else:
-                        print("[Tonton Auth Warning] Sign In button not found on login page.")
+                        print("[Tonton Auth Warning] Sign In button not found — page may already be on login form.")
 
-                    # Wait for popup OR inline redirect (up to 12s)
-                    for _ in range(12):
+                    # Wait for popup OR inline redirect (up to 15s)
+                    for _ in range(15):
                         if popup_page:
                             break
                         page.wait_for_timeout(1000)
@@ -358,48 +398,95 @@ def get_token(force_refresh=False):
                     except Exception:
                         pass
 
-                    # Wait for email/password fields to appear in SSO page
+                    # Wait for email/password fields
                     try:
-                        target.wait_for_selector("input", timeout=10000)
+                        target.wait_for_selector("input", timeout=12000)
                     except Exception:
                         pass
-                    target.wait_for_timeout(1000)
+                    target.wait_for_timeout(1500)
+                    debug_step("03_sso_page", target)
+                    dump_elements(target)
 
-                    email_input = target.query_selector(
-                        "input[type='email'], input[name='username'], input[name='email'], "
-                        "input[placeholder*='Email'], input[placeholder*='email'], "
-                        "input[placeholder*='emel'], input[id*='email'], input[id*='username']"
-                    )
+                    # Find email input with broad selectors + fallback to first visible input
+                    email_input = None
+                    email_selectors = [
+                        "input[type='email']", "input[name='username']", "input[name='email']",
+                        "input[id*='email']", "input[id*='username']", "input[id*='user']",
+                        "input[placeholder*='mail' i]", "input[placeholder*='user' i]",
+                        "input[autocomplete='email']", "input[autocomplete='username']",
+                    ]
+                    for sel in email_selectors:
+                        el = target.query_selector(sel)
+                        if el and el.is_visible():
+                            email_input = el
+                            print(f"[Tonton Auth] Email input found via: {sel!r}")
+                            break
                     if not email_input:
-                        inputs = target.query_selector_all("input")
-                        email_input = inputs[0] if inputs else None
+                        # Last resort: grab all visible text inputs and use first one
+                        all_inputs = [i for i in target.query_selector_all("input") if i.is_visible()]
+                        non_pass = [i for i in all_inputs if i.get_attribute("type") != "password"]
+                        email_input = non_pass[0] if non_pass else (all_inputs[0] if all_inputs else None)
+                        if email_input:
+                            print("[Tonton Auth] Email input found via fallback (first visible input).")
 
                     if email_input:
-                        print("[Tonton Auth] Filling email and password...")
+                        print("[Tonton Auth] Filling email...")
+                        email_input.click()
                         email_input.fill(EMAIL)
+                        page.wait_for_timeout(500)
                     else:
                         print("[Tonton Auth Warning] Email input not found on SSO page.")
 
-                    pass_input = target.query_selector(
-                        "input[type='password'], input[name='password'], "
-                        "input[placeholder*='Password'], input[placeholder*='password']"
-                    )
+                    # Find password input
+                    pass_input = None
+                    pass_selectors = [
+                        "input[type='password']", "input[name='password']",
+                        "input[id*='password']", "input[id*='pass']",
+                        "input[placeholder*='pass' i]", "input[placeholder*='kata' i]",
+                        "input[autocomplete='current-password']",
+                    ]
+                    for sel in pass_selectors:
+                        el = target.query_selector(sel)
+                        if el and el.is_visible():
+                            pass_input = el
+                            print(f"[Tonton Auth] Password input found via: {sel!r}")
+                            break
                     if pass_input:
+                        pass_input.click()
                         pass_input.fill(PASSWORD)
+                        page.wait_for_timeout(500)
+                    else:
+                        print("[Tonton Auth Warning] Password input not found.")
 
-                    submit_btn = target.query_selector(
-                        "button[type='submit'], input[type='submit'], "
-                        "button:has-text('Sign In'), button:has-text('Log In'), "
-                        "button:has-text('Masuk'), button:has-text('Login'), "
-                        "button:has-text('Submit')"
-                    )
+                    debug_step("04_credentials_filled", target)
+
+                    # Find and click submit button
+                    submit_btn = None
+                    submit_texts = ["sign in", "log in", "login", "submit", "masuk", "continue"]
+                    for btn in target.query_selector_all("button, input[type='submit']"):
+                        try:
+                            t = btn.get_attribute("type") or ""
+                            txt = (btn.inner_text() or "").strip().lower()
+                            if t == "submit" or any(kw in txt for kw in submit_texts):
+                                if btn.is_visible():
+                                    submit_btn = btn
+                                    print(f"[Tonton Auth] Submit button found: text={txt!r}")
+                                    break
+                        except Exception:
+                            pass
+
                     if submit_btn:
                         submit_btn.click()
+                        print("[Tonton Auth] Clicked submit.")
                         if popup_page:
                             try:
-                                popup_page.wait_for_event("close", timeout=15000)
+                                popup_page.wait_for_event("close", timeout=20000)
                             except Exception:
                                 pass
+                    else:
+                        print("[Tonton Auth Warning] Submit button not found.")
+
+                    debug_step("05_after_submit", target)
 
                     # Wait for SSO callback — token arrives via network, also check localStorage
                     try:
@@ -410,7 +497,6 @@ def get_token(force_refresh=False):
                                     if (sd && (sd.loginToken || sd.token)) return true;
                                     const up = JSON.parse(localStorage.getItem('USER_PROFILE') || 'null');
                                     if (up && (up.loginToken || up.token)) return true;
-                                    // Only match values that are long enough to be real tokens (>50 chars)
                                     return Object.keys(localStorage).some(
                                         k => k.toLowerCase().includes('token') &&
                                              localStorage.getItem(k) &&
@@ -419,14 +505,21 @@ def get_token(force_refresh=False):
                                     );
                                 } catch(e) { return false; }
                             }""",
-                            timeout=15000
+                            timeout=20000
                         )
-                        print("[Tonton Auth] Login successful — token confirmed in session.")
+                        print("[Tonton Auth] Login successful — token confirmed in localStorage.")
                     except Exception:
                         print("[Tonton Auth] Token not in localStorage — relying on network capture.")
                         page.wait_for_timeout(5000)
+
+                    debug_step("06_post_login", page)
+
                 except Exception as login_err:
                     print(f"[Tonton Auth Warning] Web login interaction encountered: {login_err}")
+                    try:
+                        debug_step("XX_error_state", page)
+                    except Exception:
+                        pass
 
             # Check if token is already present before navigating
             ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
