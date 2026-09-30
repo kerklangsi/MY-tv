@@ -70,13 +70,20 @@ def is_token_valid(token, device_id=None):
         return False
     dev = device_id or get_device_id()
     ua = USER_AGENT if 'USER_AGENT' in globals() and USER_AGENT else "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-    test_url = f"https://headend-api.tonton.com.my/v600/api/playback.class.api.php/GOgetLiveConfig/378/1/1?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&deviceId={dev}&loginToken={token}"
+    test_url = (
+        f"https://headend-api.tonton.com.my/v600/api/playback.class.api.php/GOgetLiveConfig/378/1/6420323"
+        f"?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&manufacturer=chrome&serviceID=default"
+        f"&model=Mozilla/5.0&firmwareVersion=10&appVersion=6.1.7&deviceOS=PCBROWSER&limitAdTracking=0"
+        f"&pageId=live-tv&deviceId={dev}&loginToken={token}"
+    )
     req = urllib.request.Request(test_url, headers={"User-Agent": ua})
     try:
         with urllib.request.urlopen(req, timeout=8) as resp:
             data = json.loads(resp.read().decode("utf-8"))
             playback = data.get("playback") or data
-            return bool(playback.get("media") or playback.get("url") or playback.get("playbackUrl"))
+            media = playback.get("media", {}) if isinstance(playback, dict) else {}
+            streams = media.get("streams", []) if isinstance(media, dict) else []
+            return bool(streams or playback.get("url") or playback.get("playbackUrl"))
     except Exception:
         return False
 
@@ -228,12 +235,13 @@ def get_token(force_refresh=False):
                 Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
                 window.chrome = {runtime: {}};
             """)
-            # Pre-seed persistent Device ID so a new device is never registered
+            # Pre-seed persistent Device ID — only set deviceId keys, do NOT touch loginToken
             context.add_init_script(f"""
-                localStorage.setItem('SHARED_DEVICE', JSON.stringify({{
-                    'deviceId-v3': '{dev_id}',
-                    'deviceId': '{dev_id}'
-                }}));
+                const _sd = JSON.parse(localStorage.getItem('SHARED_DEVICE') || '{{}}');
+                _sd['deviceId-v3'] = '{dev_id}';
+                _sd['deviceId'] = '{dev_id}';
+                localStorage.setItem('SHARED_DEVICE', JSON.stringify(_sd));
+                localStorage.setItem('deviceId-v3', '{dev_id}');
             """)
             page = context.new_page()
 
@@ -486,17 +494,27 @@ def get_token(force_refresh=False):
                     else:
                         print("[Tonton Auth Warning] Submit button not found.")
 
-                    debug_step("05_after_submit", target)
+                    # Safe debug step — popup may be closed, don't let it abort the flow
+                    try:
+                        debug_step("05_after_submit", target)
+                    except Exception:
+                        pass
 
-                    # Wait for SSO callback — token arrives via network, also check localStorage
+                    # Wait for SSO callback — check root loginToken first, then nested structures
                     try:
                         page.wait_for_function(
                             """() => {
                                 try {
+                                    // 1. Root-level loginToken (actual Tonton localStorage structure)
+                                    const rootToken = localStorage.getItem('loginToken');
+                                    if (rootToken && rootToken.length > 50) return true;
+                                    // 2. Nested inside SHARED_DEVICE
                                     const sd = JSON.parse(localStorage.getItem('SHARED_DEVICE') || 'null');
                                     if (sd && (sd.loginToken || sd.token)) return true;
+                                    // 3. Nested inside USER_PROFILE
                                     const up = JSON.parse(localStorage.getItem('USER_PROFILE') || 'null');
                                     if (up && (up.loginToken || up.token)) return true;
+                                    // 4. Any root key whose value is a long non-JSON string
                                     return Object.keys(localStorage).some(
                                         k => k.toLowerCase().includes('token') &&
                                              localStorage.getItem(k) &&
@@ -505,11 +523,11 @@ def get_token(force_refresh=False):
                                     );
                                 } catch(e) { return false; }
                             }""",
-                            timeout=20000
+                            timeout=25000
                         )
                         print("[Tonton Auth] Login successful — token confirmed in localStorage.")
                     except Exception:
-                        print("[Tonton Auth] Token not in localStorage — relying on network capture.")
+                        print("[Tonton Auth] Token not in localStorage after wait — relying on network capture.")
                         page.wait_for_timeout(5000)
 
                     debug_step("06_post_login", page)
@@ -521,57 +539,64 @@ def get_token(force_refresh=False):
                     except Exception:
                         pass
 
-            # Check if token is already present before navigating
+            # Read localStorage immediately after login — do NOT navigate away (may clear state)
             ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
-            if not ls_raw or '"loginToken"' not in ls_raw:
-                try:
-                    print("[Tonton Auth] Navigating to /live to trigger token storage...")
-                    page.goto("https://watch.tonton.com.my/live", timeout=30000)
-                    page.wait_for_timeout(5000)
-                    ls_raw = page.evaluate("() => JSON.stringify(localStorage)")
-                except Exception:
-                    pass
+            print(f"[Tonton Auth] localStorage keys after login: {list(json.loads(ls_raw).keys()) if ls_raw else 'empty'}")
             cookies = context.cookies()
             browser.close()
 
-            final_token = None
-            final_dev_id = None
-
             if ls_raw:
                 ls_dict = json.loads(ls_raw)
-                user_profile = ls_dict.get("USER_PROFILE")
-                shared_device = ls_dict.get("SHARED_DEVICE")
 
-                if user_profile:
-                    u_obj = json.loads(user_profile) if isinstance(user_profile, str) else user_profile
-                    final_token = u_obj.get("token") or u_obj.get("loginToken")
-                    final_dev_id = u_obj.get("deviceId-v3") or u_obj.get("deviceId")
+                # 1. Root-level loginToken — actual Tonton localStorage structure
+                final_token = ls_dict.get("loginToken") or ls_dict.get("accessToken")
+                final_dev_id = ls_dict.get("deviceId-v3") or ls_dict.get("deviceId")
+                if final_token:
+                    print("[Tonton Auth Debug] Token extracted from root localStorage key 'loginToken'")
 
-                if not final_token and shared_device:
-                    s_obj = json.loads(shared_device) if isinstance(shared_device, str) else shared_device
-                    final_token = s_obj.get("loginToken") or s_obj.get("token")
-                    final_dev_id = s_obj.get("deviceId-v3") or s_obj.get("deviceId")
-
+                # 2. Nested inside USER_PROFILE
                 if not final_token:
-                    # Scan all keys — check both key name containing 'token' AND long string values
+                    user_profile = ls_dict.get("USER_PROFILE")
+                    if user_profile:
+                        u_obj = json.loads(user_profile) if isinstance(user_profile, str) else user_profile
+                        final_token = u_obj.get("token") or u_obj.get("loginToken")
+                        final_dev_id = u_obj.get("deviceId-v3") or u_obj.get("deviceId") or final_dev_id
+                        if final_token:
+                            print("[Tonton Auth Debug] Token extracted from USER_PROFILE")
+
+                # 3. Nested inside SHARED_DEVICE
+                if not final_token:
+                    shared_device = ls_dict.get("SHARED_DEVICE")
+                    if shared_device:
+                        s_obj = json.loads(shared_device) if isinstance(shared_device, str) else shared_device
+                        final_token = s_obj.get("loginToken") or s_obj.get("token")
+                        final_dev_id = s_obj.get("deviceId-v3") or s_obj.get("deviceId") or final_dev_id
+                        if final_token:
+                            print("[Tonton Auth Debug] Token extracted from SHARED_DEVICE")
+
+                # 4. Scan all root keys — plain string token values first, then nested JSON
+                if not final_token:
                     for k, val in ls_dict.items():
-                        if isinstance(val, str) and len(val) > 30:
-                            # Try to parse as JSON object with token inside
+                        if not isinstance(val, str):
+                            continue
+                        # Plain long string with 'token' in key name
+                        if "token" in k.lower() and len(val) > 50 and not val.startswith('{'):
+                            final_token = val
+                            print(f"[Tonton Auth Debug] Token extracted from root key: {k!r}")
+                            break
+                        # Nested JSON object containing loginToken
+                        if len(val) > 30 and val.startswith('{'):
                             try:
                                 obj = json.loads(val)
                                 if isinstance(obj, dict):
                                     t = obj.get("loginToken") or obj.get("token") or obj.get("accessToken")
                                     if t and len(t) > 20:
                                         final_token = t
-                                        final_dev_id = obj.get("deviceId-v3") or obj.get("deviceId")
+                                        final_dev_id = obj.get("deviceId-v3") or obj.get("deviceId") or final_dev_id
                                         print(f"[Tonton Auth Debug] Token extracted from nested key: {k!r}")
                                         break
                             except Exception:
                                 pass
-                        if not final_token and "token" in k.lower() and isinstance(val, str) and len(val) > 20:
-                            final_token = val
-                            print(f"[Tonton Auth Debug] Token extracted from key: {k!r}")
-                            break
 
             if not final_token and captured_tokens:
                 final_token = captured_tokens[0]
