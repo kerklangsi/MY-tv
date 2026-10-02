@@ -2,33 +2,35 @@ import urllib.request
 import json
 import uuid
 import os
+import sys
 import gzip
 import re
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
-import live_mytv
-import live_tonton
-import live_unifi
+SCRIPT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
 
+from live import mytv, tonton, unifi
 from utils import write_if_changed, update_combined_playlist, update_catalog_live
 
-# Extract channel number integer from tvg-chno attribute for sorting.
+# Extract channel number integer from tvg-chno attribute for sorting
 def extract_chno(extinf):
     match = re.search(r'tvg-chno="(\d+)"', extinf)
     if match:
         return int(match.group(1))
     return 999999
 
-# Orchestrate live channel processing, playlist generation, and EPG schedule merging.
+# Orchestrate live channel processing, playlist generation, and EPG schedule merging
 def main():
     device_id = str(uuid.uuid4())
 
     # 1. Process Live TV & Radio Channels (MYTV, Tonton & Unifi)
     print("\n--- Processing Live TV & Radio Channels ---", flush=True)
-    mytv_m3u_entries, mytv_epg_channels = live_mytv.process_live_channels(device_id)
-    tonton_m3u_entries, tonton_epg_channels = live_tonton.process_tonton_live_channels(device_id)
-    unifi_m3u_entries, unifi_epg_channels = live_unifi.process_unifi_live_channels(device_id)
+    mytv_m3u_entries, mytv_epg_channels = mytv.process_live(device_id)
+    tonton_m3u_entries, tonton_epg_channels = tonton.process_live(device_id)
+    unifi_m3u_entries, unifi_epg_channels = unifi.process_live(device_id)
 
     # 2. Build Merged Master Playlist (playlist.m3u & playlist.m3u8) sorted by tvg-chno
     all_live_entries = mytv_m3u_entries + tonton_m3u_entries + unifi_m3u_entries
@@ -52,42 +54,42 @@ def main():
     print("Saved merged playlist.m3u and playlist.m3u8", flush=True)
 
     # 3. Process & Merge EPG Schedules (MYTV, Tonton & Unifi)
-    mytv_programmes = live_mytv.fetch_epg_programmes()
-    tonton_programmes = live_tonton.fetch_tonton_epg_programmes(tonton_epg_channels)
-    unifi_programmes = live_unifi.fetch_unifi_epg_programmes(unifi_epg_channels)
+    mytv_programmes = mytv.fetch_epg()
+    tonton_programmes = tonton.fetch_epg(tonton_epg_channels)
+    unifi_programmes = unifi.fetch_epg(unifi_epg_channels)
 
     all_epg_channels = mytv_epg_channels + tonton_epg_channels + unifi_epg_channels
     all_epg_programmes = mytv_programmes + tonton_programmes + unifi_programmes
 
     print(f"\n--- Generating Merged EPG XML ({len(all_epg_channels)} channels, {len(all_epg_programmes)} programmes) ---", flush=True)
 
-    tv_elem = ET.Element('tv', {'generator-info-name': 'MY-tv IPTV Generator'})
+    tv_elem = ET.Element("tv", {"generator-info-name": "MY-tv IPTV Generator"})
 
     for ch_info in all_epg_channels:
-        ch_elem = ET.SubElement(tv_elem, 'channel', {'id': ch_info['id']})
-        name_elem = ET.SubElement(ch_elem, 'display-name')
-        name_elem.text = ch_info['name']
-        if ch_info.get('logo'):
-            ET.SubElement(ch_elem, 'icon', {'src': ch_info['logo']})
+        ch_elem = ET.SubElement(tv_elem, "channel", {"id": ch_info["id"]})
+        name_elem = ET.SubElement(ch_elem, "display-name")
+        name_elem.text = ch_info["name"]
+        if ch_info.get("logo"):
+            ET.SubElement(ch_elem, "icon", {"src": ch_info["logo"]})
 
     for prog_info in all_epg_programmes:
-        prog_elem = ET.SubElement(tv_elem, 'programme', {
-            'start': prog_info['start'],
-            'stop': prog_info['stop'],
-            'channel': prog_info['channel']
+        prog_elem = ET.SubElement(tv_elem, "programme", {
+            "start": prog_info["start"],
+            "stop": prog_info["stop"],
+            "channel": prog_info["channel"],
         })
-        title_elem = ET.SubElement(prog_elem, 'title', {'lang': 'en'})
-        title_elem.text = prog_info['title']
-        
-        if prog_info.get('desc'):
-            desc_elem = ET.SubElement(prog_elem, 'desc', {'lang': 'en'})
-            desc_elem.text = prog_info['desc']
-            
-        if prog_info.get('genre'):
-            cat_elem = ET.SubElement(prog_elem, 'category', {'lang': 'en'})
-            cat_elem.text = prog_info['genre']
+        title_elem = ET.SubElement(prog_elem, "title", {"lang": "en"})
+        title_elem.text = prog_info["title"]
 
-    raw_xml_bytes = ET.tostring(tv_elem, encoding='utf-8')
+        if prog_info.get("desc"):
+            desc_elem = ET.SubElement(prog_elem, "desc", {"lang": "en"})
+            desc_elem.text = prog_info["desc"]
+
+        if prog_info.get("genre"):
+            cat_elem = ET.SubElement(prog_elem, "category", {"lang": "en"})
+            cat_elem.text = prog_info["genre"]
+
+    raw_xml_bytes = ET.tostring(tv_elem, encoding="utf-8")
     parsed_xml = minidom.parseString(raw_xml_bytes)
     pretty_xml = parsed_xml.toprettyxml(indent="  ", encoding="utf-8")
 
@@ -101,5 +103,5 @@ def main():
     # 4. Generate Combined Master Playlist (all.m3u & all.m3u8)
     update_combined_playlist()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

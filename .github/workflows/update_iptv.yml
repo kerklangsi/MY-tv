@@ -60,10 +60,18 @@ jobs:
         with:
           clean: false
 
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python3 -m pip install cryptography
+
       - name: Run Live TV & EPG Generator
         env:
           PYTHONUNBUFFERED: "1"
-        run: python3 script/update_live.py
+        run: python3 script/update/live.py
 
       - name: Commit and push Live TV changes
         run: |
@@ -83,10 +91,18 @@ jobs:
         with:
           clean: false
 
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python3 -m pip install cryptography
+
       - name: Run VOD Generator
         env:
           PYTHONUNBUFFERED: "1"
-        run: python3 script/update_vod.py
+        run: python3 script/update/vod.py
 
       - name: Commit and push VOD changes
         run: |

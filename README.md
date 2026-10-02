@@ -138,13 +138,13 @@ playwright install chromium
 ### Running Scripts Locally
 ```bash
 # Generate Live TV & Radio Playlists, EPG XML, and List/LIVE_LIST.md
-python script/update_live.py
+python script/update/live.py
 
 # Refresh MYTV VOD Catalog and List/SHOWS_LIST.md & List/MOVIES_LIST.md
-python script/vod_mytv.py
+python script/vod/mytv.py
 
 # Refresh Tonton VOD Catalog and Playlists
-python script/vod_tonton.py
+python script/vod/tonton.py
 
 # Authenticate or Force Refresh Tonton Token via SSO Popup
 python script/auth.py --force

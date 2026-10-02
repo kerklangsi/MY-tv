@@ -1,19 +1,24 @@
 import uuid
-import vod_mytv
-import vod_tonton
-import vod_unifi
+import os
+import sys
+
+SCRIPT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
+
+from vod import mytv, tonton, unifi
 from utils import write_if_changed, update_combined_playlist
 
-# Orchestrate VOD processing and combined playlist creation.
+# Orchestrate VOD processing and combined playlist creation
 def main():
     device_id = str(uuid.uuid4())
 
     print("\n--- Processing VOD Shows & Movies ---", flush=True)
-    mytv_vod_entries = vod_mytv.process_vod_shows(device_id)
-    tonton_vod_entries = vod_tonton.process_tonton_vod(device_id)
-    unifi_vod_entries = vod_unifi.process_unifi_vod(device_id)
+    mytv_vod_entries = mytv.process_vod(device_id)
+    tonton_vod_entries = tonton.process_vod(device_id)
+    unifi_vod_entries = unifi.process_vod(device_id)
 
-    vod_lines = ['#EXTM3U']
+    vod_lines = ["#EXTM3U"]
     for extinf, extra_lines, url in mytv_vod_entries + tonton_vod_entries + unifi_vod_entries:
         vod_lines.append(extinf)
         for el in extra_lines:
@@ -27,5 +32,5 @@ def main():
 
     update_combined_playlist()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

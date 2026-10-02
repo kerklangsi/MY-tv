@@ -2,9 +2,9 @@ __pycache__/
 *.pyc
 scratch/
 streams/
-epg.*
-playlist.*
-vod.*
+/epg.*
+/playlist.*
+/vod.*
 .agents/
 .tonton_token
-auth/
+/auth/
