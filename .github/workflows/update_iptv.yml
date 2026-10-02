@@ -53,6 +53,8 @@ jobs:
     needs: gatekeeper
     if: needs.gatekeeper.outputs.should_run == 'true'
     runs-on: self-hosted
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -74,16 +76,22 @@ jobs:
         run: python3 script/update/live.py
 
       - name: Commit and push Live TV changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
           git add playlist.m3u playlist.m3u8 all.m3u all.m3u8 epg.xml epg.xml.gz List/LIVE_LIST.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Live TV streams, EPG schedule & catalogs" && git pull --rebase origin main && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Live TV streams, EPG schedule & catalogs" && git pull --rebase origin main && git push origin main)
+          git remote set-url origin "https://github.com/${{ github.repository }}.git"
 
   update-vod:
     needs: gatekeeper
     if: needs.gatekeeper.outputs.should_run == 'true'
     runs-on: self-hosted
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -105,9 +113,13 @@ jobs:
         run: python3 script/update/vod.py
 
       - name: Commit and push VOD changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
           git add vod.m3u vod.m3u8 all.m3u all.m3u8 List/SHOWS_LIST.md List/MOVIES_LIST.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update VOD movies & shows playlist and catalogs" && git pull --rebase origin main && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update VOD movies & shows playlist and catalogs" && git pull --rebase origin main && git push origin main)
+          git remote set-url origin "https://github.com/${{ github.repository }}.git"
 
