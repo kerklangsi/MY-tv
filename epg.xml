@@ -580,7 +580,7 @@
   </programme>
   <programme start="20261001001500 +0000" stop="20261001003000 +0000" channel="tvs">
     <title lang="en">Sine Siti Makan (S3)</title>
-    <desc lang="en">Season 3 of "Sine Siti Makan" takes viewers on a culinary journey across Malaysia, showcasing local eateries, restaurants, and food markets to satisfy food cravings.</desc>
+    <desc lang="en">Season 3 of &quot;Sine Siti Makan&quot; takes viewers on a culinary journey across Malaysia, showcasing local eateries, restaurants, and food markets to satisfy food cravings.</desc>
   </programme>
   <programme start="20261001003000 +0000" stop="20261001010000 +0000" channel="tvs">
     <title lang="en">Ready, Set, Go Kids!</title>
@@ -794,7 +794,7 @@
   </programme>
   <programme start="20260930203000 +0000" stop="20260930210000 +0000" channel="tv-alhijrah">
     <title lang="en">Cinta Ilmu</title>
-    <desc lang="en">Sebuah program kerohanian yang menampilkan Dr. Muhamad Hafiz Muhamad Haneefa dalam segmen Ihsan yang bertajuk “Adab Meminta Izin" berdasarkan kitab Riyadus Shalihin karangan Imam An-Nawawi.</desc>
+    <desc lang="en">Sebuah program kerohanian yang menampilkan Dr. Muhamad Hafiz Muhamad Haneefa dalam segmen Ihsan yang bertajuk “Adab Meminta Izin&quot; berdasarkan kitab Riyadus Shalihin karangan Imam An-Nawawi.</desc>
     <category lang="en">Children/Youth</category>
   </programme>
   <programme start="20260930210000 +0000" stop="20260930220000 +0000" channel="tv-alhijrah">
@@ -840,7 +840,7 @@
   </programme>
   <programme start="20261001053000 +0000" stop="20261001060000 +0000" channel="tv-alhijrah">
     <title lang="en">Cinta Ilmu</title>
-    <desc lang="en">Sebuah program kerohanian yang menampilkan Dr. Muhamad Hafiz Muhamad Haneefa dalam segmen Ihsan yang bertajuk “Adab Meminta Izin" berdasarkan kitab Riyadus Shalihin karangan Imam An-Nawawi.</desc>
+    <desc lang="en">Sebuah program kerohanian yang menampilkan Dr. Muhamad Hafiz Muhamad Haneefa dalam segmen Ihsan yang bertajuk “Adab Meminta Izin&quot; berdasarkan kitab Riyadus Shalihin karangan Imam An-Nawawi.</desc>
     <category lang="en">Children/Youth</category>
   </programme>
   <programme start="20261001060000 +0000" stop="20261001070000 +0000" channel="tv-alhijrah">
@@ -866,7 +866,7 @@
   </programme>
   <programme start="20261001100000 +0000" stop="20261001103000 +0000" channel="tv-alhijrah">
     <title lang="en">Hadis@114</title>
-    <desc lang="en">Hadis 114 menampilkan ustaz Ustaz Muhammad Hafiz Abdul Rahman sebagai penceramah menyampaikan pengajian ilmu asas hadis iaitu "Jangan Terpedaya Fitnah".</desc>
+    <desc lang="en">Hadis 114 menampilkan ustaz Ustaz Muhammad Hafiz Abdul Rahman sebagai penceramah menyampaikan pengajian ilmu asas hadis iaitu &quot;Jangan Terpedaya Fitnah&quot;.</desc>
   </programme>
   <programme start="20261001103000 +0000" stop="20261001110000 +0000" channel="tv-alhijrah">
     <title lang="en">30 Minit Bersama</title>
@@ -906,7 +906,7 @@
   </programme>
   <programme start="20261001150000 +0000" stop="20261001153000 +0000" channel="tv-alhijrah">
     <title lang="en">Hadis @114</title>
-    <desc lang="en">Hadis 114 menampilkan ustaz Ustaz Muhammad Hafiz Abdul Rahman sebagai penceramah menyampaikan pengajian ilmu asas hadis iaitu "Jangan Terpedaya Fitnah".</desc>
+    <desc lang="en">Hadis 114 menampilkan ustaz Ustaz Muhammad Hafiz Abdul Rahman sebagai penceramah menyampaikan pengajian ilmu asas hadis iaitu &quot;Jangan Terpedaya Fitnah&quot;.</desc>
   </programme>
   <programme start="20261001153000 +0000" stop="20261001160000 +0000" channel="tv-alhijrah">
     <title lang="en">Assalamualaikum Ustaz</title>
@@ -1158,7 +1158,7 @@
   </programme>
   <programme start="20260930213000 +0000" stop="20260930220000 +0000" channel="berita-rtm">
     <title lang="en">Kerajaan Tua Nusantara</title>
-    <desc lang="en">Saksikan Dr. Mohd Supian Sabtu berkongsi tentang sejarah "Kerajaan Majapahit" (Bahagian 1) di Trowulan Jawa Timur, Indonesia.</desc>
+    <desc lang="en">Saksikan Dr. Mohd Supian Sabtu berkongsi tentang sejarah &quot;Kerajaan Majapahit&quot; (Bahagian 1) di Trowulan Jawa Timur, Indonesia.</desc>
   </programme>
   <programme start="20260930220000 +0000" stop="20260930223000 +0000" channel="berita-rtm">
     <title lang="en">Terowong Rahsia Melaka</title>
@@ -1294,7 +1294,7 @@
   </programme>
   <programme start="20261001130000 +0000" stop="20261001133000 +0000" channel="berita-rtm">
     <title lang="en">ON THE TABLE 2026</title>
-    <desc lang="en">"On The Table" is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
+    <desc lang="en">&quot;On The Table&quot; is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
     <category lang="en">Movie/Drama</category>
   </programme>
   <programme start="20261001133000 +0000" stop="20261001140000 +0000" channel="berita-rtm">
@@ -1303,12 +1303,12 @@
   </programme>
   <programme start="20261001140000 +0000" stop="20261001143000 +0000" channel="berita-rtm">
     <title lang="en">Behind The Mic</title>
-    <desc lang="en">"Behind The Mic" is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
+    <desc lang="en">&quot;Behind The Mic&quot; is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261001143000 +0000" stop="20261001150000 +0000" channel="berita-rtm">
     <title lang="en">Global Voices</title>
-    <desc lang="en">"Global Voices" is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
+    <desc lang="en">&quot;Global Voices&quot; is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261001150000 +0000" stop="20261001160000 +0000" channel="berita-rtm">
@@ -1546,7 +1546,7 @@
   </programme>
   <programme start="20260930220000 +0000" stop="20260930223000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20260930223000 +0000" stop="20260930233000 +0000" channel="bernama">
     <title lang="en">Ruang Bicara</title>
@@ -1624,7 +1624,7 @@
   </programme>
   <programme start="20261001073000 +0000" stop="20261001080000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261001080000 +0000" stop="20261001083000 +0000" channel="bernama">
     <title lang="en">(L) BERNAMA Global</title>
@@ -8367,7 +8367,7 @@
   </programme>
   <programme start="20261002024500 +0000" stop="20261002030000 +0000" channel="tvs">
     <title lang="en">Sine Siti Makan (S3)</title>
-    <desc lang="en">Season 3 of "Sine Siti Makan" takes viewers on a culinary journey across Malaysia, showcasing local eateries, restaurants, and food markets to satisfy food cravings.</desc>
+    <desc lang="en">Season 3 of &quot;Sine Siti Makan&quot; takes viewers on a culinary journey across Malaysia, showcasing local eateries, restaurants, and food markets to satisfy food cravings.</desc>
   </programme>
   <programme start="20261002030000 +0000" stop="20261002031500 +0000" channel="tvs">
     <title lang="en">(L) Berita Iban TVS</title>
@@ -8537,7 +8537,7 @@
   </programme>
   <programme start="20261001220000 +0000" stop="20261001223000 +0000" channel="tv-alhijrah">
     <title lang="en">Hadis @114</title>
-    <desc lang="en">Hadis 114 menampilkan ustaz Ustaz Muhammad Hafiz Abdul Rahman sebagai penceramah menyampaikan pengajian ilmu asas hadis iaitu "Jangan Terpedaya Fitnah".</desc>
+    <desc lang="en">Hadis 114 menampilkan ustaz Ustaz Muhammad Hafiz Abdul Rahman sebagai penceramah menyampaikan pengajian ilmu asas hadis iaitu &quot;Jangan Terpedaya Fitnah&quot;.</desc>
   </programme>
   <programme start="20261001223000 +0000" stop="20261001230000 +0000" channel="tv-alhijrah">
     <title lang="en">Assalamualaikum Subuh (L)</title>
@@ -8603,7 +8603,7 @@
   </programme>
   <programme start="20261002100000 +0000" stop="20261002103000 +0000" channel="tv-alhijrah">
     <title lang="en">Hadis@114</title>
-    <desc lang="en">Hadis 114, menampilkan Ustaz Amir Haziq Amir Suhaimi selaku pengacara yang membincangkan hadis Sahih Al-Bukhari "Pemansuhan Hukum Perkahwinan Sementara.</desc>
+    <desc lang="en">Hadis 114, menampilkan Ustaz Amir Haziq Amir Suhaimi selaku pengacara yang membincangkan hadis Sahih Al-Bukhari &quot;Pemansuhan Hukum Perkahwinan Sementara.</desc>
   </programme>
   <programme start="20261002103000 +0000" stop="20261002110000 +0000" channel="tv-alhijrah">
     <title lang="en">Ruqyah</title>
@@ -8644,7 +8644,7 @@
   </programme>
   <programme start="20261002140000 +0000" stop="20261002143000 +0000" channel="tv-alhijrah">
     <title lang="en">Podcast 3 In 1</title>
-    <desc lang="en">Program bual bicara santai bertemakan"Berbeza Budaya, Bersatu Jiwa" yang dihoskan Ustaz Don Daniyal Don Biyajid bersama-sama dua tetamu jemputan, Prof. Dato' Dr. Mohd Farid Ravi Abdullah dan pelakon Adam Corrie.</desc>
+    <desc lang="en">Program bual bicara santai bertemakan&quot;Berbeza Budaya, Bersatu Jiwa&quot; yang dihoskan Ustaz Don Daniyal Don Biyajid bersama-sama dua tetamu jemputan, Prof. Dato' Dr. Mohd Farid Ravi Abdullah dan pelakon Adam Corrie.</desc>
     <category lang="en">Arts/Culture</category>
   </programme>
   <programme start="20261002143000 +0000" stop="20261002150000 +0000" channel="tv-alhijrah">
@@ -8654,7 +8654,7 @@
   </programme>
   <programme start="20261002150000 +0000" stop="20261002153000 +0000" channel="tv-alhijrah">
     <title lang="en">Hadis @114</title>
-    <desc lang="en">Hadis 114, menampilkan Ustaz Amir Haziq Amir Suhaimi selaku pengacara yang membincangkan hadis Sahih Al-Bukhari "Pemansuhan Hukum Perkahwinan Sementara.</desc>
+    <desc lang="en">Hadis 114, menampilkan Ustaz Amir Haziq Amir Suhaimi selaku pengacara yang membincangkan hadis Sahih Al-Bukhari &quot;Pemansuhan Hukum Perkahwinan Sementara.</desc>
   </programme>
   <programme start="20261002153000 +0000" stop="20261002160000 +0000" channel="tv-alhijrah">
     <title lang="en">Assalamualaikum Ustaz</title>
@@ -8888,7 +8888,7 @@
   </programme>
   <programme start="20261001213000 +0000" stop="20261001220000 +0000" channel="berita-rtm">
     <title lang="en">Kerajaan Tua Nusantara</title>
-    <desc lang="en">Saksikan Dr. Mohd Supian Sabtu berkongsi tentang sejarah "Kerajaan Tua Tarumanagara (Bhg.2)" di Jakarta, Indonesia</desc>
+    <desc lang="en">Saksikan Dr. Mohd Supian Sabtu berkongsi tentang sejarah &quot;Kerajaan Tua Tarumanagara (Bhg.2)&quot; di Jakarta, Indonesia</desc>
   </programme>
   <programme start="20261001220000 +0000" stop="20261001223000 +0000" channel="berita-rtm">
     <title lang="en">Terowong Rahsia Melaka</title>
@@ -9018,7 +9018,7 @@
   </programme>
   <programme start="20261002130000 +0000" stop="20261002133000 +0000" channel="berita-rtm">
     <title lang="en">ON THE TABLE 2026</title>
-    <desc lang="en">"On The Table" is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
+    <desc lang="en">&quot;On The Table&quot; is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
     <category lang="en">Movie/Drama</category>
   </programme>
   <programme start="20261002133000 +0000" stop="20261002140000 +0000" channel="berita-rtm">
@@ -9027,12 +9027,12 @@
   </programme>
   <programme start="20261002140000 +0000" stop="20261002143000 +0000" channel="berita-rtm">
     <title lang="en">Behind The Mic</title>
-    <desc lang="en">"Behind The Mic" is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
+    <desc lang="en">&quot;Behind The Mic&quot; is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261002143000 +0000" stop="20261002150000 +0000" channel="berita-rtm">
     <title lang="en">Global Voices</title>
-    <desc lang="en">"Global Voices" is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
+    <desc lang="en">&quot;Global Voices&quot; is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261002150000 +0000" stop="20261002160000 +0000" channel="berita-rtm">
@@ -9158,7 +9158,7 @@
   </programme>
   <programme start="20261002063000 +0000" stop="20261002073000 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Maisara tidak dapat menerima hakikat yang bapanya akan berkahwin lagi. Saksikan kisah "Waliku Pengantin" lakonan Tasha Shila, Mustapha Kamal, Rosnah Johari.</desc>
+    <desc lang="en">Maisara tidak dapat menerima hakikat yang bapanya akan berkahwin lagi. Saksikan kisah &quot;Waliku Pengantin&quot; lakonan Tasha Shila, Mustapha Kamal, Rosnah Johari.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261002073000 +0000" stop="20261002075500 +0000" channel="tv-okey">
@@ -9335,7 +9335,7 @@
   </programme>
   <programme start="20261002053000 +0000" stop="20261002060000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261002060000 +0000" stop="20261002063000 +0000" channel="bernama">
     <title lang="en">BERNAMA World</title>
@@ -13919,7 +13919,7 @@
   </programme>
   <programme start="20261001192700 +0000" stop="20261001193000 +0000" channel="nhk-world">
     <title lang="en">Easy Japanese</title>
-    <desc lang="en">#38 I prefer outside. / To say which of 2 options you prefer, say the name of your choice, and "no hoo ga ii desu."</desc>
+    <desc lang="en">#38 I prefer outside. / To say which of 2 options you prefer, say the name of your choice, and &quot;no hoo ga ii desu.&quot;</desc>
     <category lang="en">Live</category>
   </programme>
   <programme start="20261001193000 +0000" stop="20261001200000 +0000" channel="nhk-world">
@@ -16173,7 +16173,7 @@
   </programme>
   <programme start="20261003050000 +0000" stop="20261003053000 +0000" channel="tv2">
     <title lang="en">ON THE TABLE 2026</title>
-    <desc lang="en">"On The Table" is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featuring insights from opinionleaders and influential figures.</desc>
+    <desc lang="en">&quot;On The Table&quot; is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featuring insights from opinionleaders and influential figures.</desc>
     <category lang="en">Movie/Drama</category>
   </programme>
   <programme start="20261003053000 +0000" stop="20261003070000 +0000" channel="tv2">
@@ -16358,7 +16358,7 @@
   </programme>
   <programme start="20261003061500 +0000" stop="20261003063000 +0000" channel="tvs">
     <title lang="en">Sine Siti Makan (S3)</title>
-    <desc lang="en">Season 3 of "Sine Siti Makan" takes viewers on a culinary journey across Malaysia, showcasing local eateries, restaurants, and food markets to satisfy food cravings.</desc>
+    <desc lang="en">Season 3 of &quot;Sine Siti Makan&quot; takes viewers on a culinary journey across Malaysia, showcasing local eateries, restaurants, and food markets to satisfy food cravings.</desc>
   </programme>
   <programme start="20261003063000 +0000" stop="20261003070000 +0000" channel="tvs">
     <title lang="en">Suara Alam Borneo</title>
@@ -16470,7 +16470,7 @@
   </programme>
   <programme start="20261002220000 +0000" stop="20261002223000 +0000" channel="tv-alhijrah">
     <title lang="en">Hadis @114</title>
-    <desc lang="en">Hadis 114, menampilkan Ustaz Amir Haziq Amir Suhaimi selaku pengacara yang membincangkan hadis Sahih Al-Bukhari "Pemansuhan Hukum Perkahwinan Sementara.</desc>
+    <desc lang="en">Hadis 114, menampilkan Ustaz Amir Haziq Amir Suhaimi selaku pengacara yang membincangkan hadis Sahih Al-Bukhari &quot;Pemansuhan Hukum Perkahwinan Sementara.</desc>
   </programme>
   <programme start="20261002223000 +0000" stop="20261002230000 +0000" channel="tv-alhijrah">
     <title lang="en">Assalamualaikum Subuh (L)</title>
@@ -16541,7 +16541,7 @@
   </programme>
   <programme start="20261003093000 +0000" stop="20261003100000 +0000" channel="tv-alhijrah">
     <title lang="en">Qalbun Salim</title>
-    <desc lang="en">Qalbun Salim adalah program tazkirah oleh Habib Ali Zaenal Abidin Al-Hamid, membicarakan tentang pentingnya seorang muslim kembali kepada Allah SWT yang bertajuk "Melazimi Syukur”.</desc>
+    <desc lang="en">Qalbun Salim adalah program tazkirah oleh Habib Ali Zaenal Abidin Al-Hamid, membicarakan tentang pentingnya seorang muslim kembali kepada Allah SWT yang bertajuk &quot;Melazimi Syukur”.</desc>
     <category lang="en">Children/Youth</category>
   </programme>
   <programme start="20261003100000 +0000" stop="20261003103000 +0000" channel="tv-alhijrah">
@@ -16569,7 +16569,7 @@
   </programme>
   <programme start="20261003123000 +0000" stop="20261003130000 +0000" channel="tv-alhijrah">
     <title lang="en">Podcast 3 In 1</title>
-    <desc lang="en">Program bual bicara santai bertemakan "Berbeza Budaya, Bersatu Jiwa" yang dihoskan Ustaz Don Daniyal Don Biyajid bersama-sama dua tetamu jemputan, Prof. Dato' Dr. Mohd Farid Ravi Abdullah dan pelakon Adam Corrie dengan tajuk</desc>
+    <desc lang="en">Program bual bicara santai bertemakan &quot;Berbeza Budaya, Bersatu Jiwa&quot; yang dihoskan Ustaz Don Daniyal Don Biyajid bersama-sama dua tetamu jemputan, Prof. Dato' Dr. Mohd Farid Ravi Abdullah dan pelakon Adam Corrie dengan tajuk</desc>
     <category lang="en">Social/Political</category>
   </programme>
   <programme start="20261003130000 +0000" stop="20261003140000 +0000" channel="tv-alhijrah">
@@ -16832,7 +16832,7 @@
   </programme>
   <programme start="20261002213000 +0000" stop="20261002220000 +0000" channel="berita-rtm">
     <title lang="en">Kerajaan Tua Nusantara</title>
-    <desc lang="en">Saksikan Dato� Haji Amin Khan berkongsi tentang sejarah "Kerajaan Samudera Pasai" (Bahagian 1) di Indonesia.</desc>
+    <desc lang="en">Saksikan Dato� Haji Amin Khan berkongsi tentang sejarah &quot;Kerajaan Samudera Pasai&quot; (Bahagian 1) di Indonesia.</desc>
   </programme>
   <programme start="20261002220000 +0000" stop="20261002223000 +0000" channel="berita-rtm">
     <title lang="en">Terowong Rahsia Melaka</title>
@@ -16941,7 +16941,7 @@
   </programme>
   <programme start="20261003110000 +0000" stop="20261003113000 +0000" channel="berita-rtm">
     <title lang="en">Sembang Bapa-Bapa</title>
-    <desc lang="en">Sembang Bapa-Bapa episod 1 mengulas topik "Bapa Pemalas dan Berkira" bersama tetamu Dr Hj Tengku Asmadi dan Dato Fizz Fairuz.</desc>
+    <desc lang="en">Sembang Bapa-Bapa episod 1 mengulas topik &quot;Bapa Pemalas dan Berkira&quot; bersama tetamu Dr Hj Tengku Asmadi dan Dato Fizz Fairuz.</desc>
   </programme>
   <programme start="20261003113000 +0000" stop="20261003114400 +0000" channel="berita-rtm">
     <title lang="en">BERITA TAMIL</title>
@@ -16963,7 +16963,7 @@
   </programme>
   <programme start="20261003130000 +0000" stop="20261003133000 +0000" channel="berita-rtm">
     <title lang="en">ON THE TABLE 2026</title>
-    <desc lang="en">"On The Table" is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
+    <desc lang="en">&quot;On The Table&quot; is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
     <category lang="en">Movie/Drama</category>
   </programme>
   <programme start="20261003133000 +0000" stop="20261003140000 +0000" channel="berita-rtm">
@@ -16972,12 +16972,12 @@
   </programme>
   <programme start="20261003140000 +0000" stop="20261003143000 +0000" channel="berita-rtm">
     <title lang="en">Behind The Mic</title>
-    <desc lang="en">"Behind The Mic" is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
+    <desc lang="en">&quot;Behind The Mic&quot; is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261003143000 +0000" stop="20261003150000 +0000" channel="berita-rtm">
     <title lang="en">Global Voices</title>
-    <desc lang="en">"Global Voices" is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
+    <desc lang="en">&quot;Global Voices&quot; is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261003150000 +0000" stop="20261003160000 +0000" channel="berita-rtm">
@@ -17023,7 +17023,7 @@
   </programme>
   <programme start="20261002210000 +0000" stop="20261002220000 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Maisara tidak dapat menerima hakikat yang bapanya akan berkahwin lagi. Saksikan kisah "Waliku Pengantin" lakonan Tasha Shila, Mustapha Kamal, Rosnah Johari.</desc>
+    <desc lang="en">Maisara tidak dapat menerima hakikat yang bapanya akan berkahwin lagi. Saksikan kisah &quot;Waliku Pengantin&quot; lakonan Tasha Shila, Mustapha Kamal, Rosnah Johari.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261002220000 +0000" stop="20261002220500 +0000" channel="tv-okey">
@@ -17100,7 +17100,7 @@
   </programme>
   <programme start="20261003063000 +0000" stop="20261003072500 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Ilman nekad untuk berniaga, namun tiada modal permulaan. Balkish pula tiak bersetuju dengan cadangan Ilman. Saksikan kisah "Aduhai Ilman".</desc>
+    <desc lang="en">Ilman nekad untuk berniaga, namun tiada modal permulaan. Balkish pula tiak bersetuju dengan cadangan Ilman. Saksikan kisah &quot;Aduhai Ilman&quot;.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261003072500 +0000" stop="20261003075500 +0000" channel="tv-okey">
@@ -17200,7 +17200,7 @@
   </programme>
   <programme start="20261002203000 +0000" stop="20261002210000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261002210000 +0000" stop="20261002213000 +0000" channel="bernama">
     <title lang="en">Buletin BERNAMA</title>
@@ -17274,7 +17274,7 @@
   </programme>
   <programme start="20261003043000 +0000" stop="20261003050000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261003050000 +0000" stop="20261003053000 +0000" channel="bernama">
     <title lang="en">(L) Buletin BERNAMA</title>
@@ -17358,7 +17358,7 @@
   </programme>
   <programme start="20261003123000 +0000" stop="20261003130000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261003130000 +0000" stop="20261003140000 +0000" channel="bernama">
     <title lang="en">Dua Sisi</title>
@@ -24109,7 +24109,7 @@
   </programme>
   <programme start="20261004030000 +0000" stop="20261004040000 +0000" channel="tv2">
     <title lang="en">Australian Survivor (Titans Vs Rebels)</title>
-    <desc lang="en">Dua puluh empat peserta baharu dibahagikan kepada dua puak: "Titans" dan "Rebels". Kedua-dua puak akan menentang satu sama lain dan akan mengundi ahli kumpulan yang akan disingkirkan jika puak mereka kalah. The Titans sebahagian besarnya dikawaloleh pakatan "Mafia Pertengahan Umur" pemain yang lebih tua seperti Caroline dan Mark, manakala Pemberontak diketuai Kirby yang strategik dan Feras yang keras kepala dan cuba melemahkan pengaruh satu sama lain.</desc>
+    <desc lang="en">Dua puluh empat peserta baharu dibahagikan kepada dua puak: &quot;Titans&quot; dan &quot;Rebels&quot;. Kedua-dua puak akan menentang satu sama lain dan akan mengundi ahli kumpulan yang akan disingkirkan jika puak mereka kalah. The Titans sebahagian besarnya dikawaloleh pakatan &quot;Mafia Pertengahan Umur&quot; pemain yang lebih tua seperti Caroline dan Mark, manakala Pemberontak diketuai Kirby yang strategik dan Feras yang keras kepala dan cuba melemahkan pengaruh satu sama lain.</desc>
   </programme>
   <programme start="20261004040000 +0000" stop="20261004043000 +0000" channel="tv2">
     <title lang="en">BERITA MANDARIN</title>
@@ -24304,7 +24304,7 @@
   </programme>
   <programme start="20261004074500 +0000" stop="20261004080000 +0000" channel="tvs">
     <title lang="en">Sine Siti Makan (S3)</title>
-    <desc lang="en">Season 3 of "Sine Siti Makan" takes viewers on a culinary journey across Malaysia, showcasing local eateries, restaurants, and food markets to satisfy food cravings.</desc>
+    <desc lang="en">Season 3 of &quot;Sine Siti Makan&quot; takes viewers on a culinary journey across Malaysia, showcasing local eateries, restaurants, and food markets to satisfy food cravings.</desc>
   </programme>
   <programme start="20261004080000 +0000" stop="20261004080500 +0000" channel="tvs">
     <title lang="en">(DL) TVS Ringkas</title>
@@ -24481,12 +24481,12 @@
   </programme>
   <programme start="20261004093000 +0000" stop="20261004100000 +0000" channel="tv-alhijrah">
     <title lang="en">Qalbun Salim</title>
-    <desc lang="en">Qalbun Salim adalah program tazkirah oleh Habib Ali Zaenal Abidin Al-Hamid, membicarakan tentang "Ikhlaskan Hati”.</desc>
+    <desc lang="en">Qalbun Salim adalah program tazkirah oleh Habib Ali Zaenal Abidin Al-Hamid, membicarakan tentang &quot;Ikhlaskan Hati”.</desc>
     <category lang="en">Music/Dance</category>
   </programme>
   <programme start="20261004100000 +0000" stop="20261004103000 +0000" channel="tv-alhijrah">
     <title lang="en">Podcast 3 In 1</title>
-    <desc lang="en">Program bual bicara santai bertemakan "Berbeza Budaya, Bersatu Jiwa" yang dihoskan Ustaz Don Daniyal Don Biyajid bersama-sama dua tetamu jemputan, Prof. Dato' Dr. Mohd Farid Ravi Abdullah dan pelakon Adam Corrie dengan tajuk</desc>
+    <desc lang="en">Program bual bicara santai bertemakan &quot;Berbeza Budaya, Bersatu Jiwa&quot; yang dihoskan Ustaz Don Daniyal Don Biyajid bersama-sama dua tetamu jemputan, Prof. Dato' Dr. Mohd Farid Ravi Abdullah dan pelakon Adam Corrie dengan tajuk</desc>
     <category lang="en">Social/Political</category>
   </programme>
   <programme start="20261004103000 +0000" stop="20261004110000 +0000" channel="tv-alhijrah">
@@ -24836,7 +24836,7 @@
   </programme>
   <programme start="20261003213000 +0000" stop="20261003220000 +0000" channel="berita-rtm">
     <title lang="en">Kerajaan Tua Nusantara</title>
-    <desc lang="en">Saksikan Dato� Haji Amin Khan berkongsi tentang sejarah "Kerajaan Acheh Darul Salam" di Bandar Acheh Indonesia.</desc>
+    <desc lang="en">Saksikan Dato� Haji Amin Khan berkongsi tentang sejarah &quot;Kerajaan Acheh Darul Salam&quot; di Bandar Acheh Indonesia.</desc>
   </programme>
   <programme start="20261003220000 +0000" stop="20261003223000 +0000" channel="berita-rtm">
     <title lang="en">Terowong Rahsia Melaka</title>
@@ -24962,7 +24962,7 @@
   </programme>
   <programme start="20261004130000 +0000" stop="20261004133000 +0000" channel="berita-rtm">
     <title lang="en">On The Table (OTT)</title>
-    <desc lang="en">"On The Table" is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featuri</desc>
+    <desc lang="en">&quot;On The Table&quot; is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featuri</desc>
   </programme>
   <programme start="20261004133000 +0000" stop="20261004140000 +0000" channel="berita-rtm">
     <title lang="en">World Around Us (WAU)</title>
@@ -24970,12 +24970,12 @@
   </programme>
   <programme start="20261004140000 +0000" stop="20261004143000 +0000" channel="berita-rtm">
     <title lang="en">Behind The Mic</title>
-    <desc lang="en">"Behind The Mic" is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
+    <desc lang="en">&quot;Behind The Mic&quot; is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261004143000 +0000" stop="20261004150000 +0000" channel="berita-rtm">
     <title lang="en">Global Voices</title>
-    <desc lang="en">"Global Voices" is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
+    <desc lang="en">&quot;Global Voices&quot; is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261004150000 +0000" stop="20261004160000 +0000" channel="berita-rtm">
@@ -25020,7 +25020,7 @@
   </programme>
   <programme start="20261003210000 +0000" stop="20261003220000 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Ilman nekad untuk berniaga, namun tiada modal permulaan. Balkish pula tiak bersetuju dengan cadangan Ilman. Saksikan kisah "Aduhai Ilman".</desc>
+    <desc lang="en">Ilman nekad untuk berniaga, namun tiada modal permulaan. Balkish pula tiak bersetuju dengan cadangan Ilman. Saksikan kisah &quot;Aduhai Ilman&quot;.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261003220000 +0000" stop="20261003220500 +0000" channel="tv-okey">
@@ -25206,7 +25206,7 @@
   </programme>
   <programme start="20261003220000 +0000" stop="20261003223000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261003223000 +0000" stop="20261003233000 +0000" channel="bernama">
     <title lang="en">Ruang Bicara</title>
@@ -25250,7 +25250,7 @@
   </programme>
   <programme start="20261004033000 +0000" stop="20261004040000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261004040000 +0000" stop="20261004043000 +0000" channel="bernama">
     <title lang="en">The Nation</title>
@@ -25309,7 +25309,7 @@
   </programme>
   <programme start="20261004090000 +0000" stop="20261004093000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261004093000 +0000" stop="20261004100000 +0000" channel="bernama">
     <title lang="en">Radio@TV</title>
@@ -29726,7 +29726,7 @@
   </programme>
   <programme start="20261004024000 +0000" stop="20261004025000 +0000" channel="nhk-world">
     <title lang="en">Little Charo</title>
-    <desc lang="en">Little Charo is an animation series about a Japanese dog who got lost in NY. "I want to see my owner again!" Charo starts his adventure back home. Season 2-4.</desc>
+    <desc lang="en">Little Charo is an animation series about a Japanese dog who got lost in NY. &quot;I want to see my owner again!&quot; Charo starts his adventure back home. Season 2-4.</desc>
     <category lang="en">Live</category>
   </programme>
   <programme start="20261004025000 +0000" stop="20261004025500 +0000" channel="nhk-world">
@@ -29751,7 +29751,7 @@
   </programme>
   <programme start="20261004034000 +0000" stop="20261004035000 +0000" channel="nhk-world">
     <title lang="en">I Love 'Mee'</title>
-    <desc lang="en">While playing with friends, Mee spots Kura, Don's classmate, and invites her to play together. But Kura says no and keeps typing away on her computer. "She's weird," Mee thinks - but later on...</desc>
+    <desc lang="en">While playing with friends, Mee spots Kura, Don's classmate, and invites her to play together. But Kura says no and keeps typing away on her computer. &quot;She's weird,&quot; Mee thinks - but later on...</desc>
     <category lang="en">Live</category>
   </programme>
   <programme start="20261004035000 +0000" stop="20261004040000 +0000" channel="nhk-world">
@@ -29836,7 +29836,7 @@
   </programme>
   <programme start="20261004094000 +0000" stop="20261004095000 +0000" channel="nhk-world">
     <title lang="en">I Love 'Mee'</title>
-    <desc lang="en">While playing with friends, Mee spots Kura, Don's classmate, and invites her to play together. But Kura says no and keeps typing away on her computer. "She's weird," Mee thinks - but later on...</desc>
+    <desc lang="en">While playing with friends, Mee spots Kura, Don's classmate, and invites her to play together. But Kura says no and keeps typing away on her computer. &quot;She's weird,&quot; Mee thinks - but later on...</desc>
     <category lang="en">Live</category>
   </programme>
   <programme start="20261004095000 +0000" stop="20261004100000 +0000" channel="nhk-world">
@@ -29856,7 +29856,7 @@
   </programme>
   <programme start="20261004104000 +0000" stop="20261004105000 +0000" channel="nhk-world">
     <title lang="en">Little Charo</title>
-    <desc lang="en">Little Charo is an animation series about a Japanese dog who got lost in NY. "I want to see my owner again!" Charo starts his adventure back home. Season 2-4.</desc>
+    <desc lang="en">Little Charo is an animation series about a Japanese dog who got lost in NY. &quot;I want to see my owner again!&quot; Charo starts his adventure back home. Season 2-4.</desc>
     <category lang="en">Live</category>
   </programme>
   <programme start="20261004105000 +0000" stop="20261004105500 +0000" channel="nhk-world">
@@ -29926,7 +29926,7 @@
   </programme>
   <programme start="20261004144000 +0000" stop="20261004145000 +0000" channel="nhk-world">
     <title lang="en">I Love 'Mee'</title>
-    <desc lang="en">While playing with friends, Mee spots Kura, Don's classmate, and invites her to play together. But Kura says no and keeps typing away on her computer. "She's weird," Mee thinks - but later on...</desc>
+    <desc lang="en">While playing with friends, Mee spots Kura, Don's classmate, and invites her to play together. But Kura says no and keeps typing away on her computer. &quot;She's weird,&quot; Mee thinks - but later on...</desc>
     <category lang="en">Live</category>
   </programme>
   <programme start="20261004145000 +0000" stop="20261004150000 +0000" channel="nhk-world">
@@ -29946,7 +29946,7 @@
   </programme>
   <programme start="20261004154000 +0000" stop="20261004155000 +0000" channel="nhk-world">
     <title lang="en">Little Charo</title>
-    <desc lang="en">Little Charo is an animation series about a Japanese dog who got lost in NY. "I want to see my owner again!" Charo starts his adventure back home. Season 2-4.</desc>
+    <desc lang="en">Little Charo is an animation series about a Japanese dog who got lost in NY. &quot;I want to see my owner again!&quot; Charo starts his adventure back home. Season 2-4.</desc>
     <category lang="en">Live</category>
   </programme>
   <programme start="20261004155000 +0000" stop="20261004155500 +0000" channel="nhk-world">
@@ -32566,7 +32566,7 @@
   </programme>
   <programme start="20261004213000 +0000" stop="20261004220000 +0000" channel="berita-rtm">
     <title lang="en">Kerajaan Tua Nusantara</title>
-    <desc lang="en">Saksikan Dato� Haji Amin Khan berkongsi tentang sejarah "Islam Dan Kerajaan Tua Di Nusantara" di Indonesia.</desc>
+    <desc lang="en">Saksikan Dato� Haji Amin Khan berkongsi tentang sejarah &quot;Islam Dan Kerajaan Tua Di Nusantara&quot; di Indonesia.</desc>
   </programme>
   <programme start="20261004220000 +0000" stop="20261004223000 +0000" channel="berita-rtm">
     <title lang="en">Pasak Bumi</title>
@@ -32653,7 +32653,7 @@
   </programme>
   <programme start="20261005130000 +0000" stop="20261005133000 +0000" channel="berita-rtm">
     <title lang="en">ON THE TABLE 2026</title>
-    <desc lang="en">"On The Table" is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
+    <desc lang="en">&quot;On The Table&quot; is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
     <category lang="en">Movie/Drama</category>
   </programme>
   <programme start="20261005133000 +0000" stop="20261005140000 +0000" channel="berita-rtm">
@@ -32662,12 +32662,12 @@
   </programme>
   <programme start="20261005140000 +0000" stop="20261005143000 +0000" channel="berita-rtm">
     <title lang="en">Behind The Mic</title>
-    <desc lang="en">"Behind The Mic" is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
+    <desc lang="en">&quot;Behind The Mic&quot; is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261005143000 +0000" stop="20261005150000 +0000" channel="berita-rtm">
     <title lang="en">Global Voices</title>
-    <desc lang="en">"Global Voices" is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
+    <desc lang="en">&quot;Global Voices&quot; is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261005150000 +0000" stop="20261005160000 +0000" channel="berita-rtm">
@@ -32713,7 +32713,7 @@
   </programme>
   <programme start="20261004210000 +0000" stop="20261004220000 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Kerana Ijat &amp; Khairil, Khairin mengelak untuk berbicara soal jodoh. Saksikan kisah "Syurga Kita Sama".</desc>
+    <desc lang="en">Kerana Ijat &amp; Khairil, Khairin mengelak untuk berbicara soal jodoh. Saksikan kisah &quot;Syurga Kita Sama&quot;.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261004220000 +0000" stop="20261004220500 +0000" channel="tv-okey">
@@ -32785,7 +32785,7 @@
   </programme>
   <programme start="20261005063000 +0000" stop="20261005073000 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Mak Su datang tanpa diundang, hadirnya pula tidak disenangi oleh ahli keluarga yang lain. Saksikan kisah "Di Kalung Duka".</desc>
+    <desc lang="en">Mak Su datang tanpa diundang, hadirnya pula tidak disenangi oleh ahli keluarga yang lain. Saksikan kisah &quot;Di Kalung Duka&quot;.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261005073000 +0000" stop="20261005080000 +0000" channel="tv-okey">
@@ -32975,7 +32975,7 @@
   </programme>
   <programme start="20261005073000 +0000" stop="20261005080000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261005080000 +0000" stop="20261005083000 +0000" channel="bernama">
     <title lang="en">(L) BERNAMA Global</title>
@@ -36672,7 +36672,7 @@
   </programme>
   <programme start="20261006130000 +0000" stop="20261006133000 +0000" channel="berita-rtm">
     <title lang="en">ON THE TABLE 2026</title>
-    <desc lang="en">"On The Table" is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
+    <desc lang="en">&quot;On The Table&quot; is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
     <category lang="en">Movie/Drama</category>
   </programme>
   <programme start="20261006133000 +0000" stop="20261006140000 +0000" channel="berita-rtm">
@@ -36681,12 +36681,12 @@
   </programme>
   <programme start="20261006140000 +0000" stop="20261006143000 +0000" channel="berita-rtm">
     <title lang="en">Behind The Mic</title>
-    <desc lang="en">"Behind The Mic" is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
+    <desc lang="en">&quot;Behind The Mic&quot; is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261006143000 +0000" stop="20261006150000 +0000" channel="berita-rtm">
     <title lang="en">Global Voices</title>
-    <desc lang="en">"Global Voices" is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
+    <desc lang="en">&quot;Global Voices&quot; is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261006150000 +0000" stop="20261006160000 +0000" channel="berita-rtm">
@@ -36731,7 +36731,7 @@
   </programme>
   <programme start="20261005210000 +0000" stop="20261005220000 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Mak Su datang tanpa diundang, hadirnya pula tidak disenangi oleh ahli keluarga yang lain. Saksikan kisah "Di Kalung Duka".</desc>
+    <desc lang="en">Mak Su datang tanpa diundang, hadirnya pula tidak disenangi oleh ahli keluarga yang lain. Saksikan kisah &quot;Di Kalung Duka&quot;.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261005220000 +0000" stop="20261005220500 +0000" channel="tv-okey">
@@ -36815,7 +36815,7 @@
   </programme>
   <programme start="20261006063000 +0000" stop="20261006073000 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Memang bukan mudah untuk Iqbal membimbing Fizah. Rafidah pula tersepit diantara suami, anak dan menantu. Saksikan kisah "Kasih Tak Bertaut".</desc>
+    <desc lang="en">Memang bukan mudah untuk Iqbal membimbing Fizah. Rafidah pula tersepit diantara suami, anak dan menantu. Saksikan kisah &quot;Kasih Tak Bertaut&quot;.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261006073000 +0000" stop="20261006080000 +0000" channel="tv-okey">
@@ -36916,7 +36916,7 @@
   </programme>
   <programme start="20261005203000 +0000" stop="20261005210000 +0000" channel="bernama">
     <title lang="en">ON e</title>
-    <desc lang="en">"ON e" memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
+    <desc lang="en">&quot;ON e&quot; memaparkan perkembangan industri hiburan merangkumi industri muzik, filem, teater dan drama tempatan serta luar negara.</desc>
   </programme>
   <programme start="20261005210000 +0000" stop="20261005213000 +0000" channel="bernama">
     <title lang="en">Buletin BERNAMA</title>
@@ -40766,7 +40766,7 @@
   </programme>
   <programme start="20261007130000 +0000" stop="20261007133000 +0000" channel="berita-rtm">
     <title lang="en">ON THE TABLE 2026</title>
-    <desc lang="en">"On The Table" is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
+    <desc lang="en">&quot;On The Table&quot; is a talk show that explores a range of topics, emphasizing Malaysia's current issues and trends. It also seeks to position Malaysia as an appealing investment and business hub for foreign investors, featurin</desc>
     <category lang="en">Movie/Drama</category>
   </programme>
   <programme start="20261007133000 +0000" stop="20261007140000 +0000" channel="berita-rtm">
@@ -40775,12 +40775,12 @@
   </programme>
   <programme start="20261007140000 +0000" stop="20261007143000 +0000" channel="berita-rtm">
     <title lang="en">Behind The Mic</title>
-    <desc lang="en">"Behind The Mic" is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
+    <desc lang="en">&quot;Behind The Mic&quot; is an interview program by a radio channel broadcast to a television platform that discusses a wide range of current issues both locally and internationally, including culture, health, education, and much more</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261007143000 +0000" stop="20261007150000 +0000" channel="berita-rtm">
     <title lang="en">Global Voices</title>
-    <desc lang="en">"Global Voices" is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
+    <desc lang="en">&quot;Global Voices&quot; is a mixed-slot program featuring a blend of engaging content, including both previously aired shows and fresh new programs that resonate with a global audience.</desc>
     <category lang="en">Education/Science</category>
   </programme>
   <programme start="20261007150000 +0000" stop="20261007160000 +0000" channel="berita-rtm">
@@ -40827,7 +40827,7 @@
   </programme>
   <programme start="20261006210000 +0000" stop="20261006220000 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Memang bukan mudah untuk Iqbal membimbing Fizah. Rafidah pula tersepit diantara suami, anak dan menantu. Saksikan kisah "Kasih Tak Bertaut".</desc>
+    <desc lang="en">Memang bukan mudah untuk Iqbal membimbing Fizah. Rafidah pula tersepit diantara suami, anak dan menantu. Saksikan kisah &quot;Kasih Tak Bertaut&quot;.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261006220000 +0000" stop="20261006220500 +0000" channel="tv-okey">
@@ -40913,7 +40913,7 @@
   </programme>
   <programme start="20261007063000 +0000" stop="20261007073000 +0000" channel="tv-okey">
     <title lang="en">Dilema Wanita (Siri 11)</title>
-    <desc lang="en">Akibat terlalu memanjakan anak-anaknya, Hj Dahlan tidak berlaku dengan Makcik Cah. Saksikan kisah "Antara Dua Firdausi".</desc>
+    <desc lang="en">Akibat terlalu memanjakan anak-anaknya, Hj Dahlan tidak berlaku dengan Makcik Cah. Saksikan kisah &quot;Antara Dua Firdausi&quot;.</desc>
     <category lang="en">Sports</category>
   </programme>
   <programme start="20261007073000 +0000" stop="20261007083000 +0000" channel="tv-okey">
@@ -43975,10 +43975,6 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 6 - Dr Arfan yang sedang berehat di rumah menerima mesej dari hospital untuk merawat seorang pesakit yang memerlukan rawatan kepakaran beliau. Dr Shamsul pula selalu menerima panggilan dari seseorang yang menagih hutang darinya. - [NC]</desc>
   </programme>
-  <programme start="20261001131551 +0000" stop="20261001152719 +0000" channel="fifa">
-    <title lang="en">Japan v Sweden | Quarter-final | FIFA Women's World Cup 2023 | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full match replay between Japan and Sweden played at Eden Park, Auckland. - [NC]</desc>
-  </programme>
   <programme start="20261001152719 +0000" stop="20261001183409 +0000" channel="fifa">
     <title lang="en">Sweden v USA | Round of 16 | FIFA Women's World Cup Australia &amp; New Zealand 2023™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Sweden and USA at Melbourne Rectangular Stadium, Melbourne. - [NC]</desc>
@@ -44027,6 +44023,10 @@
     <title lang="en">Germany v Morocco | Group H | FIFA Women's World Cup Australia &amp; New Zealand 2023™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Germany and Morocco at Melbourne Rectangular Stadium, Melbourne. - [NC]</desc>
   </programme>
+  <programme start="20261002151729 +0000" stop="20261002171005 +0000" channel="fifa">
+    <title lang="en">Thailand v Germany | Group B | FIFA Women's World Cup Canada 2015™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Thailand and Germany from Winnipeg, 15 June 2015. - [NC]</desc>
+  </programme>
   <programme start="20261001100000 +0000" stop="20261001160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
@@ -44046,10 +44046,6 @@
   <programme start="20261002100000 +0000" stop="20261002160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20261001150000 +0000" stop="20261001153000 +0000" channel="ntv7">
-    <title lang="en">DUNIA TERSEMBUNYI 2016</title>
-    <desc lang="en">Episode 1 - Dunia Tersembunyi offers jaw-dropping coverage as the magazine program takes viewers on a journey exploring the many unusual cultures and rituals, this time in south Asia or south east asia. - [NC]</desc>
   </programme>
   <programme start="20261001153000 +0000" stop="20261001160000 +0000" channel="ntv7">
     <title lang="en">DESTINASI KERJAYA 24/25</title>
@@ -44179,7 +44175,11 @@
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 2 - DAUN EMAS.  Myanmar terkenal sebagai pengeluar batu permata Jed terbaik dunia. Turut diberi jolokan sebagai Tanah Emas Asia, Myanmar. Namun, emas keluaran Myanmar jarang digunakan untuk menghasilkan produk perhiasan. - [NC]</desc>
   </programme>
-  <programme start="20261001150131 +0000" stop="20261001160000 +0000" channel="scl">
+  <programme start="20261002153000 +0000" stop="20261002160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 2 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  </programme>
+  <programme start="20261001154458 +0000" stop="20261001160000 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -44199,10 +44199,6 @@
   <programme start="20261002100000 +0000" stop="20261002160000 +0000" channel="scl">
     <title lang="en"> Shadow Combat League (SCL): New Dawn Malaysia</title>
     <desc lang="en">Episode 1 -  Shadow Combat League: New Dawn Malaysia is a high-octane robotic fight night featuring 7 action-packed fight cards, streaming live on 3 October 2026 from 7 PM to 10 PM. Watch Malaysian stars and regional personalities—including actors, actresses, and ex-national athletes like Daniel Fong, Abdu Rozik, and Yuan Teng—pilot humanoid combat robots. Stream every hit live on Tonton! - [NC]</desc>
-  </programme>
-  <programme start="20261001142500 +0000" stop="20261001154000 +0000" channel="thrill">
-    <title lang="en">The Case of Disappearances</title>
-    <desc lang="en">Episode 1 - In Misty Village, the adopted son Wen Jie is haunted by a recurring nightmare. He delves into a series of disappearance cases in the village to seek his true identity. As more villagers die mysteriously, belief in the curse of Emperor Jing Lung intensifies. Wen Jie teams up with the security chief to unveil the conspiracy and protect the villagers. - [NC]</desc>
   </programme>
   <programme start="20261001154000 +0000" stop="20261001171000 +0000" channel="thrill">
     <title lang="en">Evie</title>
@@ -44314,7 +44310,7 @@
   </programme>
   <programme start="20261001222000 +0000" stop="20261001225000 +0000" channel="tv3">
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
-    <desc lang="en">Episode 98 - HAK KEJIRANAN.  Episod ini hos Amin Idris, mengupas tajuk "Hak Kejiranan" bersama Ustaz Fikri Abdul Razak berpandukan Kitab Riyadhus Shalihin. Turut diselitkan kempen dana Pertubuhan Kebajikan &amp; Dakwah Al-Mutasabiqin. - [NC]</desc>
+    <desc lang="en">Episode 98 - HAK KEJIRANAN.  Episod ini hos Amin Idris, mengupas tajuk &quot;Hak Kejiranan&quot; bersama Ustaz Fikri Abdul Razak berpandukan Kitab Riyadhus Shalihin. Turut diselitkan kempen dana Pertubuhan Kebajikan &amp; Dakwah Al-Mutasabiqin. - [NC]</desc>
   </programme>
   <programme start="20261001225000 +0000" stop="20261002000000 +0000" channel="tv3">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
@@ -44404,10 +44400,6 @@
     <title lang="en">SCARLET HEART</title>
     <desc lang="en">Episode 10 - Hae Soo keliru dengan luahan cinta Wang So, manakala Wang Wook berusaha mengahwininya. Di tengah ancaman racun dan manipulasi politik permaisuri, Wang So mengambil risiko berbahaya demi melindungi mereka yang disayanginya. - [NC]</desc>
   </programme>
-  <programme start="20261001143000 +0000" stop="20261001153000 +0000" channel="tv9">
-    <title lang="en">MY SWEET MOBSTER</title>
-    <desc lang="en">Episode 3 - Pengarah Lee dari Macaron Soft mengedit video yang dirakam oleh Eun Ha mengenai pergaduhan pekerja Rusa Dahaga dengan seorang lelaki. Video tersebut tular dalam We Tube mengakibatkan jualan sosej Rusa Dahaga jatuh menjunam. - [NC]</desc>
-  </programme>
   <programme start="20261001153000 +0000" stop="20261001160000 +0000" channel="tv9">
     <title lang="en">KHURAFAT</title>
     <desc lang="en">Episode 1 - Makam ulama terkemuka Tok Pulau Manis di Terengganu kerap menjadi sasaran amalan khurafat. Menurut penduduk tempatan, pernah berlaku kejadian misteri melibatkan tiga pemuda yang bertandang ke makam berkenaan pada larut malam. - [NC]</desc>
@@ -44450,7 +44442,7 @@
   </programme>
   <programme start="20261001222000 +0000" stop="20261001225000 +0000" channel="tv9">
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
-    <desc lang="en">Episode 98 - HAK KEJIRANAN.  Episod ini hos Amin Idris, mengupas tajuk "Hak Kejiranan" bersama Ustaz Fikri Abdul Razak berpandukan Kitab Riyadhus Shalihin. Turut diselitkan kempen dana Pertubuhan Kebajikan &amp; Dakwah Al-Mutasabiqin. - [NC]</desc>
+    <desc lang="en">Episode 98 - HAK KEJIRANAN.  Episod ini hos Amin Idris, mengupas tajuk &quot;Hak Kejiranan&quot; bersama Ustaz Fikri Abdul Razak berpandukan Kitab Riyadhus Shalihin. Turut diselitkan kempen dana Pertubuhan Kebajikan &amp; Dakwah Al-Mutasabiqin. - [NC]</desc>
   </programme>
   <programme start="20261001225000 +0000" stop="20261002000000 +0000" channel="tv9">
     <title lang="en">TANYALAH USTAZ JULY – DEC 2026</title>
@@ -44532,6 +44524,10 @@
     <title lang="en">AL-KULIYYAH 2019</title>
     <desc lang="en">Episode 9 - SEMPURNAKAN KEBAIKAN.  Setiap dari kita berazam melakukan pelbagai kebaikan tetapi tuntas yang paling utama ialah melakukan ketaatan kepada ibu bapa. - [NC]</desc>
   </programme>
+  <programme start="20261002153000 +0000" stop="20261002160000 +0000" channel="tv9">
+    <title lang="en">JET LAG</title>
+    <desc lang="en">Episode 2 - Episod ini hos Iedil Putra menampilkan misi sengit demi memenangi tiket festival &quot;Big Day Out&quot; di Australia. Cabaran bermula di Rom, Itali, memerlukan beliau menjelajah pelbagai negara berbekalkan tugas serta wang saku. - [NC]</desc>
+  </programme>
   <programme start="20261002160000 +0000" stop="20261002170000 +0000" channel="8tv">
     <title lang="en">TILL THE END OF THE MOON</title>
     <desc lang="en">Episode 25 - Tai Jin kecewa mendapati Xi Wu cuba meracuninya demi menyelamatkan Xiao Lin. Xi Wu telah dipukau oleh Tai Jin dengan kuasa ajaibnya tiba-tiba menikam Xiao Lin. Xiao Lin yang cedera parah sempat menulis surat kepada Tai Jin - [NC]</desc>
@@ -44610,7 +44606,7 @@
   </programme>
   <programme start="20261003130000 +0000" stop="20261003150000 +0000" channel="8tv">
     <title lang="en">THE TREASURED VOICE S7</title>
-    <desc lang="en">Episode 9 - Episod ini 12 penyanyi berbakat dari China dan Taiwan digabungkan dalam 6 pasangan untuk beraksi di pentas "The Treasured Voice". Antara bintang yang bersaing termasuk Jike Junyi, Lars Huang, Aska Yang, Bibi Zhou dan Rainie Yang. - [NC]</desc>
+    <desc lang="en">Episode 9 - Episod ini 12 penyanyi berbakat dari China dan Taiwan digabungkan dalam 6 pasangan untuk beraksi di pentas &quot;The Treasured Voice&quot;. Antara bintang yang bersaing termasuk Jike Junyi, Lars Huang, Aska Yang, Bibi Zhou dan Rainie Yang. - [NC]</desc>
   </programme>
   <programme start="20261003150000 +0000" stop="20261003160000 +0000" channel="8tv">
     <title lang="en">HEALING HEROES</title>
@@ -44696,10 +44692,6 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 7 - Dr Irfan berasa selesa tinggal di kampung dengan menikmati suasana nyaman dan keindahan semula jadi di kampung. Razi mengaku dengan ibunya yang Sophia adalah teman wanitanya tapi cuba mengelak bila ibunya mahu mengenali Sophia. - [NC]</desc>
   </programme>
-  <programme start="20261002151729 +0000" stop="20261002171005 +0000" channel="fifa">
-    <title lang="en">Thailand v Germany | Group B | FIFA Women's World Cup Canada 2015™ | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full match replay between Thailand and Germany from Winnipeg, 15 June 2015. - [NC]</desc>
-  </programme>
   <programme start="20261002171005 +0000" stop="20261002195109 +0000" channel="fifa">
     <title lang="en">Germany v France | Quarter-finals | FIFA Women's World Cup Canada 2015™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Germany and France from Montreal, 26 June 2015. - [NC]</desc>
@@ -44744,6 +44736,10 @@
     <title lang="en">Germany v Argentina | Final | 2014 FIFA World Cup Brazil™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full replay from the match between Germany and Argentina - [NC]</desc>
   </programme>
+  <programme start="20261003150651 +0000" stop="20261003165809 +0000" channel="fifa">
+    <title lang="en">Bulgaria v Germany | Quarter-finals | 1994 FIFA World Cup USA™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Bulgaria and Germany played at Giants Stadium, New Jersey. - [NC]</desc>
+  </programme>
   <programme start="20261002160000 +0000" stop="20261002220000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
@@ -44759,10 +44755,6 @@
   <programme start="20261003100000 +0000" stop="20261003160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20261002153000 +0000" stop="20261002160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 2 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
   </programme>
   <programme start="20261002160000 +0000" stop="20261002230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
@@ -44888,6 +44880,10 @@
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 3 - BUSANA BESI.  Etnik minoriti mempunyai persepsi unik mengenai busana yang mereka gayakan. Ia sebagai perlambangan paling jelas identiti sesebuah etnik yang mendiami kawasan pedalaman. - [NC]</desc>
   </programme>
+  <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 3 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  </programme>
   <programme start="20261002160000 +0000" stop="20261002220000 +0000" channel="scl">
     <title lang="en"> Shadow Combat League (SCL): New Dawn Malaysia</title>
     <desc lang="en">Episode 1 -  Shadow Combat League: New Dawn Malaysia is a high-octane robotic fight night featuring 7 action-packed fight cards, streaming live on 3 October 2026 from 7 PM to 10 PM. Watch Malaysian stars and regional personalities—including actors, actresses, and ex-national athletes like Daniel Fong, Abdu Rozik, and Yuan Teng—pilot humanoid combat robots. Stream every hit live on Tonton! - [NC]</desc>
@@ -45002,7 +44998,7 @@
   </programme>
   <programme start="20261002222000 +0000" stop="20261002225000 +0000" channel="tv3">
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
-    <desc lang="en">Episode 99 - IBU BAPA, BAKTI DAN FASA.  Episod ini hos Amin Idris mengupas tajuk "Ibu Bapa, Bakti dan Fasa" bersama Ustaz Dr. Nur Mohammad Hadi berpandukan Kitab Riyadhus Shalihin. Turut diselitkan kempen dana Pertubuhan Akademi Al-Bayan. - [NC]</desc>
+    <desc lang="en">Episode 99 - IBU BAPA, BAKTI DAN FASA.  Episod ini hos Amin Idris mengupas tajuk &quot;Ibu Bapa, Bakti dan Fasa&quot; bersama Ustaz Dr. Nur Mohammad Hadi berpandukan Kitab Riyadhus Shalihin. Turut diselitkan kempen dana Pertubuhan Akademi Al-Bayan. - [NC]</desc>
   </programme>
   <programme start="20261002225000 +0000" stop="20261003000000 +0000" channel="tv3">
     <title lang="en">TANYALAH USTAZ 2026 (SAT &amp; SUN) : JAN - DEC</title>
@@ -45100,10 +45096,6 @@
     <title lang="en">SAKANAK</title>
     <desc lang="en">Episode 1 - Sarah seringkali keguguran setiap kali mengandung. Sarah dan suaminya Kamal kecewa impian untuk memiliki anak sejak berkahwin beberapa tahun lalu berkecai. Doktor yang merawat Sarah juga tidak mampu menghuraikan secara lanjut. - [NC]</desc>
   </programme>
-  <programme start="20261002153000 +0000" stop="20261002160000 +0000" channel="tv9">
-    <title lang="en">JET LAG</title>
-    <desc lang="en">Episode 2 - Episod ini hos Iedil Putra menampilkan misi sengit demi memenangi tiket festival "Big Day Out" di Australia. Cabaran bermula di Rom, Itali, memerlukan beliau menjelajah pelbagai negara berbekalkan tugas serta wang saku. - [NC]</desc>
-  </programme>
   <programme start="20261002160000 +0000" stop="20261002170000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -45130,7 +45122,7 @@
   </programme>
   <programme start="20261002203000 +0000" stop="20261002210000 +0000" channel="tv9">
     <title lang="en">JET LAG</title>
-    <desc lang="en">Episode 2 - Episod ini hos Iedil Putra menampilkan misi sengit demi memenangi tiket festival "Big Day Out" di Australia. Cabaran bermula di Rom, Itali, memerlukan beliau menjelajah pelbagai negara berbekalkan tugas serta wang saku. - [NC]</desc>
+    <desc lang="en">Episode 2 - Episod ini hos Iedil Putra menampilkan misi sengit demi memenangi tiket festival &quot;Big Day Out&quot; di Australia. Cabaran bermula di Rom, Itali, memerlukan beliau menjelajah pelbagai negara berbekalkan tugas serta wang saku. - [NC]</desc>
   </programme>
   <programme start="20261002210000 +0000" stop="20261002220000 +0000" channel="tv9">
     <title lang="en">MY #QURANTIME 2.0            </title>
@@ -45142,7 +45134,7 @@
   </programme>
   <programme start="20261002222000 +0000" stop="20261002225000 +0000" channel="tv9">
     <title lang="en">JURNAL MUSLIM (2025) PART 2</title>
-    <desc lang="en">Episode 99 - IBU BAPA, BAKTI DAN FASA.  Episod ini hos Amin Idris mengupas tajuk "Ibu Bapa, Bakti dan Fasa" bersama Ustaz Dr. Nur Mohammad Hadi berpandukan Kitab Riyadhus Shalihin. Turut diselitkan kempen dana Pertubuhan Akademi Al-Bayan. - [NC]</desc>
+    <desc lang="en">Episode 99 - IBU BAPA, BAKTI DAN FASA.  Episod ini hos Amin Idris mengupas tajuk &quot;Ibu Bapa, Bakti dan Fasa&quot; bersama Ustaz Dr. Nur Mohammad Hadi berpandukan Kitab Riyadhus Shalihin. Turut diselitkan kempen dana Pertubuhan Akademi Al-Bayan. - [NC]</desc>
   </programme>
   <programme start="20261002225000 +0000" stop="20261003003000 +0000" channel="tv9">
     <title lang="en">TANYALAH USTAZ 2026 (SAT &amp; SUN) : JAN - DEC</title>
@@ -45186,7 +45178,7 @@
   </programme>
   <programme start="20261003090000 +0000" stop="20261003093000 +0000" channel="tv9">
     <title lang="en">FAY &amp; TOM</title>
-    <desc lang="en">Episode 5 - THE CLOG HOUSE.  Tom telah mengambil "clog" (kasut kayu) kepunyaan Fay. Bangun dari tidur Fay mencari kasut kayunya di sekeliling rumah tapi tidak berjumpa. Tom secara rahsia telah menjadikan kasut kayu Fay sebagai hiasan rumah - [NC]</desc>
+    <desc lang="en">Episode 5 - THE CLOG HOUSE.  Tom telah mengambil &quot;clog&quot; (kasut kayu) kepunyaan Fay. Bangun dari tidur Fay mencari kasut kayunya di sekeliling rumah tapi tidak berjumpa. Tom secara rahsia telah menjadikan kasut kayu Fay sebagai hiasan rumah - [NC]</desc>
   </programme>
   <programme start="20261003093000 +0000" stop="20261003100000 +0000" channel="tv9">
     <title lang="en">GO GO DINO SEASON 5</title>
@@ -45215,6 +45207,10 @@
   <programme start="20261003143000 +0000" stop="20261003153000 +0000" channel="tv9">
     <title lang="en">DURJA NINGSUN</title>
     <desc lang="en">Episode 1 - Permulaan kisah, sedikit latar gangguan mimpi dan rasukan Aria ke dunia silam, dunia Ningsun. Akhirnya Aria sembuh setelah berjaya dirawat oleh atuknya Haji Shaaban. Sejak berusia 14 tahun, Aria derita kerana mudah dirasuki. - [NC]</desc>
+  </programme>
+  <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="tv9">
+    <title lang="en">HERO OVEN 2017</title>
+    <desc lang="en">Episode 6 - Episod ini tujuh peserta termasuk Cef Fikree berentap menyediakan Brioche serta kek gabungan konsep menggunakan bahan rahsia gula melaka. Hasil ciptaan mereka dinilai secara teliti oleh Cef Fikree dan Cef Sarah. - [NC]</desc>
   </programme>
   <programme start="20261003160000 +0000" stop="20261003170000 +0000" channel="8tv">
     <title lang="en">HEALING HEROES</title>
@@ -45304,6 +45300,10 @@
     <title lang="en">WEAVING A TALE OF LOVE S2</title>
     <desc lang="en">Episode 37 - Jeneral Shu dan bapanya terbunuh dalam perjalanan diserahkan kepada puak utara. Selepas kematian ayah Hui Zhou Yu, Hui menerima dekri bahawa dia akan dipindahkan untuk bekerja di ibu kota. - [NC]</desc>
   </programme>
+  <programme start="20261004153000 +0000" stop="20261004163000 +0000" channel="8tv">
+    <title lang="en">JOY OF LIFE SEASON 2</title>
+    <desc lang="en">Episode 1 - Fan Xian telah memalsukan kematiannya untuk melarikan diri. Fan Xian kini menyamar sebagai rakyat biasa bersama Wang Qi Nian dan kembali ke ibu kota. Mereka terkejut berita kematian Fan Xian telah pun tersebar ke seluruh bandar. - [NC]</desc>
+  </programme>
   <programme start="20261003160000 +0000" stop="20261003170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 115 - [NC]</desc>
@@ -45384,10 +45384,6 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 8 - Doktor Arfan menunjukkan Aplikasi baharu yang bakal digunakan oleh pesakit untuk melayari apa-apa sahaja mengenai hospital tetapi aplikasi tersebut tidak berapa digemari oleh pakciknya. Opah datang ke hospital untuk rawatan susulan - [NC]</desc>
   </programme>
-  <programme start="20261003150651 +0000" stop="20261003165809 +0000" channel="fifa">
-    <title lang="en">Bulgaria v Germany | Quarter-finals | 1994 FIFA World Cup USA™ | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full match replay between Bulgaria and Germany played at Giants Stadium, New Jersey. - [NC]</desc>
-  </programme>
   <programme start="20261003165809 +0000" stop="20261003193334 +0000" channel="fifa">
     <title lang="en">Germany v England | Play-off for third place | FIFA Women's World Cup Canada 2015™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Germany and England from Edmonton, 4 July 2015. - [NC]</desc>
@@ -45455,10 +45451,6 @@
   <programme start="20261004100000 +0000" stop="20261004160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 3 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
   </programme>
   <programme start="20261003160000 +0000" stop="20261003230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
@@ -45578,7 +45570,7 @@
   </programme>
   <programme start="20261004133000 +0000" stop="20261004140000 +0000" channel="ntv7">
     <title lang="en">SAYA ISTIMEWA</title>
-    <desc lang="en">Episode 2 - Episod ini memaparkan kisah hidup seorang kanak-kanak kurang upaya (OKU) kategori B1 iaitu hilang penglihatan. Berumur 11 tahun, dia sudah boleh membaca menggunakan "brail" dan pandai mengaji serta bermain piano. - [NC]</desc>
+    <desc lang="en">Episode 2 - Episod ini memaparkan kisah hidup seorang kanak-kanak kurang upaya (OKU) kategori B1 iaitu hilang penglihatan. Berumur 11 tahun, dia sudah boleh membaca menggunakan &quot;brail&quot; dan pandai mengaji serta bermain piano. - [NC]</desc>
   </programme>
   <programme start="20261004140000 +0000" stop="20261004150000 +0000" channel="ntv7">
     <title lang="en">MEMBINA JUARA</title>
@@ -45587,6 +45579,10 @@
   <programme start="20261004150000 +0000" stop="20261004153000 +0000" channel="ntv7">
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 4 - DOKTOR HUTAN.  Etnik Phnong atau Bunang turut diiktiraf sebagai penjaga hutan Kemboja kerana kemahiran dimiliki mereka. Hanya etnik ini yang mengetahui kepentingan hutan kepada manusia khususnya menerusi perubatan. - [NC]</desc>
+  </programme>
+  <programme start="20261004153000 +0000" stop="20261004160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 4 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
   </programme>
   <programme start="20261003160000 +0000" stop="20261003220000 +0000" channel="scl">
     <title lang="en"> Shadow Combat League (SCL): New Dawn Malaysia</title>
@@ -45606,7 +45602,7 @@
   </programme>
   <programme start="20261003155500 +0000" stop="20261003173000 +0000" channel="thrill">
     <title lang="en">Ghost Wedding</title>
-    <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a "woman in red", leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a "ghost marriage"... - [NC]</desc>
+    <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a &quot;woman in red&quot;, leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a &quot;ghost marriage&quot;... - [NC]</desc>
   </programme>
   <programme start="20261003173000 +0000" stop="20261003190500 +0000" channel="thrill">
     <title lang="en">Waning Moon</title>
@@ -45630,7 +45626,7 @@
   </programme>
   <programme start="20261003235500 +0000" stop="20261004013000 +0000" channel="thrill">
     <title lang="en">Ghost Wedding</title>
-    <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a "woman in red", leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a "ghost marriage"... - [NC]</desc>
+    <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a &quot;woman in red&quot;, leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a &quot;ghost marriage&quot;... - [NC]</desc>
   </programme>
   <programme start="20261004013000 +0000" stop="20261004030500 +0000" channel="thrill">
     <title lang="en">Waning Moon</title>
@@ -45654,7 +45650,7 @@
   </programme>
   <programme start="20261004075500 +0000" stop="20261004093000 +0000" channel="thrill">
     <title lang="en">Ghost Wedding</title>
-    <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a "woman in red", leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a "ghost marriage"... - [NC]</desc>
+    <desc lang="en">Episode 1 - Photographer Zhi Cheng is entangled with a &quot;woman in red&quot;, leading to the deaths of his relatives one by one. When the girl he likes, Si Tong, also dies mysteriously, Zhi Cheng vows to find out the truth but ends up revealing the secret of a &quot;ghost marriage&quot;... - [NC]</desc>
   </programme>
   <programme start="20261004093000 +0000" stop="20261004110500 +0000" channel="thrill">
     <title lang="en">Waning Moon</title>
@@ -45804,10 +45800,6 @@
     <title lang="en">REMANG</title>
     <desc lang="en">Episode 6 - PERHENTIAN.  Episod ini DJ Ejay menceritakan kisah sepasang suami isteri Aizat dan Syikin yang pulang dari majlis kenduri. Mereka mengalami peristiwa menyeramkan apabila berulang kali singgah di R&amp;R yang sama. - [NC]</desc>
   </programme>
-  <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="tv9">
-    <title lang="en">HERO OVEN 2017</title>
-    <desc lang="en">Episode 6 - Episod ini tujuh peserta termasuk Cef Fikree berentap menyediakan Brioche serta kek gabungan konsep menggunakan bahan rahsia gula melaka. Hasil ciptaan mereka dinilai secara teliti oleh Cef Fikree dan Cef Sarah. - [NC]</desc>
-  </programme>
   <programme start="20261003160000 +0000" stop="20261003170000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -45818,7 +45810,7 @@
   </programme>
   <programme start="20261003175000 +0000" stop="20261003180000 +0000" channel="tv9">
     <title lang="en">LEKAT KE IDOK?</title>
-    <desc lang="en">Episode 3 - Episod kali ini ada dua kakak sado Malaysia! Walaupun sado, tapi tetap cantik, jelita. Nak tengok macam mana gelagat Nana Al-Haleq &amp; Mira Bakri melekat pada Velcro Wall dalam "Lekat Ke Idok?". - [NC]</desc>
+    <desc lang="en">Episode 3 - Episod kali ini ada dua kakak sado Malaysia! Walaupun sado, tapi tetap cantik, jelita. Nak tengok macam mana gelagat Nana Al-Haleq &amp; Mira Bakri melekat pada Velcro Wall dalam &quot;Lekat Ke Idok?&quot;. - [NC]</desc>
   </programme>
   <programme start="20261003180000 +0000" stop="20261003193000 +0000" channel="tv9">
     <title lang="en">PAK KODI DISERANG ZOMBI</title>
@@ -45920,9 +45912,9 @@
     <title lang="en">DURJA NINGSUN</title>
     <desc lang="en">Episode 2 - Myra, Nurlida dan Aria gempar bilik asrama mereka diketuk berkali-kali pada lewat malam. Rupanya Suhana, rakan sebilik akhir Aria tapi penampilannya kelihatan lebih sopan. Yasmin sentiasa resah setiap kali bertemu Aria. - [NC]</desc>
   </programme>
-  <programme start="20261004153000 +0000" stop="20261004163000 +0000" channel="8tv">
-    <title lang="en">JOY OF LIFE SEASON 2</title>
-    <desc lang="en">Episode 1 - Fan Xian telah memalsukan kematiannya untuk melarikan diri. Fan Xian kini menyamar sebagai rakyat biasa bersama Wang Qi Nian dan kembali ke ibu kota. Mereka terkejut berita kematian Fan Xian telah pun tersebar ke seluruh bandar. - [NC]</desc>
+  <programme start="20261004153000 +0000" stop="20261004160000 +0000" channel="tv9">
+    <title lang="en">KISAH BENAR TRAGEDI ( SS 2 )</title>
+    <desc lang="en">Episode 7 - DEMI RAKAN.  Memaparkan penyiasatan kes pembunuhan pengawal keselamatan gudang oleh ASP Farah. Siasatan terperinci membongkar cubaan rompakan yang membawa kepada penangkapan suspek utama Zilani dan Halim. - [NC]</desc>
   </programme>
   <programme start="20261004163000 +0000" stop="20261004230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
@@ -46144,10 +46136,6 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20261004153000 +0000" stop="20261004160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 4 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
-  </programme>
   <programme start="20261004160000 +0000" stop="20261004230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 278 - [NC]</desc>
@@ -46355,7 +46343,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005143000 +0000" stop="20261005150131 +0000" channel="scl">
+  <programme start="20261005143000 +0000" stop="20261005154458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -46370,7 +46358,7 @@
   </programme>
   <programme start="20261004191000 +0000" stop="20261004210000 +0000" channel="thrill">
     <title lang="en">Whisper of Silent Body</title>
-    <desc lang="en">Episode 1 - Renowned as the "corpse whisperer," forensic pathologist Qin Ming uncovers vital clues from the corpses. During a homicide investigation, he unravels a murder case sixteen years ago in the snowy mountain with his assistant and a detective. Together, they unveil the secrets of the mysterious homicide. - [NC]</desc>
+    <desc lang="en">Episode 1 - Renowned as the &quot;corpse whisperer,&quot; forensic pathologist Qin Ming uncovers vital clues from the corpses. During a homicide investigation, he unravels a murder case sixteen years ago in the snowy mountain with his assistant and a detective. Together, they unveil the secrets of the mysterious homicide. - [NC]</desc>
   </programme>
   <programme start="20261004210000 +0000" stop="20261004222500 +0000" channel="thrill">
     <title lang="en">Behave</title>
@@ -46390,7 +46378,7 @@
   </programme>
   <programme start="20261005031000 +0000" stop="20261005050000 +0000" channel="thrill">
     <title lang="en">Whisper of Silent Body</title>
-    <desc lang="en">Episode 1 - Renowned as the "corpse whisperer," forensic pathologist Qin Ming uncovers vital clues from the corpses. During a homicide investigation, he unravels a murder case sixteen years ago in the snowy mountain with his assistant and a detective. Together, they unveil the secrets of the mysterious homicide. - [NC]</desc>
+    <desc lang="en">Episode 1 - Renowned as the &quot;corpse whisperer,&quot; forensic pathologist Qin Ming uncovers vital clues from the corpses. During a homicide investigation, he unravels a murder case sixteen years ago in the snowy mountain with his assistant and a detective. Together, they unveil the secrets of the mysterious homicide. - [NC]</desc>
   </programme>
   <programme start="20261005050000 +0000" stop="20261005062500 +0000" channel="thrill">
     <title lang="en">Behave</title>
@@ -46410,7 +46398,7 @@
   </programme>
   <programme start="20261005111000 +0000" stop="20261005130000 +0000" channel="thrill">
     <title lang="en">Whisper of Silent Body</title>
-    <desc lang="en">Episode 1 - Renowned as the "corpse whisperer," forensic pathologist Qin Ming uncovers vital clues from the corpses. During a homicide investigation, he unravels a murder case sixteen years ago in the snowy mountain with his assistant and a detective. Together, they unveil the secrets of the mysterious homicide. - [NC]</desc>
+    <desc lang="en">Episode 1 - Renowned as the &quot;corpse whisperer,&quot; forensic pathologist Qin Ming uncovers vital clues from the corpses. During a homicide investigation, he unravels a murder case sixteen years ago in the snowy mountain with his assistant and a detective. Together, they unveil the secrets of the mysterious homicide. - [NC]</desc>
   </programme>
   <programme start="20261005130000 +0000" stop="20261005144500 +0000" channel="thrill">
     <title lang="en">3 Demons</title>
@@ -46548,10 +46536,6 @@
     <title lang="en">REMANG</title>
     <desc lang="en">Episode 7 - CERMIN BERHANTU.  Episod ini memaparkan  kisah keluarga Wan membawa isterinya Sara dan anak mereka Imran dan Alif bercuti di sebuah inap desa. Suatu malam, Imran telah hilang membuatkan mereka semua panik. - [NC]</desc>
   </programme>
-  <programme start="20261004153000 +0000" stop="20261004160000 +0000" channel="tv9">
-    <title lang="en">KISAH BENAR TRAGEDI ( SS 2 )</title>
-    <desc lang="en">Episode 7 - DEMI RAKAN.  Memaparkan penyiasatan kes pembunuhan pengawal keselamatan gudang oleh ASP Farah. Siasatan terperinci membongkar cubaan rompakan yang membawa kepada penangkapan suspek utama Zilani dan Halim. - [NC]</desc>
-  </programme>
   <programme start="20261004160000 +0000" stop="20261004170000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -46562,7 +46546,7 @@
   </programme>
   <programme start="20261004175000 +0000" stop="20261004180000 +0000" channel="tv9">
     <title lang="en">LEKAT KE IDOK?</title>
-    <desc lang="en">Episode 4 - Boleh tahan juga Afieq Shazwan &amp; Ammar menyelesaikan cabaran melekat pada Velcro Wall dalam "Lekat Ke Idok?". Antara cabaran lain adalah Zorb Ball Race dan Kapas Selam. - [NC]</desc>
+    <desc lang="en">Episode 4 - Boleh tahan juga Afieq Shazwan &amp; Ammar menyelesaikan cabaran melekat pada Velcro Wall dalam &quot;Lekat Ke Idok?&quot;. Antara cabaran lain adalah Zorb Ball Race dan Kapas Selam. - [NC]</desc>
   </programme>
   <programme start="20261004180000 +0000" stop="20261004193000 +0000" channel="tv9">
     <title lang="en">MENANTU TANJUNG</title>
@@ -46667,6 +46651,10 @@
   <programme start="20261005143000 +0000" stop="20261005153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 4 - Ramai kanak-kanak keracunan makanan setelah minum susu yang dipromosi oleh Eun Ha dalam We Tube. Eun Ha bergegas ke hospital, melihat ramai kanak-kanak yang sakit, dia rasa bersalah. Eun Ha diserang oleh bapa kepada seorang mangsa. - [NC]</desc>
+  </programme>
+  <programme start="20261005153000 +0000" stop="20261005160000 +0000" channel="tv9">
+    <title lang="en">KINTANG KINTUNG</title>
+    <desc lang="en">Episode 6 - Episod ini Harun Salim Bachik dan Achey membincangkan isu 'Buli' bersama tetamu Musleh Aling. Beliau berkongsi pengalaman dibuli dan membuli hingga diinsafi, diiringi sketsa komedi serta persembahan lagu khas dalam episod ini. - [NC]</desc>
   </programme>
   <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="8tv">
     <title lang="en">THE LEGEND OF HEROES</title>
@@ -47012,82 +47000,86 @@
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 5 - SI GIGI HITAM.  Etnik Lu antara kelompok minoriti yang tinggal di kawasan pergunungan utara Vietnam. Selain latar lokasi yang indah, etnik ini turut mempunyai persepsi kecantikan luar biasa khususnya kaum wanita. - [NC]</desc>
   </programme>
-  <programme start="20261005150131 +0000" stop="20261005163131 +0000" channel="scl">
+  <programme start="20261006153000 +0000" stop="20261006160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 5 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  </programme>
+  <programme start="20261005154458 +0000" stop="20261005171458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005163131 +0000" stop="20261005180131 +0000" channel="scl">
+  <programme start="20261005171458 +0000" stop="20261005184458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005180131 +0000" stop="20261005193131 +0000" channel="scl">
+  <programme start="20261005184458 +0000" stop="20261005201458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005193131 +0000" stop="20261005210131 +0000" channel="scl">
+  <programme start="20261005201458 +0000" stop="20261005214458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005210131 +0000" stop="20261005223131 +0000" channel="scl">
+  <programme start="20261005214458 +0000" stop="20261005231458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005223131 +0000" stop="20261006000131 +0000" channel="scl">
+  <programme start="20261005231458 +0000" stop="20261006004458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006000131 +0000" stop="20261006013131 +0000" channel="scl">
+  <programme start="20261006004458 +0000" stop="20261006021458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006013131 +0000" stop="20261006030131 +0000" channel="scl">
+  <programme start="20261006021458 +0000" stop="20261006034458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006030131 +0000" stop="20261006043131 +0000" channel="scl">
+  <programme start="20261006034458 +0000" stop="20261006051458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006043131 +0000" stop="20261006060131 +0000" channel="scl">
+  <programme start="20261006051458 +0000" stop="20261006064458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006060131 +0000" stop="20261006073131 +0000" channel="scl">
+  <programme start="20261006064458 +0000" stop="20261006081458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006073131 +0000" stop="20261006090131 +0000" channel="scl">
+  <programme start="20261006081458 +0000" stop="20261006094458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006090131 +0000" stop="20261006103131 +0000" channel="scl">
+  <programme start="20261006094458 +0000" stop="20261006111458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006103131 +0000" stop="20261006120131 +0000" channel="scl">
+  <programme start="20261006111458 +0000" stop="20261006124458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006120131 +0000" stop="20261006133131 +0000" channel="scl">
+  <programme start="20261006124458 +0000" stop="20261006141458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006133131 +0000" stop="20261006150131 +0000" channel="scl">
+  <programme start="20261006141458 +0000" stop="20261006154458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -47280,13 +47272,9 @@
     <title lang="en">REMANG</title>
     <desc lang="en">Episode 8 - SIAPA TADI.  Episod ini DJ Ejay meneruskan cerita tentang empat orang pelajar iaitu Sam, Johan, Amin dan Ika membuat penggambaran cerita seram bagi menyertai satu pertandingan drama pendek di sebuah rumah lama yang misteri - [NC]</desc>
   </programme>
-  <programme start="20261005153000 +0000" stop="20261005160000 +0000" channel="tv9">
-    <title lang="en">KINTANG KINTUNG</title>
-    <desc lang="en">Episode 6 - Episod ini Harun Salim Bachik dan Achey membincangkan isu 'Buli' bersama tetamu Musleh Aling. Beliau berkongsi pengalaman dibuli dan membuli hingga diinsafi, diiringi sketsa komedi serta persembahan lagu khas dalam episod ini. - [NC]</desc>
-  </programme>
   <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="tv9">
     <title lang="en">PLAN B</title>
-    <desc lang="en">Episode 5 - Khai kalah dalam perlumbaan kereta "drift". Dia tidak mampu membayar wang taruhan sebanyak RM50 ribu lalu menggadai kereta lumbanya. Di rumah Khai terperangkap ketika dia cuba membuka peti besi wang bapanya. Dia dihalau dari rumah. - [NC]</desc>
+    <desc lang="en">Episode 5 - Khai kalah dalam perlumbaan kereta &quot;drift&quot;. Dia tidak mampu membayar wang taruhan sebanyak RM50 ribu lalu menggadai kereta lumbanya. Di rumah Khai terperangkap ketika dia cuba membuka peti besi wang bapanya. Dia dihalau dari rumah. - [NC]</desc>
   </programme>
   <programme start="20261005170000 +0000" stop="20261005175000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
@@ -47378,7 +47366,7 @@
   </programme>
   <programme start="20261006093000 +0000" stop="20261006100000 +0000" channel="tv9">
     <title lang="en">ODDBODS SEASON 3</title>
-    <desc lang="en">Episode 10 - GHOSTED.  Bubbles mendapati percubaan terbaharunya menimbulkan masalah hantu lalu dia mencipta "magnet hantu" untuk memerangkap roh-roh itu. Masalah timbul apabila magnet itu rosak. - [NC]</desc>
+    <desc lang="en">Episode 10 - GHOSTED.  Bubbles mendapati percubaan terbaharunya menimbulkan masalah hantu lalu dia mencipta &quot;magnet hantu&quot; untuk memerangkap roh-roh itu. Masalah timbul apabila magnet itu rosak. - [NC]</desc>
   </programme>
   <programme start="20261006100000 +0000" stop="20261006103000 +0000" channel="tv9">
     <title lang="en">BREAD BARBERSHOP (SEASON 1)</title>
@@ -47403,6 +47391,10 @@
   <programme start="20261006143000 +0000" stop="20261006153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 5 - Eun Ha menjadi pembantu rumah di kediaman Ye Na, merasa kekok ketika bertembung dengan Ji Hwan. Kemudian, mereka bertemu secara kebetulan di warung makan. Dalam keadaan mabuk, Ji Hwan melarikan diri ke sebuah taman permainan. - [NC]</desc>
+  </programme>
+  <programme start="20261006153000 +0000" stop="20261006160000 +0000" channel="tv9">
+    <title lang="en">DUNIA TERSEMBUNYI</title>
+    <desc lang="en">Episode 11 - SAKTI SI BISSU.  Masyarakat Bissu yang tinggal di Pulau Pangka, Sulawesi Selatan, Indonesia dikatakan mempunyai kesaktian tertentu. Bissu bermaksud  bersih dan suci. Mereka mempunyai status tertinggi dalam pemerintahan . - [NC]</desc>
   </programme>
   <programme start="20261006160000 +0000" stop="20261006170000 +0000" channel="8tv">
     <title lang="en">THE LEGEND OF HEROES</title>
@@ -47616,10 +47608,6 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20261006153000 +0000" stop="20261006160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 5 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
-  </programme>
   <programme start="20261006160000 +0000" stop="20261006230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 280 - [NC]</desc>
@@ -47752,82 +47740,86 @@
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 6 - UPACARA BACI.  Etnik Khmu antara etnik minoriti yang menata taburan populasi di Laos khususnya Oudomxay. Kepercayaan silam mengenai tuah dan kepercayaan berdasarkan upacara khas masih kekal diamalkan oleh etnik ini. - [NC]</desc>
   </programme>
-  <programme start="20261006150131 +0000" stop="20261006163131 +0000" channel="scl">
+  <programme start="20261007153000 +0000" stop="20261007160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 6 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  </programme>
+  <programme start="20261006154458 +0000" stop="20261006171458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006163131 +0000" stop="20261006180131 +0000" channel="scl">
+  <programme start="20261006171458 +0000" stop="20261006184458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006180131 +0000" stop="20261006193131 +0000" channel="scl">
+  <programme start="20261006184458 +0000" stop="20261006201458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006193131 +0000" stop="20261006210131 +0000" channel="scl">
+  <programme start="20261006201458 +0000" stop="20261006214458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006210131 +0000" stop="20261006223131 +0000" channel="scl">
+  <programme start="20261006214458 +0000" stop="20261006231458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006223131 +0000" stop="20261007000131 +0000" channel="scl">
+  <programme start="20261006231458 +0000" stop="20261007004458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007000131 +0000" stop="20261007013131 +0000" channel="scl">
+  <programme start="20261007004458 +0000" stop="20261007021458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007013131 +0000" stop="20261007030131 +0000" channel="scl">
+  <programme start="20261007021458 +0000" stop="20261007034458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007030131 +0000" stop="20261007043131 +0000" channel="scl">
+  <programme start="20261007034458 +0000" stop="20261007051458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007043131 +0000" stop="20261007060131 +0000" channel="scl">
+  <programme start="20261007051458 +0000" stop="20261007064458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007060131 +0000" stop="20261007073131 +0000" channel="scl">
+  <programme start="20261007064458 +0000" stop="20261007081458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007073131 +0000" stop="20261007090131 +0000" channel="scl">
+  <programme start="20261007081458 +0000" stop="20261007094458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007090131 +0000" stop="20261007103131 +0000" channel="scl">
+  <programme start="20261007094458 +0000" stop="20261007111458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007103131 +0000" stop="20261007120131 +0000" channel="scl">
+  <programme start="20261007111458 +0000" stop="20261007124458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007120131 +0000" stop="20261007133131 +0000" channel="scl">
+  <programme start="20261007124458 +0000" stop="20261007141458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007133131 +0000" stop="20261007150131 +0000" channel="scl">
+  <programme start="20261007141458 +0000" stop="20261007154458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -48032,10 +48024,6 @@
     <title lang="en">SCARLET HEART</title>
     <desc lang="en">Episode 11 - Hae Soo dipenjarakan dan diseksa atas tuduhan cuba membunuh Putera Mahkota. Walaupun mengetahui dalang sebenar di sebalik konspirasi itu, Putera Wang Wook memilih untuk berdiam diri demi politik dan keluarganya. - [NC]</desc>
   </programme>
-  <programme start="20261006153000 +0000" stop="20261006160000 +0000" channel="tv9">
-    <title lang="en">DUNIA TERSEMBUNYI</title>
-    <desc lang="en">Episode 11 - SAKTI SI BISSU.  Masyarakat Bissu yang tinggal di Pulau Pangka, Sulawesi Selatan, Indonesia dikatakan mempunyai kesaktian tertentu. Bissu bermaksud  bersih dan suci. Mereka mempunyai status tertinggi dalam pemerintahan . - [NC]</desc>
-  </programme>
   <programme start="20261006160000 +0000" stop="20261006170000 +0000" channel="tv9">
     <title lang="en">PLAN B</title>
     <desc lang="en">Episode 6 - Suasana dalam keluarga Khai semakin memburuk kerana Dr Rizman kini mahu tarik balik segala kemewahan yang dia berikan kepada Khai. Dr Rizman mahu Khai berdikari dan menjadi lebih bertanggungjawab. - [NC]</desc>
@@ -48155,6 +48143,10 @@
   <programme start="20261007143000 +0000" stop="20261007153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 6 - Eun Ha dipecat oleh CEO Ma dan dihalau dari apartment yang disediakan oleh syarikatnya. Eun Ha yang tiada tempat duduk merayau di jalan dan terserempak dengan Ji Hwan dalam hujan lebat. Ji Hwan sebenarnya mengetahui kedudukan Eun Ha. - [NC]</desc>
+  </programme>
+  <programme start="20261007153000 +0000" stop="20261007160000 +0000" channel="tv9">
+    <title lang="en">BANG BANG BOOM SEASON 11 &amp; 12</title>
+    <desc lang="en">Episode 23 - Sebuah program komedi yang dihoskan oleh Amat dan Azahari. Sejak diperkenalkan pada tahun 2007, BANG BANG BOOM! (BBB) sering melakukan pembaharuan dalam memberikan kejutan kepada para peminat setianya. - [NC]</desc>
   </programme>
   <programme start="20261007160000 +0000" stop="20261007170000 +0000" channel="8tv">
     <title lang="en">THE LEGEND OF HEROES</title>
@@ -48376,9 +48368,9 @@ TR vs BTRM - [NC]</desc>
 
 SRG vs FL - [NC]</desc>
   </programme>
-  <programme start="20261007153000 +0000" stop="20261007160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 6 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  <programme start="20261008153000 +0000" stop="20261008160000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20261007160000 +0000" stop="20261007230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
@@ -48438,7 +48430,7 @@ SRG vs FL - [NC]</desc>
   </programme>
   <programme start="20261008060000 +0000" stop="20261008063000 +0000" channel="ntv7">
     <title lang="en">SAYA ISTIMEWA</title>
-    <desc lang="en">Episode 2 - Episod ini memaparkan kisah hidup seorang kanak-kanak kurang upaya (OKU) kategori B1 iaitu hilang penglihatan. Berumur 11 tahun, dia sudah boleh membaca menggunakan "brail" dan pandai mengaji serta bermain piano. - [NC]</desc>
+    <desc lang="en">Episode 2 - Episod ini memaparkan kisah hidup seorang kanak-kanak kurang upaya (OKU) kategori B1 iaitu hilang penglihatan. Berumur 11 tahun, dia sudah boleh membaca menggunakan &quot;brail&quot; dan pandai mengaji serta bermain piano. - [NC]</desc>
   </programme>
   <programme start="20261008063000 +0000" stop="20261008070000 +0000" channel="ntv7">
     <title lang="en">PRASEKOLAH 2026</title>
@@ -48508,82 +48500,86 @@ SRG vs FL - [NC]</desc>
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 7 - PONDOK CINTA.  Menjadi kewajipan bagi seorang bapa etnik Kreng di kawasan pedalaman Kemboja membina pondok khas untuk anak gadis mereka. Mereka percaya, tanpa pondok ini anak gadis mereka tidak akan bertemu jodoh. - [NC]</desc>
   </programme>
-  <programme start="20261007150131 +0000" stop="20261007163131 +0000" channel="scl">
+  <programme start="20261008153000 +0000" stop="20261008160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 7 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  </programme>
+  <programme start="20261007154458 +0000" stop="20261007171458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007163131 +0000" stop="20261007180131 +0000" channel="scl">
+  <programme start="20261007171458 +0000" stop="20261007184458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007180131 +0000" stop="20261007193131 +0000" channel="scl">
+  <programme start="20261007184458 +0000" stop="20261007201458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007193131 +0000" stop="20261007210131 +0000" channel="scl">
+  <programme start="20261007201458 +0000" stop="20261007214458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007210131 +0000" stop="20261007223131 +0000" channel="scl">
+  <programme start="20261007214458 +0000" stop="20261007231458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007223131 +0000" stop="20261008000131 +0000" channel="scl">
+  <programme start="20261007231458 +0000" stop="20261008004458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008000131 +0000" stop="20261008013131 +0000" channel="scl">
+  <programme start="20261008004458 +0000" stop="20261008021458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008013131 +0000" stop="20261008030131 +0000" channel="scl">
+  <programme start="20261008021458 +0000" stop="20261008034458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008030131 +0000" stop="20261008043131 +0000" channel="scl">
+  <programme start="20261008034458 +0000" stop="20261008051458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008043131 +0000" stop="20261008060131 +0000" channel="scl">
+  <programme start="20261008051458 +0000" stop="20261008064458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008060131 +0000" stop="20261008073131 +0000" channel="scl">
+  <programme start="20261008064458 +0000" stop="20261008081458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008073131 +0000" stop="20261008090131 +0000" channel="scl">
+  <programme start="20261008081458 +0000" stop="20261008094458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008090131 +0000" stop="20261008103131 +0000" channel="scl">
+  <programme start="20261008094458 +0000" stop="20261008111458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008103131 +0000" stop="20261008120131 +0000" channel="scl">
+  <programme start="20261008111458 +0000" stop="20261008124458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008120131 +0000" stop="20261008133131 +0000" channel="scl">
+  <programme start="20261008124458 +0000" stop="20261008141458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008133131 +0000" stop="20261008150131 +0000" channel="scl">
+  <programme start="20261008141458 +0000" stop="20261008154458 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -48776,10 +48772,6 @@ SRG vs FL - [NC]</desc>
     <title lang="en">SCARLET HEART</title>
     <desc lang="en">Episode 12 - Hae Soo dibuang dari istana selepas kematian Dayang Oh. Dia hidup sebagai pelayan biasa. Putera Wang So pula dihantar sebagai utusan ke Later Jin, tetapi sebelum bertolak dia meluahkan perasaannya kepada Hae Soo. - [NC]</desc>
   </programme>
-  <programme start="20261007153000 +0000" stop="20261007160000 +0000" channel="tv9">
-    <title lang="en">BANG BANG BOOM SEASON 11 &amp; 12</title>
-    <desc lang="en">Episode 23 - Sebuah program komedi yang dihoskan oleh Amat dan Azahari. Sejak diperkenalkan pada tahun 2007, BANG BANG BOOM! (BBB) sering melakukan pembaharuan dalam memberikan kejutan kepada para peminat setianya. - [NC]</desc>
-  </programme>
   <programme start="20261007160000 +0000" stop="20261007170000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -48895,5 +48887,9 @@ SRG vs FL - [NC]</desc>
   <programme start="20261008143000 +0000" stop="20261008153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 7 - Jang Hyun Woo, seorang pendakwa dan juga rakan zaman kanak-kanak Eun Ha muncul. Ji Hwan diingatkan oleh Hyun Woo masa silamnya sebagai ketua kumpulan samseng. Ji Hwan kecil hati lalu meninggalkan Eun Ha bersama Hyun Eoo. - [NC]</desc>
+  </programme>
+  <programme start="20261008153000 +0000" stop="20261008160000 +0000" channel="tv9">
+    <title lang="en">KHURAFAT</title>
+    <desc lang="en">Episode 2 - Episod ini mengupas amalan khurafat dan sihir menggunakan telur serta perubatan tradisional. Turut dipaparkan pendedahan Jaafar Onn yang pernah disantau, di samping peringatan agar menjauhi rawatan yang meragukan. - [NC]</desc>
   </programme>
 </tv>
