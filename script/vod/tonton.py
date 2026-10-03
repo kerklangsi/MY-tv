@@ -177,6 +177,8 @@ def process_vod(device_id):
     os.makedirs(VOD_TONTON, exist_ok=True)
     active_files_set = set()
     tonton_token = get_token(allow_browser=False)
+    if not tonton_token:
+        raise FileNotFoundError("'auth/tonton' not found! Please run refresh_token.yml or python script/auth.py --force to generate it.")
 
     raw_catalog_items = []
     seen_show_ids = set()

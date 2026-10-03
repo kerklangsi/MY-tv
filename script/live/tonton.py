@@ -37,6 +37,8 @@ def process_live(device_id):
     processed_slugs = set()
     active_files_set = set()
     tonton_token = get_token(allow_browser=False)
+    if not tonton_token:
+        raise FileNotFoundError("'auth/tonton' not found! Please run refresh_token.yml or python script/auth.py --force to generate it.")
 
     for idx, ch in enumerate(live_channels, 1):
         c_id = ch.get("id")
