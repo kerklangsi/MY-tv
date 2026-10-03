@@ -50929,6 +50929,10 @@
     <title lang="en">Germany v Japan | Group E | FIFA World Cup Qatar 2022™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Germany and Japan played at Khalifa International Stadium, Ar-Rayyan. - [NC]</desc>
   </programme>
+  <programme start="20261003123315 +0000" stop="20261003150651 +0000" channel="fifa">
+    <title lang="en">Germany v Argentina | Final | 2014 FIFA World Cup Brazil™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full replay from the match between Germany and Argentina - [NC]</desc>
+  </programme>
   <programme start="20261002100000 +0000" stop="20261002160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
@@ -50948,10 +50952,6 @@
   <programme start="20261003100000 +0000" stop="20261003160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20261002120000 +0000" stop="20261002123000 +0000" channel="ntv7">
-    <title lang="en">SUKSES MATRIKS TAHUN 4</title>
-    <desc lang="en">Episode 5 - [NC]</desc>
   </programme>
   <programme start="20261002123000 +0000" stop="20261002130000 +0000" channel="ntv7">
     <title lang="en">SUKSES MATRIKS TAHUN 4</title>
@@ -51080,6 +51080,10 @@
   <programme start="20261003120000 +0000" stop="20261003123000 +0000" channel="ntv7">
     <title lang="en">SUKSES MATRIKS TAHUN 4</title>
     <desc lang="en">Episode 3 - [NC]</desc>
+  </programme>
+  <programme start="20261003123000 +0000" stop="20261003130000 +0000" channel="ntv7">
+    <title lang="en">SUKSES MATRIKS TAHUN 4</title>
+    <desc lang="en">Episode 8 - [NC]</desc>
   </programme>
   <programme start="20261002100000 +0000" stop="20261002160000 +0000" channel="scl">
     <title lang="en"> Shadow Combat League (SCL): New Dawn Malaysia</title>
@@ -51309,10 +51313,6 @@
     <title lang="en">BULETIN UTAMA (2026/2027)</title>
     <desc lang="en">Episode 95 - [NC]</desc>
   </programme>
-  <programme start="20261002115000 +0000" stop="20261002124000 +0000" channel="tv9">
-    <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
-    <desc lang="en">Episode 40 - [NC]</desc>
-  </programme>
   <programme start="20261002124000 +0000" stop="20261002140000 +0000" channel="tv9">
     <title lang="en">I CAN SEE YOUR VOICE MALAYSIA MUSIM KE 7</title>
     <desc lang="en">Episode 11 - Episod ini hos Izzue Islam &amp; Shiha Zikir, Khai Bahar tampil meneka penyanyi sebenar dibantu Wani Hasrita &amp; Marsha Milan. Selepas 4 pusingan, pasangan penyamar Muhammad Norie &amp; Iskandar berjaya bawa pulang RM3000. - [NC]</desc>
@@ -51432,6 +51432,10 @@
   <programme start="20261003115000 +0000" stop="20261003124000 +0000" channel="tv9">
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
     <desc lang="en">Episode 41 - [NC]</desc>
+  </programme>
+  <programme start="20261003124000 +0000" stop="20261003143000 +0000" channel="tv9">
+    <title lang="en">SIAPA DIA SEBENARNYA</title>
+    <desc lang="en">Episode 1 - Adrianna, seorang gadis ceria dan pintar, menulis novel serta menyediakan thesis PHD dalam bidang jenayah. Qalif, seorang pemuda bersifat mulia dan penerbit berjaya. Selepas berkenalan selama 4 bulan, mereka akhirnya berkahwin. - [NC]</desc>
   </programme>
   <programme start="20261003130000 +0000" stop="20261003150000 +0000" channel="8tv">
     <title lang="en">THE TREASURED VOICE S7</title>
@@ -51601,10 +51605,6 @@
     <title lang="en">KISAH CINTA KITA</title>
     <desc lang="en">Episode 8 - Aleesa merahsiakan perkahwinannya dengan Amer serta penyamarannya sebagai Natasya. Sementara Siti obses terhadap Putra, Datin Laila mula mencurigai kewujudan agenda tersembunyi antara Amer dan Natasya. - [NC]</desc>
   </programme>
-  <programme start="20261003123315 +0000" stop="20261003150651 +0000" channel="fifa">
-    <title lang="en">Germany v Argentina | Final | 2014 FIFA World Cup Brazil™ | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full replay from the match between Germany and Argentina - [NC]</desc>
-  </programme>
   <programme start="20261003150651 +0000" stop="20261003165809 +0000" channel="fifa">
     <title lang="en">Bulgaria v Germany | Quarter-finals | 1994 FIFA World Cup USA™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Bulgaria and Germany played at Giants Stadium, New Jersey. - [NC]</desc>
@@ -51668,10 +51668,6 @@
   <programme start="20261004100000 +0000" stop="20261004160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20261003123000 +0000" stop="20261003130000 +0000" channel="ntv7">
-    <title lang="en">SUKSES MATRIKS TAHUN 4</title>
-    <desc lang="en">Episode 8 - [NC]</desc>
   </programme>
   <programme start="20261003130000 +0000" stop="20261003140000 +0000" channel="ntv7">
     <title lang="en">MSSM 2026</title>
@@ -51796,6 +51792,10 @@
   <programme start="20261004120000 +0000" stop="20261004123000 +0000" channel="ntv7">
     <title lang="en">SUKSES MATRIKS TAHUN 4</title>
     <desc lang="en">Episode 4 - [NC]</desc>
+  </programme>
+  <programme start="20261004123000 +0000" stop="20261004130000 +0000" channel="ntv7">
+    <title lang="en">SUKSES MATRIKS TAHUN 4</title>
+    <desc lang="en">Episode 9 - [NC]</desc>
   </programme>
   <programme start="20261003140000 +0000" stop="20261003160000 +0000" channel="scl">
     <title lang="en"> Shadow Combat League (SCL): New Dawn Malaysia</title>
@@ -52017,10 +52017,6 @@
     <title lang="en">BULETIN UTAMA (2026/2027)</title>
     <desc lang="en">Episode 96 - [NC]</desc>
   </programme>
-  <programme start="20261003124000 +0000" stop="20261003143000 +0000" channel="tv9">
-    <title lang="en">SIAPA DIA SEBENARNYA</title>
-    <desc lang="en">Episode 1 - Adrianna, seorang gadis ceria dan pintar, menulis novel serta menyediakan thesis PHD dalam bidang jenayah. Qalif, seorang pemuda bersifat mulia dan penerbit berjaya. Selepas berkenalan selama 4 bulan, mereka akhirnya berkahwin. - [NC]</desc>
-  </programme>
   <programme start="20261003143000 +0000" stop="20261003153000 +0000" channel="tv9">
     <title lang="en">DURJA NINGSUN</title>
     <desc lang="en">Episode 1 - Permulaan kisah, sedikit latar gangguan mimpi dan rasukan Aria ke dunia silam, dunia Ningsun. Akhirnya Aria sembuh setelah berjaya dirawat oleh atuknya Haji Shaaban. Sejak berusia 14 tahun, Aria derita kerana mudah dirasuki. - [NC]</desc>
@@ -52132,6 +52128,10 @@
   <programme start="20261004115000 +0000" stop="20261004124000 +0000" channel="tv9">
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
     <desc lang="en">Episode 42 - [NC]</desc>
+  </programme>
+  <programme start="20261004124000 +0000" stop="20261004143000 +0000" channel="tv9">
+    <title lang="en">SEMONTEL CINTA KITA</title>
+    <desc lang="en">Episode 1 - Zulia menjadi kalut apabila suaminya Osman mula mengubah penampilan, berdiet dan sentiasa wangi. Zulia cemas apatah lagi teman baiknya, Marlia bercerita mengenai ragam lelaki yang semakin laku dan diminati wanita apabila usia menjejak 40 tahun. - [NC]</desc>
   </programme>
   <programme start="20261004130000 +0000" stop="20261004143000 +0000" channel="8tv">
     <title lang="en">SUPER DIVA SEASON 9</title>
@@ -52361,10 +52361,6 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20261004123000 +0000" stop="20261004130000 +0000" channel="ntv7">
-    <title lang="en">SUKSES MATRIKS TAHUN 4</title>
-    <desc lang="en">Episode 9 - [NC]</desc>
-  </programme>
   <programme start="20261004130000 +0000" stop="20261004133000 +0000" channel="ntv7">
     <title lang="en">PERMATA BELANTARA</title>
     <desc lang="en">Episode 6 - [NC]</desc>
@@ -52497,6 +52493,10 @@
     <title lang="en">PECUTAN SPM 2024</title>
     <desc lang="en">Episode 1 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
   </programme>
+  <programme start="20261005123000 +0000" stop="20261005130000 +0000" channel="ntv7">
+    <title lang="en">PECUTAN SPM 2024</title>
+    <desc lang="en">Episode 2 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
+  </programme>
   <programme start="20261004160000 +0000" stop="20261004173000 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
@@ -52562,7 +52562,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005113000 +0000" stop="20261005122507 +0000" channel="scl">
+  <programme start="20261005113000 +0000" stop="20261005125051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -52747,10 +52747,6 @@
     <title lang="en">BULETIN UTAMA (2026/2027)</title>
     <desc lang="en">Episode 97 - [NC]</desc>
   </programme>
-  <programme start="20261004124000 +0000" stop="20261004143000 +0000" channel="tv9">
-    <title lang="en">SEMONTEL CINTA KITA</title>
-    <desc lang="en">Episode 1 - Zulia menjadi kalut apabila suaminya Osman mula mengubah penampilan, berdiet dan sentiasa wangi. Zulia cemas apatah lagi teman baiknya, Marlia bercerita mengenai ragam lelaki yang semakin laku dan diminati wanita apabila usia menjejak 40 tahun. - [NC]</desc>
-  </programme>
   <programme start="20261004143000 +0000" stop="20261004153000 +0000" channel="tv9">
     <title lang="en">DURJA NINGSUN</title>
     <desc lang="en">Episode 2 - Myra, Nurlida dan Aria gempar bilik asrama mereka diketuk berkali-kali pada lewat malam. Rupanya Suhana, rakan sebilik akhir Aria tapi penampilannya kelihatan lebih sopan. Yasmin sentiasa resah setiap kali bertemu Aria. - [NC]</desc>
@@ -52866,6 +52862,10 @@
   <programme start="20261005115000 +0000" stop="20261005124000 +0000" channel="tv9">
     <title lang="en">BUKAN CINTA AKU</title>
     <desc lang="en">Episode 17 - Masih terngiang-ngiang kata-kata Riana di telinga Tengku Isma tetapi dia harus tetap bersabar kerana mahu memenangi hati Riana. Beliau mengarahkan beberapa orang untuk mencari semula Arjuna. - [NC]</desc>
+  </programme>
+  <programme start="20261005124000 +0000" stop="20261005143000 +0000" channel="tv9">
+    <title lang="en">KENAPA AKU BINTI ABDULLAH</title>
+    <desc lang="en">Episode 1 - Seorang gadis, Amirah, mengalami kemelut dalam hidupnya dan mula sedar akan nama bapanya yang bernama Abdullah. Kekeliruannya membuatkan Amirah bertanya orang sekeliling untuk mencari jawapan. Amirah mendesak ibunya. - [NC]</desc>
   </programme>
   <programme start="20261005130000 +0000" stop="20261005140000 +0000" channel="8tv">
     <title lang="en">PURSUIT OF JADE</title>
@@ -53079,10 +53079,6 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20261005123000 +0000" stop="20261005130000 +0000" channel="ntv7">
-    <title lang="en">PECUTAN SPM 2024</title>
-    <desc lang="en">Episode 2 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
-  </programme>
   <programme start="20261005130000 +0000" stop="20261005133000 +0000" channel="ntv7">
     <title lang="en">MAJALAH DIDIK 2026</title>
     <desc lang="en">Episode 10 - [NC]</desc>
@@ -53211,82 +53207,86 @@
     <title lang="en">PECUTAN SPM 2024</title>
     <desc lang="en">Episode 3 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
   </programme>
-  <programme start="20261005122507 +0000" stop="20261005135507 +0000" channel="scl">
+  <programme start="20261006123000 +0000" stop="20261006130000 +0000" channel="ntv7">
+    <title lang="en">PECUTAN SPM 2024</title>
+    <desc lang="en">Episode 4 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
+  </programme>
+  <programme start="20261005125051 +0000" stop="20261005142051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005135507 +0000" stop="20261005152507 +0000" channel="scl">
+  <programme start="20261005142051 +0000" stop="20261005155051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005152507 +0000" stop="20261005165507 +0000" channel="scl">
+  <programme start="20261005155051 +0000" stop="20261005172051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005165507 +0000" stop="20261005182507 +0000" channel="scl">
+  <programme start="20261005172051 +0000" stop="20261005185051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005182507 +0000" stop="20261005195507 +0000" channel="scl">
+  <programme start="20261005185051 +0000" stop="20261005202051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005195507 +0000" stop="20261005212507 +0000" channel="scl">
+  <programme start="20261005202051 +0000" stop="20261005215051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005212507 +0000" stop="20261005225507 +0000" channel="scl">
+  <programme start="20261005215051 +0000" stop="20261005232051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005225507 +0000" stop="20261006002507 +0000" channel="scl">
+  <programme start="20261005232051 +0000" stop="20261006005051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006002507 +0000" stop="20261006015507 +0000" channel="scl">
+  <programme start="20261006005051 +0000" stop="20261006022051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006015507 +0000" stop="20261006032507 +0000" channel="scl">
+  <programme start="20261006022051 +0000" stop="20261006035051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006032507 +0000" stop="20261006045507 +0000" channel="scl">
+  <programme start="20261006035051 +0000" stop="20261006052051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006045507 +0000" stop="20261006062507 +0000" channel="scl">
+  <programme start="20261006052051 +0000" stop="20261006065051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006062507 +0000" stop="20261006075507 +0000" channel="scl">
+  <programme start="20261006065051 +0000" stop="20261006082051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006075507 +0000" stop="20261006092507 +0000" channel="scl">
+  <programme start="20261006082051 +0000" stop="20261006095051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006092507 +0000" stop="20261006105507 +0000" channel="scl">
+  <programme start="20261006095051 +0000" stop="20261006112051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006105507 +0000" stop="20261006122507 +0000" channel="scl">
+  <programme start="20261006112051 +0000" stop="20261006125051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -53479,10 +53479,6 @@
     <title lang="en">BULETIN UTAMA (2026/2027)</title>
     <desc lang="en">Episode 98 - [NC]</desc>
   </programme>
-  <programme start="20261005124000 +0000" stop="20261005143000 +0000" channel="tv9">
-    <title lang="en">KENAPA AKU BINTI ABDULLAH</title>
-    <desc lang="en">Episode 1 - Seorang gadis, Amirah, mengalami kemelut dalam hidupnya dan mula sedar akan nama bapanya yang bernama Abdullah. Kekeliruannya membuatkan Amirah bertanya orang sekeliling untuk mencari jawapan. Amirah mendesak ibunya. - [NC]</desc>
-  </programme>
   <programme start="20261005143000 +0000" stop="20261005153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 4 - Ramai kanak-kanak keracunan makanan setelah minum susu yang dipromosi oleh Eun Ha dalam We Tube. Eun Ha bergegas ke hospital, melihat ramai kanak-kanak yang sakit, dia rasa bersalah. Eun Ha diserang oleh bapa kepada seorang mangsa. - [NC]</desc>
@@ -53602,6 +53598,10 @@
   <programme start="20261006115000 +0000" stop="20261006124000 +0000" channel="tv9">
     <title lang="en">BUKAN CINTA AKU</title>
     <desc lang="en">Episode 18 - Tengku Isma dan Riana yang masih berada di Lombok ternampak Arjuna di tepi pantai dalam keadaan yang sudah  hilang ingatan. Riana hampir dipukul oleh Arjuna apabila cuba menghampirinya. Arjuna sudah tidak mengenalinya. - [NC]</desc>
+  </programme>
+  <programme start="20261006124000 +0000" stop="20261006143000 +0000" channel="tv9">
+    <title lang="en">HANYA UNTUK BONDA</title>
+    <desc lang="en">Episode 1 - Syafira tinggal bersama ibunya Salmiah selepas bapanya meninggal duinia. Syafira seorang pelajar tingkatan lima yang menghadapi keperitan hidup apabila terpaksa berhadapan dengan tiga persimpangan, iaitu untuk menjaga ibunya. - [NC]</desc>
   </programme>
   <programme start="20261006130000 +0000" stop="20261006140000 +0000" channel="8tv">
     <title lang="en">PURSUIT OF JADE</title>
@@ -53815,10 +53815,6 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20261006123000 +0000" stop="20261006130000 +0000" channel="ntv7">
-    <title lang="en">PECUTAN SPM 2024</title>
-    <desc lang="en">Episode 4 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
-  </programme>
   <programme start="20261006130000 +0000" stop="20261006133000 +0000" channel="ntv7">
     <title lang="en">MYINOVASI</title>
     <desc lang="en">Episode 4 - [NC]</desc>
@@ -53951,82 +53947,86 @@
     <title lang="en">PECUTAN SPM 2024</title>
     <desc lang="en">Episode 5 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
   </programme>
-  <programme start="20261006122507 +0000" stop="20261006135507 +0000" channel="scl">
+  <programme start="20261007123000 +0000" stop="20261007130000 +0000" channel="ntv7">
+    <title lang="en">PECUTAN SPM 2024</title>
+    <desc lang="en">Episode 6 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
+  </programme>
+  <programme start="20261006125051 +0000" stop="20261006142051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006135507 +0000" stop="20261006152507 +0000" channel="scl">
+  <programme start="20261006142051 +0000" stop="20261006155051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006152507 +0000" stop="20261006165507 +0000" channel="scl">
+  <programme start="20261006155051 +0000" stop="20261006172051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006165507 +0000" stop="20261006182507 +0000" channel="scl">
+  <programme start="20261006172051 +0000" stop="20261006185051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006182507 +0000" stop="20261006195507 +0000" channel="scl">
+  <programme start="20261006185051 +0000" stop="20261006202051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006195507 +0000" stop="20261006212507 +0000" channel="scl">
+  <programme start="20261006202051 +0000" stop="20261006215051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006212507 +0000" stop="20261006225507 +0000" channel="scl">
+  <programme start="20261006215051 +0000" stop="20261006232051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006225507 +0000" stop="20261007002507 +0000" channel="scl">
+  <programme start="20261006232051 +0000" stop="20261007005051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007002507 +0000" stop="20261007015507 +0000" channel="scl">
+  <programme start="20261007005051 +0000" stop="20261007022051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007015507 +0000" stop="20261007032507 +0000" channel="scl">
+  <programme start="20261007022051 +0000" stop="20261007035051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007032507 +0000" stop="20261007045507 +0000" channel="scl">
+  <programme start="20261007035051 +0000" stop="20261007052051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007045507 +0000" stop="20261007062507 +0000" channel="scl">
+  <programme start="20261007052051 +0000" stop="20261007065051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007062507 +0000" stop="20261007075507 +0000" channel="scl">
+  <programme start="20261007065051 +0000" stop="20261007082051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007075507 +0000" stop="20261007092507 +0000" channel="scl">
+  <programme start="20261007082051 +0000" stop="20261007095051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007092507 +0000" stop="20261007105507 +0000" channel="scl">
+  <programme start="20261007095051 +0000" stop="20261007112051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007105507 +0000" stop="20261007122507 +0000" channel="scl">
+  <programme start="20261007112051 +0000" stop="20261007125051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -54231,10 +54231,6 @@
     <title lang="en">BULETIN UTAMA (2026/2027)</title>
     <desc lang="en">Episode 99 - [NC]</desc>
   </programme>
-  <programme start="20261006124000 +0000" stop="20261006143000 +0000" channel="tv9">
-    <title lang="en">HANYA UNTUK BONDA</title>
-    <desc lang="en">Episode 1 - Syafira tinggal bersama ibunya Salmiah selepas bapanya meninggal duinia. Syafira seorang pelajar tingkatan lima yang menghadapi keperitan hidup apabila terpaksa berhadapan dengan tiga persimpangan, iaitu untuk menjaga ibunya. - [NC]</desc>
-  </programme>
   <programme start="20261006143000 +0000" stop="20261006153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 5 - Eun Ha menjadi pembantu rumah di kediaman Ye Na, merasa kekok ketika bertembung dengan Ji Hwan. Kemudian, mereka bertemu secara kebetulan di warung makan. Dalam keadaan mabuk, Ji Hwan melarikan diri ke sebuah taman permainan. - [NC]</desc>
@@ -54354,6 +54350,10 @@
   <programme start="20261007115000 +0000" stop="20261007124000 +0000" channel="tv9">
     <title lang="en">BUKAN CINTA AKU</title>
     <desc lang="en">Episode 19 - Riana sedih melihat keadaan Arjuna yang tidak terurus dan langsung tidak mengingati siapa Riana. Riana tetap mahu menjaga Arjuna dan memastikan ingatannya pulih. Tengku Isma pulang dengan kecewa. - [NC]</desc>
+  </programme>
+  <programme start="20261007124000 +0000" stop="20261007143000 +0000" channel="tv9">
+    <title lang="en">KERANA SETITIK SUSU</title>
+    <desc lang="en">Episode 1 - Mia, seorang yatim piatu baru sahaja diceraikan sehelai sepinggang. Nuh pula seorang penganggur yang perlu menjaga ibunya yang sakit kritikal. Mampukah dua jiwa terdesak ini mengubah hidup mereka, kerana setitik susu? - [NC]</desc>
   </programme>
   <programme start="20261007130000 +0000" stop="20261007140000 +0000" channel="8tv">
     <title lang="en">PURSUIT OF JADE</title>
@@ -54575,10 +54575,6 @@ TR vs BTRM - [NC]</desc>
 
 SRG vs FL - [NC]</desc>
   </programme>
-  <programme start="20261007123000 +0000" stop="20261007130000 +0000" channel="ntv7">
-    <title lang="en">PECUTAN SPM 2024</title>
-    <desc lang="en">Episode 6 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
-  </programme>
   <programme start="20261007130000 +0000" stop="20261007133000 +0000" channel="ntv7">
     <title lang="en">GENERASI MADANI 2026</title>
     <desc lang="en">Episode 11 - [NC]</desc>
@@ -54707,82 +54703,86 @@ SRG vs FL - [NC]</desc>
     <title lang="en">PECUTAN SPM 2024</title>
     <desc lang="en">Episode 5 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
   </programme>
-  <programme start="20261007122507 +0000" stop="20261007135507 +0000" channel="scl">
+  <programme start="20261008123000 +0000" stop="20261008130000 +0000" channel="ntv7">
+    <title lang="en">PECUTAN SPM 2024</title>
+    <desc lang="en">Episode 6 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
+  </programme>
+  <programme start="20261007125051 +0000" stop="20261007142051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007135507 +0000" stop="20261007152507 +0000" channel="scl">
+  <programme start="20261007142051 +0000" stop="20261007155051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007152507 +0000" stop="20261007165507 +0000" channel="scl">
+  <programme start="20261007155051 +0000" stop="20261007172051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007165507 +0000" stop="20261007182507 +0000" channel="scl">
+  <programme start="20261007172051 +0000" stop="20261007185051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007182507 +0000" stop="20261007195507 +0000" channel="scl">
+  <programme start="20261007185051 +0000" stop="20261007202051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007195507 +0000" stop="20261007212507 +0000" channel="scl">
+  <programme start="20261007202051 +0000" stop="20261007215051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007212507 +0000" stop="20261007225507 +0000" channel="scl">
+  <programme start="20261007215051 +0000" stop="20261007232051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007225507 +0000" stop="20261008002507 +0000" channel="scl">
+  <programme start="20261007232051 +0000" stop="20261008005051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008002507 +0000" stop="20261008015507 +0000" channel="scl">
+  <programme start="20261008005051 +0000" stop="20261008022051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008015507 +0000" stop="20261008032507 +0000" channel="scl">
+  <programme start="20261008022051 +0000" stop="20261008035051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008032507 +0000" stop="20261008045507 +0000" channel="scl">
+  <programme start="20261008035051 +0000" stop="20261008052051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008045507 +0000" stop="20261008062507 +0000" channel="scl">
+  <programme start="20261008052051 +0000" stop="20261008065051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008062507 +0000" stop="20261008075507 +0000" channel="scl">
+  <programme start="20261008065051 +0000" stop="20261008082051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008075507 +0000" stop="20261008092507 +0000" channel="scl">
+  <programme start="20261008082051 +0000" stop="20261008095051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008092507 +0000" stop="20261008105507 +0000" channel="scl">
+  <programme start="20261008095051 +0000" stop="20261008112051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008105507 +0000" stop="20261008122507 +0000" channel="scl">
+  <programme start="20261008112051 +0000" stop="20261008125051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -54975,10 +54975,6 @@ SRG vs FL - [NC]</desc>
     <title lang="en">BULETIN UTAMA (2026/2027)</title>
     <desc lang="en">Episode 100 - [NC]</desc>
   </programme>
-  <programme start="20261007124000 +0000" stop="20261007143000 +0000" channel="tv9">
-    <title lang="en">KERANA SETITIK SUSU</title>
-    <desc lang="en">Episode 1 - Mia, seorang yatim piatu baru sahaja diceraikan sehelai sepinggang. Nuh pula seorang penganggur yang perlu menjaga ibunya yang sakit kritikal. Mampukah dua jiwa terdesak ini mengubah hidup mereka, kerana setitik susu? - [NC]</desc>
-  </programme>
   <programme start="20261007143000 +0000" stop="20261007153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 6 - Eun Ha dipecat oleh CEO Ma dan dihalau dari apartment yang disediakan oleh syarikatnya. Eun Ha yang tiada tempat duduk merayau di jalan dan terserempak dengan Ji Hwan dalam hujan lebat. Ji Hwan sebenarnya mengetahui kedudukan Eun Ha. - [NC]</desc>
@@ -55094,6 +55090,10 @@ SRG vs FL - [NC]</desc>
   <programme start="20261008115000 +0000" stop="20261008124000 +0000" channel="tv9">
     <title lang="en">BUKAN CINTA AKU</title>
     <desc lang="en">Episode 20 - Tengku Isma pergi ke Lombok dan membantu Riana menguruskan Arjuna. Jauh di sudut hati, Riana menghargai keikhlasan Tengku Isma namun cintanya masih kukuh untuk Arjuna. Adakah Riana akan terus setia dengan Arjuna? - [NC]</desc>
+  </programme>
+  <programme start="20261008124000 +0000" stop="20261008143000 +0000" channel="tv9">
+    <title lang="en">SERAMBI MAMA</title>
+    <desc lang="en">Episode 1 - Laila, 8 tahun, terpisah daripada ibu bapanya Intan dan Adam ketika bercuti di Acheh. Bermula daripada tsunami yang melanda, Laila diselamatkan oleh wanita Acheh, Yani, lalu mengambil Laila menjadi anak angkatnya. - [NC]</desc>
   </programme>
   <programme start="20261008130000 +0000" stop="20261008140000 +0000" channel="8tv">
     <title lang="en">PURSUIT OF JADE</title>
@@ -55307,10 +55307,6 @@ VMS vs iG - [NC]</desc>
 
 AC vs RRQ - [NC]</desc>
   </programme>
-  <programme start="20261008123000 +0000" stop="20261008130000 +0000" channel="ntv7">
-    <title lang="en">PECUTAN SPM 2024</title>
-    <desc lang="en">Episode 6 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
-  </programme>
   <programme start="20261008130000 +0000" stop="20261008133000 +0000" channel="ntv7">
     <title lang="en">PERMATA BELANTARA</title>
     <desc lang="en">Episode 7 - [NC]</desc>
@@ -55435,82 +55431,86 @@ AC vs RRQ - [NC]</desc>
     <title lang="en">PECUTAN SPM 2024</title>
     <desc lang="en">Episode 7 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
   </programme>
-  <programme start="20261008122507 +0000" stop="20261008135507 +0000" channel="scl">
+  <programme start="20261009123000 +0000" stop="20261009130000 +0000" channel="ntv7">
+    <title lang="en">PECUTAN SPM 2024</title>
+    <desc lang="en">Episode 8 - Memaparkan teknik menjawab soalan bagi kertas peperiksaan Sijil Pelajaran Malaysia (SPM) di mana fokus utama slot ini adalah memberi pendedahan kepada murid tentang bentuk soalan dan teknik menjawab soalan agar memperoleh keputusan cemerlang. - [NC]</desc>
+  </programme>
+  <programme start="20261008125051 +0000" stop="20261008142051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008135507 +0000" stop="20261008152507 +0000" channel="scl">
+  <programme start="20261008142051 +0000" stop="20261008155051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008152507 +0000" stop="20261008165507 +0000" channel="scl">
+  <programme start="20261008155051 +0000" stop="20261008172051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008165507 +0000" stop="20261008182507 +0000" channel="scl">
+  <programme start="20261008172051 +0000" stop="20261008185051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008182507 +0000" stop="20261008195507 +0000" channel="scl">
+  <programme start="20261008185051 +0000" stop="20261008202051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008195507 +0000" stop="20261008212507 +0000" channel="scl">
+  <programme start="20261008202051 +0000" stop="20261008215051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008212507 +0000" stop="20261008225507 +0000" channel="scl">
+  <programme start="20261008215051 +0000" stop="20261008232051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008225507 +0000" stop="20261009002507 +0000" channel="scl">
+  <programme start="20261008232051 +0000" stop="20261009005051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009002507 +0000" stop="20261009015507 +0000" channel="scl">
+  <programme start="20261009005051 +0000" stop="20261009022051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009015507 +0000" stop="20261009032507 +0000" channel="scl">
+  <programme start="20261009022051 +0000" stop="20261009035051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009032507 +0000" stop="20261009045507 +0000" channel="scl">
+  <programme start="20261009035051 +0000" stop="20261009052051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009045507 +0000" stop="20261009062507 +0000" channel="scl">
+  <programme start="20261009052051 +0000" stop="20261009065051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009062507 +0000" stop="20261009075507 +0000" channel="scl">
+  <programme start="20261009065051 +0000" stop="20261009082051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009075507 +0000" stop="20261009092507 +0000" channel="scl">
+  <programme start="20261009082051 +0000" stop="20261009095051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009092507 +0000" stop="20261009105507 +0000" channel="scl">
+  <programme start="20261009095051 +0000" stop="20261009112051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009105507 +0000" stop="20261009122507 +0000" channel="scl">
+  <programme start="20261009112051 +0000" stop="20261009125051 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -55691,10 +55691,6 @@ AC vs RRQ - [NC]</desc>
     <title lang="en">BULETIN UTAMA (2026/2027)</title>
     <desc lang="en">Episode 101 - [NC]</desc>
   </programme>
-  <programme start="20261008124000 +0000" stop="20261008143000 +0000" channel="tv9">
-    <title lang="en">SERAMBI MAMA</title>
-    <desc lang="en">Episode 1 - Laila, 8 tahun, terpisah daripada ibu bapanya Intan dan Adam ketika bercuti di Acheh. Bermula daripada tsunami yang melanda, Laila diselamatkan oleh wanita Acheh, Yani, lalu mengambil Laila menjadi anak angkatnya. - [NC]</desc>
-  </programme>
   <programme start="20261008143000 +0000" stop="20261008153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 7 - Jang Hyun Woo, seorang pendakwa dan juga rakan zaman kanak-kanak Eun Ha muncul. Ji Hwan diingatkan oleh Hyun Woo masa silamnya sebagai ketua kumpulan samseng. Ji Hwan kecil hati lalu meninggalkan Eun Ha bersama Hyun Eoo. - [NC]</desc>
@@ -55802,5 +55798,9 @@ AC vs RRQ - [NC]</desc>
   <programme start="20261009115000 +0000" stop="20261009124000 +0000" channel="tv9">
     <title lang="en">NASI LEMAK KOPI O 2026/2027</title>
     <desc lang="en">Episode 43 - Nasi Lemak Kopi O akan menghidupkan semula pagi anda dengan sentuhan baharu dan kontemporari. Rancangan ini akan kembali dengan penampilan baharu dan kandungan penuh menarik buat penonton setia kami. - [NC]</desc>
+  </programme>
+  <programme start="20261009124000 +0000" stop="20261009140000 +0000" channel="tv9">
+    <title lang="en">MENTOR ( SS 3 ) - WEEKLY</title>
+    <desc lang="en">Episode 1 - Mentor is a singing reality show with a different approach and entertaining talent search reality show. Established artistes (the Mentors) pit their proteges against each other in this talent-hunt - [NC]</desc>
   </programme>
 </tv>
