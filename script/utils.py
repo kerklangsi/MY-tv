@@ -90,6 +90,29 @@ def fetch_url(url, headers=None):
         pass
     return "", url
 
+TRANSLATE_CACHE = {}
+
+# Translate foreign text to English using Google Translate with local caching
+def auto_translate(text):
+    if not text or not re.search(r"[\u4e00-\u9fff\u3400-\u4dbf\u3000-\u303f]", text):
+        return text
+    cached = TRANSLATE_CACHE.get(text)
+    if cached:
+        return cached
+    try:
+        q = urllib.parse.urlencode({'client': 'gtx', 'sl': 'auto', 'tl': 'en', 'dt': 't', 'q': text})
+        url = f"https://translate.googleapis.com/translate_a/single?{q}"
+        req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+        res = json.loads(opener.open(req, timeout=5).read().decode('utf-8'))
+        translated = "".join(part[0] for part in res[0] if part and part[0]).strip()
+        if translated:
+            translated = translated.title()
+            TRANSLATE_CACHE[text] = translated
+            return translated
+    except Exception:
+        pass
+    return text
+
 # Convert input text string into a clean URL-friendly slug.
 def slugify(text):
     if not text:
@@ -111,6 +134,13 @@ def clean_subtitle(title, series):
     t = re.sub(r'^[\s:|-]+', '', t).strip()
     norm_t = re.sub(r'\s*(?:dan|&|and)\s*', ' ', t, flags=re.IGNORECASE).strip()
     norm_s = re.sub(r'\s*(?:dan|&|and)\s*', ' ', s, flags=re.IGNORECASE).strip()
+
+    clean_cmp_t = re.sub(r'\b(?:s|season|siri)\s*\d+\b', '', norm_t, flags=re.IGNORECASE)
+    clean_cmp_t = re.sub(r'[^a-zA-Z0-9]', '', clean_cmp_t).lower()
+    clean_cmp_s = re.sub(r'\b(?:s|season|siri)\s*\d+\b', '', norm_s, flags=re.IGNORECASE)
+    clean_cmp_s = re.sub(r'[^a-zA-Z0-9]', '', clean_cmp_s).lower()
+    if clean_cmp_t == clean_cmp_s:
+        return ""
     return "" if norm_t.lower() == norm_s.lower() else t
 
 # Write content to file only if new content differs from existing file content

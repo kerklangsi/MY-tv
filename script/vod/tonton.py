@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from paths import VOD_TONTON
 
-from utils import http_get, fetch_url, slugify, clean_subtitle, make_absolute, save_changed, cleanup_files, update_shows, update_movies, GITHUB_URL, TONTON_API
+from utils import http_get, fetch_url, slugify, clean_subtitle, auto_translate, make_absolute, save_changed, cleanup_files, update_shows, update_movies, GITHUB_URL, TONTON_API
 from auth.tonton import get_token, USER_AGENT, DEVICE_ID
 
 PAGE_MAP = [
@@ -22,12 +22,21 @@ PAGE_MAP = [
     ("Chinese", "Tonton Chinese"),
 ]
 
-# Remove Chinese and non-Latin CJK characters from title strings
+# Clean and translate title strings into English
 def clean_title(text):
     if not text:
         return ""
-    cleaned = re.sub(r"[\u4e00-\u9fff\u3400-\u4dbf\u2e80-\u2eff\u3000-\u303f\uff00-\uffef\u2000-\u206f\ufe30-\ufe4f]+", "", text)
+    if re.search(r"[\u4e00-\u9fff\u3400-\u4dbf]", text):
+        cleaned_latin = re.sub(r"[\u4e00-\u9fff\u3400-\u4dbf\u2e80-\u2eff\u3000-\u303f\uff00-\uffef\u2000-\u206f\ufe30-\ufe4f]+", "", text)
+        cleaned_latin = re.sub(r"^[|\s\-:!]+|[|\s\-:!]+$", "", cleaned_latin).strip()
+        if re.search(r"[a-zA-Z]{2,}", cleaned_latin):
+            cleaned = cleaned_latin
+        else:
+            cleaned = auto_translate(text)
+    else:
+        cleaned = text
     cleaned = re.sub(r"(\b\d+\b)\s+\1$", r"\1", cleaned)
+    cleaned = re.sub(r"\((?:Season|Siri)\s*(\d+)\)", r"Season \1", cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r"^[|\s\-:!]+|[|\s\-:!]+$", "", cleaned)
     cleaned = re.sub(r"\s+", " ", cleaned).strip()
     return cleaned if cleaned else text
@@ -45,6 +54,7 @@ def get_subfolder(item):
 
     if show_id:
         clean_show = re.sub(r"-(?:series|siri)$", "", show_id, flags=re.IGNORECASE)
+        clean_show = re.sub(r"-\d{4}-(s\d+)$", r"-\1", clean_show, flags=re.IGNORECASE)
         s_slug = slugify(clean_show)
         if s_slug and s_slug != "movie":
             display_title = title if title else clean_title(clean_show.replace("-", " ").replace("_", " ").title())

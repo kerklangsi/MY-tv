@@ -64,16 +64,21 @@ def map_series(s_id):
         s_title = data.get("title", "")
         clean_slug = slugify(s_title)
         clean_slug = re.sub(r"-(?:s|season|siri)-?\d+$", "", clean_slug, flags=re.IGNORECASE)
+        m_s = re.search(r"\b(?:s|season|siri)\s*(\d+)\b", s_title, re.IGNORECASE)
+        detected_s_num = int(m_s.group(1)) if m_s else None
+        base_title = re.sub(r"\s*[-:\s]*(?:s|season|siri)\s*\d+.*$", "", s_title, flags=re.IGNORECASE).strip()
+        base_slug = slugify(base_title) or clean_slug
+
         seasons = data.get("seasons", [])
         is_multi = len(seasons) > 1
         mapped = {}
         for season in seasons:
-            s_num = season.get("seasonNumber")
-            if is_multi and s_num:
-                season_slug = f"{clean_slug}-s{s_num}"
-                season_title = f"{s_title} S{s_num}"
+            s_num = season.get("seasonNumber") or detected_s_num
+            if (is_multi or detected_s_num) and s_num:
+                season_slug = f"{base_slug}-s{s_num}"
+                season_title = f"{base_title} S{s_num}"
             else:
-                season_slug = clean_slug
+                season_slug = base_slug if base_slug else clean_slug
                 season_title = s_title
 
             for ep in season.get("episodes", []):
@@ -152,8 +157,12 @@ def process_vod(device_id):
         for s in s_items:
             s_id = s["id"]
             s_title = s.get("title", "")
-            clean_slug = slugify(s_title)
-            clean_slug = re.sub(r"-(?:s|season|siri)-?\d+$", "", clean_slug, flags=re.IGNORECASE)
+            m_s = re.search(r"\b(?:s|season|siri)\s*(\d+)\b", s_title, re.IGNORECASE)
+            if m_s:
+                s_base = re.sub(r"-(?:s|season|siri)-?\d+$", "", slugify(s_title), flags=re.IGNORECASE)
+                clean_slug = f"{s_base}-s{m_s.group(1)}"
+            else:
+                clean_slug = slugify(s_title)
             official_series_index[s_id] = {
                 "raw_title": s_title,
                 "clean_slug": clean_slug,
@@ -287,8 +296,11 @@ def process_vod(device_id):
                 clean_ep = clean_subtitle(item_title, display_series_title)
                 has_custom = bool(clean_ep)
 
+                m_part = re.search(r"\b(?:Part|Pt|Bahagian|Bhg)\s*(\d+)\b", item_title, re.IGNORECASE)
+                part_suffix = f"-p{m_part.group(1)}" if m_part else ""
+
                 if ep_num:
-                    item_slug = f"{subfolder}-ep-{ep_num}"
+                    item_slug = f"{subfolder}-ep-{ep_num}{part_suffix}"
                     if has_custom:
                         entry_title = f"{display_series_title} - Episod {ep_num}: {clean_ep}"
                         ep_label = f"Episod {ep_num} - {display_series_title}: {clean_ep}"
@@ -305,7 +317,14 @@ def process_vod(device_id):
                         ep_label = f"{display_series_title} - {item_title}"
 
             if item_slug in used_vod_slugs:
-                item_slug = f"{item_slug}-{item_id}"
+                if has_custom and clean_ep:
+                    cand_slug = f"{item_slug}-{slugify(clean_ep)[:20]}"
+                    if cand_slug not in used_vod_slugs:
+                        item_slug = cand_slug
+                    else:
+                        item_slug = f"{item_slug}-{item_id[:8]}"
+                else:
+                    item_slug = f"{item_slug}-{item_id[:8]}"
             used_vod_slugs.add(item_slug)
 
             item["entry_title"] = entry_title
@@ -352,7 +371,8 @@ def process_vod(device_id):
         else:
             s_title = series_slug_to_title.get(subfolder) or subfolder.replace("-", " ").title()
             mytv_shows_dict[subfolder]["title"] = s_title
-            for ep in sub_items:
+            sorted_eps = sorted(sub_items, key=lambda x: [(0, int(c)) if c.isdigit() else (1, c) for c in re.split(r'(\d+)', x.get("ep_label", x.get("title", "")).lower())])
+            for ep in sorted_eps:
                 ep_t = ep.get("ep_label", ep.get("title", "Unknown Episode"))
                 ep_url = ep.get("clean_url", "")
                 ep_str = f"[{ep_t}]({ep_url})" if ep_url else ep_t
