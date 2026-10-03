@@ -112,27 +112,16 @@ def get_token(force_refresh=False, allow_browser=False):
 
             context.on("page", on_page)
 
-            page.goto(f"{TONTON_URL}/login", wait_until="domcontentloaded", timeout=30000)
             try:
-                page.wait_for_selector("input, button, a[href*='login'], a[href*='signin']", timeout=20000)
+                page.goto(f"{TONTON_URL}/login", wait_until="networkidle", timeout=30000)
             except Exception:
-                pass
-            page.wait_for_timeout(2000)
-
-            # Dismiss ad overlay if present
-            for ad_sel in [".adContainer", ".adContainerSplash", "[class*='ad-overlay']", "[class*='splash']"]:
-                ad = page.query_selector(ad_sel)
-                if ad and ad.is_visible():
-                    try:
-                        ad.click(force=True)
-                        page.wait_for_timeout(1000)
-                    except Exception:
-                        pass
+                page.goto(f"{TONTON_URL}/login", wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(3000)
 
             # Click Sign In button
             sign_in_texts = ["sign in", "log in", "login", "masuk", "daftar masuk"]
             sign_in_btn = None
-            for btn in page.query_selector_all("button, a"):
+            for btn in page.query_selector_all("button"):
                 try:
                     txt = (btn.inner_text() or "").strip().lower()
                     aria = (btn.get_attribute("aria-label") or "").lower()
@@ -142,6 +131,7 @@ def get_token(force_refresh=False, allow_browser=False):
                 except Exception:
                     pass
 
+            popup_page = None
             if sign_in_btn:
                 sign_in_btn.click()
                 print("[Tonton Auth] Clicked Sign In button.")
@@ -149,10 +139,16 @@ def get_token(force_refresh=False, allow_browser=False):
             # Wait for popup or inline SSO form
             for _ in range(15):
                 if popup_page:
-                    break
+                    try:
+                        popup_page.wait_for_load_state("domcontentloaded", timeout=3000)
+                        if "id.tonton" in popup_page.url:
+                            break
+                    except Exception:
+                        pass
                 page.wait_for_timeout(1000)
 
             target = popup_page if popup_page else page
+            print(f"[Tonton Auth] Target page URL: {target.url}")
             try:
                 target.wait_for_load_state("networkidle", timeout=15000)
             except Exception:

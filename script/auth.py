@@ -1,9 +1,8 @@
 import os
 import sys
-
 import paths
-from paths import read_auth, AUTH_DIR
 
+from paths import read_auth, AUTH_DIR
 from auth.mytv import get_key, ME_KEY
 from auth.tonton import (
     get_token,
