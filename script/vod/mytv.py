@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from paths import VOD_MYTV
 
-from utils import http_get, http_post, fetch_raw, slugify, save_changed, cleanup_files, update_shows, update_movies, GITHUB_URL, MYTV_API
+from utils import http_get, http_post, fetch_raw, slugify, clean_subtitle, save_changed, cleanup_files, update_shows, update_movies, GITHUB_URL, MYTV_API
 
 PROMO_KEYWORDS = {"teaser", "trailer", "promo", "preview", "highlight", "highlights", "behind the scene", "behind the scenes", "bts", "sedutan"}
 
@@ -272,9 +272,8 @@ def process_vod(device_id):
                         if m_num:
                             ep_num = int(m_num.group(1))
 
-                clean_ep = re.sub(r"^\s*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+\s*[-:\s]*", "", item_title, flags=re.IGNORECASE)
-                clean_ep = re.sub(r"\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+.*$", "", clean_ep, flags=re.IGNORECASE).strip()
-                has_custom = clean_ep and clean_ep.lower() != display_series_title.lower()
+                clean_ep = clean_subtitle(item_title, display_series_title)
+                has_custom = bool(clean_ep)
 
                 if ep_num:
                     item_slug = f"{subfolder}-ep-{ep_num}"
@@ -285,9 +284,13 @@ def process_vod(device_id):
                         entry_title = f"{display_series_title} - Episod {ep_num}"
                         ep_label = f"Episod {ep_num} - {display_series_title}"
                 else:
-                    item_slug = slugify(item_title) or item_id
-                    entry_title = f"{display_series_title} - {item_title}"
-                    ep_label = f"{display_series_title} - {item_title}"
+                    item_slug = slugify(clean_ep or item_title) or item_id
+                    if has_custom:
+                        entry_title = f"{display_series_title} - {clean_ep}"
+                        ep_label = f"{display_series_title} - {clean_ep}"
+                    else:
+                        entry_title = f"{display_series_title} - {item_title}"
+                        ep_label = f"{display_series_title} - {item_title}"
 
             if item_slug in used_vod_slugs:
                 item_slug = f"{item_slug}-{item_id}"

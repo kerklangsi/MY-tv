@@ -99,6 +99,20 @@ def slugify(text):
     text = re.sub(r'[\s_-]+', '-', text)
     return re.sub(r'^-+|-+$', '', text)
 
+# Extract clean episode subtitle by removing series title prefix and episode numbers
+def clean_subtitle(title, series):
+    t = (title or "").strip()
+    s = (series or "").strip()
+    s_esc = re.escape(s)
+    s_rx = re.sub(r'\\?\s*(?:dan|\\&|&|and)\\?\s*', r'\\s*(?:dan|&|and)\\s*', s_esc, flags=re.IGNORECASE)
+    t = re.sub(r'^' + s_rx + r'[\s:|-]*', '', t, flags=re.IGNORECASE).strip()
+    t = re.sub(r'^\s*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+\s*[-:\s]*', '', t, flags=re.IGNORECASE)
+    t = re.sub(r'\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+.*$', '', t, flags=re.IGNORECASE).strip()
+    t = re.sub(r'^[\s:|-]+', '', t).strip()
+    norm_t = re.sub(r'\s*(?:dan|&|and)\s*', ' ', t, flags=re.IGNORECASE).strip()
+    norm_s = re.sub(r'\s*(?:dan|&|and)\s*', ' ', s, flags=re.IGNORECASE).strip()
+    return "" if norm_t.lower() == norm_s.lower() else t
+
 # Write content to file only if new content differs from existing file content
 def save_changed(filepath, new_content, is_binary=False):
     if os.path.exists(filepath):

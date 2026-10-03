@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from paths import VOD_TONTON
 
-from utils import http_get, fetch_url, slugify, make_absolute, save_changed, cleanup_files, update_shows, update_movies, GITHUB_URL, TONTON_API
+from utils import http_get, fetch_url, slugify, clean_subtitle, make_absolute, save_changed, cleanup_files, update_shows, update_movies, GITHUB_URL, TONTON_API
 from auth.tonton import get_token, USER_AGENT, DEVICE_ID
 
 PAGE_MAP = [
@@ -103,12 +103,8 @@ def fetch_vod(task):
         ep_label = ep_title
     else:
         sub_candidate = item.get("episodeTitle") or item.get("name") or item.get("title") or ""
-        clean_ep = clean_title(sub_candidate)
-        if clean_ep.lower().startswith(display_show_title.lower()):
-            clean_ep = clean_ep[len(display_show_title):].strip()
-        clean_ep = re.sub(r"^\s*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+\s*[-:\s]*", "", clean_ep, flags=re.IGNORECASE)
-        clean_ep = re.sub(r"\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+.*$", "", clean_ep, flags=re.IGNORECASE).strip()
-        has_custom = bool(clean_ep) and clean_ep.lower() != display_show_title.lower()
+        clean_ep = clean_subtitle(clean_title(sub_candidate), display_show_title)
+        has_custom = bool(clean_ep)
 
         if ep_num:
             ep_slug = f"{subfolder}-ep-{ep_num}"

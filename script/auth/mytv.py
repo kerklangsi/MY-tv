@@ -43,10 +43,6 @@ def refresh_key():
 
 # Retrieve or refresh MYTV AES decryption key
 def get_key(force_refresh=False, allow_browser=False):
-    if not allow_browser and not force_refresh:
-        cached = read_auth("me_key") or os.environ.get("ME_KEY", "").strip()
-        return cached.encode("utf-8")[:32] if cached else b""
-
     key_str = ""
     if not force_refresh:
         key_str = read_auth("me_key") or os.environ.get("ME_KEY", "").strip()
