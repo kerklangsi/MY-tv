@@ -6,21 +6,31 @@ import stat
 import re
 from urllib.parse import urlparse
 from collections import defaultdict
+from datetime import datetime, timezone
 
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if ROOT_DIR not in sys.path:
-    sys.path.insert(0, ROOT_DIR)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+if SCRIPT_DIR not in sys.path: sys.path.insert(0, SCRIPT_DIR)
+
+from paths import PLAYLIST, VOD_M3U, ALL_M3U, ALL_M3U8, LIST_LIVE, LIST_SHOWS, LIST_MOVIES
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 
 DEFAULT_HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'User-Agent': USER_AGENT,
     'Content-Type': 'application/json'
 }
+
+GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
+MANA2_URL = "https://mana2.my"
+TONTON_URL = "https://watch.tonton.com.my"
+MYTV_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
+TONTON_API = "https://headend-api.tonton.com.my/v600"
 
 class NoRaiseHTTPErrorProcessor(urllib.request.HTTPErrorProcessor):
     # Handle HTTP response without raising exceptions for non-2xx status codes.
     def http_response(self, request, response):
         return response
-    https_response = http_response
+    def https_response(self, request, response):
+        return response
 
 opener = urllib.request.build_opener(NoRaiseHTTPErrorProcessor)
 
@@ -46,21 +56,28 @@ def http_post(url, payload, headers=None):
         return json.loads(resp.read().decode('utf-8'))
     return {}
 
-# Fetch raw text content from the specified URL.
-def fetch_raw_text(url, headers=None):
-    req_headers = {'User-Agent': DEFAULT_HEADERS['User-Agent']}
-    if headers:
-        req_headers.update(headers)
-    req = urllib.request.Request(url, headers=req_headers)
-    resp = opener.open(req)
-    if 200 <= resp.status < 300:
-        return resp.read().decode('utf-8')
-    return ""
+# Convert ISO string or Unix timestamp to XMLTV datetime format
+def format_xmltv(val):
+    if not val:
+        return ""
+    try:
+        if isinstance(val, (int, float)) or (isinstance(val, str) and val.isdigit()):
+            dt_obj = datetime.fromtimestamp(int(val), tz=timezone.utc)
+        else:
+            clean_str = str(val).replace("Z", "").rsplit(".", 1)[0]
+            dt_obj = datetime.strptime(clean_str, "%Y-%m-%dT%H:%M:%S")
+        return dt_obj.strftime("%Y%m%d%H%M%S +0000")
+    except Exception:
+        return ""
+
+# Fetch raw text content from the specified URL
+def fetch_raw(url, headers=None):
+    return fetch_url(url, headers)[0]
 
 redirect_opener = urllib.request.build_opener(urllib.request.HTTPRedirectHandler())
 
-# Fetch raw text content and final resolved URL following redirects.
-def fetch_raw_text_and_url(url, headers=None):
+# Fetch raw text content and final resolved URL following redirects
+def fetch_url(url, headers=None):
     req_headers = {'User-Agent': DEFAULT_HEADERS['User-Agent']}
     if headers:
         req_headers.update(headers)
@@ -82,8 +99,8 @@ def slugify(text):
     text = re.sub(r'[\s_-]+', '-', text)
     return re.sub(r'^-+|-+$', '', text)
 
-# Write content to file only if new content differs from existing file content.
-def write_if_changed(filepath, new_content, is_binary=False):
+# Write content to file only if new content differs from existing file content
+def save_changed(filepath, new_content, is_binary=False):
     if os.path.exists(filepath):
         mode_read = "rb" if is_binary else "r"
         encoding = None if is_binary else "utf-8"
@@ -97,8 +114,8 @@ def write_if_changed(filepath, new_content, is_binary=False):
         f.write(new_content)
     return True
 
-# Remove stale m3u8 files and empty folders not matching active file set.
-def cleanup_stale_files(base_directory, active_files_set):
+# Remove stale m3u8 files and empty folders not matching active file set
+def cleanup_files(base_directory, active_files_set):
     if not os.path.exists(base_directory):
         return
     deleted_count = 0
@@ -121,8 +138,8 @@ def cleanup_stale_files(base_directory, active_files_set):
     if deleted_count > 0 or deleted_dirs_count > 0:
         print(f"Cleaned up {deleted_count} stale/deleted files and {deleted_dirs_count} empty folders from {base_directory}.", flush=True)
 
-# Convert relative segment and playlist paths in M3U8 content into absolute URLs.
-def make_m3u8_absolute(m3u8_text, base_url):
+# Convert relative segment and playlist paths in M3U8 content into absolute URLs
+def make_absolute(m3u8_text, base_url):
     if not m3u8_text:
         return f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{base_url}\n"
     parsed = urlparse(base_url)
@@ -158,15 +175,15 @@ def make_m3u8_absolute(m3u8_text, base_url):
 
     return "\n".join(lines) + "\n"
 
-# Extract integer channel number from tvg-chno attribute for sorting.
-def extract_chno_from_extinf(extinf):
+# Extract integer channel number from tvg-chno attribute for sorting
+def extract_chno(extinf):
     match = re.search(r'tvg-chno="(\d+)"', extinf)
     if match:
         return int(match.group(1))
     return 999999
 
-# Parse M3U playlist file into list of (extinf, extra_lines, url) entries.
-def parse_m3u_entries(filepath):
+# Parse M3U playlist file into list of (extinf, extra_lines, url) entries
+def parse_m3u(filepath):
     entries = []
     if not os.path.exists(filepath):
         return entries
@@ -187,15 +204,15 @@ def parse_m3u_entries(filepath):
         i += 1
     return entries
 
-# Merge live TV and VOD playlists into all.m3u and all.m3u8 sorted by tvg-chno.
-def update_combined_playlist():
-    live_entries = parse_m3u_entries("playlist.m3u")
-    vod_entries = parse_m3u_entries("vod.m3u")
+# Merge live TV and VOD playlists into all.m3u and all.m3u8 sorted by tvg-chno
+def merge_playlists():
+    live_entries = parse_m3u(PLAYLIST)
+    vod_entries = parse_m3u(VOD_M3U)
 
-    live_entries.sort(key=lambda item: (extract_chno_from_extinf(item[0]), item[0]))
-    vod_entries.sort(key=lambda item: (extract_chno_from_extinf(item[0]), item[0]))
+    live_entries.sort(key=lambda item: (extract_chno(item[0]), item[0]))
+    vod_entries.sort(key=lambda item: (extract_chno(item[0]), item[0]))
 
-    lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
+    lines = [f'#EXTM3U x-tvg-url="{GITHUB_URL}/epg.xml.gz"']
 
     for extinf, extra_lines, url in live_entries + vod_entries:
         lines.append(extinf)
@@ -204,17 +221,16 @@ def update_combined_playlist():
         lines.append(url)
 
     all_content = "\n".join(lines) + "\n"
-    write_if_changed("all.m3u", all_content)
-    write_if_changed("all.m3u8", all_content)
+    save_changed(ALL_M3U, all_content)
+    save_changed(ALL_M3U8, all_content)
     print("Saved merged all.m3u and all.m3u8 (Combined Live + VOD, sorted by tvg-chno)", flush=True)
 
-# Update provider section in List/SHOWS_LIST.md with series shows and episodes.
-def update_catalog_shows(provider_key, provider_title, folder_prefix, shows_dict):
-    os.makedirs("List", exist_ok=True)
-    list_path = "List/SHOWS_LIST.md"
+# Update provider section in List/SHOWS_LIST.md with series shows and episodes
+def update_shows(provider_key, provider_title, folder_prefix, shows_dict):
+    os.makedirs(os.path.dirname(LIST_SHOWS), exist_ok=True)
     existing_content = ""
-    if os.path.exists(list_path):
-        with open(list_path, "r", encoding="utf-8") as f:
+    if os.path.exists(LIST_SHOWS):
+        with open(LIST_SHOWS, "r", encoding="utf-8") as f:
             existing_content = f.read()
 
     section_lines = []
@@ -259,21 +275,19 @@ def update_catalog_shows(provider_key, provider_title, folder_prefix, shows_dict
         e_idx = existing_content.find(end_tag) + len(end_tag)
         final_content = existing_content[:s_idx] + new_section + existing_content[e_idx:]
     elif provider_key == 'TONTON' and "<!-- SECTION:MYTV:START -->" not in existing_content and existing_content:
-        mytv_wrapped = f"# VOD Series Catalog - Full Show List with Episodes\n\n<!-- SECTION:MYTV:START -->\n{existing_content.strip()}\n<!-- SECTION:MYTV:END -->\n\n{new_section}\n"
-        final_content = mytv_wrapped
+        final_content = f"# VOD Series Catalog - Full Show List with Episodes\n\n<!-- SECTION:MYTV:START -->\n{existing_content.strip()}\n<!-- SECTION:MYTV:END -->\n\n{new_section}\n"
     else:
         header = "# VOD Series Catalog - Full Show List with Episodes\n\n" if not existing_content.strip().startswith("# VOD Series Catalog") else ""
         final_content = (existing_content.rstrip() + "\n\n" + new_section + "\n") if existing_content else (header + new_section + "\n")
 
-    write_if_changed(list_path, final_content)
+    save_changed(LIST_SHOWS, final_content)
 
-# Update provider section in List/MOVIES_LIST.md with standalone movies and durations.
-def update_catalog_movies(provider_key, provider_title, movies_list):
-    os.makedirs("List", exist_ok=True)
-    list_path = "List/MOVIES_LIST.md"
+# Update provider section in List/MOVIES_LIST.md with standalone movies and durations
+def update_movies(provider_key, provider_title, movies_list):
+    os.makedirs(os.path.dirname(LIST_MOVIES), exist_ok=True)
     existing_content = ""
-    if os.path.exists(list_path):
-        with open(list_path, "r", encoding="utf-8") as f:
+    if os.path.exists(LIST_MOVIES):
+        with open(LIST_MOVIES, "r", encoding="utf-8") as f:
             existing_content = f.read()
 
     section_lines = []
@@ -311,18 +325,16 @@ def update_catalog_movies(provider_key, provider_title, movies_list):
         e_idx = existing_content.find(end_tag) + len(end_tag)
         final_content = existing_content[:s_idx] + new_section + existing_content[e_idx:]
     elif provider_key == 'TONTON' and "<!-- SECTION:MYTV:START -->" not in existing_content and existing_content:
-        mytv_wrapped = f"# VOD Standalone Movies List\n\n<!-- SECTION:MYTV:START -->\n{existing_content.strip()}\n<!-- SECTION:MYTV:END -->\n\n{new_section}\n"
-        final_content = mytv_wrapped
+        final_content = f"# VOD Standalone Movies List\n\n<!-- SECTION:MYTV:START -->\n{existing_content.strip()}\n<!-- SECTION:MYTV:END -->\n\n{new_section}\n"
     else:
         header = "# VOD Standalone Movies List\n\n" if not existing_content.strip().startswith("# VOD Standalone Movies List") else ""
         final_content = (existing_content.rstrip() + "\n\n" + new_section + "\n") if existing_content else (header + new_section + "\n")
 
-    write_if_changed(list_path, final_content)
+    save_changed(LIST_MOVIES, final_content)
 
-# Generate or update List/LIVE_LIST.md catalog documentation with all live TV and radio channels.
-def update_catalog_live(live_entries):
-    os.makedirs("List", exist_ok=True)
-    list_path = "List/LIVE_LIST.md"
+# Generate or update List/LIVE_LIST.md catalog documentation with all live TV and radio channels
+def update_live(live_entries):
+    os.makedirs(os.path.dirname(LIST_LIVE), exist_ok=True)
     categories = defaultdict(list)
     for extinf, extra_lines, url in live_entries:
         chno_m = re.search(r'tvg-chno="(\d+)"', extinf)
@@ -376,6 +388,6 @@ def update_catalog_live(live_entries):
             lines.append(f"| {ch['chno']} | {logo_img} | **{ch['name']}** | `{ch['tvg_id']}` | {stream_link} |")
         lines.append("\n---\n")
 
-    write_if_changed(list_path, "\n".join(lines) + "\n")
-    print(f"Generated Live Channel Catalog at {list_path} ({len(live_entries)} channels)", flush=True)
+    save_changed(LIST_LIVE, "\n".join(lines) + "\n")
+    print(f"Generated Live Channel Catalog at {LIST_LIVE} ({len(live_entries)} channels)", flush=True)
 

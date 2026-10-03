@@ -4,17 +4,12 @@ import uuid
 import os
 import sys
 import time
-from datetime import datetime, timezone
 
-SCRIPT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if SCRIPT_DIR not in sys.path:
-    sys.path.insert(0, SCRIPT_DIR)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from paths import LIVE_TONTON
 
-from utils import http_get, fetch_raw_text_and_url, slugify, make_m3u8_absolute, write_if_changed, cleanup_stale_files
+from utils import http_get, fetch_url, slugify, make_absolute, save_changed, cleanup_files, format_xmltv, GITHUB_URL, TONTON_API
 from auth.tonton import get_token, USER_AGENT, DEVICE_ID
-
-BASE_API = "https://headend-api.tonton.com.my/v600"
-GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
 
 TONTON_LCN_MAP = {
     "TV3": 103,
@@ -27,29 +22,21 @@ TONTON_LCN_MAP = {
     "MPL MALAYSIA": 121,
 }
 
-# Convert Unix timestamp to XMLTV datetime string format
-def format_xmltv(ts):
-    if not ts:
-        return ""
-    dt_obj = datetime.fromtimestamp(int(ts), tz=timezone.utc)
-    return dt_obj.strftime("%Y%m%d%H%M%S +0000")
-
 # Process Tonton live TV channels and build M3U stream entries
 def process_live(device_id):
     print("--- Processing Tonton Live Channels ---")
-    channels_url = f"{BASE_API}/api/categoryTree.class.api.php/GOgetLiveChannels/378?format=json&appID=TONTON&plt=web&serviceID=default&apiVersion=2"
+    channels_url = f"{TONTON_API}/api/categoryTree.class.api.php/GOgetLiveChannels/378?format=json&appID=TONTON&plt=web&serviceID=default&apiVersion=2"
     channels_res = http_get(channels_url, headers={"User-Agent": USER_AGENT})
     live_channels = channels_res.get("liveChannel", [])
     print(f"Total Tonton Live channels found: {len(live_channels)}")
 
-    os.makedirs("streams/live_tonton", exist_ok=True)
+    os.makedirs(LIVE_TONTON, exist_ok=True)
 
     tonton_m3u_entries = []
     epg_channels = []
     processed_slugs = set()
     active_files_set = set()
     tonton_token = get_token(allow_browser=False)
-    dev_id = DEVICE_ID
 
     for idx, ch in enumerate(live_channels, 1):
         c_id = ch.get("id")
@@ -69,10 +56,10 @@ def process_live(device_id):
         c_slug = slugify(c_name) or c_code.lower() or c_id
 
         large_img = ch.get("largeImage", "")
-        c_logo = f"{BASE_API}/imageHelper.php?id={large_img}&w=500&appID=TONTON" if large_img else ""
+        c_logo = f"{TONTON_API}/imageHelper.php?id={large_img}&w=500&appID=TONTON" if large_img else ""
         group_title = "Tonton Live"
 
-        config_url = f"{BASE_API}/api/playback.class.api.php/GOgetLiveConfig/378/1/{c_id}?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&manufacturer=chrome&serviceID=default&model=Mozilla/5.0&firmwareVersion=10&appVersion=6.1.7&deviceOS=PCBROWSER&limitAdTracking=0&pageId=live-tv&deviceId={dev_id}&loginToken={tonton_token}"
+        config_url = f"{TONTON_API}/api/playback.class.api.php/GOgetLiveConfig/378/1/{c_id}?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&manufacturer=chrome&serviceID=default&model=Mozilla/5.0&firmwareVersion=10&appVersion=6.1.7&deviceOS=PCBROWSER&limitAdTracking=0&pageId=live-tv&deviceId={DEVICE_ID}&loginToken={tonton_token}"
         config_res = http_get(config_url, headers={"User-Agent": USER_AGENT})
         playback_data = config_res.get("playback", {}) or config_res
 
@@ -85,19 +72,17 @@ def process_live(device_id):
             if not master_url:
                 master_url = playback_data.get("url") or playback_data.get("playbackUrl") or ""
 
-        signed_stream_url = master_url
-
-        ch_file_path = f"streams/live_tonton/{c_slug}.m3u8"
+        ch_file_path = f"{LIVE_TONTON}/{c_slug}.m3u8"
         extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}" http-user-agent="{USER_AGENT}",{c_name}'
         extra_lines = [f"#EXTVLCOPT:http-user-agent={USER_AGENT}"]
 
-        if signed_stream_url:
+        if master_url:
             active_files_set.add(os.path.normpath(ch_file_path))
-            master_manifest, final_url = fetch_raw_text_and_url(signed_stream_url, headers={"User-Agent": USER_AGENT})
-            abs_playlist_content = make_m3u8_absolute(master_manifest, final_url)
-            updated = write_if_changed(ch_file_path, abs_playlist_content)
+            master_manifest, final_url = fetch_url(master_url, headers={"User-Agent": USER_AGENT})
+            abs_playlist_content = make_absolute(master_manifest, final_url)
+            updated = save_changed(ch_file_path, abs_playlist_content)
             status_str = "Updated" if updated else "Kept (Unchanged)"
-            clean_m3u_url = f"{GITHUB_URL}/streams/live_tonton/{c_slug}.m3u8"
+            clean_m3u_url = f"{GITHUB_URL}/{LIVE_TONTON}/{c_slug}.m3u8"
 
             tonton_m3u_entries.append((extinf, extra_lines, clean_m3u_url))
             print(f"[{idx}/{len(live_channels)}] [{status_str}] Added Tonton channel {c_num}: {c_name} ({c_code}) -> {clean_m3u_url}", flush=True)
@@ -109,7 +94,7 @@ def process_live(device_id):
             processed_slugs.add(c_slug)
             epg_channels.append({"id": c_slug, "name": c_name, "logo": c_logo, "code": c_code})
 
-    cleanup_stale_files("streams/live_tonton", active_files_set)
+    cleanup_files(LIVE_TONTON, active_files_set)
 
     return tonton_m3u_entries, epg_channels
 
@@ -128,7 +113,7 @@ def fetch_epg(epg_channels):
     for day_offset in range(-1, 6):
         start_ts = now_ts + (day_offset * 86400)
         end_ts = start_ts + 86400
-        epg_url = f"{BASE_API}/api/epg.class.api.php/getChannelListings/378?filter_starttime={start_ts}&filter_endtime={end_ts}&filter_channels={channels_filter}&filter_fields={filter_fields}&format=json&appID=TONTON&serviceId=default"
+        epg_url = f"{TONTON_API}/api/epg.class.api.php/getChannelListings/378?filter_starttime={start_ts}&filter_endtime={end_ts}&filter_channels={channels_filter}&filter_fields={filter_fields}&format=json&appID=TONTON&serviceId=default"
         epg_res = http_get(epg_url, headers={"User-Agent": USER_AGENT})
         listings = epg_res if isinstance(epg_res, list) else []
 

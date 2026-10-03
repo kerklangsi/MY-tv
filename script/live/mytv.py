@@ -8,15 +8,11 @@ from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
-SCRIPT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if SCRIPT_DIR not in sys.path:
-    sys.path.insert(0, SCRIPT_DIR)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from paths import LIVE_MYTV, RADIO_MYTV
 
-from utils import http_get, http_post, fetch_raw_text, slugify, make_m3u8_absolute, write_if_changed, cleanup_stale_files
+from utils import http_get, http_post, fetch_raw, slugify, make_absolute, save_changed, cleanup_files, format_xmltv, GITHUB_URL, MYTV_API
 from auth.mytv import ME_KEY
-
-BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
-GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
 
 # Decrypt AES-GCM encrypted CDN signature payload
 def decrypt_cdn(payload_b64):
@@ -28,23 +24,15 @@ def decrypt_cdn(payload_b64):
     decrypted_bytes = aesgcm.decrypt(iv, ciphertext + tag, None)
     return json.loads(decrypted_bytes.decode("utf-8"))
 
-# Convert ISO timestamp string to XMLTV datetime format
-def format_xmltv(iso_str):
-    if not iso_str:
-        return ""
-    clean_str = iso_str.replace("Z", "").rsplit(".", 1)[0]
-    dt_obj = datetime.strptime(clean_str, "%Y-%m-%dT%H:%M:%S")
-    return dt_obj.strftime("%Y%m%d%H%M%S +0000")
-
 # Process MYTV live TV and radio channels and generate manifests
 def process_live(device_id):
     print("--- Processing MYTV Live Channels & Radio ---")
-    channels_res = http_get(f"{BASE_API}/public/channels")
+    channels_res = http_get(f"{MYTV_API}/public/channels")
     channels = channels_res.get("data", [])
     print(f"Total MYTV Live/Radio channels found: {len(channels)}")
 
-    os.makedirs("streams/live_mytv", exist_ok=True)
-    os.makedirs("streams/radio_mytv", exist_ok=True)
+    os.makedirs(LIVE_MYTV, exist_ok=True)
+    os.makedirs(RADIO_MYTV, exist_ok=True)
 
     m3u_entries = []
     epg_channels = []
@@ -71,10 +59,10 @@ def process_live(device_id):
 
         if is_radio:
             group_title = "MYTV Radio"
-            folder_name = "radio_mytv"
+            folder_path = RADIO_MYTV
         else:
             group_title = "MYTV Live"
-            folder_name = "live_mytv"
+            folder_path = LIVE_MYTV
 
         play_payload = {
             "channelId": c_id,
@@ -89,18 +77,15 @@ def process_live(device_id):
             },
         }
 
-        play_res = http_post(f"{BASE_API}/public/streaming/channel-play", play_payload)
+        play_res = http_post(f"{MYTV_API}/public/streaming/channel-play", play_payload)
         play_data = play_res.get("data", {})
         master_url = play_data.get("playbackUrl") or play_data.get("playbackUrls", {}).get("hls", "")
 
-        signed_stream_url = ""
-
         if master_url:
             if c_type == "radio":
-                signed_stream_url = master_url
-                ch_playlist_content = f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{signed_stream_url}\n"
+                ch_playlist_content = f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=4000000\n{master_url}\n"
             else:
-                m_content = fetch_raw_text(master_url)
+                m_content = fetch_raw(master_url)
                 parsed = urlparse(master_url)
                 cdn_host = f"{parsed.scheme}://{parsed.netloc}"
                 path_dir = parsed.path.rsplit("/", 1)[0]
@@ -115,7 +100,7 @@ def process_live(device_id):
                         full_sub_path = sub_rel if sub_rel.startswith("/") else f"{path_dir}/{sub_rel}"
 
                         sign_payload = {"channelId": c_id, "path": full_sub_path}
-                        sign_res = http_post(f"{BASE_API}/public/streaming/sign", sign_payload)
+                        sign_res = http_post(f"{MYTV_API}/public/streaming/sign", sign_payload)
                         if sign_res and "data" in sign_res and "payload" in sign_res["data"]:
                             dec = decrypt_cdn(sign_res["data"]["payload"])
                             signed_var_url = f"{cdn_host}{full_sub_path}?md5={dec['md5']}&expires={dec['expires']}"
@@ -127,18 +112,16 @@ def process_live(device_id):
 
                 if has_variants:
                     ch_playlist_content = "\n".join(new_lines) + "\n"
-                    signed_stream_url = master_url
                 else:
-                    signed_stream_url = master_url
-                    ch_playlist_content = make_m3u8_absolute(m_content, master_url)
+                    ch_playlist_content = make_absolute(m_content, master_url)
 
-        if signed_stream_url:
-            ch_file_path = f"streams/{folder_name}/{c_slug}.m3u8"
+        if master_url:
+            ch_file_path = f"{folder_path}/{c_slug}.m3u8"
             active_files_set.add(os.path.normpath(ch_file_path))
-            updated = write_if_changed(ch_file_path, ch_playlist_content)
+            updated = save_changed(ch_file_path, ch_playlist_content)
             status_str = "Updated" if updated else "Kept (Unchanged)"
 
-            clean_m3u_url = f"{GITHUB_URL}/streams/{folder_name}/{c_slug}.m3u8"
+            clean_m3u_url = f"{GITHUB_URL}/{folder_path}/{c_slug}.m3u8"
 
             extinf = f'#EXTINF:-1 tvg-id="{c_slug}" tvg-name="{c_name}" tvg-logo="{c_logo}" tvg-chno="{c_num}" group-title="{group_title}",{c_name}'
             m3u_entries.append((extinf, [], clean_m3u_url))
@@ -148,8 +131,8 @@ def process_live(device_id):
             processed_slugs.add(c_slug)
             epg_channels.append({"id": c_slug, "name": c_name, "logo": c_logo})
 
-    cleanup_stale_files("streams/live_mytv", active_files_set)
-    cleanup_stale_files("streams/radio_mytv", active_files_set)
+    cleanup_files(LIVE_MYTV, active_files_set)
+    cleanup_files(RADIO_MYTV, active_files_set)
 
     return m3u_entries, epg_channels
 
@@ -161,7 +144,7 @@ def fetch_epg():
 
     for day_offset in range(-1, 6):
         target_date = (today + timedelta(days=day_offset)).strftime("%Y-%m-%d")
-        epg_url = f"{BASE_API}/public/epg/guide?date={target_date}"
+        epg_url = f"{MYTV_API}/public/epg/guide?date={target_date}"
         epg_res = http_get(epg_url)
         epg_data = epg_res.get("data", [])
 

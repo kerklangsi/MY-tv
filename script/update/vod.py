@@ -2,12 +2,11 @@ import uuid
 import os
 import sys
 
-SCRIPT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if SCRIPT_DIR not in sys.path:
-    sys.path.insert(0, SCRIPT_DIR)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from paths import VOD_M3U, VOD_M3U8
 
 from vod import mytv, tonton, unifi
-from utils import write_if_changed, update_combined_playlist
+from utils import save_changed, merge_playlists
 
 # Orchestrate VOD processing and combined playlist creation
 def main():
@@ -26,11 +25,11 @@ def main():
         vod_lines.append(url)
 
     vod_content = "\n".join(vod_lines) + "\n"
-    write_if_changed("vod.m3u", vod_content)
-    write_if_changed("vod.m3u8", vod_content)
+    save_changed(VOD_M3U, vod_content)
+    save_changed(VOD_M3U8, vod_content)
     print("Saved merged vod.m3u and vod.m3u8", flush=True)
 
-    update_combined_playlist()
+    merge_playlists()
 
 if __name__ == "__main__":
     main()

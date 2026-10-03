@@ -8,15 +8,11 @@ from urllib.parse import urlencode
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
-SCRIPT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if SCRIPT_DIR not in sys.path:
-    sys.path.insert(0, SCRIPT_DIR)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from paths import VOD_TONTON
 
-from utils import http_get, fetch_raw_text_and_url, slugify, make_m3u8_absolute, write_if_changed, cleanup_stale_files, update_catalog_shows, update_catalog_movies
+from utils import http_get, fetch_url, slugify, make_absolute, save_changed, cleanup_files, update_shows, update_movies, GITHUB_URL, TONTON_API
 from auth.tonton import get_token, USER_AGENT, DEVICE_ID
-
-BASE_API = "https://headend-api.tonton.com.my/v600"
-GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
 
 PAGE_MAP = [
     ("Cinema", "Tonton Movies"),
@@ -66,7 +62,7 @@ def fetch_episodes(item):
     if not show_id:
         return [item]
 
-    url = f"{BASE_API}/api/asset.class.api.php/GOgetAssetData/377/0?format=json&showId={show_id}&serviceID=default&dateFormat=ISO8601&appID=TONTON"
+    url = f"{TONTON_API}/api/asset.class.api.php/GOgetAssetData/377/0?format=json&showId={show_id}&serviceID=default&dateFormat=ISO8601&appID=TONTON"
     show_data = http_get(url, headers={"User-Agent": USER_AGENT})
     if not show_data or not isinstance(show_data, dict):
         return [item]
@@ -95,7 +91,7 @@ def fetch_vod(task):
     item_id = str(item["id"])
 
     subfolder, display_show_title = get_subfolder(item)
-    folder_path = f"streams/vod_tonton/{subfolder}"
+    folder_path = f"{VOD_TONTON}/{subfolder}"
 
     ep_num = item.get("episodeNumber")
     raw_ep_title = item.get("episodeTitle") or item.get("title") or item.get("name") or "Unknown Episode"
@@ -115,9 +111,9 @@ def fetch_vod(task):
     file_path = f"{folder_path}/{ep_slug}.m3u8"
     site_id = str(item.get("siteID") or item.get("site_id") or 377)
     large_img = item.get("landscapeImage") or item.get("portraitImage") or item.get("image") or ""
-    logo = f"{BASE_API}/imageHelper.php?id={large_img}&w=500&appID=TONTON" if large_img else ""
+    logo = f"{TONTON_API}/imageHelper.php?id={large_img}&w=500&appID=TONTON" if large_img else ""
 
-    config_url = f"{BASE_API}/api/playback.class.api.php/GOgetVODConfig/{site_id}/1/{item_id}?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&manufacturer=chrome&serviceID=default&model=Mozilla/5.0&firmwareVersion=10&appVersion=6.1.7&deviceOS=PCBROWSER&limitAdTracking=0&deviceId={DEVICE_ID}&loginToken={tonton_token}"
+    config_url = f"{TONTON_API}/api/playback.class.api.php/GOgetVODConfig/{site_id}/1/{item_id}?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&manufacturer=chrome&serviceID=default&model=Mozilla/5.0&firmwareVersion=10&appVersion=6.1.7&deviceOS=PCBROWSER&limitAdTracking=0&deviceId={DEVICE_ID}&loginToken={tonton_token}"
     res = http_get(config_url, headers={"User-Agent": USER_AGENT})
     playback_data = res.get("playback", {}) or res
 
@@ -133,7 +129,7 @@ def fetch_vod(task):
             master_url = playback_data.get("url") or playback_data.get("playbackUrl") or ""
 
     if not master_url and err_code != "PS4033" and subfolder == "movie":
-        live_config_url = f"{BASE_API}/api/playback.class.api.php/GOgetLiveConfig/378/1/{item_id}?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&manufacturer=chrome&serviceID=default&model=Mozilla/5.0&firmwareVersion=10&appVersion=6.1.7&deviceOS=PCBROWSER&limitAdTracking=0&pageId=cinema&deviceId={DEVICE_ID}&loginToken={tonton_token}"
+        live_config_url = f"{TONTON_API}/api/playback.class.api.php/GOgetLiveConfig/378/1/{item_id}?format=json&appID=TONTON&rate=WIFIHIGH&plt=web&manufacturer=chrome&serviceID=default&model=Mozilla/5.0&firmwareVersion=10&appVersion=6.1.7&deviceOS=PCBROWSER&limitAdTracking=0&pageId=cinema&deviceId={DEVICE_ID}&loginToken={tonton_token}"
         live_res = http_get(live_config_url, headers={"User-Agent": USER_AGENT})
         live_pb = live_res.get("playback", {}) or live_res
         if isinstance(live_pb, dict):
@@ -147,9 +143,9 @@ def fetch_vod(task):
     if master_url:
         os.makedirs(folder_path, exist_ok=True)
         active_files_set.add(os.path.normpath(file_path))
-        master_manifest, final_url = fetch_raw_text_and_url(master_url, headers={"User-Agent": USER_AGENT})
-        abs_manifest = make_m3u8_absolute(master_manifest, final_url)
-        write_if_changed(file_path, abs_manifest)
+        master_manifest, final_url = fetch_url(master_url, headers={"User-Agent": USER_AGENT})
+        abs_manifest = make_absolute(master_manifest, final_url)
+        save_changed(file_path, abs_manifest)
 
         clean_m3u_url = f"{GITHUB_URL}/{folder_path}/{ep_slug}.m3u8"
         extinf = f'#EXTINF:-1 tvg-id="{ep_slug}" tvg-name="{entry_title}" tvg-logo="{logo}" group-title="{group_name}" http-user-agent="{USER_AGENT}",{entry_title}'
@@ -161,7 +157,7 @@ def fetch_vod(task):
 # Process all Tonton VOD shows and movies into catalog manifests
 def process_vod(device_id):
     print("--- Processing Tonton VOD Shows & Movies ---", flush=True)
-    os.makedirs("streams/vod_tonton", exist_ok=True)
+    os.makedirs(VOD_TONTON, exist_ok=True)
     active_files_set = set()
     tonton_token = get_token(allow_browser=False)
 
@@ -180,7 +176,7 @@ def process_vod(device_id):
             "entitlementClass": "avod",
             "serviceID": "default",
         })
-        url = f"{BASE_API}/api/bundle.class.api.php/getPage?{query}"
+        url = f"{TONTON_API}/api/bundle.class.api.php/getPage?{query}"
         res = http_get(url, headers={"User-Agent": USER_AGENT})
         blocks = res.get("blocks", []) if isinstance(res, dict) else []
 
@@ -208,6 +204,7 @@ def process_vod(device_id):
     tonton_vod_entries = []
     tonton_shows_dict = defaultdict(lambda: {"title": "", "episodes": []})
     tonton_movies_list = []
+    items_by_subfolder = defaultdict(list)
 
     with ThreadPoolExecutor(max_workers=20) as executor:
         results = executor.map(fetch_vod, items_to_process)
@@ -224,6 +221,7 @@ def process_vod(device_id):
                 dur = ep.get("duration") or 0
                 if is_playable:
                     tonton_movies_list.append({"title": m_t, "duration": dur, "url": clean_m3u_url})
+                    items_by_subfolder["movie"].append({"title": m_t, "clean_url": clean_m3u_url})
                 else:
                     tonton_movies_list.append({"title": m_t, "duration": dur, "url": None, "badge": "🔒 *(Requires Tonton UP / VIP)*"})
             else:
@@ -232,21 +230,35 @@ def process_vod(device_id):
                 raw_ep_t = ep.get("title") or ep.get("name") or ep.get("episodeTitle") or "Unknown Episode"
                 ep_t = clean_title(raw_ep_t)
                 ep_num = ep.get("episodeNumber")
-                if ep_num and not ep_t.lower().startswith(f"episod {ep_num}".lower()) and not ep_t.lower().startswith(f"episode {ep_num}".lower()):
-                    ep_label = f"Episod {ep_num} - {ep_t}"
-                else:
-                    ep_label = ep_t
+                ep_label = f"Episod {ep_num} - {ep_t}" if (ep_num and not ep_t.lower().startswith(f"episod {ep_num}".lower()) and not ep_t.lower().startswith(f"episode {ep_num}".lower())) else ep_t
 
                 if is_playable:
                     ep_str = f"[{ep_label}]({clean_m3u_url})"
+                    items_by_subfolder[subfolder].append({"title": ep_label, "clean_url": clean_m3u_url})
                 else:
                     ep_str = f"🔒 {ep_label} *(Requires Tonton UP / VIP)*"
                 tonton_shows_dict[subfolder]["episodes"].append(ep_str)
 
-    cleanup_stale_files("streams/vod_tonton", active_files_set)
+    sorted_subfolders = sorted([sf for sf in items_by_subfolder.keys() if sf != "movie"])
+    if "movie" in items_by_subfolder:
+        sorted_subfolders.append("movie")
 
-    update_catalog_shows("TONTON", "Tonton Shows", "streams/vod_tonton", tonton_shows_dict)
-    update_catalog_movies("TONTON", "Tonton Feature Movies", tonton_movies_list)
+    total_subfolders = len(sorted_subfolders)
+    for idx, subfolder in enumerate(sorted_subfolders, 1):
+        sub_items = items_by_subfolder[subfolder]
+        folder_label = f"Category '{subfolder}'" if subfolder == "movie" else f"Series '{subfolder}'"
+        print(f"[{idx}/{total_subfolders}] Processed {folder_label} ({len(sub_items)})", flush=True)
+
+        sorted_eps = sorted(sub_items, key=lambda x: [(0, int(c)) if c.isdigit() else (1, c) for c in re.split(r'(\d+)', x.get("title", "").lower())])
+        for ep in sorted_eps:
+            ep_t = ep.get("title", "Unknown")
+            ep_url = ep.get("clean_url", "")
+            print(f"{ep_t} -> {ep_url}", flush=True)
+
+    cleanup_files(VOD_TONTON, active_files_set)
+
+    update_shows("TONTON", "Tonton Shows", VOD_TONTON, tonton_shows_dict)
+    update_movies("TONTON", "Tonton Feature Movies", tonton_movies_list)
     print(f"Finished Tonton VOD processing ({len(tonton_vod_entries)} active entries)", flush=True)
 
     return tonton_vod_entries

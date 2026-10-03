@@ -8,14 +8,11 @@ from urllib.parse import urlparse
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
-SCRIPT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if SCRIPT_DIR not in sys.path:
-    sys.path.insert(0, SCRIPT_DIR)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from paths import VOD_MYTV
 
-from utils import http_get, http_post, fetch_raw_text, slugify, write_if_changed, cleanup_stale_files, update_catalog_shows, update_catalog_movies
+from utils import http_get, http_post, fetch_raw, slugify, save_changed, cleanup_files, update_shows, update_movies, GITHUB_URL, MYTV_API
 
-BASE_API = "https://co3y6iwoio.tenbytecdn.com/api/v1"
-GITHUB_URL = "https://kerklangsi.github.io/MY-tv"
 PROMO_KEYWORDS = {"teaser", "trailer", "promo", "preview", "highlight", "highlights", "behind the scene", "behind the scenes", "bts", "sedutan"}
 
 # Determine VOD series subfolder or movie category based on title
@@ -81,11 +78,11 @@ def fetch_vod(task):
     }
 
     updated = False
-    play_res = http_post(f"{BASE_API}/public/streaming/play", play_payload)
+    play_res = http_post(f"{MYTV_API}/public/streaming/play", play_payload)
     signed_stream_url = play_res.get("data", {}).get("playbackUrl", "")
 
     if signed_stream_url:
-        master_manifest = fetch_raw_text(signed_stream_url)
+        master_manifest = fetch_raw(signed_stream_url)
         parsed_master = urlparse(signed_stream_url)
         fresh_query = f"?{parsed_master.query}" if parsed_master.query else ""
         path_dir = parsed_master.path.rsplit("/", 1)[0]
@@ -102,7 +99,7 @@ def fetch_vod(task):
                 absolute_master_lines.append(line)
 
         new_manifest_content = "\n".join(absolute_master_lines) + "\n"
-        updated = write_if_changed(master_file_path, new_manifest_content)
+        updated = save_changed(master_file_path, new_manifest_content)
 
     clean_url = f"{GITHUB_URL}/{folder_path}/{item_slug}.m3u8"
     extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
@@ -115,7 +112,7 @@ def process_vod(device_id):
     official_series_index = {}
     s_page = 1
     while True:
-        s_res = http_get(f"{BASE_API}/public/content?contentType=series&page={s_page}&limit=100")
+        s_res = http_get(f"{MYTV_API}/public/content?contentType=series&page={s_page}&limit=100")
         s_items = s_res.get("data", {}).get("data", [])
         if not s_items:
             break
@@ -143,7 +140,7 @@ def process_vod(device_id):
     items = []
     page = 1
     while True:
-        res = http_get(f"{BASE_API}/public/content?page={page}&limit=100")
+        res = http_get(f"{MYTV_API}/public/content?page={page}&limit=100")
         data = res.get("data", {}).get("data", [])
         if not data:
             break
@@ -215,7 +212,7 @@ def process_vod(device_id):
     tasks_by_subfolder = defaultdict(list)
     for subfolder in sorted_subfolders:
         sub_items = items_by_subfolder[subfolder]
-        folder_path = f"streams/vod_mytv/{subfolder}"
+        folder_path = f"{VOD_MYTV}/{subfolder}"
         os.makedirs(folder_path, exist_ok=True)
         if subfolder == "short-movies-and-clips":
             group_title = "MYTV Short Movies"
@@ -234,10 +231,9 @@ def process_vod(device_id):
                 clean_t = re.sub(r"\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+.*$", "", clean_t, flags=re.IGNORECASE)
                 if clean_t.strip():
                     title_slug = slugify(clean_t)
-            base_slug = title_slug if title_slug else (item.get("slug") or item_id)
-            item_slug = base_slug
+            item_slug = title_slug if title_slug else (item.get("slug") or item_id)
             if item_slug in used_vod_slugs:
-                item_slug = f"{base_slug}-{item_id}"
+                item_slug = f"{item_slug}-{item_id}"
             used_vod_slugs.add(item_slug)
 
             tasks_by_subfolder[subfolder].append((item, folder_path, item_slug, group_title, device_id))
@@ -251,25 +247,24 @@ def process_vod(device_id):
     with ThreadPoolExecutor(max_workers=20) as executor:
         results = list(executor.map(fetch_vod, all_tasks))
 
-    subfolder_stats = defaultdict(lambda: {"updated": 0, "kept": 0, "count": 0})
-
-    for (extinf, extra_lines, clean_url, master_file_path, updated), (item, folder_path, item_slug, group_title, device_id) in zip(results, all_tasks):
+    for (extinf, extra_lines, clean_url, master_file_path, _), (item, _, _, _, _) in zip(results, all_tasks):
         item["clean_url"] = clean_url
         active_files_set.add(os.path.normpath(master_file_path))
         vod_entries.append((extinf, extra_lines, clean_url))
-        sf = folder_path.rsplit("/", 1)[-1]
-        subfolder_stats[sf]["count"] += 1
-        if updated:
-            subfolder_stats[sf]["updated"] += 1
-        else:
-            subfolder_stats[sf]["kept"] += 1
 
     for idx, subfolder in enumerate(sorted_subfolders, 1):
-        stats = subfolder_stats[subfolder]
-        folder_label = f"Series '{subfolder}'" if subfolder != "movie" else "Category 'movies'"
-        print(f"[{idx}/{total_subfolders}] Processed {folder_label} ({stats['count']} items: {stats['updated']} updated, {stats['kept']} kept)", flush=True)
+        sub_items = items_by_subfolder[subfolder]
+        folder_label = f"Category '{subfolder}'" if subfolder in ["movie", "short-movies-and-clips"] else f"Series '{subfolder}'"
+        print(f"[{idx}/{total_subfolders}] Processed {folder_label} ({len(sub_items)})", flush=True)
 
-    cleanup_stale_files("streams/vod_mytv", active_files_set)
+        sorted_eps = sorted(sub_items, key=lambda x: [(0, int(c)) if c.isdigit() else (1, c) for c in re.split(r'(\d+)', x.get("title", "").lower())])
+        for ep in sorted_eps:
+            ep_t = ep.get("title", "Unknown")
+            ep_url = ep.get("clean_url", "")
+            print(f"{ep_t} -> {ep_url}", flush=True)
+
+
+    cleanup_files(VOD_MYTV, active_files_set)
 
     mytv_shows_dict = defaultdict(lambda: {"title": "", "episodes": []})
     mytv_movies_list = []
@@ -292,8 +287,8 @@ def process_vod(device_id):
                 ep_str = f"[{ep_t}]({ep_url})" if ep_url else ep_t
                 mytv_shows_dict[subfolder]["episodes"].append(ep_str)
 
-    update_catalog_shows("MYTV", "MYTV Shows", "streams/vod_mytv", mytv_shows_dict)
-    update_catalog_movies("MYTV", "MYTV Feature Movies", mytv_movies_list)
+    update_shows("MYTV", "MYTV Shows", VOD_MYTV, mytv_shows_dict)
+    update_movies("MYTV", "MYTV Feature Movies", mytv_movies_list)
 
     print(f"Total MYTV VOD items processed: {len(vod_entries)}")
     return vod_entries

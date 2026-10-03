@@ -1,26 +1,15 @@
-import urllib.request
-import json
 import uuid
 import os
 import sys
 import gzip
-import re
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
-SCRIPT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if SCRIPT_DIR not in sys.path:
-    sys.path.insert(0, SCRIPT_DIR)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from paths import EPG_XML, EPG_GZ, PLAYLIST, PLAYLIST8
 
 from live import mytv, tonton, unifi
-from utils import write_if_changed, update_combined_playlist, update_catalog_live
-
-# Extract channel number integer from tvg-chno attribute for sorting
-def extract_chno(extinf):
-    match = re.search(r'tvg-chno="(\d+)"', extinf)
-    if match:
-        return int(match.group(1))
-    return 999999
+from utils import save_changed, merge_playlists, update_live, extract_chno, GITHUB_URL
 
 # Orchestrate live channel processing, playlist generation, and EPG schedule merging
 def main():
@@ -37,9 +26,9 @@ def main():
     all_live_entries.sort(key=lambda item: (extract_chno(item[0]), item[0]))
 
     # Generate/Update List/LIVE_LIST.md catalog
-    update_catalog_live(all_live_entries)
+    update_live(all_live_entries)
 
-    m3u_lines = ['#EXTM3U x-tvg-url="https://kerklangsi.github.io/MY-tv/epg.xml.gz"']
+    m3u_lines = [f'#EXTM3U x-tvg-url="{GITHUB_URL}/epg.xml.gz"']
 
     for extinf, extra_lines, url in all_live_entries:
         if url:
@@ -49,8 +38,8 @@ def main():
             m3u_lines.append(url)
 
     playlist_content = "\n".join(m3u_lines) + "\n"
-    write_if_changed("playlist.m3u", playlist_content)
-    write_if_changed("playlist.m3u8", playlist_content)
+    save_changed(PLAYLIST, playlist_content)
+    save_changed(PLAYLIST8, playlist_content)
     print("Saved merged playlist.m3u and playlist.m3u8", flush=True)
 
     # 3. Process & Merge EPG Schedules (MYTV, Tonton & Unifi)
@@ -93,15 +82,15 @@ def main():
     parsed_xml = minidom.parseString(raw_xml_bytes)
     pretty_xml = parsed_xml.toprettyxml(indent="  ", encoding="utf-8")
 
-    write_if_changed("epg.xml", pretty_xml, is_binary=True)
+    save_changed(EPG_XML, pretty_xml, is_binary=True)
     print("Saved merged epg.xml", flush=True)
 
     compressed_gz = gzip.compress(pretty_xml)
-    write_if_changed("epg.xml.gz", compressed_gz, is_binary=True)
+    save_changed(EPG_GZ, compressed_gz, is_binary=True)
     print("Saved merged epg.xml.gz", flush=True)
 
     # 4. Generate Combined Master Playlist (all.m3u & all.m3u8)
-    update_combined_playlist()
+    merge_playlists()
 
 if __name__ == "__main__":
     main()

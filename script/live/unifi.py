@@ -1,17 +1,16 @@
 import os
 import sys
 
-SCRIPT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if SCRIPT_DIR not in sys.path:
-    sys.path.insert(0, SCRIPT_DIR)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from paths import LIVE_UNIFI
 
-from utils import cleanup_stale_files
+from utils import cleanup_files
 
 # Process Unifi TV live channels placeholder
 def process_live(device_id):
     print("--- Processing Unifi TV Live Channels (Placeholder) ---", flush=True)
-    os.makedirs("streams/live_unifi", exist_ok=True)
-    cleanup_stale_files("streams/live_unifi", set())
+    os.makedirs(LIVE_UNIFI, exist_ok=True)
+    cleanup_files(LIVE_UNIFI, set())
     return [], []
 
 # Fetch EPG schedule for Unifi TV channels placeholder
