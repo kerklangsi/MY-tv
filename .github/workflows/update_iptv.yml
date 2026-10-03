@@ -87,7 +87,7 @@ jobs:
           git remote set-url origin "https://github.com/${{ github.repository }}.git"
 
   update-vod:
-    needs: gatekeeper
+    needs: [gatekeeper, update-live]
     if: needs.gatekeeper.outputs.should_run == 'true'
     runs-on: self-hosted
     permissions:
