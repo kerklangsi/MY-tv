@@ -50346,10 +50346,6 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 7 - Dr Irfan berasa selesa tinggal di kampung dengan menikmati suasana nyaman dan keindahan semula jadi di kampung. Razi mengaku dengan ibunya yang Sophia adalah teman wanitanya tapi cuba mengelak bila ibunya mahu mengenali Sophia. - [NC]</desc>
   </programme>
-  <programme start="20261002130427 +0000" stop="20261002151729 +0000" channel="fifa">
-    <title lang="en">Germany v Morocco | Group H | FIFA Women's World Cup Australia &amp; New Zealand 2023™ | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full match replay between Germany and Morocco at Melbourne Rectangular Stadium, Melbourne. - [NC]</desc>
-  </programme>
   <programme start="20261002151729 +0000" stop="20261002171005 +0000" channel="fifa">
     <title lang="en">Thailand v Germany | Group B | FIFA Women's World Cup Canada 2015™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Thailand and Germany from Winnipeg, 15 June 2015. - [NC]</desc>
@@ -50398,6 +50394,10 @@
     <title lang="en">Germany v Argentina | Final | 2014 FIFA World Cup Brazil™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full replay from the match between Germany and Argentina - [NC]</desc>
   </programme>
+  <programme start="20261003150651 +0000" stop="20261003165809 +0000" channel="fifa">
+    <title lang="en">Bulgaria v Germany | Quarter-finals | 1994 FIFA World Cup USA™ | Full Match Replay</title>
+    <desc lang="en">Episode 1 - Watch the full match replay between Bulgaria and Germany played at Giants Stadium, New Jersey. - [NC]</desc>
+  </programme>
   <programme start="20261002100000 +0000" stop="20261002160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
@@ -50417,10 +50417,6 @@
   <programme start="20261003100000 +0000" stop="20261003160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20261002150000 +0000" stop="20261002153000 +0000" channel="ntv7">
-    <title lang="en">DUNIA TERSEMBUNYI 2016</title>
-    <desc lang="en">Episode 2 - DAUN EMAS.  Myanmar terkenal sebagai pengeluar batu permata Jed terbaik dunia. Turut diberi jolokan sebagai Tanah Emas Asia, Myanmar. Namun, emas keluaran Myanmar jarang digunakan untuk menghasilkan produk perhiasan. - [NC]</desc>
   </programme>
   <programme start="20261002153000 +0000" stop="20261002160000 +0000" channel="ntv7">
     <title lang="en">DESTINASI KERJAYA 24/25</title>
@@ -50549,6 +50545,10 @@
   <programme start="20261003150000 +0000" stop="20261003153000 +0000" channel="ntv7">
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 3 - BUSANA BESI.  Etnik minoriti mempunyai persepsi unik mengenai busana yang mereka gayakan. Ia sebagai perlambangan paling jelas identiti sesebuah etnik yang mendiami kawasan pedalaman. - [NC]</desc>
+  </programme>
+  <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 3 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
   </programme>
   <programme start="20261002100000 +0000" stop="20261002160000 +0000" channel="scl">
     <title lang="en"> Shadow Combat League (SCL): New Dawn Malaysia</title>
@@ -50774,10 +50774,6 @@
     <title lang="en">SAKANAK</title>
     <desc lang="en">Episode 1 - Sarah seringkali keguguran setiap kali mengandung. Sarah dan suaminya Kamal kecewa impian untuk memiliki anak sejak berkahwin beberapa tahun lalu berkecai. Doktor yang merawat Sarah juga tidak mampu menghuraikan secara lanjut. - [NC]</desc>
   </programme>
-  <programme start="20261002143000 +0000" stop="20261002153000 +0000" channel="tv9">
-    <title lang="en">AL-KULIYYAH 2019</title>
-    <desc lang="en">Episode 9 - SEMPURNAKAN KEBAIKAN.  Setiap dari kita berazam melakukan pelbagai kebaikan tetapi tuntas yang paling utama ialah melakukan ketaatan kepada ibu bapa. - [NC]</desc>
-  </programme>
   <programme start="20261002153000 +0000" stop="20261002160000 +0000" channel="tv9">
     <title lang="en">JET LAG</title>
     <desc lang="en">Episode 2 - Episod ini hos Iedil Putra menampilkan misi sengit demi memenangi tiket festival &quot;Big Day Out&quot; di Australia. Cabaran bermula di Rom, Itali, memerlukan beliau menjelajah pelbagai negara berbekalkan tugas serta wang saku. - [NC]</desc>
@@ -50894,6 +50890,10 @@
     <title lang="en">DURJA NINGSUN</title>
     <desc lang="en">Episode 1 - Permulaan kisah, sedikit latar gangguan mimpi dan rasukan Aria ke dunia silam, dunia Ningsun. Akhirnya Aria sembuh setelah berjaya dirawat oleh atuknya Haji Shaaban. Sejak berusia 14 tahun, Aria derita kerana mudah dirasuki. - [NC]</desc>
   </programme>
+  <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="tv9">
+    <title lang="en">HERO OVEN 2017</title>
+    <desc lang="en">Episode 6 - Episod ini tujuh peserta termasuk Cef Fikree berentap menyediakan Brioche serta kek gabungan konsep menggunakan bahan rahsia gula melaka. Hasil ciptaan mereka dinilai secara teliti oleh Cef Fikree dan Cef Sarah. - [NC]</desc>
+  </programme>
   <programme start="20261003160000 +0000" stop="20261003170000 +0000" channel="8tv">
     <title lang="en">HEALING HEROES</title>
     <desc lang="en">Episode 119 - Jia Cai membayangkan kepada Hao Nan bahawa dia akan menaikkan pangkatnya untuk mengetuai Jabatan Pesakit Luar. Jin Kok geram apabila Dr King muncul di depan rumahnya untuk menilai keadaan dementianya. - [NC]</desc>
@@ -50982,6 +50982,10 @@
     <title lang="en">WEAVING A TALE OF LOVE S2</title>
     <desc lang="en">Episode 37 - Jeneral Shu dan bapanya terbunuh dalam perjalanan diserahkan kepada puak utara. Selepas kematian ayah Hui Zhou Yu, Hui menerima dekri bahawa dia akan dipindahkan untuk bekerja di ibu kota. - [NC]</desc>
   </programme>
+  <programme start="20261004153000 +0000" stop="20261004163000 +0000" channel="8tv">
+    <title lang="en">JOY OF LIFE SEASON 2</title>
+    <desc lang="en">Episode 1 - Fan Xian telah memalsukan kematiannya untuk melarikan diri. Fan Xian kini menyamar sebagai rakyat biasa bersama Wang Qi Nian dan kembali ke ibu kota. Mereka terkejut berita kematian Fan Xian telah pun tersebar ke seluruh bandar. - [NC]</desc>
+  </programme>
   <programme start="20261003160000 +0000" stop="20261003170000 +0000" channel="drama-sangat">
     <title lang="en">WOW SHOP </title>
     <desc lang="en">Episode 115 - [NC]</desc>
@@ -51062,10 +51066,6 @@
     <title lang="en">HOSPITAL LOVELINE</title>
     <desc lang="en">Episode 8 - Doktor Arfan menunjukkan Aplikasi baharu yang bakal digunakan oleh pesakit untuk melayari apa-apa sahaja mengenai hospital tetapi aplikasi tersebut tidak berapa digemari oleh pakciknya. Opah datang ke hospital untuk rawatan susulan - [NC]</desc>
   </programme>
-  <programme start="20261003150651 +0000" stop="20261003165809 +0000" channel="fifa">
-    <title lang="en">Bulgaria v Germany | Quarter-finals | 1994 FIFA World Cup USA™ | Full Match Replay</title>
-    <desc lang="en">Episode 1 - Watch the full match replay between Bulgaria and Germany played at Giants Stadium, New Jersey. - [NC]</desc>
-  </programme>
   <programme start="20261003165809 +0000" stop="20261003193334 +0000" channel="fifa">
     <title lang="en">Germany v England | Play-off for third place | FIFA Women's World Cup Canada 2015™ | Full Match Replay</title>
     <desc lang="en">Episode 1 - Watch the full match replay between Germany and England from Edmonton, 4 July 2015. - [NC]</desc>
@@ -51133,10 +51133,6 @@
   <programme start="20261004100000 +0000" stop="20261004160000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
-  <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 3 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
   </programme>
   <programme start="20261003160000 +0000" stop="20261003230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
@@ -51265,6 +51261,10 @@
   <programme start="20261004150000 +0000" stop="20261004153000 +0000" channel="ntv7">
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 4 - DOKTOR HUTAN.  Etnik Phnong atau Bunang turut diiktiraf sebagai penjaga hutan Kemboja kerana kemahiran dimiliki mereka. Hanya etnik ini yang mengetahui kepentingan hutan kepada manusia khususnya menerusi perubatan. - [NC]</desc>
+  </programme>
+  <programme start="20261004153000 +0000" stop="20261004160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 4 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
   </programme>
   <programme start="20261003160000 +0000" stop="20261003220000 +0000" channel="scl">
     <title lang="en"> Shadow Combat League (SCL): New Dawn Malaysia</title>
@@ -51482,10 +51482,6 @@
     <title lang="en">REMANG</title>
     <desc lang="en">Episode 6 - PERHENTIAN.  Episod ini DJ Ejay menceritakan kisah sepasang suami isteri Aizat dan Syikin yang pulang dari majlis kenduri. Mereka mengalami peristiwa menyeramkan apabila berulang kali singgah di R&amp;R yang sama. - [NC]</desc>
   </programme>
-  <programme start="20261003153000 +0000" stop="20261003160000 +0000" channel="tv9">
-    <title lang="en">HERO OVEN 2017</title>
-    <desc lang="en">Episode 6 - Episod ini tujuh peserta termasuk Cef Fikree berentap menyediakan Brioche serta kek gabungan konsep menggunakan bahan rahsia gula melaka. Hasil ciptaan mereka dinilai secara teliti oleh Cef Fikree dan Cef Sarah. - [NC]</desc>
-  </programme>
   <programme start="20261003160000 +0000" stop="20261003170000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -51598,9 +51594,9 @@
     <title lang="en">DURJA NINGSUN</title>
     <desc lang="en">Episode 2 - Myra, Nurlida dan Aria gempar bilik asrama mereka diketuk berkali-kali pada lewat malam. Rupanya Suhana, rakan sebilik akhir Aria tapi penampilannya kelihatan lebih sopan. Yasmin sentiasa resah setiap kali bertemu Aria. - [NC]</desc>
   </programme>
-  <programme start="20261004153000 +0000" stop="20261004163000 +0000" channel="8tv">
-    <title lang="en">JOY OF LIFE SEASON 2</title>
-    <desc lang="en">Episode 1 - Fan Xian telah memalsukan kematiannya untuk melarikan diri. Fan Xian kini menyamar sebagai rakyat biasa bersama Wang Qi Nian dan kembali ke ibu kota. Mereka terkejut berita kematian Fan Xian telah pun tersebar ke seluruh bandar. - [NC]</desc>
+  <programme start="20261004153000 +0000" stop="20261004160000 +0000" channel="tv9">
+    <title lang="en">KISAH BENAR TRAGEDI ( SS 2 )</title>
+    <desc lang="en">Episode 7 - DEMI RAKAN.  Memaparkan penyiasatan kes pembunuhan pengawal keselamatan gudang oleh ASP Farah. Siasatan terperinci membongkar cubaan rompakan yang membawa kepada penangkapan suspek utama Zilani dan Halim. - [NC]</desc>
   </programme>
   <programme start="20261004163000 +0000" stop="20261004230000 +0000" channel="8tv">
     <title lang="en">EIGHTFM @ 8TV (2026/2027)</title>
@@ -51822,10 +51818,6 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20261004153000 +0000" stop="20261004160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 4 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
-  </programme>
   <programme start="20261004160000 +0000" stop="20261004230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 278 - [NC]</desc>
@@ -52033,7 +52025,7 @@
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005143000 +0000" stop="20261005150131 +0000" channel="scl">
+  <programme start="20261005143000 +0000" stop="20261005153848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -52226,10 +52218,6 @@
     <title lang="en">REMANG</title>
     <desc lang="en">Episode 7 - CERMIN BERHANTU.  Episod ini memaparkan  kisah keluarga Wan membawa isterinya Sara dan anak mereka Imran dan Alif bercuti di sebuah inap desa. Suatu malam, Imran telah hilang membuatkan mereka semua panik. - [NC]</desc>
   </programme>
-  <programme start="20261004153000 +0000" stop="20261004160000 +0000" channel="tv9">
-    <title lang="en">KISAH BENAR TRAGEDI ( SS 2 )</title>
-    <desc lang="en">Episode 7 - DEMI RAKAN.  Memaparkan penyiasatan kes pembunuhan pengawal keselamatan gudang oleh ASP Farah. Siasatan terperinci membongkar cubaan rompakan yang membawa kepada penangkapan suspek utama Zilani dan Halim. - [NC]</desc>
-  </programme>
   <programme start="20261004160000 +0000" stop="20261004170000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -52345,6 +52333,10 @@
   <programme start="20261005143000 +0000" stop="20261005153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 4 - Ramai kanak-kanak keracunan makanan setelah minum susu yang dipromosi oleh Eun Ha dalam We Tube. Eun Ha bergegas ke hospital, melihat ramai kanak-kanak yang sakit, dia rasa bersalah. Eun Ha diserang oleh bapa kepada seorang mangsa. - [NC]</desc>
+  </programme>
+  <programme start="20261005153000 +0000" stop="20261005160000 +0000" channel="tv9">
+    <title lang="en">KINTANG KINTUNG</title>
+    <desc lang="en">Episode 6 - Episod ini Harun Salim Bachik dan Achey membincangkan isu 'Buli' bersama tetamu Musleh Aling. Beliau berkongsi pengalaman dibuli dan membuli hingga diinsafi, diiringi sketsa komedi serta persembahan lagu khas dalam episod ini. - [NC]</desc>
   </programme>
   <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="8tv">
     <title lang="en">THE LEGEND OF HEROES</title>
@@ -52690,82 +52682,86 @@
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 5 - SI GIGI HITAM.  Etnik Lu antara kelompok minoriti yang tinggal di kawasan pergunungan utara Vietnam. Selain latar lokasi yang indah, etnik ini turut mempunyai persepsi kecantikan luar biasa khususnya kaum wanita. - [NC]</desc>
   </programme>
-  <programme start="20261005150131 +0000" stop="20261005163131 +0000" channel="scl">
+  <programme start="20261006153000 +0000" stop="20261006160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 5 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  </programme>
+  <programme start="20261005153848 +0000" stop="20261005170848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005163131 +0000" stop="20261005180131 +0000" channel="scl">
+  <programme start="20261005170848 +0000" stop="20261005183848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005180131 +0000" stop="20261005193131 +0000" channel="scl">
+  <programme start="20261005183848 +0000" stop="20261005200848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005193131 +0000" stop="20261005210131 +0000" channel="scl">
+  <programme start="20261005200848 +0000" stop="20261005213848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005210131 +0000" stop="20261005223131 +0000" channel="scl">
+  <programme start="20261005213848 +0000" stop="20261005230848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261005223131 +0000" stop="20261006000131 +0000" channel="scl">
+  <programme start="20261005230848 +0000" stop="20261006003848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006000131 +0000" stop="20261006013131 +0000" channel="scl">
+  <programme start="20261006003848 +0000" stop="20261006020848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006013131 +0000" stop="20261006030131 +0000" channel="scl">
+  <programme start="20261006020848 +0000" stop="20261006033848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006030131 +0000" stop="20261006043131 +0000" channel="scl">
+  <programme start="20261006033848 +0000" stop="20261006050848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006043131 +0000" stop="20261006060131 +0000" channel="scl">
+  <programme start="20261006050848 +0000" stop="20261006063848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006060131 +0000" stop="20261006073131 +0000" channel="scl">
+  <programme start="20261006063848 +0000" stop="20261006080848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006073131 +0000" stop="20261006090131 +0000" channel="scl">
+  <programme start="20261006080848 +0000" stop="20261006093848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006090131 +0000" stop="20261006103131 +0000" channel="scl">
+  <programme start="20261006093848 +0000" stop="20261006110848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006103131 +0000" stop="20261006120131 +0000" channel="scl">
+  <programme start="20261006110848 +0000" stop="20261006123848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006120131 +0000" stop="20261006133131 +0000" channel="scl">
+  <programme start="20261006123848 +0000" stop="20261006140848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006133131 +0000" stop="20261006150131 +0000" channel="scl">
+  <programme start="20261006140848 +0000" stop="20261006153848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -52958,10 +52954,6 @@
     <title lang="en">REMANG</title>
     <desc lang="en">Episode 8 - SIAPA TADI.  Episod ini DJ Ejay meneruskan cerita tentang empat orang pelajar iaitu Sam, Johan, Amin dan Ika membuat penggambaran cerita seram bagi menyertai satu pertandingan drama pendek di sebuah rumah lama yang misteri - [NC]</desc>
   </programme>
-  <programme start="20261005153000 +0000" stop="20261005160000 +0000" channel="tv9">
-    <title lang="en">KINTANG KINTUNG</title>
-    <desc lang="en">Episode 6 - Episod ini Harun Salim Bachik dan Achey membincangkan isu 'Buli' bersama tetamu Musleh Aling. Beliau berkongsi pengalaman dibuli dan membuli hingga diinsafi, diiringi sketsa komedi serta persembahan lagu khas dalam episod ini. - [NC]</desc>
-  </programme>
   <programme start="20261005160000 +0000" stop="20261005170000 +0000" channel="tv9">
     <title lang="en">PLAN B</title>
     <desc lang="en">Episode 5 - Khai kalah dalam perlumbaan kereta &quot;drift&quot;. Dia tidak mampu membayar wang taruhan sebanyak RM50 ribu lalu menggadai kereta lumbanya. Di rumah Khai terperangkap ketika dia cuba membuka peti besi wang bapanya. Dia dihalau dari rumah. - [NC]</desc>
@@ -53081,6 +53073,10 @@
   <programme start="20261006143000 +0000" stop="20261006153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 5 - Eun Ha menjadi pembantu rumah di kediaman Ye Na, merasa kekok ketika bertembung dengan Ji Hwan. Kemudian, mereka bertemu secara kebetulan di warung makan. Dalam keadaan mabuk, Ji Hwan melarikan diri ke sebuah taman permainan. - [NC]</desc>
+  </programme>
+  <programme start="20261006153000 +0000" stop="20261006160000 +0000" channel="tv9">
+    <title lang="en">DUNIA TERSEMBUNYI</title>
+    <desc lang="en">Episode 11 - SAKTI SI BISSU.  Masyarakat Bissu yang tinggal di Pulau Pangka, Sulawesi Selatan, Indonesia dikatakan mempunyai kesaktian tertentu. Bissu bermaksud  bersih dan suci. Mereka mempunyai status tertinggi dalam pemerintahan . - [NC]</desc>
   </programme>
   <programme start="20261006160000 +0000" stop="20261006170000 +0000" channel="8tv">
     <title lang="en">THE LEGEND OF HEROES</title>
@@ -53294,10 +53290,6 @@
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
-  <programme start="20261006153000 +0000" stop="20261006160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 5 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
-  </programme>
   <programme start="20261006160000 +0000" stop="20261006230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
     <desc lang="en">Episode 280 - [NC]</desc>
@@ -53430,82 +53422,86 @@
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 6 - UPACARA BACI.  Etnik Khmu antara etnik minoriti yang menata taburan populasi di Laos khususnya Oudomxay. Kepercayaan silam mengenai tuah dan kepercayaan berdasarkan upacara khas masih kekal diamalkan oleh etnik ini. - [NC]</desc>
   </programme>
-  <programme start="20261006150131 +0000" stop="20261006163131 +0000" channel="scl">
+  <programme start="20261007153000 +0000" stop="20261007160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 6 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  </programme>
+  <programme start="20261006153848 +0000" stop="20261006170848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006163131 +0000" stop="20261006180131 +0000" channel="scl">
+  <programme start="20261006170848 +0000" stop="20261006183848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006180131 +0000" stop="20261006193131 +0000" channel="scl">
+  <programme start="20261006183848 +0000" stop="20261006200848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006193131 +0000" stop="20261006210131 +0000" channel="scl">
+  <programme start="20261006200848 +0000" stop="20261006213848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006210131 +0000" stop="20261006223131 +0000" channel="scl">
+  <programme start="20261006213848 +0000" stop="20261006230848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261006223131 +0000" stop="20261007000131 +0000" channel="scl">
+  <programme start="20261006230848 +0000" stop="20261007003848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007000131 +0000" stop="20261007013131 +0000" channel="scl">
+  <programme start="20261007003848 +0000" stop="20261007020848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007013131 +0000" stop="20261007030131 +0000" channel="scl">
+  <programme start="20261007020848 +0000" stop="20261007033848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007030131 +0000" stop="20261007043131 +0000" channel="scl">
+  <programme start="20261007033848 +0000" stop="20261007050848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007043131 +0000" stop="20261007060131 +0000" channel="scl">
+  <programme start="20261007050848 +0000" stop="20261007063848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007060131 +0000" stop="20261007073131 +0000" channel="scl">
+  <programme start="20261007063848 +0000" stop="20261007080848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007073131 +0000" stop="20261007090131 +0000" channel="scl">
+  <programme start="20261007080848 +0000" stop="20261007093848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007090131 +0000" stop="20261007103131 +0000" channel="scl">
+  <programme start="20261007093848 +0000" stop="20261007110848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007103131 +0000" stop="20261007120131 +0000" channel="scl">
+  <programme start="20261007110848 +0000" stop="20261007123848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007120131 +0000" stop="20261007133131 +0000" channel="scl">
+  <programme start="20261007123848 +0000" stop="20261007140848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007133131 +0000" stop="20261007150131 +0000" channel="scl">
+  <programme start="20261007140848 +0000" stop="20261007153848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -53710,10 +53706,6 @@
     <title lang="en">SCARLET HEART</title>
     <desc lang="en">Episode 11 - Hae Soo dipenjarakan dan diseksa atas tuduhan cuba membunuh Putera Mahkota. Walaupun mengetahui dalang sebenar di sebalik konspirasi itu, Putera Wang Wook memilih untuk berdiam diri demi politik dan keluarganya. - [NC]</desc>
   </programme>
-  <programme start="20261006153000 +0000" stop="20261006160000 +0000" channel="tv9">
-    <title lang="en">DUNIA TERSEMBUNYI</title>
-    <desc lang="en">Episode 11 - SAKTI SI BISSU.  Masyarakat Bissu yang tinggal di Pulau Pangka, Sulawesi Selatan, Indonesia dikatakan mempunyai kesaktian tertentu. Bissu bermaksud  bersih dan suci. Mereka mempunyai status tertinggi dalam pemerintahan . - [NC]</desc>
-  </programme>
   <programme start="20261006160000 +0000" stop="20261006170000 +0000" channel="tv9">
     <title lang="en">PLAN B</title>
     <desc lang="en">Episode 6 - Suasana dalam keluarga Khai semakin memburuk kerana Dr Rizman kini mahu tarik balik segala kemewahan yang dia berikan kepada Khai. Dr Rizman mahu Khai berdikari dan menjadi lebih bertanggungjawab. - [NC]</desc>
@@ -53833,6 +53825,10 @@
   <programme start="20261007143000 +0000" stop="20261007153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 6 - Eun Ha dipecat oleh CEO Ma dan dihalau dari apartment yang disediakan oleh syarikatnya. Eun Ha yang tiada tempat duduk merayau di jalan dan terserempak dengan Ji Hwan dalam hujan lebat. Ji Hwan sebenarnya mengetahui kedudukan Eun Ha. - [NC]</desc>
+  </programme>
+  <programme start="20261007153000 +0000" stop="20261007160000 +0000" channel="tv9">
+    <title lang="en">BANG BANG BOOM SEASON 11 &amp; 12</title>
+    <desc lang="en">Episode 23 - Sebuah program komedi yang dihoskan oleh Amat dan Azahari. Sejak diperkenalkan pada tahun 2007, BANG BANG BOOM! (BBB) sering melakukan pembaharuan dalam memberikan kejutan kepada para peminat setianya. - [NC]</desc>
   </programme>
   <programme start="20261007160000 +0000" stop="20261007170000 +0000" channel="8tv">
     <title lang="en">THE LEGEND OF HEROES</title>
@@ -54054,9 +54050,9 @@ TR vs BTRM - [NC]</desc>
 
 SRG vs FL - [NC]</desc>
   </programme>
-  <programme start="20261007153000 +0000" stop="20261007160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 6 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  <programme start="20261008153000 +0000" stop="20261008160000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20261007160000 +0000" stop="20261007230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
@@ -54186,82 +54182,86 @@ SRG vs FL - [NC]</desc>
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 7 - PONDOK CINTA.  Menjadi kewajipan bagi seorang bapa etnik Kreng di kawasan pedalaman Kemboja membina pondok khas untuk anak gadis mereka. Mereka percaya, tanpa pondok ini anak gadis mereka tidak akan bertemu jodoh. - [NC]</desc>
   </programme>
-  <programme start="20261007150131 +0000" stop="20261007163131 +0000" channel="scl">
+  <programme start="20261008153000 +0000" stop="20261008160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 7 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  </programme>
+  <programme start="20261007153848 +0000" stop="20261007170848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007163131 +0000" stop="20261007180131 +0000" channel="scl">
+  <programme start="20261007170848 +0000" stop="20261007183848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007180131 +0000" stop="20261007193131 +0000" channel="scl">
+  <programme start="20261007183848 +0000" stop="20261007200848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007193131 +0000" stop="20261007210131 +0000" channel="scl">
+  <programme start="20261007200848 +0000" stop="20261007213848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007210131 +0000" stop="20261007223131 +0000" channel="scl">
+  <programme start="20261007213848 +0000" stop="20261007230848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261007223131 +0000" stop="20261008000131 +0000" channel="scl">
+  <programme start="20261007230848 +0000" stop="20261008003848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008000131 +0000" stop="20261008013131 +0000" channel="scl">
+  <programme start="20261008003848 +0000" stop="20261008020848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008013131 +0000" stop="20261008030131 +0000" channel="scl">
+  <programme start="20261008020848 +0000" stop="20261008033848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008030131 +0000" stop="20261008043131 +0000" channel="scl">
+  <programme start="20261008033848 +0000" stop="20261008050848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008043131 +0000" stop="20261008060131 +0000" channel="scl">
+  <programme start="20261008050848 +0000" stop="20261008063848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008060131 +0000" stop="20261008073131 +0000" channel="scl">
+  <programme start="20261008063848 +0000" stop="20261008080848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008073131 +0000" stop="20261008090131 +0000" channel="scl">
+  <programme start="20261008080848 +0000" stop="20261008093848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008090131 +0000" stop="20261008103131 +0000" channel="scl">
+  <programme start="20261008093848 +0000" stop="20261008110848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008103131 +0000" stop="20261008120131 +0000" channel="scl">
+  <programme start="20261008110848 +0000" stop="20261008123848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008120131 +0000" stop="20261008133131 +0000" channel="scl">
+  <programme start="20261008123848 +0000" stop="20261008140848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008133131 +0000" stop="20261008150131 +0000" channel="scl">
+  <programme start="20261008140848 +0000" stop="20261008153848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -54454,10 +54454,6 @@ SRG vs FL - [NC]</desc>
     <title lang="en">SCARLET HEART</title>
     <desc lang="en">Episode 12 - Hae Soo dibuang dari istana selepas kematian Dayang Oh. Dia hidup sebagai pelayan biasa. Putera Wang So pula dihantar sebagai utusan ke Later Jin, tetapi sebelum bertolak dia meluahkan perasaannya kepada Hae Soo. - [NC]</desc>
   </programme>
-  <programme start="20261007153000 +0000" stop="20261007160000 +0000" channel="tv9">
-    <title lang="en">BANG BANG BOOM SEASON 11 &amp; 12</title>
-    <desc lang="en">Episode 23 - Sebuah program komedi yang dihoskan oleh Amat dan Azahari. Sejak diperkenalkan pada tahun 2007, BANG BANG BOOM! (BBB) sering melakukan pembaharuan dalam memberikan kejutan kepada para peminat setianya. - [NC]</desc>
-  </programme>
   <programme start="20261007160000 +0000" stop="20261007170000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -54573,6 +54569,10 @@ SRG vs FL - [NC]</desc>
   <programme start="20261008143000 +0000" stop="20261008153000 +0000" channel="tv9">
     <title lang="en">MY SWEET MOBSTER</title>
     <desc lang="en">Episode 7 - Jang Hyun Woo, seorang pendakwa dan juga rakan zaman kanak-kanak Eun Ha muncul. Ji Hwan diingatkan oleh Hyun Woo masa silamnya sebagai ketua kumpulan samseng. Ji Hwan kecil hati lalu meninggalkan Eun Ha bersama Hyun Eoo. - [NC]</desc>
+  </programme>
+  <programme start="20261008153000 +0000" stop="20261008160000 +0000" channel="tv9">
+    <title lang="en">KHURAFAT</title>
+    <desc lang="en">Episode 2 - Episod ini mengupas amalan khurafat dan sihir menggunakan telur serta perubatan tradisional. Turut dipaparkan pendedahan Jaafar Onn yang pernah disantau, di samping peringatan agar menjauhi rawatan yang meragukan. - [NC]</desc>
   </programme>
   <programme start="20261008160000 +0000" stop="20261008170000 +0000" channel="8tv">
     <title lang="en">THE LEGEND OF HEROES</title>
@@ -54754,10 +54754,6 @@ SRG vs FL - [NC]</desc>
     <title lang="en">FIFA+ STREAM. FREE. LIVE.</title>
     <desc lang="en">Episode 1 - [NC]</desc>
   </programme>
-  <programme start="20261008153000 +0000" stop="20261008160000 +0000" channel="mpl-malaysia">
-    <title lang="en">MPL MY S18</title>
-    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
-  </programme>
   <programme start="20261008160000 +0000" stop="20261008220000 +0000" channel="mpl-malaysia">
     <title lang="en">MPL MY S18</title>
     <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
@@ -54782,9 +54778,9 @@ VMS vs iG - [NC]</desc>
 
 AC vs RRQ - [NC]</desc>
   </programme>
-  <programme start="20261008153000 +0000" stop="20261008160000 +0000" channel="ntv7">
-    <title lang="en">DESTINASI KERJAYA 24/25</title>
-    <desc lang="en">Episode 7 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  <programme start="20261009153000 +0000" stop="20261009160000 +0000" channel="mpl-malaysia">
+    <title lang="en">MPL MY S18</title>
+    <desc lang="en">Episode 1 - Mobile Legends: Bang Bang Professional League (MPL) MY S18 - [NC]</desc>
   </programme>
   <programme start="20261008160000 +0000" stop="20261008230000 +0000" channel="ntv7">
     <title lang="en">HOT FM@ntv7 2026</title>
@@ -54906,82 +54902,86 @@ AC vs RRQ - [NC]</desc>
     <title lang="en">DUNIA TERSEMBUNYI 2016</title>
     <desc lang="en">Episode 8 - Sebagai etnik minoriti yang mempunyai bilangan paling kecil di Laos, Iu Mien antara etnik paling mudah dikenali menerusi pakaian mereka yang amat unik. Sehingga kini, adat perkahwinan mereka masih kekal diamalkan. - [NC]</desc>
   </programme>
-  <programme start="20261008150131 +0000" stop="20261008163131 +0000" channel="scl">
+  <programme start="20261009153000 +0000" stop="20261009160000 +0000" channel="ntv7">
+    <title lang="en">DESTINASI KERJAYA 24/25</title>
+    <desc lang="en">Episode 8 - Program ini menyediakan panduan tentang memilih kerjaya, memperoleh kemahiran yang diperlukan dan menavigasi peluang pekerjaan merangkumi penilaian kendiri untuk membantu murid mengenal pasti kekuatan, minat, serta pilihan kerjaya yang sesuai. - [NC]</desc>
+  </programme>
+  <programme start="20261008153848 +0000" stop="20261008170848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008163131 +0000" stop="20261008180131 +0000" channel="scl">
+  <programme start="20261008170848 +0000" stop="20261008183848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008180131 +0000" stop="20261008193131 +0000" channel="scl">
+  <programme start="20261008183848 +0000" stop="20261008200848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008193131 +0000" stop="20261008210131 +0000" channel="scl">
+  <programme start="20261008200848 +0000" stop="20261008213848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008210131 +0000" stop="20261008223131 +0000" channel="scl">
+  <programme start="20261008213848 +0000" stop="20261008230848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261008223131 +0000" stop="20261009000131 +0000" channel="scl">
+  <programme start="20261008230848 +0000" stop="20261009003848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009000131 +0000" stop="20261009013131 +0000" channel="scl">
+  <programme start="20261009003848 +0000" stop="20261009020848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009013131 +0000" stop="20261009030131 +0000" channel="scl">
+  <programme start="20261009020848 +0000" stop="20261009033848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009030131 +0000" stop="20261009043131 +0000" channel="scl">
+  <programme start="20261009033848 +0000" stop="20261009050848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009043131 +0000" stop="20261009060131 +0000" channel="scl">
+  <programme start="20261009050848 +0000" stop="20261009063848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009060131 +0000" stop="20261009073131 +0000" channel="scl">
+  <programme start="20261009063848 +0000" stop="20261009080848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009073131 +0000" stop="20261009090131 +0000" channel="scl">
+  <programme start="20261009080848 +0000" stop="20261009093848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009090131 +0000" stop="20261009103131 +0000" channel="scl">
+  <programme start="20261009093848 +0000" stop="20261009110848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009103131 +0000" stop="20261009120131 +0000" channel="scl">
+  <programme start="20261009110848 +0000" stop="20261009123848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009120131 +0000" stop="20261009133131 +0000" channel="scl">
+  <programme start="20261009123848 +0000" stop="20261009140848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
   </programme>
-  <programme start="20261009133131 +0000" stop="20261009150131 +0000" channel="scl">
+  <programme start="20261009140848 +0000" stop="20261009153848 +0000" channel="scl">
     <title lang="en">No listing available</title>
     <desc lang="en">No listing available - [NC]</desc>
     <category lang="en">Unknown</category>
@@ -55158,10 +55158,6 @@ AC vs RRQ - [NC]</desc>
     <title lang="en">SCARLET HEART</title>
     <desc lang="en">Episode 13 - [NC]</desc>
   </programme>
-  <programme start="20261008153000 +0000" stop="20261008160000 +0000" channel="tv9">
-    <title lang="en">KHURAFAT</title>
-    <desc lang="en">Episode 2 - Episod ini mengupas amalan khurafat dan sihir menggunakan telur serta perubatan tradisional. Turut dipaparkan pendedahan Jaafar Onn yang pernah disantau, di samping peringatan agar menjauhi rawatan yang meragukan. - [NC]</desc>
-  </programme>
   <programme start="20261008160000 +0000" stop="20261008170000 +0000" channel="tv9">
     <title lang="en">WOW SHOP</title>
     <desc lang="en">[NC]</desc>
@@ -55273,5 +55269,9 @@ AC vs RRQ - [NC]</desc>
   <programme start="20261009143000 +0000" stop="20261009153000 +0000" channel="tv9">
     <title lang="en">AL-KULIYYAH 2019</title>
     <desc lang="en">Episode 10 - Selagi ada haruslah kita hargai para ulamak, guru, imam dan murabbi kita dan termasuk mereka yang berdakwah. Hormatilah suami dan layanilah mereka serta berkorbanlah yang terbaik dengan sedaya mungkin untuk ibu bapa kita. - [NC]</desc>
+  </programme>
+  <programme start="20261009153000 +0000" stop="20261009160000 +0000" channel="tv9">
+    <title lang="en">JET LAG</title>
+    <desc lang="en">Episode 3 - Episod ini hos Iedil Putra berpeluang memenangi tiket ke Festival Muzik Big Day Out di Australia. Bagi merealisasikannya, beliau perlu menyelesaikan 72 cabaran merentasi 8 negara dalam masa 192 jam, bermula di Lisbon, Portugal. - [NC]</desc>
   </programme>
 </tv>
