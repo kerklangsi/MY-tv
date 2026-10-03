@@ -2,7 +2,7 @@ import os
 import sys
 import paths
 
-from paths import read_auth, AUTH_DIR
+from paths import AUTH_DIR
 from auth.mytv import get_key, ME_KEY
 from auth.tonton import (
     get_token,
@@ -54,15 +54,14 @@ def dump_elements(page):
 def main():
     force = "--force" in sys.argv or "-f" in sys.argv
     token = get_token(force_refresh=force, allow_browser=True)
-    me_key_bytes = get_key()
-    me_key_str = read_auth("me_key")
+    key = get_key(force_refresh=force, allow_browser=True)
 
     print("\n====================================================")
     print("        MY-tv Authentication Diagnostics           ")
     print("====================================================")
     print(f"User-Agent   : {'[SUCCESS]' if USER_AGENT else '[FAILED / NOT SET]'}")
     print(f"Device ID    : {'[SUCCESS]' if DEVICE_ID else '[FAILED / NOT SET]'}")
-    print(f"ME Key (AES) : {'[SUCCESS]' if me_key_str else '[FAILED / NOT SET]'}")
+    print(f"ME Key (AES) : {'[SUCCESS]' if key else '[FAILED / NOT SET]'}")
     print(f"Email        : {'[CONFIGURED]' if EMAIL else '[NOT SET]'}")
     print(f"Password     : {'[CONFIGURED]' if PASSWORD else '[NOT SET]'}")
     print(f"Tonton Token : {'[SUCCESS]' if token else '[FAILED / NOT SET]'}")
