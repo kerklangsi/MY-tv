@@ -1888,7 +1888,7 @@
 <!-- SECTION:TONTON:START -->
 ## 📺 Tonton Shows
 
-**Total Series Shows:** 644 | **Total Episodes:** 9444 (5148 Playable, 4296 VIP)
+**Total Series Shows:** 644 | **Total Episodes:** 9437 (5140 Playable, 4297 VIP)
 
 ---
 
@@ -2328,13 +2328,12 @@
 
 ### 18. 8TV Midday Mandarin News (2026)
 - **Folder**: `streams/vod_tonton/8tv-middaymandarinnews-2026`
-- **Total Episodes**: 11
+- **Total Episodes**: 10
 - **Episode List**:
   - [Episod 167 - 8TV Midday Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/8tv-middaymandarinnews-2026/8tv-middaymandarinnews-2026-ep-167.m3u8)
   - [Episod 198 - 8TV Midday Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/8tv-middaymandarinnews-2026/8tv-middaymandarinnews-2026-ep-198.m3u8)
   - [Episod 199 - 8TV Midday Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/8tv-middaymandarinnews-2026/8tv-middaymandarinnews-2026-ep-199.m3u8)
   - [Episod 205 - 8TV Midday Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/8tv-middaymandarinnews-2026/8tv-middaymandarinnews-2026-ep-205.m3u8)
-  - [Episod 267 - 8TV Midday Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/8tv-middaymandarinnews-2026/8tv-middaymandarinnews-2026-ep-267.m3u8)
   - [Episod 268 - 8TV Midday Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/8tv-middaymandarinnews-2026/8tv-middaymandarinnews-2026-ep-268.m3u8)
   - [Episod 269 - 8TV Midday Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/8tv-middaymandarinnews-2026/8tv-middaymandarinnews-2026-ep-269.m3u8)
   - [Episod 270 - 8TV Midday Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/8tv-middaymandarinnews-2026/8tv-middaymandarinnews-2026-ep-270.m3u8)
@@ -3522,7 +3521,7 @@
 
 ### 83. Buletin 1:30 (2026)
 - **Folder**: `streams/vod_tonton/buletin-130-2026`
-- **Total Episodes**: 12
+- **Total Episodes**: 10
 - **Episode List**:
   - [Episod 92 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-92.m3u8)
   - [Episod 145 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-145.m3u8)
@@ -3530,8 +3529,6 @@
   - [Episod 172 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-172.m3u8)
   - [Episod 177 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-177.m3u8)
   - [Episod 221 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-221.m3u8)
-  - [Episod 230 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-230.m3u8)
-  - [Episod 231 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-231.m3u8)
   - [Episod 232 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-232.m3u8)
   - [Episod 233 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-233.m3u8)
   - [Episod 234 - Buletin 1:30 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-130-2026/buletin-130-2026-ep-234.m3u8)
@@ -3545,10 +3542,8 @@
 
 ### 85. Buletin Pagi (2026)
 - **Folder**: `streams/vod_tonton/buletin-pagi-2026`
-- **Total Episodes**: 7
+- **Total Episodes**: 5
 - **Episode List**:
-  - [Episod 269 - Buletin Pagi (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-pagi-2026/buletin-pagi-2026-ep-269.m3u8)
-  - [Episod 270 - Buletin Pagi (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-pagi-2026/buletin-pagi-2026-ep-270.m3u8)
   - [Episod 271 - Buletin Pagi (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-pagi-2026/buletin-pagi-2026-ep-271.m3u8)
   - [Episod 272 - Buletin Pagi (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-pagi-2026/buletin-pagi-2026-ep-272.m3u8)
   - [Episod 273 - Buletin Pagi (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-pagi-2026/buletin-pagi-2026-ep-273.m3u8)
@@ -3557,13 +3552,12 @@
 
 ### 86. Buletin TV9 (2026)
 - **Folder**: `streams/vod_tonton/buletin-tv9-2026`
-- **Total Episodes**: 11
+- **Total Episodes**: 10
 - **Episode List**:
   - [Episod 169 - Buletin TV9 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-tv9-2026/buletin-tv9-2026-ep-169.m3u8)
   - [Episod 200 - Buletin TV9 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-tv9-2026/buletin-tv9-2026-ep-200.m3u8)
   - [Episod 201 - Buletin TV9 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-tv9-2026/buletin-tv9-2026-ep-201.m3u8)
   - [Episod 207 - Buletin TV9 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-tv9-2026/buletin-tv9-2026-ep-207.m3u8)
-  - [Episod 269 - Buletin TV9 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-tv9-2026/buletin-tv9-2026-ep-269.m3u8)
   - [Episod 270 - Buletin TV9 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-tv9-2026/buletin-tv9-2026-ep-270.m3u8)
   - [Episod 271 - Buletin TV9 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-tv9-2026/buletin-tv9-2026-ep-271.m3u8)
   - [Episod 272 - Buletin TV9 (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-tv9-2026/buletin-tv9-2026-ep-272.m3u8)
@@ -3573,13 +3567,12 @@
 
 ### 87. Buletin Utama (2026)
 - **Folder**: `streams/vod_tonton/buletin-utama-2026`
-- **Total Episodes**: 11
+- **Total Episodes**: 10
 - **Episode List**:
   - [Episod 169 - Buletin Utama (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-utama-2026/buletin-utama-2026-ep-169.m3u8)
   - [Episod 200 - Buletin Utama (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-utama-2026/buletin-utama-2026-ep-200.m3u8)
   - [Episod 201 - Buletin Utama (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-utama-2026/buletin-utama-2026-ep-201.m3u8)
   - [Episod 207 - Buletin Utama (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-utama-2026/buletin-utama-2026-ep-207.m3u8)
-  - [Episod 269 - Buletin Utama (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-utama-2026/buletin-utama-2026-ep-269.m3u8)
   - [Episod 270 - Buletin Utama (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-utama-2026/buletin-utama-2026-ep-270.m3u8)
   - [Episod 271 - Buletin Utama (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-utama-2026/buletin-utama-2026-ep-271.m3u8)
   - [Episod 272 - Buletin Utama (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/buletin-utama-2026/buletin-utama-2026-ep-272.m3u8)
@@ -7295,13 +7288,12 @@
 
 ### 238. Mandarin News (2026)
 - **Folder**: `streams/vod_tonton/mandarin-news-2026`
-- **Total Episodes**: 11
+- **Total Episodes**: 10
 - **Episode List**:
   - [Episod 199 - Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-2026/mandarin-news-2026-ep-199.m3u8)
   - [Episod 200 - Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-2026/mandarin-news-2026-ep-200.m3u8)
   - [Episod 201 - Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-2026/mandarin-news-2026-ep-201.m3u8)
   - [Episod 207 - Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-2026/mandarin-news-2026-ep-207.m3u8)
-  - [Episod 269 - Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-2026/mandarin-news-2026-ep-269.m3u8)
   - [Episod 270 - Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-2026/mandarin-news-2026-ep-270.m3u8)
   - [Episod 271 - Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-2026/mandarin-news-2026-ep-271.m3u8)
   - [Episod 272 - Mandarin News (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-2026/mandarin-news-2026-ep-272.m3u8)
@@ -9066,7 +9058,7 @@
 
 ### 315. Please Excuse My Younger Brothers
 - **Folder**: `streams/vod_tonton/please-excuse-my-younger-brothers`
-- **Total Episodes**: 12
+- **Total Episodes**: 13 (12 Playable, 1 VIP)
 - **Episode List**:
   - [Episod 1 - Please Excuse My Younger Brothers](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/please-excuse-my-younger-brothers/please-excuse-my-younger-brothers-ep-1.m3u8)
   - [Episod 2 - Please Excuse My Younger Brothers](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/please-excuse-my-younger-brothers/please-excuse-my-younger-brothers-ep-2.m3u8)
@@ -9080,6 +9072,7 @@
   - [Episod 10 - Please Excuse My Younger Brothers](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/please-excuse-my-younger-brothers/please-excuse-my-younger-brothers-ep-10.m3u8)
   - [Episod 11 - Please Excuse My Younger Brothers](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/please-excuse-my-younger-brothers/please-excuse-my-younger-brothers-ep-11.m3u8)
   - [Episod 12 - Please Excuse My Younger Brothers](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/please-excuse-my-younger-brothers/please-excuse-my-younger-brothers-ep-12.m3u8)
+  - 🔒 Episod 13 - Please Excuse My Younger Brothers *(Requires Tonton UP / VIP)*
 
 ### 316. Please Excuse My Younger Brothers (Special)
 - **Folder**: `streams/vod_tonton/please-excuse-my-younger-brothers-special`
@@ -9261,7 +9254,7 @@
 
 ### 326. Rilakkuma
 - **Folder**: `streams/vod_tonton/rilakkuma-s1`
-- **Total Episodes**: 25
+- **Total Episodes**: 26
 - **Episode List**:
   - [Episod 1 - Rilakkuma](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/rilakkuma-s1/rilakkuma-s1-ep-1.m3u8)
   - [Episod 2 - Rilakkuma](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/rilakkuma-s1/rilakkuma-s1-ep-2.m3u8)
@@ -9288,13 +9281,13 @@
   - [Episod 23 - Rilakkuma](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/rilakkuma-s1/rilakkuma-s1-ep-23.m3u8)
   - [Episod 24 - Rilakkuma](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/rilakkuma-s1/rilakkuma-s1-ep-24.m3u8)
   - [Episod 25 - Rilakkuma](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/rilakkuma-s1/rilakkuma-s1-ep-25.m3u8)
+  - [Episod 26 - Rilakkuma](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/rilakkuma-s1/rilakkuma-s1-ep-26.m3u8)
 
 ### 327. Ringkasan Petang (2026)
 - **Folder**: `streams/vod_tonton/ringkasan-petang-2026`
-- **Total Episodes**: 7
+- **Total Episodes**: 6
 - **Episode List**:
   - [Episod 137 - Ringkasan Petang (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/ringkasan-petang-2026/ringkasan-petang-2026-ep-137.m3u8)
-  - [Episod 237 - Ringkasan Petang (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/ringkasan-petang-2026/ringkasan-petang-2026-ep-237.m3u8)
   - [Episod 238 - Ringkasan Petang (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/ringkasan-petang-2026/ringkasan-petang-2026-ep-238.m3u8)
   - [Episod 240 - Ringkasan Petang (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/ringkasan-petang-2026/ringkasan-petang-2026-ep-240.m3u8)
   - [Episod 241 - Ringkasan Petang (2026)](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/ringkasan-petang-2026/ringkasan-petang-2026-ep-241.m3u8)
