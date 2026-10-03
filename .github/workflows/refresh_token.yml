@@ -75,7 +75,7 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
-          AUTH_TARGET="$(python3 -c "import paths; print(paths.AUTH_DIR)")"
+          AUTH_TARGET="$(python3 -c "from script import paths; print(paths.AUTH_DIR)")"
           mkdir -p "$AUTH_TARGET"
           [ -n "$EMAIL" ] && echo "$EMAIL" > "$AUTH_TARGET/email" || true
           [ -n "$PASSWORD" ] && echo "$PASSWORD" > "$AUTH_TARGET/password" || true
