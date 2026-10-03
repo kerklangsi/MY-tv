@@ -100,14 +100,35 @@ def fetch_vod(task):
     if subfolder == "movie":
         ep_slug = slugify(ep_title) or item_id
         entry_title = ep_title
+        ep_label = ep_title
     else:
+        sub_candidate = item.get("episodeTitle") or item.get("name") or item.get("title") or ""
+        clean_ep = clean_title(sub_candidate)
+        if clean_ep.lower().startswith(display_show_title.lower()):
+            clean_ep = clean_ep[len(display_show_title):].strip()
+        clean_ep = re.sub(r"^\s*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+\s*[-:\s]*", "", clean_ep, flags=re.IGNORECASE)
+        clean_ep = re.sub(r"\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+.*$", "", clean_ep, flags=re.IGNORECASE).strip()
+        has_custom = bool(clean_ep) and clean_ep.lower() != display_show_title.lower()
+
         if ep_num:
             ep_slug = f"{subfolder}-ep-{ep_num}"
-            entry_title = f"{display_show_title} - Episod {ep_num}"
+            if has_custom:
+                entry_title = f"{display_show_title} - Episod {ep_num}: {clean_ep}"
+                ep_label = f"Episod {ep_num} - {display_show_title}: {clean_ep}"
+            else:
+                entry_title = f"{display_show_title} - Episod {ep_num}"
+                ep_label = f"Episod {ep_num} - {display_show_title}"
         else:
-            ep_slug = slugify(ep_title) or item_id
-            entry_title = f"{display_show_title} - {ep_title}"
+            ep_slug = slugify(clean_ep or ep_title) or item_id
+            if has_custom:
+                entry_title = f"{display_show_title} - {clean_ep}"
+                ep_label = f"{display_show_title} - {clean_ep}"
+            else:
+                entry_title = f"{display_show_title} - {ep_title}"
+                ep_label = f"{display_show_title} - {ep_title}"
 
+    item["entry_title"] = entry_title
+    item["ep_label"] = ep_label
     file_path = f"{folder_path}/{ep_slug}.m3u8"
     site_id = str(item.get("siteID") or item.get("site_id") or 377)
     large_img = item.get("landscapeImage") or item.get("portraitImage") or item.get("image") or ""
@@ -227,10 +248,7 @@ def process_vod(device_id):
             else:
                 if subfolder not in tonton_shows_dict:
                     tonton_shows_dict[subfolder]["title"] = display_title
-                raw_ep_t = ep.get("title") or ep.get("name") or ep.get("episodeTitle") or "Unknown Episode"
-                ep_t = clean_title(raw_ep_t)
-                ep_num = ep.get("episodeNumber")
-                ep_label = f"Episod {ep_num} - {ep_t}" if (ep_num and not ep_t.lower().startswith(f"episod {ep_num}".lower()) and not ep_t.lower().startswith(f"episode {ep_num}".lower())) else ep_t
+                ep_label = ep.get("ep_label") or ep.get("title", "Unknown Episode")
 
                 if is_playable:
                     ep_str = f"[{ep_label}]({clean_m3u_url})"

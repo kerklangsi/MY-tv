@@ -56,11 +56,33 @@ def is_promo(title):
     t_lower = title.lower()
     return any(re.search(r"\b" + re.escape(kw) + r"\b", t_lower) for kw in PROMO_KEYWORDS)
 
+# Fetch and map all season episodes for a single series container
+def map_series(s_id):
+    try:
+        res = http_get(f"{MYTV_API}/public/content/{s_id}")
+        data = res.get("data", {})
+        s_title = data.get("title", "")
+        clean_slug = slugify(s_title)
+        clean_slug = re.sub(r"-(?:s|season|siri)-?\d+$", "", clean_slug, flags=re.IGNORECASE)
+        mapped = {}
+        for season in data.get("seasons", []):
+            for ep in season.get("episodes", []):
+                c = ep.get("content") or {}
+                c_id = c.get("id")
+                if c_id:
+                    mapped[c_id] = {
+                        "slug": clean_slug,
+                        "title": s_title,
+                        "episodeNumber": ep.get("episodeNumber"),
+                    }
+        return mapped
+    except Exception:
+        return {}
+
 # Fetch HLS manifest for a single VOD item and write manifest
 def fetch_vod(task):
-    item, folder_path, item_slug, group_title, device_id = task
+    item, folder_path, item_slug, group_title, device_id, entry_title = task
     item_id = item["id"]
-    item_title = item.get("title", "Unknown Show")
     item_poster = item.get("posterLandscapeUrl") or item.get("posterPortraitUrl") or item.get("bannerUrl") or ""
     master_file_path = f"{folder_path}/{item_slug}.m3u8"
 
@@ -83,26 +105,27 @@ def fetch_vod(task):
 
     if signed_stream_url:
         master_manifest = fetch_raw(signed_stream_url)
-        parsed_master = urlparse(signed_stream_url)
-        fresh_query = f"?{parsed_master.query}" if parsed_master.query else ""
-        path_dir = parsed_master.path.rsplit("/", 1)[0]
-        base_cdn_dir = f"{parsed_master.scheme}://{parsed_master.netloc}{path_dir}/"
+        if master_manifest and master_manifest.strip():
+            parsed_master = urlparse(signed_stream_url)
+            fresh_query = f"?{parsed_master.query}" if parsed_master.query else ""
+            path_dir = parsed_master.path.rsplit("/", 1)[0]
+            base_cdn_dir = f"{parsed_master.scheme}://{parsed_master.netloc}{path_dir}/"
 
-        absolute_master_lines = []
-        for line in master_manifest.splitlines():
-            line_str = line.strip()
-            if line_str and not line_str.startswith("#"):
-                sub_filename = line_str.split("?")[0]
-                abs_sub_url = base_cdn_dir + sub_filename + fresh_query
-                absolute_master_lines.append(abs_sub_url)
-            else:
-                absolute_master_lines.append(line)
+            absolute_master_lines = []
+            for line in master_manifest.splitlines():
+                line_str = line.strip()
+                if line_str and not line_str.startswith("#"):
+                    sub_filename = line_str.split("?")[0]
+                    abs_sub_url = base_cdn_dir + sub_filename + fresh_query
+                    absolute_master_lines.append(abs_sub_url)
+                else:
+                    absolute_master_lines.append(line)
 
-        new_manifest_content = "\n".join(absolute_master_lines) + "\n"
-        updated = save_changed(master_file_path, new_manifest_content)
+            new_manifest_content = "\n".join(absolute_master_lines) + "\n"
+            updated = save_changed(master_file_path, new_manifest_content)
 
     clean_url = f"{GITHUB_URL}/{folder_path}/{item_slug}.m3u8"
-    extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{item_title}" tvg-logo="{item_poster}" group-title="{group_title}",{item_title}'
+    extinf = f'#EXTINF:-1 tvg-id="{item_slug}" tvg-name="{entry_title}" tvg-logo="{item_poster}" group-title="{group_title}",{entry_title}'
     return extinf, [], clean_url, master_file_path, updated
 
 # Process all MYTV VOD shows and movies using parallel execution
@@ -145,16 +168,21 @@ def process_vod(device_id):
         if not data:
             break
         for item in data:
-            if not is_promo(item.get("title", "")):
+            if item.get("contentType") != "series" and not is_promo(item.get("title", "")):
                 items.append(item)
         total = res.get("data", {}).get("total", 0)
-        if len(items) >= total or len(data) < 100:
+        if page * 100 >= total or len(data) < 100:
             break
         page += 1
 
     print(f"Total non-promo MYTV VOD items to process: {len(items)}")
 
+    series_slug_to_title = {s["clean_slug"]: s["raw_title"] for s in official_series_index.values()}
     detail_cache_map = {}
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        for m in executor.map(map_series, official_series_index.keys()):
+            detail_cache_map.update(m)
+
     slug_counts = defaultdict(int)
     prelim_items = []
 
@@ -164,10 +192,7 @@ def process_vod(device_id):
         subfolder = None
 
         if item["id"] in detail_cache_map:
-            s_info = detail_cache_map[item["id"]]
-            s_slug = s_info.get("slug") or slugify(s_info.get("title"))
-            if s_slug:
-                subfolder = re.sub(r"-(?:s|season|siri)-?\d+$", "", s_slug, flags=re.IGNORECASE)
+            subfolder = detail_cache_map[item["id"]]["slug"]
 
         if not subfolder:
             t_lower = item_title.lower()
@@ -221,22 +246,56 @@ def process_vod(device_id):
         else:
             group_title = "MYTV Shows"
 
+        display_series_title = series_slug_to_title.get(subfolder) or subfolder.replace("-", " ").title()
+
         for item in sub_items:
             item_id = item["id"]
             item_title = item.get("title", "Unknown Show")
 
-            title_slug = slugify(item_title)
             if subfolder in ["movie", "short-movies-and-clips"]:
                 clean_t = re.sub(r"^\s*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+\s*[-:\s]*", "", item_title, flags=re.IGNORECASE)
                 clean_t = re.sub(r"\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+.*$", "", clean_t, flags=re.IGNORECASE)
-                if clean_t.strip():
-                    title_slug = slugify(clean_t)
-            item_slug = title_slug if title_slug else (item.get("slug") or item_id)
+                title_slug = slugify(clean_t) if clean_t.strip() else slugify(item_title)
+                item_slug = title_slug if title_slug else (item.get("slug") or item_id)
+                entry_title = item_title
+                ep_label = item_title
+            else:
+                ep_num = None
+                if item_id in detail_cache_map:
+                    ep_num = detail_cache_map[item_id].get("episodeNumber")
+                if not ep_num:
+                    m_ep = re.search(r"(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*(\d+)", item_title, re.IGNORECASE)
+                    if m_ep:
+                        ep_num = int(m_ep.group(1))
+                    else:
+                        m_num = re.search(r"\b(\d+)\b", item_title)
+                        if m_num:
+                            ep_num = int(m_num.group(1))
+
+                clean_ep = re.sub(r"^\s*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+\s*[-:\s]*", "", item_title, flags=re.IGNORECASE)
+                clean_ep = re.sub(r"\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+.*$", "", clean_ep, flags=re.IGNORECASE).strip()
+                has_custom = clean_ep and clean_ep.lower() != display_series_title.lower()
+
+                if ep_num:
+                    item_slug = f"{subfolder}-ep-{ep_num}"
+                    if has_custom:
+                        entry_title = f"{display_series_title} - Episod {ep_num}: {clean_ep}"
+                        ep_label = f"Episod {ep_num} - {display_series_title}: {clean_ep}"
+                    else:
+                        entry_title = f"{display_series_title} - Episod {ep_num}"
+                        ep_label = f"Episod {ep_num} - {display_series_title}"
+                else:
+                    item_slug = slugify(item_title) or item_id
+                    entry_title = f"{display_series_title} - {item_title}"
+                    ep_label = f"{display_series_title} - {item_title}"
+
             if item_slug in used_vod_slugs:
                 item_slug = f"{item_slug}-{item_id}"
             used_vod_slugs.add(item_slug)
 
-            tasks_by_subfolder[subfolder].append((item, folder_path, item_slug, group_title, device_id))
+            item["entry_title"] = entry_title
+            item["ep_label"] = ep_label
+            tasks_by_subfolder[subfolder].append((item, folder_path, item_slug, group_title, device_id, entry_title))
 
     all_tasks = []
     for subfolder in sorted_subfolders:
@@ -247,7 +306,7 @@ def process_vod(device_id):
     with ThreadPoolExecutor(max_workers=20) as executor:
         results = list(executor.map(fetch_vod, all_tasks))
 
-    for (extinf, extra_lines, clean_url, master_file_path, _), (item, _, _, _, _) in zip(results, all_tasks):
+    for (extinf, extra_lines, clean_url, master_file_path, _), (item, _, _, _, _, _) in zip(results, all_tasks):
         item["clean_url"] = clean_url
         active_files_set.add(os.path.normpath(master_file_path))
         vod_entries.append((extinf, extra_lines, clean_url))
@@ -257,12 +316,11 @@ def process_vod(device_id):
         folder_label = f"Category '{subfolder}'" if subfolder in ["movie", "short-movies-and-clips"] else f"Series '{subfolder}'"
         print(f"[{idx}/{total_subfolders}] Processed {folder_label} ({len(sub_items)})", flush=True)
 
-        sorted_eps = sorted(sub_items, key=lambda x: [(0, int(c)) if c.isdigit() else (1, c) for c in re.split(r'(\d+)', x.get("title", "").lower())])
+        sorted_eps = sorted(sub_items, key=lambda x: [(0, int(c)) if c.isdigit() else (1, c) for c in re.split(r'(\d+)', x.get("ep_label", x.get("title", "")).lower())])
         for ep in sorted_eps:
-            ep_t = ep.get("title", "Unknown")
+            ep_t = ep.get("ep_label", ep.get("title", "Unknown"))
             ep_url = ep.get("clean_url", "")
             print(f"{ep_t} -> {ep_url}", flush=True)
-
 
     cleanup_files(VOD_MYTV, active_files_set)
 
@@ -277,12 +335,10 @@ def process_vod(device_id):
                 if subfolder == "movie" and dur_sec >= 1200:
                     mytv_movies_list.append({"title": m_title, "duration": dur_sec, "url": m.get("clean_url", "")})
         else:
-            first_title = sub_items[0].get("title", subfolder)
-            m_s = re.match(r"^(.*?)\s+[-:\s]*(?:(?:S|Season|Siri)\s*\d+\s*)?(?:Ep|Episod|Episode|Bahagian|Part)\s*\d+", first_title, re.IGNORECASE)
-            s_title = m_s.group(1).strip() if m_s else subfolder.replace("-", " ").title()
+            s_title = series_slug_to_title.get(subfolder) or subfolder.replace("-", " ").title()
             mytv_shows_dict[subfolder]["title"] = s_title
             for ep in sub_items:
-                ep_t = ep.get("title", "Unknown Episode")
+                ep_t = ep.get("ep_label", ep.get("title", "Unknown Episode"))
                 ep_url = ep.get("clean_url", "")
                 ep_str = f"[{ep_t}]({ep_url})" if ep_url else ep_t
                 mytv_shows_dict[subfolder]["episodes"].append(ep_str)

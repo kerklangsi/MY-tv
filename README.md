@@ -71,7 +71,7 @@ To enable automated token refreshes and authenticated Tonton streams in GitHub A
 | `EMAIL` | **Yes** | Tonton account login email | `your-email@domain.com` |
 | `PASSWORD` | **Yes** | Tonton account login password | `your-secure-password` |
 | `GH_TOKEN` | Optional | Personal Access Token with `repo` and `workflow` scopes | Used for committing updates or triggering external dispatches |
-| `ME_KEY` | Optional | MYTV static AES-128 key fallback | Auto-fetched dynamically from API if omitted |
+| `ME_KEY` | Optional | MYTV AES-128 key | Dynamically extracted via Playwright and cached to `auth/me_key` |
 
 ---
 
