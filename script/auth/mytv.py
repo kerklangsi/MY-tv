@@ -1,4 +1,3 @@
-import urllib.request
 import re
 import os
 import sys
@@ -43,6 +42,13 @@ def refresh_key():
 
 # Retrieve or refresh MYTV AES decryption key
 def get_key(force_refresh=False, allow_browser=False):
+    if not allow_browser:
+        cached = read_auth("me_key") or os.environ.get("ME_KEY", "").strip()
+        if not cached:
+            print("[MYTV Auth Error] 'auth/me_key' not found! Please run refresh_token.yml or python script/auth.py --force to generate it.")
+            return b""
+        return cached.encode("utf-8")[:32]
+
     key_str = ""
     if not force_refresh:
         key_str = read_auth("me_key") or os.environ.get("ME_KEY", "").strip()
@@ -51,46 +57,10 @@ def get_key(force_refresh=False, allow_browser=False):
         key_str = refresh_key()
 
     if not key_str:
-        print(f"[MYTV Auth] Fetching MYTV AES decryption key from {MANA2_URL}/...")
-        extracted_key = ""
-        headers = {"User-Agent": USER_AGENT}
-        try:
-            req = urllib.request.Request(f"{MANA2_URL}/", headers=headers)
-            with urllib.request.urlopen(req, timeout=12) as resp:
-                html = resp.read().decode("utf-8", errors="ignore")
-            scripts = re.findall(r'src=["\'](/assets/[^"\']+\.js)["\']', html)
-            for s in scripts:
-                try:
-                    req_js = urllib.request.Request(f"{MANA2_URL}{s}", headers=headers)
-                    with urllib.request.urlopen(req_js, timeout=10) as r:
-                        content = r.read().decode("utf-8", errors="ignore")
-                        m_direct = re.search(r'="([A-Za-z0-9]{40,60})"\.trim\(\)', content)
-                        if m_direct:
-                            extracted_key = m_direct.group(1)
-                            break
-                        chunks = re.findall(r'assets/(?:player-license|license)[^"\'\s]+\.js', content)
-                        for chunk in chunks:
-                            try:
-                                c_req = urllib.request.Request(f"{MANA2_URL}/{chunk}", headers=headers)
-                                with urllib.request.urlopen(c_req, timeout=8) as cr:
-                                    c_data = cr.read().decode("utf-8", errors="ignore")
-                                    m_chunk = re.search(r'="([A-Za-z0-9]{40,60})"\.trim\(\)', c_data)
-                                    if m_chunk:
-                                        extracted_key = m_chunk.group(1)
-                                        break
-                            except Exception:
-                                pass
-                        if extracted_key:
-                            break
-                except Exception:
-                    pass
-        except Exception as e:
-            print(f"[MYTV Auth Warning] Dynamic scrape encountered: {e}")
-        if extracted_key:
-            write_auth("me_key", extracted_key)
-            key_str = extracted_key
+        print("[MYTV Auth Error] 'auth/me_key' not found and browser extraction failed!")
+        return b""
 
-    return key_str.encode("utf-8")[:32] if key_str else b""
+    return key_str.encode("utf-8")[:32]
 
 ME_KEY = get_key(allow_browser=False)
 

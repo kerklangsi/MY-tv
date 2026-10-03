@@ -16,6 +16,8 @@ from auth.mytv import ME_KEY
 
 # Decrypt AES-GCM encrypted CDN signature payload
 def decrypt_cdn(payload_b64):
+    if not ME_KEY:
+        raise FileNotFoundError("'auth/me_key' not found! Please run refresh_token.yml or python script/auth.py --force to generate it.")
     raw = base64.b64decode(payload_b64)
     iv = raw[:12]
     tag = raw[12:28]
