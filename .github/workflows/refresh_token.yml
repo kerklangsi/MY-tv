@@ -75,9 +75,11 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
-          [ -L auth ] && mkdir -p "$(readlink -m auth)" || mkdir -p auth
-          [ -n "$EMAIL" ] && echo "$EMAIL" > auth/email || true
-          [ -n "$PASSWORD" ] && echo "$PASSWORD" > auth/password || true
+          AUTH_TARGET="$(python3 -c "import paths; print(paths.AUTH_DIR)")"
+          mkdir -p "$AUTH_TARGET"
+          [ -n "$EMAIL" ] && echo "$EMAIL" > "$AUTH_TARGET/email" || true
+          [ -n "$PASSWORD" ] && echo "$PASSWORD" > "$AUTH_TARGET/password" || true
+          [ ! -L auth ] && rm -rf auth && ln -s "$AUTH_TARGET" auth || true
 
       - name: Refresh Tonton Token
         env:

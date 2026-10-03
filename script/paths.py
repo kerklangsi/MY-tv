@@ -10,8 +10,9 @@ if SCRIPT_DIR not in sys.path:
     sys.path.insert(0, SCRIPT_DIR)
 
 # Auth directory and key files
-AUTH_DIR   = os.path.join(ROOT_DIR, "auth")
-TOKEN_FILE = os.path.join(AUTH_DIR, "tonton")
+_SHARED_AUTH = os.path.abspath(os.path.join(ROOT_DIR, "..", "shared_auth", "MY-tv"))
+AUTH_DIR     = _SHARED_AUTH if os.path.isdir(_SHARED_AUTH) else os.path.join(ROOT_DIR, "auth")
+TOKEN_FILE   = os.path.join(AUTH_DIR, "tonton")
 
 # Read credentials or configuration file from auth directory
 def read_auth(filename):

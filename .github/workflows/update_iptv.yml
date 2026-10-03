@@ -81,10 +81,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}"
           git add playlist.m3u playlist.m3u8 all.m3u all.m3u8 epg.xml epg.xml.gz List/LIVE_LIST.md
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Live TV streams, EPG schedule & catalogs" && git pull --rebase origin main && git push origin main)
-          git remote set-url origin "https://github.com/${{ github.repository }}.git"
+          git remote set-url origin "https://github.com/${{ github.repository }}"
 
   update-vod:
     needs: [gatekeeper, update-live]
@@ -118,8 +118,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}"
           git add vod.m3u vod.m3u8 all.m3u all.m3u8 List/SHOWS_LIST.md List/MOVIES_LIST.md
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update VOD movies & shows playlist and catalogs" && git pull --rebase origin main && git push origin main)
-          git remote set-url origin "https://github.com/${{ github.repository }}.git"
+          git remote set-url origin "https://github.com/${{ github.repository }}"
 
