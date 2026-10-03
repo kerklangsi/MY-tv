@@ -64,15 +64,25 @@ def map_series(s_id):
         s_title = data.get("title", "")
         clean_slug = slugify(s_title)
         clean_slug = re.sub(r"-(?:s|season|siri)-?\d+$", "", clean_slug, flags=re.IGNORECASE)
+        seasons = data.get("seasons", [])
+        is_multi = len(seasons) > 1
         mapped = {}
-        for season in data.get("seasons", []):
+        for season in seasons:
+            s_num = season.get("seasonNumber")
+            if is_multi and s_num:
+                season_slug = f"{clean_slug}-s{s_num}"
+                season_title = f"{s_title} S{s_num}"
+            else:
+                season_slug = clean_slug
+                season_title = s_title
+
             for ep in season.get("episodes", []):
                 c = ep.get("content") or {}
                 c_id = c.get("id")
                 if c_id:
                     mapped[c_id] = {
-                        "slug": clean_slug,
-                        "title": s_title,
+                        "slug": season_slug,
+                        "title": season_title,
                         "episodeNumber": ep.get("episodeNumber"),
                     }
         return mapped
@@ -182,6 +192,8 @@ def process_vod(device_id):
     with ThreadPoolExecutor(max_workers=20) as executor:
         for m in executor.map(map_series, official_series_index.keys()):
             detail_cache_map.update(m)
+            for info in m.values():
+                series_slug_to_title[info["slug"]] = info["title"]
 
     slug_counts = defaultdict(int)
     prelim_items = []
