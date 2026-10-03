@@ -8519,7 +8519,7 @@
 - **Folder**: `streams/vod_tonton/mandarin-news-20242025`
 - **Total Episodes**: 1
 - **Episode List**:
-  - [Episod 1 - Mandarin News (2024/2025): Police Continue To Arrest Criminals Who Hide Child Pornographic Materials. Education Experts Urge Parents To Supervise Their Children’S Internet Access [2024.12.25 8D Space Chinese News]](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-20242025/mandarin-news-20242025-ep-1.m3u8)
+  - [Episod 1 - Mandarin News (2024/2025): Police Continue To Arrest Criminals Who Hide Child Pornographic Materials. Education Experts Urge Parents To Supervise Their Children'S Internet Access [2024.12.25 8D Space Chinese News]](https://kerklangsi.github.io/MY-tv/streams/vod_tonton/mandarin-news-20242025/mandarin-news-20242025-ep-1.m3u8)
 
 ### 237. Mandarin News (2025)
 - **Folder**: `streams/vod_tonton/mandarin-news-20252026`
