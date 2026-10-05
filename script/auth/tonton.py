@@ -5,7 +5,7 @@ import json
 import uuid
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from paths import TOKEN_FILE, read_auth, write_auth
+from paths import TOKEN_FILE, read_auth, write_auth, AUTH_DIR
 from utils import TONTON_API, TONTON_URL, USER_AGENT
 
 # Retrieve or generate persistent web device identifier
@@ -76,8 +76,11 @@ def get_token(force_refresh=False, allow_browser=False):
 
     try:
         from playwright.sync_api import sync_playwright
+        profile_dir = os.path.join(AUTH_DIR, "browser_profile")
+        os.makedirs(profile_dir, exist_ok=True)
         with sync_playwright() as p:
-            browser = p.chromium.launch(
+            context = p.chromium.launch_persistent_context(
+                user_data_dir=profile_dir,
                 headless=True,
                 args=[
                     "--disable-blink-features=AutomationControlled",
@@ -86,9 +89,7 @@ def get_token(force_refresh=False, allow_browser=False):
                     "--disable-gpu",
                     "--window-size=1920,1080",
                     f"--user-agent={USER_AGENT}",
-                ]
-            )
-            context = browser.new_context(
+                ],
                 user_agent=USER_AGENT,
                 viewport={"width": 1920, "height": 1080},
                 locale="en-US",
@@ -107,7 +108,7 @@ def get_token(force_refresh=False, allow_browser=False):
                 window.chrome = {runtime: {}};
             """)
 
-            page = context.new_page()
+            page = context.pages[0] if context.pages else context.new_page()
             popup_page = None
 
             def on_page(new_pg):
@@ -224,7 +225,7 @@ def get_token(force_refresh=False, allow_browser=False):
 
             current_url = page.url
             if "/error/SR101" in current_url:
-                browser.close()
+                context.close()
                 print("[Tonton Auth] Login failed: Account blocked due to multiple login attempts/devices.")
                 return ""
 
@@ -244,7 +245,7 @@ def get_token(force_refresh=False, allow_browser=False):
                 } catch(e) { return null; }
             }""")
 
-            browser.close()
+            context.close()
 
             if token and len(token) > 20:
                 write_auth("tonton", token)
