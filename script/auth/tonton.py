@@ -127,42 +127,44 @@ def get_token(force_refresh=False, allow_browser=False):
 
             print(f"[Tonton Auth] Loading {TONTON_URL}...")
             try:
-                page.goto(f"{TONTON_URL}/", wait_until="networkidle", timeout=30000)
-            except Exception:
                 page.goto(f"{TONTON_URL}/", wait_until="domcontentloaded", timeout=30000)
-            page.wait_for_timeout(4000)
-            print(f"[Tonton Auth] Page loaded: {page.url}")
+            except Exception:
+                pass
 
-            # Check session details from localStorage
-            session_info = page.evaluate("""() => {
+            # Wait for client router to resolve to /home or /login
+            for _ in range(8):
+                if "/home" in page.url or "/login" in page.url:
+                    break
+                page.wait_for_timeout(1000)
+
+            # Check if already logged in via persistent session cookies
+            existing_token = page.evaluate("""() => {
                 try {
                     const sd = JSON.parse(localStorage.getItem('SHARED_DEVICE') || '{}');
                     const rootToken = localStorage.getItem('loginToken');
-                    const token = (rootToken && rootToken.length > 50) ? rootToken : (sd.loginToken || sd.token || null);
-                    const user = sd.lastUser || Object.keys(localStorage).find(k => k.includes('@')) || null;
-                    const deviceId = sd['deviceId-v3'] || null;
-                    return { token, user, deviceId };
-                } catch(e) { return {}; }
+                    return (rootToken && rootToken.length > 50) ? rootToken : (sd.loginToken || sd.token || null);
+                } catch(e) { return null; }
             }""")
-            user_display = session_info.get("user") or "Unauthenticated"
-            existing_token = session_info.get("token")
-            dev_id = session_info.get("deviceId") or DEVICE_ID
-            print(f"[Tonton Auth] Session: {user_display} (Device: {dev_id})")
 
             if existing_token and check_token(existing_token, DEVICE_ID):
-                print(f"[Tonton Auth] Already logged in via persistent session cookies ({page.url}).")
+                if "/home" not in page.url:
+                    try:
+                        page.goto(f"{TONTON_URL}/home", wait_until="domcontentloaded", timeout=15000)
+                    except Exception:
+                        pass
+                print(f"[Tonton Auth] Page loaded: {page.url}")
+                print("[Tonton Auth] Already logged in via persistent session cookies")
                 context.close()
                 write_auth("tonton", existing_token)
                 return existing_token
 
-            # If not already on login page, navigate to login
+            # Unauthenticated: ensure on /login page
             if "/login" not in page.url:
                 try:
-                    page.goto(f"{TONTON_URL}/login", wait_until="networkidle", timeout=30000)
+                    page.goto(f"{TONTON_URL}/login", wait_until="domcontentloaded", timeout=15000)
                 except Exception:
-                    page.goto(f"{TONTON_URL}/login", wait_until="domcontentloaded", timeout=30000)
-                page.wait_for_timeout(3000)
-                print(f"[Tonton Auth] Page loaded: {page.url}")
+                    pass
+            print(f"[Tonton Auth] Page loaded: {page.url}")
 
             # Click Sign In button
             sign_in_texts = ["sign in", "log in", "login", "masuk", "daftar masuk"]
