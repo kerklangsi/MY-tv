@@ -125,6 +125,7 @@ def get_token(force_refresh=False, allow_browser=False):
 
             context.on("page", on_page)
 
+            print(f"[Tonton Auth] Loading {TONTON_URL}...")
             try:
                 page.goto(f"{TONTON_URL}/", wait_until="networkidle", timeout=30000)
             except Exception:
@@ -132,15 +133,22 @@ def get_token(force_refresh=False, allow_browser=False):
             page.wait_for_timeout(4000)
             print(f"[Tonton Auth] Page loaded: {page.url}")
 
-            # Check if already logged in via persistent session cookies
-            existing_token = page.evaluate("""() => {
+            # Check session details from localStorage
+            session_info = page.evaluate("""() => {
                 try {
-                    const root = localStorage.getItem('loginToken');
-                    if (root && root.length > 50) return root;
                     const sd = JSON.parse(localStorage.getItem('SHARED_DEVICE') || '{}');
-                    return sd.loginToken || sd.token || null;
-                } catch(e) { return null; }
+                    const rootToken = localStorage.getItem('loginToken');
+                    const token = (rootToken && rootToken.length > 50) ? rootToken : (sd.loginToken || sd.token || null);
+                    const user = sd.lastUser || Object.keys(localStorage).find(k => k.includes('@')) || null;
+                    const deviceId = sd['deviceId-v3'] || null;
+                    return { token, user, deviceId };
+                } catch(e) { return {}; }
             }""")
+            user_display = session_info.get("user") or "Unauthenticated"
+            existing_token = session_info.get("token")
+            dev_id = session_info.get("deviceId") or DEVICE_ID
+            print(f"[Tonton Auth] Session: {user_display} (Device: {dev_id})")
+
             if existing_token and check_token(existing_token, DEVICE_ID):
                 print(f"[Tonton Auth] Already logged in via persistent session cookies ({page.url}).")
                 context.close()
