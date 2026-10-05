@@ -18,11 +18,19 @@ def get_device():
     return dev_id
 
 DEVICE_ID = get_device()
-EMAIL = (read_auth("email") or os.environ.get("EMAIL", "")).strip()
-PASSWORD = (read_auth("password") or os.environ.get("PASSWORD", "")).strip()
+EMAIL = (os.environ.get("EMAIL", "").strip() or read_auth("email")).strip()
+PASSWORD = (os.environ.get("PASSWORD", "").strip() or read_auth("password")).strip()
 
-if EMAIL and not read_auth("email"):
+if EMAIL:
+    last_email = read_auth("last_email")
+    if last_email and last_email != EMAIL:
+        profile_dir = os.path.join(AUTH_DIR, "browser_profile")
+        if os.path.exists(profile_dir):
+            import shutil
+            shutil.rmtree(profile_dir, ignore_errors=True)
+        write_auth("tonton", "")
     write_auth("email", EMAIL)
+    write_auth("last_email", EMAIL)
 
 if PASSWORD and not read_auth("password"):
     write_auth("password", PASSWORD)
@@ -122,6 +130,21 @@ def get_token(force_refresh=False, allow_browser=False):
             except Exception:
                 page.goto(f"{TONTON_URL}/login", wait_until="domcontentloaded", timeout=30000)
             page.wait_for_timeout(3000)
+
+            # Check if already logged in via persistent session cookies
+            existing_token = page.evaluate("""() => {
+                try {
+                    const root = localStorage.getItem('loginToken');
+                    if (root && root.length > 50) return root;
+                    const sd = JSON.parse(localStorage.getItem('SHARED_DEVICE') || '{}');
+                    return sd.loginToken || sd.token || null;
+                } catch(e) { return null; }
+            }""")
+            if existing_token and check_token(existing_token, DEVICE_ID):
+                print("[Tonton Auth] Already logged in via persistent session cookies.")
+                context.close()
+                write_auth("tonton", existing_token)
+                return existing_token
 
             # Click Sign In button
             sign_in_texts = ["sign in", "log in", "login", "masuk", "daftar masuk"]
