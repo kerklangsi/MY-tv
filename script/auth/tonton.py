@@ -126,10 +126,11 @@ def get_token(force_refresh=False, allow_browser=False):
             context.on("page", on_page)
 
             try:
-                page.goto(f"{TONTON_URL}/login", wait_until="networkidle", timeout=30000)
+                page.goto(f"{TONTON_URL}/", wait_until="networkidle", timeout=30000)
             except Exception:
-                page.goto(f"{TONTON_URL}/login", wait_until="domcontentloaded", timeout=30000)
-            page.wait_for_timeout(3000)
+                page.goto(f"{TONTON_URL}/", wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(4000)
+            print(f"[Tonton Auth] Page loaded: {page.url}")
 
             # Check if already logged in via persistent session cookies
             existing_token = page.evaluate("""() => {
@@ -141,10 +142,19 @@ def get_token(force_refresh=False, allow_browser=False):
                 } catch(e) { return null; }
             }""")
             if existing_token and check_token(existing_token, DEVICE_ID):
-                print("[Tonton Auth] Already logged in via persistent session cookies.")
+                print(f"[Tonton Auth] Already logged in via persistent session cookies ({page.url}).")
                 context.close()
                 write_auth("tonton", existing_token)
                 return existing_token
+
+            # If not already on login page, navigate to login
+            if "/login" not in page.url:
+                try:
+                    page.goto(f"{TONTON_URL}/login", wait_until="networkidle", timeout=30000)
+                except Exception:
+                    page.goto(f"{TONTON_URL}/login", wait_until="domcontentloaded", timeout=30000)
+                page.wait_for_timeout(3000)
+                print(f"[Tonton Auth] Page loaded: {page.url}")
 
             # Click Sign In button
             sign_in_texts = ["sign in", "log in", "login", "masuk", "daftar masuk"]
