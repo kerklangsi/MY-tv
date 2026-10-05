@@ -77,7 +77,6 @@ def get_token(force_refresh=False, allow_browser=False):
     if env_token and check_token(env_token, DEVICE_ID):
         return env_token
 
-    print("[Tonton Auth] Logging in to watch.tonton.com.my...")
     if not EMAIL or not PASSWORD:
         print("[Tonton Auth] Missing EMAIL or PASSWORD. Login failed: Email or password maybe wrong.")
         return ""
@@ -165,6 +164,7 @@ def get_token(force_refresh=False, allow_browser=False):
                 except Exception:
                     pass
             print(f"[Tonton Auth] Page loaded: {page.url}")
+            print(f"[Tonton Auth] Logging in to {TONTON_URL.replace('https://', '')}...")
 
             # Click Sign In button
             sign_in_texts = ["sign in", "log in", "login", "masuk", "daftar masuk"]
