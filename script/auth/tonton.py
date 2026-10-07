@@ -9,12 +9,22 @@ from paths import TOKEN_FILE, read_auth, write_auth, AUTH_DIR
 from utils import TONTON_API, TONTON_URL, USER_AGENT
 
 # Retrieve or generate persistent web device identifier
-def get_device():
-    dev_id = read_auth("device_id") or os.environ.get("DEVICE_ID", "").strip()
-    if not dev_id:
+def get_device(verbose=False):
+    dev_id = read_auth("device_id")
+    if dev_id:
+        if verbose:
+            print("[Auth] Loaded Device ID from auth/device_id")
+        return dev_id
+    env_id = os.environ.get("DEVICE_ID", "").strip()
+    if env_id:
+        dev_id = env_id
+    else:
+        if verbose:
+            print("[Auth] Generated Device ID")
         dev_id = f"web-v3-{uuid.uuid4().hex}-{uuid.uuid4().hex}"
-    if not read_auth("device_id"):
-        write_auth("device_id", dev_id)
+    write_auth("device_id", dev_id)
+    if verbose:
+        print("[Auth] Saved Device ID to auth/device_id")
     return dev_id
 
 DEVICE_ID = get_device()
@@ -70,6 +80,8 @@ def get_token(force_refresh=False, allow_browser=False):
     if not force_refresh:
         cached = read_auth("tonton")
         if cached and check_token(cached, DEVICE_ID):
+            print(f"[Tonton Auth] Loading {TONTON_URL} ... {TONTON_URL}/home")
+            print("[Tonton Auth] Already logged in via persistent session cookies")
             return cached
 
     # 2. Check environment variable token if provided
@@ -124,7 +136,6 @@ def get_token(force_refresh=False, allow_browser=False):
 
             context.on("page", on_page)
 
-            print(f"[Tonton Auth] Loading {TONTON_URL}...")
             try:
                 page.goto(f"{TONTON_URL}/", wait_until="domcontentloaded", timeout=30000)
             except Exception:
@@ -151,7 +162,7 @@ def get_token(force_refresh=False, allow_browser=False):
                         page.goto(f"{TONTON_URL}/home", wait_until="domcontentloaded", timeout=15000)
                     except Exception:
                         pass
-                print(f"[Tonton Auth] Page loaded: {page.url}")
+                print(f"[Tonton Auth] Loading {TONTON_URL} ... {page.url}")
                 print("[Tonton Auth] Already logged in via persistent session cookies")
                 context.close()
                 write_auth("tonton", existing_token)
@@ -163,7 +174,7 @@ def get_token(force_refresh=False, allow_browser=False):
                     page.goto(f"{TONTON_URL}/login", wait_until="domcontentloaded", timeout=15000)
                 except Exception:
                     pass
-            print(f"[Tonton Auth] Page loaded: {page.url}")
+            print(f"[Tonton Auth] Loading {TONTON_URL} ... {page.url}")
             print(f"[Tonton Auth] Logging in to {TONTON_URL.replace('https://', '')}...")
 
             # Click Sign In button

@@ -11,8 +11,9 @@ from datetime import datetime, timezone
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 if SCRIPT_DIR not in sys.path: sys.path.insert(0, SCRIPT_DIR)
 
-from paths import PLAYLIST, VOD_M3U, ALL_M3U, ALL_M3U8, LIST_LIVE, LIST_SHOWS, LIST_MOVIES
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+from paths import PLAYLIST, VOD_M3U, ALL_M3U, ALL_M3U8, LIST_LIVE, LIST_SHOWS, LIST_MOVIES, read_auth
+DEFAULT_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+USER_AGENT = read_auth("user_agent") or DEFAULT_UA
 
 DEFAULT_HEADERS = {
     'User-Agent': USER_AGENT,

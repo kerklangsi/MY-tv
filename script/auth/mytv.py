@@ -36,7 +36,9 @@ def refresh_key():
         print(f"[MYTV Auth Warning] Browser key extraction failed: {e}")
 
     if extracted:
+        print(f"[MYTV Auth] Extracted ME Key from {MANA2_URL}")
         write_auth("me_key", extracted)
+        print("[MYTV Auth] Saved ME Key to auth/me_key")
         return extracted
     return ""
 
@@ -47,15 +49,18 @@ def get_key(force_refresh=False, allow_browser=False):
         cached = read_auth("me_key") or os.environ.get("ME_KEY", "").strip()
         return cached.encode("utf-8")[:32] if cached else b""
 
+    print(f"[MYTV Auth] Loading {MANA2_URL}...")
+
     # 1. Check cached key from file if not forced
     if not force_refresh:
         cached = read_auth("me_key")
         if cached:
+            print("[MYTV Auth] Loaded ME Key from auth/me_key")
             return cached.encode("utf-8")[:32]
 
     # 2. Check environment variable key if provided
     env_key = os.environ.get("ME_KEY", "").strip()
-    if env_key:
+    if env_key and not force_refresh:
         return env_key.encode("utf-8")[:32]
 
     # 3. Launch browser automation to extract key
